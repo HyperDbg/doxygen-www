@@ -65,8 +65,8 @@ $(function() {
 <div class="title">HyperDbg Debugger Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a href="https://hyperdbg.com"><object type="image/svg+xml" data="https://raw.githubusercontent.com/SinaKarvandi/HyperDbg/master/graphics/Badges/Link-Website-orange.svg" style="pointer-events: none;">Website</object></a> <a href="https://docs.hyperdbg.com"><object type="image/svg+xml" data="https://raw.githubusercontent.com/SinaKarvandi/HyperDbg/master/graphics/Badges/Link-Docs-yellow.svg" style="pointer-events: none;">Docs</object></a> <a href="https://doxygen.hyperdbg.com"><object type="image/svg+xml" data="https://raw.githubusercontent.com/SinaKarvandi/HyperDbg/master/graphics/Badges/Link-Doxygen-lightgreen.svg" style="pointer-events: none;">Doxygen</object></a> <a href="https://www.gnu.org/licenses/gpl-3.0"><object type="image/svg+xml" data="https://raw.githubusercontent.com/SinaKarvandi/HyperDbg/master/graphics/Badges/License-GPLv3-blue.svg" style="pointer-events: none;">License: GPL v3</object></a></p>
-<p><a href="https://hyperdbg.com/"><img src="https://raw.githubusercontent.com/SinaKarvandi/HyperDbg/master/graphics/Icons/hyperdbg-icon.png" alt="HyperDbg Debugger" align="right" width="150" height="150" class="inline"/></a></p>
+<div class="textblock"><p><a href="https://hyperdbg.com"><object type="image/svg+xml" data="https://raw.githubusercontent.com/HyperDbg/graphics/master/Badges/Link-Website-orange.svg" style="pointer-events: none;">Website</object></a> <a href="https://docs.hyperdbg.com"><object type="image/svg+xml" data="https://raw.githubusercontent.com/HyperDbg/graphics/master/Badges/Link-Docs-yellow.svg" style="pointer-events: none;">Docs</object></a> <a href="https://doxygen.hyperdbg.com"><object type="image/svg+xml" data="https://raw.githubusercontent.com/HyperDbg/graphics/master/Badges/Link-Doxygen-lightgreen.svg" style="pointer-events: none;">Doxygen</object></a> <a href="https://www.gnu.org/licenses/gpl-3.0"><object type="image/svg+xml" data="https://raw.githubusercontent.com/HyperDbg/graphics/master/Badges/License-GPLv3-blue.svg" style="pointer-events: none;">License: GPL v3</object></a></p>
+<p><a href="https://hyperdbg.com/"><img src="https://raw.githubusercontent.com/HyperDbg/graphics/master/Icons/hyperdbg-icon.png" alt="HyperDbg Debugger" align="right" width="150" height="150" class="inline"/></a></p>
 <h1><a class="anchor" id="autotoc_md7"></a>
 HyperDbg Debugger</h1>
 <h4><a class="anchor" id="autotoc_md8"></a>
@@ -75,7 +75,7 @@ HyperDbg Debugger</h1>
 Description</h2>
 <p>HyperDbg is an open-source, user mode and kernel mode Windows debugger with a focus on using hardware technologies to provide new features to the debuggers’ world.</p>
 <p align="center">It is designed on top of Windows by virtualizing an already running system using Intel VT-x and Intel PT. This debugger aims not to use any APIs and software debugging mechanisms, but instead, it uses Second Layer Page Table (a.k.a. Extended Page Table or EPT) extensively to monitor both kernel and user executions. </p>
-<p><a href="https://hyperdbg.com/"><img src="https://raw.githubusercontent.com/SinaKarvandi/HyperDbg/master/graphics/Art%20Board/Artboard%201.png" alt="HyperDbg Debugger" align="center" width="600" height="500" class="inline"/></a> </p>
+<p><a href="https://hyperdbg.com/"><img src="https://raw.githubusercontent.com/HyperDbg/graphics/master/Art%20Board/Artboard%201.png" alt="HyperDbg Debugger" align="center" width="600" height="500" class="inline"/></a> </p>
 <p>HyperDbg comes with features like hidden hooks, which is as fast as old inline hooks, but also stealth. It mimics hardware debug registers for (read &amp; write) to a specific location, but this time entirely invisible for both Windows kernel and the programs, and of course without any limitation in size or count!</p>
 <p>Using TLB-splitting, and having features such as measuring code coverage and monitoring all mov(s) to/from memory by a function, makes HyperDbg a unique debugger.</p>
 <p>Although it has novel features, HyperDbg tries to be as stealth as possible. It doesn’t use any debugging APIs to debug Windows or any application, so classic anti-debugging methods won’t detect it. Also, it resists the exploitation of time delta methods (e.g., RDTSC/RDTSCP) to detect the presence of hypervisors, therefore making it much harder for applications, packers, protectors, malware, anti-cheat engines, etc. to discover the debugger.</p>
@@ -86,7 +86,7 @@ How does it work?</h2>
 <p align="center">We explained about how HyperDbg internally works and how we designed its features in details, take a look at :  </p>
 <p>(<a href="https://docs.hyperdbg.com/how-does-it-work">https://docs.hyperdbg.com/how-does-it-work</a>)</p>
 <p>Here's a diagram that shows how HyperDbg works ! </p>
-<p><a href="https://hyperdbg.com/"><img src="https://github.com/SinaKarvandi/HyperDbg/raw/master/graphics/Diagrams/Diagram_v1.jpg" alt="HyperDbg Design" align="center" width="70%" height="100%" class="inline"/></a> </p>
+<p><a href="https://hyperdbg.com/"><img src="https://raw.githubusercontent.com/HyperDbg/graphics/master/Diagrams/Diagram_v1.jpg" alt="HyperDbg Design" align="center" width="70%" height="100%" class="inline"/></a> </p>
 <h2><a class="anchor" id="autotoc_md12"></a>
 Plugins</h2>
 <h2><a class="anchor" id="autotoc_md13"></a>
