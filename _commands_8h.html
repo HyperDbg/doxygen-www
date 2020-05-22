@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HyperDbg Debugger: hyperdbg/hprdbgctrl/commands.h File Reference</title>
+<title>HyperDbg Debugger: hyperdbg/hprdbgctrl/Commands.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,12 +66,10 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">commands.h File Reference</div>  </div>
+<div class="title">Commands.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -79,46 +77,34 @@ $(function() {
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="pch_8h_source.html">pch.h</a>&quot;</code><br />
 </div>
-<p><a href="commands_8h_source.html">Go to the source code of this file.</a></p>
+<p><a href="_commands_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct___d_e_b_u_g_g_e_r___c_o_m_m_a_n_d_s___t_r_a_c_e.html">_DEBUGGER_COMMANDS_TRACE</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:af88387cbc31cd412aab5dabaf6de5e6c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct___d_e_b_u_g_g_e_r___c_o_m_m_a_n_d_s___t_r_a_c_e.html">_DEBUGGER_COMMANDS_TRACE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commands_8h.html#af88387cbc31cd412aab5dabaf6de5e6c">DEBUGGER_COMMANDS_TRACE</a></td></tr>
-<tr class="separator:af88387cbc31cd412aab5dabaf6de5e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a380af9c999d0ef1625ea0c776527d889"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct___d_e_b_u_g_g_e_r___c_o_m_m_a_n_d_s___t_r_a_c_e.html">_DEBUGGER_COMMANDS_TRACE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commands_8h.html#a380af9c999d0ef1625ea0c776527d889">PDEBUGGER_COMMANDS_TRACE</a></td></tr>
-<tr class="separator:a380af9c999d0ef1625ea0c776527d889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3c12c41c8ec3973588e8fd94adf6ca83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commands_8h.html#a3c12c41c8ec3973588e8fd94adf6ca83">ReadCpuDetails</a> ()</td></tr>
+<tr class="memitem:a3c12c41c8ec3973588e8fd94adf6ca83"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_commands_8h.html#a3c12c41c8ec3973588e8fd94adf6ca83">ReadCpuDetails</a> ()</td></tr>
 <tr class="separator:a3c12c41c8ec3973588e8fd94adf6ca83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c1bf7c2b9007507832dd0bc318f3df6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commands_8h.html#a5c1bf7c2b9007507832dd0bc318f3df6">ReadVendorString</a> ()</td></tr>
+<tr class="memitem:a5c1bf7c2b9007507832dd0bc318f3df6"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_commands_8h.html#a5c1bf7c2b9007507832dd0bc318f3df6">ReadVendorString</a> ()</td></tr>
 <tr class="separator:a5c1bf7c2b9007507832dd0bc318f3df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd19c825171e66b83128a1ce6531b2e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a> (const char *Fmt,...)</td></tr>
-<tr class="memdesc:abd19c825171e66b83128a1ce6531b2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show messages received from kernel driver.  <a href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">More...</a><br /></td></tr>
+<tr class="memitem:abd19c825171e66b83128a1ce6531b2e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a> (const char *Fmt,...)</td></tr>
+<tr class="memdesc:abd19c825171e66b83128a1ce6531b2e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Show messages received from kernel driver.  <a href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">More...</a><br /></td></tr>
 <tr class="separator:abd19c825171e66b83128a1ce6531b2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac77241a6d187b3c815929f5c6a977072"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commands_8h.html#ac77241a6d187b3c815929f5c6a977072">CommandLm</a> (vector&lt; string &gt; SplittedCommand)</td></tr>
+<tr class="memitem:ac77241a6d187b3c815929f5c6a977072"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_commands_8h.html#ac77241a6d187b3c815929f5c6a977072">CommandLm</a> (vector&lt; string &gt; SplittedCommand)</td></tr>
 <tr class="separator:ac77241a6d187b3c815929f5c6a977072"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09794f9d8ad7d780470865d8c16ffc79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commands_8h.html#a09794f9d8ad7d780470865d8c16ffc79">HyperDbgReadMemoryAndDisassemble</a> (DEBUGGER_SHOW_MEMORY_STYLE Style, UINT64 Address, DEBUGGER_READ_MEMORY_TYPE MemoryType, DEBUGGER_READ_READING_TYPE ReadingType, UINT32 Pid, UINT Size)</td></tr>
-<tr class="memdesc:a09794f9d8ad7d780470865d8c16ffc79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read memory and disassembler.  <a href="commands_8h.html#a09794f9d8ad7d780470865d8c16ffc79">More...</a><br /></td></tr>
+<tr class="memitem:a09794f9d8ad7d780470865d8c16ffc79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_commands_8h.html#a09794f9d8ad7d780470865d8c16ffc79">HyperDbgReadMemoryAndDisassemble</a> (DEBUGGER_SHOW_MEMORY_STYLE Style, UINT64 Address, DEBUGGER_READ_MEMORY_TYPE MemoryType, DEBUGGER_READ_READING_TYPE ReadingType, UINT32 Pid, UINT Size)</td></tr>
+<tr class="memdesc:a09794f9d8ad7d780470865d8c16ffc79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read memory and disassembler.  <a href="_commands_8h.html#a09794f9d8ad7d780470865d8c16ffc79">More...</a><br /></td></tr>
 <tr class="separator:a09794f9d8ad7d780470865d8c16ffc79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07dc9e84eb1bb210cfcb6e03385f76d4"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commands_8h.html#a07dc9e84eb1bb210cfcb6e03385f76d4">SeparateTo64BitValue</a> (UINT64 Value)</td></tr>
+<tr class="memitem:a07dc9e84eb1bb210cfcb6e03385f76d4"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_commands_8h.html#a07dc9e84eb1bb210cfcb6e03385f76d4">SeparateTo64BitValue</a> (UINT64 Value)</td></tr>
 <tr class="separator:a07dc9e84eb1bb210cfcb6e03385f76d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32fcce07bee5c71ef4293f7e5aa2cb23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commands_8h.html#a32fcce07bee5c71ef4293f7e5aa2cb23">HyperDbgDisassembler</a> (unsigned char *BufferToDisassemble, UINT64 BaseAddress, UINT64 Size)</td></tr>
+<tr class="memitem:a32fcce07bee5c71ef4293f7e5aa2cb23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_commands_8h.html#a32fcce07bee5c71ef4293f7e5aa2cb23">HyperDbgDisassembler</a> (unsigned char *BufferToDisassemble, UINT64 BaseAddress, UINT64 Size)</td></tr>
 <tr class="separator:a32fcce07bee5c71ef4293f7e5aa2cb23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af41bc906e694236da4b71ebd44324a69"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commands_8h.html#af41bc906e694236da4b71ebd44324a69">AsmVmxSupportDetection</a> ()</td></tr>
+<tr class="memitem:af41bc906e694236da4b71ebd44324a69"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_commands_8h.html#af41bc906e694236da4b71ebd44324a69">AsmVmxSupportDetection</a> ()</td></tr>
 <tr class="separator:af41bc906e694236da4b71ebd44324a69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a622a443e52246a67c64cd3c0693c1239"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commands_8h.html#a622a443e52246a67c64cd3c0693c1239">__declspec</a> (dllexport) int __cdecl <a class="el" href="hprdbgctrl_8cpp.html#a489aff2bbdf608459ba3ca8524a52e93">HyperdbgLoad</a>()</td></tr>
+<tr class="memitem:a622a443e52246a67c64cd3c0693c1239"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_commands_8h.html#a622a443e52246a67c64cd3c0693c1239">__declspec</a> (dllexport) int __cdecl <a class="el" href="hprdbgctrl_8cpp.html#a489aff2bbdf608459ba3ca8524a52e93">HyperdbgLoad</a>()</td></tr>
 <tr class="separator:a622a443e52246a67c64cd3c0693c1239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a775f9ac5ca6e581f07d41b537ea05e96"><td class="memItemLeft" align="right" valign="top">HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="commands_8h.html#a775f9ac5ca6e581f07d41b537ea05e96">DeviceHandle</a></td></tr>
+<tr class="memitem:a775f9ac5ca6e581f07d41b537ea05e96"><td class="memItemLeft" align="right" valign="top">HANDLE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_commands_8h.html#a775f9ac5ca6e581f07d41b537ea05e96">DeviceHandle</a></td></tr>
 <tr class="separator:a775f9ac5ca6e581f07d41b537ea05e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -127,36 +113,7 @@ Variables</h2></td></tr>
 <dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2020-04-11</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>This project is released under the GNU Public License v3. </dd></dl>
-</div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="af88387cbc31cd412aab5dabaf6de5e6c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af88387cbc31cd412aab5dabaf6de5e6c">&#9670;&nbsp;</a></span>DEBUGGER_COMMANDS_TRACE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="struct___d_e_b_u_g_g_e_r___c_o_m_m_a_n_d_s___t_r_a_c_e.html">_DEBUGGER_COMMANDS_TRACE</a> <a class="el" href="commands_8h.html#af88387cbc31cd412aab5dabaf6de5e6c">DEBUGGER_COMMANDS_TRACE</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a380af9c999d0ef1625ea0c776527d889"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a380af9c999d0ef1625ea0c776527d889">&#9670;&nbsp;</a></span>PDEBUGGER_COMMANDS_TRACE</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="struct___d_e_b_u_g_g_e_r___c_o_m_m_a_n_d_s___t_r_a_c_e.html">_DEBUGGER_COMMANDS_TRACE</a> * <a class="el" href="commands_8h.html#a380af9c999d0ef1625ea0c776527d889">PDEBUGGER_COMMANDS_TRACE</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a622a443e52246a67c64cd3c0693c1239"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a622a443e52246a67c64cd3c0693c1239">&#9670;&nbsp;</a></span>__declspec()</h2>
 
@@ -223,7 +180,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span> (SplittedCommand.size() &gt;= 3)</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;incorrect use of &#39;lm&#39;\n\n&quot;</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;incorrect use of &#39;lm&#39;\n\n&quot;</span>);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="lm_8cpp.html#a3e4a609cdf1dea17076542ce8dcf9cf0">CommandLmHelp</a>();</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
@@ -235,19 +192,19 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (!ModuleInfo)</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;\nUnable to allocate memory for module list (%d)\n&quot;</span>, GetLastError());</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;\nUnable to allocate memory for module list (%d)\n&quot;</span>, GetLastError());</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (!NT_SUCCESS(status = NtQuerySystemInformation((<a class="code" href="_hooks_8h.html#ae75edb0a85f69b42a96960e023f58c47">SYSTEM_INFORMATION_CLASS</a>)11, ModuleInfo, 1024 * 1024, NULL))) <span class="comment">// 11 = SystemModuleInformation</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;\nError: Unable to query module list (%#x)\n&quot;</span>, status);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;\nError: Unable to query module list (%#x)\n&quot;</span>, status);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        VirtualFree(ModuleInfo, 0, MEM_RELEASE);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> -1;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;start\t\t\tsize\tname\t\tpath\n\n&quot;</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;start\t\t\tsize\tname\t\tpath\n\n&quot;</span>);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; ModuleInfo-&gt;<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s.html#ab22b0e69c4970861ee208383c7fc7b86">NumberOfModules</a>; i++)</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
@@ -266,11 +223,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            }</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%16llx\t&quot;</span>, ModuleInfo-&gt;<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s.html#a6de3a347bb8cae48e56e331c235ec9dd">Modules</a>[i].<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#a2843fe24e049163c8a8555b2f38c44c6">ImageBase</a>);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%d\t&quot;</span>, ModuleInfo-&gt;<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s.html#a6de3a347bb8cae48e56e331c235ec9dd">Modules</a>[i].<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#acc4881492d8ca9a8ff6affd3b5b953f2">ImageSize</a>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%016llx\t&quot;</span>, ModuleInfo-&gt;<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s.html#a6de3a347bb8cae48e56e331c235ec9dd">Modules</a>[i].<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#a2843fe24e049163c8a8555b2f38c44c6">ImageBase</a>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%d\t&quot;</span>, ModuleInfo-&gt;<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s.html#a6de3a347bb8cae48e56e331c235ec9dd">Modules</a>[i].<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#acc4881492d8ca9a8ff6affd3b5b953f2">ImageSize</a>);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%s\t&quot;</span>, ModuleInfo-&gt;<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s.html#a6de3a347bb8cae48e56e331c235ec9dd">Modules</a>[i].<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#a49f434bf1792cd7d5242bfbd12d4e7bd">FullPathName</a> + ModuleInfo-&gt;<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s.html#a6de3a347bb8cae48e56e331c235ec9dd">Modules</a>[i].<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#a92b9b526c495895a8a5c1034d5107164">OffsetToFileName</a>);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%s\n&quot;</span>, ModuleInfo-&gt;<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s.html#a6de3a347bb8cae48e56e331c235ec9dd">Modules</a>[i].<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#a49f434bf1792cd7d5242bfbd12d4e7bd">FullPathName</a>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%s\t&quot;</span>, ModuleInfo-&gt;<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s.html#a6de3a347bb8cae48e56e331c235ec9dd">Modules</a>[i].<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#a49f434bf1792cd7d5242bfbd12d4e7bd">FullPathName</a> + ModuleInfo-&gt;<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s.html#a6de3a347bb8cae48e56e331c235ec9dd">Modules</a>[i].<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#a92b9b526c495895a8a5c1034d5107164">OffsetToFileName</a>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%s\n&quot;</span>, ModuleInfo-&gt;<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s.html#a6de3a347bb8cae48e56e331c235ec9dd">Modules</a>[i].<a class="code" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#a49f434bf1792cd7d5242bfbd12d4e7bd">FullPathName</a>);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    VirtualFree(ModuleInfo, 0, MEM_RELEASE);</div>
@@ -378,176 +335,176 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Read memory and disassembler. </p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                             {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  BOOL Status;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  ULONG ReturnedLength;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  DEBUGGER_READ_MEMORY ReadMem;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  UINT32 OperationCode;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  CHAR Character;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="commands_8h.html#a775f9ac5ca6e581f07d41b537ea05e96">DeviceHandle</a>) {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;Handle not found, probably the driver is not loaded.\n&quot;</span>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  ReadMem.Address = Address;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  ReadMem.Pid = Pid;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  ReadMem.Size = Size;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  ReadMem.MemoryType = MemoryType;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  ReadMem.ReadingType = ReadingType;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="comment">// allocate buffer for transfering messages</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="comment">//</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *OutputBuffer = (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)malloc(Size);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  ZeroMemory(OutputBuffer, Size);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  Status = DeviceIoControl(<a class="code" href="commands_8h.html#a775f9ac5ca6e581f07d41b537ea05e96">DeviceHandle</a>,               <span class="comment">// Handle to device</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                           IOCTL_DEBUGGER_READ_MEMORY, <span class="comment">// IO Control code</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                           &amp;ReadMem, <span class="comment">// Input Buffer to driver.</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                           SIZEOF_DEBUGGER_READ_MEMORY, <span class="comment">// Input buffer length</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                           OutputBuffer,    <span class="comment">// Output Buffer from driver.</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                           Size,            <span class="comment">// Length of output buffer in bytes.</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                           &amp;ReturnedLength, <span class="comment">// Bytes placed in buffer.</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                           NULL             <span class="comment">// synchronous call</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  );</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">if</span> (!Status) {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;Ioctl failed with code 0x%x\n&quot;</span>, GetLastError());</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keywordflow">if</span> (Style == DEBUGGER_SHOW_COMMAND_DB) {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Size; i += 16) {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      <span class="keywordflow">if</span> (MemoryType == DEBUGGER_READ_PHYSICAL_ADDRESS) {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;#\t&quot;</span>);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="comment">// Print address</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%s  &quot;</span>, <a class="code" href="interpreter_8cpp.html#a07dc9e84eb1bb210cfcb6e03385f76d4">SeparateTo64BitValue</a>((UINT64)(Address + i)).c_str());</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="comment">// Print the hex code</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; 16; j++) {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="comment">// check to see if the address is valid or not</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">if</span> (i + j &gt;= ReturnedLength) {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;          <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;?? &quot;</span>);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;          <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%02X &quot;</span>, OutputBuffer[i + j]);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      <span class="comment">// Print the character</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot; &quot;</span>);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; 16; j++) {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        Character = (OutputBuffer[i + j]);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">if</span> (isprint(Character)) {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;          <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%c&quot;</span>, Character);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;          <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;.&quot;</span>);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        }</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;      }</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;      <span class="comment">// Go to new line</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;      <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Style == DEBUGGER_SHOW_COMMAND_DC ||</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;             Style == DEBUGGER_SHOW_COMMAND_DD) {</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Size; i += 16) {</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;      <span class="keywordflow">if</span> (MemoryType == DEBUGGER_READ_PHYSICAL_ADDRESS) {</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;#\t&quot;</span>);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;      }</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      <span class="comment">// Print address</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%s  &quot;</span>, <a class="code" href="interpreter_8cpp.html#a07dc9e84eb1bb210cfcb6e03385f76d4">SeparateTo64BitValue</a>((UINT64)(Address + i)).c_str());</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      <span class="comment">// Print the hex code</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; 16; j += 4) {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="comment">// check to see if the address is valid or not</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">if</span> (i + j &gt;= ReturnedLength) {</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;          <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;???????? &quot;</span>);</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;          UINT32 OutputBufferVar = *((UINT32 *)&amp;OutputBuffer[i + j]);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;          <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%08X &quot;</span>, OutputBufferVar);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        }</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      }</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;      <span class="comment">// Print the character</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      <span class="keywordflow">if</span> (Style != DEBUGGER_SHOW_COMMAND_DD) {</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot; &quot;</span>);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; 16; j++) {</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;          Character = (OutputBuffer[i + j]);</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;          <span class="keywordflow">if</span> (isprint(Character)) {</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%c&quot;</span>, Character);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;          } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;.&quot;</span>);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;          }</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        }</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;      }</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <span class="comment">// Go to new line</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Style == DEBUGGER_SHOW_COMMAND_DQ) {</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Size; i += 16) {</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;      <span class="keywordflow">if</span> (MemoryType == DEBUGGER_READ_PHYSICAL_ADDRESS) {</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;#\t&quot;</span>);</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;      }</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      <span class="comment">// Print address</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%s  &quot;</span>, <a class="code" href="interpreter_8cpp.html#a07dc9e84eb1bb210cfcb6e03385f76d4">SeparateTo64BitValue</a>((UINT64)(Address + i)).c_str());</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;      <span class="comment">// Print the hex code</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; 16; j += 8) {</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        <span class="comment">// check to see if the address is valid or not</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordflow">if</span> (i + j &gt;= ReturnedLength) {</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;          <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;???????? &quot;</span>);</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;          UINT32 OutputBufferVar = *((UINT32 *)&amp;OutputBuffer[i + j + 4]);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;          <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%08X`&quot;</span>, OutputBufferVar);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;          OutputBufferVar = *((UINT32 *)&amp;OutputBuffer[i + j]);</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;          <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%08X &quot;</span>, OutputBufferVar);</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        }</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;      }</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      <span class="comment">// Go to new line</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      <span class="comment">//</span></div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;      <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    }</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Style == DEBUGGER_SHOW_COMMAND_DISASSEMBLE) {</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <a class="code" href="commands_8h.html#a32fcce07bee5c71ef4293f7e5aa2cb23">HyperDbgDisassembler</a>(OutputBuffer, Address, ReturnedLength);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;  }</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                             {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  BOOL Status;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  ULONG ReturnedLength;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  DEBUGGER_READ_MEMORY ReadMem;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  UINT32 OperationCode;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  CHAR Character;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keywordflow">if</span> (!<a class="code" href="_commands_8h.html#a775f9ac5ca6e581f07d41b537ea05e96">DeviceHandle</a>) {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;Handle not found, probably the driver is not loaded.\n&quot;</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  ReadMem.Address = Address;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  ReadMem.Pid = Pid;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  ReadMem.Size = Size;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  ReadMem.MemoryType = MemoryType;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  ReadMem.ReadingType = ReadingType;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="comment">// allocate buffer for transfering messages</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="comment">//</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *OutputBuffer = (<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *)malloc(Size);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  ZeroMemory(OutputBuffer, Size);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  Status = DeviceIoControl(<a class="code" href="_commands_8h.html#a775f9ac5ca6e581f07d41b537ea05e96">DeviceHandle</a>,               <span class="comment">// Handle to device</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                           IOCTL_DEBUGGER_READ_MEMORY, <span class="comment">// IO Control code</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                           &amp;ReadMem, <span class="comment">// Input Buffer to driver.</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                           SIZEOF_DEBUGGER_READ_MEMORY, <span class="comment">// Input buffer length</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                           OutputBuffer,    <span class="comment">// Output Buffer from driver.</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                           Size,            <span class="comment">// Length of output buffer in bytes.</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                           &amp;ReturnedLength, <span class="comment">// Bytes placed in buffer.</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                           NULL             <span class="comment">// synchronous call</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  );</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">if</span> (!Status) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;Ioctl failed with code 0x%x\n&quot;</span>, GetLastError());</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <span class="keywordflow">if</span> (Style == DEBUGGER_SHOW_COMMAND_DB) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Size; i += 16) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      <span class="keywordflow">if</span> (MemoryType == DEBUGGER_READ_PHYSICAL_ADDRESS) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;#\t&quot;</span>);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="comment">// Print address</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%s  &quot;</span>, <a class="code" href="interpreter_8cpp.html#a07dc9e84eb1bb210cfcb6e03385f76d4">SeparateTo64BitValue</a>((UINT64)(Address + i)).c_str());</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;      <span class="comment">// Print the hex code</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; 16; j++) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="comment">// check to see if the address is valid or not</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">if</span> (i + j &gt;= ReturnedLength) {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;          <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;?? &quot;</span>);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;          <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%02X &quot;</span>, OutputBuffer[i + j]);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        }</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="comment">// Print the character</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; 16; j++) {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        Character = (OutputBuffer[i + j]);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">if</span> (isprint(Character)) {</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;          <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%c&quot;</span>, Character);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;          <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;.&quot;</span>);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;      }</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;      <span class="comment">// Go to new line</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;      <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Style == DEBUGGER_SHOW_COMMAND_DC ||</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;             Style == DEBUGGER_SHOW_COMMAND_DD) {</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Size; i += 16) {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;      <span class="keywordflow">if</span> (MemoryType == DEBUGGER_READ_PHYSICAL_ADDRESS) {</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;#\t&quot;</span>);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;      }</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      <span class="comment">// Print address</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;      <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%s  &quot;</span>, <a class="code" href="interpreter_8cpp.html#a07dc9e84eb1bb210cfcb6e03385f76d4">SeparateTo64BitValue</a>((UINT64)(Address + i)).c_str());</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      <span class="comment">// Print the hex code</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; 16; j += 4) {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="comment">// check to see if the address is valid or not</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordflow">if</span> (i + j &gt;= ReturnedLength) {</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;          <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;???????? &quot;</span>);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;          UINT32 OutputBufferVar = *((UINT32 *)&amp;OutputBuffer[i + j]);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;          <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%08X &quot;</span>, OutputBufferVar);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;      }</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;      <span class="comment">// Print the character</span></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;      <span class="keywordflow">if</span> (Style != DEBUGGER_SHOW_COMMAND_DD) {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; 16; j++) {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;          Character = (OutputBuffer[i + j]);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;          <span class="keywordflow">if</span> (isprint(Character)) {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%c&quot;</span>, Character);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;          } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;.&quot;</span>);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;          }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;      <span class="comment">// Go to new line</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Style == DEBUGGER_SHOW_COMMAND_DQ) {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Size; i += 16) {</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;      <span class="keywordflow">if</span> (MemoryType == DEBUGGER_READ_PHYSICAL_ADDRESS) {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;#\t&quot;</span>);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;      <span class="comment">// Print address</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;      <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%s  &quot;</span>, <a class="code" href="interpreter_8cpp.html#a07dc9e84eb1bb210cfcb6e03385f76d4">SeparateTo64BitValue</a>((UINT64)(Address + i)).c_str());</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      <span class="comment">// Print the hex code</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; 16; j += 8) {</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="comment">// check to see if the address is valid or not</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        <span class="keywordflow">if</span> (i + j &gt;= ReturnedLength) {</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;          <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;???????? &quot;</span>);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;          UINT32 OutputBufferVar = *((UINT32 *)&amp;OutputBuffer[i + j + 4]);</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;          <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%08X`&quot;</span>, OutputBufferVar);</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;          OutputBufferVar = *((UINT32 *)&amp;OutputBuffer[i + j]);</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;          <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%08X &quot;</span>, OutputBufferVar);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;      }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;      <span class="comment">// Go to new line</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;      <span class="comment">//</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;      <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    }</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (Style == DEBUGGER_SHOW_COMMAND_DISASSEMBLE) {</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <a class="code" href="_commands_8h.html#a32fcce07bee5c71ef4293f7e5aa2cb23">HyperDbgDisassembler</a>(OutputBuffer, Address, ReturnedLength);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -569,12 +526,12 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="keyword">auto</span>&amp; outstream = std::cout;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keyword">auto</span> support_message = [&amp;outstream](std::string isa_feature, <span class="keywordtype">bool</span> is_supported) {</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%s %s\n&quot;</span>, isa_feature.c_str(), (is_supported ? <span class="stringliteral">&quot;supported&quot;</span> : <span class="stringliteral">&quot;not supported&quot;</span>));</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;%s %s\n&quot;</span>, isa_feature.c_str(), (is_supported ? <span class="stringliteral">&quot;supported&quot;</span> : <span class="stringliteral">&quot;not supported&quot;</span>));</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    };</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;\nvendor : %s\n&quot;</span>, <a class="code" href="class_instruction_set.html#a33eea9e4868e71df98690d36a5ad898a">InstructionSet::Vendor</a>().c_str());</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <a class="code" href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;brand : %s\n\n&quot;</span>, <a class="code" href="class_instruction_set.html#a8b6a0a3ce7b39cb52866979f974878d4">InstructionSet::Brand</a>().c_str());</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;\nvendor : %s\n&quot;</span>, <a class="code" href="class_instruction_set.html#a33eea9e4868e71df98690d36a5ad898a">InstructionSet::Vendor</a>().c_str());</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="stringliteral">&quot;brand : %s\n\n&quot;</span>, <a class="code" href="class_instruction_set.html#a8b6a0a3ce7b39cb52866979f974878d4">InstructionSet::Brand</a>().c_str());</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    support_message(<span class="stringliteral">&quot;3DNOW&quot;</span>, <a class="code" href="class_instruction_set.html#a382a8ad89437ea53c8a851d2e715eceb">InstructionSet::_3DNOW</a>());</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    support_message(<span class="stringliteral">&quot;3DNOWEXT&quot;</span>, <a class="code" href="class_instruction_set.html#a0064811c2da375985cf0188c3b973618">InstructionSet::_3DNOWEXT</a>());</div>
@@ -668,14 +625,14 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                          {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  std::ostringstream ostringStream;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  ostringStream &lt;&lt; std::setw(16) &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; std::hex &lt;&lt; Value;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">string</span> temp = ostringStream.str();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  temp.insert(8, 1, <span class="charliteral">&#39;`&#39;</span>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">return</span> temp;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                          {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  std::ostringstream ostringStream;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  ostringStream &lt;&lt; std::setw(16) &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; std::hex &lt;&lt; Value;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  <span class="keywordtype">string</span> temp = ostringStream.str();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  temp.insert(8, 1, <span class="charliteral">&#39;`&#39;</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordflow">return</span> temp;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -712,27 +669,34 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                        {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  va_list ArgList;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keywordtype">char</span> TempMessage[PacketChunkSize];</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  va_start(ArgList, Fmt);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordtype">int</span> sprintfresult =</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      vsprintf_s(TempMessage, PacketChunkSize - 1, Fmt, ArgList);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  va_end(ArgList);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keywordflow">if</span> (sprintfresult != -1) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="hprdbgctrl_8cpp.html#af58e321e7f2f41135ed08cc546f3a4ec">Handler</a> != NULL) {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;      <a class="code" href="hprdbgctrl_8cpp.html#af58e321e7f2f41135ed08cc546f3a4ec">Handler</a>(TempMessage);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      printf(TempMessage);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    MessageBoxA(0, <span class="stringliteral">&quot;Error occured in send date to managed code !&quot;</span>, <span class="stringliteral">&quot;error&quot;</span>, 0);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                        {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  va_list ArgList;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  va_list Args;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordtype">char</span> TempMessage[PacketChunkSize];</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">if</span> (<a class="code" href="hprdbgctrl_8cpp.html#af58e321e7f2f41135ed08cc546f3a4ec">Handler</a> == NULL) {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    va_start(Args, Fmt);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    vprintf(Fmt, Args);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    va_end(Args);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  va_start(ArgList, Fmt);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordtype">int</span> sprintfresult =</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      vsprintf_s(TempMessage, PacketChunkSize - 1, Fmt, ArgList);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  va_end(ArgList);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">if</span> (sprintfresult != -1) {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="hprdbgctrl_8cpp.html#af58e321e7f2f41135ed08cc546f3a4ec">Handler</a> != NULL) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <a class="code" href="hprdbgctrl_8cpp.html#af58e321e7f2f41135ed08cc546f3a4ec">Handler</a>(TempMessage);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    MessageBoxA(0, <span class="stringliteral">&quot;Error occured in send date to managed code !&quot;</span>, <span class="stringliteral">&quot;error&quot;</span>, 0);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -762,7 +726,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="ahprdbgctrl_8cpp_html_af58e321e7f2f41135ed08cc546f3a4ec"><div class="ttname"><a href="hprdbgctrl_8cpp.html#af58e321e7f2f41135ed08cc546f3a4ec">Handler</a></div><div class="ttdeci">Callback Handler</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:21</div></div>
 <div class="ttc" id="aclass_instruction_set_html_a382a8ad89437ea53c8a851d2e715eceb"><div class="ttname"><a href="class_instruction_set.html#a382a8ad89437ea53c8a851d2e715eceb">InstructionSet::_3DNOW</a></div><div class="ttdeci">static bool _3DNOW(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:81</div></div>
 <div class="ttc" id="aclass_instruction_set_html_a704b9ec2dbc7adaa3e622bb6c386c708"><div class="ttname"><a href="class_instruction_set.html#a704b9ec2dbc7adaa3e622bb6c386c708">InstructionSet::RTM</a></div><div class="ttdeci">static bool RTM(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:59</div></div>
-<div class="ttc" id="acommands_8h_html_abd19c825171e66b83128a1ce6531b2e9"><div class="ttname"><a href="commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a></div><div class="ttdeci">void ShowMessages(const char *Fmt,...)</div><div class="ttdoc">Show messages received from kernel driver.</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:39</div></div>
 <div class="ttc" id="astruct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n_html_a92b9b526c495895a8a5c1034d5107164"><div class="ttname"><a href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#a92b9b526c495895a8a5c1034d5107164">_RTL_PROCESS_MODULE_INFORMATION::OffsetToFileName</a></div><div class="ttdeci">USHORT OffsetToFileName</div><div class="ttdef"><b>Definition:</b> lm.cpp:19</div></div>
 <div class="ttc" id="aclass_instruction_set_html_ae1204b756c839ebde49b3529c8a77ce2"><div class="ttname"><a href="class_instruction_set.html#ae1204b756c839ebde49b3529c8a77ce2">InstructionSet::AVX512PF</a></div><div class="ttdeci">static bool AVX512PF(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:63</div></div>
 <div class="ttc" id="aclass_instruction_set_html_a2695557c3a33255b8ad707bb99925413"><div class="ttname"><a href="class_instruction_set.html#a2695557c3a33255b8ad707bb99925413">InstructionSet::BMI2</a></div><div class="ttdeci">static bool BMI2(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:56</div></div>
@@ -777,7 +740,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="astruct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s_html_ab22b0e69c4970861ee208383c7fc7b86"><div class="ttname"><a href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s.html#ab22b0e69c4970861ee208383c7fc7b86">_RTL_PROCESS_MODULES::NumberOfModules</a></div><div class="ttdeci">ULONG NumberOfModules</div><div class="ttdef"><b>Definition:</b> lm.cpp:25</div></div>
 <div class="ttc" id="aclass_instruction_set_html_a0064811c2da375985cf0188c3b973618"><div class="ttname"><a href="class_instruction_set.html#a0064811c2da375985cf0188c3b973618">InstructionSet::_3DNOWEXT</a></div><div class="ttdeci">static bool _3DNOWEXT(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:80</div></div>
 <div class="ttc" id="aclass_instruction_set_html_a258bfff4625a64cc6c91ca4b9c74f388"><div class="ttname"><a href="class_instruction_set.html#a258bfff4625a64cc6c91ca4b9c74f388">InstructionSet::MSR</a></div><div class="ttdeci">static bool MSR(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:42</div></div>
-<div class="ttc" id="ainterpreter_8cpp_html_a07dc9e84eb1bb210cfcb6e03385f76d4"><div class="ttname"><a href="interpreter_8cpp.html#a07dc9e84eb1bb210cfcb6e03385f76d4">SeparateTo64BitValue</a></div><div class="ttdeci">string SeparateTo64BitValue(UINT64 Value)</div><div class="ttdef"><b>Definition:</b> interpreter.cpp:32</div></div>
+<div class="ttc" id="ainterpreter_8cpp_html_a07dc9e84eb1bb210cfcb6e03385f76d4"><div class="ttname"><a href="interpreter_8cpp.html#a07dc9e84eb1bb210cfcb6e03385f76d4">SeparateTo64BitValue</a></div><div class="ttdeci">string SeparateTo64BitValue(UINT64 Value)</div><div class="ttdef"><b>Definition:</b> interpreter.cpp:36</div></div>
 <div class="ttc" id="aclass_instruction_set_html_a0ee5819502aa6df106f100db5cbd1183"><div class="ttname"><a href="class_instruction_set.html#a0ee5819502aa6df106f100db5cbd1183">InstructionSet::SEP</a></div><div class="ttdeci">static bool SEP(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:44</div></div>
 <div class="ttc" id="aclass_instruction_set_html_a5a25cc834823f10b1518d9dd5954dbc4"><div class="ttname"><a href="class_instruction_set.html#a5a25cc834823f10b1518d9dd5954dbc4">InstructionSet::ERMS</a></div><div class="ttdeci">static bool ERMS(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:57</div></div>
 <div class="ttc" id="aclass_instruction_set_html_a1e6aec361ebdbfe738e5a563e8667dc3"><div class="ttname"><a href="class_instruction_set.html#a1e6aec361ebdbfe738e5a563e8667dc3">InstructionSet::AVX512ER</a></div><div class="ttdeci">static bool AVX512ER(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:64</div></div>
@@ -787,7 +750,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="aclass_instruction_set_html_aa7577cb97906f8eba652182feacd2d61"><div class="ttname"><a href="class_instruction_set.html#aa7577cb97906f8eba652182feacd2d61">InstructionSet::SYSCALL</a></div><div class="ttdeci">static bool SYSCALL(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:77</div></div>
 <div class="ttc" id="aclass_instruction_set_html_ae4dbd92d68db92d8b22ba480bce9fd42"><div class="ttname"><a href="class_instruction_set.html#ae4dbd92d68db92d8b22ba480bce9fd42">InstructionSet::FSGSBASE</a></div><div class="ttdeci">static bool FSGSBASE(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:52</div></div>
 <div class="ttc" id="aclass_instruction_set_html_a7f44c54366764da6f49b1709893a3c4d"><div class="ttname"><a href="class_instruction_set.html#a7f44c54366764da6f49b1709893a3c4d">InstructionSet::ADX</a></div><div class="ttdeci">static bool ADX(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:62</div></div>
-<div class="ttc" id="acommands_8h_html_a32fcce07bee5c71ef4293f7e5aa2cb23"><div class="ttname"><a href="commands_8h.html#a32fcce07bee5c71ef4293f7e5aa2cb23">HyperDbgDisassembler</a></div><div class="ttdeci">int HyperDbgDisassembler(unsigned char *BufferToDisassemble, UINT64 BaseAddress, UINT64 Size)</div><div class="ttdef"><b>Definition:</b> disassembler.cpp:205</div></div>
+<div class="ttc" id="a_commands_8h_html_abd19c825171e66b83128a1ce6531b2e9"><div class="ttname"><a href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a></div><div class="ttdeci">void ShowMessages(const char *Fmt,...)</div><div class="ttdoc">Show messages received from kernel driver.</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:41</div></div>
 <div class="ttc" id="aclass_instruction_set_html_ab81e25548567a8d1a3f38fdca22deec7"><div class="ttname"><a href="class_instruction_set.html#ab81e25548567a8d1a3f38fdca22deec7">InstructionSet::TBM</a></div><div class="ttdeci">static bool TBM(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:75</div></div>
 <div class="ttc" id="aclass_instruction_set_html_a560fa785af581076f952ef17b92085fa"><div class="ttname"><a href="class_instruction_set.html#a560fa785af581076f952ef17b92085fa">InstructionSet::SSE41</a></div><div class="ttdeci">static bool SSE41(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:31</div></div>
 <div class="ttc" id="aclass_instruction_set_html_a9888370a3e399734ae09304bf9f7a5f6"><div class="ttname"><a href="class_instruction_set.html#a9888370a3e399734ae09304bf9f7a5f6">InstructionSet::CMPXCHG16B</a></div><div class="ttdeci">static bool CMPXCHG16B(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:30</div></div>
@@ -798,12 +761,12 @@ Variables</h2></td></tr>
 <div class="ttc" id="aclass_instruction_set_html_a493f6f224cabec17982ec69247144cd2"><div class="ttname"><a href="class_instruction_set.html#a493f6f224cabec17982ec69247144cd2">InstructionSet::PREFETCHWT1</a></div><div class="ttdeci">static bool PREFETCHWT1(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:68</div></div>
 <div class="ttc" id="aclass_instruction_set_html_a1b0035c605bf27b673f717787553c9bc"><div class="ttname"><a href="class_instruction_set.html#a1b0035c605bf27b673f717787553c9bc">InstructionSet::SSE3</a></div><div class="ttdeci">static bool SSE3(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:25</div></div>
 <div class="ttc" id="astruct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s_html"><div class="ttname"><a href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s.html">_RTL_PROCESS_MODULES</a></div><div class="ttdef"><b>Definition:</b> lm.cpp:23</div></div>
-<div class="ttc" id="acommands_8h_html_a775f9ac5ca6e581f07d41b537ea05e96"><div class="ttname"><a href="commands_8h.html#a775f9ac5ca6e581f07d41b537ea05e96">DeviceHandle</a></div><div class="ttdeci">HANDLE DeviceHandle</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:18</div></div>
 <div class="ttc" id="aclass_instruction_set_html_a8b6a0a3ce7b39cb52866979f974878d4"><div class="ttname"><a href="class_instruction_set.html#a8b6a0a3ce7b39cb52866979f974878d4">InstructionSet::Brand</a></div><div class="ttdeci">static std::string Brand(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:23</div></div>
 <div class="ttc" id="aclass_instruction_set_html_ae0bcb5cd6b1cb1bef712ea25a9ddb6af"><div class="ttname"><a href="class_instruction_set.html#ae0bcb5cd6b1cb1bef712ea25a9ddb6af">InstructionSet::SSE</a></div><div class="ttdeci">static bool SSE(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:49</div></div>
 <div class="ttc" id="aclass_instruction_set_html_a514d407c7f94aa78674511280677e2ce"><div class="ttname"><a href="class_instruction_set.html#a514d407c7f94aa78674511280677e2ce">InstructionSet::AVX512F</a></div><div class="ttdeci">static bool AVX512F(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:60</div></div>
 <div class="ttc" id="aclass_instruction_set_html_ae6cabcdc4d035d5d6666bb89393b3e54"><div class="ttname"><a href="class_instruction_set.html#ae6cabcdc4d035d5d6666bb89393b3e54">InstructionSet::MMXEXT</a></div><div class="ttdeci">static bool MMXEXT(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:78</div></div>
 <div class="ttc" id="aclass_instruction_set_html_abfa5c39fe217d8e8a20bc25f8fd6ffc5"><div class="ttname"><a href="class_instruction_set.html#abfa5c39fe217d8e8a20bc25f8fd6ffc5">InstructionSet::AVX512CD</a></div><div class="ttdeci">static bool AVX512CD(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:65</div></div>
+<div class="ttc" id="a_commands_8h_html_a775f9ac5ca6e581f07d41b537ea05e96"><div class="ttname"><a href="_commands_8h.html#a775f9ac5ca6e581f07d41b537ea05e96">DeviceHandle</a></div><div class="ttdeci">HANDLE DeviceHandle</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:18</div></div>
 <div class="ttc" id="aclass_instruction_set_html_a5a908e1e813659945ac0cf4b57870ba5"><div class="ttname"><a href="class_instruction_set.html#a5a908e1e813659945ac0cf4b57870ba5">InstructionSet::F16C</a></div><div class="ttdeci">static bool F16C(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:39</div></div>
 <div class="ttc" id="astruct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n_html_a2843fe24e049163c8a8555b2f38c44c6"><div class="ttname"><a href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#a2843fe24e049163c8a8555b2f38c44c6">_RTL_PROCESS_MODULE_INFORMATION::ImageBase</a></div><div class="ttdeci">PVOID ImageBase</div><div class="ttdef"><b>Definition:</b> lm.cpp:13</div></div>
 <div class="ttc" id="astruct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n_html_a49f434bf1792cd7d5242bfbd12d4e7bd"><div class="ttname"><a href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#a49f434bf1792cd7d5242bfbd12d4e7bd">_RTL_PROCESS_MODULE_INFORMATION::FullPathName</a></div><div class="ttdeci">UCHAR FullPathName[256]</div><div class="ttdef"><b>Definition:</b> lm.cpp:20</div></div>
@@ -813,6 +776,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="astruct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s_html_a6de3a347bb8cae48e56e331c235ec9dd"><div class="ttname"><a href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s.html#a6de3a347bb8cae48e56e331c235ec9dd">_RTL_PROCESS_MODULES::Modules</a></div><div class="ttdeci">RTL_PROCESS_MODULE_INFORMATION Modules[1]</div><div class="ttdef"><b>Definition:</b> lm.cpp:26</div></div>
 <div class="ttc" id="aclass_instruction_set_html_ae681b6b7eb1b199d5e4fa55561af54b5"><div class="ttname"><a href="class_instruction_set.html#ae681b6b7eb1b199d5e4fa55561af54b5">InstructionSet::LAHF</a></div><div class="ttdeci">static bool LAHF(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:70</div></div>
 <div class="ttc" id="aclass_instruction_set_html_ad38d291df10ca9d741ba4e4ffecc4234"><div class="ttname"><a href="class_instruction_set.html#ad38d291df10ca9d741ba4e4ffecc4234">InstructionSet::CLFSH</a></div><div class="ttdeci">static bool CLFSH(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:46</div></div>
+<div class="ttc" id="a_commands_8h_html_a32fcce07bee5c71ef4293f7e5aa2cb23"><div class="ttname"><a href="_commands_8h.html#a32fcce07bee5c71ef4293f7e5aa2cb23">HyperDbgDisassembler</a></div><div class="ttdeci">int HyperDbgDisassembler(unsigned char *BufferToDisassemble, UINT64 BaseAddress, UINT64 Size)</div><div class="ttdef"><b>Definition:</b> disassembler.cpp:205</div></div>
 <div class="ttc" id="aclass_instruction_set_html_a3fc845a21acb261e106db3ae2f8d7347"><div class="ttname"><a href="class_instruction_set.html#a3fc845a21acb261e106db3ae2f8d7347">InstructionSet::ABM</a></div><div class="ttdeci">static bool ABM(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:72</div></div>
 <div class="ttc" id="aclass_instruction_set_html_ad2149f90d771639680fff0898bb02f3a"><div class="ttname"><a href="class_instruction_set.html#ad2149f90d771639680fff0898bb02f3a">InstructionSet::SSE2</a></div><div class="ttdeci">static bool SSE2(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:50</div></div>
 <div class="ttc" id="aclass_instruction_set_html_ad064acfb72531f9c17e2ea9f63b77552"><div class="ttname"><a href="class_instruction_set.html#ad064acfb72531f9c17e2ea9f63b77552">InstructionSet::RDSEED</a></div><div class="ttdeci">static bool RDSEED(void)</div><div class="ttdef"><b>Definition:</b> cpu.cpp:61</div></div>

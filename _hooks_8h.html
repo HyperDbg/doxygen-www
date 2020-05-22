@@ -96,6 +96,11 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a2633e7e4b97712c8a9924648d48b63f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hooks_8h.html#a2633e7e4b97712c8a9924648d48b63f6">IS_SYSRET_INSTRUCTION</a>(Code)</td></tr>
+<tr class="memdesc:a2633e7e4b97712c8a9924648d48b63f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">As we have just on sysret in all the Windows, we use the following variable to hold its address this way, we're not force to check for the instruction so we remove the memory access to check for sysret in this case.  <a href="_hooks_8h.html#a2633e7e4b97712c8a9924648d48b63f6">More...</a><br /></td></tr>
+<tr class="separator:a2633e7e4b97712c8a9924648d48b63f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a765571d13192493adf4e7baa5a9e9468"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hooks_8h.html#a765571d13192493adf4e7baa5a9e9468">IS_SYSCALL_INSTRUCTION</a>(Code)</td></tr>
+<tr class="separator:a765571d13192493adf4e7baa5a9e9468"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acde26d24b0ff46215cbd029d8ae87e4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hooks_8h.html#acde26d24b0ff46215cbd029d8ae87e4d">IMAGE_DOS_SIGNATURE</a>&#160;&#160;&#160;0x5A4D</td></tr>
 <tr class="separator:acde26d24b0ff46215cbd029d8ae87e4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d186034e0a154cfc3bcc5ec8e977564"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hooks_8h.html#a9d186034e0a154cfc3bcc5ec8e977564">IMAGE_OS2_SIGNATURE</a>&#160;&#160;&#160;0x454E</td></tr>
@@ -145,7 +150,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ac3286f6481327f96ad3607d476dcccc8"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hooks_8h.html#ac3286f6481327f96ad3607d476dcccc8">SSyscallHookEnableSCE</a> ()</td></tr>
 <tr class="separator:ac3286f6481327f96ad3607d476dcccc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a824193859dd6e7b9efb02f24d695989a"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hooks_8h.html#a824193859dd6e7b9efb02f24d695989a">SyscallHookDisableSCE</a> ()</td></tr>
-<tr class="memdesc:a824193859dd6e7b9efb02f24d695989a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disables the Syscall Enable Bit (SCE) in GUEST_EFER.  <a href="_hooks_8h.html#a824193859dd6e7b9efb02f24d695989a">More...</a><br /></td></tr>
 <tr class="separator:a824193859dd6e7b9efb02f24d695989a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bd073d2009aff70585de69b282a309e"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_hooks_8h.html#a4bd073d2009aff70585de69b282a309e">HiddenHooksTest</a> ()</td></tr>
 <tr class="memdesc:a4bd073d2009aff70585de69b282a309e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make examples for testing hidden hooks.  <a href="_hooks_8h.html#a4bd073d2009aff70585de69b282a309e">More...</a><br /></td></tr>
@@ -256,6 +260,49 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="a765571d13192493adf4e7baa5a9e9468"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a765571d13192493adf4e7baa5a9e9468">&#9670;&nbsp;</a></span>IS_SYSCALL_INSTRUCTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IS_SYSCALL_INSTRUCTION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Code</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    (*((PUINT8)(Code) + 0) == 0x0F &amp;&amp; \</div>
+<div class="line">     *((PUINT8)(Code) + 1) == 0x05)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2633e7e4b97712c8a9924648d48b63f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2633e7e4b97712c8a9924648d48b63f6">&#9670;&nbsp;</a></span>IS_SYSRET_INSTRUCTION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IS_SYSRET_INSTRUCTION</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">Code</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    (*((PUINT8)(Code) + 0) == 0x48 &amp;&amp; \</div>
+<div class="line">     *((PUINT8)(Code) + 1) == 0x0F &amp;&amp; \</div>
+<div class="line">     *((PUINT8)(Code) + 2) == 0x07)</div>
+</div><!-- fragment -->
+<p>As we have just on sysret in all the Windows, we use the following variable to hold its address this way, we're not force to check for the instruction so we remove the memory access to check for sysret in this case. </p>
 
 </div>
 </div>
@@ -433,10 +480,10 @@ Variables</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ad5d815b48e8f4da1ef2eb7a2f18a54e0a38627594543f01525bf40aa8e09607bd"></a>SystemModuleInformation&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ad5d815b48e8f4da1ef2eb7a2f18a54e0a18e658a754e39d6e6c1b653248b8aa78"></a>SystemKernelDebuggerInformation&#160;</td><td class="fielddoc"></td></tr>
 </table>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0a38627594543f01525bf40aa8e09607bd">SystemModuleInformation</a>         = 11,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0a18e658a754e39d6e6c1b653248b8aa78">SystemKernelDebuggerInformation</a> = 35</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;} <a class="code" href="_hooks_8h.html#ae75edb0a85f69b42a96960e023f58c47">SYSTEM_INFORMATION_CLASS</a>,</div>
+<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0a38627594543f01525bf40aa8e09607bd">SystemModuleInformation</a>         = 11,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0a18e658a754e39d6e6c1b653248b8aa78">SystemKernelDebuggerInformation</a> = 35</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;} <a class="code" href="_hooks_8h.html#ae75edb0a85f69b42a96960e023f58c47">SYSTEM_INFORMATION_CLASS</a>,</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -465,7 +512,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//EptPageHook(KeGetCurrentThread(), NULL, NULL, TRUE, TRUE, FALSE);</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//EptPageHook(ExAllocatePoolWithTag, ExAllocatePoolWithTagHook, (PVOID *)&amp;ExAllocatePoolWithTagOrig, FALSE, FALSE, TRUE);</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//EptPageHook(ExAllocatePoolWithTag, AsmGeneralDetourHook, (PVOID *)&amp;ExAllocatePoolWithTagOrig, FALSE, FALSE, TRUE);</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="_ept_8c.html#ad7204b9587c2c5e8d495343df5aeb722">EptPageHook</a>(NtCreateFile, <a class="code" href="_inline_asm_8h.html#a119c789794680db52a415b9516662879">AsmGeneralDetourHook</a>, (PVOID *)&amp;NtCreateFileOrig, FALSE, FALSE, TRUE);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="_ept_8c.html#a390f789679e6e75273ebc14687f5fc07">EptPageHook</a>(NtCreateFile, <a class="code" href="_inline_asm_8h.html#a119c789794680db52a415b9516662879">AsmGeneralDetourHook</a>, FALSE, FALSE, TRUE);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// Unhook Tests</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//HvPerformPageUnHookSinglePage(ExAllocatePoolWithTag);</span></div>
@@ -507,23 +554,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Disables the Syscall Enable Bit (SCE) in GUEST_EFER. </p>
-<dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="union___e_f_e_r___m_s_r.html">EFER_MSR</a> MsrValue;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// Set the GUEST EFER to use this value as the EFER</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    __vmx_vmread(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a40a933b00c86aa88cf0cd13aa485d885">GUEST_EFER</a>, &amp;MsrValue);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    MsrValue.<a class="code" href="union___e_f_e_r___m_s_r.html#acde2c516433960acb359f89b258f7d9e">SyscallEnable</a> = FALSE;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// Set the GUEST EFER to use this value as the EFER</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a40a933b00c86aa88cf0cd13aa485d885">GUEST_EFER</a>, MsrValue.<a class="code" href="union___e_f_e_r___m_s_r.html#ae858bdb305c414fd2e7f5bdc613c2fd9">Flags</a>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-</div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
@@ -724,15 +754,11 @@ Variables</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="a_hooks_8h_html_ad5d815b48e8f4da1ef2eb7a2f18a54e0a38627594543f01525bf40aa8e09607bd"><div class="ttname"><a href="_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0a38627594543f01525bf40aa8e09607bd">SystemModuleInformation</a></div><div class="ttdeci">@ SystemModuleInformation</div><div class="ttdef"><b>Definition:</b> Hooks.h:75</div></div>
-<div class="ttc" id="aunion___e_f_e_r___m_s_r_html_acde2c516433960acb359f89b258f7d9e"><div class="ttname"><a href="union___e_f_e_r___m_s_r.html#acde2c516433960acb359f89b258f7d9e">_EFER_MSR::SyscallEnable</a></div><div class="ttdeci">UINT64 SyscallEnable</div><div class="ttdef"><b>Definition:</b> Msr.h:65</div></div>
+<div class="ttc" id="a_hooks_8h_html_ad5d815b48e8f4da1ef2eb7a2f18a54e0a38627594543f01525bf40aa8e09607bd"><div class="ttname"><a href="_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0a38627594543f01525bf40aa8e09607bd">SystemModuleInformation</a></div><div class="ttdeci">@ SystemModuleInformation</div><div class="ttdef"><b>Definition:</b> Hooks.h:92</div></div>
 <div class="ttc" id="a_hooks_8h_html_ae75edb0a85f69b42a96960e023f58c47"><div class="ttname"><a href="_hooks_8h.html#ae75edb0a85f69b42a96960e023f58c47">SYSTEM_INFORMATION_CLASS</a></div><div class="ttdeci">enum _SYSTEM_INFORMATION_CLASS SYSTEM_INFORMATION_CLASS</div></div>
-<div class="ttc" id="aunion___e_f_e_r___m_s_r_html"><div class="ttname"><a href="union___e_f_e_r___m_s_r.html">_EFER_MSR</a></div><div class="ttdoc">EFER MSR Structure.</div><div class="ttdef"><b>Definition:</b> Msr.h:61</div></div>
-<div class="ttc" id="a_ept_8c_html_ad7204b9587c2c5e8d495343df5aeb722"><div class="ttname"><a href="_ept_8c.html#ad7204b9587c2c5e8d495343df5aeb722">EptPageHook</a></div><div class="ttdeci">BOOLEAN EptPageHook(PVOID TargetAddress, PVOID HookFunction, PVOID *OrigFunction, BOOLEAN SetHookForRead, BOOLEAN SetHookForWrite, BOOLEAN SetHookForExec)</div><div class="ttdoc">This function allocates a buffer in VMX Non Root Mode and then invokes a VMCALL to set the hook.</div><div class="ttdef"><b>Definition:</b> Ept.c:1175</div></div>
-<div class="ttc" id="a_vmx_8h_html_a7ff71507e63e5659d2fc6db8b260d9e5a40a933b00c86aa88cf0cd13aa485d885"><div class="ttname"><a href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a40a933b00c86aa88cf0cd13aa485d885">GUEST_EFER</a></div><div class="ttdeci">@ GUEST_EFER</div><div class="ttdef"><b>Definition:</b> Vmx.h:226</div></div>
-<div class="ttc" id="aunion___e_f_e_r___m_s_r_html_ae858bdb305c414fd2e7f5bdc613c2fd9"><div class="ttname"><a href="union___e_f_e_r___m_s_r.html#ae858bdb305c414fd2e7f5bdc613c2fd9">_EFER_MSR::Flags</a></div><div class="ttdeci">UINT64 Flags</div><div class="ttdef"><b>Definition:</b> Msr.h:73</div></div>
+<div class="ttc" id="a_ept_8c_html_a390f789679e6e75273ebc14687f5fc07"><div class="ttname"><a href="_ept_8c.html#a390f789679e6e75273ebc14687f5fc07">EptPageHook</a></div><div class="ttdeci">BOOLEAN EptPageHook(PVOID TargetAddress, PVOID HookFunction, BOOLEAN SetHookForRead, BOOLEAN SetHookForWrite, BOOLEAN SetHookForExec)</div><div class="ttdoc">This function allocates a buffer in VMX Non Root Mode and then invokes a VMCALL to set the hook.</div><div class="ttdef"><b>Definition:</b> Ept.c:1209</div></div>
 <div class="ttc" id="a_inline_asm_8h_html_a119c789794680db52a415b9516662879"><div class="ttname"><a href="_inline_asm_8h.html#a119c789794680db52a415b9516662879">AsmGeneralDetourHook</a></div><div class="ttdeci">void AsmGeneralDetourHook()</div></div>
-<div class="ttc" id="a_hooks_8h_html_ad5d815b48e8f4da1ef2eb7a2f18a54e0a18e658a754e39d6e6c1b653248b8aa78"><div class="ttname"><a href="_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0a18e658a754e39d6e6c1b653248b8aa78">SystemKernelDebuggerInformation</a></div><div class="ttdeci">@ SystemKernelDebuggerInformation</div><div class="ttdef"><b>Definition:</b> Hooks.h:76</div></div>
+<div class="ttc" id="a_hooks_8h_html_ad5d815b48e8f4da1ef2eb7a2f18a54e0a18e658a754e39d6e6c1b653248b8aa78"><div class="ttname"><a href="_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0a18e658a754e39d6e6c1b653248b8aa78">SystemKernelDebuggerInformation</a></div><div class="ttdeci">@ SystemKernelDebuggerInformation</div><div class="ttdef"><b>Definition:</b> Hooks.h:93</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

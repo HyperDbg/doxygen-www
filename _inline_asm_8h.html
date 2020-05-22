@@ -85,8 +85,8 @@ Functions</h2></td></tr>
 <tr class="separator:a8b1f38e7fd8cc7264458e6eee83c0b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fd87b88c03b3c10883f0ad70239bf6c"><td class="memItemLeft" align="right" valign="top">NTSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a> (unsigned long long VmcallNumber, unsigned long long OptionalParam1, unsigned long long OptionalParam2, long long OptionalParam3)</td></tr>
 <tr class="separator:a0fd87b88c03b3c10883f0ad70239bf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97ce181c6a234ba0bd6d47ecff5de665"><td class="memItemLeft" align="right" valign="top">UINT64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a97ce181c6a234ba0bd6d47ecff5de665">AsmHypervVmcall</a> (unsigned long long HypercallInputValue, unsigned long long InputParamGPA, unsigned long long OutputParamGPA)</td></tr>
-<tr class="separator:a97ce181c6a234ba0bd6d47ecff5de665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0efd4a5ade1be8268d0f53eb0aae26e"><td class="memItemLeft" align="right" valign="top">UINT64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#ae0efd4a5ade1be8268d0f53eb0aae26e">AsmHypervVmcall</a> (unsigned long long HypercallInputValue, unsigned long long InputParamGPA, unsigned long long OutputParamGPA, unsigned long long Optional4)</td></tr>
+<tr class="separator:ae0efd4a5ade1be8268d0f53eb0aae26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aaa8ea80b125a1df12754b26b9b3ba0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a2aaa8ea80b125a1df12754b26b9b3ba0">AsmVmxSaveState</a> ()</td></tr>
 <tr class="separator:a2aaa8ea80b125a1df12754b26b9b3ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99ddf21c2beb923fc68f01d200140782"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a99ddf21c2beb923fc68f01d200140782">AsmVmxRestoreState</a> ()</td></tr>
@@ -447,8 +447,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a97ce181c6a234ba0bd6d47ecff5de665"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97ce181c6a234ba0bd6d47ecff5de665">&#9670;&nbsp;</a></span>AsmHypervVmcall()</h2>
+<a id="ae0efd4a5ade1be8268d0f53eb0aae26e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0efd4a5ade1be8268d0f53eb0aae26e">&#9670;&nbsp;</a></span>AsmHypervVmcall()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -472,7 +472,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned long long&#160;</td>
-          <td class="paramname"><em>OutputParamGPA</em>&#160;</td>
+          <td class="paramname"><em>OutputParamGPA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long long&#160;</td>
+          <td class="paramname"><em>Optional4</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

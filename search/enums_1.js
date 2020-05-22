@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pool_5fallocation_5fintention_2277',['POOL_ALLOCATION_INTENTION',['../_pool_manager_8h.html#ac9e1b58ef1b236c646eb5ca0d4205f46',1,'PoolManager.h']]]
+  ['hypercall_5fcode_2609',['HYPERCALL_CODE',['../_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8',1,'Vmx.h']]]
 ];
