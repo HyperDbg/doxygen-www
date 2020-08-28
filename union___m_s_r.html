@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('union___m_s_r.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,7 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -76,21 +96,21 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a022253c1e75244f4de94034ded23f13a"><td class="memItemLeft" >struct {</td></tr>
-<tr class="memitem:a761aafe622b4fbd6fc34f46cc5e06897"><td class="memItemLeft" >&#160;&#160;&#160;ULONG&#160;&#160;&#160;<a class="el" href="union___m_s_r.html#a6fb09f6d07be060a585b8951fe951326">Low</a></td></tr>
-<tr class="separator:a761aafe622b4fbd6fc34f46cc5e06897"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f33de068bcf6946cebad6c7ff843fad"><td class="memItemLeft" >&#160;&#160;&#160;ULONG&#160;&#160;&#160;<a class="el" href="union___m_s_r.html#ab6b0809156e9b66feae0ff03502a79d8">High</a></td></tr>
-<tr class="separator:a8f33de068bcf6946cebad6c7ff843fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a022253c1e75244f4de94034ded23f13a"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a022253c1e75244f4de94034ded23f13a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d897a5b32d288939f3db36e843e0d62"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:a21d1af79d334c282b3e2a2bc21e0b0aa"><td class="memItemLeft" >&#160;&#160;&#160;ULONG&#160;&#160;&#160;<a class="el" href="union___m_s_r.html#a6fb09f6d07be060a585b8951fe951326">Low</a></td></tr>
+<tr class="separator:a21d1af79d334c282b3e2a2bc21e0b0aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81d48efdd61c5f8edf3f311f0b57adb"><td class="memItemLeft" >&#160;&#160;&#160;ULONG&#160;&#160;&#160;<a class="el" href="union___m_s_r.html#ab6b0809156e9b66feae0ff03502a79d8">High</a></td></tr>
+<tr class="separator:ae81d48efdd61c5f8edf3f311f0b57adb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d897a5b32d288939f3db36e843e0d62"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a1d897a5b32d288939f3db36e843e0d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50e1f4ddd21d90ecc939e980afa086ff"><td class="memItemLeft" align="right" valign="top">ULONG64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union___m_s_r.html#a50e1f4ddd21d90ecc939e980afa086ff">Content</a></td></tr>
 <tr class="separator:a50e1f4ddd21d90ecc939e980afa086ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>General MSR Structure. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a022253c1e75244f4de94034ded23f13a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a022253c1e75244f4de94034ded23f13a">&#9670;&nbsp;</a></span>@73</h2>
+<a id="a1d897a5b32d288939f3db36e843e0d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d897a5b32d288939f3db36e843e0d62">&#9670;&nbsp;</a></span>@88</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,11 +169,15 @@ Public Attributes</h2></td></tr>
 <li>hyperdbg/hprdbghv/<a class="el" href="_msr_8h_source.html">Msr.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="union___m_s_r.html">_MSR</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

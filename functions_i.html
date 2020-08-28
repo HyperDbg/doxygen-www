@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions_i.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -70,11 +90,8 @@ $(function() {
 <li>Ia32eModeEnable
 : <a class="el" href="union___e_f_e_r___m_s_r.html#acdeced4e5a1e401fc388fc48902e470f">_EFER_MSR</a>
 </li>
-<li>ID
-: <a class="el" href="union___r_f_l_a_g_s.html#a34749f8f03db68fc261f7d63b07d4f89">_RFLAGS</a>
-</li>
-<li>IF
-: <a class="el" href="union___r_f_l_a_g_s.html#a5595d63df934b7925ef4324d14ae10e0">_RFLAGS</a>
+<li>IdentificationFlag
+: <a class="el" href="union___r_f_l_a_g_s.html#a1e1f327879024f043325718f350c49af">_RFLAGS</a>
 </li>
 <li>Ignored1
 : <a class="el" href="struct___l_a_r_g_e___p_a_g_e___d_i_r_e_c_t_o_r_y___e_n_t_r_y.html#a8ec71c774e38ccb2a51bfd51c2a4158d">_LARGE_PAGE_DIRECTORY_ENTRY</a>
@@ -110,45 +127,25 @@ $(function() {
 <li>IncrementRip
 : <a class="el" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a95be62d62b8c4a2e9bd6bf75a0ba4cd1">_VIRTUAL_MACHINE_STATE</a>
 </li>
+<li>InInstructionExecutionEventsHead
+: <a class="el" href="struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#a9a1e3ab8a409fe838080b2023776d4c6">_DEBUGGER_CORE_EVENTS</a>
+</li>
 <li>InitOrderIndex
 : <a class="el" href="struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#a5e752f90f2175a9527057023ef06f13b">_RTL_PROCESS_MODULE_INFORMATION</a>
 , <a class="el" href="struct___s_y_s_t_e_m___m_o_d_u_l_e___e_n_t_r_y.html#ad6bb237a175cc47e30f5ad8a67180074">_SYSTEM_MODULE_ENTRY</a>
+</li>
+<li>InProgressFlags
+: <a class="el" href="struct___k_a_p_c___s_t_a_t_e.html#a3d58970408db52240f2e7674ad2ef2c3">_KAPC_STATE</a>
 </li>
 <li>InstructionLength
 : <a class="el" href="struct___e_v_e_n_t___i_n_f_o_r_m_a_t_i_o_n.html#aa3e21ac18cb6990c150a8a6acf183f8b">_EVENT_INFORMATION</a>
 </li>
 <li>Intention
 : <a class="el" href="struct___p_o_o_l___t_a_b_l_e.html#a58576ea671ade253325e79823d0343b9">_POOL_TABLE</a>
+, <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#adbc30469639105512ece26714c817eb8">_REQUEST_NEW_ALLOCATION</a>
 </li>
-<li>Intention0
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#a4c4efc131aed7f22de02dc42ba482697">_REQUEST_NEW_ALLOCATION</a>
-</li>
-<li>Intention1
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#a7ca661bcdc2a6f0411048f9086cc7a36">_REQUEST_NEW_ALLOCATION</a>
-</li>
-<li>Intention2
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#a2aa28cf8c51a6329da05707b29251d68">_REQUEST_NEW_ALLOCATION</a>
-</li>
-<li>Intention3
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#a5e1682d06cd60d869b942724a91c8343">_REQUEST_NEW_ALLOCATION</a>
-</li>
-<li>Intention4
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#a41f24603855be6f6a43f8f865cdd4329">_REQUEST_NEW_ALLOCATION</a>
-</li>
-<li>Intention5
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#a18a94fcd3ba77391fff80457a2049319">_REQUEST_NEW_ALLOCATION</a>
-</li>
-<li>Intention6
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#afd0dcb959a1b3318c9d36ebc1b4a4b7e">_REQUEST_NEW_ALLOCATION</a>
-</li>
-<li>Intention7
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#a2d8da42f8c8c59678d14b96590f451ab">_REQUEST_NEW_ALLOCATION</a>
-</li>
-<li>Intention8
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#a33976fad44167424e2008cdd8e6dcedb">_REQUEST_NEW_ALLOCATION</a>
-</li>
-<li>Intention9
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#aeecea8b7364b7e43d7cb8071ff313e58">_REQUEST_NEW_ALLOCATION</a>
+<li>InterruptEnableFlag
+: <a class="el" href="union___r_f_l_a_g_s.html#a51b2f919a111de5923fc96637804c69c">_RFLAGS</a>
 </li>
 <li>InterruptInfo
 : <a class="el" href="struct___e_v_e_n_t___i_n_f_o_r_m_a_t_i_o_n.html#a003672e4844f2d95b0eb7cb3fb28e0df">_EVENT_INFORMATION</a>
@@ -186,14 +183,29 @@ $(function() {
 <li>InvvpidSingleContextRetainGlobals
 : <a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a36e385dacc7fc7a4ec87be4e7adf5f13">_IA32_VMX_EPT_VPID_CAP_REGISTER</a>
 </li>
-<li>IOPL
-: <a class="el" href="union___r_f_l_a_g_s.html#ab31372568717ae6e787e6436b960ca63">_RFLAGS</a>
+<li>IoBitmapPhysicalAddressA
+: <a class="el" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a6fd103be7de174b060bd46ea46a35e89">_VIRTUAL_MACHINE_STATE</a>
+</li>
+<li>IoBitmapPhysicalAddressB
+: <a class="el" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ad49c33f9ba391ac9625e4ccbf1bf2dbf">_VIRTUAL_MACHINE_STATE</a>
+</li>
+<li>IoBitmapVirtualAddressA
+: <a class="el" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#adc08fd36ed7c5088b430d9d46de38772">_VIRTUAL_MACHINE_STATE</a>
+</li>
+<li>IoBitmapVirtualAddressB
+: <a class="el" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a42bb99b3abac8271d5f430862b86fa12">_VIRTUAL_MACHINE_STATE</a>
+</li>
+<li>IoPrivilegeLevel
+: <a class="el" href="union___r_f_l_a_g_s.html#a0bdba41d61847f1f26d335d5f9dea24a">_RFLAGS</a>
 </li>
 <li>IsBusy
 : <a class="el" href="struct___p_o_o_l___t_a_b_l_e.html#a510c537bc6dda624451ebfca442502a3">_POOL_TABLE</a>
 </li>
 <li>IsExecutionHook
 : <a class="el" href="struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#a40f5606fe57295d12c430ce08421e544">_EPT_HOOKED_PAGE_DETAIL</a>
+</li>
+<li>IsHiddenBreakpoint
+: <a class="el" href="struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#a97690afae33315665d9d82ed19b7725c">_EPT_HOOKED_PAGE_DETAIL</a>
 </li>
 <li>IsNested
 : <a class="el" href="union___h_y_p_e_r_c_a_l_l___i_n_p_u_t___v_a_l_u_e.html#aac27abd7c4f3ce76bfbc4cdbfb100a87">_HYPERCALL_INPUT_VALUE</a>
@@ -206,11 +218,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

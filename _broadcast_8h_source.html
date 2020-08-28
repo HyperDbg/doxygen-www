@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_broadcast_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_19054a674c4bd5cb8fceb6542228579c.html">hprdbghv</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Broadcast.h</div>  </div>
@@ -71,29 +87,106 @@ $(function() {
 <div class="contents">
 <a href="_broadcast_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;ntddk.h&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//                  Functions                   //</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;VOID</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<a class="code" href="_broadcast_8h.html#a6542fce95e13cc18dc93e5597ca79a4e">BroadcastDpcEnableEferSyscallEvents</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;VOID</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="_broadcast_8h.html#a8640db5f6e747bec4a4b8b2cb15abf9f">BroadcastDpcDisableEferSyscallEvents</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//                  Functions                   //</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;VOID</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<a class="code" href="_broadcast_8h.html#a6542fce95e13cc18dc93e5597ca79a4e">BroadcastDpcEnableEferSyscallEvents</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;VOID</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<a class="code" href="_broadcast_8h.html#a8640db5f6e747bec4a4b8b2cb15abf9f">BroadcastDpcDisableEferSyscallEvents</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;VOID</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<a class="code" href="_broadcast_8h.html#a9f6e06bcc61cdcd45562fc29333f0fa8">BroadcastDpcWriteMsrToAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;VOID</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<a class="code" href="_broadcast_8h.html#a1b65d08fbffac982793a57e6b61492a4">BroadcastDpcReadMsrToAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;VOID</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<a class="code" href="_broadcast_8h.html#a1b65d08fbffac982793a57e6b61492a4">BroadcastDpcReadMsrToAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;VOID</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<a class="code" href="_broadcast_8h.html#aec6343be27a1a2b57508947bccd5a0d2">BroadcastDpcChangeMsrBitmapReadOnAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;VOID</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<a class="code" href="_broadcast_8h.html#a8e8498f8fd7f9a6b2b7a51d62bf702f9">BroadcastDpcResetMsrBitmapReadOnAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;VOID</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="_broadcast_8h.html#a7189412f355373751cb81f58dc7eaf30">BroadcastDpcChangeMsrBitmapWriteOnAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;VOID</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<a class="code" href="_broadcast_8h.html#a834ac9534e091ad4d70bb5c2aad03040">BroadcastDpcResetMsrBitmapWriteOnAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;VOID</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<a class="code" href="_broadcast_8h.html#aaaa8e1c5b9a0ecd027a73d32e13e07ce">BroadcastDpcEnableRdtscExitingAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;VOID</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="_broadcast_8h.html#a122415a9d671ed41d4900a47f0bd169e">BroadcastDpcDisableRdtscExitingAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;VOID</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="_broadcast_8h.html#aea4660869a400325cfeaf0bb5199e183">BroadcastDpcEnableRdpmcExitingAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;VOID</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<a class="code" href="_broadcast_8h.html#aee7675a736dafd7ee046f7878c925638">BroadcastDpcDisableRdpmcExitingAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;VOID</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<a class="code" href="_broadcast_8h.html#aca5a6a10ee5caa9f9b2e785fc67956d9">BroadcastDpcSetExceptionBitmapOnAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;VOID</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<a class="code" href="_broadcast_8h.html#ac2d4601812f6837fa04b3045ad917ba1">BroadcastDpcResetExceptionBitmapOnAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;VOID</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<a class="code" href="_broadcast_8h.html#a6304745322229adac9da0c692d2d7a32">BroadcastDpcEnableMovDebigRegisterExitingAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;VOID</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<a class="code" href="_broadcast_8h.html#a13f159df30d749d87bc76e89480f94b7">BroadcastDpcDisableMovDebigRegisterExitingAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;VOID</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<a class="code" href="_broadcast_8h.html#af449e1fd8433ace815e9db5111f5aa8f">BroadcastDpcSetEnableExternalInterruptExitingOnAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;VOID</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<a class="code" href="_broadcast_8h.html#a3da395d1b79324b750a1e53579e53211">BroadcastDpcSetDisableExternalInterruptExitingOnAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;VOID</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<a class="code" href="_broadcast_8h.html#aa30e41575edc4f972093f925664fc982">BroadcastDpcChangeIoBitmapOnAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;VOID</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<a class="code" href="_broadcast_8h.html#a5091d0d17c3fa3f0815fa5da40fb7596">BroadcastDpcResetIoBitmapOnAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;VOID</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<a class="code" href="_broadcast_8h.html#aea304823c5804bdcf52bb64401240b9d">BroadcastDpcEnableBreakpointOnExceptionBitmapOnAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;VOID</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<a class="code" href="_broadcast_8h.html#acb800740494c6d6ddef09e230f22f4f9">BroadcastDpcDisableBreakpointOnExceptionBitmapOnAllCores</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="a_broadcast_8h_html_a8640db5f6e747bec4a4b8b2cb15abf9f"><div class="ttname"><a href="_broadcast_8h.html#a8640db5f6e747bec4a4b8b2cb15abf9f">BroadcastDpcDisableEferSyscallEvents</a></div><div class="ttdeci">VOID BroadcastDpcDisableEferSyscallEvents(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Broadcast syscall unhook to all cores.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:49</div></div>
-<div class="ttc" id="a_broadcast_8h_html_a9f6e06bcc61cdcd45562fc29333f0fa8"><div class="ttname"><a href="_broadcast_8h.html#a9f6e06bcc61cdcd45562fc29333f0fa8">BroadcastDpcWriteMsrToAllCores</a></div><div class="ttdeci">VOID BroadcastDpcWriteMsrToAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Broadcast msr write.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:73</div></div>
-<div class="ttc" id="a_broadcast_8h_html_a1b65d08fbffac982793a57e6b61492a4"><div class="ttname"><a href="_broadcast_8h.html#a1b65d08fbffac982793a57e6b61492a4">BroadcastDpcReadMsrToAllCores</a></div><div class="ttdeci">VOID BroadcastDpcReadMsrToAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Broadcast msr read.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:101</div></div>
-<div class="ttc" id="a_broadcast_8h_html_a6542fce95e13cc18dc93e5597ca79a4e"><div class="ttname"><a href="_broadcast_8h.html#a6542fce95e13cc18dc93e5597ca79a4e">BroadcastDpcEnableEferSyscallEvents</a></div><div class="ttdeci">VOID BroadcastDpcEnableEferSyscallEvents(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Broadcast syscall hook to all cores.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:25</div></div>
+</div><!-- doc-content -->
+<div class="ttc" id="a_broadcast_8h_html_a6304745322229adac9da0c692d2d7a32"><div class="ttname"><a href="_broadcast_8h.html#a6304745322229adac9da0c692d2d7a32">BroadcastDpcEnableMovDebigRegisterExitingAllCores</a></div><div class="ttdeci">VOID BroadcastDpcEnableMovDebigRegisterExitingAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enables mov debug registers exitings.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:424</div></div>
+<div class="ttc" id="a_broadcast_8h_html_aea4660869a400325cfeaf0bb5199e183"><div class="ttname"><a href="_broadcast_8h.html#aea4660869a400325cfeaf0bb5199e183">BroadcastDpcEnableRdpmcExitingAllCores</a></div><div class="ttdeci">VOID BroadcastDpcEnableRdpmcExitingAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enables rdpmc exiting in primary cpu-based controls.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:312</div></div>
+<div class="ttc" id="a_broadcast_8h_html_aa30e41575edc4f972093f925664fc982"><div class="ttname"><a href="_broadcast_8h.html#aa30e41575edc4f972093f925664fc982">BroadcastDpcChangeIoBitmapOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcChangeIoBitmapOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Change I/O Bitmaps on all cores.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:536</div></div>
+<div class="ttc" id="a_broadcast_8h_html_acb800740494c6d6ddef09e230f22f4f9"><div class="ttname"><a href="_broadcast_8h.html#acb800740494c6d6ddef09e230f22f4f9">BroadcastDpcDisableBreakpointOnExceptionBitmapOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcDisableBreakpointOnExceptionBitmapOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disable breakpoint exiting on exception bitmaps on all cores.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:620</div></div>
+<div class="ttc" id="a_broadcast_8h_html_a8640db5f6e747bec4a4b8b2cb15abf9f"><div class="ttname"><a href="_broadcast_8h.html#a8640db5f6e747bec4a4b8b2cb15abf9f">BroadcastDpcDisableEferSyscallEvents</a></div><div class="ttdeci">VOID BroadcastDpcDisableEferSyscallEvents(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Broadcast syscall unhook to all cores.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:52</div></div>
+<div class="ttc" id="a_broadcast_8h_html_a8e8498f8fd7f9a6b2b7a51d62bf702f9"><div class="ttname"><a href="_broadcast_8h.html#a8e8498f8fd7f9a6b2b7a51d62bf702f9">BroadcastDpcResetMsrBitmapReadOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcResetMsrBitmapReadOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Reset Msr Bitmaps on all cores (vm-exit on all msrs)</div><div class="ttdef"><b>Definition:</b> Broadcast.c:172</div></div>
+<div class="ttc" id="a_broadcast_8h_html_aee7675a736dafd7ee046f7878c925638"><div class="ttname"><a href="_broadcast_8h.html#aee7675a736dafd7ee046f7878c925638">BroadcastDpcDisableRdpmcExitingAllCores</a></div><div class="ttdeci">VOID BroadcastDpcDisableRdpmcExitingAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disable rdpmc exiting in primary cpu-based controls.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:340</div></div>
+<div class="ttc" id="a_broadcast_8h_html_af449e1fd8433ace815e9db5111f5aa8f"><div class="ttname"><a href="_broadcast_8h.html#af449e1fd8433ace815e9db5111f5aa8f">BroadcastDpcSetEnableExternalInterruptExitingOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcSetEnableExternalInterruptExitingOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enable vm-exit on all cores for external interrupts.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:480</div></div>
+<div class="ttc" id="a_broadcast_8h_html_a9f6e06bcc61cdcd45562fc29333f0fa8"><div class="ttname"><a href="_broadcast_8h.html#a9f6e06bcc61cdcd45562fc29333f0fa8">BroadcastDpcWriteMsrToAllCores</a></div><div class="ttdeci">VOID BroadcastDpcWriteMsrToAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Broadcast Msr Write.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:80</div></div>
+<div class="ttc" id="a_broadcast_8h_html_a5091d0d17c3fa3f0815fa5da40fb7596"><div class="ttname"><a href="_broadcast_8h.html#a5091d0d17c3fa3f0815fa5da40fb7596">BroadcastDpcResetIoBitmapOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcResetIoBitmapOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Reset I/O Bitmaps on all cores.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:564</div></div>
+<div class="ttc" id="a_broadcast_8h_html_a122415a9d671ed41d4900a47f0bd169e"><div class="ttname"><a href="_broadcast_8h.html#a122415a9d671ed41d4900a47f0bd169e">BroadcastDpcDisableRdtscExitingAllCores</a></div><div class="ttdeci">VOID BroadcastDpcDisableRdtscExitingAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disables rdtsc/rdtscp exiting in primary cpu-based controls.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:284</div></div>
+<div class="ttc" id="a_broadcast_8h_html_a7189412f355373751cb81f58dc7eaf30"><div class="ttname"><a href="_broadcast_8h.html#a7189412f355373751cb81f58dc7eaf30">BroadcastDpcChangeMsrBitmapWriteOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcChangeMsrBitmapWriteOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disable Msr Bitmaps on all cores (vm-exit on all msrs)</div><div class="ttdef"><b>Definition:</b> Broadcast.c:200</div></div>
+<div class="ttc" id="a_broadcast_8h_html_aaaa8e1c5b9a0ecd027a73d32e13e07ce"><div class="ttname"><a href="_broadcast_8h.html#aaaa8e1c5b9a0ecd027a73d32e13e07ce">BroadcastDpcEnableRdtscExitingAllCores</a></div><div class="ttdeci">VOID BroadcastDpcEnableRdtscExitingAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enables rdtsc/rdtscp exiting in primary cpu-based controls.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:256</div></div>
+<div class="ttc" id="a_broadcast_8h_html_a1b65d08fbffac982793a57e6b61492a4"><div class="ttname"><a href="_broadcast_8h.html#a1b65d08fbffac982793a57e6b61492a4">BroadcastDpcReadMsrToAllCores</a></div><div class="ttdeci">VOID BroadcastDpcReadMsrToAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Broadcast Msr read.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:112</div></div>
+<div class="ttc" id="a_broadcast_8h_html_aec6343be27a1a2b57508947bccd5a0d2"><div class="ttname"><a href="_broadcast_8h.html#aec6343be27a1a2b57508947bccd5a0d2">BroadcastDpcChangeMsrBitmapReadOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcChangeMsrBitmapReadOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disable Msr Bitmaps on all cores (vm-exit on all msrs)</div><div class="ttdef"><b>Definition:</b> Broadcast.c:144</div></div>
+<div class="ttc" id="a_broadcast_8h_html_aea304823c5804bdcf52bb64401240b9d"><div class="ttname"><a href="_broadcast_8h.html#aea304823c5804bdcf52bb64401240b9d">BroadcastDpcEnableBreakpointOnExceptionBitmapOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcEnableBreakpointOnExceptionBitmapOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enable breakpoint exiting on exception bitmaps on all cores.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:592</div></div>
+<div class="ttc" id="a_broadcast_8h_html_a13f159df30d749d87bc76e89480f94b7"><div class="ttname"><a href="_broadcast_8h.html#a13f159df30d749d87bc76e89480f94b7">BroadcastDpcDisableMovDebigRegisterExitingAllCores</a></div><div class="ttdeci">VOID BroadcastDpcDisableMovDebigRegisterExitingAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disables mov debug registers exitings.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:452</div></div>
+<div class="ttc" id="a_broadcast_8h_html_a3da395d1b79324b750a1e53579e53211"><div class="ttname"><a href="_broadcast_8h.html#a3da395d1b79324b750a1e53579e53211">BroadcastDpcSetDisableExternalInterruptExitingOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcSetDisableExternalInterruptExitingOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disable vm-exit on all cores for external interrupts.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:508</div></div>
+<div class="ttc" id="a_broadcast_8h_html_a6542fce95e13cc18dc93e5597ca79a4e"><div class="ttname"><a href="_broadcast_8h.html#a6542fce95e13cc18dc93e5597ca79a4e">BroadcastDpcEnableEferSyscallEvents</a></div><div class="ttdeci">VOID BroadcastDpcEnableEferSyscallEvents(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Broadcast syscall hook to all cores.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:24</div></div>
+<div class="ttc" id="a_broadcast_8h_html_a834ac9534e091ad4d70bb5c2aad03040"><div class="ttname"><a href="_broadcast_8h.html#a834ac9534e091ad4d70bb5c2aad03040">BroadcastDpcResetMsrBitmapWriteOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcResetMsrBitmapWriteOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Reset Msr Bitmaps on all cores (vm-exit on all msrs)</div><div class="ttdef"><b>Definition:</b> Broadcast.c:228</div></div>
+<div class="ttc" id="a_broadcast_8h_html_ac2d4601812f6837fa04b3045ad917ba1"><div class="ttname"><a href="_broadcast_8h.html#ac2d4601812f6837fa04b3045ad917ba1">BroadcastDpcResetExceptionBitmapOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcResetExceptionBitmapOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Reset Exception Bitmaps on all cores.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:396</div></div>
+<div class="ttc" id="a_broadcast_8h_html_aca5a6a10ee5caa9f9b2e785fc67956d9"><div class="ttname"><a href="_broadcast_8h.html#aca5a6a10ee5caa9f9b2e785fc67956d9">BroadcastDpcSetExceptionBitmapOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcSetExceptionBitmapOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enable Exception Bitmaps on all cores.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:368</div></div>
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_19054a674c4bd5cb8fceb6542228579c.html">hprdbghv</a></li><li class="navelem"><a class="el" href="_broadcast_8h.html">Broadcast.h</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

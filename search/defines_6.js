@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['guest_5fpdpte_3029',['GUEST_PDPTE',['../_vmx_8h.html#aeba8600f3838b6ff28de2251abbc538f',1,'Vmx.h']]],
-  ['guest_5fseg_5far_5fbytes_3030',['GUEST_SEG_AR_BYTES',['../_vmx_8h.html#a6a680bf12265067010e88f3857dcdcf5',1,'Vmx.h']]],
-  ['guest_5fseg_5fbase_3031',['GUEST_SEG_BASE',['../_vmx_8h.html#a3b0eaff09dddf5a4e853b2685ec45125',1,'Vmx.h']]],
-  ['guest_5fseg_5flimit_3032',['GUEST_SEG_LIMIT',['../_vmx_8h.html#ad78bc099309bdc56f8a715c651f8f485',1,'Vmx.h']]],
-  ['guest_5fseg_5fselector_3033',['GUEST_SEG_SELECTOR',['../_vmx_8h.html#a44b861b649999856b48f87ee0abe6a98',1,'Vmx.h']]]
+  ['for_5feach_5flist_5fentry_4131',['FOR_EACH_LIST_ENTRY',['../_ept_8h.html#a81875c6b1c13fe8b8700648510e1608f',1,'Ept.h']]],
+  ['for_5feach_5flist_5fentry_5fend_4132',['FOR_EACH_LIST_ENTRY_END',['../_ept_8h.html#a6f3fb4558d7dd5c09d0fd84d2a846bfa',1,'Ept.h']]]
 ];

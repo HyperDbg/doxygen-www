@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('globals_i.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -91,6 +111,18 @@ $(function() {
 <li>IDT_VECTORING_INFO
 : <a class="el" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a77c3fd597529838a56f50c6e83a50153">Vmx.h</a>
 </li>
+<li>IdtEmulationHandleExceptionAndNmi()
+: <a class="el" href="_idt_emulation_8c.html#abc726f49353f0549307b0a88e164cb78">IdtEmulation.c</a>
+, <a class="el" href="_idt_emulation_8h.html#abc726f49353f0549307b0a88e164cb78">IdtEmulation.h</a>
+</li>
+<li>IdtEmulationHandleExternalInterrupt()
+: <a class="el" href="_idt_emulation_8c.html#ae037acf4f79a575c4914053ac362fb0e">IdtEmulation.c</a>
+, <a class="el" href="_idt_emulation_8h.html#ae037acf4f79a575c4914053ac362fb0e">IdtEmulation.h</a>
+</li>
+<li>IdtEmulationHandleInterruptWindowExiting()
+: <a class="el" href="_idt_emulation_8c.html#a2b67364228e4506e746573c8e5fe6069">IdtEmulation.c</a>
+, <a class="el" href="_idt_emulation_8h.html#a2b67364228e4506e746573c8e5fe6069">IdtEmulation.h</a>
+</li>
 <li>IMAGE_DOS_SIGNATURE
 : <a class="el" href="_hooks_8h.html#acde26d24b0ff46215cbd029d8ae87e4d">Hooks.h</a>
 </li>
@@ -107,21 +139,23 @@ $(function() {
 : <a class="el" href="_hooks_8h.html#a0d59e625e438a014184cfc9e892553c3">Hooks.h</a>
 </li>
 <li>InitializeListHead()
-: <a class="el" href="list_8h.html#a71fd97aa8bac50a2f3a1d98cf680b2f4">list.h</a>
-, <a class="el" href="list_8cpp.html#a71fd97aa8bac50a2f3a1d98cf680b2f4">list.cpp</a>
+: <a class="el" href="list_8cpp.html#a71fd97aa8bac50a2f3a1d98cf680b2f4">list.cpp</a>
+, <a class="el" href="list_8h.html#a71fd97aa8bac50a2f3a1d98cf680b2f4">list.h</a>
 </li>
 <li>InsertHeadList()
 : <a class="el" href="list_8cpp.html#a77df31a5e6a1be59d08b93e9cb028f22">list.cpp</a>
 , <a class="el" href="list_8h.html#a77df31a5e6a1be59d08b93e9cb028f22">list.h</a>
 </li>
 <li>InstallDriver()
-: <a class="el" href="_install_8cpp.html#a9d62d0e7b0daa174b9b164f8f894e55c">Install.cpp</a>
+: <a class="el" href="install_8cpp.html#a0f49e586ae1bfc7594b7d069d7da28b2">install.cpp</a>
 </li>
 <li>InterpretConditionsAndCodes()
-: <a class="el" href="interpreter_8cpp.html#a37a3470e61816e85d86a29b78be24307">interpreter.cpp</a>
+: <a class="el" href="debugger_8cpp.html#a37a3470e61816e85d86a29b78be24307">debugger.cpp</a>
+, <a class="el" href="hprdbgctrl_2_debugger_8h.html#a37a3470e61816e85d86a29b78be24307">debugger.h</a>
 </li>
 <li>InterpretGeneralEventAndActionsFields()
-: <a class="el" href="interpreter_8cpp.html#a908361c9d09ab37456df3fb39e8606a3">interpreter.cpp</a>
+: <a class="el" href="debugger_8cpp.html#a908361c9d09ab37456df3fb39e8606a3">debugger.cpp</a>
+, <a class="el" href="hprdbgctrl_2_debugger_8h.html#a908361c9d09ab37456df3fb39e8606a3">debugger.h</a>
 </li>
 <li>INTERRUPT_INFO
 : <a class="el" href="_events_8h.html#a888484bb66a553aa1df4dc008310a16a">Events.h</a>
@@ -153,6 +187,9 @@ $(function() {
 <li>INTERRUPT_TYPE_SOFTWARE_INTERRUPT
 : <a class="el" href="_events_8h.html#ade7b98ff2f26b359a8d902773a55df03ab88ed9a9fd4bac7ff04d15ed75279ca2">Events.h</a>
 </li>
+<li>INTERRUPTIBILITY_STATE
+: <a class="el" href="_idt_emulation_8h.html#a87e8c540b715ce064daa06903d9b1078">IdtEmulation.h</a>
+</li>
 <li>Invept()
 : <a class="el" href="_invept_8c.html#a2b35a97a56e33084dba34dc4880457a1">Invept.c</a>
 , <a class="el" href="_invept_8h.html#a2b35a97a56e33084dba34dc4880457a1">Invept.h</a>
@@ -173,16 +210,16 @@ $(function() {
 : <a class="el" href="_ept_8h.html#ab005b3504c7524064d3b184f498c6252">Ept.h</a>
 </li>
 <li>InveptAllContexts()
-: <a class="el" href="_invept_8h.html#ac47427701f3746ab9332b3554f034d61">Invept.h</a>
-, <a class="el" href="_invept_8c.html#ac47427701f3746ab9332b3554f034d61">Invept.c</a>
+: <a class="el" href="_invept_8c.html#ac47427701f3746ab9332b3554f034d61">Invept.c</a>
+, <a class="el" href="_invept_8h.html#ac47427701f3746ab9332b3554f034d61">Invept.h</a>
 </li>
 <li>InveptSingleContext()
 : <a class="el" href="_invept_8c.html#ae24553331c853c5e88b4fcc438a1be4f">Invept.c</a>
 , <a class="el" href="_invept_8h.html#a8fe5179ad2a7454945f035497b379431">Invept.h</a>
 </li>
 <li>Invvpid()
-: <a class="el" href="_vpid_8h.html#a88068c0cc95e5a8ed5616853006f1c08">Vpid.h</a>
-, <a class="el" href="_vpid_8c.html#a88068c0cc95e5a8ed5616853006f1c08">Vpid.c</a>
+: <a class="el" href="_vpid_8c.html#a88068c0cc95e5a8ed5616853006f1c08">Vpid.c</a>
+, <a class="el" href="_vpid_8h.html#a88068c0cc95e5a8ed5616853006f1c08">Vpid.h</a>
 </li>
 <li>INVVPID_ALL_CONTEXT
 : <a class="el" href="_vpid_8h.html#af98b2360a75330433021f1c2dfb3fcc6ac2504aab4d0725281b97f180f3916125">Vpid.h</a>
@@ -207,22 +244,69 @@ $(function() {
 , <a class="el" href="_vpid_8h.html#a69a1216287cca8715886738f7f21a247">Vpid.h</a>
 </li>
 <li>InvvpidIndividualAddress()
-: <a class="el" href="_vpid_8c.html#a4a33727cde603ba23f3f5ff7eacdd3aa">Vpid.c</a>
-, <a class="el" href="_vpid_8h.html#a4a33727cde603ba23f3f5ff7eacdd3aa">Vpid.h</a>
+: <a class="el" href="_vpid_8h.html#a4a33727cde603ba23f3f5ff7eacdd3aa">Vpid.h</a>
+, <a class="el" href="_vpid_8c.html#a4a33727cde603ba23f3f5ff7eacdd3aa">Vpid.c</a>
 </li>
 <li>InvvpidSingleContext()
 : <a class="el" href="_vpid_8c.html#aaff47aeffc1d43aecb24cd89ebb94ae2">Vpid.c</a>
 , <a class="el" href="_vpid_8h.html#aaff47aeffc1d43aecb24cd89ebb94ae2">Vpid.h</a>
 </li>
 <li>InvvpidSingleContextRetainingGlobals()
-: <a class="el" href="_vpid_8h.html#a6c072adb0e342693972592ce5dbeeb1a">Vpid.h</a>
-, <a class="el" href="_vpid_8c.html#a6c072adb0e342693972592ce5dbeeb1a">Vpid.c</a>
+: <a class="el" href="_vpid_8c.html#a6c072adb0e342693972592ce5dbeeb1a">Vpid.c</a>
+, <a class="el" href="_vpid_8h.html#a6c072adb0e342693972592ce5dbeeb1a">Vpid.h</a>
 </li>
 <li>IO_BITMAP_A
 : <a class="el" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5ad8057775a7bf2707ac0ac09ec3f980f0">Vmx.h</a>
 </li>
 <li>IO_BITMAP_B
 : <a class="el" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a567f39f6f001616006259f2e014a76de">Vmx.h</a>
+</li>
+<li>IO_EXIT_QUALIFICATION
+: <a class="el" href="_io_handler_8h.html#a12ca3548a80790f566f4c3e91c552f86">IoHandler.h</a>
+</li>
+<li>IoHandleIoVmExits()
+: <a class="el" href="_io_handler_8h.html#a93a525270504d44a6d07ccc291caeb84">IoHandler.h</a>
+, <a class="el" href="_io_handler_8c.html#a93a525270504d44a6d07ccc291caeb84">IoHandler.c</a>
+</li>
+<li>IoHandleIoVmExitsAndDisassemble()
+: <a class="el" href="_io_handler_8h.html#a10fb6e248f30a53925667f767d16c45e">IoHandler.h</a>
+, <a class="el" href="_io_handler_8c.html#a10fb6e248f30a53925667f767d16c45e">IoHandler.c</a>
+</li>
+<li>IoInByte()
+: <a class="el" href="_io_handler_8h.html#ab1a84aef381c3413b06a88b3efd61b4b">IoHandler.h</a>
+</li>
+<li>IoInByteString()
+: <a class="el" href="_io_handler_8h.html#adec66a23f76c015e184281a9ab1ebd05">IoHandler.h</a>
+</li>
+<li>IoInDword()
+: <a class="el" href="_io_handler_8h.html#a0248e22f794dda68513e1c22a31465af">IoHandler.h</a>
+</li>
+<li>IoInDwordString()
+: <a class="el" href="_io_handler_8h.html#a6316393a09c2fa4ccd8eb3c3b9021a27">IoHandler.h</a>
+</li>
+<li>IoInWord()
+: <a class="el" href="_io_handler_8h.html#a98adf05e782594c90ce51f044e0d4585">IoHandler.h</a>
+</li>
+<li>IoInWordString()
+: <a class="el" href="_io_handler_8h.html#afea7584250b80846daf56a092238a5ab">IoHandler.h</a>
+</li>
+<li>IoOutByte()
+: <a class="el" href="_io_handler_8h.html#ac1dc585f15ab936c31c5489c380b039a">IoHandler.h</a>
+</li>
+<li>IoOutByteString()
+: <a class="el" href="_io_handler_8h.html#a72372aa32e964be2c84a01e8519b6e7a">IoHandler.h</a>
+</li>
+<li>IoOutDword()
+: <a class="el" href="_io_handler_8h.html#add1a79d4a9590b35b7789ebdb4188449">IoHandler.h</a>
+</li>
+<li>IoOutDwordString()
+: <a class="el" href="_io_handler_8h.html#afef048d448ef47093841d9975d63ac36">IoHandler.h</a>
+</li>
+<li>IoOutWord()
+: <a class="el" href="_io_handler_8h.html#a32f63695737dbc24b59b8bf8f087688c">IoHandler.h</a>
+</li>
+<li>IoOutWordString()
+: <a class="el" href="_io_handler_8h.html#a9929ccaf862f432e2696b6d04d297c7a">IoHandler.h</a>
 </li>
 <li>IoStatusBlock
 : <a class="el" href="_hooks_8h.html#a24ff958436c219a33ff5b86019874568">Hooks.h</a>
@@ -234,24 +318,35 @@ $(function() {
 : <a class="el" href="_hooks_8h.html#a2633e7e4b97712c8a9924648d48b63f6">Hooks.h</a>
 </li>
 <li>IsHexNotation()
-: <a class="el" href="interpreter_8cpp.html#afb0d259aec5a18e084cb594b15445ad6">interpreter.cpp</a>
+: <a class="el" href="common_8cpp.html#a3be064c5540739d0e4d9d299c8ee28a2">common.cpp</a>
+, <a class="el" href="hprdbgctrl_2_common_8h.html#a3be064c5540739d0e4d9d299c8ee28a2">common.h</a>
 </li>
-<li>IsNewRequestForAllocationRecieved
-: <a class="el" href="_pool_manager_8h.html#a54043d845d386c7d12f5d58d7cf60153">PoolManager.h</a>
+<li>IsItALocalCommand()
+: <a class="el" href="hprdbgctrl_2_debugger_8h.html#a94f635eaae284fb5f675837532429b9b">debugger.h</a>
+, <a class="el" href="interpreter_8cpp.html#a94f635eaae284fb5f675837532429b9b">interpreter.cpp</a>
 </li>
 <li>IsNumber()
-: <a class="el" href="interpreter_8cpp.html#a1b53e95e87b365f534f0232acff47d9a">interpreter.cpp</a>
+: <a class="el" href="common_8cpp.html#a2bb3342908de9c4d306122193ae52645">common.cpp</a>
+, <a class="el" href="hprdbgctrl_2_common_8h.html#a2bb3342908de9c4d306122193ae52645">common.h</a>
 </li>
-<li>IsVmxOffProcessStart
-: <a class="el" href="hprdbgctrl_8cpp.html#a899ef67d5886d7dcd17078046cf07f65">hprdbgctrl.cpp</a>
+<li>IsProcessExist()
+: <a class="el" href="_common_8c.html#aac8ebaacb2e2c9098a2feecf0d4d3ca8">Common.c</a>
+, <a class="el" href="hprdbghv_2_common_8h.html#aac8ebaacb2e2c9098a2feecf0d4d3ca8">Common.h</a>
+</li>
+<li>IsTagExist()
+: <a class="el" href="debugger_8cpp.html#a84b96506b59001c64c4ed35394c7edbf">debugger.cpp</a>
+, <a class="el" href="hprdbgctrl_2_debugger_8h.html#a84b96506b59001c64c4ed35394c7edbf">debugger.h</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

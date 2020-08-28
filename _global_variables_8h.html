@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_global_variables_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_19054a674c4bd5cb8fceb6542228579c.html">hprdbghv</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#var-members">Variables</a>  </div>
@@ -74,11 +90,7 @@ $(function() {
 
 <p>Here we put global variables that are used more or less in all part of our hypervisor (not all of them)  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;ntddk.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="_vmx_8h_source.html">Vmx.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_logging_8h_source.html">Logging.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_pool_manager_8h_source.html">PoolManager.h</a>&quot;</code><br />
-</div>
+
 <p><a href="_global_variables_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -89,9 +101,9 @@ Variables</h2></td></tr>
 <tr class="memitem:a302f00c62e7ad092a9f44a3aa7452d99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_ept_8h.html#adf3f602f02c6b2047daf03d608490a68">EPT_STATE</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_global_variables_8h.html#a302f00c62e7ad092a9f44a3aa7452d99">g_EptState</a></td></tr>
 <tr class="memdesc:a302f00c62e7ad092a9f44a3aa7452d99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the state and variables related to EPT.  <a href="_global_variables_8h.html#a302f00c62e7ad092a9f44a3aa7452d99">More...</a><br /></td></tr>
 <tr class="separator:a302f00c62e7ad092a9f44a3aa7452d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae09bc22ca19a66c479bb55fc5abed79b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_debugger_8h.html#acded51a68775a77f9e30776928cc4c42">PDEBUGGER_CORE_EVENTS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_global_variables_8h.html#ae09bc22ca19a66c479bb55fc5abed79b">g_Events</a></td></tr>
-<tr class="memdesc:ae09bc22ca19a66c479bb55fc5abed79b"><td class="mdescLeft">&#160;</td><td class="mdescRight">events list (for debugger)  <a href="_global_variables_8h.html#ae09bc22ca19a66c479bb55fc5abed79b">More...</a><br /></td></tr>
-<tr class="separator:ae09bc22ca19a66c479bb55fc5abed79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d2638d7b52281063d7e08a62cdfda12"><td class="memItemLeft" align="right" valign="top"><a class="el" href="hprdbghv_2_debugger_8h.html#a61aff702c31f36b2e61c0d1ccdea4a56">DEBUGGER_CORE_EVENTS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_global_variables_8h.html#a2d2638d7b52281063d7e08a62cdfda12">g_Events</a></td></tr>
+<tr class="memdesc:a2d2638d7b52281063d7e08a62cdfda12"><td class="mdescLeft">&#160;</td><td class="mdescRight">events list (for debugger)  <a href="_global_variables_8h.html#a2d2638d7b52281063d7e08a62cdfda12">More...</a><br /></td></tr>
+<tr class="separator:a2d2638d7b52281063d7e08a62cdfda12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6bb7efa110feb40ba04985a35783931"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_logging_8h.html#a266c7e4865c122941e250fdd8dc4e185">NOTIFY_RECORD</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_global_variables_8h.html#ac6bb7efa110feb40ba04985a35783931">g_GlobalNotifyRecord</a></td></tr>
 <tr class="memdesc:ac6bb7efa110feb40ba04985a35783931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save the state of the thread that waits for messages to deliver to user-mode.  <a href="_global_variables_8h.html#ac6bb7efa110feb40ba04985a35783931">More...</a><br /></td></tr>
 <tr class="separator:ac6bb7efa110feb40ba04985a35783931"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,9 +119,15 @@ Variables</h2></td></tr>
 <tr class="memitem:a5a292129d8aa76062c219b83e938d574"><td class="memItemLeft" align="right" valign="top">BOOLEAN&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_global_variables_8h.html#a5a292129d8aa76062c219b83e938d574">g_HandleInUse</a></td></tr>
 <tr class="memdesc:a5a292129d8aa76062c219b83e938d574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines whether the one application gets the handle or not this is used to ensure that only one application can get the handle.  <a href="_global_variables_8h.html#a5a292129d8aa76062c219b83e938d574">More...</a><br /></td></tr>
 <tr class="separator:a5a292129d8aa76062c219b83e938d574"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac40a0a766466fd757dc51585375931f9"><td class="memItemLeft" align="right" valign="top">LIST_ENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_global_variables_8h.html#ac40a0a766466fd757dc51585375931f9">g_HiddenHooksDetourListHead</a></td></tr>
-<tr class="memdesc:ac40a0a766466fd757dc51585375931f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">List header of hidden hooks detour.  <a href="_global_variables_8h.html#ac40a0a766466fd757dc51585375931f9">More...</a><br /></td></tr>
-<tr class="separator:ac40a0a766466fd757dc51585375931f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90f5a18f43567010690d8d7927619fa0"><td class="memItemLeft" align="right" valign="top">LIST_ENTRY&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_global_variables_8h.html#a90f5a18f43567010690d8d7927619fa0">g_EptHook2sDetourListHead</a></td></tr>
+<tr class="memdesc:a90f5a18f43567010690d8d7927619fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">List header of hidden hooks detour.  <a href="_global_variables_8h.html#a90f5a18f43567010690d8d7927619fa0">More...</a><br /></td></tr>
+<tr class="separator:a90f5a18f43567010690d8d7927619fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac816bbc1a82e6e556bfddcb9e55d5e05"><td class="memItemLeft" align="right" valign="top">BOOLEAN&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_global_variables_8h.html#ac816bbc1a82e6e556bfddcb9e55d5e05">g_TransparentMode</a></td></tr>
+<tr class="memdesc:ac816bbc1a82e6e556bfddcb9e55d5e05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows whether the debugger transparent mode is enabled (true) or not (false)  <a href="_global_variables_8h.html#ac816bbc1a82e6e556bfddcb9e55d5e05">More...</a><br /></td></tr>
+<tr class="separator:ac816bbc1a82e6e556bfddcb9e55d5e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02989393b738d00b8f6faa176ab80a13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="hprdbghv_2_transparency_8h.html#ad40b320ebcd75fe45a438c2d5f5201a9">TRANSPARENCY_MEASUREMENTS</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_global_variables_8h.html#a02989393b738d00b8f6faa176ab80a13">g_TransparentModeMeasurements</a></td></tr>
+<tr class="memdesc:a02989393b738d00b8f6faa176ab80a13"><td class="mdescLeft">&#160;</td><td class="mdescRight">holds the measurements from the user-mode and kernel-mode  <a href="_global_variables_8h.html#a02989393b738d00b8f6faa176ab80a13">More...</a><br /></td></tr>
+<tr class="separator:a02989393b738d00b8f6faa176ab80a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Here we put global variables that are used more or less in all part of our hypervisor (not all of them) </p>
@@ -151,6 +169,22 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a90f5a18f43567010690d8d7927619fa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90f5a18f43567010690d8d7927619fa0">&#9670;&nbsp;</a></span>g_EptHook2sDetourListHead</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">LIST_ENTRY g_EptHook2sDetourListHead</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>List header of hidden hooks detour. </p>
+
+</div>
+</div>
 <a id="a302f00c62e7ad092a9f44a3aa7452d99"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a302f00c62e7ad092a9f44a3aa7452d99">&#9670;&nbsp;</a></span>g_EptState</h2>
 
@@ -167,14 +201,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae09bc22ca19a66c479bb55fc5abed79b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae09bc22ca19a66c479bb55fc5abed79b">&#9670;&nbsp;</a></span>g_Events</h2>
+<a id="a2d2638d7b52281063d7e08a62cdfda12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d2638d7b52281063d7e08a62cdfda12">&#9670;&nbsp;</a></span>g_Events</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_debugger_8h.html#acded51a68775a77f9e30776928cc4c42">PDEBUGGER_CORE_EVENTS</a> g_Events</td>
+          <td class="memname"><a class="el" href="hprdbghv_2_debugger_8h.html#a61aff702c31f36b2e61c0d1ccdea4a56">DEBUGGER_CORE_EVENTS</a>* g_Events</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -247,28 +281,48 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac40a0a766466fd757dc51585375931f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac40a0a766466fd757dc51585375931f9">&#9670;&nbsp;</a></span>g_HiddenHooksDetourListHead</h2>
+<a id="ac816bbc1a82e6e556bfddcb9e55d5e05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac816bbc1a82e6e556bfddcb9e55d5e05">&#9670;&nbsp;</a></span>g_TransparentMode</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">LIST_ENTRY g_HiddenHooksDetourListHead</td>
+          <td class="memname">BOOLEAN g_TransparentMode</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>List header of hidden hooks detour. </p>
+<p>Shows whether the debugger transparent mode is enabled (true) or not (false) </p>
+
+</div>
+</div>
+<a id="a02989393b738d00b8f6faa176ab80a13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02989393b738d00b8f6faa176ab80a13">&#9670;&nbsp;</a></span>g_TransparentModeMeasurements</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="hprdbghv_2_transparency_8h.html#ad40b320ebcd75fe45a438c2d5f5201a9">TRANSPARENCY_MEASUREMENTS</a>* g_TransparentModeMeasurements</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>holds the measurements from the user-mode and kernel-mode </p>
 
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_19054a674c4bd5cb8fceb6542228579c.html">hprdbghv</a></li><li class="navelem"><a class="el" href="_global_variables_8h.html">GlobalVariables.h</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

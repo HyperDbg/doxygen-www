@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('globals.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,12 +85,50 @@ $(function() {
 
 <h3><a id="index__5F"></a>- _ -</h3><ul>
 <li>__CPU_INDEX__
-: <a class="el" href="_common_8h.html#a59c1e6afdb17de26c86efb60c7c9f40a">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a59c1e6afdb17de26c86efb60c7c9f40a">Common.h</a>
 </li>
 <li>__declspec()
-: <a class="el" href="_commands_8h.html#a622a443e52246a67c64cd3c0693c1239">Commands.h</a>
-, <a class="el" href="hyperdbg-cli_8cpp.html#a1b566d68e8b98ec06a5f42f9074fbc1a">hyperdbg-cli.cpp</a>
-, <a class="el" href="interpreter_8cpp.html#a4f26be2aa4831f7f6947a38dc341274b">interpreter.cpp</a>
+: <a class="el" href="exports_8h.html#a7552a9dab0508aca5b227d5908911885">exports.h</a>
+, <a class="el" href="hyperdbg-cli_8cpp.html#a7aa57703fd5b8c7ffbe5dc1a4d869440">hyperdbg-cli.cpp</a>
+</li>
+<li>__drv_allocatesMem()
+: <a class="el" href="_ntifs2_8h.html#ad6f7bc1b484a7ee6dec764807dd70967">Ntifs2.h</a>
+</li>
+<li>__inbyte()
+: <a class="el" href="_io_handler_8h.html#ae166a4d02ae0cb617a0377b79dc99032">IoHandler.h</a>
+</li>
+<li>__inbytestring()
+: <a class="el" href="_io_handler_8h.html#a17a66b4d469a21c0c5da7328569470e0">IoHandler.h</a>
+</li>
+<li>__indword()
+: <a class="el" href="_io_handler_8h.html#a044f2eee261dc5f5c26ab00a241ebc6e">IoHandler.h</a>
+</li>
+<li>__indwordstring()
+: <a class="el" href="_io_handler_8h.html#a09da329d88a1d664e7e1c1c46ca02d33">IoHandler.h</a>
+</li>
+<li>__inword()
+: <a class="el" href="_io_handler_8h.html#a034bb67c5edbfaa804e07047f059aaad">IoHandler.h</a>
+</li>
+<li>__inwordstring()
+: <a class="el" href="_io_handler_8h.html#a8a7b11782c65d84b24e5f85c50d8aaba">IoHandler.h</a>
+</li>
+<li>__outbyte()
+: <a class="el" href="_io_handler_8h.html#a34c503f1b94cedd4a39fa0690239460c">IoHandler.h</a>
+</li>
+<li>__outbytestring()
+: <a class="el" href="_io_handler_8h.html#af7593e1ac5453ebf926f24cc3e9bd1dd">IoHandler.h</a>
+</li>
+<li>__outdword()
+: <a class="el" href="_io_handler_8h.html#aae815f429f06d25a84bca2c6b63e8976">IoHandler.h</a>
+</li>
+<li>__outdwordstring()
+: <a class="el" href="_io_handler_8h.html#aaaf822cc3e040c74933e6c17dddbc50c">IoHandler.h</a>
+</li>
+<li>__outword()
+: <a class="el" href="_io_handler_8h.html#a7499a8fb3ec33aa319a71d65fe949165">IoHandler.h</a>
+</li>
+<li>__outwordstring()
+: <a class="el" href="_io_handler_8h.html#a65f7eed25601e9cb0161828f452b6b27">IoHandler.h</a>
 </li>
 <li>_EXCEPTION_VECTORS
 : <a class="el" href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349">Events.h</a>
@@ -88,16 +146,23 @@ $(function() {
 : <a class="el" href="_dpc_8h.html#a9214df2d7ec38687b13bd8eb8eb547fb">Dpc.h</a>
 </li>
 <li>_IRQL_requires_max_()
-: <a class="el" href="_dpc_8h.html#a047bbf9e3d385884d3737dfe7c2bc659">Dpc.h</a>
+: <a class="el" href="_dpc_8h.html#a1d6c94d1a2696f90e6c13797c0c9b75f">Dpc.h</a>
+, <a class="el" href="_ntifs2_8h.html#a0f927b5f7b9f6d6ad426092cc2a84b92">Ntifs2.h</a>
 </li>
 <li>_LOG_TYPE
-: <a class="el" href="_common_8h.html#a050bae65361e276b294f785581894867">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a050bae65361e276b294f785581894867">Common.h</a>
+</li>
+<li>_MEMORY_INFORMATION_CLASS
+: <a class="el" href="_ntifs2_8h.html#a14b86ef4016bb0d15128d87287e17c10">Ntifs2.h</a>
+</li>
+<li>_Out_writes_bytes_()
+: <a class="el" href="_ntifs2_8h.html#a3548b81a054d2089c752f612e25b6cc4">Ntifs2.h</a>
 </li>
 <li>_PML
 : <a class="el" href="_memory_mapper_8h.html#a4e86b7e0a4feec55a27edf6d1f0729b0">MemoryMapper.h</a>
 </li>
 <li>_SEGMENT_REGISTERS
-: <a class="el" href="_common_8h.html#a7439723a15461f5bf1905bb57eb295bf">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a7439723a15461f5bf1905bb57eb295bf">Common.h</a>
 </li>
 <li>_SYSTEM_INFORMATION_CLASS
 : <a class="el" href="_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0">Hooks.h</a>
@@ -107,11 +172,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

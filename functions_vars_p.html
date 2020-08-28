@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions_vars_p.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -86,6 +106,9 @@ $(function() {
 , <a class="el" href="struct___p_a_g_e___t_a_b_l_e___e_n_t_r_y.html#a7365b35bdd8b52cf795ef7b55e63fd33">_PAGE_TABLE_ENTRY</a>
 , <a class="el" href="union___p_e_p_t___p_m_l4.html#a017236092ccb8a9f6a35d66c2e2a11a6">_PEPT_PML4</a>
 </li>
+<li>PageGlobalEnable
+: <a class="el" href="struct___c_o_n_t_r_o_l___r_e_g_i_s_t_e_r__4.html#a5dbd4f05a2838be06076dad7756155e2">_CONTROL_REGISTER_4</a>
+</li>
 <li>PageHookList
 : <a class="el" href="struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#a4450bd220c3bce95443a102aa90fc93b">_EPT_HOOKED_PAGE_DETAIL</a>
 </li>
@@ -107,6 +130,9 @@ $(function() {
 , <a class="el" href="struct___p_a_g_e___m_a_p___l_e_v_e_l__4___e_n_t_r_y.html#af78a9a26a23f33285ddd1322af7fd2bd">_PAGE_MAP_LEVEL_4_ENTRY</a>
 , <a class="el" href="struct___p_a_g_e___t_a_b_l_e___e_n_t_r_y.html#aa4c89e42aa82bde3145ef838e801f9f7">_PAGE_TABLE_ENTRY</a>
 </li>
+<li>PageSizeExtensions
+: <a class="el" href="struct___c_o_n_t_r_o_l___r_e_g_i_s_t_e_r__4.html#ab02d0e841613aa2f93a1d1e6c10ac9d6">_CONTROL_REGISTER_4</a>
+</li>
 <li>PageWalkLength
 : <a class="el" href="union___e_p_t_p.html#ab7c054ade32d4aef6375f1e05e03cbb8">_EPTP</a>
 </li>
@@ -116,6 +142,9 @@ $(function() {
 <li>pArgumentTable
 : <a class="el" href="struct___s_s_d_t_struct.html#a3a31e9e578006fe9590dddd9d0b66be6">_SSDTStruct</a>
 </li>
+<li>ParityFlag
+: <a class="el" href="union___r_f_l_a_g_s.html#a0630268b64be21258448729d450089d8">_RFLAGS</a>
+</li>
 <li>Pat
 : <a class="el" href="struct___l_a_r_g_e___p_a_g_e___d_i_r_e_c_t_o_r_y___e_n_t_r_y.html#adb93642027855ba7b77e011367c1f8d7">_LARGE_PAGE_DIRECTORY_ENTRY</a>
 , <a class="el" href="struct___l_a_r_g_e___p_a_g_e___d_i_r_e_c_t_o_r_y___p_o_i_n_t_e_r___t_a_b_l_e___e_n_t_r_y.html#ab08333913ee1003f198823d1acae2779">_LARGE_PAGE_DIRECTORY_POINTER_TABLE_ENTRY</a>
@@ -123,6 +152,9 @@ $(function() {
 </li>
 <li>Pcid
 : <a class="el" href="struct___c_r3___t_y_p_e.html#a05075f201b0452361378ff3589c8c95d">_CR3_TYPE</a>
+</li>
+<li>PcidEnable
+: <a class="el" href="struct___c_o_n_t_r_o_l___r_e_g_i_s_t_e_r__4.html#a720b29327c372e4bb5c4b4df6049453b">_CONTROL_REGISTER_4</a>
 </li>
 <li>PcidInvalidate
 : <a class="el" href="struct___c_r3___t_y_p_e.html#a35c16733ee45d073e00aa814da528291">_CR3_TYPE</a>
@@ -148,11 +180,17 @@ $(function() {
 <li>PdptLarge
 : <a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#af9d3f77af70059cb1ced289d1acb0722">_PAGE_ENTRY</a>
 </li>
+<li>PendingExternalInterrupts
+: <a class="el" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a7123e9d39156e57b44e62065ebe2fc9d">_VIRTUAL_MACHINE_STATE</a>
+</li>
 <li>PendingIrp
 : <a class="el" href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html#a18c7f6f0eab5d42bc7d19a6d5dcbc595">_NOTIFY_RECORD</a>
 </li>
-<li>PF
-: <a class="el" href="union___r_f_l_a_g_s.html#a32cdb322e10669532c2d11448f88f645">_RFLAGS</a>
+<li>PerformanceMonitoringCounterEnable
+: <a class="el" href="struct___c_o_n_t_r_o_l___r_e_g_i_s_t_e_r__4.html#a5ea4b5c7aeed5cb2d2e786fa646cdd85">_CONTROL_REGISTER_4</a>
+</li>
+<li>PhysicalAddressExtension
+: <a class="el" href="struct___c_o_n_t_r_o_l___r_e_g_i_s_t_e_r__4.html#a5c35d85cf51ebc91d8ba4f9549440a33">_CONTROL_REGISTER_4</a>
 </li>
 <li>PhysicalBaseAddress
 : <a class="el" href="struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#afb78ebcdb15c9df1fc20831d93203019">_EPT_HOOKED_PAGE_DETAIL</a>
@@ -163,6 +201,9 @@ $(function() {
 </li>
 <li>PhysicalEndAddress
 : <a class="el" href="struct___m_t_r_r___r_a_n_g_e___d_e_s_c_r_i_p_t_o_r.html#ae5a917a06209cb15e841dc86ff42423e">_MTRR_RANGE_DESCRIPTOR</a>
+</li>
+<li>PmcInstructionExecutionEventsHead
+: <a class="el" href="struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#a2ca999f89bafcc43b01a6e978eaadf63">_DEBUGGER_CORE_EVENTS</a>
 </li>
 <li>PML1
 : <a class="el" href="struct___v_m_m___e_p_t___d_y_n_a_m_i_c___s_p_l_i_t.html#a2efb099d2c8d2118e284f9d4b30cfc3b">_VMM_EPT_DYNAMIC_SPLIT</a>
@@ -186,7 +227,8 @@ $(function() {
 : <a class="el" href="struct___p_o_o_l___t_a_b_l_e.html#a612693f72b4cecc3dcdb10404ee07fbb">_POOL_TABLE</a>
 </li>
 <li>PortNumber
-: <a class="el" href="struct___v_m_x___e_x_i_t___q_u_a_l_i_f_i_c_a_t_i_o_n___i_o___i_n_s_t_r_u_c_t_i_o_n.html#ab9ca1a7f40f2f41b9396a85e225f4006">_VMX_EXIT_QUALIFICATION_IO_INSTRUCTION</a>
+: <a class="el" href="struct___i_o___e_x_i_t___q_u_a_l_i_f_i_c_a_t_i_o_n.html#a23be91a582c22111592143ac8c6e2a01">_IO_EXIT_QUALIFICATION</a>
+, <a class="el" href="struct___v_m_x___e_x_i_t___q_u_a_l_i_f_i_c_a_t_i_o_n___i_o___i_n_s_t_r_u_c_t_i_o_n.html#ab9ca1a7f40f2f41b9396a85e225f4006">_VMX_EXIT_QUALIFICATION_IO_INSTRUCTION</a>
 </li>
 <li>Present
 : <a class="el" href="struct___l_a_r_g_e___p_a_g_e___d_i_r_e_c_t_o_r_y___e_n_t_r_y.html#a5a1c822d6655657d21191ca6c8650a16">_LARGE_PAGE_DIRECTORY_ENTRY</a>
@@ -194,17 +236,45 @@ $(function() {
 , <a class="el" href="struct___p_a_g_e___d_i_r_e_c_t_o_r_y___e_n_t_r_y.html#a6e431fbe1c062b4a068b744f6b7514a2">_PAGE_DIRECTORY_ENTRY</a>
 , <a class="el" href="struct___p_a_g_e___d_i_r_e_c_t_o_r_y___p_o_i_n_t_e_r___t_a_b_l_e___e_n_t_r_y.html#ad4e97728cdbf79a14e39b351dc9c2f30">_PAGE_DIRECTORY_POINTER_TABLE_ENTRY</a>
 , <a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a55e935edb4e8d1b507b6bde9cc5496a5">_PAGE_ENTRY</a>
+, <a class="el" href="union___p_a_g_e___f_a_u_l_t___e_r_r_o_r___c_o_d_e.html#a40cd0389e3fe77bffe1352f7b36f5f84">_PAGE_FAULT_ERROR_CODE</a>
 , <a class="el" href="struct___p_a_g_e___m_a_p___l_e_v_e_l__4___e_n_t_r_y.html#abc07147c1c9c3e441515e6b5907be67a">_PAGE_MAP_LEVEL_4_ENTRY</a>
 , <a class="el" href="struct___p_a_g_e___t_a_b_l_e___e_n_t_r_y.html#a7d9077cb9eeff177b439086e4eb0441b">_PAGE_TABLE_ENTRY</a>
 </li>
+<li>PreviousBytesOnBreakpointAddresses
+: <a class="el" href="struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#a9a3a0a03e6ce50440efa6185f63a6882">_EPT_HOOKED_PAGE_DETAIL</a>
+</li>
+<li>PreviousTimeStampCounter
+: <a class="el" href="struct___v_m___e_x_i_t___t_r_a_n_s_p_a_r_e_n_c_y.html#aa6ecca4247abc640f3d76311da801849">_VM_EXIT_TRANSPARENCY</a>
+</li>
+<li>Process
+: <a class="el" href="struct___k_a_p_c___s_t_a_t_e.html#ae7e88435e30ff68cc1e30c837416eb2f">_KAPC_STATE</a>
+</li>
+<li>ProcessId
+: <a class="el" href="struct___t_r_a_n_s_p_a_r_e_n_c_y___p_r_o_c_e_s_s.html#a11ae4ac2410b1ba745135ca0f58f6e5e">_TRANSPARENCY_PROCESS</a>
+</li>
+<li>ProcessList
+: <a class="el" href="struct___t_r_a_n_s_p_a_r_e_n_c_y___m_e_a_s_u_r_e_m_e_n_t_s.html#aedc8039a289c47f46159ab2892f8540d">_TRANSPARENCY_MEASUREMENTS</a>
+</li>
+<li>ProcessName
+: <a class="el" href="struct___t_r_a_n_s_p_a_r_e_n_c_y___p_r_o_c_e_s_s.html#aaac701b52a4551affc7e8b6f881879ef">_TRANSPARENCY_PROCESS</a>
+</li>
 <li>ProfileListHead
 : <a class="el" href="struct___n_t___k_p_r_o_c_e_s_s.html#aab2a1923a51bce72dbcfe86e6c46c4ae">_NT_KPROCESS</a>
+</li>
+<li>Protect
+: <a class="el" href="struct___m_e_m_o_r_y___b_a_s_i_c___i_n_f_o_r_m_a_t_i_o_n.html#af745f83b5bcb09b58c6f89bcc4b1a924">_MEMORY_BASIC_INFORMATION</a>
+</li>
+<li>ProtectedModeVirtualInterrupts
+: <a class="el" href="struct___c_o_n_t_r_o_l___r_e_g_i_s_t_e_r__4.html#a31267557e35cc40e9f7953f0e355bf45">_CONTROL_REGISTER_4</a>
 </li>
 <li>ProtectionKey
 : <a class="el" href="struct___l_a_r_g_e___p_a_g_e___d_i_r_e_c_t_o_r_y___e_n_t_r_y.html#ae99f50380b34821ff87ac7406bcb98af">_LARGE_PAGE_DIRECTORY_ENTRY</a>
 , <a class="el" href="struct___l_a_r_g_e___p_a_g_e___d_i_r_e_c_t_o_r_y___p_o_i_n_t_e_r___t_a_b_l_e___e_n_t_r_y.html#a88391f0f38cab1721baf2975f1aa0841">_LARGE_PAGE_DIRECTORY_POINTER_TABLE_ENTRY</a>
 , <a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a568e3fab3b5179c37aa245037921ec26">_PAGE_ENTRY</a>
 , <a class="el" href="struct___p_a_g_e___t_a_b_l_e___e_n_t_r_y.html#a45e16c9556cdd54cfff451f3efcd9544">_PAGE_TABLE_ENTRY</a>
+</li>
+<li>ProtectionKeyEnable
+: <a class="el" href="struct___c_o_n_t_r_o_l___r_e_g_i_s_t_e_r__4.html#ab44966ac1b0ed3dcc74aece5759ac6c5">_CONTROL_REGISTER_4</a>
 </li>
 <li>pServiceTable
 : <a class="el" href="struct___s_s_d_t_struct.html#aca04c2dad47429bc1f981ec3a398e5b2">_SSDTStruct</a>
@@ -217,11 +287,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

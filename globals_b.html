@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('globals_b.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -64,42 +84,133 @@ $(function() {
 <div class="textblock">Here is a list of all file members with links to the files they belong to:</div>
 
 <h3><a id="index_b"></a>- b -</h3><ul>
+<li>BaseAddress
+: <a class="el" href="_ntifs2_8h.html#a1b76fb9a5566053fa6334ecc220de6c6">Ntifs2.h</a>
+</li>
+<li>BITMAP_ENTRY
+: <a class="el" href="hprdbghv_2_common_8h.html#a599110110e78104661fcfd9686057885">Common.h</a>
+</li>
+<li>BITMAP_SHIFT
+: <a class="el" href="hprdbghv_2_common_8h.html#aee4e9629d1c51e53a36c51a7b1820cfe">Common.h</a>
+</li>
+<li>BITS_PER_LONG
+: <a class="el" href="hprdbghv_2_common_8h.html#a2f660aa23a5dbc0f4b8df48b4302b8c3">Common.h</a>
+</li>
+<li>BreakController()
+: <a class="el" href="breakcontrol_8cpp.html#ab7d13a70bade71afa833476d7238a861">breakcontrol.cpp</a>
+, <a class="el" href="hprdbgctrl_2_debugger_8h.html#ab7d13a70bade71afa833476d7238a861">debugger.h</a>
+</li>
 <li>BreakControlNmiCallbackHandler()
 : <a class="el" href="_break_control_8c.html#afdf5d5304422b0191c08edc3b717b10e">BreakControl.c</a>
 </li>
 <li>BreakControlPrepareToHaltTheSystem()
 : <a class="el" href="_break_control_8c.html#a285c04632b814fe0b252fd10d163996d">BreakControl.c</a>
 </li>
+<li>BroadcastDpcChangeIoBitmapOnAllCores()
+: <a class="el" href="_broadcast_8c.html#aa30e41575edc4f972093f925664fc982">Broadcast.c</a>
+, <a class="el" href="_broadcast_8h.html#aa30e41575edc4f972093f925664fc982">Broadcast.h</a>
+</li>
+<li>BroadcastDpcChangeMsrBitmapReadOnAllCores()
+: <a class="el" href="_broadcast_8c.html#aec6343be27a1a2b57508947bccd5a0d2">Broadcast.c</a>
+, <a class="el" href="_broadcast_8h.html#aec6343be27a1a2b57508947bccd5a0d2">Broadcast.h</a>
+</li>
+<li>BroadcastDpcChangeMsrBitmapWriteOnAllCores()
+: <a class="el" href="_broadcast_8c.html#a7189412f355373751cb81f58dc7eaf30">Broadcast.c</a>
+, <a class="el" href="_broadcast_8h.html#a7189412f355373751cb81f58dc7eaf30">Broadcast.h</a>
+</li>
+<li>BroadcastDpcDisableBreakpointOnExceptionBitmapOnAllCores()
+: <a class="el" href="_broadcast_8h.html#acb800740494c6d6ddef09e230f22f4f9">Broadcast.h</a>
+, <a class="el" href="_broadcast_8c.html#acb800740494c6d6ddef09e230f22f4f9">Broadcast.c</a>
+</li>
 <li>BroadcastDpcDisableEferSyscallEvents()
-: <a class="el" href="_broadcast_8h.html#a8640db5f6e747bec4a4b8b2cb15abf9f">Broadcast.h</a>
-, <a class="el" href="_broadcast_8c.html#a8640db5f6e747bec4a4b8b2cb15abf9f">Broadcast.c</a>
+: <a class="el" href="_broadcast_8c.html#a8640db5f6e747bec4a4b8b2cb15abf9f">Broadcast.c</a>
+, <a class="el" href="_broadcast_8h.html#a8640db5f6e747bec4a4b8b2cb15abf9f">Broadcast.h</a>
+</li>
+<li>BroadcastDpcDisableMovDebigRegisterExitingAllCores()
+: <a class="el" href="_broadcast_8c.html#a13f159df30d749d87bc76e89480f94b7">Broadcast.c</a>
+, <a class="el" href="_broadcast_8h.html#a13f159df30d749d87bc76e89480f94b7">Broadcast.h</a>
+</li>
+<li>BroadcastDpcDisableRdpmcExitingAllCores()
+: <a class="el" href="_broadcast_8c.html#aee7675a736dafd7ee046f7878c925638">Broadcast.c</a>
+, <a class="el" href="_broadcast_8h.html#aee7675a736dafd7ee046f7878c925638">Broadcast.h</a>
+</li>
+<li>BroadcastDpcDisableRdtscExitingAllCores()
+: <a class="el" href="_broadcast_8c.html#a122415a9d671ed41d4900a47f0bd169e">Broadcast.c</a>
+, <a class="el" href="_broadcast_8h.html#a122415a9d671ed41d4900a47f0bd169e">Broadcast.h</a>
+</li>
+<li>BroadcastDpcEnableBreakpointOnExceptionBitmapOnAllCores()
+: <a class="el" href="_broadcast_8c.html#aea304823c5804bdcf52bb64401240b9d">Broadcast.c</a>
+, <a class="el" href="_broadcast_8h.html#aea304823c5804bdcf52bb64401240b9d">Broadcast.h</a>
 </li>
 <li>BroadcastDpcEnableEferSyscallEvents()
 : <a class="el" href="_broadcast_8c.html#a6542fce95e13cc18dc93e5597ca79a4e">Broadcast.c</a>
 , <a class="el" href="_broadcast_8h.html#a6542fce95e13cc18dc93e5597ca79a4e">Broadcast.h</a>
 </li>
+<li>BroadcastDpcEnableMovDebigRegisterExitingAllCores()
+: <a class="el" href="_broadcast_8c.html#a6304745322229adac9da0c692d2d7a32">Broadcast.c</a>
+, <a class="el" href="_broadcast_8h.html#a6304745322229adac9da0c692d2d7a32">Broadcast.h</a>
+</li>
+<li>BroadcastDpcEnableRdpmcExitingAllCores()
+: <a class="el" href="_broadcast_8h.html#aea4660869a400325cfeaf0bb5199e183">Broadcast.h</a>
+, <a class="el" href="_broadcast_8c.html#aea4660869a400325cfeaf0bb5199e183">Broadcast.c</a>
+</li>
+<li>BroadcastDpcEnableRdtscExitingAllCores()
+: <a class="el" href="_broadcast_8c.html#aaaa8e1c5b9a0ecd027a73d32e13e07ce">Broadcast.c</a>
+, <a class="el" href="_broadcast_8h.html#aaaa8e1c5b9a0ecd027a73d32e13e07ce">Broadcast.h</a>
+</li>
 <li>BroadcastDpcReadMsrToAllCores()
 : <a class="el" href="_broadcast_8h.html#a1b65d08fbffac982793a57e6b61492a4">Broadcast.h</a>
 , <a class="el" href="_broadcast_8c.html#a1b65d08fbffac982793a57e6b61492a4">Broadcast.c</a>
 </li>
+<li>BroadcastDpcResetExceptionBitmapOnAllCores()
+: <a class="el" href="_broadcast_8c.html#ac2d4601812f6837fa04b3045ad917ba1">Broadcast.c</a>
+, <a class="el" href="_broadcast_8h.html#ac2d4601812f6837fa04b3045ad917ba1">Broadcast.h</a>
+</li>
+<li>BroadcastDpcResetIoBitmapOnAllCores()
+: <a class="el" href="_broadcast_8c.html#a5091d0d17c3fa3f0815fa5da40fb7596">Broadcast.c</a>
+, <a class="el" href="_broadcast_8h.html#a5091d0d17c3fa3f0815fa5da40fb7596">Broadcast.h</a>
+</li>
+<li>BroadcastDpcResetMsrBitmapReadOnAllCores()
+: <a class="el" href="_broadcast_8h.html#a8e8498f8fd7f9a6b2b7a51d62bf702f9">Broadcast.h</a>
+, <a class="el" href="_broadcast_8c.html#a8e8498f8fd7f9a6b2b7a51d62bf702f9">Broadcast.c</a>
+</li>
+<li>BroadcastDpcResetMsrBitmapWriteOnAllCores()
+: <a class="el" href="_broadcast_8h.html#a834ac9534e091ad4d70bb5c2aad03040">Broadcast.h</a>
+, <a class="el" href="_broadcast_8c.html#a834ac9534e091ad4d70bb5c2aad03040">Broadcast.c</a>
+</li>
+<li>BroadcastDpcSetDisableExternalInterruptExitingOnAllCores()
+: <a class="el" href="_broadcast_8h.html#a3da395d1b79324b750a1e53579e53211">Broadcast.h</a>
+, <a class="el" href="_broadcast_8c.html#a3da395d1b79324b750a1e53579e53211">Broadcast.c</a>
+</li>
+<li>BroadcastDpcSetEnableExternalInterruptExitingOnAllCores()
+: <a class="el" href="_broadcast_8c.html#af449e1fd8433ace815e9db5111f5aa8f">Broadcast.c</a>
+, <a class="el" href="_broadcast_8h.html#af449e1fd8433ace815e9db5111f5aa8f">Broadcast.h</a>
+</li>
+<li>BroadcastDpcSetExceptionBitmapOnAllCores()
+: <a class="el" href="_broadcast_8h.html#aca5a6a10ee5caa9f9b2e785fc67956d9">Broadcast.h</a>
+, <a class="el" href="_broadcast_8c.html#aca5a6a10ee5caa9f9b2e785fc67956d9">Broadcast.c</a>
+</li>
 <li>BroadcastDpcWriteMsrToAllCores()
-: <a class="el" href="_broadcast_8c.html#a9f6e06bcc61cdcd45562fc29333f0fa8">Broadcast.c</a>
-, <a class="el" href="_broadcast_8h.html#a9f6e06bcc61cdcd45562fc29333f0fa8">Broadcast.h</a>
+: <a class="el" href="_broadcast_8h.html#a9f6e06bcc61cdcd45562fc29333f0fa8">Broadcast.h</a>
+, <a class="el" href="_broadcast_8c.html#a9f6e06bcc61cdcd45562fc29333f0fa8">Broadcast.c</a>
 </li>
 <li>BroadcastToProcessors()
 : <a class="el" href="_common_8c.html#aad0e61efe6d2e7a0002056daec44511e">Common.c</a>
-, <a class="el" href="_common_8h.html#aad0e61efe6d2e7a0002056daec44511e">Common.h</a>
+, <a class="el" href="hprdbghv_2_common_8h.html#aad0e61efe6d2e7a0002056daec44511e">Common.h</a>
 </li>
 <li>BUFFER_HEADER
 : <a class="el" href="_logging_8h.html#a6b15292822c7b18e74ef05ec21a12fef">Logging.h</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

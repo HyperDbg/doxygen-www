@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_dpc_routines_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,36 +80,73 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_19054a674c4bd5cb8fceb6542228579c.html">hprdbghv</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">DpcRoutines.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a href="_dpc_routines_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;ntddk.h&gt;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;NTSTATUS</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<a class="code" href="_dpc_routines_8h.html#a860d1d5fbe8605d03eda7327935c799e">DpcRoutineRunTaskOnSingleCore</a>(UINT32 CoreNumber, PVOID Routine, PVOID DeferredContext);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;VOID</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<a class="code" href="_dpc_routines_8h.html#a5db83f6e1cbc79c9147fabc0c3b97744">DpcRoutinePerformWriteMsr</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;VOID</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<a class="code" href="_dpc_routines_8h.html#a6b602a352170d025aa12387207214382">DpcRoutinePerformReadMsr</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">//                  Functions                   //</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;NTSTATUS</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<a class="code" href="_dpc_routines_8h.html#a860d1d5fbe8605d03eda7327935c799e">DpcRoutineRunTaskOnSingleCore</a>(UINT32 CoreNumber, PVOID Routine, PVOID DeferredContext);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;VOID</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<a class="code" href="_dpc_routines_8h.html#a5db83f6e1cbc79c9147fabc0c3b97744">DpcRoutinePerformWriteMsr</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;VOID</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<a class="code" href="_dpc_routines_8h.html#a6b602a352170d025aa12387207214382">DpcRoutinePerformReadMsr</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;VOID</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<a class="code" href="_dpc_routines_8h.html#a64193ff039021b05cfee8e048af68c31">DpcRoutinePerformChangeMsrBitmapReadOnSingleCore</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;VOID</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<a class="code" href="_dpc_routines_8h.html#a7b111e2caa07e0259a61102db2ba61af">DpcRoutinePerformChangeMsrBitmapWriteOnSingleCore</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;VOID</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<a class="code" href="_dpc_routines_8h.html#a508772fcbdb9d34fd81501639eb996e1">DpcRoutinePerformEnableRdtscExitingOnSingleCore</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;VOID</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="_dpc_routines_8h.html#a6fe8d23e3fd81eecba6f28a50f454222">DpcRoutinePerformEnableRdpmcExitingOnSingleCore</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;VOID</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<a class="code" href="_dpc_routines_8h.html#ae81da9f18268df6f043f0f715099bdce">DpcRoutinePerformSetExceptionBitmapOnSingleCore</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;VOID</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="_dpc_routines_8h.html#aef7db7dd1e1f564dd5db438db232c4ef">DpcRoutinePerformEnableMovToDebugRegistersExiting</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;VOID</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="_dpc_routines_8h.html#acb4f0c4f4fc5c02f54f30cff5f4c8192">DpcRoutinePerformSetExternalInterruptExitingOnSingleCore</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;VOID</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="_dpc_routines_8h.html#a3aecac4c6c92d962339067855d42795a">DpcRoutinePerformEnableEferSyscallHookOnSingleCore</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;VOID</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="_dpc_routines_8h.html#a4ce952e8ebd61cde6d6dcc118fb77541">DpcRoutinePerformChangeIoBitmapOnSingleCore</a>(KDPC * Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2);</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="a_dpc_routines_8h_html_a860d1d5fbe8605d03eda7327935c799e"><div class="ttname"><a href="_dpc_routines_8h.html#a860d1d5fbe8605d03eda7327935c799e">DpcRoutineRunTaskOnSingleCore</a></div><div class="ttdeci">NTSTATUS DpcRoutineRunTaskOnSingleCore(UINT32 CoreNumber, PVOID Routine, PVOID DeferredContext)</div><div class="ttdoc">This function synchronize the function execution for a single core You should only used it for one co...</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:30</div></div>
-<div class="ttc" id="a_dpc_routines_8h_html_a5db83f6e1cbc79c9147fabc0c3b97744"><div class="ttname"><a href="_dpc_routines_8h.html#a5db83f6e1cbc79c9147fabc0c3b97744">DpcRoutinePerformWriteMsr</a></div><div class="ttdeci">VOID DpcRoutinePerformWriteMsr(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Broadcast msr write.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:118</div></div>
-<div class="ttc" id="a_dpc_routines_8h_html_a6b602a352170d025aa12387207214382"><div class="ttname"><a href="_dpc_routines_8h.html#a6b602a352170d025aa12387207214382">DpcRoutinePerformReadMsr</a></div><div class="ttdeci">VOID DpcRoutinePerformReadMsr(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Broadcast msr read.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:142</div></div>
+</div><!-- doc-content -->
+<div class="ttc" id="a_dpc_routines_8h_html_a860d1d5fbe8605d03eda7327935c799e"><div class="ttname"><a href="_dpc_routines_8h.html#a860d1d5fbe8605d03eda7327935c799e">DpcRoutineRunTaskOnSingleCore</a></div><div class="ttdeci">NTSTATUS DpcRoutineRunTaskOnSingleCore(UINT32 CoreNumber, PVOID Routine, PVOID DeferredContext)</div><div class="ttdoc">This function synchronize the function execution for a single core You should only used it for one co...</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:35</div></div>
+<div class="ttc" id="a_dpc_routines_8h_html_a6fe8d23e3fd81eecba6f28a50f454222"><div class="ttname"><a href="_dpc_routines_8h.html#a6fe8d23e3fd81eecba6f28a50f454222">DpcRoutinePerformEnableRdpmcExitingOnSingleCore</a></div><div class="ttdeci">VOID DpcRoutinePerformEnableRdpmcExitingOnSingleCore(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">set rdpmc exiting</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:255</div></div>
+<div class="ttc" id="a_dpc_routines_8h_html_aef7db7dd1e1f564dd5db438db232c4ef"><div class="ttname"><a href="_dpc_routines_8h.html#aef7db7dd1e1f564dd5db438db232c4ef">DpcRoutinePerformEnableMovToDebugRegistersExiting</a></div><div class="ttdeci">VOID DpcRoutinePerformEnableMovToDebugRegistersExiting(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Set the Mov to Debug Registers Exitings.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:303</div></div>
+<div class="ttc" id="a_dpc_routines_8h_html_a7b111e2caa07e0259a61102db2ba61af"><div class="ttname"><a href="_dpc_routines_8h.html#a7b111e2caa07e0259a61102db2ba61af">DpcRoutinePerformChangeMsrBitmapWriteOnSingleCore</a></div><div class="ttdeci">VOID DpcRoutinePerformChangeMsrBitmapWriteOnSingleCore(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">change msr bitmap write on a single core</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:207</div></div>
+<div class="ttc" id="a_dpc_routines_8h_html_a64193ff039021b05cfee8e048af68c31"><div class="ttname"><a href="_dpc_routines_8h.html#a64193ff039021b05cfee8e048af68c31">DpcRoutinePerformChangeMsrBitmapReadOnSingleCore</a></div><div class="ttdeci">VOID DpcRoutinePerformChangeMsrBitmapReadOnSingleCore(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">change msr bitmap read on a single core</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:183</div></div>
+<div class="ttc" id="a_dpc_routines_8h_html_a5db83f6e1cbc79c9147fabc0c3b97744"><div class="ttname"><a href="_dpc_routines_8h.html#a5db83f6e1cbc79c9147fabc0c3b97744">DpcRoutinePerformWriteMsr</a></div><div class="ttdeci">VOID DpcRoutinePerformWriteMsr(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Broadcast msr write.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:127</div></div>
+<div class="ttc" id="a_dpc_routines_8h_html_a4ce952e8ebd61cde6d6dcc118fb77541"><div class="ttname"><a href="_dpc_routines_8h.html#a4ce952e8ebd61cde6d6dcc118fb77541">DpcRoutinePerformChangeIoBitmapOnSingleCore</a></div><div class="ttdeci">VOID DpcRoutinePerformChangeIoBitmapOnSingleCore(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">change I/O bitmap on a single core</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:375</div></div>
+<div class="ttc" id="a_dpc_routines_8h_html_ae81da9f18268df6f043f0f715099bdce"><div class="ttname"><a href="_dpc_routines_8h.html#ae81da9f18268df6f043f0f715099bdce">DpcRoutinePerformSetExceptionBitmapOnSingleCore</a></div><div class="ttdeci">VOID DpcRoutinePerformSetExceptionBitmapOnSingleCore(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">change exception bitmap on a single core</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:279</div></div>
+<div class="ttc" id="a_dpc_routines_8h_html_a3aecac4c6c92d962339067855d42795a"><div class="ttname"><a href="_dpc_routines_8h.html#a3aecac4c6c92d962339067855d42795a">DpcRoutinePerformEnableEferSyscallHookOnSingleCore</a></div><div class="ttdeci">VOID DpcRoutinePerformEnableEferSyscallHookOnSingleCore(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enable syscall hook EFER on a single core.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:351</div></div>
+<div class="ttc" id="a_dpc_routines_8h_html_acb4f0c4f4fc5c02f54f30cff5f4c8192"><div class="ttname"><a href="_dpc_routines_8h.html#acb4f0c4f4fc5c02f54f30cff5f4c8192">DpcRoutinePerformSetExternalInterruptExitingOnSingleCore</a></div><div class="ttdeci">VOID DpcRoutinePerformSetExternalInterruptExitingOnSingleCore(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enable external interrupt exiting on a single core.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:327</div></div>
+<div class="ttc" id="a_dpc_routines_8h_html_a6b602a352170d025aa12387207214382"><div class="ttname"><a href="_dpc_routines_8h.html#a6b602a352170d025aa12387207214382">DpcRoutinePerformReadMsr</a></div><div class="ttdeci">VOID DpcRoutinePerformReadMsr(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Broadcast msr read.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:155</div></div>
+<div class="ttc" id="a_dpc_routines_8h_html_a508772fcbdb9d34fd81501639eb996e1"><div class="ttname"><a href="_dpc_routines_8h.html#a508772fcbdb9d34fd81501639eb996e1">DpcRoutinePerformEnableRdtscExitingOnSingleCore</a></div><div class="ttdeci">VOID DpcRoutinePerformEnableRdtscExitingOnSingleCore(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">set rdtsc/rdtscp exiting</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:231</div></div>
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_19054a674c4bd5cb8fceb6542228579c.html">hprdbghv</a></li><li class="navelem"><a class="el" href="_dpc_routines_8h.html">DpcRoutines.h</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

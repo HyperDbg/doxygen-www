@@ -1,0 +1,27 @@
+var _debugger_8c =
+[
+    [ "DebuggerAddActionToEvent", "_debugger_8c.html#a963a3712b41b723d533832de776a705d", null ],
+    [ "DebuggerCreateEvent", "_debugger_8c.html#ad87042b3b2ca8c20e723f750c8952ec2", null ],
+    [ "DebuggerDisableEvent", "_debugger_8c.html#a80484d0a5b060724315e4aac0a732671", null ],
+    [ "DebuggerEnableEvent", "_debugger_8c.html#ad01633c5f92dfb1414a969734e739e4b", null ],
+    [ "DebuggerEnableOrDisableAllEvents", "_debugger_8c.html#a4f1bd02e56b41c3760e452d2b0962fb0", null ],
+    [ "DebuggerEventListCount", "_debugger_8c.html#ab39f5229ff2bdde6c47e09738e98d490", null ],
+    [ "DebuggerGetEventByTag", "_debugger_8c.html#a43de3d8c768fd3293cd240646384164d", null ],
+    [ "DebuggerInitialize", "_debugger_8c.html#a6db6fc9c681fadbd5971d840f5cb9dca", null ],
+    [ "DebuggerIsTagValid", "_debugger_8c.html#abfdb05d6c34bdde4284c4f0eb3d5970f", null ],
+    [ "DebuggerParseActionFromUsermode", "_debugger_8c.html#a636e4397667f327bd318e0ced68c74c2", null ],
+    [ "DebuggerParseEventFromUsermode", "_debugger_8c.html#a488a2c7fa18f1f6378a03fcbb8fc60cf", null ],
+    [ "DebuggerParseEventsModificationFromUsermode", "_debugger_8c.html#a409b1876a7845d3c17979fc2ace2a567", null ],
+    [ "DebuggerPerformActions", "_debugger_8c.html#a00231c8b6a32a7cea70686acc1971588", null ],
+    [ "DebuggerPerformBreakToDebugger", "_debugger_8c.html#a7a37b4ac4674a750132c3377446b3c82", null ],
+    [ "DebuggerPerformLogTheStates", "_debugger_8c.html#af7142d673b51de9d12aa6bc40803bfdb", null ],
+    [ "DebuggerPerformRunTheCustomCode", "_debugger_8c.html#aff4267bbbc02413eee5232e322796da2", null ],
+    [ "DebuggerRegisterEvent", "_debugger_8c.html#a3f29fb4a36e71433402f64988d355610", null ],
+    [ "DebuggerRemoveAllActionsFromEvent", "_debugger_8c.html#a48a05d581e75e633505771b789a53fc7", null ],
+    [ "DebuggerRemoveAllEvents", "_debugger_8c.html#a57e21c542c4398a07de0b401e1a3335b", null ],
+    [ "DebuggerRemoveEvent", "_debugger_8c.html#a0f0fb0834b9e5f62d3d4314e545df618", null ],
+    [ "DebuggerRemoveEventFromEventList", "_debugger_8c.html#aeff46d84155e764655bf6004e6ec2add", null ],
+    [ "DebuggerTerminateAllEvents", "_debugger_8c.html#a43ee6a34b5cfe3a5c5d7caa7a5470e31", null ],
+    [ "DebuggerTerminateEvent", "_debugger_8c.html#af1aa660594f5eb8c75f4fda7605b39fb", null ],
+    [ "DebuggerTriggerEvents", "_debugger_8c.html#aac71ecf7a7e99662000efef060a32775", null ]
+];

@@ -1,0 +1,27 @@
+var union___d_e_b_u_g___r_e_g_i_s_t_e_r__7 =
+[
+    [ "Flags", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#ab7c1e80d7dbedf919af624ca29a61648", null ],
+    [ "GeneralDetect", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#a3a5f167710ae567aeb3f48281f72501f", null ],
+    [ "GlobalBreakpoint0", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#af7a65787ed513d6cb9221c256e00067d", null ],
+    [ "GlobalBreakpoint1", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#a99300fcbac01826ff20b02aefae4e977", null ],
+    [ "GlobalBreakpoint2", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#af07822d41d5bebf349c9bd905d9efc4c", null ],
+    [ "GlobalBreakpoint3", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#a40d4e9327870e76807df979e6f3b0fe9", null ],
+    [ "GlobalExactBreakpoint", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#ada62eea1e390470a4ae7c6b05d007aa1", null ],
+    [ "Length0", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#ac4ee3391f8048d794016a87ac079e437", null ],
+    [ "Length1", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#a42c7e502760e5f6530abbf776149ad00", null ],
+    [ "Length2", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#a0d2d1559ea90f5c38206ba2c1f44b005", null ],
+    [ "Length3", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#acf5fa173de743d23baed2bdd3a51d265", null ],
+    [ "LocalBreakpoint0", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#a479a0bd40bce1c73d0cfb333abaa46cd", null ],
+    [ "LocalBreakpoint1", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#a3d80d3b37a06c64a42b8c251c161705a", null ],
+    [ "LocalBreakpoint2", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#a88f9bb3368e677568326c10491746c91", null ],
+    [ "LocalBreakpoint3", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#a31dbcb8fb33c214edee57c079a65f56d", null ],
+    [ "LocalExactBreakpoint", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#ad29b8c0b00f80957e8dd755ebc1ea9d2", null ],
+    [ "ReadWrite0", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#a46497b44b25335a676544599428e9cc9", null ],
+    [ "ReadWrite1", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#aa177b5995f638c4c3c809537373e9647", null ],
+    [ "ReadWrite2", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#ab266a535038718e63f4e1c0ac52dabce", null ],
+    [ "ReadWrite3", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#ac3a5c3192e1d093c90a8a0e181c0c712", null ],
+    [ "Reserved1", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#a6bc2040ba3a67537eb299e5cc0268216", null ],
+    [ "Reserved2", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#abbeda017ed967202f94f6b003069f646", null ],
+    [ "Reserved3", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#ae1aaa5468169cd3b44df3e872a97975c", null ],
+    [ "RestrictedTransactionalMemory", "union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#aa975d25c2ea95bf68ea76c7649429657", null ]
+];

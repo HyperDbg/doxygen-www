@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('globals_func_v.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,23 +85,36 @@ $(function() {
 
 <h3><a id="index_v"></a>- v -</h3><ul>
 <li>ValidateIP()
-: <a class="el" href="interpreter_8cpp.html#aab1b10b3b52320e5a1ffc21a455e09b2">interpreter.cpp</a>
+: <a class="el" href="common_8cpp.html#ae6a5de4e3fc5644f412d9728002f0dc1">common.cpp</a>
+, <a class="el" href="hprdbgctrl_2_common_8h.html#ae6a5de4e3fc5644f412d9728002f0dc1">common.h</a>
 </li>
 <li>VirtualAddressToPhysicalAddress()
-: <a class="el" href="_common_8c.html#ae6bbd169187c6e08bbe584c67175a61d">Common.c</a>
-, <a class="el" href="_common_8h.html#ae6bbd169187c6e08bbe584c67175a61d">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#ae6bbd169187c6e08bbe584c67175a61d">Common.h</a>
+, <a class="el" href="_common_8c.html#ae6bbd169187c6e08bbe584c67175a61d">Common.c</a>
+</li>
+<li>VirtualAddressToPhysicalAddressByProcessCr3()
+: <a class="el" href="_common_8c.html#aa257cde073bba99546f8edf56fd31661">Common.c</a>
+, <a class="el" href="hprdbghv_2_common_8h.html#aa257cde073bba99546f8edf56fd31661">Common.h</a>
+</li>
+<li>VirtualAddressToPhysicalAddressByProcessId()
+: <a class="el" href="hprdbghv_2_common_8h.html#af251f655d5814472abd5f50c68f209f0">Common.h</a>
+, <a class="el" href="_common_8c.html#af251f655d5814472abd5f50c68f209f0">Common.c</a>
 </li>
 <li>VmcallTest()
 : <a class="el" href="_vmcall_8c.html#a51fa3a3d4245b314c52ce45377209bb2">Vmcall.c</a>
 , <a class="el" href="_vmcall_8h.html#a51fa3a3d4245b314c52ce45377209bb2">Vmcall.h</a>
+</li>
+<li>VmxAllocateIoBitmaps()
+: <a class="el" href="_vmx_8h.html#a31abb1c1fa9502340c259d989ad2bdec">Vmx.h</a>
+, <a class="el" href="_vmx_regions_8c.html#a31abb1c1fa9502340c259d989ad2bdec">VmxRegions.c</a>
 </li>
 <li>VmxAllocateMsrBitmap()
 : <a class="el" href="_vmx_8h.html#a1c7e691af7e383a5e0948c66fc6ea630">Vmx.h</a>
 , <a class="el" href="_vmx_regions_8c.html#a1c7e691af7e383a5e0948c66fc6ea630">VmxRegions.c</a>
 </li>
 <li>VmxAllocateVmcsRegion()
-: <a class="el" href="_vmx_8h.html#a97fb4c65bc5812ff1c22f396408823c9">Vmx.h</a>
-, <a class="el" href="_vmx_regions_8c.html#a97fb4c65bc5812ff1c22f396408823c9">VmxRegions.c</a>
+: <a class="el" href="_vmx_regions_8c.html#a97fb4c65bc5812ff1c22f396408823c9">VmxRegions.c</a>
+, <a class="el" href="_vmx_8h.html#a97fb4c65bc5812ff1c22f396408823c9">Vmx.h</a>
 </li>
 <li>VmxAllocateVmmStack()
 : <a class="el" href="_vmx_8h.html#aba14c5da1e4aef18dea38efe3d1de83a">Vmx.h</a>
@@ -99,20 +132,29 @@ $(function() {
 : <a class="el" href="_hypervisor_routines_8h.html#a2234409e5572fa1c5ebcc4fa9b66d4d8">HypervisorRoutines.h</a>
 , <a class="el" href="_vmx_regions_8c.html#a2234409e5572fa1c5ebcc4fa9b66d4d8">VmxRegions.c</a>
 </li>
+<li>VmxHandleVmcallVmExit()
+: <a class="el" href="_vmcall_8c.html#a64c4a04b9faf787cfea82518cbd99ee5">Vmcall.c</a>
+, <a class="el" href="_vmcall_8h.html#a64c4a04b9faf787cfea82518cbd99ee5">Vmcall.h</a>
+</li>
+<li>VmxHandleXsetbv()
+: <a class="el" href="_cross_vmexits_8c.html#a981cc09c005f2331e6b04d2f38e30121">CrossVmexits.c</a>
+, <a class="el" href="_vmx_8h.html#a981cc09c005f2331e6b04d2f38e30121">Vmx.h</a>
+</li>
 <li>VmxInitializer()
 : <a class="el" href="_vmx_8c.html#aa15f12a3484a8de9976c54be6d727589">Vmx.c</a>
 , <a class="el" href="_vmx_8h.html#aa15f12a3484a8de9976c54be6d727589">Vmx.h</a>
 </li>
 <li>VmxLoadVmcs()
-: <a class="el" href="_vmx_8c.html#ae6282c03763c9494aaf6a7862d6cb163">Vmx.c</a>
-, <a class="el" href="_vmx_8h.html#ae6282c03763c9494aaf6a7862d6cb163">Vmx.h</a>
+: <a class="el" href="_vmx_8h.html#ae6282c03763c9494aaf6a7862d6cb163">Vmx.h</a>
+, <a class="el" href="_vmx_8c.html#ae6282c03763c9494aaf6a7862d6cb163">Vmx.c</a>
 </li>
 <li>VmxSetupVmcs()
-: <a class="el" href="_vmx_8h.html#a3b46813e79cb2c8657c58450e7f7abdc">Vmx.h</a>
-, <a class="el" href="_vmx_8c.html#a3b46813e79cb2c8657c58450e7f7abdc">Vmx.c</a>
+: <a class="el" href="_vmx_8c.html#a3b46813e79cb2c8657c58450e7f7abdc">Vmx.c</a>
+, <a class="el" href="_vmx_8h.html#a3b46813e79cb2c8657c58450e7f7abdc">Vmx.h</a>
 </li>
 <li>VmxSupportDetection()
-: <a class="el" href="hprdbgctrl_8cpp.html#adeb9e07994ee96ddb3e7c7b0d2874c90">hprdbgctrl.cpp</a>
+: <a class="el" href="hprdbgctrl_2_common_8h.html#a3850533e5498dc9ea006fc4f728059fb">common.h</a>
+, <a class="el" href="common_8cpp.html#a3850533e5498dc9ea006fc4f728059fb">common.cpp</a>
 </li>
 <li>VmxTerminate()
 : <a class="el" href="_vmx_8c.html#ae683fd4d4ecd99c28292045bc8a65e18">Vmx.c</a>
@@ -127,11 +169,11 @@ $(function() {
 , <a class="el" href="_vmcall_8h.html#aa6826d242c4b37c06a454ca9b1538f7f">Vmcall.h</a>
 </li>
 <li>VmxVmexitHandler()
-: <a class="el" href="_exit_8c.html#a6d31a4905254efd226ef28f0121e5106">Exit.c</a>
+: <a class="el" href="_vmexit_8c.html#a6d31a4905254efd226ef28f0121e5106">Vmexit.c</a>
 </li>
 <li>VmxVmptrst()
-: <a class="el" href="_vmx_8c.html#a099f2c93689489c8a4117c8f6648efc1">Vmx.c</a>
-, <a class="el" href="_vmx_8h.html#a099f2c93689489c8a4117c8f6648efc1">Vmx.h</a>
+: <a class="el" href="_vmx_8h.html#a099f2c93689489c8a4117c8f6648efc1">Vmx.h</a>
+, <a class="el" href="_vmx_8c.html#a099f2c93689489c8a4117c8f6648efc1">Vmx.c</a>
 </li>
 <li>VmxVmresume()
 : <a class="el" href="_vmx_8h.html#a78415dd94deee3861f8cdfe695331aa9">Vmx.h</a>
@@ -143,11 +185,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

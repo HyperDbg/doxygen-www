@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_commands_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_2ba950cbe69a0dd8a769d65244bdf310.html">hprdbgctrl</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">Commands.h</div>  </div>
@@ -71,60 +87,207 @@ $(function() {
 <div class="contents">
 <a href="_commands_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pch_8h.html">pch.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">extern</span> HANDLE <a class="code" href="_commands_8h.html#a775f9ac5ca6e581f07d41b537ea05e96">DeviceHandle</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_commands_8h.html#a3c12c41c8ec3973588e8fd94adf6ca83">ReadCpuDetails</a>();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;std::string <a class="code" href="_commands_8h.html#a5c1bf7c2b9007507832dd0bc318f3df6">ReadVendorString</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Fmt, ...);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_commands_8h.html#ac77241a6d187b3c815929f5c6a977072">CommandLm</a>(vector&lt;string&gt; SplittedCommand);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_commands_8h.html#a09794f9d8ad7d780470865d8c16ffc79">HyperDbgReadMemoryAndDisassemble</a>(DEBUGGER_SHOW_MEMORY_STYLE Style,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                      UINT64 Address,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                      DEBUGGER_READ_MEMORY_TYPE MemoryType,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                      DEBUGGER_READ_READING_TYPE ReadingType,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                      UINT32 Pid, UINT Size);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">string</span> <a class="code" href="_commands_8h.html#a07dc9e84eb1bb210cfcb6e03385f76d4">SeparateTo64BitValue</a>(UINT64 Value);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//                    Externs                   //</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">extern</span> HANDLE <a class="code" href="_commands_8h.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//                  Functions                   //</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_commands_8h.html#a3c12c41c8ec3973588e8fd94adf6ca83">ReadCpuDetails</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">string</span> <a class="code" href="_commands_8h.html#a2a085f1ff124626252bc27c5e7e26c8c">ReadVendorString</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;VOID <a class="code" href="_commands_8h.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *Fmt, ...);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_commands_8h.html#a32fcce07bee5c71ef4293f7e5aa2cb23">HyperDbgDisassembler</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *BufferToDisassemble, UINT64 BaseAddress,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                         UINT64 Size);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// Exports</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">bool</span> <span class="keyword">inline</span> <a class="code" href="_commands_8h.html#af41bc906e694236da4b71ebd44324a69">AsmVmxSupportDetection</a>();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="_commands_8h.html#a622a443e52246a67c64cd3c0693c1239">__declspec</a>(dllexport) <span class="keywordtype">int</span> __cdecl <a class="code" href="hprdbgctrl_8cpp.html#a489aff2bbdf608459ba3ca8524a52e93">HyperdbgLoad</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<a class="code" href="_commands_8h.html#a622a443e52246a67c64cd3c0693c1239">__declspec</a>(dllexport) <span class="keywordtype">int</span> __cdecl <a class="code" href="hprdbgctrl_8cpp.html#ab916613329469668a8308180a245e020">HyperdbgUnload</a>();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<a class="code" href="_commands_8h.html#a622a443e52246a67c64cd3c0693c1239">__declspec</a>(dllexport) <span class="keywordtype">int</span> __cdecl <a class="code" href="hprdbgctrl_8cpp.html#acfdfc46132296f6814d5757f6bba53c0">HyperdbgInstallDriver</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<a class="code" href="_commands_8h.html#a622a443e52246a67c64cd3c0693c1239">__declspec</a>(dllexport) <span class="keywordtype">int</span> __cdecl <a class="code" href="hprdbgctrl_8cpp.html#a2e2f08f609668d46dceadd4093d5e89b">HyperdbgUninstallDriver</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<a class="code" href="_commands_8h.html#a622a443e52246a67c64cd3c0693c1239">__declspec</a>(dllexport) <span class="keywordtype">void</span> __stdcall <a class="code" href="hprdbgctrl_8cpp.html#a0682c8db2db00aa890c3065101984fc1">HyperdbgSetTextMessageCallback</a>(</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    Callback handler);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_commands_8h.html#ac77241a6d187b3c815929f5c6a977072">CommandLm</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;VOID <a class="code" href="_commands_8h.html#a5078efff0b67fa4648bbf6d76e3f0464">HyperDbgReadMemoryAndDisassemble</a>(DEBUGGER_SHOW_MEMORY_STYLE Style,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                      UINT64 Address,</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                      DEBUGGER_READ_MEMORY_TYPE MemoryType,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                      DEBUGGER_READ_READING_TYPE ReadingType,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                      UINT32 Pid, UINT Size);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">string</span> <a class="code" href="_commands_8h.html#a07dc9e84eb1bb210cfcb6e03385f76d4">SeparateTo64BitValue</a>(UINT64 Value);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_commands_8h.html#a34bc104f982da03d842892d61123a230">HyperDbgDisassembler64</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *BufferToDisassemble,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                           UINT64 <a class="code" href="_ntifs2_8h.html#a1b76fb9a5566053fa6334ecc220de6c6">BaseAddress</a>, UINT64 Size);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">int</span> <a class="code" href="_commands_8h.html#a24b0ac1d391e8bccf0281c72a17f0dfb">HyperDbgDisassembler32</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *BufferToDisassemble,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                           UINT64 <a class="code" href="_ntifs2_8h.html#a1b76fb9a5566053fa6334ecc220de6c6">BaseAddress</a>, UINT64 Size);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;VOID <a class="code" href="_commands_8h.html#a5078efff0b67fa4648bbf6d76e3f0464">HyperDbgReadMemoryAndDisassemble</a>(DEBUGGER_SHOW_MEMORY_STYLE Style,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                      UINT64 Address,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                      DEBUGGER_READ_MEMORY_TYPE MemoryType,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                      DEBUGGER_READ_READING_TYPE ReadingType,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                      UINT32 Pid, UINT Size);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;VOID <a class="code" href="_commands_8h.html#aa5ceff02d6492ee30177c742e3f16dce">CommandTest</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;VOID <a class="code" href="_commands_8h.html#ab99e536c1bbd6a0c236fac136f97a9c5">CommandClearScreen</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;VOID <a class="code" href="_commands_8h.html#ac7c342a54ebddba1e775897ca9d17a09">CommandReadMemoryAndDisassembler</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;VOID <a class="code" href="_commands_8h.html#a7d84b2796dfef7fad3d52d671a7f3125">CommandConnect</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;VOID <a class="code" href="_commands_8h.html#a7d84b2796dfef7fad3d52d671a7f3125">CommandConnect</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;VOID <a class="code" href="_commands_8h.html#a1aa81b59949c6bbddd7e226108e78612">CommandLoad</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;VOID <a class="code" href="_commands_8h.html#ad231de98933f588a75e0c9e335705061">CommandUnload</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;VOID <a class="code" href="_commands_8h.html#a87e39d4f9d7a49d674d0130b15212adc">CommandScript</a>(vector&lt;string&gt; SplittedCommand, <span class="keywordtype">string</span> Command);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;VOID <a class="code" href="_commands_8h.html#aa0bbb45b20738f4697f3d9d430ac527b">CommandCpu</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;VOID <a class="code" href="_commands_8h.html#a148aa530ccbb4396db79c0b49758398d">CommandExit</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;VOID <a class="code" href="_commands_8h.html#a683aeb3949c26afcb756f8129ad6d3f7">CommandDisconnect</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;VOID <a class="code" href="_commands_8h.html#a5f69b0beb3dc79acc8289fe5a83add02">CommandFormats</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;VOID <a class="code" href="_commands_8h.html#a450283b622de8d5fb4e130e2be2dfe65">CommandRdmsr</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;VOID <a class="code" href="_commands_8h.html#ae61b30e16d983c3bd9c30a566a3eb791">CommandWrmsr</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;VOID <a class="code" href="_commands_8h.html#a01d7430c52e6181e5c62d2e960f43627">CommandPte</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;VOID <a class="code" href="_commands_8h.html#aa7da54ded35ae6541ee12dabb3fc01b3">CommandMonitor</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;VOID <a class="code" href="_commands_8h.html#a2a64cb5c3dbdbf3829470f0e36182aab">CommandSyscallAndSysret</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;VOID <a class="code" href="_commands_8h.html#a9ea8ae8a19b75a4a4af146570abb40b7">CommandEptHook</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;VOID <a class="code" href="_commands_8h.html#a28d6da9e100136322b4f84d25e2acbfd">CommandEptHook2</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;VOID <a class="code" href="_commands_8h.html#a62a17bd4cb1c161c0fed5c837260c224">CommandCpuid</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;VOID <a class="code" href="_commands_8h.html#a88e5350563f1aa51d09b0212089670b0">CommandMsrread</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;VOID <a class="code" href="_commands_8h.html#a09de5c7998de7fba2acf4f00e4660a6f">CommandMsrwrite</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;VOID <a class="code" href="_commands_8h.html#ac729ac314b2a07387a98bb0e4c90d9b7">CommandTsc</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;VOID <a class="code" href="_commands_8h.html#ae6df91ed168c3084d6b95d448c632b1c">CommandPmc</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;VOID <a class="code" href="_commands_8h.html#aed43e45b8f32d43561cb0ecf831bc8c6">CommandException</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;VOID <a class="code" href="_commands_8h.html#adba3091cafcfbf82e17e6c2825bf5904">CommandDr</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;VOID <a class="code" href="_commands_8h.html#a975e3092b358beed26b58a0e0d4bfbbe">CommandInterrupt</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;VOID <a class="code" href="_commands_8h.html#a265f67a19846cd1ae054bc7e8e4870c5">CommandIoin</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;VOID <a class="code" href="_commands_8h.html#ab97a44d0863d276d1878bb3d00474a9e">CommandIoout</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;VOID <a class="code" href="_commands_8h.html#a42aaeebf558a8275e1ce4afde501ea26">CommandVmcall</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;VOID <a class="code" href="_commands_8h.html#a7c29ec20f55661e22cd21d79cc50349b">CommandHide</a>(vector&lt;string&gt; SplittedCommand, <span class="keywordtype">string</span> Command);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;VOID <a class="code" href="_commands_8h.html#ac9e3274d7311272ae390f5c662824af4">CommandUnhide</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;VOID <a class="code" href="_commands_8h.html#ad6e517c14a8f851345351ff3b8336395">CommandLogopen</a>(vector&lt;string&gt; SplittedCommand, <span class="keywordtype">string</span> Command);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;VOID <a class="code" href="_commands_8h.html#a79866f139d30aad506418699816dbd84">CommandLogclose</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;VOID <a class="code" href="_commands_8h.html#a683db0635bddb0d522dc10b20856426d">CommandVa2pa</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;VOID <a class="code" href="_commands_8h.html#aaf0ec3a08251ae6f4bd348fefd8488af">CommandPa2va</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;VOID <a class="code" href="_commands_8h.html#a3c3fc3a07f1388f5d78003358d4ade46">CommandEvents</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;VOID <a class="code" href="_commands_8h.html#acff37c2e7830dbdbc1cf6f97f9926970">CommandG</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;VOID <a class="code" href="_commands_8h.html#ae8143cde8cad0429f0d6d08d65b65b29">CommandSleep</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;VOID <a class="code" href="_commands_8h.html#a59fb3758c7ee5683ef15e48ced8f4dd1">CommandEditMemory</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;VOID <a class="code" href="_commands_8h.html#a1b8e43dfa6275394c5b1e3d15b56166e">CommandSearchMemory</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;VOID <a class="code" href="_commands_8h.html#a11876a4223f7b6d3554d283105fc67cf">CommandMeasure</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;VOID <a class="code" href="_commands_8h.html#af9d4fde8c51f2c9e34be8978fdc46d31">CommandSettings</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;VOID <a class="code" href="_commands_8h.html#a9b4d0c0092565d71b31069db358bda3a">CommandFlush</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;VOID <a class="code" href="_commands_8h.html#a651b470519c8d6a91b9d96b92c312f28">CommandPause</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;VOID <a class="code" href="_commands_8h.html#ae31b0ed70fb8488addaecc54976a8bf5">CommandListen</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;VOID <a class="code" href="_commands_8h.html#aa816280f15c7f524e0acd2d5434b3cbe">CommandStatus</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;VOID <a class="code" href="_commands_8h.html#a9efaf3c651d75fd37604178c237d84e7">CommandAttach</a>(vector&lt;string&gt; SplittedCommand);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;VOID <a class="code" href="_commands_8h.html#ad5634c925d9f27e3d9f0975796c113d6">CommandDetach</a>(vector&lt;string&gt; SplittedCommand);</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="a_commands_8h_html_a07dc9e84eb1bb210cfcb6e03385f76d4"><div class="ttname"><a href="_commands_8h.html#a07dc9e84eb1bb210cfcb6e03385f76d4">SeparateTo64BitValue</a></div><div class="ttdeci">string SeparateTo64BitValue(UINT64 Value)</div><div class="ttdef"><b>Definition:</b> interpreter.cpp:36</div></div>
-<div class="ttc" id="ahprdbgctrl_8cpp_html_a489aff2bbdf608459ba3ca8524a52e93"><div class="ttname"><a href="hprdbgctrl_8cpp.html#a489aff2bbdf608459ba3ca8524a52e93">HyperdbgLoad</a></div><div class="ttdeci">HPRDBGCTRL_API int HyperdbgLoad()</div><div class="ttdoc">Load the driver.</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:305</div></div>
-<div class="ttc" id="apch_8h_html"><div class="ttname"><a href="pch_8h.html">pch.h</a></div><div class="ttdoc">header file corresponding to the pre-compiled header</div></div>
-<div class="ttc" id="ahprdbgctrl_8cpp_html_a2e2f08f609668d46dceadd4093d5e89b"><div class="ttname"><a href="hprdbgctrl_8cpp.html#a2e2f08f609668d46dceadd4093d5e89b">HyperdbgUninstallDriver</a></div><div class="ttdeci">HPRDBGCTRL_API int HyperdbgUninstallDriver()</div><div class="ttdoc">Uninstall the driver.</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:290</div></div>
-<div class="ttc" id="ahprdbgctrl_8cpp_html_acfdfc46132296f6814d5757f6bba53c0"><div class="ttname"><a href="hprdbgctrl_8cpp.html#acfdfc46132296f6814d5757f6bba53c0">HyperdbgInstallDriver</a></div><div class="ttdeci">HPRDBGCTRL_API int HyperdbgInstallDriver()</div><div class="ttdoc">Install the driver.</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:258</div></div>
-<div class="ttc" id="a_commands_8h_html_abd19c825171e66b83128a1ce6531b2e9"><div class="ttname"><a href="_commands_8h.html#abd19c825171e66b83128a1ce6531b2e9">ShowMessages</a></div><div class="ttdeci">void ShowMessages(const char *Fmt,...)</div><div class="ttdoc">Show messages received from kernel driver.</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:41</div></div>
-<div class="ttc" id="a_commands_8h_html_a5c1bf7c2b9007507832dd0bc318f3df6"><div class="ttname"><a href="_commands_8h.html#a5c1bf7c2b9007507832dd0bc318f3df6">ReadVendorString</a></div><div class="ttdeci">std::string ReadVendorString()</div><div class="ttdef"><b>Definition:</b> cpu.cpp:198</div></div>
-<div class="ttc" id="a_commands_8h_html_a3c12c41c8ec3973588e8fd94adf6ca83"><div class="ttname"><a href="_commands_8h.html#a3c12c41c8ec3973588e8fd94adf6ca83">ReadCpuDetails</a></div><div class="ttdeci">int ReadCpuDetails()</div><div class="ttdef"><b>Definition:</b> cpu.cpp:204</div></div>
-<div class="ttc" id="a_commands_8h_html_a775f9ac5ca6e581f07d41b537ea05e96"><div class="ttname"><a href="_commands_8h.html#a775f9ac5ca6e581f07d41b537ea05e96">DeviceHandle</a></div><div class="ttdeci">HANDLE DeviceHandle</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:18</div></div>
-<div class="ttc" id="a_commands_8h_html_a622a443e52246a67c64cd3c0693c1239"><div class="ttname"><a href="_commands_8h.html#a622a443e52246a67c64cd3c0693c1239">__declspec</a></div><div class="ttdeci">__declspec(dllexport) int __cdecl HyperdbgLoad()</div></div>
-<div class="ttc" id="a_commands_8h_html_af41bc906e694236da4b71ebd44324a69"><div class="ttname"><a href="_commands_8h.html#af41bc906e694236da4b71ebd44324a69">AsmVmxSupportDetection</a></div><div class="ttdeci">bool AsmVmxSupportDetection()</div></div>
-<div class="ttc" id="ahprdbgctrl_8cpp_html_ab916613329469668a8308180a245e020"><div class="ttname"><a href="hprdbgctrl_8cpp.html#ab916613329469668a8308180a245e020">HyperdbgUnload</a></div><div class="ttdeci">HPRDBGCTRL_API int HyperdbgUnload()</div><div class="ttdoc">Unload driver.</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:387</div></div>
-<div class="ttc" id="a_commands_8h_html_a09794f9d8ad7d780470865d8c16ffc79"><div class="ttname"><a href="_commands_8h.html#a09794f9d8ad7d780470865d8c16ffc79">HyperDbgReadMemoryAndDisassemble</a></div><div class="ttdeci">void HyperDbgReadMemoryAndDisassemble(DEBUGGER_SHOW_MEMORY_STYLE Style, UINT64 Address, DEBUGGER_READ_MEMORY_TYPE MemoryType, DEBUGGER_READ_READING_TYPE ReadingType, UINT32 Pid, UINT Size)</div><div class="ttdoc">Read memory and disassembler.</div><div class="ttdef"><b>Definition:</b> interpreter.cpp:61</div></div>
-<div class="ttc" id="a_commands_8h_html_a32fcce07bee5c71ef4293f7e5aa2cb23"><div class="ttname"><a href="_commands_8h.html#a32fcce07bee5c71ef4293f7e5aa2cb23">HyperDbgDisassembler</a></div><div class="ttdeci">int HyperDbgDisassembler(unsigned char *BufferToDisassemble, UINT64 BaseAddress, UINT64 Size)</div><div class="ttdef"><b>Definition:</b> disassembler.cpp:205</div></div>
-<div class="ttc" id="ahprdbgctrl_8cpp_html_a0682c8db2db00aa890c3065101984fc1"><div class="ttname"><a href="hprdbgctrl_8cpp.html#a0682c8db2db00aa890c3065101984fc1">HyperdbgSetTextMessageCallback</a></div><div class="ttdeci">void __stdcall HyperdbgSetTextMessageCallback(Callback handler)</div><div class="ttdoc">Set the function callback that will be called if anything received from the kernel.</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:32</div></div>
-<div class="ttc" id="a_commands_8h_html_ac77241a6d187b3c815929f5c6a977072"><div class="ttname"><a href="_commands_8h.html#ac77241a6d187b3c815929f5c6a977072">CommandLm</a></div><div class="ttdeci">int CommandLm(vector&lt; string &gt; SplittedCommand)</div><div class="ttdef"><b>Definition:</b> lm.cpp:40</div></div>
+</div><!-- doc-content -->
+<div class="ttc" id="a_commands_8h_html_a07dc9e84eb1bb210cfcb6e03385f76d4"><div class="ttname"><a href="_commands_8h.html#a07dc9e84eb1bb210cfcb6e03385f76d4">SeparateTo64BitValue</a></div><div class="ttdeci">string SeparateTo64BitValue(UINT64 Value)</div><div class="ttdoc">add ` between 64 bit values and convert them to string</div><div class="ttdef"><b>Definition:</b> common.cpp:22</div></div>
+<div class="ttc" id="a_ntifs2_8h_html_a1b76fb9a5566053fa6334ecc220de6c6"><div class="ttname"><a href="_ntifs2_8h.html#a1b76fb9a5566053fa6334ecc220de6c6">BaseAddress</a></div><div class="ttdeci">_Must_inspect_result_ _Inout_ PVOID * BaseAddress</div><div class="ttdef"><b>Definition:</b> Ntifs2.h:98</div></div>
+<div class="ttc" id="a_commands_8h_html_aa0bbb45b20738f4697f3d9d430ac527b"><div class="ttname"><a href="_commands_8h.html#aa0bbb45b20738f4697f3d9d430ac527b">CommandCpu</a></div><div class="ttdeci">VOID CommandCpu(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">cpu command handler</div><div class="ttdef"><b>Definition:</b> cpu.cpp:30</div></div>
+<div class="ttc" id="a_commands_8h_html_a28d6da9e100136322b4f84d25e2acbfd"><div class="ttname"><a href="_commands_8h.html#a28d6da9e100136322b4f84d25e2acbfd">CommandEptHook2</a></div><div class="ttdeci">VOID CommandEptHook2(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!epthook2 command handler</div><div class="ttdef"><b>Definition:</b> epthook2.cpp:38</div></div>
+<div class="ttc" id="a_commands_8h_html_a21c3c06b34d716c4680695c2b28127da"><div class="ttname"><a href="_commands_8h.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a></div><div class="ttdeci">VOID ShowMessages(const char *Fmt,...)</div><div class="ttdoc">Show messages received from kernel driver.</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:44</div></div>
+<div class="ttc" id="a_commands_8h_html_ae6df91ed168c3084d6b95d448c632b1c"><div class="ttname"><a href="_commands_8h.html#ae6df91ed168c3084d6b95d448c632b1c">CommandPmc</a></div><div class="ttdeci">VOID CommandPmc(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!pmc command handler</div><div class="ttdef"><b>Definition:</b> pmc.cpp:37</div></div>
+<div class="ttc" id="a_commands_8h_html_adba3091cafcfbf82e17e6c2825bf5904"><div class="ttname"><a href="_commands_8h.html#adba3091cafcfbf82e17e6c2825bf5904">CommandDr</a></div><div class="ttdeci">VOID CommandDr(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!dr command handler</div><div class="ttdef"><b>Definition:</b> dr.cpp:37</div></div>
+<div class="ttc" id="a_commands_8h_html_a2a085f1ff124626252bc27c5e7e26c8c"><div class="ttname"><a href="_commands_8h.html#a2a085f1ff124626252bc27c5e7e26c8c">ReadVendorString</a></div><div class="ttdeci">string ReadVendorString()</div><div class="ttdef"><b>Definition:</b> cpu.cpp:227</div></div>
+<div class="ttc" id="a_commands_8h_html_a148aa530ccbb4396db79c0b49758398d"><div class="ttname"><a href="_commands_8h.html#a148aa530ccbb4396db79c0b49758398d">CommandExit</a></div><div class="ttdeci">VOID CommandExit(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">exit command handler</div><div class="ttdef"><b>Definition:</b> exit.cpp:37</div></div>
+<div class="ttc" id="a_commands_8h_html_a9b4d0c0092565d71b31069db358bda3a"><div class="ttname"><a href="_commands_8h.html#a9b4d0c0092565d71b31069db358bda3a">CommandFlush</a></div><div class="ttdeci">VOID CommandFlush(vector&lt; string &gt; SplittedCommand)</div><div class="ttdef"><b>Definition:</b> flush.cpp:80</div></div>
+<div class="ttc" id="a_commands_8h_html_a88e5350563f1aa51d09b0212089670b0"><div class="ttname"><a href="_commands_8h.html#a88e5350563f1aa51d09b0212089670b0">CommandMsrread</a></div><div class="ttdeci">VOID CommandMsrread(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!msrread command handler</div><div class="ttdef"><b>Definition:</b> msrread.cpp:39</div></div>
+<div class="ttc" id="a_commands_8h_html_a42aaeebf558a8275e1ce4afde501ea26"><div class="ttname"><a href="_commands_8h.html#a42aaeebf558a8275e1ce4afde501ea26">CommandVmcall</a></div><div class="ttdeci">VOID CommandVmcall(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!vmcall command handler</div><div class="ttdef"><b>Definition:</b> vmcall.cpp:37</div></div>
+<div class="ttc" id="a_commands_8h_html_a9efaf3c651d75fd37604178c237d84e7"><div class="ttname"><a href="_commands_8h.html#a9efaf3c651d75fd37604178c237d84e7">CommandAttach</a></div><div class="ttdeci">VOID CommandAttach(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">.attach command handler</div><div class="ttdef"><b>Definition:</b> attach.cpp:37</div></div>
+<div class="ttc" id="a_commands_8h_html_acff37c2e7830dbdbc1cf6f97f9926970"><div class="ttname"><a href="_commands_8h.html#acff37c2e7830dbdbc1cf6f97f9926970">CommandG</a></div><div class="ttdeci">VOID CommandG(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">handler of g command</div><div class="ttdef"><b>Definition:</b> g.cpp:37</div></div>
+<div class="ttc" id="a_commands_8h_html_ad5634c925d9f27e3d9f0975796c113d6"><div class="ttname"><a href="_commands_8h.html#ad5634c925d9f27e3d9f0975796c113d6">CommandDetach</a></div><div class="ttdeci">VOID CommandDetach(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">.detach command handler</div><div class="ttdef"><b>Definition:</b> detach.cpp:36</div></div>
+<div class="ttc" id="a_commands_8h_html_a3c3fc3a07f1388f5d78003358d4ade46"><div class="ttname"><a href="_commands_8h.html#a3c3fc3a07f1388f5d78003358d4ade46">CommandEvents</a></div><div class="ttdeci">VOID CommandEvents(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">events command handler</div><div class="ttdef"><b>Definition:</b> events.cpp:49</div></div>
+<div class="ttc" id="a_commands_8h_html_a04aaf680ede15f5e7ba51ab9f157bfff"><div class="ttname"><a href="_commands_8h.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a></div><div class="ttdeci">HANDLE g_DeviceHandle</div><div class="ttdoc">Holds the global handle of device which is used to send the request to the kernel by IOCTL,...</div><div class="ttdef"><b>Definition:</b> globals.h:161</div></div>
+<div class="ttc" id="a_commands_8h_html_ae31b0ed70fb8488addaecc54976a8bf5"><div class="ttname"><a href="_commands_8h.html#ae31b0ed70fb8488addaecc54976a8bf5">CommandListen</a></div><div class="ttdeci">VOID CommandListen(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">listen command handler</div><div class="ttdef"><b>Definition:</b> listen.cpp:45</div></div>
+<div class="ttc" id="a_commands_8h_html_ab97a44d0863d276d1878bb3d00474a9e"><div class="ttname"><a href="_commands_8h.html#ab97a44d0863d276d1878bb3d00474a9e">CommandIoout</a></div><div class="ttdeci">VOID CommandIoout(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!ioout command handler</div><div class="ttdef"><b>Definition:</b> ioout.cpp:40</div></div>
+<div class="ttc" id="a_commands_8h_html_a5f69b0beb3dc79acc8289fe5a83add02"><div class="ttname"><a href="_commands_8h.html#a5f69b0beb3dc79acc8289fe5a83add02">CommandFormats</a></div><div class="ttdeci">VOID CommandFormats(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">handler of help command</div><div class="ttdef"><b>Definition:</b> formats.cpp:30</div></div>
+<div class="ttc" id="a_commands_8h_html_aa7da54ded35ae6541ee12dabb3fc01b3"><div class="ttname"><a href="_commands_8h.html#aa7da54ded35ae6541ee12dabb3fc01b3">CommandMonitor</a></div><div class="ttdeci">VOID CommandMonitor(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!monitor command handler</div><div class="ttdef"><b>Definition:</b> monitor.cpp:40</div></div>
+<div class="ttc" id="a_commands_8h_html_a1b8e43dfa6275394c5b1e3d15b56166e"><div class="ttname"><a href="_commands_8h.html#a1b8e43dfa6275394c5b1e3d15b56166e">CommandSearchMemory</a></div><div class="ttdeci">VOID CommandSearchMemory(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!s* s* commands handler</div><div class="ttdef"><b>Definition:</b> s.cpp:45</div></div>
+<div class="ttc" id="a_commands_8h_html_aa5ceff02d6492ee30177c742e3f16dce"><div class="ttname"><a href="_commands_8h.html#aa5ceff02d6492ee30177c742e3f16dce">CommandTest</a></div><div class="ttdeci">VOID CommandTest(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">test command handler</div><div class="ttdef"><b>Definition:</b> test.cpp:34</div></div>
+<div class="ttc" id="a_commands_8h_html_a09de5c7998de7fba2acf4f00e4660a6f"><div class="ttname"><a href="_commands_8h.html#a09de5c7998de7fba2acf4f00e4660a6f">CommandMsrwrite</a></div><div class="ttdeci">VOID CommandMsrwrite(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!msrwrite command handler</div><div class="ttdef"><b>Definition:</b> msrwrite.cpp:39</div></div>
+<div class="ttc" id="a_commands_8h_html_a87e39d4f9d7a49d674d0130b15212adc"><div class="ttname"><a href="_commands_8h.html#a87e39d4f9d7a49d674d0130b15212adc">CommandScript</a></div><div class="ttdeci">VOID CommandScript(vector&lt; string &gt; SplittedCommand, string Command)</div><div class="ttdoc">.script command handler</div><div class="ttdef"><b>Definition:</b> script.cpp:38</div></div>
+<div class="ttc" id="a_commands_8h_html_a450283b622de8d5fb4e130e2be2dfe65"><div class="ttname"><a href="_commands_8h.html#a450283b622de8d5fb4e130e2be2dfe65">CommandRdmsr</a></div><div class="ttdeci">VOID CommandRdmsr(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">rdmsr command handler</div><div class="ttdef"><b>Definition:</b> rdmsr.cpp:33</div></div>
+<div class="ttc" id="a_commands_8h_html_af9d4fde8c51f2c9e34be8978fdc46d31"><div class="ttname"><a href="_commands_8h.html#af9d4fde8c51f2c9e34be8978fdc46d31">CommandSettings</a></div><div class="ttdeci">VOID CommandSettings(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">settings command handler</div><div class="ttdef"><b>Definition:</b> settings.cpp:208</div></div>
+<div class="ttc" id="a_commands_8h_html_a265f67a19846cd1ae054bc7e8e4870c5"><div class="ttname"><a href="_commands_8h.html#a265f67a19846cd1ae054bc7e8e4870c5">CommandIoin</a></div><div class="ttdeci">VOID CommandIoin(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!ioin command handler</div><div class="ttdef"><b>Definition:</b> ioin.cpp:40</div></div>
+<div class="ttc" id="a_commands_8h_html_ac9e3274d7311272ae390f5c662824af4"><div class="ttname"><a href="_commands_8h.html#ac9e3274d7311272ae390f5c662824af4">CommandUnhide</a></div><div class="ttdeci">VOID CommandUnhide(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!unhide command handler</div><div class="ttdef"><b>Definition:</b> unhide.cpp:31</div></div>
+<div class="ttc" id="a_commands_8h_html_a59fb3758c7ee5683ef15e48ced8f4dd1"><div class="ttname"><a href="_commands_8h.html#a59fb3758c7ee5683ef15e48ced8f4dd1">CommandEditMemory</a></div><div class="ttdeci">VOID CommandEditMemory(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!e* and e* commands handler</div><div class="ttdef"><b>Definition:</b> e.cpp:42</div></div>
+<div class="ttc" id="a_commands_8h_html_ac7c342a54ebddba1e775897ca9d17a09"><div class="ttname"><a href="_commands_8h.html#ac7c342a54ebddba1e775897ca9d17a09">CommandReadMemoryAndDisassembler</a></div><div class="ttdeci">VOID CommandReadMemoryAndDisassembler(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">u* d* !u* !d* commands handler</div><div class="ttdef"><b>Definition:</b> d-u.cpp:45</div></div>
+<div class="ttc" id="a_commands_8h_html_ab99e536c1bbd6a0c236fac136f97a9c5"><div class="ttname"><a href="_commands_8h.html#ab99e536c1bbd6a0c236fac136f97a9c5">CommandClearScreen</a></div><div class="ttdeci">VOID CommandClearScreen()</div><div class="ttdoc">.cls command handler</div><div class="ttdef"><b>Definition:</b> cls.cpp:29</div></div>
+<div class="ttc" id="a_commands_8h_html_a34bc104f982da03d842892d61123a230"><div class="ttname"><a href="_commands_8h.html#a34bc104f982da03d842892d61123a230">HyperDbgDisassembler64</a></div><div class="ttdeci">int HyperDbgDisassembler64(unsigned char *BufferToDisassemble, UINT64 BaseAddress, UINT64 Size)</div><div class="ttdoc">Disassemble x64 assemblies.</div><div class="ttdef"><b>Definition:</b> disassembler.cpp:252</div></div>
+<div class="ttc" id="a_commands_8h_html_a2a64cb5c3dbdbf3829470f0e36182aab"><div class="ttname"><a href="_commands_8h.html#a2a64cb5c3dbdbf3829470f0e36182aab">CommandSyscallAndSysret</a></div><div class="ttdeci">VOID CommandSyscallAndSysret(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!syscall and !sysret commands handler</div><div class="ttdef"><b>Definition:</b> syscall-sysret.cpp:56</div></div>
+<div class="ttc" id="a_commands_8h_html_a683aeb3949c26afcb756f8129ad6d3f7"><div class="ttname"><a href="_commands_8h.html#a683aeb3949c26afcb756f8129ad6d3f7">CommandDisconnect</a></div><div class="ttdeci">VOID CommandDisconnect(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">.disconnect command handler</div><div class="ttdef"><b>Definition:</b> disconnect.cpp:38</div></div>
+<div class="ttc" id="a_commands_8h_html_a62a17bd4cb1c161c0fed5c837260c224"><div class="ttname"><a href="_commands_8h.html#a62a17bd4cb1c161c0fed5c837260c224">CommandCpuid</a></div><div class="ttdeci">VOID CommandCpuid(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!cpuid command handler</div><div class="ttdef"><b>Definition:</b> cpuid.cpp:38</div></div>
+<div class="ttc" id="a_commands_8h_html_a683db0635bddb0d522dc10b20856426d"><div class="ttname"><a href="_commands_8h.html#a683db0635bddb0d522dc10b20856426d">CommandVa2pa</a></div><div class="ttdeci">VOID CommandVa2pa(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!va2pa command handler</div><div class="ttdef"><b>Definition:</b> va2pa.cpp:33</div></div>
+<div class="ttc" id="a_commands_8h_html_a11876a4223f7b6d3554d283105fc67cf"><div class="ttname"><a href="_commands_8h.html#a11876a4223f7b6d3554d283105fc67cf">CommandMeasure</a></div><div class="ttdeci">VOID CommandMeasure(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!measure command handler</div><div class="ttdef"><b>Definition:</b> measure.cpp:47</div></div>
+<div class="ttc" id="a_commands_8h_html_a9ea8ae8a19b75a4a4af146570abb40b7"><div class="ttname"><a href="_commands_8h.html#a9ea8ae8a19b75a4a4af146570abb40b7">CommandEptHook</a></div><div class="ttdeci">VOID CommandEptHook(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!epthook command handler</div><div class="ttdef"><b>Definition:</b> epthook.cpp:38</div></div>
+<div class="ttc" id="a_commands_8h_html_aed43e45b8f32d43561cb0ecf831bc8c6"><div class="ttname"><a href="_commands_8h.html#aed43e45b8f32d43561cb0ecf831bc8c6">CommandException</a></div><div class="ttdeci">VOID CommandException(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!exception command handler</div><div class="ttdef"><b>Definition:</b> exception.cpp:43</div></div>
+<div class="ttc" id="a_commands_8h_html_aaf0ec3a08251ae6f4bd348fefd8488af"><div class="ttname"><a href="_commands_8h.html#aaf0ec3a08251ae6f4bd348fefd8488af">CommandPa2va</a></div><div class="ttdeci">VOID CommandPa2va(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!pa2va command handler</div><div class="ttdef"><b>Definition:</b> pa2va.cpp:33</div></div>
+<div class="ttc" id="a_commands_8h_html_ac729ac314b2a07387a98bb0e4c90d9b7"><div class="ttname"><a href="_commands_8h.html#ac729ac314b2a07387a98bb0e4c90d9b7">CommandTsc</a></div><div class="ttdeci">VOID CommandTsc(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">handler of !tsc command</div><div class="ttdef"><b>Definition:</b> tsc.cpp:37</div></div>
+<div class="ttc" id="a_commands_8h_html_ad6e517c14a8f851345351ff3b8336395"><div class="ttname"><a href="_commands_8h.html#ad6e517c14a8f851345351ff3b8336395">CommandLogopen</a></div><div class="ttdeci">VOID CommandLogopen(vector&lt; string &gt; SplittedCommand, string Command)</div><div class="ttdoc">.logopen command handler</div><div class="ttdef"><b>Definition:</b> logopen.cpp:39</div></div>
+<div class="ttc" id="a_commands_8h_html_a79866f139d30aad506418699816dbd84"><div class="ttname"><a href="_commands_8h.html#a79866f139d30aad506418699816dbd84">CommandLogclose</a></div><div class="ttdeci">VOID CommandLogclose(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">.logclose command handler</div><div class="ttdef"><b>Definition:</b> logclose.cpp:36</div></div>
+<div class="ttc" id="a_commands_8h_html_a3c12c41c8ec3973588e8fd94adf6ca83"><div class="ttname"><a href="_commands_8h.html#a3c12c41c8ec3973588e8fd94adf6ca83">ReadCpuDetails</a></div><div class="ttdeci">int ReadCpuDetails()</div><div class="ttdef"><b>Definition:</b> cpu.cpp:232</div></div>
+<div class="ttc" id="a_commands_8h_html_ae8143cde8cad0429f0d6d08d65b65b29"><div class="ttname"><a href="_commands_8h.html#ae8143cde8cad0429f0d6d08d65b65b29">CommandSleep</a></div><div class="ttdeci">VOID CommandSleep(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">sleep command help</div><div class="ttdef"><b>Definition:</b> sleep.cpp:32</div></div>
+<div class="ttc" id="a_commands_8h_html_aa816280f15c7f524e0acd2d5434b3cbe"><div class="ttname"><a href="_commands_8h.html#aa816280f15c7f524e0acd2d5434b3cbe">CommandStatus</a></div><div class="ttdeci">VOID CommandStatus(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">.status command handler</div><div class="ttdef"><b>Definition:</b> status.cpp:44</div></div>
+<div class="ttc" id="a_commands_8h_html_a651b470519c8d6a91b9d96b92c312f28"><div class="ttname"><a href="_commands_8h.html#a651b470519c8d6a91b9d96b92c312f28">CommandPause</a></div><div class="ttdeci">VOID CommandPause(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">pause command handler</div><div class="ttdef"><b>Definition:</b> pause.cpp:35</div></div>
+<div class="ttc" id="a_commands_8h_html_a24b0ac1d391e8bccf0281c72a17f0dfb"><div class="ttname"><a href="_commands_8h.html#a24b0ac1d391e8bccf0281c72a17f0dfb">HyperDbgDisassembler32</a></div><div class="ttdeci">int HyperDbgDisassembler32(unsigned char *BufferToDisassemble, UINT64 BaseAddress, UINT64 Size)</div><div class="ttdoc">Disassemble 32 bit assemblies.</div><div class="ttdef"><b>Definition:</b> disassembler.cpp:276</div></div>
+<div class="ttc" id="a_commands_8h_html_ae61b30e16d983c3bd9c30a566a3eb791"><div class="ttname"><a href="_commands_8h.html#ae61b30e16d983c3bd9c30a566a3eb791">CommandWrmsr</a></div><div class="ttdeci">VOID CommandWrmsr(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">wrmsr command handler</div><div class="ttdef"><b>Definition:</b> wrmsr.cpp:33</div></div>
+<div class="ttc" id="a_commands_8h_html_a7d84b2796dfef7fad3d52d671a7f3125"><div class="ttname"><a href="_commands_8h.html#a7d84b2796dfef7fad3d52d671a7f3125">CommandConnect</a></div><div class="ttdeci">VOID CommandConnect(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">.connect command handler</div><div class="ttdef"><b>Definition:</b> connect.cpp:48</div></div>
+<div class="ttc" id="a_commands_8h_html_a1aa81b59949c6bbddd7e226108e78612"><div class="ttname"><a href="_commands_8h.html#a1aa81b59949c6bbddd7e226108e78612">CommandLoad</a></div><div class="ttdeci">VOID CommandLoad(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">load command handler</div><div class="ttdef"><b>Definition:</b> load.cpp:37</div></div>
+<div class="ttc" id="a_commands_8h_html_a975e3092b358beed26b58a0e0d4bfbbe"><div class="ttname"><a href="_commands_8h.html#a975e3092b358beed26b58a0e0d4bfbbe">CommandInterrupt</a></div><div class="ttdeci">VOID CommandInterrupt(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!interrupt command handler</div><div class="ttdef"><b>Definition:</b> interrupt.cpp:38</div></div>
+<div class="ttc" id="a_commands_8h_html_a5078efff0b67fa4648bbf6d76e3f0464"><div class="ttname"><a href="_commands_8h.html#a5078efff0b67fa4648bbf6d76e3f0464">HyperDbgReadMemoryAndDisassemble</a></div><div class="ttdeci">VOID HyperDbgReadMemoryAndDisassemble(DEBUGGER_SHOW_MEMORY_STYLE Style, UINT64 Address, DEBUGGER_READ_MEMORY_TYPE MemoryType, DEBUGGER_READ_READING_TYPE ReadingType, UINT32 Pid, UINT Size)</div><div class="ttdoc">Read memory and disassembler.</div><div class="ttdef"><b>Definition:</b> readmem.cpp:26</div></div>
+<div class="ttc" id="a_commands_8h_html_a01d7430c52e6181e5c62d2e960f43627"><div class="ttname"><a href="_commands_8h.html#a01d7430c52e6181e5c62d2e960f43627">CommandPte</a></div><div class="ttdeci">VOID CommandPte(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">!pte command handler</div><div class="ttdef"><b>Definition:</b> pte.cpp:31</div></div>
+<div class="ttc" id="a_commands_8h_html_ad231de98933f588a75e0c9e335705061"><div class="ttname"><a href="_commands_8h.html#ad231de98933f588a75e0c9e335705061">CommandUnload</a></div><div class="ttdeci">VOID CommandUnload(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">unload command handler</div><div class="ttdef"><b>Definition:</b> unload.cpp:37</div></div>
+<div class="ttc" id="a_commands_8h_html_a7c29ec20f55661e22cd21d79cc50349b"><div class="ttname"><a href="_commands_8h.html#a7c29ec20f55661e22cd21d79cc50349b">CommandHide</a></div><div class="ttdeci">VOID CommandHide(vector&lt; string &gt; SplittedCommand, string Command)</div><div class="ttdoc">!hide command handler</div><div class="ttdef"><b>Definition:</b> hide.cpp:50</div></div>
+<div class="ttc" id="a_commands_8h_html_ac77241a6d187b3c815929f5c6a977072"><div class="ttname"><a href="_commands_8h.html#ac77241a6d187b3c815929f5c6a977072">CommandLm</a></div><div class="ttdeci">int CommandLm(vector&lt; string &gt; SplittedCommand)</div><div class="ttdoc">handle lm command</div><div class="ttdef"><b>Definition:</b> lm.cpp:38</div></div>
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_2ba950cbe69a0dd8a769d65244bdf310.html">hprdbgctrl</a></li><li class="navelem"><a class="el" href="_commands_8h.html">Commands.h</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

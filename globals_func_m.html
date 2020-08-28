@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('globals_func_m.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,18 +85,25 @@ $(function() {
 
 <h3><a id="index_m"></a>- m -</h3><ul>
 <li>main()
-: <a class="el" href="hyperdbg-cli_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">hyperdbg-cli.cpp</a>
+: <a class="el" href="hyperdbg-cli_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">hyperdbg-cli.cpp</a>
 </li>
 <li>ManageDriver()
-: <a class="el" href="hprdbgctrl_8h.html#ac6af767e06731d664fd6124a9ca1df12">hprdbgctrl.h</a>
-, <a class="el" href="_install_8cpp.html#ac6af767e06731d664fd6124a9ca1df12">Install.cpp</a>
+: <a class="el" href="install_8cpp.html#a1deb4d6cc464e960b1d3f2985b080416">install.cpp</a>
+, <a class="el" href="install_8h.html#ac6af767e06731d664fd6124a9ca1df12">install.h</a>
 </li>
 <li>MathPower()
 : <a class="el" href="_common_8c.html#a0f16df9e7e4722921b04a6db04144236">Common.c</a>
-, <a class="el" href="_common_8h.html#a0f16df9e7e4722921b04a6db04144236">Common.h</a>
+, <a class="el" href="hprdbghv_2_common_8h.html#a0f16df9e7e4722921b04a6db04144236">Common.h</a>
+</li>
+<li>Median()
+: <a class="el" href="gaussian-rng_8cpp.html#a87fce4ee4d93601b2ff3084ea36c5ea2">gaussian-rng.cpp</a>
+, <a class="el" href="hprdbgctrl_2_transparency_8h.html#a87fce4ee4d93601b2ff3084ea36c5ea2">transparency.h</a>
+</li>
+<li>MedianAbsoluteDeviationTest()
+: <a class="el" href="gaussian-rng_8cpp.html#a9839b812e4b67dde8382144faeb44dcc">gaussian-rng.cpp</a>
 </li>
 <li>MemoryManagerReadProcessMemoryNormal()
-: <a class="el" href="_debugger_8h.html#addda4856e5010e22aaf8f2603f28100d">Debugger.h</a>
+: <a class="el" href="hprdbghv_2_debugger_8h.html#addda4856e5010e22aaf8f2603f28100d">Debugger.h</a>
 , <a class="el" href="_memory_manager_8c.html#addda4856e5010e22aaf8f2603f28100d">MemoryManager.c</a>
 </li>
 <li>MemoryMapperGetIndex()
@@ -103,26 +130,48 @@ $(function() {
 : <a class="el" href="_memory_mapper_8c.html#ac17d4f1a6ffc69eb67128aea0ec86e3b">MemoryMapper.c</a>
 </li>
 <li>MemoryMapperReadMemorySafe()
-: <a class="el" href="_memory_mapper_8h.html#ad34df1901286734c77884ce9fc7c4f2d">MemoryMapper.h</a>
-, <a class="el" href="_memory_mapper_8c.html#ad34df1901286734c77884ce9fc7c4f2d">MemoryMapper.c</a>
+: <a class="el" href="_memory_mapper_8c.html#ad34df1901286734c77884ce9fc7c4f2d">MemoryMapper.c</a>
+, <a class="el" href="_memory_mapper_8h.html#ad34df1901286734c77884ce9fc7c4f2d">MemoryMapper.h</a>
 </li>
 <li>MemoryMapperReadMemorySafeByPte()
 : <a class="el" href="_memory_mapper_8c.html#a49af3dceb386e43cc196c7eafc4761c6">MemoryMapper.c</a>
 </li>
+<li>MemoryMapperReserveUsermodeAddressInTargetProcess()
+: <a class="el" href="_memory_mapper_8h.html#ab96ebea857d481f28e07b066ba110fc9">MemoryMapper.h</a>
+, <a class="el" href="_memory_mapper_8c.html#ab96ebea857d481f28e07b066ba110fc9">MemoryMapper.c</a>
+</li>
 <li>MemoryMapperUninitialize()
-: <a class="el" href="_memory_mapper_8h.html#a4c1a12a407bc281cb9f03db67b203913">MemoryMapper.h</a>
-, <a class="el" href="_memory_mapper_8c.html#a4c1a12a407bc281cb9f03db67b203913">MemoryMapper.c</a>
+: <a class="el" href="_memory_mapper_8c.html#a4c1a12a407bc281cb9f03db67b203913">MemoryMapper.c</a>
+, <a class="el" href="_memory_mapper_8h.html#a4c1a12a407bc281cb9f03db67b203913">MemoryMapper.h</a>
 </li>
 <li>MemoryMapperUnmapReservedPageRange()
 : <a class="el" href="_memory_mapper_8c.html#a39dc486eb10d6f82eeb2f7c7fee989c0">MemoryMapper.c</a>
 </li>
+<li>MemoryMapperWriteMemorySafe()
+: <a class="el" href="_memory_mapper_8c.html#aaee787f12fdd5b55e8ed5f0fb0de723c">MemoryMapper.c</a>
+, <a class="el" href="_memory_mapper_8h.html#aaee787f12fdd5b55e8ed5f0fb0de723c">MemoryMapper.h</a>
+</li>
+<li>MemoryMapperWriteMemorySafeByPhysicalAddress()
+: <a class="el" href="_memory_mapper_8c.html#a938f734d2f6af30eaae0016886ba71d7">MemoryMapper.c</a>
+, <a class="el" href="_memory_mapper_8h.html#a938f734d2f6af30eaae0016886ba71d7">MemoryMapper.h</a>
+</li>
+<li>MemoryMapperWriteMemorySafeByPte()
+: <a class="el" href="_memory_mapper_8c.html#a41ef5112f39e5a4b8c4c6b624edcb40c">MemoryMapper.c</a>
+</li>
+<li>MemoryMapperWriteMemoryUnsafe()
+: <a class="el" href="_memory_mapper_8h.html#ac61db55ba4253cc41f2cfa679cb29130">MemoryMapper.h</a>
+, <a class="el" href="_memory_mapper_8c.html#ac61db55ba4253cc41f2cfa679cb29130">MemoryMapper.c</a>
+</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

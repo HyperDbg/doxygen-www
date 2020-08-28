@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_extension_commands_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_19054a674c4bd5cb8fceb6542228579c.html">hprdbghv</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
@@ -74,19 +90,66 @@ $(function() {
 
 <p>Implementation of Debugger Commands (Extensions)  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="_broadcast_8h_source.html">Broadcast.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_dpc_8h_source.html">Dpc.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_debugger_8h_source.html">Debugger.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_logging_8h_source.html">Logging.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_common_8h_source.html">Common.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_hooks_8h_source.html">Hooks.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_global_variables_8h_source.html">GlobalVariables.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="hprdbghv_2pch_8h_source.html">pch.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a4e2038a9aa5873691d66cf78d10104dc"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_extension_commands_8c.html#a4e2038a9aa5873691d66cf78d10104dc">ExtensionCommandVa2paAndPa2va</a> (PDEBUGGER_VA2PA_AND_PA2VA_COMMANDS AddressDetails)</td></tr>
+<tr class="memdesc:a4e2038a9aa5873691d66cf78d10104dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">routines for !va2pa and !pa2va commands  <a href="_extension_commands_8c.html#a4e2038a9aa5873691d66cf78d10104dc">More...</a><br /></td></tr>
+<tr class="separator:a4e2038a9aa5873691d66cf78d10104dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47a19e76bdc479e60348501d7fd78af1"><td class="memItemLeft" align="right" valign="top">BOOLEAN&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_extension_commands_8c.html#a47a19e76bdc479e60348501d7fd78af1">ExtensionCommandPte</a> (PDEBUGGER_READ_PAGE_TABLE_ENTRIES_DETAILS PteDetails)</td></tr>
 <tr class="memdesc:a47a19e76bdc479e60348501d7fd78af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">routines for !pte command  <a href="_extension_commands_8c.html#a47a19e76bdc479e60348501d7fd78af1">More...</a><br /></td></tr>
 <tr class="separator:a47a19e76bdc479e60348501d7fd78af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f3a624376f44de89dc9fbb574b98dfb"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_extension_commands_8c.html#a2f3a624376f44de89dc9fbb574b98dfb">ExtensionCommandChangeAllMsrBitmapReadAllCores</a> (UINT64 BitmapMask)</td></tr>
+<tr class="memdesc:a2f3a624376f44de89dc9fbb574b98dfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">routines for !msrread command which  <a href="_extension_commands_8c.html#a2f3a624376f44de89dc9fbb574b98dfb">More...</a><br /></td></tr>
+<tr class="separator:a2f3a624376f44de89dc9fbb574b98dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a938c1e8f4be1a300cabc147cb5fd3a5d"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_extension_commands_8c.html#a938c1e8f4be1a300cabc147cb5fd3a5d">ExtensionCommandResetChangeAllMsrBitmapReadAllCores</a> ()</td></tr>
+<tr class="memdesc:a938c1e8f4be1a300cabc147cb5fd3a5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">routines for disable (reset) !msrread command  <a href="_extension_commands_8c.html#a938c1e8f4be1a300cabc147cb5fd3a5d">More...</a><br /></td></tr>
+<tr class="separator:a938c1e8f4be1a300cabc147cb5fd3a5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fc38f17d9632ae25fb1e93f2aaaca3d"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_extension_commands_8c.html#a8fc38f17d9632ae25fb1e93f2aaaca3d">ExtensionCommandChangeAllMsrBitmapWriteAllCores</a> (UINT64 BitmapMask)</td></tr>
+<tr class="memdesc:a8fc38f17d9632ae25fb1e93f2aaaca3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">routines for !msrwrite command which  <a href="_extension_commands_8c.html#a8fc38f17d9632ae25fb1e93f2aaaca3d">More...</a><br /></td></tr>
+<tr class="separator:a8fc38f17d9632ae25fb1e93f2aaaca3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a958fdc1728ced23932bdc96d55917942"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_extension_commands_8c.html#a958fdc1728ced23932bdc96d55917942">ExtensionCommandResetAllMsrBitmapWriteAllCores</a> ()</td></tr>
+<tr class="memdesc:a958fdc1728ced23932bdc96d55917942"><td class="mdescLeft">&#160;</td><td class="mdescRight">routines for reset !msrwrite command which  <a href="_extension_commands_8c.html#a958fdc1728ced23932bdc96d55917942">More...</a><br /></td></tr>
+<tr class="separator:a958fdc1728ced23932bdc96d55917942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9261665977010b304a867ffb7429d842"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_extension_commands_8c.html#a9261665977010b304a867ffb7429d842">ExtensionCommandEnableRdtscExitingAllCores</a> ()</td></tr>
+<tr class="memdesc:a9261665977010b304a867ffb7429d842"><td class="mdescLeft">&#160;</td><td class="mdescRight">routines for !tsc command  <a href="_extension_commands_8c.html#a9261665977010b304a867ffb7429d842">More...</a><br /></td></tr>
+<tr class="separator:a9261665977010b304a867ffb7429d842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab80fb8c5300b295324f08764283c979"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_extension_commands_8c.html#aab80fb8c5300b295324f08764283c979">ExtensionCommandDisableRdtscExitingAllCores</a> ()</td></tr>
+<tr class="memdesc:aab80fb8c5300b295324f08764283c979"><td class="mdescLeft">&#160;</td><td class="mdescRight">routines for disabling !tsc command  <a href="_extension_commands_8c.html#aab80fb8c5300b295324f08764283c979">More...</a><br /></td></tr>
+<tr class="separator:aab80fb8c5300b295324f08764283c979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39a3679f0fae02069dc3fc86c8e053ea"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_extension_commands_8c.html#a39a3679f0fae02069dc3fc86c8e053ea">ExtensionCommandEnableRdpmcExitingAllCores</a> ()</td></tr>
+<tr class="memdesc:a39a3679f0fae02069dc3fc86c8e053ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">routines for !pmc  <a href="_extension_commands_8c.html#a39a3679f0fae02069dc3fc86c8e053ea">More...</a><br /></td></tr>
+<tr class="separator:a39a3679f0fae02069dc3fc86c8e053ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5169eca60edbc39df01eb90e79fe6011"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_extension_commands_8c.html#a5169eca60edbc39df01eb90e79fe6011">ExtensionCommandDisableRdpmcExitingAllCores</a> ()</td></tr>
+<tr class="memdesc:a5169eca60edbc39df01eb90e79fe6011"><td class="mdescLeft">&#160;</td><td class="mdescRight">routines for disabling !pmc  <a href="_extension_commands_8c.html#a5169eca60edbc39df01eb90e79fe6011">More...</a><br /></td></tr>
+<tr class="separator:a5169eca60edbc39df01eb90e79fe6011"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac54592e1514c7893b073111c3dbf8d2"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_extension_commands_8c.html#aac54592e1514c7893b073111c3dbf8d2">ExtensionCommandSetExceptionBitmapAllCores</a> (UINT64 ExceptionIndex)</td></tr>
+<tr class="memdesc:aac54592e1514c7893b073111c3dbf8d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">routines for !exception command which  <a href="_extension_commands_8c.html#aac54592e1514c7893b073111c3dbf8d2">More...</a><br /></td></tr>
+<tr class="separator:aac54592e1514c7893b073111c3dbf8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23f197801ddeb9e681281e5888e758b5"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_extension_commands_8c.html#a23f197801ddeb9e681281e5888e758b5">ExtensionCommandResetExceptionBitmapAllCores</a> ()</td></tr>
+<tr class="memdesc:a23f197801ddeb9e681281e5888e758b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">routines for reset !exception command  <a href="_extension_commands_8c.html#a23f197801ddeb9e681281e5888e758b5">More...</a><br /></td></tr>
+<tr class="separator:a23f197801ddeb9e681281e5888e758b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ed0dd003aac7f60d005eec9bf8fd920"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_extension_commands_8c.html#a9ed0dd003aac7f60d005eec9bf8fd920">ExtensionCommandEnableMovDebugRegistersExitingAllCores</a> ()</td></tr>
+<tr class="memdesc:a9ed0dd003aac7f60d005eec9bf8fd920"><td class="mdescLeft">&#160;</td><td class="mdescRight">routines for !dr  <a href="_extension_commands_8c.html#a9ed0dd003aac7f60d005eec9bf8fd920">More...</a><br /></td></tr>
+<tr class="separator:a9ed0dd003aac7f60d005eec9bf8fd920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa9967a15acd2afa64046576ceb5ce7"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_extension_commands_8c.html#a6fa9967a15acd2afa64046576ceb5ce7">ExtensionCommandDisableMovDebugRegistersExitingAllCores</a> ()</td></tr>
+<tr class="memdesc:a6fa9967a15acd2afa64046576ceb5ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">routines for disabling !dr  <a href="_extension_commands_8c.html#a6fa9967a15acd2afa64046576ceb5ce7">More...</a><br /></td></tr>
+<tr class="separator:a6fa9967a15acd2afa64046576ceb5ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa50bac2e815adc05396c00ad1ad05002"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_extension_commands_8c.html#aa50bac2e815adc05396c00ad1ad05002">ExtensionCommandSetExternalInterruptExitingAllCores</a> ()</td></tr>
+<tr class="memdesc:aa50bac2e815adc05396c00ad1ad05002"><td class="mdescLeft">&#160;</td><td class="mdescRight">routines for !interrupt command which  <a href="_extension_commands_8c.html#aa50bac2e815adc05396c00ad1ad05002">More...</a><br /></td></tr>
+<tr class="separator:aa50bac2e815adc05396c00ad1ad05002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d09cd13622913310311ba1beb046caf"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_extension_commands_8c.html#a0d09cd13622913310311ba1beb046caf">ExtensionCommandUnsetExternalInterruptExitingAllCores</a> ()</td></tr>
+<tr class="memdesc:a0d09cd13622913310311ba1beb046caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">routines for terminate !interrupt command <br  />
+  <a href="_extension_commands_8c.html#a0d09cd13622913310311ba1beb046caf">More...</a><br /></td></tr>
+<tr class="separator:a0d09cd13622913310311ba1beb046caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a060ca3feb68df46356a417a216706e51"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_extension_commands_8c.html#a060ca3feb68df46356a417a216706e51">ExtensionCommandIoBitmapChangeAllCores</a> (UINT64 Port)</td></tr>
+<tr class="memdesc:a060ca3feb68df46356a417a216706e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">routines for !ioin and !ioout command which  <a href="_extension_commands_8c.html#a060ca3feb68df46356a417a216706e51">More...</a><br /></td></tr>
+<tr class="separator:a060ca3feb68df46356a417a216706e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08fe1778e02afbdc57d2dad248ab2df6"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_extension_commands_8c.html#a08fe1778e02afbdc57d2dad248ab2df6">ExtensionCommandIoBitmapResetAllCores</a> ()</td></tr>
+<tr class="memdesc:a08fe1778e02afbdc57d2dad248ab2df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">routines for reset !ioin and !ioout command <br  />
+  <a href="_extension_commands_8c.html#a08fe1778e02afbdc57d2dad248ab2df6">More...</a><br /></td></tr>
+<tr class="separator:a08fe1778e02afbdc57d2dad248ab2df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of Debugger Commands (Extensions) </p>
@@ -96,6 +159,276 @@ Functions</h2></td></tr>
 <dl class="section date"><dt>Date</dt><dd>2020-04-11</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>This project is released under the GNU Public License v3. </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="a2f3a624376f44de89dc9fbb574b98dfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f3a624376f44de89dc9fbb574b98dfb">&#9670;&nbsp;</a></span>ExtensionCommandChangeAllMsrBitmapReadAllCores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ExtensionCommandChangeAllMsrBitmapReadAllCores </td>
+          <td>(</td>
+          <td class="paramtype">UINT64&#160;</td>
+          <td class="paramname"><em>BitmapMask</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>routines for !msrread command which </p>
+<p>causes vm-exit on all msr reads </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">BitmapMask</td><td>Bit mask of msr to put on msr bitmap </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    KeGenericCallDpc(<a class="code" href="_broadcast_8c.html#aec6343be27a1a2b57508947bccd5a0d2">BroadcastDpcChangeMsrBitmapReadOnAllCores</a>, BitmapMask);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8fc38f17d9632ae25fb1e93f2aaaca3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fc38f17d9632ae25fb1e93f2aaaca3d">&#9670;&nbsp;</a></span>ExtensionCommandChangeAllMsrBitmapWriteAllCores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ExtensionCommandChangeAllMsrBitmapWriteAllCores </td>
+          <td>(</td>
+          <td class="paramtype">UINT64&#160;</td>
+          <td class="paramname"><em>BitmapMask</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>routines for !msrwrite command which </p>
+<p>causes vm-exit on all msr writes </p><dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;{</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    KeGenericCallDpc(<a class="code" href="_broadcast_8c.html#a7189412f355373751cb81f58dc7eaf30">BroadcastDpcChangeMsrBitmapWriteOnAllCores</a>, BitmapMask);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a6fa9967a15acd2afa64046576ceb5ce7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fa9967a15acd2afa64046576ceb5ce7">&#9670;&nbsp;</a></span>ExtensionCommandDisableMovDebugRegistersExitingAllCores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ExtensionCommandDisableMovDebugRegistersExitingAllCores </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>routines for disabling !dr </p>
+<dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;{</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    KeGenericCallDpc(<a class="code" href="_broadcast_8c.html#a13f159df30d749d87bc76e89480f94b7">BroadcastDpcDisableMovDebigRegisterExitingAllCores</a>, NULL);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5169eca60edbc39df01eb90e79fe6011"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5169eca60edbc39df01eb90e79fe6011">&#9670;&nbsp;</a></span>ExtensionCommandDisableRdpmcExitingAllCores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ExtensionCommandDisableRdpmcExitingAllCores </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>routines for disabling !pmc </p>
+<dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;{</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    KeGenericCallDpc(<a class="code" href="_broadcast_8c.html#aee7675a736dafd7ee046f7878c925638">BroadcastDpcDisableRdpmcExitingAllCores</a>, NULL);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aab80fb8c5300b295324f08764283c979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab80fb8c5300b295324f08764283c979">&#9670;&nbsp;</a></span>ExtensionCommandDisableRdtscExitingAllCores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ExtensionCommandDisableRdtscExitingAllCores </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>routines for disabling !tsc command </p>
+<dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;{</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    KeGenericCallDpc(<a class="code" href="_broadcast_8c.html#a122415a9d671ed41d4900a47f0bd169e">BroadcastDpcDisableRdtscExitingAllCores</a>, NULL);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9ed0dd003aac7f60d005eec9bf8fd920"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ed0dd003aac7f60d005eec9bf8fd920">&#9670;&nbsp;</a></span>ExtensionCommandEnableMovDebugRegistersExitingAllCores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ExtensionCommandEnableMovDebugRegistersExitingAllCores </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>routines for !dr </p>
+<p>causes vm-exit on all accesses to debug registers </p><dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;{</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    KeGenericCallDpc(<a class="code" href="_broadcast_8c.html#a6304745322229adac9da0c692d2d7a32">BroadcastDpcEnableMovDebigRegisterExitingAllCores</a>, NULL);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a39a3679f0fae02069dc3fc86c8e053ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39a3679f0fae02069dc3fc86c8e053ea">&#9670;&nbsp;</a></span>ExtensionCommandEnableRdpmcExitingAllCores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ExtensionCommandEnableRdpmcExitingAllCores </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>routines for !pmc </p>
+<p>causes vm-exit on all execution of rdpmc </p><dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;{</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    KeGenericCallDpc(<a class="code" href="_broadcast_8c.html#aea4660869a400325cfeaf0bb5199e183">BroadcastDpcEnableRdpmcExitingAllCores</a>, NULL);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9261665977010b304a867ffb7429d842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9261665977010b304a867ffb7429d842">&#9670;&nbsp;</a></span>ExtensionCommandEnableRdtscExitingAllCores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ExtensionCommandEnableRdtscExitingAllCores </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>routines for !tsc command </p>
+<p>causes vm-exit on all execution of rdtsc/rdtscp </p><dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;{</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    KeGenericCallDpc(<a class="code" href="_broadcast_8c.html#aaaa8e1c5b9a0ecd027a73d32e13e07ce">BroadcastDpcEnableRdtscExitingAllCores</a>, NULL);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a060ca3feb68df46356a417a216706e51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a060ca3feb68df46356a417a216706e51">&#9670;&nbsp;</a></span>ExtensionCommandIoBitmapChangeAllCores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ExtensionCommandIoBitmapChangeAllCores </td>
+          <td>(</td>
+          <td class="paramtype">UINT64&#160;</td>
+          <td class="paramname"><em>Port</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>routines for !ioin and !ioout command which </p>
+<p>causes vm-exit on all i/o instructions or one port </p><dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;{</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    KeGenericCallDpc(<a class="code" href="_broadcast_8c.html#aa30e41575edc4f972093f925664fc982">BroadcastDpcChangeIoBitmapOnAllCores</a>, Port);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a08fe1778e02afbdc57d2dad248ab2df6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08fe1778e02afbdc57d2dad248ab2df6">&#9670;&nbsp;</a></span>ExtensionCommandIoBitmapResetAllCores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ExtensionCommandIoBitmapResetAllCores </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>routines for reset !ioin and !ioout command <br  />
+ </p>
+<dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;{</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    KeGenericCallDpc(<a class="code" href="_broadcast_8c.html#a5091d0d17c3fa3f0815fa5da40fb7596">BroadcastDpcResetIoBitmapOnAllCores</a>, NULL);</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a47a19e76bdc479e60348501d7fd78af1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a47a19e76bdc479e60348501d7fd78af1">&#9670;&nbsp;</a></span>ExtensionCommandPte()</h2>
 
@@ -113,78 +446,328 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>routines for !pte command </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">PteDetails</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>BOOLEAN </dd></dl>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;{</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// Check if address is valid</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="_common_8c.html#ae6bbd169187c6e08bbe584c67175a61d">VirtualAddressToPhysicalAddress</a>(PteDetails-&gt;VirtualAddress))</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">// Address is not valid (doesn&#39;t have Physical Address)</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> FALSE;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// Read the PML4E</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="struct___p_a_g_e___e_n_t_r_y.html">PPAGE_ENTRY</a> Pml4e = <a class="code" href="_memory_mapper_8c.html#a6ad6175a38d43cc3d1bb2f8af10a404a">MemoryMapperGetPteVa</a>(PteDetails-&gt;VirtualAddress, <a class="code" href="_memory_mapper_8h.html#a4e86b7e0a4feec55a27edf6d1f0729b0a5e22013970c0add0afa16b78489536df">PML4</a>);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (Pml4e)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        PteDetails-&gt;Pml4eVirtualAddress = Pml4e;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        PteDetails-&gt;Pml4eValue          = Pml4e-&gt;<a class="code" href="struct___p_a_g_e___e_n_t_r_y.html#abead83a5acc24776b068a629a08eeea6">Flags</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="comment">// Read the PDPTE</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="struct___p_a_g_e___e_n_t_r_y.html">PPAGE_ENTRY</a> Pdpte = <a class="code" href="_memory_mapper_8c.html#a6ad6175a38d43cc3d1bb2f8af10a404a">MemoryMapperGetPteVa</a>(PteDetails-&gt;VirtualAddress, <a class="code" href="_memory_mapper_8h.html#a4e86b7e0a4feec55a27edf6d1f0729b0abca3bbfd5f9a8b8e9b2a0e2fb50c66c2">PDPT</a>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">if</span> (Pdpte)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        PteDetails-&gt;PdpteVirtualAddress = Pdpte;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        PteDetails-&gt;PdpteValue          = Pdpte-&gt;<a class="code" href="struct___p_a_g_e___e_n_t_r_y.html#abead83a5acc24776b068a629a08eeea6">Flags</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// Read the PDE</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="struct___p_a_g_e___e_n_t_r_y.html">PPAGE_ENTRY</a> Pde = <a class="code" href="_memory_mapper_8c.html#a6ad6175a38d43cc3d1bb2f8af10a404a">MemoryMapperGetPteVa</a>(PteDetails-&gt;VirtualAddress, <a class="code" href="_memory_mapper_8h.html#a4e86b7e0a4feec55a27edf6d1f0729b0aefbc069e0ac4cd293f3ba527bec2befe">PD</a>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">if</span> (Pde)</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        PteDetails-&gt;PdeVirtualAddress = Pde;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        PteDetails-&gt;PdeValue          = Pde-&gt;<a class="code" href="struct___p_a_g_e___e_n_t_r_y.html#abead83a5acc24776b068a629a08eeea6">Flags</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">// Read the PTE</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <a class="code" href="struct___p_a_g_e___e_n_t_r_y.html">PPAGE_ENTRY</a> Pte = <a class="code" href="_memory_mapper_8c.html#a6ad6175a38d43cc3d1bb2f8af10a404a">MemoryMapperGetPteVa</a>(PteDetails-&gt;VirtualAddress, <a class="code" href="_memory_mapper_8h.html#a4e86b7e0a4feec55a27edf6d1f0729b0a910ff9b067a2587d70e5bc62bcbd8f3b">PT</a>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">if</span> (Pte)</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        PteDetails-&gt;PteVirtualAddress = Pte;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        PteDetails-&gt;PteValue          = Pte-&gt;<a class="code" href="struct___p_a_g_e___e_n_t_r_y.html#abead83a5acc24776b068a629a08eeea6">Flags</a>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> TRUE;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a958fdc1728ced23932bdc96d55917942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a958fdc1728ced23932bdc96d55917942">&#9670;&nbsp;</a></span>ExtensionCommandResetAllMsrBitmapWriteAllCores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ExtensionCommandResetAllMsrBitmapWriteAllCores </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>routines for reset !msrwrite command which </p>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// Check if address is valid</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="_common_8c.html#ae6bbd169187c6e08bbe584c67175a61d">VirtualAddressToPhysicalAddress</a>(PteDetails-&gt;VirtualAddress))</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="comment">// Address is not valid (doesn&#39;t have Physical Address)</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> FALSE;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// Read the PML4E</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="struct___p_a_g_e___e_n_t_r_y.html">PPAGE_ENTRY</a> Pml4e = <a class="code" href="_memory_mapper_8c.html#a6ad6175a38d43cc3d1bb2f8af10a404a">MemoryMapperGetPteVa</a>(PteDetails-&gt;VirtualAddress, <a class="code" href="_memory_mapper_8h.html#a4e86b7e0a4feec55a27edf6d1f0729b0a5e22013970c0add0afa16b78489536df">PML4</a>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (Pml4e)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        PteDetails-&gt;Pml4eVirtualAddress = Pml4e;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        PteDetails-&gt;Pml4eValue          = Pml4e-&gt;<a class="code" href="struct___p_a_g_e___e_n_t_r_y.html#abead83a5acc24776b068a629a08eeea6">Flags</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// Read the PDPTE</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="struct___p_a_g_e___e_n_t_r_y.html">PPAGE_ENTRY</a> Pdpte = <a class="code" href="_memory_mapper_8c.html#a6ad6175a38d43cc3d1bb2f8af10a404a">MemoryMapperGetPteVa</a>(PteDetails-&gt;VirtualAddress, <a class="code" href="_memory_mapper_8h.html#a4e86b7e0a4feec55a27edf6d1f0729b0abca3bbfd5f9a8b8e9b2a0e2fb50c66c2">PDPT</a>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (Pdpte)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        PteDetails-&gt;PdpteVirtualAddress = Pdpte;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        PteDetails-&gt;PdpteValue          = Pdpte-&gt;<a class="code" href="struct___p_a_g_e___e_n_t_r_y.html#abead83a5acc24776b068a629a08eeea6">Flags</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// Read the PDE</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="struct___p_a_g_e___e_n_t_r_y.html">PPAGE_ENTRY</a> Pde = <a class="code" href="_memory_mapper_8c.html#a6ad6175a38d43cc3d1bb2f8af10a404a">MemoryMapperGetPteVa</a>(PteDetails-&gt;VirtualAddress, <a class="code" href="_memory_mapper_8h.html#a4e86b7e0a4feec55a27edf6d1f0729b0aefbc069e0ac4cd293f3ba527bec2befe">PD</a>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (Pde)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        PteDetails-&gt;PdeVirtualAddress = Pde;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        PteDetails-&gt;PdeValue          = Pde-&gt;<a class="code" href="struct___p_a_g_e___e_n_t_r_y.html#abead83a5acc24776b068a629a08eeea6">Flags</a>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// Read the PTE</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="struct___p_a_g_e___e_n_t_r_y.html">PPAGE_ENTRY</a> Pte = <a class="code" href="_memory_mapper_8c.html#a6ad6175a38d43cc3d1bb2f8af10a404a">MemoryMapperGetPteVa</a>(PteDetails-&gt;VirtualAddress, <a class="code" href="_memory_mapper_8h.html#a4e86b7e0a4feec55a27edf6d1f0729b0a910ff9b067a2587d70e5bc62bcbd8f3b">PT</a>);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">if</span> (Pte)</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        PteDetails-&gt;PteVirtualAddress = Pte;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        PteDetails-&gt;PteValue          = Pte-&gt;<a class="code" href="struct___p_a_g_e___e_n_t_r_y.html#abead83a5acc24776b068a629a08eeea6">Flags</a>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">return</span> TRUE;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;{</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    KeGenericCallDpc(<a class="code" href="_broadcast_8c.html#a834ac9534e091ad4d70bb5c2aad03040">BroadcastDpcResetMsrBitmapWriteOnAllCores</a>, NULL);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a938c1e8f4be1a300cabc147cb5fd3a5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a938c1e8f4be1a300cabc147cb5fd3a5d">&#9670;&nbsp;</a></span>ExtensionCommandResetChangeAllMsrBitmapReadAllCores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ExtensionCommandResetChangeAllMsrBitmapReadAllCores </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>routines for disable (reset) !msrread command </p>
+<dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;{</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    KeGenericCallDpc(<a class="code" href="_broadcast_8c.html#a8e8498f8fd7f9a6b2b7a51d62bf702f9">BroadcastDpcResetMsrBitmapReadOnAllCores</a>, NULL);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a23f197801ddeb9e681281e5888e758b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23f197801ddeb9e681281e5888e758b5">&#9670;&nbsp;</a></span>ExtensionCommandResetExceptionBitmapAllCores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ExtensionCommandResetExceptionBitmapAllCores </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>routines for reset !exception command </p>
+<dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;{</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    KeGenericCallDpc(<a class="code" href="_broadcast_8c.html#ac2d4601812f6837fa04b3045ad917ba1">BroadcastDpcResetExceptionBitmapOnAllCores</a>, NULL);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aac54592e1514c7893b073111c3dbf8d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac54592e1514c7893b073111c3dbf8d2">&#9670;&nbsp;</a></span>ExtensionCommandSetExceptionBitmapAllCores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ExtensionCommandSetExceptionBitmapAllCores </td>
+          <td>(</td>
+          <td class="paramtype">UINT64&#160;</td>
+          <td class="paramname"><em>ExceptionIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>routines for !exception command which </p>
+<p>causes vm-exit when exception occurred </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ExceptionIndex</td><td>index of exception on IDT </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;{</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    KeGenericCallDpc(<a class="code" href="_broadcast_8c.html#aca5a6a10ee5caa9f9b2e785fc67956d9">BroadcastDpcSetExceptionBitmapOnAllCores</a>, ExceptionIndex);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa50bac2e815adc05396c00ad1ad05002"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa50bac2e815adc05396c00ad1ad05002">&#9670;&nbsp;</a></span>ExtensionCommandSetExternalInterruptExitingAllCores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ExtensionCommandSetExternalInterruptExitingAllCores </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>routines for !interrupt command which </p>
+<p>causes vm-exit when external interrupt occurs </p><dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;{</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    KeGenericCallDpc(<a class="code" href="_broadcast_8c.html#af449e1fd8433ace815e9db5111f5aa8f">BroadcastDpcSetEnableExternalInterruptExitingOnAllCores</a>, NULL);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a0d09cd13622913310311ba1beb046caf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d09cd13622913310311ba1beb046caf">&#9670;&nbsp;</a></span>ExtensionCommandUnsetExternalInterruptExitingAllCores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ExtensionCommandUnsetExternalInterruptExitingAllCores </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>routines for terminate !interrupt command <br  />
+ </p>
+<dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;{</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    KeGenericCallDpc(<a class="code" href="_broadcast_8c.html#a3da395d1b79324b750a1e53579e53211">BroadcastDpcSetDisableExternalInterruptExitingOnAllCores</a>, NULL);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4e2038a9aa5873691d66cf78d10104dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e2038a9aa5873691d66cf78d10104dc">&#9670;&nbsp;</a></span>ExtensionCommandVa2paAndPa2va()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID ExtensionCommandVa2paAndPa2va </td>
+          <td>(</td>
+          <td class="paramtype">PDEBUGGER_VA2PA_AND_PA2VA_COMMANDS&#160;</td>
+          <td class="paramname"><em>AddressDetails</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>routines for !va2pa and !pa2va commands </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">AddressDetails</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">if</span> (AddressDetails-&gt;ProcessId == PsGetCurrentProcessId())</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="comment">// It&#39;s on current process address space</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">if</span> (AddressDetails-&gt;IsVirtual2Physical)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            AddressDetails-&gt;PhysicalAddress = <a class="code" href="_common_8c.html#ae6bbd169187c6e08bbe584c67175a61d">VirtualAddressToPhysicalAddress</a>(AddressDetails-&gt;VirtualAddress);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            AddressDetails-&gt;VirtualAddress = <a class="code" href="_common_8c.html#ae6298fa03152b8845aca798d5f683e9c">PhysicalAddressToVirtualAddress</a>(AddressDetails-&gt;PhysicalAddress);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="comment">// It&#39;s on another process address space</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">if</span> (AddressDetails-&gt;IsVirtual2Physical)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            AddressDetails-&gt;PhysicalAddress = <a class="code" href="_common_8c.html#af251f655d5814472abd5f50c68f209f0">VirtualAddressToPhysicalAddressByProcessId</a>(AddressDetails-&gt;VirtualAddress, AddressDetails-&gt;ProcessId);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            AddressDetails-&gt;VirtualAddress = <a class="code" href="_common_8c.html#ad78dba8d6aa8a44469504aa8f2ea718d">PhysicalAddressToVirtualAddressByProcessId</a>(AddressDetails-&gt;PhysicalAddress, AddressDetails-&gt;ProcessId);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="a_memory_mapper_8c_html_a6ad6175a38d43cc3d1bb2f8af10a404a"><div class="ttname"><a href="_memory_mapper_8c.html#a6ad6175a38d43cc3d1bb2f8af10a404a">MemoryMapperGetPteVa</a></div><div class="ttdeci">PPAGE_ENTRY MemoryMapperGetPteVa(PVOID Va, PML Level)</div><div class="ttdoc">This function gets virtual address and returns its PTE of the virtual address.</div><div class="ttdef"><b>Definition:</b> MemoryMapper.c:100</div></div>
-<div class="ttc" id="a_memory_mapper_8h_html_a4e86b7e0a4feec55a27edf6d1f0729b0abca3bbfd5f9a8b8e9b2a0e2fb50c66c2"><div class="ttname"><a href="_memory_mapper_8h.html#a4e86b7e0a4feec55a27edf6d1f0729b0abca3bbfd5f9a8b8e9b2a0e2fb50c66c2">PDPT</a></div><div class="ttdeci">@ PDPT</div><div class="ttdef"><b>Definition:</b> MemoryMapper.h:36</div></div>
-<div class="ttc" id="a_memory_mapper_8h_html_a4e86b7e0a4feec55a27edf6d1f0729b0a5e22013970c0add0afa16b78489536df"><div class="ttname"><a href="_memory_mapper_8h.html#a4e86b7e0a4feec55a27edf6d1f0729b0a5e22013970c0add0afa16b78489536df">PML4</a></div><div class="ttdeci">@ PML4</div><div class="ttdef"><b>Definition:</b> MemoryMapper.h:37</div></div>
-<div class="ttc" id="astruct___p_a_g_e___e_n_t_r_y_html_abead83a5acc24776b068a629a08eeea6"><div class="ttname"><a href="struct___p_a_g_e___e_n_t_r_y.html#abead83a5acc24776b068a629a08eeea6">_PAGE_ENTRY::Flags</a></div><div class="ttdeci">UINT64 Flags</div><div class="ttdef"><b>Definition:</b> MemoryMapper.h:234</div></div>
-<div class="ttc" id="a_memory_mapper_8h_html_a4e86b7e0a4feec55a27edf6d1f0729b0aefbc069e0ac4cd293f3ba527bec2befe"><div class="ttname"><a href="_memory_mapper_8h.html#a4e86b7e0a4feec55a27edf6d1f0729b0aefbc069e0ac4cd293f3ba527bec2befe">PD</a></div><div class="ttdeci">@ PD</div><div class="ttdef"><b>Definition:</b> MemoryMapper.h:35</div></div>
-<div class="ttc" id="a_memory_mapper_8h_html_a4e86b7e0a4feec55a27edf6d1f0729b0a910ff9b067a2587d70e5bc62bcbd8f3b"><div class="ttname"><a href="_memory_mapper_8h.html#a4e86b7e0a4feec55a27edf6d1f0729b0a910ff9b067a2587d70e5bc62bcbd8f3b">PT</a></div><div class="ttdeci">@ PT</div><div class="ttdef"><b>Definition:</b> MemoryMapper.h:34</div></div>
-<div class="ttc" id="astruct___p_a_g_e___e_n_t_r_y_html"><div class="ttname"><a href="struct___p_a_g_e___e_n_t_r_y.html">_PAGE_ENTRY</a></div><div class="ttdef"><b>Definition:</b> MemoryMapper.h:230</div></div>
-<div class="ttc" id="a_common_8c_html_ae6bbd169187c6e08bbe584c67175a61d"><div class="ttname"><a href="_common_8c.html#ae6bbd169187c6e08bbe584c67175a61d">VirtualAddressToPhysicalAddress</a></div><div class="ttdeci">UINT64 VirtualAddressToPhysicalAddress(PVOID VirtualAddress)</div><div class="ttdoc">Converts Virtual Address to Physical Address.</div><div class="ttdef"><b>Definition:</b> Common.c:134</div></div>
+</div><!-- doc-content -->
+<div class="ttc" id="a_broadcast_8c_html_a13f159df30d749d87bc76e89480f94b7"><div class="ttname"><a href="_broadcast_8c.html#a13f159df30d749d87bc76e89480f94b7">BroadcastDpcDisableMovDebigRegisterExitingAllCores</a></div><div class="ttdeci">VOID BroadcastDpcDisableMovDebigRegisterExitingAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disables mov debug registers exitings.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:452</div></div>
+<div class="ttc" id="a_memory_mapper_8c_html_a6ad6175a38d43cc3d1bb2f8af10a404a"><div class="ttname"><a href="_memory_mapper_8c.html#a6ad6175a38d43cc3d1bb2f8af10a404a">MemoryMapperGetPteVa</a></div><div class="ttdeci">PPAGE_ENTRY MemoryMapperGetPteVa(PVOID Va, PML Level)</div><div class="ttdoc">This function gets virtual address and returns its PTE of the virtual address.</div><div class="ttdef"><b>Definition:</b> MemoryMapper.c:57</div></div>
+<div class="ttc" id="a_memory_mapper_8h_html_a4e86b7e0a4feec55a27edf6d1f0729b0abca3bbfd5f9a8b8e9b2a0e2fb50c66c2"><div class="ttname"><a href="_memory_mapper_8h.html#a4e86b7e0a4feec55a27edf6d1f0729b0abca3bbfd5f9a8b8e9b2a0e2fb50c66c2">PDPT</a></div><div class="ttdeci">@ PDPT</div><div class="ttdef"><b>Definition:</b> MemoryMapper.h:38</div></div>
+<div class="ttc" id="a_memory_mapper_8h_html_a4e86b7e0a4feec55a27edf6d1f0729b0a5e22013970c0add0afa16b78489536df"><div class="ttname"><a href="_memory_mapper_8h.html#a4e86b7e0a4feec55a27edf6d1f0729b0a5e22013970c0add0afa16b78489536df">PML4</a></div><div class="ttdeci">@ PML4</div><div class="ttdef"><b>Definition:</b> MemoryMapper.h:39</div></div>
+<div class="ttc" id="astruct___p_a_g_e___e_n_t_r_y_html_abead83a5acc24776b068a629a08eeea6"><div class="ttname"><a href="struct___p_a_g_e___e_n_t_r_y.html#abead83a5acc24776b068a629a08eeea6">_PAGE_ENTRY::Flags</a></div><div class="ttdeci">UINT64 Flags</div><div class="ttdef"><b>Definition:</b> MemoryMapper.h:248</div></div>
+<div class="ttc" id="a_broadcast_8c_html_a6304745322229adac9da0c692d2d7a32"><div class="ttname"><a href="_broadcast_8c.html#a6304745322229adac9da0c692d2d7a32">BroadcastDpcEnableMovDebigRegisterExitingAllCores</a></div><div class="ttdeci">VOID BroadcastDpcEnableMovDebigRegisterExitingAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enables mov debug registers exitings.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:424</div></div>
+<div class="ttc" id="a_broadcast_8c_html_a122415a9d671ed41d4900a47f0bd169e"><div class="ttname"><a href="_broadcast_8c.html#a122415a9d671ed41d4900a47f0bd169e">BroadcastDpcDisableRdtscExitingAllCores</a></div><div class="ttdeci">VOID BroadcastDpcDisableRdtscExitingAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disables rdtsc/rdtscp exiting in primary cpu-based controls.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:284</div></div>
+<div class="ttc" id="a_memory_mapper_8h_html_a4e86b7e0a4feec55a27edf6d1f0729b0aefbc069e0ac4cd293f3ba527bec2befe"><div class="ttname"><a href="_memory_mapper_8h.html#a4e86b7e0a4feec55a27edf6d1f0729b0aefbc069e0ac4cd293f3ba527bec2befe">PD</a></div><div class="ttdeci">@ PD</div><div class="ttdef"><b>Definition:</b> MemoryMapper.h:37</div></div>
+<div class="ttc" id="a_broadcast_8c_html_a8e8498f8fd7f9a6b2b7a51d62bf702f9"><div class="ttname"><a href="_broadcast_8c.html#a8e8498f8fd7f9a6b2b7a51d62bf702f9">BroadcastDpcResetMsrBitmapReadOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcResetMsrBitmapReadOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Reset Msr Bitmaps on all cores (vm-exit on all msrs)</div><div class="ttdef"><b>Definition:</b> Broadcast.c:172</div></div>
+<div class="ttc" id="a_broadcast_8c_html_a7189412f355373751cb81f58dc7eaf30"><div class="ttname"><a href="_broadcast_8c.html#a7189412f355373751cb81f58dc7eaf30">BroadcastDpcChangeMsrBitmapWriteOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcChangeMsrBitmapWriteOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disable Msr Bitmaps on all cores (vm-exit on all msrs)</div><div class="ttdef"><b>Definition:</b> Broadcast.c:200</div></div>
+<div class="ttc" id="a_memory_mapper_8h_html_a4e86b7e0a4feec55a27edf6d1f0729b0a910ff9b067a2587d70e5bc62bcbd8f3b"><div class="ttname"><a href="_memory_mapper_8h.html#a4e86b7e0a4feec55a27edf6d1f0729b0a910ff9b067a2587d70e5bc62bcbd8f3b">PT</a></div><div class="ttdeci">@ PT</div><div class="ttdef"><b>Definition:</b> MemoryMapper.h:36</div></div>
+<div class="ttc" id="astruct___p_a_g_e___e_n_t_r_y_html"><div class="ttname"><a href="struct___p_a_g_e___e_n_t_r_y.html">_PAGE_ENTRY</a></div><div class="ttdoc">Page Entries.</div><div class="ttdef"><b>Definition:</b> MemoryMapper.h:244</div></div>
+<div class="ttc" id="a_broadcast_8c_html_af449e1fd8433ace815e9db5111f5aa8f"><div class="ttname"><a href="_broadcast_8c.html#af449e1fd8433ace815e9db5111f5aa8f">BroadcastDpcSetEnableExternalInterruptExitingOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcSetEnableExternalInterruptExitingOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enable vm-exit on all cores for external interrupts.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:480</div></div>
+<div class="ttc" id="a_broadcast_8c_html_aca5a6a10ee5caa9f9b2e785fc67956d9"><div class="ttname"><a href="_broadcast_8c.html#aca5a6a10ee5caa9f9b2e785fc67956d9">BroadcastDpcSetExceptionBitmapOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcSetExceptionBitmapOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enable Exception Bitmaps on all cores.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:368</div></div>
+<div class="ttc" id="a_common_8c_html_ad78dba8d6aa8a44469504aa8f2ea718d"><div class="ttname"><a href="_common_8c.html#ad78dba8d6aa8a44469504aa8f2ea718d">PhysicalAddressToVirtualAddressByProcessId</a></div><div class="ttdeci">UINT64 PhysicalAddressToVirtualAddressByProcessId(PVOID PhysicalAddress, UINT32 ProcessId)</div><div class="ttdoc">Converts Physical Address to Virtual Address based on a specific process id.</div><div class="ttdef"><b>Definition:</b> Common.c:301</div></div>
+<div class="ttc" id="a_broadcast_8c_html_aa30e41575edc4f972093f925664fc982"><div class="ttname"><a href="_broadcast_8c.html#aa30e41575edc4f972093f925664fc982">BroadcastDpcChangeIoBitmapOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcChangeIoBitmapOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Change I/O Bitmaps on all cores.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:536</div></div>
+<div class="ttc" id="a_common_8c_html_af251f655d5814472abd5f50c68f209f0"><div class="ttname"><a href="_common_8c.html#af251f655d5814472abd5f50c68f209f0">VirtualAddressToPhysicalAddressByProcessId</a></div><div class="ttdeci">UINT64 VirtualAddressToPhysicalAddressByProcessId(PVOID VirtualAddress, UINT32 ProcessId)</div><div class="ttdoc">Converts Virtual Address to Physical Address based on a specific process id's kernel cr3.</div><div class="ttdef"><b>Definition:</b> Common.c:395</div></div>
+<div class="ttc" id="a_broadcast_8c_html_a834ac9534e091ad4d70bb5c2aad03040"><div class="ttname"><a href="_broadcast_8c.html#a834ac9534e091ad4d70bb5c2aad03040">BroadcastDpcResetMsrBitmapWriteOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcResetMsrBitmapWriteOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Reset Msr Bitmaps on all cores (vm-exit on all msrs)</div><div class="ttdef"><b>Definition:</b> Broadcast.c:228</div></div>
+<div class="ttc" id="a_broadcast_8c_html_a5091d0d17c3fa3f0815fa5da40fb7596"><div class="ttname"><a href="_broadcast_8c.html#a5091d0d17c3fa3f0815fa5da40fb7596">BroadcastDpcResetIoBitmapOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcResetIoBitmapOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Reset I/O Bitmaps on all cores.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:564</div></div>
+<div class="ttc" id="a_common_8c_html_ae6298fa03152b8845aca798d5f683e9c"><div class="ttname"><a href="_common_8c.html#ae6298fa03152b8845aca798d5f683e9c">PhysicalAddressToVirtualAddress</a></div><div class="ttdeci">UINT64 PhysicalAddressToVirtualAddress(UINT64 PhysicalAddress)</div><div class="ttdoc">Converts Physical Address to Virtual Address.</div><div class="ttdef"><b>Definition:</b> Common.c:481</div></div>
+<div class="ttc" id="a_broadcast_8c_html_aee7675a736dafd7ee046f7878c925638"><div class="ttname"><a href="_broadcast_8c.html#aee7675a736dafd7ee046f7878c925638">BroadcastDpcDisableRdpmcExitingAllCores</a></div><div class="ttdeci">VOID BroadcastDpcDisableRdpmcExitingAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disable rdpmc exiting in primary cpu-based controls.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:340</div></div>
+<div class="ttc" id="a_broadcast_8c_html_aec6343be27a1a2b57508947bccd5a0d2"><div class="ttname"><a href="_broadcast_8c.html#aec6343be27a1a2b57508947bccd5a0d2">BroadcastDpcChangeMsrBitmapReadOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcChangeMsrBitmapReadOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disable Msr Bitmaps on all cores (vm-exit on all msrs)</div><div class="ttdef"><b>Definition:</b> Broadcast.c:144</div></div>
+<div class="ttc" id="a_broadcast_8c_html_aea4660869a400325cfeaf0bb5199e183"><div class="ttname"><a href="_broadcast_8c.html#aea4660869a400325cfeaf0bb5199e183">BroadcastDpcEnableRdpmcExitingAllCores</a></div><div class="ttdeci">VOID BroadcastDpcEnableRdpmcExitingAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enables rdpmc exiting in primary cpu-based controls.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:312</div></div>
+<div class="ttc" id="a_broadcast_8c_html_a3da395d1b79324b750a1e53579e53211"><div class="ttname"><a href="_broadcast_8c.html#a3da395d1b79324b750a1e53579e53211">BroadcastDpcSetDisableExternalInterruptExitingOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcSetDisableExternalInterruptExitingOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disable vm-exit on all cores for external interrupts.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:508</div></div>
+<div class="ttc" id="a_broadcast_8c_html_ac2d4601812f6837fa04b3045ad917ba1"><div class="ttname"><a href="_broadcast_8c.html#ac2d4601812f6837fa04b3045ad917ba1">BroadcastDpcResetExceptionBitmapOnAllCores</a></div><div class="ttdeci">VOID BroadcastDpcResetExceptionBitmapOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Reset Exception Bitmaps on all cores.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:396</div></div>
+<div class="ttc" id="a_common_8c_html_ae6bbd169187c6e08bbe584c67175a61d"><div class="ttname"><a href="_common_8c.html#ae6bbd169187c6e08bbe584c67175a61d">VirtualAddressToPhysicalAddress</a></div><div class="ttdeci">UINT64 VirtualAddressToPhysicalAddress(PVOID VirtualAddress)</div><div class="ttdoc">Converts Virtual Address to Physical Address.</div><div class="ttdef"><b>Definition:</b> Common.c:114</div></div>
+<div class="ttc" id="a_broadcast_8c_html_aaaa8e1c5b9a0ecd027a73d32e13e07ce"><div class="ttname"><a href="_broadcast_8c.html#aaaa8e1c5b9a0ecd027a73d32e13e07ce">BroadcastDpcEnableRdtscExitingAllCores</a></div><div class="ttdeci">VOID BroadcastDpcEnableRdtscExitingAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enables rdtsc/rdtscp exiting in primary cpu-based controls.</div><div class="ttdef"><b>Definition:</b> Broadcast.c:256</div></div>
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_19054a674c4bd5cb8fceb6542228579c.html">hprdbghv</a></li><li class="navelem"><a class="el" href="_extension_commands_8c.html">ExtensionCommands.c</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

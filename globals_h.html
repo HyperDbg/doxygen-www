@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('globals_h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -64,21 +84,16 @@ $(function() {
 <div class="textblock">Here is a list of all file members with links to the files they belong to:</div>
 
 <h3><a id="index_h"></a>- h -</h3><ul>
-<li>Handler
-: <a class="el" href="hprdbgctrl_8cpp.html#af58e321e7f2f41135ed08cc546f3a4ec">hprdbgctrl.cpp</a>
-</li>
 <li>HasEnding()
-: <a class="el" href="interpreter_8cpp.html#ad2dc5743ba211599646afda951c26806">interpreter.cpp</a>
+: <a class="el" href="common_8cpp.html#aefa67d262d52597341d9317a545e19cb">common.cpp</a>
+, <a class="el" href="hprdbgctrl_2_common_8h.html#aefa67d262d52597341d9317a545e19cb">common.h</a>
 </li>
 <li>HexToBytes()
-: <a class="el" href="interpreter_8cpp.html#a19f857f9f425e39097c0c3e500dce7ce">interpreter.cpp</a>
+: <a class="el" href="hprdbgctrl_2_common_8h.html#a3554e9a77836e5786df052826661bc68">common.h</a>
+, <a class="el" href="common_8cpp.html#a3554e9a77836e5786df052826661bc68">common.cpp</a>
 </li>
 <li>HIDDEN_HOOKS_DETOUR_DETAILS
 : <a class="el" href="_hooks_8h.html#afca3bba3357dab1c3380e4b9772f04da">Hooks.h</a>
-</li>
-<li>HiddenHooksTest()
-: <a class="el" href="_hidden_hooks_8c.html#a4bd073d2009aff70585de69b282a309e">HiddenHooks.c</a>
-, <a class="el" href="_hooks_8h.html#a4bd073d2009aff70585de69b282a309e">Hooks.h</a>
 </li>
 <li>HOST_CR0
 : <a class="el" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5afb5dcf37cda9d42aebf0d90a20df8a9d">Vmx.h</a>
@@ -150,11 +165,11 @@ $(function() {
 : <a class="el" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5ad6427b60a1218e43a3e3b9341ceb770c">Vmx.h</a>
 </li>
 <li>HPRDBGCTRL_API
-: <a class="el" href="hprdbgctrl_8h.html#a30a81ead3f3c5562e11bd27dacdd118b">hprdbgctrl.h</a>
+: <a class="el" href="install_8h.html#a30a81ead3f3c5562e11bd27dacdd118b">install.h</a>
 </li>
 <li>HvAdjustControls()
-: <a class="el" href="_hypervisor_routines_8h.html#af4b5fbb4d7aab890383c5ea30789e265">HypervisorRoutines.h</a>
-, <a class="el" href="_hypervisor_routines_8c.html#af4b5fbb4d7aab890383c5ea30789e265">HypervisorRoutines.c</a>
+: <a class="el" href="_hypervisor_routines_8c.html#af4b5fbb4d7aab890383c5ea30789e265">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#af4b5fbb4d7aab890383c5ea30789e265">HypervisorRoutines.h</a>
 </li>
 <li>HvCallAddLogicalProcessor
 : <a class="el" href="_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8a31c60decfc4ac76239f248ff82328bae">Vmx.h</a>
@@ -342,6 +357,10 @@ $(function() {
 <li>HvDepositMemory
 : <a class="el" href="_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8a38db4047f722c1afcf5689085aae3c06">Vmx.h</a>
 </li>
+<li>HvDisableBreakpointExitingOnExceptionBitmapAllCores()
+: <a class="el" href="_hypervisor_routines_8c.html#a893fa8dd14b0570454a09e7a68bc7b7d">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#a893fa8dd14b0570454a09e7a68bc7b7d">HypervisorRoutines.h</a>
+</li>
 <li>HvDisconnectPort
 : <a class="el" href="_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8ac55c1e6c676455512f4e0a37a7961ba9">Vmx.h</a>
 </li>
@@ -351,13 +370,19 @@ $(function() {
 </li>
 <li>HvDpcBroadcastRemoveHookAndInvalidateAllEntries()
 : <a class="el" href="_hypervisor_routines_8c.html#a86472f151ac5ea3d525eeda51b61dc6b">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#a86472f151ac5ea3d525eeda51b61dc6b">HypervisorRoutines.h</a>
 </li>
 <li>HvDpcBroadcastRemoveHookAndInvalidateSingleEntry()
 : <a class="el" href="_hypervisor_routines_8c.html#a5a38b097c995caa21ff367d4ce11058b">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#a5a38b097c995caa21ff367d4ce11058b">HypervisorRoutines.h</a>
 </li>
 <li>HvDpcBroadcastTerminateGuest()
 : <a class="el" href="_hypervisor_routines_8c.html#a0c4f7d0fbe7988414de66c62ffa56ae5">HypervisorRoutines.c</a>
 , <a class="el" href="_hypervisor_routines_8h.html#a0c4f7d0fbe7988414de66c62ffa56ae5">HypervisorRoutines.h</a>
+</li>
+<li>HvEnableBreakpointExitingOnExceptionBitmapAllCores()
+: <a class="el" href="_hypervisor_routines_8c.html#a5e5e8d83385fe8aff30ae664b1f330c2">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#a5e5e8d83385fe8aff30ae664b1f330c2">HypervisorRoutines.h</a>
 </li>
 <li>HvFillGuestSelectorData()
 : <a class="el" href="_hypervisor_routines_8c.html#ab6482131b4b69a2d7bc6fe590e941944">HypervisorRoutines.c</a>
@@ -396,20 +421,20 @@ $(function() {
 <li>HvGetPortProperty
 : <a class="el" href="_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8ae9ebf3d882eb467ab64fcaab192ea81d">Vmx.h</a>
 </li>
-<li>HvGetSegmentDescriptor()
-: <a class="el" href="_hypervisor_routines_8c.html#a573098feb975da10343dea51a401d434">HypervisorRoutines.c</a>
-, <a class="el" href="_hypervisor_routines_8h.html#a573098feb975da10343dea51a401d434">HypervisorRoutines.h</a>
-</li>
 <li>HvGetVpRegisters
 : <a class="el" href="_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8abfd1b9eeb797d0a9e6100d6fa198ff21">Vmx.h</a>
 </li>
 <li>HvHandleControlRegisterAccess()
-: <a class="el" href="_hypervisor_routines_8h.html#aa565c912ad653378209ef212d2c06dbe">HypervisorRoutines.h</a>
-, <a class="el" href="_hypervisor_routines_8c.html#aa565c912ad653378209ef212d2c06dbe">HypervisorRoutines.c</a>
+: <a class="el" href="_hypervisor_routines_8c.html#aa565c912ad653378209ef212d2c06dbe">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#aa565c912ad653378209ef212d2c06dbe">HypervisorRoutines.h</a>
 </li>
 <li>HvHandleCpuid()
 : <a class="el" href="_hypervisor_routines_8c.html#aec7e6880ca6233bb02899c12f9798918">HypervisorRoutines.c</a>
 , <a class="el" href="_hypervisor_routines_8h.html#aec7e6880ca6233bb02899c12f9798918">HypervisorRoutines.h</a>
+</li>
+<li>HvHandleMovDebugRegister()
+: <a class="el" href="_hypervisor_routines_8c.html#ac1a10a7ff4c7936daf19e7785d6ebb11">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#ac1a10a7ff4c7936daf19e7785d6ebb11">HypervisorRoutines.h</a>
 </li>
 <li>HvHandleMsrRead()
 : <a class="el" href="_hypervisor_routines_8h.html#a965588b5064a57deec9949d9943570d1">HypervisorRoutines.h</a>
@@ -449,13 +474,29 @@ $(function() {
 : <a class="el" href="_hypervisor_routines_8c.html#a46364f43c45efd41b3e4a95949a6ec0d">HypervisorRoutines.c</a>
 , <a class="el" href="_hypervisor_routines_8h.html#a46364f43c45efd41b3e4a95949a6ec0d">HypervisorRoutines.h</a>
 </li>
-<li>HvPerformPageUnHookAllPages()
-: <a class="el" href="_hypervisor_routines_8h.html#a65db9805db0b7bea828f7b7c50fea809">HypervisorRoutines.h</a>
-, <a class="el" href="_hypervisor_routines_8c.html#a65db9805db0b7bea828f7b7c50fea809">HypervisorRoutines.c</a>
+<li>HvPerformIoBitmapChange()
+: <a class="el" href="_hypervisor_routines_8h.html#a9b7b68eb2deb51cd9cbcbf9b64d0473a">HypervisorRoutines.h</a>
+, <a class="el" href="_hypervisor_routines_8c.html#a9b7b68eb2deb51cd9cbcbf9b64d0473a">HypervisorRoutines.c</a>
 </li>
-<li>HvPerformPageUnHookSinglePage()
-: <a class="el" href="_hypervisor_routines_8c.html#ab8f7f5da0c50a51bced4fde5a355d7a6">HypervisorRoutines.c</a>
-, <a class="el" href="_hypervisor_routines_8h.html#ab8f7f5da0c50a51bced4fde5a355d7a6">HypervisorRoutines.h</a>
+<li>HvPerformIoBitmapReset()
+: <a class="el" href="_hypervisor_routines_8c.html#a1fd5606f0faab458695f397b34e4fadb">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#a1fd5606f0faab458695f397b34e4fadb">HypervisorRoutines.h</a>
+</li>
+<li>HvPerformMsrBitmapReadChange()
+: <a class="el" href="_hypervisor_routines_8c.html#addacdb521a6328405e38448be0e9d868">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#addacdb521a6328405e38448be0e9d868">HypervisorRoutines.h</a>
+</li>
+<li>HvPerformMsrBitmapReadReset()
+: <a class="el" href="_hypervisor_routines_8c.html#acc9aa35e16a506e469a8a9e3db8f7f4f">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#acc9aa35e16a506e469a8a9e3db8f7f4f">HypervisorRoutines.h</a>
+</li>
+<li>HvPerformMsrBitmapWriteChange()
+: <a class="el" href="_hypervisor_routines_8h.html#aca8a8b434a2532bd2e8695c29a955a00">HypervisorRoutines.h</a>
+, <a class="el" href="_hypervisor_routines_8c.html#aca8a8b434a2532bd2e8695c29a955a00">HypervisorRoutines.c</a>
+</li>
+<li>HvPerformMsrBitmapWriteReset()
+: <a class="el" href="_hypervisor_routines_8c.html#a24001f7791f89a0f37fd68a219f856a1">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#a24001f7791f89a0f37fd68a219f856a1">HypervisorRoutines.h</a>
 </li>
 <li>HvPostDebugData
 : <a class="el" href="_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8acc09b65a3e615ab9dda0465171a477e3">Vmx.h</a>
@@ -472,6 +513,10 @@ $(function() {
 <li>HvResetDebugSession
 : <a class="el" href="_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8ab32de2d7df8b5ee43cba6ecdc9dd6cd9">Vmx.h</a>
 </li>
+<li>HvResetExceptionBitmap()
+: <a class="el" href="_hypervisor_routines_8c.html#a9287aab3e27fbdcef6bcbfceb4338829">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#a9287aab3e27fbdcef6bcbfceb4338829">HypervisorRoutines.h</a>
+</li>
 <li>HvRestorePartitionState
 : <a class="el" href="_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8afde2fa04bb9ecbc71903cb7fe21c2b09">Vmx.h</a>
 </li>
@@ -480,8 +525,8 @@ $(function() {
 , <a class="el" href="_hypervisor_routines_8h.html#a011d070043f596f715b8a1deee31786c">HypervisorRoutines.h</a>
 </li>
 <li>HvResumeToNextInstruction()
-: <a class="el" href="_hypervisor_routines_8h.html#a635a41a75799273745a2af474455c4aa">HypervisorRoutines.h</a>
-, <a class="el" href="_hypervisor_routines_8c.html#a635a41a75799273745a2af474455c4aa">HypervisorRoutines.c</a>
+: <a class="el" href="_hypervisor_routines_8c.html#a635a41a75799273745a2af474455c4aa">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#a635a41a75799273745a2af474455c4aa">HypervisorRoutines.h</a>
 </li>
 <li>HvRetrieveDebugData
 : <a class="el" href="_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8ab81af877cd44b581e954a1c3c5f383ab">Vmx.h</a>
@@ -491,8 +536,8 @@ $(function() {
 , <a class="el" href="_hypervisor_routines_8c.html#aaaa0bf319f7cb64d4835f325037a83b0">HypervisorRoutines.c</a>
 </li>
 <li>HvReturnStackPointerForVmxoff()
-: <a class="el" href="_hypervisor_routines_8h.html#a087cfff46219af7a236d3e1c5acc2c15">HypervisorRoutines.h</a>
-, <a class="el" href="_hypervisor_routines_8c.html#a087cfff46219af7a236d3e1c5acc2c15">HypervisorRoutines.c</a>
+: <a class="el" href="_hypervisor_routines_8c.html#a087cfff46219af7a236d3e1c5acc2c15">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#a087cfff46219af7a236d3e1c5acc2c15">HypervisorRoutines.h</a>
 </li>
 <li>HvSavePartitionState
 : <a class="el" href="_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8a4c99257febe19c646b6aa17227e14a18">Vmx.h</a>
@@ -500,24 +545,56 @@ $(function() {
 <li>HvSetEventLogGroupSources
 : <a class="el" href="_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8a6cbe30449ffecaec468ef6c27988259d">Vmx.h</a>
 </li>
+<li>HvSetExceptionBitmap()
+: <a class="el" href="_hypervisor_routines_8c.html#ad81531a3022f3ccfc2c6ceb34160f18d">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#ad81531a3022f3ccfc2c6ceb34160f18d">HypervisorRoutines.h</a>
+</li>
 <li>HvSetExitOnCr3Change()
-: <a class="el" href="_hypervisor_routines_8h.html#a248cbecca9a8fec4f3bb0c4cde022d7e">HypervisorRoutines.h</a>
-, <a class="el" href="_hypervisor_routines_8c.html#a248cbecca9a8fec4f3bb0c4cde022d7e">HypervisorRoutines.c</a>
+: <a class="el" href="_hypervisor_routines_8c.html#a248cbecca9a8fec4f3bb0c4cde022d7e">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#a248cbecca9a8fec4f3bb0c4cde022d7e">HypervisorRoutines.h</a>
+</li>
+<li>HvSetExternalInterruptExiting()
+: <a class="el" href="_hypervisor_routines_8c.html#afda4e861e6b76d13ec4d2d16e80804cd">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#afda4e861e6b76d13ec4d2d16e80804cd">HypervisorRoutines.h</a>
 </li>
 <li>HvSetGuestSelector()
-: <a class="el" href="_hypervisor_routines_8h.html#af273480ae5bd23cbdf7e73a2fc6d83b5">HypervisorRoutines.h</a>
-, <a class="el" href="_hypervisor_routines_8c.html#af273480ae5bd23cbdf7e73a2fc6d83b5">HypervisorRoutines.c</a>
+: <a class="el" href="_hypervisor_routines_8c.html#af273480ae5bd23cbdf7e73a2fc6d83b5">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#af273480ae5bd23cbdf7e73a2fc6d83b5">HypervisorRoutines.h</a>
+</li>
+<li>HvSetInterruptWindowExiting()
+: <a class="el" href="_hypervisor_routines_8c.html#a4e8c2928eefa854763176a7f18bb04ca">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#a4e8c2928eefa854763176a7f18bb04ca">HypervisorRoutines.h</a>
+</li>
+<li>HvSetIoBitmap()
+: <a class="el" href="_hypervisor_routines_8c.html#a10b26cff65a0c842784a857646808e4b">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#a10b26cff65a0c842784a857646808e4b">HypervisorRoutines.h</a>
 </li>
 <li>HvSetMonitorTrapFlag()
-: <a class="el" href="_hypervisor_routines_8h.html#ae24c5aceac93fda6a1fcb4e15c85404c">HypervisorRoutines.h</a>
-, <a class="el" href="_hypervisor_routines_8c.html#ae24c5aceac93fda6a1fcb4e15c85404c">HypervisorRoutines.c</a>
+: <a class="el" href="_hypervisor_routines_8c.html#ae24c5aceac93fda6a1fcb4e15c85404c">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#ae24c5aceac93fda6a1fcb4e15c85404c">HypervisorRoutines.h</a>
+</li>
+<li>HvSetMovDebugRegsExiting()
+: <a class="el" href="_hypervisor_routines_8c.html#a3eed992fc21aece2a1e80c3931d93f80">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#a3eed992fc21aece2a1e80c3931d93f80">HypervisorRoutines.h</a>
 </li>
 <li>HvSetMsrBitmap()
 : <a class="el" href="_hypervisor_routines_8h.html#a2daafb1444c3a5403e5a55c287a5c4e7">HypervisorRoutines.h</a>
 , <a class="el" href="_hypervisor_routines_8c.html#a2daafb1444c3a5403e5a55c287a5c4e7">HypervisorRoutines.c</a>
 </li>
+<li>HvSetNmiWindowExiting()
+: <a class="el" href="_hypervisor_routines_8c.html#ac7a6581e797aaeb78d1d4dba7cb3b7be">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#ac7a6581e797aaeb78d1d4dba7cb3b7be">HypervisorRoutines.h</a>
+</li>
 <li>HvSetPartitionProperty
 : <a class="el" href="_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8a8037d10283593e6ff7a2ba8dce45d7b2">Vmx.h</a>
+</li>
+<li>HvSetPmcVmexit()
+: <a class="el" href="_hypervisor_routines_8c.html#a0d721b297a9930e02bfb88191a2e0b78">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#a0d721b297a9930e02bfb88191a2e0b78">HypervisorRoutines.h</a>
+</li>
+<li>HvSetTscVmexit()
+: <a class="el" href="_hypervisor_routines_8h.html#a911935bbfa6d09fb31d1c56879b44457">HypervisorRoutines.h</a>
+, <a class="el" href="_hypervisor_routines_8c.html#a911935bbfa6d09fb31d1c56879b44457">HypervisorRoutines.c</a>
 </li>
 <li>HvSetVpRegisters
 : <a class="el" href="_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8a7e27a30891be16ffb35d4ec1f4093473">Vmx.h</a>
@@ -529,8 +606,8 @@ $(function() {
 : <a class="el" href="_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8a1c50a0b5203fd2be5432921d6c13a634">Vmx.h</a>
 </li>
 <li>HvTerminateVmx()
-: <a class="el" href="_hypervisor_routines_8h.html#a761a3ffa7d3333453d8449cc7ff2fc0a">HypervisorRoutines.h</a>
-, <a class="el" href="_hypervisor_routines_8c.html#a761a3ffa7d3333453d8449cc7ff2fc0a">HypervisorRoutines.c</a>
+: <a class="el" href="_hypervisor_routines_8c.html#a761a3ffa7d3333453d8449cc7ff2fc0a">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#a761a3ffa7d3333453d8449cc7ff2fc0a">HypervisorRoutines.h</a>
 </li>
 <li>HvTranslateVirtualAddress
 : <a class="el" href="_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8ada1e98f6c2262da6964e5624b2411177">Vmx.h</a>
@@ -543,6 +620,14 @@ $(function() {
 </li>
 <li>HvUnmapStatsPage
 : <a class="el" href="_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8a00580d559fe629b3a6ec20af07b052f0">Vmx.h</a>
+</li>
+<li>HvUnsetExceptionBitmap()
+: <a class="el" href="_hypervisor_routines_8c.html#a08d6a0baa778bb91ed163ba1e1df550a">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#a08d6a0baa778bb91ed163ba1e1df550a">HypervisorRoutines.h</a>
+</li>
+<li>HvUnSetMsrBitmap()
+: <a class="el" href="_hypervisor_routines_8c.html#a452b6e478ea9663af3a544011c62a39d">HypervisorRoutines.c</a>
+, <a class="el" href="_hypervisor_routines_8h.html#a452b6e478ea9663af3a544011c62a39d">HypervisorRoutines.h</a>
 </li>
 <li>HvVmxInitialize()
 : <a class="el" href="_hypervisor_routines_8c.html#a38cb615bfa8e3c677e136ae42627a42c">HypervisorRoutines.c</a>
@@ -560,25 +645,32 @@ $(function() {
 <li>HYPERCALL_INPUT_VALUE
 : <a class="el" href="_vmx_8h.html#ae9a97844066df354446d7fc353745c73">Vmx.h</a>
 </li>
-<li>HyperDbgDisassembler()
-: <a class="el" href="_commands_8h.html#a32fcce07bee5c71ef4293f7e5aa2cb23">Commands.h</a>
-, <a class="el" href="disassembler_8cpp.html#a32fcce07bee5c71ef4293f7e5aa2cb23">disassembler.cpp</a>
+<li>HyperDbgDisassembler32()
+: <a class="el" href="_commands_8h.html#a24b0ac1d391e8bccf0281c72a17f0dfb">Commands.h</a>
+, <a class="el" href="disassembler_8cpp.html#a24b0ac1d391e8bccf0281c72a17f0dfb">disassembler.cpp</a>
 </li>
-<li>HyperdbgInstallDriver()
-: <a class="el" href="hprdbgctrl_8cpp.html#acfdfc46132296f6814d5757f6bba53c0">hprdbgctrl.cpp</a>
+<li>HyperDbgDisassembler64()
+: <a class="el" href="_commands_8h.html#a34bc104f982da03d842892d61123a230">Commands.h</a>
+, <a class="el" href="disassembler_8cpp.html#a34bc104f982da03d842892d61123a230">disassembler.cpp</a>
+</li>
+<li>HyperdbgInstallVmmDriver()
+: <a class="el" href="hprdbgctrl_8cpp.html#aadeb75065e22147ff6edce2f0b9ad8b2">hprdbgctrl.cpp</a>
 </li>
 <li>HyperdbgInterpreter()
-: <a class="el" href="interpreter_8cpp.html#a48b8aba43bb45b2309cdcdcfd39ea0dd">interpreter.cpp</a>
+: <a class="el" href="interpreter_8cpp.html#a1b82ee9fd3f07c886dfd56085d7ef7f5">interpreter.cpp</a>
 </li>
-<li>HyperdbgLoad()
-: <a class="el" href="hprdbgctrl_8cpp.html#a489aff2bbdf608459ba3ca8524a52e93">hprdbgctrl.cpp</a>
+<li>HyperdbgLoadVmm()
+: <a class="el" href="hprdbgctrl_8cpp.html#a62e242728fa313183e70b186f7647193">hprdbgctrl.cpp</a>
 </li>
 <li>HyperDbgReadMemoryAndDisassemble()
-: <a class="el" href="_commands_8h.html#a09794f9d8ad7d780470865d8c16ffc79">Commands.h</a>
-, <a class="el" href="interpreter_8cpp.html#a09794f9d8ad7d780470865d8c16ffc79">interpreter.cpp</a>
+: <a class="el" href="readmem_8cpp.html#a09794f9d8ad7d780470865d8c16ffc79">readmem.cpp</a>
+, <a class="el" href="_commands_8h.html#a5078efff0b67fa4648bbf6d76e3f0464">Commands.h</a>
 </li>
 <li>HyperdbgSetTextMessageCallback()
-: <a class="el" href="hprdbgctrl_8cpp.html#a0682c8db2db00aa890c3065101984fc1">hprdbgctrl.cpp</a>
+: <a class="el" href="hprdbgctrl_8cpp.html#a4e4b8ba54c17298b5f39f4bbaa13cf8a">hprdbgctrl.cpp</a>
+</li>
+<li>HyperdbgShowSignature()
+: <a class="el" href="interpreter_8cpp.html#ae2c87e83aee492a7f5699b0e7a1326d3">interpreter.cpp</a>
 </li>
 <li>HyperdbgUninstallDriver()
 : <a class="el" href="hprdbgctrl_8cpp.html#a2e2f08f609668d46dceadd4093d5e89b">hprdbgctrl.cpp</a>
@@ -615,11 +707,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

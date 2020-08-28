@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('union___e_p_d_e__2_m_b.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,7 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -76,54 +96,54 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a474466e051c7619a022138bfef73f81b"><td class="memItemLeft" >struct {</td></tr>
-<tr class="memitem:a169e4c9b48a2b626b909982874c05b0e"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#aa77ef70ee97ecd5dce1fc77acd324072">ReadAccess</a>: 1</td></tr>
-<tr class="memdesc:a169e4c9b48a2b626b909982874c05b0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 0] Read access; indicates whether reads are allowed from the 2-MByte page referenced by this entry.  <a href="struct___e_p_d_e__2_m_b_1_1_0d11.html#a169e4c9b48a2b626b909982874c05b0e">More...</a><br /></td></tr>
-<tr class="separator:a169e4c9b48a2b626b909982874c05b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41f1a5887a3e67015891a1cdef98fddd"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a1ab94d3eccfcf8272a0eb22a3d5ce8dc">WriteAccess</a>: 1</td></tr>
-<tr class="memdesc:a41f1a5887a3e67015891a1cdef98fddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 1] Write access; indicates whether writes are allowed from the 2-MByte page referenced by this entry.  <a href="struct___e_p_d_e__2_m_b_1_1_0d11.html#a41f1a5887a3e67015891a1cdef98fddd">More...</a><br /></td></tr>
-<tr class="separator:a41f1a5887a3e67015891a1cdef98fddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d78a371882953488e5321759dec36d7"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a8906941123208502a33d64116a3ef7c1">ExecuteAccess</a>: 1</td></tr>
-<tr class="memdesc:a9d78a371882953488e5321759dec36d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 2] If the "mode-based execute control for EPT" VM-execution control is 0, execute access; indicates whether instruction fetches are allowed from the 2-MByte page controlled by this entry. If that control is 1, execute access for supervisor-mode linear addresses; indicates whether instruction fetches are allowed from supervisor-mode linear addresses in the 2-MByte page controlled by this entry.  <a href="struct___e_p_d_e__2_m_b_1_1_0d11.html#a9d78a371882953488e5321759dec36d7">More...</a><br /></td></tr>
-<tr class="separator:a9d78a371882953488e5321759dec36d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1a10fc7bad542fe4e00f2f47f82e847"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#afddd929175787d7bc7118e9e239dd863">MemoryType</a>: 3</td></tr>
-<tr class="memdesc:ae1a10fc7bad542fe4e00f2f47f82e847"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bits 5:3] EPT memory type for this 2-MByte page.  <a href="struct___e_p_d_e__2_m_b_1_1_0d11.html#ae1a10fc7bad542fe4e00f2f47f82e847">More...</a><br /></td></tr>
-<tr class="separator:ae1a10fc7bad542fe4e00f2f47f82e847"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae54bcb02878b8f1f463196461cc7dd25"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a9180d476f7971750b5e3a29c039fa3a4">IgnorePat</a>: 1</td></tr>
-<tr class="memdesc:ae54bcb02878b8f1f463196461cc7dd25"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 6] Ignore PAT memory type for this 2-MByte page.  <a href="struct___e_p_d_e__2_m_b_1_1_0d11.html#ae54bcb02878b8f1f463196461cc7dd25">More...</a><br /></td></tr>
-<tr class="separator:ae54bcb02878b8f1f463196461cc7dd25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af3f21ef32d043f2737d802aa30477eba"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a6a88aa59692c458c0fa4fafe7207b2c4">LargePage</a>: 1</td></tr>
-<tr class="memdesc:af3f21ef32d043f2737d802aa30477eba"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 7] Must be 1 (otherwise, this entry references an EPT page table).  <a href="struct___e_p_d_e__2_m_b_1_1_0d11.html#af3f21ef32d043f2737d802aa30477eba">More...</a><br /></td></tr>
-<tr class="separator:af3f21ef32d043f2737d802aa30477eba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26eafc2b65c62aad0d3d1a8ae7e5510c"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a13b6a109e54ceaa82325c0235b8b9894">Accessed</a>: 1</td></tr>
-<tr class="memdesc:a26eafc2b65c62aad0d3d1a8ae7e5510c"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 8] If bit 6 of EPTP is 1, accessed flag for EPT; indicates whether software has accessed the 2-MByte page referenced by this entry. Ignored if bit 6 of EPTP is 0.  <a href="struct___e_p_d_e__2_m_b_1_1_0d11.html#a26eafc2b65c62aad0d3d1a8ae7e5510c">More...</a><br /></td></tr>
-<tr class="separator:a26eafc2b65c62aad0d3d1a8ae7e5510c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82c8a9fdc574f1756437487001cc5f81"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a0d78a28604b5add9d3c3a14d15da16bd">Dirty</a>: 1</td></tr>
-<tr class="memdesc:a82c8a9fdc574f1756437487001cc5f81"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 9] If bit 6 of EPTP is 1, dirty flag for EPT; indicates whether software has written to the 2-MByte page referenced by this entry. Ignored if bit 6 of EPTP is 0.  <a href="struct___e_p_d_e__2_m_b_1_1_0d11.html#a82c8a9fdc574f1756437487001cc5f81">More...</a><br /></td></tr>
-<tr class="separator:a82c8a9fdc574f1756437487001cc5f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a634db2f55363ba40accff45febc37a35"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a5307e4dd3744274e068ca802323599c4">UserModeExecute</a>: 1</td></tr>
-<tr class="memdesc:a634db2f55363ba40accff45febc37a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 10] Execute access for user-mode linear addresses. If the "mode-based execute control for EPT" VM-execution control is 1, indicates whether instruction fetches are allowed from user-mode linear addresses in the 2-MByte page controlled by this entry. If that control is 0, this bit is ignored.  <a href="struct___e_p_d_e__2_m_b_1_1_0d11.html#a634db2f55363ba40accff45febc37a35">More...</a><br /></td></tr>
-<tr class="separator:a634db2f55363ba40accff45febc37a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29b79d756c7ee838c2378016f76f29a0"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a841cbd26d1a7b303e882507b6d83c507">Reserved1</a>: 10</td></tr>
-<tr class="separator:a29b79d756c7ee838c2378016f76f29a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b92e7a07333b17b441c5f4efa3f0b34"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a96865f7c3fe492d073cfad00013f14ea">PageFrameNumber</a>: 27</td></tr>
-<tr class="memdesc:a4b92e7a07333b17b441c5f4efa3f0b34"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bits 47:21] Physical address of 4-KByte aligned EPT page-directory-pointer table referenced by this entry.  <a href="struct___e_p_d_e__2_m_b_1_1_0d11.html#a4b92e7a07333b17b441c5f4efa3f0b34">More...</a><br /></td></tr>
-<tr class="separator:a4b92e7a07333b17b441c5f4efa3f0b34"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a36c7967b4affc177b280ad36656812"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a89ff2c25dc49ccd4c0d39b769d1502e2">Reserved2</a>: 15</td></tr>
-<tr class="separator:a3a36c7967b4affc177b280ad36656812"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7662d56abc388d9b15b5875f5a99fde6"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#ab62a010b5f4ce87463d070e4af2809d6">SuppressVe</a>: 1</td></tr>
-<tr class="memdesc:a7662d56abc388d9b15b5875f5a99fde6"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 63] Suppress #VE. If the "EPT-violation \#VE" VM-execution control is 1, EPT violations caused by accesses to this page are convertible to virtualization exceptions only if this bit is 0. If "EPT-violation \#VE" VMexecution control is 0, this bit is ignored.  <a href="struct___e_p_d_e__2_m_b_1_1_0d11.html#a7662d56abc388d9b15b5875f5a99fde6">More...</a><br /></td></tr>
-<tr class="separator:a7662d56abc388d9b15b5875f5a99fde6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a474466e051c7619a022138bfef73f81b"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a474466e051c7619a022138bfef73f81b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61de3e43553424fff62f8c723fe8e2d8"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:a1ab3c3bd5de69d4ee03fdbc64b6cdab9"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#aa77ef70ee97ecd5dce1fc77acd324072">ReadAccess</a>: 1</td></tr>
+<tr class="memdesc:a1ab3c3bd5de69d4ee03fdbc64b6cdab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 0] Read access; indicates whether reads are allowed from the 2-MByte page referenced by this entry.  <a href="struct___e_p_d_e__2_m_b_1_1_0d20.html#a1ab3c3bd5de69d4ee03fdbc64b6cdab9">More...</a><br /></td></tr>
+<tr class="separator:a1ab3c3bd5de69d4ee03fdbc64b6cdab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a6443a991aed3597707d23d414222ab"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a1ab94d3eccfcf8272a0eb22a3d5ce8dc">WriteAccess</a>: 1</td></tr>
+<tr class="memdesc:a6a6443a991aed3597707d23d414222ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 1] Write access; indicates whether writes are allowed from the 2-MByte page referenced by this entry.  <a href="struct___e_p_d_e__2_m_b_1_1_0d20.html#a6a6443a991aed3597707d23d414222ab">More...</a><br /></td></tr>
+<tr class="separator:a6a6443a991aed3597707d23d414222ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a435eb64e626e8d7476c75021aa00df86"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a8906941123208502a33d64116a3ef7c1">ExecuteAccess</a>: 1</td></tr>
+<tr class="memdesc:a435eb64e626e8d7476c75021aa00df86"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 2] If the "mode-based execute control for EPT" VM-execution control is 0, execute access; indicates whether instruction fetches are allowed from the 2-MByte page controlled by this entry. If that control is 1, execute access for supervisor-mode linear addresses; indicates whether instruction fetches are allowed from supervisor-mode linear addresses in the 2-MByte page controlled by this entry.  <a href="struct___e_p_d_e__2_m_b_1_1_0d20.html#a435eb64e626e8d7476c75021aa00df86">More...</a><br /></td></tr>
+<tr class="separator:a435eb64e626e8d7476c75021aa00df86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3a5afb29604e340d34a91a521585751"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#afddd929175787d7bc7118e9e239dd863">MemoryType</a>: 3</td></tr>
+<tr class="memdesc:ad3a5afb29604e340d34a91a521585751"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bits 5:3] EPT memory type for this 2-MByte page.  <a href="struct___e_p_d_e__2_m_b_1_1_0d20.html#ad3a5afb29604e340d34a91a521585751">More...</a><br /></td></tr>
+<tr class="separator:ad3a5afb29604e340d34a91a521585751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c0aa4dfd943dbe8bc986f7c232550f0"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a9180d476f7971750b5e3a29c039fa3a4">IgnorePat</a>: 1</td></tr>
+<tr class="memdesc:a9c0aa4dfd943dbe8bc986f7c232550f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 6] Ignore PAT memory type for this 2-MByte page.  <a href="struct___e_p_d_e__2_m_b_1_1_0d20.html#a9c0aa4dfd943dbe8bc986f7c232550f0">More...</a><br /></td></tr>
+<tr class="separator:a9c0aa4dfd943dbe8bc986f7c232550f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14180a644cce13e1d204a168e1fb7df6"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a6a88aa59692c458c0fa4fafe7207b2c4">LargePage</a>: 1</td></tr>
+<tr class="memdesc:a14180a644cce13e1d204a168e1fb7df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 7] Must be 1 (otherwise, this entry references an EPT page table).  <a href="struct___e_p_d_e__2_m_b_1_1_0d20.html#a14180a644cce13e1d204a168e1fb7df6">More...</a><br /></td></tr>
+<tr class="separator:a14180a644cce13e1d204a168e1fb7df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9caaa89926126f99e9e7f6a8ec47e2b"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a13b6a109e54ceaa82325c0235b8b9894">Accessed</a>: 1</td></tr>
+<tr class="memdesc:af9caaa89926126f99e9e7f6a8ec47e2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 8] If bit 6 of EPTP is 1, accessed flag for EPT; indicates whether software has accessed the 2-MByte page referenced by this entry. Ignored if bit 6 of EPTP is 0.  <a href="struct___e_p_d_e__2_m_b_1_1_0d20.html#af9caaa89926126f99e9e7f6a8ec47e2b">More...</a><br /></td></tr>
+<tr class="separator:af9caaa89926126f99e9e7f6a8ec47e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af40f90f9571f9e71af11519bff516872"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a0d78a28604b5add9d3c3a14d15da16bd">Dirty</a>: 1</td></tr>
+<tr class="memdesc:af40f90f9571f9e71af11519bff516872"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 9] If bit 6 of EPTP is 1, dirty flag for EPT; indicates whether software has written to the 2-MByte page referenced by this entry. Ignored if bit 6 of EPTP is 0.  <a href="struct___e_p_d_e__2_m_b_1_1_0d20.html#af40f90f9571f9e71af11519bff516872">More...</a><br /></td></tr>
+<tr class="separator:af40f90f9571f9e71af11519bff516872"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4100cada51788a08ca72c9341a9455e"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a5307e4dd3744274e068ca802323599c4">UserModeExecute</a>: 1</td></tr>
+<tr class="memdesc:aa4100cada51788a08ca72c9341a9455e"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 10] Execute access for user-mode linear addresses. If the "mode-based execute control for EPT" VM-execution control is 1, indicates whether instruction fetches are allowed from user-mode linear addresses in the 2-MByte page controlled by this entry. If that control is 0, this bit is ignored.  <a href="struct___e_p_d_e__2_m_b_1_1_0d20.html#aa4100cada51788a08ca72c9341a9455e">More...</a><br /></td></tr>
+<tr class="separator:aa4100cada51788a08ca72c9341a9455e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4db08632e31137778785c02ff8af72d"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a841cbd26d1a7b303e882507b6d83c507">Reserved1</a>: 10</td></tr>
+<tr class="separator:ad4db08632e31137778785c02ff8af72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914c168c25e4f281e5c0a4bb258ccc66"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a96865f7c3fe492d073cfad00013f14ea">PageFrameNumber</a>: 27</td></tr>
+<tr class="memdesc:a914c168c25e4f281e5c0a4bb258ccc66"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bits 47:21] Physical address of 4-KByte aligned EPT page-directory-pointer table referenced by this entry.  <a href="struct___e_p_d_e__2_m_b_1_1_0d20.html#a914c168c25e4f281e5c0a4bb258ccc66">More...</a><br /></td></tr>
+<tr class="separator:a914c168c25e4f281e5c0a4bb258ccc66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa6b3f1074230201252454bd49633899"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#a89ff2c25dc49ccd4c0d39b769d1502e2">Reserved2</a>: 15</td></tr>
+<tr class="separator:afa6b3f1074230201252454bd49633899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ffeaa2a14cf7b221369421f85de7afe"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___e_p_d_e__2_m_b.html#ab62a010b5f4ce87463d070e4af2809d6">SuppressVe</a>: 1</td></tr>
+<tr class="memdesc:a6ffeaa2a14cf7b221369421f85de7afe"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 63] Suppress #VE. If the "EPT-violation \#VE" VM-execution control is 1, EPT violations caused by accesses to this page are convertible to virtualization exceptions only if this bit is 0. If "EPT-violation \#VE" VMexecution control is 0, this bit is ignored.  <a href="struct___e_p_d_e__2_m_b_1_1_0d20.html#a6ffeaa2a14cf7b221369421f85de7afe">More...</a><br /></td></tr>
+<tr class="separator:a6ffeaa2a14cf7b221369421f85de7afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61de3e43553424fff62f8c723fe8e2d8"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a61de3e43553424fff62f8c723fe8e2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6c61776365b26942dcaee261473ea5e"><td class="memItemLeft" align="right" valign="top">UINT64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union___e_p_d_e__2_m_b.html#ab6c61776365b26942dcaee261473ea5e">Flags</a></td></tr>
 <tr class="separator:ab6c61776365b26942dcaee261473ea5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>EPT PD-E (2MB) </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a474466e051c7619a022138bfef73f81b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a474466e051c7619a022138bfef73f81b">&#9670;&nbsp;</a></span>@12</h2>
+<a id="a61de3e43553424fff62f8c723fe8e2d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61de3e43553424fff62f8c723fe8e2d8">&#9670;&nbsp;</a></span>@21</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -363,11 +383,15 @@ Public Attributes</h2></td></tr>
 <li>hyperdbg/hprdbghv/<a class="el" href="_ept_8h_source.html">Ept.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="union___e_p_d_e__2_m_b.html">_EPDE_2MB</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

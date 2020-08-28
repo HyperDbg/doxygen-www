@@ -1,13 +1,8 @@
 var searchData=
 [
-  ['hprdbgctrl_5fapi_3034',['HPRDBGCTRL_API',['../hprdbgctrl_8h.html#a30a81ead3f3c5562e11bd27dacdd118b',1,'hprdbgctrl.h']]],
-  ['hyperv_5fcpuid_5fenlightment_5finfo_3035',['HYPERV_CPUID_ENLIGHTMENT_INFO',['../_vmx_8h.html#a49cced4483477342657360ed13256244',1,'Vmx.h']]],
-  ['hyperv_5fcpuid_5ffeatures_3036',['HYPERV_CPUID_FEATURES',['../_vmx_8h.html#a2a3e344a35c993edf2405a79e02f2a80',1,'Vmx.h']]],
-  ['hyperv_5fcpuid_5fimplement_5flimits_3037',['HYPERV_CPUID_IMPLEMENT_LIMITS',['../_vmx_8h.html#ac8e9525851e20ce72ca856558e88a866',1,'Vmx.h']]],
-  ['hyperv_5fcpuid_5finterface_3038',['HYPERV_CPUID_INTERFACE',['../_vmx_8h.html#aa085d0743946eb61ab8c5f5e4a700400',1,'Vmx.h']]],
-  ['hyperv_5fcpuid_5fmax_3039',['HYPERV_CPUID_MAX',['../_vmx_8h.html#a0c73983a141083dc2ed193ad144e8734',1,'Vmx.h']]],
-  ['hyperv_5fcpuid_5fmin_3040',['HYPERV_CPUID_MIN',['../_vmx_8h.html#a88efb28159b58d56c5ce8e01f8c57be7',1,'Vmx.h']]],
-  ['hyperv_5fcpuid_5fvendor_5fand_5fmax_5ffunctions_3041',['HYPERV_CPUID_VENDOR_AND_MAX_FUNCTIONS',['../_vmx_8h.html#aad84dbb2175cf41cac55aaa2c1752bcf',1,'Vmx.h']]],
-  ['hyperv_5fcpuid_5fversion_3042',['HYPERV_CPUID_VERSION',['../_vmx_8h.html#a98fbd42d49fce1098aa1b6907fd20a5c',1,'Vmx.h']]],
-  ['hyperv_5fhypervisor_5fpresent_5fbit_3043',['HYPERV_HYPERVISOR_PRESENT_BIT',['../_vmx_8h.html#aaf955b30321d11973faeeec0cde3a34b',1,'Vmx.h']]]
+  ['guest_5fpdpte_4133',['GUEST_PDPTE',['../_vmx_8h.html#aeba8600f3838b6ff28de2251abbc538f',1,'Vmx.h']]],
+  ['guest_5fseg_5far_5fbytes_4134',['GUEST_SEG_AR_BYTES',['../_vmx_8h.html#a6a680bf12265067010e88f3857dcdcf5',1,'Vmx.h']]],
+  ['guest_5fseg_5fbase_4135',['GUEST_SEG_BASE',['../_vmx_8h.html#a3b0eaff09dddf5a4e853b2685ec45125',1,'Vmx.h']]],
+  ['guest_5fseg_5flimit_4136',['GUEST_SEG_LIMIT',['../_vmx_8h.html#ad78bc099309bdc56f8a715c651f8f485',1,'Vmx.h']]],
+  ['guest_5fseg_5fselector_4137',['GUEST_SEG_SELECTOR',['../_vmx_8h.html#a44b861b649999856b48f87ee0abe6a98',1,'Vmx.h']]]
 ];

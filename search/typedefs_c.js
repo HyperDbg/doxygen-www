@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['segment_5fattributes_2584',['SEGMENT_ATTRIBUTES',['../_common_8h.html#a4c0d5691e8544a9700d4c9543374c610',1,'Common.h']]],
-  ['segment_5fdescriptor_2585',['SEGMENT_DESCRIPTOR',['../_common_8h.html#ae5af030351b99f264f7613f794a1998d',1,'Common.h']]],
-  ['segment_5fselector_2586',['SEGMENT_SELECTOR',['../_common_8h.html#a4ea55c30e1b2b96aaf3369e3b8308457',1,'Common.h']]],
-  ['ssdtstruct_2587',['SSDTStruct',['../_hooks_8h.html#a7ef67836bf52e4d218108fb05855a5ee',1,'Hooks.h']]],
-  ['system_5finformation_5fclass_2588',['SYSTEM_INFORMATION_CLASS',['../_hooks_8h.html#ae75edb0a85f69b42a96960e023f58c47',1,'Hooks.h']]],
-  ['system_5fmodule_5fentry_2589',['SYSTEM_MODULE_ENTRY',['../_hooks_8h.html#a6874334f705ea54c18fe8e417b192bcf',1,'Hooks.h']]],
-  ['system_5fmodule_5finformation_2590',['SYSTEM_MODULE_INFORMATION',['../_hooks_8h.html#ab544297b0d5c1d52d774046be13f483d',1,'Hooks.h']]]
+  ['request_5fnew_5fallocation_3662',['REQUEST_NEW_ALLOCATION',['../_pool_manager_8h.html#a16d34f4315fe6b271be10df99e25fd03',1,'PoolManager.h']]],
+  ['rflags_3663',['RFLAGS',['../hprdbghv_2_common_8h.html#a640698db761d86e67fd2dccadb220ee2',1,'Common.h']]],
+  ['rtl_5fprocess_5fmodule_5finformation_3664',['RTL_PROCESS_MODULE_INFORMATION',['../hprdbgctrl_2_common_8h.html#a54b98a41342fc7eeee0ee68035988aea',1,'common.h']]],
+  ['rtl_5fprocess_5fmodules_3665',['RTL_PROCESS_MODULES',['../hprdbgctrl_2_common_8h.html#a25e3a3c5c9ed9feb8f675345bb3d1b7d',1,'common.h']]],
+  ['runonlogicalcorefunc_3666',['RunOnLogicalCoreFunc',['../hprdbghv_2_common_8h.html#a25f777554b949fe8dfd4ffbd1313f30d',1,'Common.h']]]
 ];

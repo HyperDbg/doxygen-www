@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('globals_m.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,21 +85,40 @@ $(function() {
 
 <h3><a id="index_m"></a>- m -</h3><ul>
 <li>main()
-: <a class="el" href="hyperdbg-cli_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">hyperdbg-cli.cpp</a>
+: <a class="el" href="hyperdbg-cli_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">hyperdbg-cli.cpp</a>
 </li>
 <li>ManageDriver()
-: <a class="el" href="hprdbgctrl_8h.html#ac6af767e06731d664fd6124a9ca1df12">hprdbgctrl.h</a>
-, <a class="el" href="_install_8cpp.html#ac6af767e06731d664fd6124a9ca1df12">Install.cpp</a>
+: <a class="el" href="install_8cpp.html#a1deb4d6cc464e960b1d3f2985b080416">install.cpp</a>
+, <a class="el" href="install_8h.html#ac6af767e06731d664fd6124a9ca1df12">install.h</a>
 </li>
 <li>MathPower()
 : <a class="el" href="_common_8c.html#a0f16df9e7e4722921b04a6db04144236">Common.c</a>
-, <a class="el" href="_common_8h.html#a0f16df9e7e4722921b04a6db04144236">Common.h</a>
+, <a class="el" href="hprdbghv_2_common_8h.html#a0f16df9e7e4722921b04a6db04144236">Common.h</a>
 </li>
 <li>MAX_EXEC_TRAMPOLINE_SIZE
-: <a class="el" href="_common_8h.html#a9b5b17233c5031bc6d520227b440e01a">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a9b5b17233c5031bc6d520227b440e01a">Common.h</a>
 </li>
 <li>MAXIMUM_ADDRESS
-: <a class="el" href="_common_8h.html#a50fbad72cdce504a3072adea3e8a559f">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a50fbad72cdce504a3072adea3e8a559f">Common.h</a>
+</li>
+<li>MaximumHiddenBreakpointsOnPage
+: <a class="el" href="_ept_8h.html#a1bea5321e3bc6afd7a50e5208be94d74">Ept.h</a>
+</li>
+<li>MaximumRequestsQueueDepth
+: <a class="el" href="_pool_manager_8h.html#a3de3feb1e4bfba28fec79be37228fd43">PoolManager.h</a>
+</li>
+<li>Median()
+: <a class="el" href="gaussian-rng_8cpp.html#a87fce4ee4d93601b2ff3084ea36c5ea2">gaussian-rng.cpp</a>
+, <a class="el" href="hprdbgctrl_2_transparency_8h.html#a87fce4ee4d93601b2ff3084ea36c5ea2">transparency.h</a>
+</li>
+<li>MedianAbsoluteDeviationTest()
+: <a class="el" href="gaussian-rng_8cpp.html#a9839b812e4b67dde8382144faeb44dcc">gaussian-rng.cpp</a>
+</li>
+<li>MEMORY_BASIC_INFORMATION
+: <a class="el" href="_ntifs2_8h.html#acbb52738ce15b762a534891da23caab8">Ntifs2.h</a>
+</li>
+<li>MEMORY_INFORMATION_CLASS
+: <a class="el" href="_ntifs2_8h.html#a4261b04a98941a2548d79a9972930f21">Ntifs2.h</a>
 </li>
 <li>MEMORY_MAPPER_ADDRESSES
 : <a class="el" href="_memory_mapper_8h.html#ad3a18ab074076c533bb6d89fbc5c20e8">MemoryMapper.h</a>
@@ -102,9 +141,18 @@ $(function() {
 <li>MEMORY_TYPE_WRITE_THROUGH
 : <a class="el" href="_ept_8h.html#a804646668f60de4546eb82ec99c0c70a">Ept.h</a>
 </li>
+<li>MemoryBasicInformation
+: <a class="el" href="_ntifs2_8h.html#a14b86ef4016bb0d15128d87287e17c10a1cbbc60c6d5cab17b37e38ecbc4856f8">Ntifs2.h</a>
+</li>
+<li>MemoryInformationClass
+: <a class="el" href="_ntifs2_8h.html#a4ff73b1288c7bad9d75b4c508a944eda">Ntifs2.h</a>
+</li>
+<li>MemoryInformationLength
+: <a class="el" href="_ntifs2_8h.html#ac66302fdf0aa5be6f36ff79bbd9b554b">Ntifs2.h</a>
+</li>
 <li>MemoryManagerReadProcessMemoryNormal()
-: <a class="el" href="_memory_manager_8c.html#addda4856e5010e22aaf8f2603f28100d">MemoryManager.c</a>
-, <a class="el" href="_debugger_8h.html#addda4856e5010e22aaf8f2603f28100d">Debugger.h</a>
+: <a class="el" href="hprdbghv_2_debugger_8h.html#addda4856e5010e22aaf8f2603f28100d">Debugger.h</a>
+, <a class="el" href="_memory_manager_8c.html#addda4856e5010e22aaf8f2603f28100d">MemoryManager.c</a>
 </li>
 <li>MemoryMapperGetIndex()
 : <a class="el" href="_memory_mapper_8c.html#aa9210104b2c24fcedeb00b44bf2a6862">MemoryMapper.c</a>
@@ -136,6 +184,10 @@ $(function() {
 <li>MemoryMapperReadMemorySafeByPte()
 : <a class="el" href="_memory_mapper_8c.html#a49af3dceb386e43cc196c7eafc4761c6">MemoryMapper.c</a>
 </li>
+<li>MemoryMapperReserveUsermodeAddressInTargetProcess()
+: <a class="el" href="_memory_mapper_8c.html#ab96ebea857d481f28e07b066ba110fc9">MemoryMapper.c</a>
+, <a class="el" href="_memory_mapper_8h.html#ab96ebea857d481f28e07b066ba110fc9">MemoryMapper.h</a>
+</li>
 <li>MemoryMapperUninitialize()
 : <a class="el" href="_memory_mapper_8c.html#a4c1a12a407bc281cb9f03db67b203913">MemoryMapper.c</a>
 , <a class="el" href="_memory_mapper_8h.html#a4c1a12a407bc281cb9f03db67b203913">MemoryMapper.h</a>
@@ -143,11 +195,32 @@ $(function() {
 <li>MemoryMapperUnmapReservedPageRange()
 : <a class="el" href="_memory_mapper_8c.html#a39dc486eb10d6f82eeb2f7c7fee989c0">MemoryMapper.c</a>
 </li>
+<li>MemoryMapperWriteMemorySafe()
+: <a class="el" href="_memory_mapper_8c.html#aaee787f12fdd5b55e8ed5f0fb0de723c">MemoryMapper.c</a>
+, <a class="el" href="_memory_mapper_8h.html#aaee787f12fdd5b55e8ed5f0fb0de723c">MemoryMapper.h</a>
+</li>
+<li>MemoryMapperWriteMemorySafeByPhysicalAddress()
+: <a class="el" href="_memory_mapper_8c.html#a938f734d2f6af30eaae0016886ba71d7">MemoryMapper.c</a>
+, <a class="el" href="_memory_mapper_8h.html#a938f734d2f6af30eaae0016886ba71d7">MemoryMapper.h</a>
+</li>
+<li>MemoryMapperWriteMemorySafeByPte()
+: <a class="el" href="_memory_mapper_8c.html#a41ef5112f39e5a4b8c4c6b624edcb40c">MemoryMapper.c</a>
+</li>
+<li>MemoryMapperWriteMemoryUnsafe()
+: <a class="el" href="_memory_mapper_8c.html#ac61db55ba4253cc41f2cfa679cb29130">MemoryMapper.c</a>
+, <a class="el" href="_memory_mapper_8h.html#ac61db55ba4253cc41f2cfa679cb29130">MemoryMapper.h</a>
+</li>
 <li>MessageBufferInformation
 : <a class="el" href="_logging_8h.html#a987d4dee46588ff399ecac12bd633e3d">Logging.h</a>
 </li>
 <li>MOV_CR_QUALIFICATION
 : <a class="el" href="_vmx_8h.html#a7964012a0c6e8ff7a984cf32ace0e0fb">Vmx.h</a>
+</li>
+<li>MOV_TO_DEBUG_REG
+: <a class="el" href="_vmx_8h.html#a3424e1c8f0251a6187e322e157e5eb46">Vmx.h</a>
+</li>
+<li>MOV_TO_DEBUG_REG_QUALIFICATION
+: <a class="el" href="_vmx_8h.html#abd6718bedfcc1be9819bcfc0fdd24c13">Vmx.h</a>
 </li>
 <li>MSR
 : <a class="el" href="_msr_8h.html#a0fa0eed1afd3bbee240382b4995cd628">Msr.h</a>
@@ -251,6 +324,9 @@ $(function() {
 <li>MSR_IA32_SYSENTER_ESP
 : <a class="el" href="_msr_8h.html#a2c9b62d7cfaa85f14dedb45c1be83954">Msr.h</a>
 </li>
+<li>MSR_IA32_TIME_STAMP_COUNTER
+: <a class="el" href="hprdbghv_2_transparency_8h.html#acf860eff087b44ec100c9f36f5bd34d6">Transparency.h</a>
+</li>
 <li>MSR_IA32_VMX_BASIC
 : <a class="el" href="_msr_8h.html#a74dfe38ca3c30ba14870261a66be8033">Msr.h</a>
 </li>
@@ -318,13 +394,19 @@ $(function() {
 <li>MTRR_RANGE_DESCRIPTOR
 : <a class="el" href="_ept_8h.html#a84c13280b2446cb3c278ecf541c99258">Ept.h</a>
 </li>
+<li>MY_RAND_MAX
+: <a class="el" href="_transparency_8c.html#aa42ad494c741a679b0d01ae89bb58578">Transparency.c</a>
+</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

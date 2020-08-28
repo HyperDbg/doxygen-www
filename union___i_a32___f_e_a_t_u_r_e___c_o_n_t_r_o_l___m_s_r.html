@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,7 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -78,25 +98,25 @@ $(function() {
 Public Attributes</h2></td></tr>
 <tr class="memitem:a8e146f9072ab2168a8f435370b993852"><td class="memItemLeft" align="right" valign="top">ULONG64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#a8e146f9072ab2168a8f435370b993852">All</a></td></tr>
 <tr class="separator:a8e146f9072ab2168a8f435370b993852"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adce89225f9aed94aca99888c6193b47e"><td class="memItemLeft" >struct {</td></tr>
-<tr class="memitem:aa7e75d150509c102e01b3f5372238a28"><td class="memItemLeft" >&#160;&#160;&#160;ULONG64&#160;&#160;&#160;<a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#ab7b35380ec165acaf573de8723bb2e14">Lock</a>: 1</td></tr>
-<tr class="separator:aa7e75d150509c102e01b3f5372238a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac87255a3ec566e9cdd2e83c6176afe0b"><td class="memItemLeft" >&#160;&#160;&#160;ULONG64&#160;&#160;&#160;<a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#a2ed577f80c00523f9f316e3a6c0b3dcc">EnableSMX</a>: 1</td></tr>
-<tr class="separator:ac87255a3ec566e9cdd2e83c6176afe0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad045faa47b00334b3e5018f70a27d927"><td class="memItemLeft" >&#160;&#160;&#160;ULONG64&#160;&#160;&#160;<a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#ae1c007092555d828b47cc85460dd5d8e">EnableVmxon</a>: 1</td></tr>
-<tr class="separator:ad045faa47b00334b3e5018f70a27d927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5851e24eeadb71ec061adb76e9971205"><td class="memItemLeft" >&#160;&#160;&#160;ULONG64&#160;&#160;&#160;<a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#ace58d3e1ccd00c94a9f2b566a094fb60">Reserved2</a>: 5</td></tr>
-<tr class="separator:a5851e24eeadb71ec061adb76e9971205"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4a2c18be408e20ed484b8f7e6b192b0"><td class="memItemLeft" >&#160;&#160;&#160;ULONG64&#160;&#160;&#160;<a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#abaf56e1342f54a24ba3f0aa180ac1678">EnableLocalSENTER</a>: 7</td></tr>
-<tr class="separator:aa4a2c18be408e20ed484b8f7e6b192b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fbbaa668329a07f4aa16aaeeb706e28"><td class="memItemLeft" >&#160;&#160;&#160;ULONG64&#160;&#160;&#160;<a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#aca85a9ce50dc63f01b98e59a955de1ef">EnableGlobalSENTER</a>: 1</td></tr>
-<tr class="separator:a9fbbaa668329a07f4aa16aaeeb706e28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64ae3217305cc3b640561daf19647c9c"><td class="memItemLeft" >&#160;&#160;&#160;ULONG64&#160;&#160;&#160;<a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#aa3d93eb8992170bccc8af6ca1818b1f9">Reserved3a</a>: 16</td></tr>
-<tr class="separator:a64ae3217305cc3b640561daf19647c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34d2b0e965be1d3ece7409f267626430"><td class="memItemLeft" >&#160;&#160;&#160;ULONG64&#160;&#160;&#160;<a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#aa1bc6db4275a499933735ce88faf0610">Reserved3b</a>: 32</td></tr>
-<tr class="separator:a34d2b0e965be1d3ece7409f267626430"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adce89225f9aed94aca99888c6193b47e"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#adce89225f9aed94aca99888c6193b47e">Fields</a></td></tr>
-<tr class="separator:adce89225f9aed94aca99888c6193b47e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ebc876a77d94bf129b8a0d606e604d6"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:aca9967aca0c9d1e55f7a93494d2870a4"><td class="memItemLeft" >&#160;&#160;&#160;ULONG64&#160;&#160;&#160;<a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#ab7b35380ec165acaf573de8723bb2e14">Lock</a>: 1</td></tr>
+<tr class="separator:aca9967aca0c9d1e55f7a93494d2870a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb203f23c0156a5b1f907922186c934c"><td class="memItemLeft" >&#160;&#160;&#160;ULONG64&#160;&#160;&#160;<a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#a2ed577f80c00523f9f316e3a6c0b3dcc">EnableSMX</a>: 1</td></tr>
+<tr class="separator:afb203f23c0156a5b1f907922186c934c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab044af009e1e1dbd50d68cf354b5ca6d"><td class="memItemLeft" >&#160;&#160;&#160;ULONG64&#160;&#160;&#160;<a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#ae1c007092555d828b47cc85460dd5d8e">EnableVmxon</a>: 1</td></tr>
+<tr class="separator:ab044af009e1e1dbd50d68cf354b5ca6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcbae7d810e90e1862704939ef2dd906"><td class="memItemLeft" >&#160;&#160;&#160;ULONG64&#160;&#160;&#160;<a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#ace58d3e1ccd00c94a9f2b566a094fb60">Reserved2</a>: 5</td></tr>
+<tr class="separator:adcbae7d810e90e1862704939ef2dd906"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb2d7786d9f7f41ca3d6b91771bebe90"><td class="memItemLeft" >&#160;&#160;&#160;ULONG64&#160;&#160;&#160;<a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#abaf56e1342f54a24ba3f0aa180ac1678">EnableLocalSENTER</a>: 7</td></tr>
+<tr class="separator:adb2d7786d9f7f41ca3d6b91771bebe90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2145b1c59d55b13c82d5a6edfaa2678e"><td class="memItemLeft" >&#160;&#160;&#160;ULONG64&#160;&#160;&#160;<a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#aca85a9ce50dc63f01b98e59a955de1ef">EnableGlobalSENTER</a>: 1</td></tr>
+<tr class="separator:a2145b1c59d55b13c82d5a6edfaa2678e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3866789db6f1707d04f6300829e6a49"><td class="memItemLeft" >&#160;&#160;&#160;ULONG64&#160;&#160;&#160;<a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#aa3d93eb8992170bccc8af6ca1818b1f9">Reserved3a</a>: 16</td></tr>
+<tr class="separator:ac3866789db6f1707d04f6300829e6a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd8b3cf9b7b57731a7426832717e3432"><td class="memItemLeft" >&#160;&#160;&#160;ULONG64&#160;&#160;&#160;<a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#aa1bc6db4275a499933735ce88faf0610">Reserved3b</a>: 32</td></tr>
+<tr class="separator:abd8b3cf9b7b57731a7426832717e3432"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ebc876a77d94bf129b8a0d606e604d6"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#a9ebc876a77d94bf129b8a0d606e604d6">Fields</a></td></tr>
+<tr class="separator:a9ebc876a77d94bf129b8a0d606e604d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>IA32_FEATURE_CONTROL_MSR Structure. </p>
@@ -171,8 +191,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="adce89225f9aed94aca99888c6193b47e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adce89225f9aed94aca99888c6193b47e">&#9670;&nbsp;</a></span>Fields</h2>
+<a id="a9ebc876a77d94bf129b8a0d606e604d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ebc876a77d94bf129b8a0d606e604d6">&#9670;&nbsp;</a></span>Fields</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,11 +265,15 @@ Public Attributes</h2></td></tr>
 <li>hyperdbg/hprdbghv/<a class="el" href="_msr_8h_source.html">Msr.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html">_IA32_FEATURE_CONTROL_MSR</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

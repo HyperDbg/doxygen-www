@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('globals_l.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -83,10 +103,7 @@ $(function() {
 : <a class="el" href="_length_disassembler_engine_8h.html#a904b409dfdbf2bca337345ea59141adc">LengthDisassemblerEngine.h</a>
 </li>
 <li>LDTR
-: <a class="el" href="_common_8h.html#a7439723a15461f5bf1905bb57eb295bfa3594a8ba3d161207b31fa82265f5638a">Common.h</a>
-</li>
-<li>ListOfAllocatedPoolsHead
-: <a class="el" href="_pool_manager_8h.html#afdcc4caa7e3c4aebcd48e5a1bd3f35d4">PoolManager.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a7439723a15461f5bf1905bb57eb295bfa3594a8ba3d161207b31fa82265f5638a">Common.h</a>
 </li>
 <li>LockForReadingPool
 : <a class="el" href="_pool_manager_8h.html#a101e73d3bade3311959349f95dc57245">PoolManager.h</a>
@@ -95,47 +112,55 @@ $(function() {
 : <a class="el" href="_pool_manager_8h.html#a5252cb3953eea439f92a39e36aedd57a">PoolManager.h</a>
 </li>
 <li>Log
-: <a class="el" href="_common_8h.html#a0c38ca677b912fa03329447f5e235dc2">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a0c38ca677b912fa03329447f5e235dc2">Common.h</a>
 </li>
 <li>LOG_BUFFER_INFORMATION
 : <a class="el" href="_logging_8h.html#ad46380d62a8edc51783b47650b8bd6f9">Logging.h</a>
 </li>
 <li>LOG_ERROR
-: <a class="el" href="_common_8h.html#a050bae65361e276b294f785581894867a230506cce5c68c3bac5a821c42ed3473">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a050bae65361e276b294f785581894867a230506cce5c68c3bac5a821c42ed3473">Common.h</a>
 </li>
 <li>LOG_INFO
-: <a class="el" href="_common_8h.html#a050bae65361e276b294f785581894867a6e98ff471e3ce6c4ef2d75c37ee51837">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a050bae65361e276b294f785581894867a6e98ff471e3ce6c4ef2d75c37ee51837">Common.h</a>
 </li>
 <li>LOG_TYPE
-: <a class="el" href="_common_8h.html#a00e4548dd1db35b54cbeb1ee0fe45f66">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a00e4548dd1db35b54cbeb1ee0fe45f66">Common.h</a>
 </li>
 <li>LOG_WARNING
-: <a class="el" href="_common_8h.html#a050bae65361e276b294f785581894867a8f6fe15bfe15104da6d1b360194a5400">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a050bae65361e276b294f785581894867a8f6fe15bfe15104da6d1b360194a5400">Common.h</a>
 </li>
 <li>LogCheckForNewMessage()
 : <a class="el" href="_logging_8c.html#a09d7b5bc19735e6b5d5f8acb89fb6ba9">Logging.c</a>
 , <a class="el" href="_logging_8h.html#a09d7b5bc19735e6b5d5f8acb89fb6ba9">Logging.h</a>
 </li>
 <li>LogError
-: <a class="el" href="_common_8h.html#a459b19922fecfbb9438dd56b66930d16">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a459b19922fecfbb9438dd56b66930d16">Common.h</a>
 </li>
 <li>LogInfo
-: <a class="el" href="_common_8h.html#a97b0adbd65790fb90734daa8e5245a04">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a97b0adbd65790fb90734daa8e5245a04">Common.h</a>
 </li>
 <li>LogInfoImmediate
-: <a class="el" href="_common_8h.html#a72d28babc4f8764698c78a14cfa90dfa">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a72d28babc4f8764698c78a14cfa90dfa">Common.h</a>
 </li>
 <li>LogInitialize()
-: <a class="el" href="_logging_8h.html#aeaa67f662b711adc90d5cfbf023c734d">Logging.h</a>
-, <a class="el" href="_logging_8c.html#aeaa67f662b711adc90d5cfbf023c734d">Logging.c</a>
+: <a class="el" href="_logging_8c.html#aeaa67f662b711adc90d5cfbf023c734d">Logging.c</a>
+, <a class="el" href="_logging_8h.html#aeaa67f662b711adc90d5cfbf023c734d">Logging.h</a>
+</li>
+<li>LogMarkAllAsRead()
+: <a class="el" href="_logging_8c.html#a480d59927ef95ff8c6aa39a77e88ccc2">Logging.c</a>
+, <a class="el" href="_logging_8h.html#a480d59927ef95ff8c6aa39a77e88ccc2">Logging.h</a>
 </li>
 <li>LogNotifyUsermodeCallback()
 : <a class="el" href="_logging_8c.html#a27b764f2e199e62752ff76d155385971">Logging.c</a>
 , <a class="el" href="_logging_8h.html#a27b764f2e199e62752ff76d155385971">Logging.h</a>
 </li>
+<li>LogopenSaveToFile()
+: <a class="el" href="hprdbgctrl_2_debugger_8h.html#aa117e25b8d4fcb30878383e1c6dd6404">debugger.h</a>
+, <a class="el" href="logopen_8cpp.html#aa117e25b8d4fcb30878383e1c6dd6404">logopen.cpp</a>
+</li>
 <li>LogReadBuffer()
-: <a class="el" href="_logging_8c.html#a052d3294b1eb4f00873067baa1532f4e">Logging.c</a>
-, <a class="el" href="_logging_8h.html#a052d3294b1eb4f00873067baa1532f4e">Logging.h</a>
+: <a class="el" href="_logging_8h.html#a052d3294b1eb4f00873067baa1532f4e">Logging.h</a>
+, <a class="el" href="_logging_8c.html#a052d3294b1eb4f00873067baa1532f4e">Logging.c</a>
 </li>
 <li>LogRegisterEventBasedNotification()
 : <a class="el" href="_logging_8h.html#a7ddf4fe5591715ae0a9b0f7cf387fe84">Logging.h</a>
@@ -146,8 +171,8 @@ $(function() {
 , <a class="el" href="_logging_8c.html#a25775dd4877092053342d243d80f1210">Logging.c</a>
 </li>
 <li>LogSendBuffer()
-: <a class="el" href="_logging_8c.html#ad9feeb5b951d4d4825880fbe9776441e">Logging.c</a>
-, <a class="el" href="_logging_8h.html#ad9feeb5b951d4d4825880fbe9776441e">Logging.h</a>
+: <a class="el" href="_logging_8h.html#ad9feeb5b951d4d4825880fbe9776441e">Logging.h</a>
+, <a class="el" href="_logging_8c.html#ad9feeb5b951d4d4825880fbe9776441e">Logging.c</a>
 </li>
 <li>LogSendMessageToQueue()
 : <a class="el" href="_logging_8c.html#af70c1212420f5410eb0b057d32ba7cdd">Logging.c</a>
@@ -158,15 +183,18 @@ $(function() {
 , <a class="el" href="_logging_8h.html#a1883978309bb4fa9f2fca9804389a577">Logging.h</a>
 </li>
 <li>LogWarning
-: <a class="el" href="_common_8h.html#abf506c814a6f717a87b5d808b828ef56">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#abf506c814a6f717a87b5d808b828ef56">Common.h</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

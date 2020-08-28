@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('struct___p_a_g_e___e_n_t_r_y.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,7 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -69,64 +89,69 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Page Entries.  
+ <a href="struct___p_a_g_e___e_n_t_r_y.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_memory_mapper_8h_source.html">MemoryMapper.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a633fbf649287c5748072f09db363fd59"><td class="memItemLeft" >union {</td></tr>
-<tr class="memitem:a92b45f5cc21c738eef98ee794ee1760f"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#abead83a5acc24776b068a629a08eeea6">Flags</a></td></tr>
-<tr class="separator:a92b45f5cc21c738eef98ee794ee1760f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a164d140055158b5a65878922ed0d8d07"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="_memory_mapper_8h.html#acfd6671fe81ae6c738c38f0b3328c29e">PAGE_MAP_LEVEL_4_ENTRY</a>&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a7e51288a5463118e37a3ef69d4cf20be">Pml4</a></td></tr>
-<tr class="separator:a164d140055158b5a65878922ed0d8d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae0e942937d3ed47460dd9b22964a21a"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="_memory_mapper_8h.html#a0cdb15ce2198c0697db1a6a11e1b0cf2">LARGE_PAGE_DIRECTORY_POINTER_TABLE_ENTRY</a>&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#af9d3f77af70059cb1ced289d1acb0722">PdptLarge</a></td></tr>
-<tr class="separator:aae0e942937d3ed47460dd9b22964a21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c67d26f27f854bf9f2719c9dc485ede"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="_memory_mapper_8h.html#a839327b73567af93100b4305b399507f">PAGE_DIRECTORY_POINTER_TABLE_ENTRY</a>&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a9f28ec129aae242fb00a77ac1a79494a">Pdpt</a></td></tr>
-<tr class="separator:a3c67d26f27f854bf9f2719c9dc485ede"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f87c309886baedbae322e02baaf744f"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="_memory_mapper_8h.html#a121e20498402659b1da4b3ccb32e290c">LARGE_PAGE_DIRECTORY_ENTRY</a>&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#ae605f48c62fa9d3476dfa2f8d819b739">PdLarge</a></td></tr>
-<tr class="separator:a7f87c309886baedbae322e02baaf744f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08887e9acb7e96adeda2d70a715d574f"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="_memory_mapper_8h.html#a1a3d58240066629920261bfc51a1b98a">PAGE_DIRECTORY_ENTRY</a>&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#aeca3a7c24495f052c2f1fe7e1427a901">Pd</a></td></tr>
-<tr class="separator:a08887e9acb7e96adeda2d70a715d574f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59bf6a8c2cfa90349cbda1f9cb902b8a"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="_memory_mapper_8h.html#ac11ece61c7d13dc8c6a90161c03af7e4">PAGE_TABLE_ENTRY</a>&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#afbd5d97b394a41bf5e3b55577f0efa87">Pt</a></td></tr>
-<tr class="separator:a59bf6a8c2cfa90349cbda1f9cb902b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90cc1409739f03e9f5dda0be544725cd"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
-<tr class="memitem:a90aa9a6b9ff34109b11f92d5ff7e7644"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a55e935edb4e8d1b507b6bde9cc5496a5">Present</a>: 1</td></tr>
-<tr class="separator:a90aa9a6b9ff34109b11f92d5ff7e7644"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bc736b65d74d620e6555a445d4a95cf"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a0a113b4ce9a5bf13cf34c472d6a707ef">Write</a>: 1</td></tr>
-<tr class="separator:a6bc736b65d74d620e6555a445d4a95cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a075d358f04805069e2105bfe393b1d4a"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#abd74037fc4b3cdf1783eddba07113615">Supervisor</a>: 1</td></tr>
-<tr class="separator:a075d358f04805069e2105bfe393b1d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cabc94b7a4452d37d0509999d1d3c5f"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#aa8399dec1bcd2cdbf31a01a25ae6e9d6">PageLevelWriteThrough</a>: 1</td></tr>
-<tr class="separator:a3cabc94b7a4452d37d0509999d1d3c5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31da2bf2131b5e313e04bfd23b414048"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a9c45fed13d174220ab2e08a7b1f39061">PageLevelCacheDisable</a>: 1</td></tr>
-<tr class="separator:a31da2bf2131b5e313e04bfd23b414048"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e93c1fa6f323f84f3ffb09fb364224e"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#ae6c6917406cebdfc202512a0f17e531c">Accessed</a>: 1</td></tr>
-<tr class="separator:a9e93c1fa6f323f84f3ffb09fb364224e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f8a8dd4152ca23364d6164a9710a5a3"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a0b243d9c7f1ff47fbf0d9208cd58e8ee">Dirty</a>: 1</td></tr>
-<tr class="separator:a1f8a8dd4152ca23364d6164a9710a5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac488300ade46bf905e6a3fdcc7c5b7bf"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a0ef3986bc7670eab1c52dba6e037b315">LargePage</a>: 1</td></tr>
-<tr class="separator:ac488300ade46bf905e6a3fdcc7c5b7bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b685e87ef33590bee8cc9a28d474a1e"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a5ec4588515c40b2dccc9789ed2d5407d">Global</a>: 1</td></tr>
-<tr class="separator:a3b685e87ef33590bee8cc9a28d474a1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec7fc88f9c035c98d6adb046aab2e282"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a1ed1359dd0140575b38393179f5ea8c2">Ignored1</a>: 3</td></tr>
-<tr class="separator:aec7fc88f9c035c98d6adb046aab2e282"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac12cf40a582349f63ef290d01343a160"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#aa065e803ced853e700569e3fcd48c26a">PageFrameNumber</a>: 36</td></tr>
-<tr class="separator:ac12cf40a582349f63ef290d01343a160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a942da79a38c818531418cf8add0375ca"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#aec84e9322fa321268880cd35515008ed">Reserved1</a>: 4</td></tr>
-<tr class="separator:a942da79a38c818531418cf8add0375ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44b497b07d0da6fcaaadaea0a6237ce9"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#ad82007f427e3bfbda41e3227f5f33aef">Ignored2</a>: 7</td></tr>
-<tr class="separator:a44b497b07d0da6fcaaadaea0a6237ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00b346e1f22cdbf6382e831c8474a940"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a568e3fab3b5179c37aa245037921ec26">ProtectionKey</a>: 4</td></tr>
-<tr class="separator:a00b346e1f22cdbf6382e831c8474a940"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa05ef2b153aacb548484cf578b040d24"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a33d8993d1c90d907c0552e1dbb2530cc">ExecuteDisable</a>: 1</td></tr>
-<tr class="separator:aa05ef2b153aacb548484cf578b040d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90cc1409739f03e9f5dda0be544725cd"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a90cc1409739f03e9f5dda0be544725cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a633fbf649287c5748072f09db363fd59"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a633fbf649287c5748072f09db363fd59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a092c847ebc856a8d87a5d981db242d1b"><td class="memItemLeft" >union {</td></tr>
+<tr class="memitem:a5b891cc445d31b863199d7c6a060d249"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#abead83a5acc24776b068a629a08eeea6">Flags</a></td></tr>
+<tr class="separator:a5b891cc445d31b863199d7c6a060d249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad880dcbd171e2a761cffc1a9859e2329"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="_memory_mapper_8h.html#acfd6671fe81ae6c738c38f0b3328c29e">PAGE_MAP_LEVEL_4_ENTRY</a>&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a7e51288a5463118e37a3ef69d4cf20be">Pml4</a></td></tr>
+<tr class="separator:ad880dcbd171e2a761cffc1a9859e2329"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c32d2ebf522171683b82bbdba657193"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="_memory_mapper_8h.html#a0cdb15ce2198c0697db1a6a11e1b0cf2">LARGE_PAGE_DIRECTORY_POINTER_TABLE_ENTRY</a>&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#af9d3f77af70059cb1ced289d1acb0722">PdptLarge</a></td></tr>
+<tr class="separator:a3c32d2ebf522171683b82bbdba657193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a0347346e92c1cbf12b3ed4bb0c54a9"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="_memory_mapper_8h.html#a839327b73567af93100b4305b399507f">PAGE_DIRECTORY_POINTER_TABLE_ENTRY</a>&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a9f28ec129aae242fb00a77ac1a79494a">Pdpt</a></td></tr>
+<tr class="separator:a2a0347346e92c1cbf12b3ed4bb0c54a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30addfae58f3488d72ed193a2ebd6623"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="_memory_mapper_8h.html#a121e20498402659b1da4b3ccb32e290c">LARGE_PAGE_DIRECTORY_ENTRY</a>&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#ae605f48c62fa9d3476dfa2f8d819b739">PdLarge</a></td></tr>
+<tr class="separator:a30addfae58f3488d72ed193a2ebd6623"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab35db9140128ffcfbda4d8c63a56be29"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="_memory_mapper_8h.html#a1a3d58240066629920261bfc51a1b98a">PAGE_DIRECTORY_ENTRY</a>&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#aeca3a7c24495f052c2f1fe7e1427a901">Pd</a></td></tr>
+<tr class="separator:ab35db9140128ffcfbda4d8c63a56be29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a168489387cfa244c0723d07d9e69f3fb"><td class="memItemLeft" >&#160;&#160;&#160;<a class="el" href="_memory_mapper_8h.html#ac11ece61c7d13dc8c6a90161c03af7e4">PAGE_TABLE_ENTRY</a>&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#afbd5d97b394a41bf5e3b55577f0efa87">Pt</a></td></tr>
+<tr class="separator:a168489387cfa244c0723d07d9e69f3fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f8f018e11e8ec3db458c56fb2dbe54a"><td class="memItemLeft" >&#160;&#160;&#160;struct {</td></tr>
+<tr class="memitem:a0bbfc9f2cc38141e09f083a42a7b89cb"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a55e935edb4e8d1b507b6bde9cc5496a5">Present</a>: 1</td></tr>
+<tr class="separator:a0bbfc9f2cc38141e09f083a42a7b89cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66bf9f98354254dabd179ea5c7ced1f8"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a0a113b4ce9a5bf13cf34c472d6a707ef">Write</a>: 1</td></tr>
+<tr class="separator:a66bf9f98354254dabd179ea5c7ced1f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa199757373166bb81fb8a3b161467b62"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#abd74037fc4b3cdf1783eddba07113615">Supervisor</a>: 1</td></tr>
+<tr class="separator:aa199757373166bb81fb8a3b161467b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a5eb90c0e94040309872413f46c865c"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#aa8399dec1bcd2cdbf31a01a25ae6e9d6">PageLevelWriteThrough</a>: 1</td></tr>
+<tr class="separator:a1a5eb90c0e94040309872413f46c865c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad88abfd19106f3102dcdd200b97eee04"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a9c45fed13d174220ab2e08a7b1f39061">PageLevelCacheDisable</a>: 1</td></tr>
+<tr class="separator:ad88abfd19106f3102dcdd200b97eee04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08c89da30dbf9fc8a287f488098ebf34"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#ae6c6917406cebdfc202512a0f17e531c">Accessed</a>: 1</td></tr>
+<tr class="separator:a08c89da30dbf9fc8a287f488098ebf34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a168d5e48cafb669822ad1501f94e36a1"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a0b243d9c7f1ff47fbf0d9208cd58e8ee">Dirty</a>: 1</td></tr>
+<tr class="separator:a168d5e48cafb669822ad1501f94e36a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87add908fcdc39bb96029bac60dbe381"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a0ef3986bc7670eab1c52dba6e037b315">LargePage</a>: 1</td></tr>
+<tr class="separator:a87add908fcdc39bb96029bac60dbe381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60c2463e513d7bcd1bcc68e644e7ffd"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a5ec4588515c40b2dccc9789ed2d5407d">Global</a>: 1</td></tr>
+<tr class="separator:ae60c2463e513d7bcd1bcc68e644e7ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac55609079ad8f7d8e33a40e22073aeed"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a1ed1359dd0140575b38393179f5ea8c2">Ignored1</a>: 3</td></tr>
+<tr class="separator:ac55609079ad8f7d8e33a40e22073aeed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf24c4a16175d892da55728c89c0f62"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#aa065e803ced853e700569e3fcd48c26a">PageFrameNumber</a>: 36</td></tr>
+<tr class="separator:accf24c4a16175d892da55728c89c0f62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93eaa8136cdf007bfba20bc3dec3b9c9"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#aec84e9322fa321268880cd35515008ed">Reserved1</a>: 4</td></tr>
+<tr class="separator:a93eaa8136cdf007bfba20bc3dec3b9c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac15479870c64d27fec39adf681ddd375"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#ad82007f427e3bfbda41e3227f5f33aef">Ignored2</a>: 7</td></tr>
+<tr class="separator:ac15479870c64d27fec39adf681ddd375"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a374d0f66987e74087aedb4c8cc61c723"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a568e3fab3b5179c37aa245037921ec26">ProtectionKey</a>: 4</td></tr>
+<tr class="separator:a374d0f66987e74087aedb4c8cc61c723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa457e58290b1e81b270db4baa860979e"><td class="memItemLeft" >&#160;&#160;&#160;&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="struct___p_a_g_e___e_n_t_r_y.html#a33d8993d1c90d907c0552e1dbb2530cc">ExecuteDisable</a>: 1</td></tr>
+<tr class="separator:aa457e58290b1e81b270db4baa860979e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f8f018e11e8ec3db458c56fb2dbe54a"><td class="memItemLeft" valign="top">&#160;&#160;&#160;}&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a8f8f018e11e8ec3db458c56fb2dbe54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a092c847ebc856a8d87a5d981db242d1b"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a092c847ebc856a8d87a5d981db242d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a633fbf649287c5748072f09db363fd59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a633fbf649287c5748072f09db363fd59">&#9670;&nbsp;</a></span>@61</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Page Entries. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a092c847ebc856a8d87a5d981db242d1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a092c847ebc856a8d87a5d981db242d1b">&#9670;&nbsp;</a></span>@76</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -451,11 +476,15 @@ Public Attributes</h2></td></tr>
 <li>hyperdbg/hprdbghv/<a class="el" href="_memory_mapper_8h_source.html">MemoryMapper.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="struct___p_a_g_e___e_n_t_r_y.html">_PAGE_ENTRY</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

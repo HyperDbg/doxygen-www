@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['ldisasm_5fc_3051',['LDISASM_C',['../_length_disassembler_engine_8h.html#ad0e911d5c86e626a73ef2dc2637b34e0',1,'LengthDisassemblerEngine.h']]],
-  ['ldisasm_5fh_3052',['LDISASM_H',['../_length_disassembler_engine_8h.html#a0eaebf2662e594d50bd0372205e7ae37',1,'LengthDisassemblerEngine.h']]],
-  ['ldisasm_5fr_3053',['LDISASM_R',['../_length_disassembler_engine_8h.html#a904b409dfdbf2bca337345ea59141adc',1,'LengthDisassemblerEngine.h']]],
-  ['log_3054',['Log',['../_common_8h.html#a0c38ca677b912fa03329447f5e235dc2',1,'Common.h']]],
-  ['logerror_3055',['LogError',['../_common_8h.html#a459b19922fecfbb9438dd56b66930d16',1,'Common.h']]],
-  ['loginfo_3056',['LogInfo',['../_common_8h.html#a97b0adbd65790fb90734daa8e5245a04',1,'Common.h']]],
-  ['loginfoimmediate_3057',['LogInfoImmediate',['../_common_8h.html#a72d28babc4f8764698c78a14cfa90dfa',1,'Common.h']]],
-  ['logwarning_3058',['LogWarning',['../_common_8h.html#abf506c814a6f717a87b5d808b828ef56',1,'Common.h']]]
+  ['image_5fdos_5fsignature_4148',['IMAGE_DOS_SIGNATURE',['../_hooks_8h.html#acde26d24b0ff46215cbd029d8ae87e4d',1,'Hooks.h']]],
+  ['image_5fnt_5fsignature_4149',['IMAGE_NT_SIGNATURE',['../_hooks_8h.html#a83570e3e2fba8cb7c2abc8b3eee47d48',1,'Hooks.h']]],
+  ['image_5fos2_5fsignature_4150',['IMAGE_OS2_SIGNATURE',['../_hooks_8h.html#a9d186034e0a154cfc3bcc5ec8e977564',1,'Hooks.h']]],
+  ['image_5fos2_5fsignature_5fle_4151',['IMAGE_OS2_SIGNATURE_LE',['../_hooks_8h.html#a41ddf3f83e5c119216c43a3cd98deba4',1,'Hooks.h']]],
+  ['image_5fvxd_5fsignature_4152',['IMAGE_VXD_SIGNATURE',['../_hooks_8h.html#a0d59e625e438a014184cfc9e892553c3',1,'Hooks.h']]],
+  ['is_5fsyscall_5finstruction_4153',['IS_SYSCALL_INSTRUCTION',['../_hooks_8h.html#a765571d13192493adf4e7baa5a9e9468',1,'Hooks.h']]],
+  ['is_5fsysret_5finstruction_4154',['IS_SYSRET_INSTRUCTION',['../_hooks_8h.html#a2633e7e4b97712c8a9924648d48b63f6',1,'Hooks.h']]]
 ];

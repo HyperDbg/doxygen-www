@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_inline_asm_8h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_19054a674c4bd5cb8fceb6542228579c.html">hprdbghv</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
@@ -80,61 +96,95 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a141567e2e7a4abc1106cccca5d365af3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a141567e2e7a4abc1106cccca5d365af3">AsmEnableVmxOperation</a> ()</td></tr>
+<tr class="memdesc:a141567e2e7a4abc1106cccca5d365af3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable VMX Operation.  <a href="_inline_asm_8h.html#a141567e2e7a4abc1106cccca5d365af3">More...</a><br /></td></tr>
 <tr class="separator:a141567e2e7a4abc1106cccca5d365af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b1f38e7fd8cc7264458e6eee83c0b75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a8b1f38e7fd8cc7264458e6eee83c0b75">AsmRestoreToVmxOffState</a> ()</td></tr>
+<tr class="memdesc:a8b1f38e7fd8cc7264458e6eee83c0b75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore in vmxoff state.  <a href="_inline_asm_8h.html#a8b1f38e7fd8cc7264458e6eee83c0b75">More...</a><br /></td></tr>
 <tr class="separator:a8b1f38e7fd8cc7264458e6eee83c0b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fd87b88c03b3c10883f0ad70239bf6c"><td class="memItemLeft" align="right" valign="top">NTSTATUS&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a> (unsigned long long VmcallNumber, unsigned long long OptionalParam1, unsigned long long OptionalParam2, long long OptionalParam3)</td></tr>
+<tr class="memdesc:a0fd87b88c03b3c10883f0ad70239bf6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Request Vmcall.  <a href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">More...</a><br /></td></tr>
 <tr class="separator:a0fd87b88c03b3c10883f0ad70239bf6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0efd4a5ade1be8268d0f53eb0aae26e"><td class="memItemLeft" align="right" valign="top">UINT64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#ae0efd4a5ade1be8268d0f53eb0aae26e">AsmHypervVmcall</a> (unsigned long long HypercallInputValue, unsigned long long InputParamGPA, unsigned long long OutputParamGPA, unsigned long long Optional4)</td></tr>
+<tr class="memdesc:ae0efd4a5ade1be8268d0f53eb0aae26e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hyper-v vmcall handler.  <a href="_inline_asm_8h.html#ae0efd4a5ade1be8268d0f53eb0aae26e">More...</a><br /></td></tr>
 <tr class="separator:ae0efd4a5ade1be8268d0f53eb0aae26e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2aaa8ea80b125a1df12754b26b9b3ba0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a2aaa8ea80b125a1df12754b26b9b3ba0">AsmVmxSaveState</a> ()</td></tr>
+<tr class="memdesc:a2aaa8ea80b125a1df12754b26b9b3ba0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save state on vmx.  <a href="_inline_asm_8h.html#a2aaa8ea80b125a1df12754b26b9b3ba0">More...</a><br /></td></tr>
 <tr class="separator:a2aaa8ea80b125a1df12754b26b9b3ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99ddf21c2beb923fc68f01d200140782"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a99ddf21c2beb923fc68f01d200140782">AsmVmxRestoreState</a> ()</td></tr>
+<tr class="memdesc:a99ddf21c2beb923fc68f01d200140782"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restore state on vmx.  <a href="_inline_asm_8h.html#a99ddf21c2beb923fc68f01d200140782">More...</a><br /></td></tr>
 <tr class="separator:a99ddf21c2beb923fc68f01d200140782"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13081cdd78e83db6cd8e1d2f3b501379"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a13081cdd78e83db6cd8e1d2f3b501379">AsmVmexitHandler</a> ()</td></tr>
+<tr class="memdesc:a13081cdd78e83db6cd8e1d2f3b501379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vm-exit handler.  <a href="_inline_asm_8h.html#a13081cdd78e83db6cd8e1d2f3b501379">More...</a><br /></td></tr>
 <tr class="separator:a13081cdd78e83db6cd8e1d2f3b501379"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9b510880221a7ac9a8e8be42d5371eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#ac9b510880221a7ac9a8e8be42d5371eb">AsmSaveVmxOffState</a> ()</td></tr>
+<tr class="memdesc:ac9b510880221a7ac9a8e8be42d5371eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save vmxoff state.  <a href="_inline_asm_8h.html#ac9b510880221a7ac9a8e8be42d5371eb">More...</a><br /></td></tr>
 <tr class="separator:ac9b510880221a7ac9a8e8be42d5371eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa553aa23f8de9bd901aa5d831ce78531"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#aa553aa23f8de9bd901aa5d831ce78531">AsmInvept</a> (unsigned long Type, void *Descriptors)</td></tr>
+<tr class="memdesc:aa553aa23f8de9bd901aa5d831ce78531"><td class="mdescLeft">&#160;</td><td class="mdescRight">INVEPT wrapper.  <a href="_inline_asm_8h.html#aa553aa23f8de9bd901aa5d831ce78531">More...</a><br /></td></tr>
 <tr class="separator:aa553aa23f8de9bd901aa5d831ce78531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3de57bb4cbb2ce591f7817248e64bfe"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#af3de57bb4cbb2ce591f7817248e64bfe">AsmInvvpid</a> (unsigned long Type, void *Descriptors)</td></tr>
+<tr class="memdesc:af3de57bb4cbb2ce591f7817248e64bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">INVVPID wrapper.  <a href="_inline_asm_8h.html#af3de57bb4cbb2ce591f7817248e64bfe">More...</a><br /></td></tr>
 <tr class="separator:af3de57bb4cbb2ce591f7817248e64bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75e25107aec121e0874c846b0d8d67cb"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a75e25107aec121e0874c846b0d8d67cb">AsmGetCs</a> ()</td></tr>
+<tr class="memdesc:a75e25107aec121e0874c846b0d8d67cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get CS Register.  <a href="_inline_asm_8h.html#a75e25107aec121e0874c846b0d8d67cb">More...</a><br /></td></tr>
 <tr class="separator:a75e25107aec121e0874c846b0d8d67cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17937fce94794fd648657badd1af77d1"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a17937fce94794fd648657badd1af77d1">AsmGetDs</a> ()</td></tr>
+<tr class="memdesc:a17937fce94794fd648657badd1af77d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get DS Register.  <a href="_inline_asm_8h.html#a17937fce94794fd648657badd1af77d1">More...</a><br /></td></tr>
 <tr class="separator:a17937fce94794fd648657badd1af77d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a898dd1b2dbb7da3619247ff5bccccf5d"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a898dd1b2dbb7da3619247ff5bccccf5d">AsmGetEs</a> ()</td></tr>
+<tr class="memdesc:a898dd1b2dbb7da3619247ff5bccccf5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get ES Register.  <a href="_inline_asm_8h.html#a898dd1b2dbb7da3619247ff5bccccf5d">More...</a><br /></td></tr>
 <tr class="separator:a898dd1b2dbb7da3619247ff5bccccf5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a276dd927a653efc4e5cb44e25a333390"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a276dd927a653efc4e5cb44e25a333390">AsmGetSs</a> ()</td></tr>
+<tr class="memdesc:a276dd927a653efc4e5cb44e25a333390"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get SS Register.  <a href="_inline_asm_8h.html#a276dd927a653efc4e5cb44e25a333390">More...</a><br /></td></tr>
 <tr class="separator:a276dd927a653efc4e5cb44e25a333390"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b5a370d8ac34b34780b4f4cc9c34c47"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a7b5a370d8ac34b34780b4f4cc9c34c47">AsmGetFs</a> ()</td></tr>
+<tr class="memdesc:a7b5a370d8ac34b34780b4f4cc9c34c47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get FS Register.  <a href="_inline_asm_8h.html#a7b5a370d8ac34b34780b4f4cc9c34c47">More...</a><br /></td></tr>
 <tr class="separator:a7b5a370d8ac34b34780b4f4cc9c34c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12b7927eac69cc5789b749beda7cecce"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a12b7927eac69cc5789b749beda7cecce">AsmGetGs</a> ()</td></tr>
+<tr class="memdesc:a12b7927eac69cc5789b749beda7cecce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get GS Register.  <a href="_inline_asm_8h.html#a12b7927eac69cc5789b749beda7cecce">More...</a><br /></td></tr>
 <tr class="separator:a12b7927eac69cc5789b749beda7cecce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41891ef7fab70f71723f388f0f3752fa"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a41891ef7fab70f71723f388f0f3752fa">AsmGetLdtr</a> ()</td></tr>
+<tr class="memdesc:a41891ef7fab70f71723f388f0f3752fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get LDTR Register.  <a href="_inline_asm_8h.html#a41891ef7fab70f71723f388f0f3752fa">More...</a><br /></td></tr>
 <tr class="separator:a41891ef7fab70f71723f388f0f3752fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14941c0b49cf64161c8e1d6d98c4e472"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a14941c0b49cf64161c8e1d6d98c4e472">AsmGetTr</a> ()</td></tr>
+<tr class="memdesc:a14941c0b49cf64161c8e1d6d98c4e472"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get TR Register.  <a href="_inline_asm_8h.html#a14941c0b49cf64161c8e1d6d98c4e472">More...</a><br /></td></tr>
 <tr class="separator:a14941c0b49cf64161c8e1d6d98c4e472"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96667e63238aa74a0a2bbc63d6e02ca3"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a96667e63238aa74a0a2bbc63d6e02ca3">AsmGetGdtBase</a> ()</td></tr>
+<tr class="memdesc:a96667e63238aa74a0a2bbc63d6e02ca3"><td class="mdescLeft">&#160;</td><td class="mdescRight">get GDT base  <a href="_inline_asm_8h.html#a96667e63238aa74a0a2bbc63d6e02ca3">More...</a><br /></td></tr>
 <tr class="separator:a96667e63238aa74a0a2bbc63d6e02ca3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3205fb84e901444e860d9b8140c81c86"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a3205fb84e901444e860d9b8140c81c86">AsmGetGdtLimit</a> ()</td></tr>
+<tr class="memdesc:a3205fb84e901444e860d9b8140c81c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get GDT Limit.  <a href="_inline_asm_8h.html#a3205fb84e901444e860d9b8140c81c86">More...</a><br /></td></tr>
 <tr class="separator:a3205fb84e901444e860d9b8140c81c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a8c367f15eb70f1869f5677dd120d5a"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a3a8c367f15eb70f1869f5677dd120d5a">AsmGetIdtBase</a> ()</td></tr>
+<tr class="memdesc:a3a8c367f15eb70f1869f5677dd120d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get IDT base.  <a href="_inline_asm_8h.html#a3a8c367f15eb70f1869f5677dd120d5a">More...</a><br /></td></tr>
 <tr class="separator:a3a8c367f15eb70f1869f5677dd120d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6e476bf54448b171c301ddf98fb9323"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#ae6e476bf54448b171c301ddf98fb9323">AsmGetIdtLimit</a> ()</td></tr>
+<tr class="memdesc:ae6e476bf54448b171c301ddf98fb9323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get IDT limit.  <a href="_inline_asm_8h.html#ae6e476bf54448b171c301ddf98fb9323">More...</a><br /></td></tr>
 <tr class="separator:ae6e476bf54448b171c301ddf98fb9323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97ea04558b1e32ed2204ac428efaa7dc"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a97ea04558b1e32ed2204ac428efaa7dc">AsmGetRflags</a> ()</td></tr>
+<tr class="memdesc:a97ea04558b1e32ed2204ac428efaa7dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get R/EFLAGS.  <a href="_inline_asm_8h.html#a97ea04558b1e32ed2204ac428efaa7dc">More...</a><br /></td></tr>
 <tr class="separator:a97ea04558b1e32ed2204ac428efaa7dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afffea89ac106d72611f3c7675bad04c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#afffea89ac106d72611f3c7675bad04c1">AsmCliInstruction</a> ()</td></tr>
+<tr class="memdesc:afffea89ac106d72611f3c7675bad04c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run CLI Instruction.  <a href="_inline_asm_8h.html#afffea89ac106d72611f3c7675bad04c1">More...</a><br /></td></tr>
 <tr class="separator:afffea89ac106d72611f3c7675bad04c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a0c6617dd44b5372e8b5d1c1b91732e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a7a0c6617dd44b5372e8b5d1c1b91732e">AsmStiInstruction</a> ()</td></tr>
+<tr class="memdesc:a7a0c6617dd44b5372e8b5d1c1b91732e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run STI Instruction.  <a href="_inline_asm_8h.html#a7a0c6617dd44b5372e8b5d1c1b91732e">More...</a><br /></td></tr>
 <tr class="separator:a7a0c6617dd44b5372e8b5d1c1b91732e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace9f194d7b9f227bf86406452701f0ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#ace9f194d7b9f227bf86406452701f0ae">AsmReloadGdtr</a> (void *GdtBase, unsigned long GdtLimit)</td></tr>
+<tr class="memdesc:ace9f194d7b9f227bf86406452701f0ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload new GDTR.  <a href="_inline_asm_8h.html#ace9f194d7b9f227bf86406452701f0ae">More...</a><br /></td></tr>
 <tr class="separator:ace9f194d7b9f227bf86406452701f0ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a028a83454f610785aa8e64d6d6d9e659"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a028a83454f610785aa8e64d6d6d9e659">AsmReloadIdtr</a> (void *GdtBase, unsigned long GdtLimit)</td></tr>
+<tr class="memdesc:a028a83454f610785aa8e64d6d6d9e659"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reload new IDTR.  <a href="_inline_asm_8h.html#a028a83454f610785aa8e64d6d6d9e659">More...</a><br /></td></tr>
 <tr class="separator:a028a83454f610785aa8e64d6d6d9e659"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a119c789794680db52a415b9516662879"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a119c789794680db52a415b9516662879">AsmGeneralDetourHook</a> ()</td></tr>
+<tr class="memdesc:a119c789794680db52a415b9516662879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detour hook handler.  <a href="_inline_asm_8h.html#a119c789794680db52a415b9516662879">More...</a><br /></td></tr>
 <tr class="separator:a119c789794680db52a415b9516662879"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7fef2199a8afee9737f8bf98cc607f5"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#aa7fef2199a8afee9737f8bf98cc607f5">AsmDebuggerCustomCodeHandler</a> (unsigned long long Param1, unsigned long long Param2, unsigned long long Param3, unsigned long long Param4)</td></tr>
+<tr class="memdesc:aa7fef2199a8afee9737f8bf98cc607f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">default custom code handler for debugger  <a href="_inline_asm_8h.html#aa7fef2199a8afee9737f8bf98cc607f5">More...</a><br /></td></tr>
+<tr class="separator:aa7fef2199a8afee9737f8bf98cc607f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0652f5e08f2e423045dd14d6bc753cfe"><td class="memItemLeft" align="right" valign="top">unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_inline_asm_8h.html#a0652f5e08f2e423045dd14d6bc753cfe">AsmDebuggerConditionCodeHandler</a> (unsigned long long Param1, unsigned long long Param2, unsigned long long Param3)</td></tr>
+<tr class="memdesc:a0652f5e08f2e423045dd14d6bc753cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">default condition code handler  <a href="_inline_asm_8h.html#a0652f5e08f2e423045dd14d6bc753cfe">More...</a><br /></td></tr>
+<tr class="separator:a0652f5e08f2e423045dd14d6bc753cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The definition of functions written in Assembly. </p>
@@ -166,6 +216,105 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Run CLI Instruction. </p>
+
+</div>
+</div>
+<a id="a0652f5e08f2e423045dd14d6bc753cfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0652f5e08f2e423045dd14d6bc753cfe">&#9670;&nbsp;</a></span>AsmDebuggerConditionCodeHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long long AsmDebuggerConditionCodeHandler </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long long&#160;</td>
+          <td class="paramname"><em>Param1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long long&#160;</td>
+          <td class="paramname"><em>Param2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long long&#160;</td>
+          <td class="paramname"><em>Param3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>default condition code handler </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Param1</td><td></td></tr>
+    <tr><td class="paramname">Param2</td><td></td></tr>
+    <tr><td class="paramname">Param3</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>unsigned long long </dd></dl>
+
+</div>
+</div>
+<a id="aa7fef2199a8afee9737f8bf98cc607f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7fef2199a8afee9737f8bf98cc607f5">&#9670;&nbsp;</a></span>AsmDebuggerCustomCodeHandler()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned long long AsmDebuggerCustomCodeHandler </td>
+          <td>(</td>
+          <td class="paramtype">unsigned long long&#160;</td>
+          <td class="paramname"><em>Param1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long long&#160;</td>
+          <td class="paramname"><em>Param2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long long&#160;</td>
+          <td class="paramname"><em>Param3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long long&#160;</td>
+          <td class="paramname"><em>Param4</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>default custom code handler for debugger </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Param1</td><td></td></tr>
+    <tr><td class="paramname">Param2</td><td></td></tr>
+    <tr><td class="paramname">Param3</td><td></td></tr>
+    <tr><td class="paramname">Param4</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>unsigned long long </dd></dl>
+
 </div>
 </div>
 <a id="a141567e2e7a4abc1106cccca5d365af3"></a>
@@ -191,6 +340,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Enable VMX Operation. </p>
+
 </div>
 </div>
 <a id="a119c789794680db52a415b9516662879"></a>
@@ -207,6 +358,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Detour hook handler. </p>
 
 </div>
 </div>
@@ -225,6 +378,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get CS Register. </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned short </dd></dl>
+
 </div>
 </div>
 <a id="a17937fce94794fd648657badd1af77d1"></a>
@@ -241,6 +397,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get DS Register. </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned short </dd></dl>
 
 </div>
 </div>
@@ -259,6 +418,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get ES Register. </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned short </dd></dl>
+
 </div>
 </div>
 <a id="a7b5a370d8ac34b34780b4f4cc9c34c47"></a>
@@ -275,6 +437,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get FS Register. </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned short </dd></dl>
 
 </div>
 </div>
@@ -301,6 +466,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>get GDT base </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned long long </dd></dl>
+
 </div>
 </div>
 <a id="a3205fb84e901444e860d9b8140c81c86"></a>
@@ -318,6 +486,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get GDT Limit. </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned short </dd></dl>
+
 </div>
 </div>
 <a id="a12b7927eac69cc5789b749beda7cecce"></a>
@@ -334,6 +505,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get GS Register. </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned short </dd></dl>
 
 </div>
 </div>
@@ -360,6 +534,9 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get IDT base. </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned long long </dd></dl>
+
 </div>
 </div>
 <a id="ae6e476bf54448b171c301ddf98fb9323"></a>
@@ -376,6 +553,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get IDT limit. </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned short </dd></dl>
 
 </div>
 </div>
@@ -394,6 +574,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get LDTR Register. </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned short </dd></dl>
+
 </div>
 </div>
 <a id="a97ea04558b1e32ed2204ac428efaa7dc"></a>
@@ -410,6 +593,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get R/EFLAGS. </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned short </dd></dl>
 
 </div>
 </div>
@@ -428,6 +614,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get SS Register. </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned short </dd></dl>
+
 </div>
 </div>
 <a id="a14941c0b49cf64161c8e1d6d98c4e472"></a>
@@ -444,6 +633,9 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get TR Register. </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned short </dd></dl>
 
 </div>
 </div>
@@ -493,6 +685,18 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Hyper-v vmcall handler. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">HypercallInputValue</td><td></td></tr>
+    <tr><td class="paramname">InputParamGPA</td><td></td></tr>
+    <tr><td class="paramname">OutputParamGPA</td><td></td></tr>
+    <tr><td class="paramname">Optional4</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>UINT64 </dd></dl>
+
 </div>
 </div>
 <a id="aa553aa23f8de9bd901aa5d831ce78531"></a>
@@ -528,6 +732,16 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>INVEPT wrapper. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Type</td><td></td></tr>
+    <tr><td class="paramname">Descriptors</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>unsigned char </dd></dl>
 
 </div>
 </div>
@@ -565,6 +779,16 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>INVVPID wrapper. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Type</td><td></td></tr>
+    <tr><td class="paramname">Descriptors</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>unsigned char </dd></dl>
+
 </div>
 </div>
 <a id="ace9f194d7b9f227bf86406452701f0ae"></a>
@@ -592,6 +816,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Reload new GDTR. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">GdtBase</td><td></td></tr>
+    <tr><td class="paramname">GdtLimit</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -621,6 +854,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Reload new IDTR. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">GdtBase</td><td></td></tr>
+    <tr><td class="paramname">GdtLimit</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a8b1f38e7fd8cc7264458e6eee83c0b75"></a>
@@ -645,6 +887,8 @@ Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Restore in vmxoff state. </p>
 
 </div>
 </div>
@@ -671,6 +915,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Save vmxoff state. </p>
+
 </div>
 </div>
 <a id="a7a0c6617dd44b5372e8b5d1c1b91732e"></a>
@@ -696,6 +942,8 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Run STI Instruction. </p>
+
 </div>
 </div>
 <a id="a13081cdd78e83db6cd8e1d2f3b501379"></a>
@@ -712,6 +960,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Vm-exit handler. </p>
 
 </div>
 </div>
@@ -730,6 +980,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Restore state on vmx. </p>
+
 </div>
 </div>
 <a id="a2aaa8ea80b125a1df12754b26b9b3ba0"></a>
@@ -746,6 +998,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Save state on vmx. </p>
 
 </div>
 </div>
@@ -795,14 +1049,30 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Request Vmcall. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">VmcallNumber</td><td></td></tr>
+    <tr><td class="paramname">OptionalParam1</td><td></td></tr>
+    <tr><td class="paramname">OptionalParam2</td><td></td></tr>
+    <tr><td class="paramname">OptionalParam3</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>NTSTATUS </dd></dl>
+
 </div>
 </div>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_19054a674c4bd5cb8fceb6542228579c.html">hprdbghv</a></li><li class="navelem"><a class="el" href="_inline_asm_8h.html">InlineAsm.h</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

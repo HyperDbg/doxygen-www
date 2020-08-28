@@ -1,12 +1,22 @@
 var searchData=
 [
-  ['base_2100',['BASE',['../struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#ac5e3b9f0ef0d3ace0cc3a7828d330599',1,'_SEGMENT_SELECTOR']]],
-  ['base0_2101',['BASE0',['../struct___s_e_g_m_e_n_t___d_e_s_c_r_i_p_t_o_r.html#abdf9246bb711cdd0ea05da4d5c9760b9',1,'_SEGMENT_DESCRIPTOR']]],
-  ['base1_2102',['BASE1',['../struct___s_e_g_m_e_n_t___d_e_s_c_r_i_p_t_o_r.html#a6a6bc47084f6dc71a58831f15d60b5c5',1,'_SEGMENT_DESCRIPTOR']]],
-  ['base2_2103',['BASE2',['../struct___s_e_g_m_e_n_t___d_e_s_c_r_i_p_t_o_r.html#a4a2fd3ebcdead2578c65ae2739611ed3',1,'_SEGMENT_DESCRIPTOR']]],
-  ['bitmap_2104',['Bitmap',['../union___h_y_p_e_r_c_a_l_l___i_n_p_u_t___v_a_l_u_e.html#ad9b93c9accdbb73c61dfcd9ef3ecb8fa',1,'_HYPERCALL_INPUT_VALUE']]],
-  ['bufferendaddress_2105',['BufferEndAddress',['../struct___l_o_g___b_u_f_f_e_r___i_n_f_o_r_m_a_t_i_o_n.html#ac175d3ebd05e65d8e5f153586b006d3b',1,'_LOG_BUFFER_INFORMATION']]],
-  ['bufferformultiplenonimmediatemessage_2106',['BufferForMultipleNonImmediateMessage',['../struct___l_o_g___b_u_f_f_e_r___i_n_f_o_r_m_a_t_i_o_n.html#afc9b240acfbc4c9cfa50aa3dfec37304',1,'_LOG_BUFFER_INFORMATION']]],
-  ['bufferlength_2107',['BufferLength',['../struct___b_u_f_f_e_r___h_e_a_d_e_r.html#a4fb2ba43e52e08fcda587dd704beb7de',1,'_BUFFER_HEADER']]],
-  ['bufferstartaddress_2108',['BufferStartAddress',['../struct___l_o_g___b_u_f_f_e_r___i_n_f_o_r_m_a_t_i_o_n.html#a8c5568a07b57edba808449a9d14d494c',1,'_LOG_BUFFER_INFORMATION']]]
+  ['base_3054',['BASE',['../struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#ac5e3b9f0ef0d3ace0cc3a7828d330599',1,'_SEGMENT_SELECTOR']]],
+  ['base0_3055',['BASE0',['../struct___s_e_g_m_e_n_t___d_e_s_c_r_i_p_t_o_r.html#abdf9246bb711cdd0ea05da4d5c9760b9',1,'_SEGMENT_DESCRIPTOR']]],
+  ['base1_3056',['BASE1',['../struct___s_e_g_m_e_n_t___d_e_s_c_r_i_p_t_o_r.html#a6a6bc47084f6dc71a58831f15d60b5c5',1,'_SEGMENT_DESCRIPTOR']]],
+  ['base2_3057',['BASE2',['../struct___s_e_g_m_e_n_t___d_e_s_c_r_i_p_t_o_r.html#a4a2fd3ebcdead2578c65ae2739611ed3',1,'_SEGMENT_DESCRIPTOR']]],
+  ['baseaddress_3058',['BaseAddress',['../struct___m_e_m_o_r_y___b_a_s_i_c___i_n_f_o_r_m_a_t_i_o_n.html#ac220cffe1f2b29a36927c2b4f0ab2966',1,'_MEMORY_BASIC_INFORMATION::BaseAddress()'],['../_ntifs2_8h.html#a1b76fb9a5566053fa6334ecc220de6c6',1,'BaseAddress():&#160;Ntifs2.h']]],
+  ['bitmap_3059',['Bitmap',['../union___h_y_p_e_r_c_a_l_l___i_n_p_u_t___v_a_l_u_e.html#a569264924091183157a9f60de82d19bf',1,'_HYPERCALL_INPUT_VALUE']]],
+  ['blockingbymovss_3060',['BlockingByMovSs',['../struct___i_n_t_e_r_r_u_p_t_i_b_i_l_i_t_y___s_t_a_t_e.html#a3151611ed8ad1ab2ef9f2e653fd332c7',1,'_INTERRUPTIBILITY_STATE']]],
+  ['blockingbynmi_3061',['BlockingByNmi',['../struct___i_n_t_e_r_r_u_p_t_i_b_i_l_i_t_y___s_t_a_t_e.html#af3b8f22845fdfeb925db3a396d9120d8',1,'_INTERRUPTIBILITY_STATE']]],
+  ['blockingbysmi_3062',['BlockingBySmi',['../struct___i_n_t_e_r_r_u_p_t_i_b_i_l_i_t_y___s_t_a_t_e.html#a722aac1f7589ed63f4536e4e3141d36b',1,'_INTERRUPTIBILITY_STATE']]],
+  ['blockingbysti_3063',['BlockingBySti',['../struct___i_n_t_e_r_r_u_p_t_i_b_i_l_i_t_y___s_t_a_t_e.html#a30b04f742de88425ea3e38039d3b40fc',1,'_INTERRUPTIBILITY_STATE']]],
+  ['breakpointaddresses_3064',['BreakpointAddresses',['../struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#aaaf2650f56c9581f4724da1e833257ef',1,'_EPT_HOOKED_PAGE_DETAIL']]],
+  ['breakpointcondition_3065',['BreakpointCondition',['../union_d_e_b_u_g___r_e_g_i_s_t_e_r__6.html#a0a79fc12e3bbcde6151ba98ba18c1242',1,'DEBUG_REGISTER_6']]],
+  ['bufferaddress_3066',['BufferAddress',['../struct___t_r_a_n_s_p_a_r_e_n_c_y___p_r_o_c_e_s_s.html#a100783c63e3bbbd22496f210143a88f2',1,'_TRANSPARENCY_PROCESS']]],
+  ['bufferendaddress_3067',['BufferEndAddress',['../struct___l_o_g___b_u_f_f_e_r___i_n_f_o_r_m_a_t_i_o_n.html#ac175d3ebd05e65d8e5f153586b006d3b',1,'_LOG_BUFFER_INFORMATION']]],
+  ['bufferformultiplenonimmediatemessage_3068',['BufferForMultipleNonImmediateMessage',['../struct___l_o_g___b_u_f_f_e_r___i_n_f_o_r_m_a_t_i_o_n.html#afc9b240acfbc4c9cfa50aa3dfec37304',1,'_LOG_BUFFER_INFORMATION']]],
+  ['bufferlength_3069',['BufferLength',['../struct___b_u_f_f_e_r___h_e_a_d_e_r.html#a4fb2ba43e52e08fcda587dd704beb7de',1,'_BUFFER_HEADER']]],
+  ['bufferlock_3070',['BufferLock',['../struct___l_o_g___b_u_f_f_e_r___i_n_f_o_r_m_a_t_i_o_n.html#aff60034c120c6fc8e30ae62215de5f9d',1,'_LOG_BUFFER_INFORMATION']]],
+  ['bufferlockfornonimmmessage_3071',['BufferLockForNonImmMessage',['../struct___l_o_g___b_u_f_f_e_r___i_n_f_o_r_m_a_t_i_o_n.html#a28bef5999e933f48ff188b83cc98f3f0',1,'_LOG_BUFFER_INFORMATION']]],
+  ['bufferstartaddress_3072',['BufferStartAddress',['../struct___l_o_g___b_u_f_f_e_r___i_n_f_o_r_m_a_t_i_o_n.html#a8c5568a07b57edba808449a9d14d494c',1,'_LOG_BUFFER_INFORMATION']]]
 ];

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('globals_g.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,28 +87,95 @@ $(function() {
 <li>g_AllowIOCTLFromUsermode
 : <a class="el" href="_global_variables_8h.html#a54d40f18e629195bd47bbc4a797ad8e7">GlobalVariables.h</a>
 </li>
+<li>g_AutoFlush
+: <a class="el" href="events_8cpp.html#a8ab73534dd83590f995a876ec49a0d37">events.cpp</a>
+, <a class="el" href="settings_8cpp.html#a8ab73534dd83590f995a876ec49a0d37">settings.cpp</a>
+, <a class="el" href="globals_8h.html#a8ab73534dd83590f995a876ec49a0d37">globals.h</a>
+</li>
+<li>g_AutoUnpause
+: <a class="el" href="settings_8cpp.html#acddcab437bcf2fea6b831dbc473addb6">settings.cpp</a>
+, <a class="el" href="breakcontrol_8cpp.html#acddcab437bcf2fea6b831dbc473addb6">breakcontrol.cpp</a>
+, <a class="el" href="debugger_8cpp.html#acddcab437bcf2fea6b831dbc473addb6">debugger.cpp</a>
+, <a class="el" href="globals_8h.html#acddcab437bcf2fea6b831dbc473addb6">globals.h</a>
+</li>
+<li>g_BreakPrintingOutput
+: <a class="el" href="remoteconnection_8cpp.html#ac4758ea6e4b2b001288af3b22ff11795">remoteconnection.cpp</a>
+, <a class="el" href="breakcontrol_8cpp.html#ac4758ea6e4b2b001288af3b22ff11795">breakcontrol.cpp</a>
+, <a class="el" href="debugger_8cpp.html#ac4758ea6e4b2b001288af3b22ff11795">debugger.cpp</a>
+, <a class="el" href="events_8cpp.html#ac4758ea6e4b2b001288af3b22ff11795">events.cpp</a>
+, <a class="el" href="g_8cpp.html#ac4758ea6e4b2b001288af3b22ff11795">g.cpp</a>
+, <a class="el" href="globals_8h.html#ac4758ea6e4b2b001288af3b22ff11795">globals.h</a>
+, <a class="el" href="hprdbgctrl_8cpp.html#ac4758ea6e4b2b001288af3b22ff11795">hprdbgctrl.cpp</a>
+, <a class="el" href="pause_8cpp.html#ac4758ea6e4b2b001288af3b22ff11795">pause.cpp</a>
+</li>
+<li>g_ClientConnectSocket
+: <a class="el" href="globals_8h.html#adea6f319558326cc21fa8c88f859f7a1">globals.h</a>
+, <a class="el" href="remoteconnection_8cpp.html#adea6f319558326cc21fa8c88f859f7a1">remoteconnection.cpp</a>
+</li>
+<li>g_CpuidAverage
+: <a class="el" href="globals_8h.html#afb6283d738f52b2533be4cfa30f28b18">globals.h</a>
+, <a class="el" href="hide_8cpp.html#afb6283d738f52b2533be4cfa30f28b18">hide.cpp</a>
+, <a class="el" href="measure_8cpp.html#afb6283d738f52b2533be4cfa30f28b18">measure.cpp</a>
+</li>
+<li>g_CpuidMedian
+: <a class="el" href="globals_8h.html#adb632429dd6e8f744eab0b0a8dbf1b07">globals.h</a>
+, <a class="el" href="hide_8cpp.html#adb632429dd6e8f744eab0b0a8dbf1b07">hide.cpp</a>
+, <a class="el" href="measure_8cpp.html#adb632429dd6e8f744eab0b0a8dbf1b07">measure.cpp</a>
+</li>
+<li>g_CpuidStandardDeviation
+: <a class="el" href="globals_8h.html#a70f591d341a81a9e3e7cb914c084d95a">globals.h</a>
+, <a class="el" href="hide_8cpp.html#a70f591d341a81a9e3e7cb914c084d95a">hide.cpp</a>
+, <a class="el" href="measure_8cpp.html#a70f591d341a81a9e3e7cb914c084d95a">measure.cpp</a>
+</li>
+<li>g_DeviceHandle
+: <a class="el" href="_commands_8h.html#a04aaf680ede15f5e7ba51ab9f157bfff">Commands.h</a>
+, <a class="el" href="globals_8h.html#a04aaf680ede15f5e7ba51ab9f157bfff">globals.h</a>
+, <a class="el" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">hprdbgctrl.cpp</a>
+</li>
+<li>g_DisassemblerSyntax
+: <a class="el" href="globals_8h.html#afdcfcfa1508e9df27e0b8fe2eb68d5ad">globals.h</a>
+, <a class="el" href="settings_8cpp.html#afdcfcfa1508e9df27e0b8fe2eb68d5ad">settings.cpp</a>
+, <a class="el" href="disassembler_8cpp.html#afdcfcfa1508e9df27e0b8fe2eb68d5ad">disassembler.cpp</a>
+</li>
+<li>g_DriverLocation
+: <a class="el" href="globals_8h.html#a510d8eeb6d2c6c99faa91682232ec257">globals.h</a>
+, <a class="el" href="hprdbgctrl_8cpp.html#a510d8eeb6d2c6c99faa91682232ec257">hprdbgctrl.cpp</a>
+</li>
 <li>g_EnableDebuggerEvents
 : <a class="el" href="_global_variables_8h.html#af9bef4d8da3b6e1b87fa959513fe131e">GlobalVariables.h</a>
+</li>
+<li>g_EptHook2sDetourListHead
+: <a class="el" href="_global_variables_8h.html#a90f5a18f43567010690d8d7927619fa0">GlobalVariables.h</a>
 </li>
 <li>g_EptState
 : <a class="el" href="_global_variables_8h.html#a302f00c62e7ad092a9f44a3aa7452d99">GlobalVariables.h</a>
 </li>
 <li>g_Events
-: <a class="el" href="_global_variables_8h.html#ae09bc22ca19a66c479bb55fc5abed79b">GlobalVariables.h</a>
+: <a class="el" href="_global_variables_8h.html#a2d2638d7b52281063d7e08a62cdfda12">GlobalVariables.h</a>
 </li>
 <li>g_EventTag
-: <a class="el" href="interpreter_8cpp.html#a3ab44d0ff3a92308a0565f79e5ae98c4">interpreter.cpp</a>
+: <a class="el" href="debugger_8cpp.html#a3ab44d0ff3a92308a0565f79e5ae98c4">debugger.cpp</a>
+, <a class="el" href="globals_8h.html#a3ab44d0ff3a92308a0565f79e5ae98c4">globals.h</a>
 </li>
 <li>g_EventTrace
-: <a class="el" href="hprdbgctrl_8cpp.html#a5295702ad37c6640bf9d2df3091f9417">hprdbgctrl.cpp</a>
-, <a class="el" href="interpreter_8cpp.html#a5295702ad37c6640bf9d2df3091f9417">interpreter.cpp</a>
+: <a class="el" href="debugger_8cpp.html#a5295702ad37c6640bf9d2df3091f9417">debugger.cpp</a>
+, <a class="el" href="events_8cpp.html#a5295702ad37c6640bf9d2df3091f9417">events.cpp</a>
+, <a class="el" href="globals_8h.html#a5295702ad37c6640bf9d2df3091f9417">globals.h</a>
+, <a class="el" href="hprdbgctrl_8cpp.html#a5295702ad37c6640bf9d2df3091f9417">hprdbgctrl.cpp</a>
 </li>
 <li>g_EventTraceInitialized
-: <a class="el" href="hprdbgctrl_8cpp.html#a5fad0f84fdbb1e60a0a21b87db671879">hprdbgctrl.cpp</a>
-, <a class="el" href="interpreter_8cpp.html#a5fad0f84fdbb1e60a0a21b87db671879">interpreter.cpp</a>
+: <a class="el" href="debugger_8cpp.html#a5fad0f84fdbb1e60a0a21b87db671879">debugger.cpp</a>
+, <a class="el" href="events_8cpp.html#a5fad0f84fdbb1e60a0a21b87db671879">events.cpp</a>
+, <a class="el" href="globals_8h.html#a5fad0f84fdbb1e60a0a21b87db671879">globals.h</a>
+, <a class="el" href="hprdbgctrl_8cpp.html#a5fad0f84fdbb1e60a0a21b87db671879">hprdbgctrl.cpp</a>
 </li>
 <li>g_ExecuteOnlySupport
 : <a class="el" href="_global_variables_8h.html#a736e99274485393b1d06f84a6ee4c03b">GlobalVariables.h</a>
+</li>
+<li>g_ExecutingScript
+: <a class="el" href="globals_8h.html#aee56860456b4c0186ebaf522f119f2a2">globals.h</a>
+, <a class="el" href="interpreter_8cpp.html#aee56860456b4c0186ebaf522f119f2a2">interpreter.cpp</a>
+, <a class="el" href="script_8cpp.html#aee56860456b4c0186ebaf522f119f2a2">script.cpp</a>
 </li>
 <li>g_GlobalNotifyRecord
 : <a class="el" href="_global_variables_8h.html#ac6bb7efa110feb40ba04985a35783931">GlobalVariables.h</a>
@@ -99,24 +186,171 @@ $(function() {
 <li>g_HandleInUse
 : <a class="el" href="_global_variables_8h.html#a5a292129d8aa76062c219b83e938d574">GlobalVariables.h</a>
 </li>
-<li>g_HiddenHooksDetourListHead
-: <a class="el" href="_global_variables_8h.html#ac40a0a766466fd757dc51585375931f9">GlobalVariables.h</a>
+<li>g_IsAttachedToUsermodeProcess
+: <a class="el" href="attach_8cpp.html#a53b3e66de9b9ebdf8408e7e08da8ec24">attach.cpp</a>
+, <a class="el" href="detach_8cpp.html#a53b3e66de9b9ebdf8408e7e08da8ec24">detach.cpp</a>
+, <a class="el" href="globals_8h.html#a53b3e66de9b9ebdf8408e7e08da8ec24">globals.h</a>
 </li>
-<li>g_IsConnectedToDebugger
-: <a class="el" href="interpreter_8cpp.html#a3a682ea160798281371ef86efc700283">interpreter.cpp</a>
+<li>g_IsConnectedToHyperDbgLocally
+: <a class="el" href="interpreter_8cpp.html#accb0c27ac4bea6a87984fb828d896748">interpreter.cpp</a>
+, <a class="el" href="listen_8cpp.html#accb0c27ac4bea6a87984fb828d896748">listen.cpp</a>
+, <a class="el" href="load_8cpp.html#accb0c27ac4bea6a87984fb828d896748">load.cpp</a>
+, <a class="el" href="remoteconnection_8cpp.html#accb0c27ac4bea6a87984fb828d896748">remoteconnection.cpp</a>
+, <a class="el" href="status_8cpp.html#accb0c27ac4bea6a87984fb828d896748">status.cpp</a>
+, <a class="el" href="unload_8cpp.html#accb0c27ac4bea6a87984fb828d896748">unload.cpp</a>
+, <a class="el" href="connect_8cpp.html#accb0c27ac4bea6a87984fb828d896748">connect.cpp</a>
+, <a class="el" href="disconnect_8cpp.html#accb0c27ac4bea6a87984fb828d896748">disconnect.cpp</a>
+, <a class="el" href="exit_8cpp.html#accb0c27ac4bea6a87984fb828d896748">exit.cpp</a>
+, <a class="el" href="globals_8h.html#accb0c27ac4bea6a87984fb828d896748">globals.h</a>
+</li>
+<li>g_IsConnectedToRemoteDebuggee
+: <a class="el" href="breakcontrol_8cpp.html#a08efbe1abcb717379a8ec5139e187983">breakcontrol.cpp</a>
+, <a class="el" href="connect_8cpp.html#a08efbe1abcb717379a8ec5139e187983">connect.cpp</a>
+, <a class="el" href="disconnect_8cpp.html#a08efbe1abcb717379a8ec5139e187983">disconnect.cpp</a>
+, <a class="el" href="events_8cpp.html#a08efbe1abcb717379a8ec5139e187983">events.cpp</a>
+, <a class="el" href="g_8cpp.html#a08efbe1abcb717379a8ec5139e187983">g.cpp</a>
+, <a class="el" href="globals_8h.html#a08efbe1abcb717379a8ec5139e187983">globals.h</a>
+, <a class="el" href="interpreter_8cpp.html#a08efbe1abcb717379a8ec5139e187983">interpreter.cpp</a>
+, <a class="el" href="listen_8cpp.html#a08efbe1abcb717379a8ec5139e187983">listen.cpp</a>
+, <a class="el" href="remoteconnection_8cpp.html#a08efbe1abcb717379a8ec5139e187983">remoteconnection.cpp</a>
+, <a class="el" href="status_8cpp.html#a08efbe1abcb717379a8ec5139e187983">status.cpp</a>
+</li>
+<li>g_IsConnectedToRemoteDebugger
+: <a class="el" href="connect_8cpp.html#aa6712815a46bbfaf04ac69c5f336d371">connect.cpp</a>
+, <a class="el" href="globals_8h.html#aa6712815a46bbfaf04ac69c5f336d371">globals.h</a>
+, <a class="el" href="hprdbgctrl_8cpp.html#aa6712815a46bbfaf04ac69c5f336d371">hprdbgctrl.cpp</a>
+, <a class="el" href="listen_8cpp.html#aa6712815a46bbfaf04ac69c5f336d371">listen.cpp</a>
+, <a class="el" href="remoteconnection_8cpp.html#aa6712815a46bbfaf04ac69c5f336d371">remoteconnection.cpp</a>
+, <a class="el" href="status_8cpp.html#aa6712815a46bbfaf04ac69c5f336d371">status.cpp</a>
 </li>
 <li>g_IsDebuggerModulesLoaded
-: <a class="el" href="interpreter_8cpp.html#a606336f2c5492fd60b218c8376eb9d91">interpreter.cpp</a>
+: <a class="el" href="connect_8cpp.html#ad5df196001f0c415fbb0601caabc9804">connect.cpp</a>
+, <a class="el" href="exit_8cpp.html#ad5df196001f0c415fbb0601caabc9804">exit.cpp</a>
+, <a class="el" href="globals_8h.html#ad5df196001f0c415fbb0601caabc9804">globals.h</a>
+, <a class="el" href="load_8cpp.html#ad5df196001f0c415fbb0601caabc9804">load.cpp</a>
+, <a class="el" href="status_8cpp.html#ad5df196001f0c415fbb0601caabc9804">status.cpp</a>
+, <a class="el" href="unload_8cpp.html#ad5df196001f0c415fbb0601caabc9804">unload.cpp</a>
 </li>
-<li>GetBit()
-: <a class="el" href="_common_8c.html#abc8d2179d707d54866d43bdc363c2c39">Common.c</a>
-, <a class="el" href="_common_8h.html#a6b072bc3c350e387a7bf7e395e71b16f">Common.h</a>
+<li>g_IsNewRequestForAllocationRecieved
+: <a class="el" href="_pool_manager_8h.html#a2028d10f8a031dd67d7c97912bde5603">PoolManager.h</a>
+</li>
+<li>g_IsNewRequestForDeAllocation
+: <a class="el" href="_pool_manager_8h.html#a714d791c6c79641f793d5c99d9912ca9">PoolManager.h</a>
+</li>
+<li>g_IsRemoteDebuggerMessageReceived
+: <a class="el" href="globals_8h.html#ad05e1e636178c1a2212094ae3ee7f1b3">globals.h</a>
+, <a class="el" href="interpreter_8cpp.html#ad05e1e636178c1a2212094ae3ee7f1b3">interpreter.cpp</a>
+, <a class="el" href="remoteconnection_8cpp.html#ad05e1e636178c1a2212094ae3ee7f1b3">remoteconnection.cpp</a>
+</li>
+<li>g_IsVmxOffProcessStart
+: <a class="el" href="globals_8h.html#a34d91f14ab8002a6eeab08d76588ae92">globals.h</a>
+, <a class="el" href="hprdbgctrl_8cpp.html#a34d91f14ab8002a6eeab08d76588ae92">hprdbgctrl.cpp</a>
+</li>
+<li>g_ListOfAllocatedPoolsHead
+: <a class="el" href="_pool_manager_8h.html#a89d7569ed031d11a1e30e6a42d1a1377">PoolManager.h</a>
+</li>
+<li>g_LogOpened
+: <a class="el" href="globals_8h.html#a3d9102adae8f4c5bb1d077a2b72f725c">globals.h</a>
+, <a class="el" href="hprdbgctrl_8cpp.html#a3d9102adae8f4c5bb1d077a2b72f725c">hprdbgctrl.cpp</a>
+, <a class="el" href="interpreter_8cpp.html#a3d9102adae8f4c5bb1d077a2b72f725c">interpreter.cpp</a>
+, <a class="el" href="logclose_8cpp.html#a3d9102adae8f4c5bb1d077a2b72f725c">logclose.cpp</a>
+, <a class="el" href="logopen_8cpp.html#a3d9102adae8f4c5bb1d077a2b72f725c">logopen.cpp</a>
+</li>
+<li>g_LogOpenFile
+: <a class="el" href="globals_8h.html#a7eb78aceaeca25ca611783bdb0d61e09">globals.h</a>
+, <a class="el" href="logclose_8cpp.html#a7eb78aceaeca25ca611783bdb0d61e09">logclose.cpp</a>
+, <a class="el" href="logopen_8cpp.html#a7eb78aceaeca25ca611783bdb0d61e09">logopen.cpp</a>
+</li>
+<li>g_MessageHandler
+: <a class="el" href="globals_8h.html#ad12c41c73b6d11e1703491f0d59e3f73">globals.h</a>
+, <a class="el" href="hprdbgctrl_8cpp.html#ad12c41c73b6d11e1703491f0d59e3f73">hprdbgctrl.cpp</a>
+</li>
+<li>g_RdtscAverage
+: <a class="el" href="globals_8h.html#a8d4e87b8d2d53b85ee8790af20f7bed7">globals.h</a>
+, <a class="el" href="hide_8cpp.html#a8d4e87b8d2d53b85ee8790af20f7bed7">hide.cpp</a>
+, <a class="el" href="measure_8cpp.html#a8d4e87b8d2d53b85ee8790af20f7bed7">measure.cpp</a>
+</li>
+<li>g_RdtscMedian
+: <a class="el" href="globals_8h.html#ac8eabb9691c94245cd146f5139435396">globals.h</a>
+, <a class="el" href="hide_8cpp.html#ac8eabb9691c94245cd146f5139435396">hide.cpp</a>
+, <a class="el" href="measure_8cpp.html#ac8eabb9691c94245cd146f5139435396">measure.cpp</a>
+</li>
+<li>g_RdtscStandardDeviation
+: <a class="el" href="globals_8h.html#ae7628e2218b16b1316c7f9c7462f41ee">globals.h</a>
+, <a class="el" href="hide_8cpp.html#ae7628e2218b16b1316c7f9c7462f41ee">hide.cpp</a>
+, <a class="el" href="measure_8cpp.html#ae7628e2218b16b1316c7f9c7462f41ee">measure.cpp</a>
+</li>
+<li>g_RemoteDebuggeeListeningThread
+: <a class="el" href="disconnect_8cpp.html#a4db275a2aad58e37c05bebc95258a3b5">disconnect.cpp</a>
+, <a class="el" href="globals_8h.html#a4db275a2aad58e37c05bebc95258a3b5">globals.h</a>
+, <a class="el" href="remoteconnection_8cpp.html#a4db275a2aad58e37c05bebc95258a3b5">remoteconnection.cpp</a>
+</li>
+<li>g_RequestNewAllocation
+: <a class="el" href="_pool_manager_8h.html#a63c553501099207cdfd6f0e1c7bfbdc4">PoolManager.h</a>
+</li>
+<li>g_ServerIp
+: <a class="el" href="connect_8cpp.html#af7c4afa95d829b467c32eac00a2e972a">connect.cpp</a>
+, <a class="el" href="globals_8h.html#af7c4afa95d829b467c32eac00a2e972a">globals.h</a>
+, <a class="el" href="interpreter_8cpp.html#af7c4afa95d829b467c32eac00a2e972a">interpreter.cpp</a>
+, <a class="el" href="status_8cpp.html#af7c4afa95d829b467c32eac00a2e972a">status.cpp</a>
+</li>
+<li>g_ServerListenSocket
+: <a class="el" href="remoteconnection_8cpp.html#a12ac1fe3651f11e9a60ae78c6ffc61d6">remoteconnection.cpp</a>
+, <a class="el" href="globals_8h.html#a12ac1fe3651f11e9a60ae78c6ffc61d6">globals.h</a>
+</li>
+<li>g_ServerPort
+: <a class="el" href="connect_8cpp.html#a0d58a16fc0fbba84e89bc4ba1cc622dd">connect.cpp</a>
+, <a class="el" href="globals_8h.html#a0d58a16fc0fbba84e89bc4ba1cc622dd">globals.h</a>
+, <a class="el" href="interpreter_8cpp.html#a0d58a16fc0fbba84e89bc4ba1cc622dd">interpreter.cpp</a>
+, <a class="el" href="status_8cpp.html#a0d58a16fc0fbba84e89bc4ba1cc622dd">status.cpp</a>
+</li>
+<li>g_SeverSocket
+: <a class="el" href="globals_8h.html#a6243e547f6b83e5bcd854c3e89b302fc">globals.h</a>
+, <a class="el" href="remoteconnection_8cpp.html#a6243e547f6b83e5bcd854c3e89b302fc">remoteconnection.cpp</a>
+</li>
+<li>g_TransparentMode
+: <a class="el" href="_global_variables_8h.html#ac816bbc1a82e6e556bfddcb9e55d5e05">GlobalVariables.h</a>
+</li>
+<li>g_TransparentModeMeasurements
+: <a class="el" href="_global_variables_8h.html#a02989393b738d00b8f6faa176ab80a13">GlobalVariables.h</a>
+</li>
+<li>g_TransparentResultsMeasured
+: <a class="el" href="globals_8h.html#acc1a3ed8290d2e2a71f47172bb6c0c50">globals.h</a>
+, <a class="el" href="hide_8cpp.html#acc1a3ed8290d2e2a71f47172bb6c0c50">hide.cpp</a>
+, <a class="el" href="measure_8cpp.html#acc1a3ed8290d2e2a71f47172bb6c0c50">measure.cpp</a>
+</li>
+<li>g_TriggerEventForCpuids
+: <a class="el" href="hprdbghv_2_debugger_8h.html#a90a1c733b10e8c67d5386fe109c4c572">Debugger.h</a>
+</li>
+<li>g_TriggerEventForVmcalls
+: <a class="el" href="hprdbghv_2_debugger_8h.html#a551f1bc8f7fe50864796298011256cbd">Debugger.h</a>
+</li>
+<li>GetCr3FromProcessId()
+: <a class="el" href="_common_8c.html#a8380f037985bc787fd303aba07526379">Common.c</a>
+, <a class="el" href="hprdbghv_2_common_8h.html#a8380f037985bc787fd303aba07526379">Common.h</a>
+</li>
+<li>GetGuestCs()
+: <a class="el" href="hprdbghv_2_common_8h.html#a61d472f2bf89e1c48568bbd23fc214f1">Common.h</a>
+, <a class="el" href="_segment_regs_8c.html#a61d472f2bf89e1c48568bbd23fc214f1">SegmentRegs.c</a>
 </li>
 <li>GetNewDebuggerEventTag()
-: <a class="el" href="interpreter_8cpp.html#af90950fa5675c09a71251d8e6f80d8fa">interpreter.cpp</a>
+: <a class="el" href="hprdbgctrl_2_debugger_8h.html#af90950fa5675c09a71251d8e6f80d8fa">debugger.h</a>
+, <a class="el" href="debugger_8cpp.html#af90950fa5675c09a71251d8e6f80d8fa">debugger.cpp</a>
+</li>
+<li>GetProcessNameFromEprocess()
+: <a class="el" href="_common_8c.html#a7d8de41916e9cffe3cb1963847484806">Common.c</a>
+, <a class="el" href="hprdbghv_2_common_8h.html#a6ce84ff75a3e9d191843b90219f20b4b">Common.h</a>
+</li>
+<li>GetSegmentDescriptor()
+: <a class="el" href="_common_8c.html#a15a1542d0e3666ab9265e0e17708333a">Common.c</a>
+, <a class="el" href="hprdbghv_2_common_8h.html#a15a1542d0e3666ab9265e0e17708333a">Common.h</a>
 </li>
 <li>GS
-: <a class="el" href="_common_8h.html#a7439723a15461f5bf1905bb57eb295bfa9c922c72676cab2b540d081a8bb3788a">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a7439723a15461f5bf1905bb57eb295bfa9c922c72676cab2b540d081a8bb3788a">Common.h</a>
+</li>
+<li>GuassianGenerateRandom()
+: <a class="el" href="hprdbgctrl_2_transparency_8h.html#a9c13ac2c251757c4e2f6bbfdcf976206">transparency.h</a>
+, <a class="el" href="gaussian-rng_8cpp.html#a23e679300cdc91c419fd3db1345be0b5">gaussian-rng.cpp</a>
 </li>
 <li>GUEST_ACTIVITY_STATE
 : <a class="el" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a47657b1288d96acce52a90e905a21f72">Vmx.h</a>
@@ -324,11 +558,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

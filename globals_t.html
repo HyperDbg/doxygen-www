@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('globals_t.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -67,6 +87,92 @@ $(function() {
 <li>Tag
 : <a class="el" href="_hooks_8h.html#aba7c9f3767dcc5232354d3d17ceedb61">Hooks.h</a>
 </li>
+<li>TerminateCpuidExecutionEvent()
+: <a class="el" href="_termination_8c.html#a08678a8e338118e08b4a2c97d32fb8b3">Termination.c</a>
+, <a class="el" href="_termination_8h.html#a08678a8e338118e08b4a2c97d32fb8b3">Termination.h</a>
+</li>
+<li>TerminateDebugRegistersEvent()
+: <a class="el" href="_termination_8c.html#a32645ae2e8607c29644fbfff0491eedb">Termination.c</a>
+, <a class="el" href="_termination_8h.html#a32645ae2e8607c29644fbfff0491eedb">Termination.h</a>
+</li>
+<li>TerminateExceptionEvent()
+: <a class="el" href="_termination_8c.html#a99d3611fa706dd12f4903f543d0f3903">Termination.c</a>
+, <a class="el" href="_termination_8h.html#a99d3611fa706dd12f4903f543d0f3903">Termination.h</a>
+</li>
+<li>TerminateExternalInterruptEvent()
+: <a class="el" href="_termination_8c.html#a4a28660c7e849475c18adb0fa84854f3">Termination.c</a>
+, <a class="el" href="_termination_8h.html#a4a28660c7e849475c18adb0fa84854f3">Termination.h</a>
+</li>
+<li>TerminateHiddenHookExecCcEvent()
+: <a class="el" href="_termination_8c.html#afd25fd0635f607699fed2846697fed13">Termination.c</a>
+, <a class="el" href="_termination_8h.html#afd25fd0635f607699fed2846697fed13">Termination.h</a>
+</li>
+<li>TerminateHiddenHookExecDetoursEvent()
+: <a class="el" href="_termination_8c.html#af3f7d907e14479646dc6938c926234ff">Termination.c</a>
+, <a class="el" href="_termination_8h.html#af3f7d907e14479646dc6938c926234ff">Termination.h</a>
+</li>
+<li>TerminateHiddenHookReadAndWriteEvent()
+: <a class="el" href="_termination_8c.html#aa91b9821b01491da5cbb8811234916a5">Termination.c</a>
+, <a class="el" href="_termination_8h.html#aa91b9821b01491da5cbb8811234916a5">Termination.h</a>
+</li>
+<li>TerminateHiddenHookReadEvent()
+: <a class="el" href="_termination_8c.html#aa324143f7c376d58b9e83da38c6707aa">Termination.c</a>
+, <a class="el" href="_termination_8h.html#aa324143f7c376d58b9e83da38c6707aa">Termination.h</a>
+</li>
+<li>TerminateHiddenHookWriteEvent()
+: <a class="el" href="_termination_8c.html#a160508355cf994cb8c25e3f07c70fcc2">Termination.c</a>
+, <a class="el" href="_termination_8h.html#a160508355cf994cb8c25e3f07c70fcc2">Termination.h</a>
+</li>
+<li>TerminateInInstructionExecutionEvent()
+: <a class="el" href="_termination_8c.html#a0740bacfdb77c46e27ca4bcba7cb5928">Termination.c</a>
+, <a class="el" href="_termination_8h.html#a0740bacfdb77c46e27ca4bcba7cb5928">Termination.h</a>
+</li>
+<li>TerminateOutInstructionExecutionEvent()
+: <a class="el" href="_termination_8c.html#a902083eddb6e5b1fb8b650d0457faf9b">Termination.c</a>
+, <a class="el" href="_termination_8h.html#a902083eddb6e5b1fb8b650d0457faf9b">Termination.h</a>
+</li>
+<li>TerminatePmcEvent()
+: <a class="el" href="_termination_8c.html#a19f1a83cb86963c372bf9c2afee630c5">Termination.c</a>
+, <a class="el" href="_termination_8h.html#a19f1a83cb86963c372bf9c2afee630c5">Termination.h</a>
+</li>
+<li>TerminateRdmsrExecutionEvent()
+: <a class="el" href="_termination_8c.html#a43b5681379cca8108df552ec2d823f7a">Termination.c</a>
+, <a class="el" href="_termination_8h.html#a43b5681379cca8108df552ec2d823f7a">Termination.h</a>
+</li>
+<li>TerminateSyscallHookEferEvent()
+: <a class="el" href="_termination_8c.html#aa341d58073efde632ade05ca0aaa673e">Termination.c</a>
+, <a class="el" href="_termination_8h.html#aa341d58073efde632ade05ca0aaa673e">Termination.h</a>
+</li>
+<li>TerminateSysretHookEferEvent()
+: <a class="el" href="_termination_8c.html#a2116f9aea39f52d2e49a689803bcd9d0">Termination.c</a>
+, <a class="el" href="_termination_8h.html#a2116f9aea39f52d2e49a689803bcd9d0">Termination.h</a>
+</li>
+<li>TerminateTscEvent()
+: <a class="el" href="_termination_8c.html#ab36611d0f0ac9667053b4a6a5db46b5c">Termination.c</a>
+, <a class="el" href="_termination_8h.html#ab36611d0f0ac9667053b4a6a5db46b5c">Termination.h</a>
+</li>
+<li>TerminateVmcallExecutionEvent()
+: <a class="el" href="_termination_8c.html#acf174d432b7c8418fe2cc2bf98874460">Termination.c</a>
+, <a class="el" href="_termination_8h.html#acf174d432b7c8418fe2cc2bf98874460">Termination.h</a>
+</li>
+<li>TerminateWrmsrExecutionEvent()
+: <a class="el" href="_termination_8c.html#a57dd073561833f84248e4caef5bb079a">Termination.c</a>
+, <a class="el" href="_termination_8h.html#a57dd073561833f84248e4caef5bb079a">Termination.h</a>
+</li>
+<li>TestBit()
+: <a class="el" href="_common_8c.html#abf9996f46885e97a5d0f4d6fdbba98e0">Common.c</a>
+, <a class="el" href="hprdbghv_2_common_8h.html#abf9996f46885e97a5d0f4d6fdbba98e0">Common.h</a>
+</li>
+<li>TestCount
+: <a class="el" href="hprdbgctrl_2_transparency_8h.html#ac617a2d97d753806396ca8d0976fe2f3">transparency.h</a>
+</li>
+<li>TestGaussianFromFile()
+: <a class="el" href="gaussian-rng_8cpp.html#ada0c48b1034062d5d05e73969e8de094">gaussian-rng.cpp</a>
+</li>
+<li>TestMonitorCommand()
+: <a class="el" href="eptcommands_8cpp.html#a1a27464770bdc7d175ade5832597f368">eptcommands.cpp</a>
+, <a class="el" href="tests_8h.html#a1a27464770bdc7d175ade5832597f368">tests.h</a>
+</li>
 <li>ThreadFunc()
 : <a class="el" href="hprdbgctrl_8cpp.html#ad8558da611030c38b991779eeed5b6ce">hprdbgctrl.cpp</a>
 </li>
@@ -74,7 +180,7 @@ $(function() {
 : <a class="el" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a792987faac7654283ef7928dc22be4e4">Vmx.h</a>
 </li>
 <li>TR
-: <a class="el" href="_common_8h.html#a7439723a15461f5bf1905bb57eb295bfa1743e98464bf7bcabcf51101b49a6a3d">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a7439723a15461f5bf1905bb57eb295bfa1743e98464bf7bcabcf51101b49a6a3d">Common.h</a>
 </li>
 <li>TRACE_LEVEL_ERROR
 : <a class="el" href="_trace_8h.html#af31e23d153918f8c507a0d46fbf2b2a9">Trace.h</a>
@@ -109,6 +215,71 @@ $(function() {
 <li>TRACKING_HOOKED_PAGES
 : <a class="el" href="_pool_manager_8h.html#ac9e1b58ef1b236c646eb5ca0d4205f46a1c4249f84cf779cd4cdd72ee27de08c1">PoolManager.h</a>
 </li>
+<li>TRANSPARENCY_MEASUREMENTS
+: <a class="el" href="hprdbghv_2_transparency_8h.html#ad40b320ebcd75fe45a438c2d5f5201a9">Transparency.h</a>
+</li>
+<li>TRANSPARENCY_PROCESS
+: <a class="el" href="hprdbghv_2_transparency_8h.html#ad2974be42dc9bc8614215b922b30e0a5">Transparency.h</a>
+</li>
+<li>TransparentAddNameOrProcessIdToTheList()
+: <a class="el" href="_transparency_8c.html#a0be2c6428522de69ebe7677a1af8ed76">Transparency.c</a>
+</li>
+<li>TransparentGetRand()
+: <a class="el" href="_transparency_8c.html#a8d07b47eb27823f90eeaee58bb582da9">Transparency.c</a>
+</li>
+<li>TransparentHideDebugger()
+: <a class="el" href="hprdbghv_2_transparency_8h.html#ab85c4de5209246066185bebf22a88420">Transparency.h</a>
+, <a class="el" href="_transparency_8c.html#ab85c4de5209246066185bebf22a88420">Transparency.c</a>
+</li>
+<li>TransparentLog()
+: <a class="el" href="_transparency_8c.html#a0a627fcc590220a0b8a2c58b39ba3341">Transparency.c</a>
+</li>
+<li>TransparentModeCheckHypervisorPresence()
+: <a class="el" href="transparency_8cpp.html#a90ce674dad4374529e969483f43926f8">transparency.cpp</a>
+, <a class="el" href="hprdbgctrl_2_transparency_8h.html#a90ce674dad4374529e969483f43926f8">transparency.h</a>
+</li>
+<li>TransparentModeCheckRdtscpVmexit()
+: <a class="el" href="hprdbgctrl_2_transparency_8h.html#a5dcf0db7077593250823ff66e125ada1">transparency.h</a>
+, <a class="el" href="transparency_8cpp.html#a5dcf0db7077593250823ff66e125ada1">transparency.cpp</a>
+</li>
+<li>TransparentModeCpuidTimeStampCounter()
+: <a class="el" href="transparency_8cpp.html#a671a49be074bd76fcf74eddf95eb4ef0">transparency.cpp</a>
+</li>
+<li>TransparentModeRdtscDiffVmexit()
+: <a class="el" href="transparency_8cpp.html#a14d80bf5e07788f23872d232b8fc96aa">transparency.cpp</a>
+, <a class="el" href="hprdbgctrl_2_transparency_8h.html#a14d80bf5e07788f23872d232b8fc96aa">transparency.h</a>
+</li>
+<li>TransparentModeRdtscEmulationDetection()
+: <a class="el" href="transparency_8cpp.html#a6510aa2757b4fad1f5276970b5af70f5">transparency.cpp</a>
+</li>
+<li>TransparentModeRdtscVmexitTracing()
+: <a class="el" href="hprdbgctrl_2_transparency_8h.html#a7353d1771e20d0936661fb17ef13000f">transparency.h</a>
+, <a class="el" href="transparency_8cpp.html#a7353d1771e20d0936661fb17ef13000f">transparency.cpp</a>
+</li>
+<li>TransparentModeStart()
+: <a class="el" href="hprdbghv_2_transparency_8h.html#aa938d787356c8e32f82224cc58fe59c4">Transparency.h</a>
+, <a class="el" href="_transparency_8c.html#aa938d787356c8e32f82224cc58fe59c4">Transparency.c</a>
+</li>
+<li>TransparentPow()
+: <a class="el" href="_transparency_8c.html#a8294b3e44b374ebe6f095e86a7d4fbaa">Transparency.c</a>
+</li>
+<li>TransparentRandn()
+: <a class="el" href="_transparency_8c.html#a7fb3669c55c8efd61f9e0632300482ca">Transparency.c</a>
+</li>
+<li>TransparentSqrt()
+: <a class="el" href="_transparency_8c.html#a22273f24ac233b6d25823fa658e9bb40">Transparency.c</a>
+</li>
+<li>TransparentTableLog
+: <a class="el" href="_transparency_8c.html#a06b052417ad51413065b8c67e1c960d2">Transparency.c</a>
+</li>
+<li>TransparentUnhideDebugger()
+: <a class="el" href="hprdbghv_2_transparency_8h.html#ad9e44c31c77493eb876ea4002c8f55a7">Transparency.h</a>
+, <a class="el" href="_transparency_8c.html#ad9e44c31c77493eb876ea4002c8f55a7">Transparency.c</a>
+</li>
+<li>Trim()
+: <a class="el" href="hprdbgctrl_2_common_8h.html#af066c0093a155a73560a38f1b35cf396">common.h</a>
+, <a class="el" href="common_8cpp.html#af066c0093a155a73560a38f1b35cf396">common.cpp</a>
+</li>
 <li>TSC_MULTIPLIER
 : <a class="el" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a9a7e4460e84c2d7aa63661b5204cb65b">Vmx.h</a>
 </li>
@@ -129,11 +300,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

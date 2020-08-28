@@ -1,11 +1,23 @@
 var searchData=
 [
-  ['name_2291',['name',['../struct_zydis_symbol__.html#a71a9736736859eb28a782138338453b5',1,'ZydisSymbol_']]],
-  ['nhprdbgctrl_2292',['nhprdbgctrl',['../hprdbgctrl_8h.html#a516d17179aa141d3a7bb042b2bf11ed2',1,'hprdbgctrl.h']]],
-  ['nmiunblocking_2293',['NmiUnblocking',['../union___v_m_x___e_x_i_t___q_u_a_l_i_f_i_c_a_t_i_o_n___e_p_t___v_i_o_l_a_t_i_o_n.html#a58560f685dc8032a065fda2d9816d27a',1,'_VMX_EXIT_QUALIFICATION_EPT_VIOLATION::NmiUnblocking()'],['../union___v_m_e_x_i_t___i_n_t_e_r_r_u_p_t___i_n_f_o.html#abb493efadb8be3880367dc5e58edd25c',1,'_VMEXIT_INTERRUPT_INFO::NmiUnblocking()']]],
-  ['nt_2294',['NT',['../union___r_f_l_a_g_s.html#aec8c47b51cdb6fceda5b41e0e20f2a30',1,'_RFLAGS']]],
-  ['numberofbytes_2295',['NumberOfBytes',['../_hooks_8h.html#a61083d5dde730c2afd10a336322aaaac',1,'Hooks.h']]],
-  ['numberofenabledmemoryranges_2296',['NumberOfEnabledMemoryRanges',['../struct___e_p_t___s_t_a_t_e.html#ab16b6ea04ebdadd4e604ad884820476c',1,'_EPT_STATE']]],
-  ['numberofmodules_2297',['NumberOfModules',['../struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s.html#ab22b0e69c4970861ee208383c7fc7b86',1,'_RTL_PROCESS_MODULES']]],
-  ['numberofservices_2298',['NumberOfServices',['../struct___s_s_d_t_struct.html#a105fb7997377944486721f77f63b2e53',1,'_SSDTStruct']]]
+  ['machinecheckenable_3288',['MachineCheckEnable',['../struct___c_o_n_t_r_o_l___r_e_g_i_s_t_e_r__4.html#a647406aab739348353d924d63771ed42',1,'_CONTROL_REGISTER_4']]],
+  ['mappedbase_3289',['MappedBase',['../struct___s_y_s_t_e_m___m_o_d_u_l_e___e_n_t_r_y.html#a3417f83baf24e319adde63fde50d388a',1,'_SYSTEM_MODULE_ENTRY::MappedBase()'],['../struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#a7f97406c0dfac1631dd8e6eff4f1d9af',1,'_RTL_PROCESS_MODULE_INFORMATION::MappedBase()']]],
+  ['memoryinformationclass_3290',['MemoryInformationClass',['../_ntifs2_8h.html#a4ff73b1288c7bad9d75b4c508a944eda',1,'Ntifs2.h']]],
+  ['memoryinformationlength_3291',['MemoryInformationLength',['../_ntifs2_8h.html#ac66302fdf0aa5be6f36ff79bbd9b554b',1,'Ntifs2.h']]],
+  ['memorymapper_3292',['MemoryMapper',['../struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#afaba9e791f66e8b72661807c895cf8c2',1,'_VIRTUAL_MACHINE_STATE']]],
+  ['memoryranges_3293',['MemoryRanges',['../struct___e_p_t___s_t_a_t_e.html#a6f718eaba2bf056ec6cd37426a6f2755',1,'_EPT_STATE']]],
+  ['memorytype_3294',['MemoryType',['../union___e_p_d_p_t_e__1_g_b.html#a5cd92c20c8210a608780a51e22101932',1,'_EPDPTE_1GB::MemoryType()'],['../union___e_p_d_e__2_m_b.html#afddd929175787d7bc7118e9e239dd863',1,'_EPDE_2MB::MemoryType()'],['../union___e_p_t_e.html#a400c719b6106eb57e363c0493c5c3fc0',1,'_EPTE::MemoryType()'],['../union___e_p_t_p.html#a63b86db96b7c1b63acc226755919fe72',1,'_EPTP::MemoryType()'],['../struct___m_t_r_r___r_a_n_g_e___d_e_s_c_r_i_p_t_o_r.html#a22c35e328e86bb1f3c146ca03a3ff5ad',1,'_MTRR_RANGE_DESCRIPTOR::MemoryType()'],['../union___i_a32___v_m_x___b_a_s_i_c___m_s_r.html#a93fffe4479683aaa4b526fa53eec125a',1,'_IA32_VMX_BASIC_MSR::MemoryType()']]],
+  ['memorytypeuncacheable_3295',['MemoryTypeUncacheable',['../union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a85adcd711f868eb7f26dca9d5eb75204',1,'_IA32_VMX_EPT_VPID_CAP_REGISTER']]],
+  ['memorytypewriteback_3296',['MemoryTypeWriteBack',['../union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a67894ffa1554792427e3f57fca36b7a1',1,'_IA32_VMX_EPT_VPID_CAP_REGISTER']]],
+  ['message_3297',['Message',['../struct___n_o_t_i_f_y___r_e_c_o_r_d.html#a23856b71cba7c2931d89031fb41ae582',1,'_NOTIFY_RECORD']]],
+  ['messagebufferinformation_3298',['MessageBufferInformation',['../_logging_8h.html#a987d4dee46588ff399ecac12bd633e3d',1,'Logging.h']]],
+  ['module_3299',['Module',['../struct___s_y_s_t_e_m___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#aa1e3c5ac4f3e61f46485e88339d8a473',1,'_SYSTEM_MODULE_INFORMATION']]],
+  ['modules_3300',['Modules',['../struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s.html#a6de3a347bb8cae48e56e331c235ec9dd',1,'_RTL_PROCESS_MODULES']]],
+  ['msr_3301',['Msr',['../struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___m_s_r___r_e_a_d___o_r___w_r_i_t_e.html#a3ca94b81f31339286eaa6f27eea5804e',1,'_PROCESSOR_DEBUGGING_MSR_READ_OR_WRITE']]],
+  ['msrbitmapphysicaladdress_3302',['MsrBitmapPhysicalAddress',['../struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a01fda82355aebcc1e29b22e6e7d6aa90',1,'_VIRTUAL_MACHINE_STATE']]],
+  ['msrbitmapvirtualaddress_3303',['MsrBitmapVirtualAddress',['../struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a7ca0fe2d6633bddddfc4839bd2ad393c',1,'_VIRTUAL_MACHINE_STATE']]],
+  ['msrstate_3304',['MsrState',['../struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a5d5c22183a428958358e19d6434db8a7',1,'_PROCESSOR_DEBUGGING_STATE']]],
+  ['mtfepthookrestorepoint_3305',['MtfEptHookRestorePoint',['../struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a9b2af0257a3f605df8780f3a62be01cf',1,'_VIRTUAL_MACHINE_STATE']]],
+  ['mtrrenable_3306',['MtrrEnable',['../union___i_a32___m_t_r_r___d_e_f___t_y_p_e___r_e_g_i_s_t_e_r.html#a182c1313c2fb7ef67d71bd4a756b239e',1,'_IA32_MTRR_DEF_TYPE_REGISTER']]],
+  ['mustbezero_3307',['MustBeZero',['../struct___p_a_g_e___m_a_p___l_e_v_e_l__4___e_n_t_r_y.html#a1472b4c0de6ff46525a8aab5e981e588',1,'_PAGE_MAP_LEVEL_4_ENTRY']]]
 ];

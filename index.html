@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,59 +85,92 @@ $(function() {
 <div class="title">HyperDbg Debugger Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a href="https://hyperdbg.com"><object type="image/svg+xml" data="https://raw.githubusercontent.com/HyperDbg/graphics/master/Badges/Link-Website-orange.svg" style="pointer-events: none;">Website</object></a> <a href="https://docs.hyperdbg.com"><object type="image/svg+xml" data="https://raw.githubusercontent.com/HyperDbg/graphics/master/Badges/Link-Docs-yellow.svg" style="pointer-events: none;">Docs</object></a> <a href="https://doxygen.hyperdbg.com"><object type="image/svg+xml" data="https://raw.githubusercontent.com/HyperDbg/graphics/master/Badges/Link-Doxygen-lightgreen.svg" style="pointer-events: none;">Doxygen</object></a> <a href="https://www.gnu.org/licenses/gpl-3.0"><object type="image/svg+xml" data="https://raw.githubusercontent.com/HyperDbg/graphics/master/Badges/License-GPLv3-blue.svg" style="pointer-events: none;">License: GPL v3</object></a></p>
-<p><a href="https://hyperdbg.com/"><img src="https://raw.githubusercontent.com/HyperDbg/graphics/master/Icons/hyperdbg-icon.png" alt="HyperDbg Debugger" align="right" width="150" height="150" class="inline"/></a></p>
-<h1><a class="anchor" id="autotoc_md7"></a>
+<div class="textblock"><p><a href="https://hyperdbg.com"><object type="image/svg+xml" data="https://raw.githubusercontent.com/HyperDbg/graphics/master/Badges/Link-Website-orange.svg" style="pointer-events: none;">Website</object></a> <a href="https://docs.hyperdbg.com"><object type="image/svg+xml" data="https://raw.githubusercontent.com/HyperDbg/graphics/master/Badges/Link-Docs-yellow.svg" style="pointer-events: none;">Docs</object></a> <a href="https://doxygen.hyperdbg.com"><object type="image/svg+xml" data="https://raw.githubusercontent.com/HyperDbg/graphics/master/Badges/Link-Doxygen-lightgreen.svg" style="pointer-events: none;">Doxygen</object></a> <a href="https://www.gnu.org/licenses/gpl-3.0"><object type="image/svg+xml" data="https://raw.githubusercontent.com/HyperDbg/graphics/master/Badges/License-GPLv3-blue.svg" style="pointer-events: none;">License: GPL v3</object></a> <a href="https://twitter.com/HyperDbg"><object type="image/svg+xml" data="https://raw.githubusercontent.com/HyperDbg/graphics/master/Badges/Link-HyperDbg-Twitter-skyblue.svg" style="pointer-events: none;">Twitter: HyperDbg</object></a></p>
+<p><a href="https://hyperdbg.com/"><img src="https://raw.githubusercontent.com/HyperDbg/graphics/master/Art%20Board/HyperDbg-Cat.Circle.jpg" alt="HyperDbg Debugger" align="right" width="150" height="150" class="inline"/></a></p>
+<h1><a class="anchor" id="autotoc_md14"></a>
 HyperDbg Debugger</h1>
-<h4><a class="anchor" id="autotoc_md8"></a>
-(is not yet released/finished)</h4>
-<h2><a class="anchor" id="autotoc_md9"></a>
+<h3><a class="anchor" id="autotoc_md15"></a>
+(HyperDbg is NOT in a WORKING STATE - YOU SHOULD NOT USE IT, but you can read codes, please wait for first release in late October)</h3>
+<h4><a class="anchor" id="autotoc_md16"></a>
+We planned for first-release in late October 2020</h4>
+<p><b>HyperDbg</b> debugger is an open-source, hypervisor-assisted user-mode, and kernel-mode Windows debugger with a focus on using modern hardware technologies. It is a a debugger designed for analyzing, fuzzing and reversing.</p>
+<p align="center">Follow <b>HyperDbg</b> on <b>Twitter</b> to get notified about new releases ! </p>
+<p>(<a href="https://twitter.com/HyperDbg">https://twitter.com/HyperDbg</a>)</p>
+<h2><a class="anchor" id="autotoc_md17"></a>
 Description</h2>
-<p>HyperDbg is an open-source, user mode and kernel mode Windows debugger with a focus on using hardware technologies to provide new features to the debuggers’ world.</p>
-<p align="center">It is designed on top of Windows by virtualizing an already running system using Intel VT-x and Intel PT. This debugger aims not to use any APIs and software debugging mechanisms, but instead, it uses Second Layer Page Table (a.k.a. Extended Page Table or EPT) extensively to monitor both kernel and user executions. </p>
+<p align="center">HyperDbg is designed with a focus on using modern hardware technologies to provide new features to the reverse engineering world. It operates on top of Windows by virtualizing an already running system using Intel VT-x and Intel PT. This debugger aims not to use any APIs and software debugging mechanisms, but instead, it uses Second Layer Page Table (a.k.a. Extended Page Table or EPT) extensively to monitor both kernel and user executions. </p>
 <p><a href="https://hyperdbg.com/"><img src="https://raw.githubusercontent.com/HyperDbg/graphics/master/Art%20Board/Artboard%201.png" alt="HyperDbg Debugger" align="center" width="600" height="500" class="inline"/></a> </p>
 <p>HyperDbg comes with features like hidden hooks, which is as fast as old inline hooks, but also stealth. It mimics hardware debug registers for (read &amp; write) to a specific location, but this time entirely invisible for both Windows kernel and the programs, and of course without any limitation in size or count!</p>
 <p>Using TLB-splitting, and having features such as measuring code coverage and monitoring all mov(s) to/from memory by a function, makes HyperDbg a unique debugger.</p>
 <p>Although it has novel features, HyperDbg tries to be as stealth as possible. It doesn’t use any debugging APIs to debug Windows or any application, so classic anti-debugging methods won’t detect it. Also, it resists the exploitation of time delta methods (e.g., RDTSC/RDTSCP) to detect the presence of hypervisors, therefore making it much harder for applications, packers, protectors, malware, anti-cheat engines, etc. to discover the debugger.</p>
-<h2><a class="anchor" id="autotoc_md10"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
+Unique Features</h2>
+<h3><a class="anchor" id="autotoc_md19"></a>
+First Release (v0.1.0.0)</h3>
+<ul>
+<li>Classic EPT Hook (Hidden Breakpoint) [<a href="https://docs.hyperdbg.com/commands/extension-commands/epthook" target="_blank">link</a>][<a href="https://docs.hyperdbg.com/design/features/vmm-module/design-of-epthook" target="_blank">link</a>]</li>
+<li>Inline EPT Hook (Inline Hook) [<a href="https://docs.hyperdbg.com/commands/extension-commands/epthook2" target="_blank">link</a>][<a href="https://docs.hyperdbg.com/design/features/vmm-module/design-of-epthook2" target="_blank">link</a>]</li>
+<li>Monitor Memory For R/W (Emulating Hardware Debug Registers Without Limitation) [<a href="https://docs.hyperdbg.com/commands/extension-commands/monitor" target="_blank">link</a>][<a href="https://docs.hyperdbg.com/design/features/vmm-module/design-of-monitor" target="_blank">link</a>]</li>
+<li>SYSCALL Hook (Disable EFER &amp; Handle #UD) [<a href="https://docs.hyperdbg.com/commands/extension-commands/syscall" target="_blank">link</a>][<a href="https://docs.hyperdbg.com/design/features/vmm-module/design-of-syscall-and-sysret" target="_blank">link</a>]</li>
+<li>SYSRET Hook (Disable EFER &amp; Handle #UD) [<a href="https://docs.hyperdbg.com/commands/extension-commands/sysret" target="_blank">link</a>][<a href="https://docs.hyperdbg.com/design/features/vmm-module/design-of-syscall-and-sysret" target="_blank">link</a>]</li>
+<li>CPUID Hook &amp; Monitor [<a href="https://docs.hyperdbg.com/commands/extension-commands/cpuid" target="_blank">link</a>]</li>
+<li>RDMSR Hook &amp; Monitor [<a href="https://docs.hyperdbg.com/commands/extension-commands/msrread" target="_blank">link</a>]</li>
+<li>WRMSR Hook &amp; Monitor [<a href="https://docs.hyperdbg.com/commands/extension-commands/msrwrite" target="_blank">link</a>]</li>
+<li>RDTSC/RDTSCP Hook &amp; Monitor [<a href="https://docs.hyperdbg.com/commands/extension-commands/tsc" target="_blank">link</a>]</li>
+<li>RDPMC Hook &amp; Monitor [<a href="https://docs.hyperdbg.com/commands/extension-commands/pmc" target="_blank">link</a>]</li>
+<li>VMCALL Hook &amp; Monitor [<a href="https://docs.hyperdbg.com/commands/extension-commands/vmcall" target="_blank">link</a>]</li>
+<li>Debug Registers Hook &amp; Monitor [<a href="https://docs.hyperdbg.com/commands/extension-commands/dr" target="_blank">link</a>]</li>
+<li>I/O Port (In Instruction) Hook &amp; Monitor [<a href="https://docs.hyperdbg.com/commands/extension-commands/ioin" target="_blank">link</a>]</li>
+<li>I/O Port (Out Instruction) Hook &amp; Monitor [<a href="https://docs.hyperdbg.com/commands/extension-commands/ioout" target="_blank">link</a>]</li>
+<li>MMIO Monitor</li>
+<li>Exception (IDT &lt; 32) Monitor [<a href="https://docs.hyperdbg.com/commands/extension-commands/exception" target="_blank">link</a>][<a href="https://docs.hyperdbg.com/design/features/vmm-module/design-of-exception-and-interrupt" target="_blank">link</a>]</li>
+<li>External-Interrupt (IDT &gt; 32) Monitor [<a href="https://docs.hyperdbg.com/commands/extension-commands/interrupt" target="_blank">link</a>][<a href="https://docs.hyperdbg.com/design/features/vmm-module/design-of-exception-and-interrupt" target="_blank">link</a>]</li>
+<li>Running Automated Scripts [<a href="https://docs.hyperdbg.com/using-hyperdbg/examples/running-hyperdbg-script" target="_blank">link</a>]</li>
+<li>Transparent-mode (Anti-debugging and Anti-hypervisor Resistance) [<a href="https://docs.hyperdbg.com/design/debugger-internals/transparent-mode" target="_blank">link</a>]</li>
+<li>Running Custom Assembly In Both VMX-root, VMX non-root (Kernel &amp; User) [<a href="https://docs.hyperdbg.com/using-hyperdbg/prerequisites/how-to-create-an-action" target="_blank">link</a>]</li>
+<li>Checking For Custom Conditions [<a href="https://docs.hyperdbg.com/using-hyperdbg/prerequisites/how-to-create-a-condition" target="_blank">link</a>][<a href="https://docs.hyperdbg.com/design/debugger-internals/conditions" target="_blank">link</a>]</li>
+<li>Log the States Engine [<a href="https://docs.hyperdbg.com/using-hyperdbg/prerequisites/how-to-create-an-action" target="_blank">link</a>][<a href="https://docs.hyperdbg.com/design/debugger-internals/actions" target="_blank">link</a>]</li>
+<li>VMX-root Compatible Message Tracing [<a href="https://docs.hyperdbg.com/design/features/vmm-module/vmx-root-mode-compatible-message-tracing" target="_blank">link</a>]</li>
+<li>Transparent Breakpoint Handler</li>
+<li>Hidden Trap Flags (MTF)</li>
+<li>Various Custom Scripts (e.g DFIR Scripts) [<a href="https://github.com/HyperDbg/scripts" target="_blank">link</a>]</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md20"></a>
+Second Release (v0.2.0.0)</h3>
+<p>(not released yet !)</p>
+<h2><a class="anchor" id="autotoc_md21"></a>
 Installation</h2>
-<h2><a class="anchor" id="autotoc_md11"></a>
+<p>Please visit <a href="https://docs.hyperdbg.com/getting-started/build-and-install">Build &amp; Install</a> and <a href="https://docs.hyperdbg.com/getting-started/quick-start">Quick Start</a> for a detailed explanation of how to start with <b>HyperDbg</b>.</p>
+<h2><a class="anchor" id="autotoc_md22"></a>
 How does it work?</h2>
 <p align="center">We explained about how HyperDbg internally works and how we designed its features in details, take a look at :  </p>
-<p>(<a href="https://docs.hyperdbg.com/how-does-it-work">https://docs.hyperdbg.com/how-does-it-work</a>)</p>
+<p>(<a href="https://docs.hyperdbg.com/design">https://docs.hyperdbg.com/design</a>)</p>
 <p>Here's a diagram that shows how HyperDbg works ! </p>
 <p><a href="https://hyperdbg.com/"><img src="https://raw.githubusercontent.com/HyperDbg/graphics/master/Diagrams/Diagram_v1.jpg" alt="HyperDbg Design" align="center" width="70%" height="100%" class="inline"/></a> </p>
-<h2><a class="anchor" id="autotoc_md12"></a>
+<h2><a class="anchor" id="autotoc_md23"></a>
 Plugins</h2>
-<h2><a class="anchor" id="autotoc_md13"></a>
-Credits</h2>
-<p>Developers :<br  />
-</p><ul>
-<li><a href="https://twitter.com/Intel80x86">Sina Karvandi</a><br  />
-</li>
-<li><p class="startli"><a href="https://twitter.com/mammadataei">Mohammad Ataei</a> (for making the website)</p>
-<p class="startli">Special Thanks to these guys for their helps and contributions :<br  />
-</p><ul>
-<li><a href="https://twitter.com/PetrBenes">Petr Beneš</a> (for his great helps in designing hypervisor)</li>
-</ul>
-</li>
-<li>...and many other people who helped to solve the problems<br  />
-</li>
-</ul>
-<h2><a class="anchor" id="autotoc_md14"></a>
+<p>The plugin framework is not ready for the current version of HyperDbg. Future versions will support plugins.</p>
+<h2><a class="anchor" id="autotoc_md24"></a>
+Donations to charity</h2>
+<p align="center">We spent thousands of hours on HyperDbg and it's free and open-source for you, If you want to help to develop HyperDbg, please donate to children in Africa and send a picture of your donation to us, this makes all HyperDbg developers, super happy! Don't hesitate to send us the pictures, this way we know that we're doing something useful. </p>
+<p>(<a href="https://www.compassion.com/donate/donate-to-children-in-africa.htm">https://www.compassion.com/donate/donate-to-children-in-africa.htm</a>)</p>
+<h2><a class="anchor" id="autotoc_md25"></a>
 Contributing</h2>
 <p>Contributing in HyperDbg is super appreciated.</p>
-<p>If you want to create a pull request or contribute in HyperDbg please read <a href="https://github.com/SinaKarvandi/HyperDbg/blob/master/CONTRIBUTING.md">Contribution Guide</a>.</p>
-<h2><a class="anchor" id="autotoc_md15"></a>
+<p>If you want to create a pull request or contribute in HyperDbg please read <a href="https://github.com/HyperDbg/HyperDbg/blob/master/CONTRIBUTING.md">Contribution Guide</a>.</p>
+<h2><a class="anchor" id="autotoc_md26"></a>
 License</h2>
-<p>HyperDbg is under GPLv3 LICENSE. </p>
+<p><b>HyperDbg</b> is under <b>GPLv3</b> LICENSE. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

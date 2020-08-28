@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('functions_vars_s.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -74,53 +94,47 @@ $(function() {
 <li>SEL
 : <a class="el" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a6fd9535ffa897da53ffd286b1dde5764">_SEGMENT_SELECTOR</a>
 </li>
-<li>SF
-: <a class="el" href="union___r_f_l_a_g_s.html#aadef4e000e953576cd78894de2f6825c">_RFLAGS</a>
-</li>
 <li>ShouldBeFreed
 : <a class="el" href="struct___p_o_o_l___t_a_b_l_e.html#a33739e8d4658ad4d576eb55ac029268b">_POOL_TABLE</a>
 </li>
+<li>SignFlag
+: <a class="el" href="union___r_f_l_a_g_s.html#a31a6980b43adba14897f9524c94466d3">_RFLAGS</a>
+</li>
+<li>SingleInstruction
+: <a class="el" href="union_d_e_b_u_g___r_e_g_i_s_t_e_r__6.html#a8e9d87ff3452acee036c09aaab236a54">DEBUG_REGISTER_6</a>
+</li>
 <li>Size
 : <a class="el" href="struct___p_o_o_l___t_a_b_l_e.html#aaefe1d95a8e9977e8383345ea0c56fae">_POOL_TABLE</a>
-</li>
-<li>Size0
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#ad9dcb0dc2e0adf42140efd61eef2e794">_REQUEST_NEW_ALLOCATION</a>
-</li>
-<li>Size1
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#a0bfd17adb4cbcc1d6f9ade4690b1b624">_REQUEST_NEW_ALLOCATION</a>
-</li>
-<li>Size2
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#ad56e2becdb6f71e13be89b9cd0233a0d">_REQUEST_NEW_ALLOCATION</a>
-</li>
-<li>Size3
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#af707ee9b4436588bfb7e586242251aa4">_REQUEST_NEW_ALLOCATION</a>
-</li>
-<li>Size4
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#a39f7dd806ea4d9c05b6c05985794431f">_REQUEST_NEW_ALLOCATION</a>
-</li>
-<li>Size5
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#a0cef4ee69912381dc6e68d28af1391c6">_REQUEST_NEW_ALLOCATION</a>
-</li>
-<li>Size6
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#abe197f5fd1790926277de8c352692244">_REQUEST_NEW_ALLOCATION</a>
-</li>
-<li>Size7
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#ab74caa3ccf72f5963424dabc0fa61f0e">_REQUEST_NEW_ALLOCATION</a>
-</li>
-<li>Size8
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#aa79ea55a6c73d5c0641f5e6fbd21d40f">_REQUEST_NEW_ALLOCATION</a>
-</li>
-<li>Size9
-: <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#a8292df03b02e143ce8f69414a9647e65">_REQUEST_NEW_ALLOCATION</a>
+, <a class="el" href="struct___r_e_q_u_e_s_t___n_e_w___a_l_l_o_c_a_t_i_o_n.html#ab991d63d08c384a34329c41669917dfa">_REQUEST_NEW_ALLOCATION</a>
 </li>
 <li>SizeOfAccess
-: <a class="el" href="struct___v_m_x___e_x_i_t___q_u_a_l_i_f_i_c_a_t_i_o_n___i_o___i_n_s_t_r_u_c_t_i_o_n.html#a3adab11b71c2ef6d97179a5daa51c32f">_VMX_EXIT_QUALIFICATION_IO_INSTRUCTION</a>
+: <a class="el" href="struct___i_o___e_x_i_t___q_u_a_l_i_f_i_c_a_t_i_o_n.html#ade97727ed2b62f8d8c42d6183c2835b0">_IO_EXIT_QUALIFICATION</a>
+, <a class="el" href="struct___v_m_x___e_x_i_t___q_u_a_l_i_f_i_c_a_t_i_o_n___i_o___i_n_s_t_r_u_c_t_i_o_n.html#a3adab11b71c2ef6d97179a5daa51c32f">_VMX_EXIT_QUALIFICATION_IO_INSTRUCTION</a>
+</li>
+<li>SmapEnable
+: <a class="el" href="struct___c_o_n_t_r_o_l___r_e_g_i_s_t_e_r__4.html#a04ef6ca640f67e54a653ff108e2ba5fa">_CONTROL_REGISTER_4</a>
+</li>
+<li>SmepEnable
+: <a class="el" href="struct___c_o_n_t_r_o_l___r_e_g_i_s_t_e_r__4.html#a1f19496728288a062789654894ed55b2">_CONTROL_REGISTER_4</a>
 </li>
 <li>SmrrSupported
 : <a class="el" href="union___i_a32___m_t_r_r___c_a_p_a_b_i_l_i_t_i_e_s___r_e_g_i_s_t_e_r.html#a6f83264daf199d4ca7d70d73c32522a6">_IA32_MTRR_CAPABILITIES_REGISTER</a>
 </li>
+<li>SmxEnable
+: <a class="el" href="struct___c_o_n_t_r_o_l___r_e_g_i_s_t_e_r__4.html#a02c8dec25df6486c8301f34fbe6de477">_CONTROL_REGISTER_4</a>
+</li>
+<li>SpecialApcInProgress
+: <a class="el" href="struct___k_a_p_c___s_t_a_t_e.html#a76eea7105b781ce9fe9ed351183cbcc0">_KAPC_STATE</a>
+</li>
+<li>SpecialUserApcPending
+: <a class="el" href="struct___k_a_p_c___s_t_a_t_e.html#a9c39f63d1b1ece5a3668e7287038b23f">_KAPC_STATE</a>
+</li>
+<li>State
+: <a class="el" href="struct___m_e_m_o_r_y___b_a_s_i_c___i_n_f_o_r_m_a_t_i_o_n.html#a7c6cdca63f02adcd8dc9bc8a485480a5">_MEMORY_BASIC_INFORMATION</a>
+</li>
 <li>StringInstruction
-: <a class="el" href="struct___v_m_x___e_x_i_t___q_u_a_l_i_f_i_c_a_t_i_o_n___i_o___i_n_s_t_r_u_c_t_i_o_n.html#a91105608d76ee8ec1ec6dc28e930c954">_VMX_EXIT_QUALIFICATION_IO_INSTRUCTION</a>
+: <a class="el" href="struct___i_o___e_x_i_t___q_u_a_l_i_f_i_c_a_t_i_o_n.html#a3ef2e106b43b3c9ecd32c138a07a8aa4">_IO_EXIT_QUALIFICATION</a>
+, <a class="el" href="struct___v_m_x___e_x_i_t___q_u_a_l_i_f_i_c_a_t_i_o_n___i_o___i_n_s_t_r_u_c_t_i_o_n.html#a91105608d76ee8ec1ec6dc28e930c954">_VMX_EXIT_QUALIFICATION_IO_INSTRUCTION</a>
 </li>
 <li>Supervisor
 : <a class="el" href="struct___l_a_r_g_e___p_a_g_e___d_i_r_e_c_t_o_r_y___e_n_t_r_y.html#abbb924212326a2078a35f8d11c85d81d">_LARGE_PAGE_DIRECTORY_ENTRY</a>
@@ -153,11 +167,14 @@ $(function() {
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,7 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-attribs">Public Attributes</a> &#124;
@@ -76,83 +96,83 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a176335e81b66264cabe65ee8d8736f2e"><td class="memItemLeft" >struct {</td></tr>
-<tr class="memitem:a6597c416e6edc6dbc6a3201c0e8959d5"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#ac3d6d5f941f20110e43462d6385d9231">ExecuteOnlyPages</a>: 1</td></tr>
-<tr class="memdesc:a6597c416e6edc6dbc6a3201c0e8959d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 0] When set to 1, the processor supports execute-only translations by EPT. This support allows software to configure EPT paging-structure entries in which bits 1:0 are clear (indicating that data accesses are not allowed) and bit 2 is set (indicating that instruction fetches are allowed).  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d3.html#a6597c416e6edc6dbc6a3201c0e8959d5">More...</a><br /></td></tr>
-<tr class="separator:a6597c416e6edc6dbc6a3201c0e8959d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a36b9177869cdceafd0f52b17128bac"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a0142ab79bf5f45a806cde7b87e70b006">Reserved1</a>: 5</td></tr>
-<tr class="separator:a0a36b9177869cdceafd0f52b17128bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c74e30638d0ff6156b44f56468dae9e"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a0fe7e25ce766f007a6ae465fcc4771ce">PageWalkLength4</a>: 1</td></tr>
-<tr class="memdesc:a7c74e30638d0ff6156b44f56468dae9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 6] Indicates support for a page-walk length of 4.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d3.html#a7c74e30638d0ff6156b44f56468dae9e">More...</a><br /></td></tr>
-<tr class="separator:a7c74e30638d0ff6156b44f56468dae9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb98fbf1ab01fd73cb22f19e287af9df"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a9abe9538343eec8cd7e2f47d58e72374">Reserved2</a>: 1</td></tr>
-<tr class="separator:adb98fbf1ab01fd73cb22f19e287af9df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a113b2daa3f290323981f81dc718e31d4"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a85adcd711f868eb7f26dca9d5eb75204">MemoryTypeUncacheable</a>: 1</td></tr>
-<tr class="memdesc:a113b2daa3f290323981f81dc718e31d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 8] When set to 1, the logical processor allows software to configure the EPT paging-structure memory type to be uncacheable (UC).  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d3.html#a113b2daa3f290323981f81dc718e31d4">More...</a><br /></td></tr>
-<tr class="separator:a113b2daa3f290323981f81dc718e31d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e10938eb8d6a09302fe3d7fe6d97bed"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a019d28d09d8eac8e260e7e64f5179236">Reserved3</a>: 5</td></tr>
-<tr class="separator:a8e10938eb8d6a09302fe3d7fe6d97bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6a58f3ae9dc9d19a16eddc2e4652a15"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a67894ffa1554792427e3f57fca36b7a1">MemoryTypeWriteBack</a>: 1</td></tr>
-<tr class="memdesc:ac6a58f3ae9dc9d19a16eddc2e4652a15"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 14] When set to 1, the logical processor allows software to configure the EPT paging-structure memory type to be write-back (WB).  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d3.html#ac6a58f3ae9dc9d19a16eddc2e4652a15">More...</a><br /></td></tr>
-<tr class="separator:ac6a58f3ae9dc9d19a16eddc2e4652a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa16bb7aebbd2cc9d18efd8e95db488e1"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a1543b1057707b1d9642866219b27ff8e">Reserved4</a>: 1</td></tr>
-<tr class="separator:aa16bb7aebbd2cc9d18efd8e95db488e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada8fc446c12b7ae941903d1acba95f51"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#abefd3fa84f74f2380605338c458e9da9">Pde2MbPages</a>: 1</td></tr>
-<tr class="memdesc:ada8fc446c12b7ae941903d1acba95f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 16] When set to 1, the logical processor allows software to configure a EPT PDE to map a 2-Mbyte page (by setting bit 7 in the EPT PDE).  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d3.html#ada8fc446c12b7ae941903d1acba95f51">More...</a><br /></td></tr>
-<tr class="separator:ada8fc446c12b7ae941903d1acba95f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28aa2d97014a92002a37626b5db6084c"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a97d293a52aa778523ecb28ce99a03c69">Pdpte1GbPages</a>: 1</td></tr>
-<tr class="memdesc:a28aa2d97014a92002a37626b5db6084c"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 17] When set to 1, the logical processor allows software to configure a EPT PDPTE to map a 1-Gbyte page (by setting bit 7 in the EPT PDPTE).  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d3.html#a28aa2d97014a92002a37626b5db6084c">More...</a><br /></td></tr>
-<tr class="separator:a28aa2d97014a92002a37626b5db6084c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35e0035f4bb9a4cf1ae23e646978f536"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#afeb68f7bfd602d1e9dbc5091a4f6aab8">Reserved5</a>: 2</td></tr>
-<tr class="separator:a35e0035f4bb9a4cf1ae23e646978f536"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79ebf766942e2ef9598a540ba2576129"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a30d51dac8fb2284cdd27910546ad3bdb">Invept</a>: 1</td></tr>
-<tr class="memdesc:a79ebf766942e2ef9598a540ba2576129"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 20] If bit 20 is read as 1, the INVEPT instruction is supported.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d3.html#a79ebf766942e2ef9598a540ba2576129">More...</a><br /></td></tr>
-<tr class="separator:a79ebf766942e2ef9598a540ba2576129"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61e57dd2dc7a316382a0f70f616e5d58"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a2a30c38aca1e3b2a17db7c2d4eda57d7">EptAccessedAndDirtyFlags</a>: 1</td></tr>
-<tr class="memdesc:a61e57dd2dc7a316382a0f70f616e5d58"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 21] When set to 1, accessed and dirty flags for EPT are supported.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d3.html#a61e57dd2dc7a316382a0f70f616e5d58">More...</a><br /></td></tr>
-<tr class="separator:a61e57dd2dc7a316382a0f70f616e5d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a148a83de710e4450c42cf4050f83f368"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a565644200e00feeae3b529223a84384f">AdvancedVmexitEptViolationsInformation</a>: 1</td></tr>
-<tr class="memdesc:a148a83de710e4450c42cf4050f83f368"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 22] When set to 1, the processor reports advanced VM-exit information for EPT violations. This reporting is done only if this bit is read as 1.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d3.html#a148a83de710e4450c42cf4050f83f368">More...</a><br /></td></tr>
-<tr class="separator:a148a83de710e4450c42cf4050f83f368"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70fd05ba6ce4b412bde5a25389e6e801"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a739706da0682ecc5ae36e5e3830c8ee1">Reserved6</a>: 2</td></tr>
-<tr class="separator:a70fd05ba6ce4b412bde5a25389e6e801"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a934df03ccd379d9e9b74c8f72e99153f"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#ae8afebd813b224273647aaf4f578b805">InveptSingleContext</a>: 1</td></tr>
-<tr class="memdesc:a934df03ccd379d9e9b74c8f72e99153f"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 25] When set to 1, the single-context INVEPT type is supported.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d3.html#a934df03ccd379d9e9b74c8f72e99153f">More...</a><br /></td></tr>
-<tr class="separator:a934df03ccd379d9e9b74c8f72e99153f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa99344adce63196af2bd1de3dc702479"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a45fc0bff823e78baafd8c619900da4ff">InveptAllContexts</a>: 1</td></tr>
-<tr class="memdesc:aa99344adce63196af2bd1de3dc702479"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 26] When set to 1, the all-context INVEPT type is supported.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d3.html#aa99344adce63196af2bd1de3dc702479">More...</a><br /></td></tr>
-<tr class="separator:aa99344adce63196af2bd1de3dc702479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb6ffcd5daf2acfa6dee3278bc840e8d"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#afea1f6693ae09f1cd84174dd657030a2">Reserved7</a>: 5</td></tr>
-<tr class="separator:afb6ffcd5daf2acfa6dee3278bc840e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a684c6fae4413926665e778a4d2a4b75a"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#acfe10d7706043d6a017d7ab9c563010a">Invvpid</a>: 1</td></tr>
-<tr class="memdesc:a684c6fae4413926665e778a4d2a4b75a"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 32] When set to 1, the INVVPID instruction is supported.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d3.html#a684c6fae4413926665e778a4d2a4b75a">More...</a><br /></td></tr>
-<tr class="separator:a684c6fae4413926665e778a4d2a4b75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbd874d713ecce26b15787c17f8fe8d2"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a0c818a56ae848e4ff4763fba8fdcc502">Reserved8</a>: 7</td></tr>
-<tr class="separator:abbd874d713ecce26b15787c17f8fe8d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67f56e3fd8198acbb098160428a497e9"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#adc82bc06f9c03d44354a8276c1e2b8dd">InvvpidIndividualAddress</a>: 1</td></tr>
-<tr class="memdesc:a67f56e3fd8198acbb098160428a497e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 40] When set to 1, the individual-address INVVPID type is supported.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d3.html#a67f56e3fd8198acbb098160428a497e9">More...</a><br /></td></tr>
-<tr class="separator:a67f56e3fd8198acbb098160428a497e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aada4fa032aa30a1124718fccbfbd875e"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a390c2294e3340d5331ee2ed2812d39b7">InvvpidSingleContext</a>: 1</td></tr>
-<tr class="memdesc:aada4fa032aa30a1124718fccbfbd875e"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 41] When set to 1, the single-context INVVPID type is supported.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d3.html#aada4fa032aa30a1124718fccbfbd875e">More...</a><br /></td></tr>
-<tr class="separator:aada4fa032aa30a1124718fccbfbd875e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a394c5cbeca81dd2e7cfcfeea20e24ecb"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#aee7c36ecc89fccf1d72d9c1c2833a3e0">InvvpidAllContexts</a>: 1</td></tr>
-<tr class="memdesc:a394c5cbeca81dd2e7cfcfeea20e24ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 42] When set to 1, the all-context INVVPID type is supported.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d3.html#a394c5cbeca81dd2e7cfcfeea20e24ecb">More...</a><br /></td></tr>
-<tr class="separator:a394c5cbeca81dd2e7cfcfeea20e24ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad925a9c055e053baa9697dc7c70d616f"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a36e385dacc7fc7a4ec87be4e7adf5f13">InvvpidSingleContextRetainGlobals</a>: 1</td></tr>
-<tr class="memdesc:ad925a9c055e053baa9697dc7c70d616f"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 43] When set to 1, the single-context-retaining-globals INVVPID type is supported.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d3.html#ad925a9c055e053baa9697dc7c70d616f">More...</a><br /></td></tr>
-<tr class="separator:ad925a9c055e053baa9697dc7c70d616f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7210335ae9d22c3e6e670733b771ad42"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#ab7015bfb54184da609a31e688e11cd39">Reserved9</a>: 20</td></tr>
-<tr class="separator:a7210335ae9d22c3e6e670733b771ad42"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a176335e81b66264cabe65ee8d8736f2e"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
-<tr class="separator:a176335e81b66264cabe65ee8d8736f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7531453388e19cd2499c0049cb75b2d1"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:ab00398dce5f74849af30837e2d359de2"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#ac3d6d5f941f20110e43462d6385d9231">ExecuteOnlyPages</a>: 1</td></tr>
+<tr class="memdesc:ab00398dce5f74849af30837e2d359de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 0] When set to 1, the processor supports execute-only translations by EPT. This support allows software to configure EPT paging-structure entries in which bits 1:0 are clear (indicating that data accesses are not allowed) and bit 2 is set (indicating that instruction fetches are allowed).  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d12.html#ab00398dce5f74849af30837e2d359de2">More...</a><br /></td></tr>
+<tr class="separator:ab00398dce5f74849af30837e2d359de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e395dbd342cf01c02c1d2ff8c31c00"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a0142ab79bf5f45a806cde7b87e70b006">Reserved1</a>: 5</td></tr>
+<tr class="separator:ae7e395dbd342cf01c02c1d2ff8c31c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f7c85781e43ab049a7332098e68afc0"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a0fe7e25ce766f007a6ae465fcc4771ce">PageWalkLength4</a>: 1</td></tr>
+<tr class="memdesc:a7f7c85781e43ab049a7332098e68afc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 6] Indicates support for a page-walk length of 4.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d12.html#a7f7c85781e43ab049a7332098e68afc0">More...</a><br /></td></tr>
+<tr class="separator:a7f7c85781e43ab049a7332098e68afc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ccb7f1d97957d04466eb0f9840a15e3"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a9abe9538343eec8cd7e2f47d58e72374">Reserved2</a>: 1</td></tr>
+<tr class="separator:a4ccb7f1d97957d04466eb0f9840a15e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ef111fbf48567ea7b23fda44af1d0ce"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a85adcd711f868eb7f26dca9d5eb75204">MemoryTypeUncacheable</a>: 1</td></tr>
+<tr class="memdesc:a1ef111fbf48567ea7b23fda44af1d0ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 8] When set to 1, the logical processor allows software to configure the EPT paging-structure memory type to be uncacheable (UC).  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d12.html#a1ef111fbf48567ea7b23fda44af1d0ce">More...</a><br /></td></tr>
+<tr class="separator:a1ef111fbf48567ea7b23fda44af1d0ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d978fe30e662d88651138e2fc016fcf"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a019d28d09d8eac8e260e7e64f5179236">Reserved3</a>: 5</td></tr>
+<tr class="separator:a0d978fe30e662d88651138e2fc016fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5255c43545de56469213521c50201c24"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a67894ffa1554792427e3f57fca36b7a1">MemoryTypeWriteBack</a>: 1</td></tr>
+<tr class="memdesc:a5255c43545de56469213521c50201c24"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 14] When set to 1, the logical processor allows software to configure the EPT paging-structure memory type to be write-back (WB).  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d12.html#a5255c43545de56469213521c50201c24">More...</a><br /></td></tr>
+<tr class="separator:a5255c43545de56469213521c50201c24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5d899bef427357b452e298a8b6544d8"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a1543b1057707b1d9642866219b27ff8e">Reserved4</a>: 1</td></tr>
+<tr class="separator:ac5d899bef427357b452e298a8b6544d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05bcc6e74cf55be741165fa471c17bd3"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#abefd3fa84f74f2380605338c458e9da9">Pde2MbPages</a>: 1</td></tr>
+<tr class="memdesc:a05bcc6e74cf55be741165fa471c17bd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 16] When set to 1, the logical processor allows software to configure a EPT PDE to map a 2-Mbyte page (by setting bit 7 in the EPT PDE).  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d12.html#a05bcc6e74cf55be741165fa471c17bd3">More...</a><br /></td></tr>
+<tr class="separator:a05bcc6e74cf55be741165fa471c17bd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1c6937313103610081ad2dd2edeb5ff"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a97d293a52aa778523ecb28ce99a03c69">Pdpte1GbPages</a>: 1</td></tr>
+<tr class="memdesc:aa1c6937313103610081ad2dd2edeb5ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 17] When set to 1, the logical processor allows software to configure a EPT PDPTE to map a 1-Gbyte page (by setting bit 7 in the EPT PDPTE).  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d12.html#aa1c6937313103610081ad2dd2edeb5ff">More...</a><br /></td></tr>
+<tr class="separator:aa1c6937313103610081ad2dd2edeb5ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b4dc42014aa0bdb02dd764fac5a481"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#afeb68f7bfd602d1e9dbc5091a4f6aab8">Reserved5</a>: 2</td></tr>
+<tr class="separator:ad3b4dc42014aa0bdb02dd764fac5a481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c037b2c68a26b25e854894eaa551652"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a30d51dac8fb2284cdd27910546ad3bdb">Invept</a>: 1</td></tr>
+<tr class="memdesc:a5c037b2c68a26b25e854894eaa551652"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 20] If bit 20 is read as 1, the INVEPT instruction is supported.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d12.html#a5c037b2c68a26b25e854894eaa551652">More...</a><br /></td></tr>
+<tr class="separator:a5c037b2c68a26b25e854894eaa551652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd99f8975e9bf4b7a7f2f88271b4cee6"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a2a30c38aca1e3b2a17db7c2d4eda57d7">EptAccessedAndDirtyFlags</a>: 1</td></tr>
+<tr class="memdesc:abd99f8975e9bf4b7a7f2f88271b4cee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 21] When set to 1, accessed and dirty flags for EPT are supported.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d12.html#abd99f8975e9bf4b7a7f2f88271b4cee6">More...</a><br /></td></tr>
+<tr class="separator:abd99f8975e9bf4b7a7f2f88271b4cee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5dca1bc4b40179fe99b69b59b576ab5"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a565644200e00feeae3b529223a84384f">AdvancedVmexitEptViolationsInformation</a>: 1</td></tr>
+<tr class="memdesc:ad5dca1bc4b40179fe99b69b59b576ab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 22] When set to 1, the processor reports advanced VM-exit information for EPT violations. This reporting is done only if this bit is read as 1.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d12.html#ad5dca1bc4b40179fe99b69b59b576ab5">More...</a><br /></td></tr>
+<tr class="separator:ad5dca1bc4b40179fe99b69b59b576ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a199759262708af75b7e0e9228c7d824b"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a739706da0682ecc5ae36e5e3830c8ee1">Reserved6</a>: 2</td></tr>
+<tr class="separator:a199759262708af75b7e0e9228c7d824b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab799fe4be02ab82803629dfe199c28c7"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#ae8afebd813b224273647aaf4f578b805">InveptSingleContext</a>: 1</td></tr>
+<tr class="memdesc:ab799fe4be02ab82803629dfe199c28c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 25] When set to 1, the single-context INVEPT type is supported.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d12.html#ab799fe4be02ab82803629dfe199c28c7">More...</a><br /></td></tr>
+<tr class="separator:ab799fe4be02ab82803629dfe199c28c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92158fe2e83534abfa7ca7e20b98fc56"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a45fc0bff823e78baafd8c619900da4ff">InveptAllContexts</a>: 1</td></tr>
+<tr class="memdesc:a92158fe2e83534abfa7ca7e20b98fc56"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 26] When set to 1, the all-context INVEPT type is supported.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d12.html#a92158fe2e83534abfa7ca7e20b98fc56">More...</a><br /></td></tr>
+<tr class="separator:a92158fe2e83534abfa7ca7e20b98fc56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dab50a5c577af4529b4f7be5a09af49"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#afea1f6693ae09f1cd84174dd657030a2">Reserved7</a>: 5</td></tr>
+<tr class="separator:a6dab50a5c577af4529b4f7be5a09af49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9938131de41933fa5cdb10d5bfaccd9a"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#acfe10d7706043d6a017d7ab9c563010a">Invvpid</a>: 1</td></tr>
+<tr class="memdesc:a9938131de41933fa5cdb10d5bfaccd9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 32] When set to 1, the INVVPID instruction is supported.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d12.html#a9938131de41933fa5cdb10d5bfaccd9a">More...</a><br /></td></tr>
+<tr class="separator:a9938131de41933fa5cdb10d5bfaccd9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac993d3dfd2670983ee2dda7749bc09f2"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a0c818a56ae848e4ff4763fba8fdcc502">Reserved8</a>: 7</td></tr>
+<tr class="separator:ac993d3dfd2670983ee2dda7749bc09f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ac36f87ce1778fe674e2cabbfbe0de"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#adc82bc06f9c03d44354a8276c1e2b8dd">InvvpidIndividualAddress</a>: 1</td></tr>
+<tr class="memdesc:aa7ac36f87ce1778fe674e2cabbfbe0de"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 40] When set to 1, the individual-address INVVPID type is supported.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d12.html#aa7ac36f87ce1778fe674e2cabbfbe0de">More...</a><br /></td></tr>
+<tr class="separator:aa7ac36f87ce1778fe674e2cabbfbe0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46da5cbc107a07049e762e05ec1d042b"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a390c2294e3340d5331ee2ed2812d39b7">InvvpidSingleContext</a>: 1</td></tr>
+<tr class="memdesc:a46da5cbc107a07049e762e05ec1d042b"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 41] When set to 1, the single-context INVVPID type is supported.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d12.html#a46da5cbc107a07049e762e05ec1d042b">More...</a><br /></td></tr>
+<tr class="separator:a46da5cbc107a07049e762e05ec1d042b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23da14c2c1c6592ebaa6cab5f67de4ca"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#aee7c36ecc89fccf1d72d9c1c2833a3e0">InvvpidAllContexts</a>: 1</td></tr>
+<tr class="memdesc:a23da14c2c1c6592ebaa6cab5f67de4ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 42] When set to 1, the all-context INVVPID type is supported.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d12.html#a23da14c2c1c6592ebaa6cab5f67de4ca">More...</a><br /></td></tr>
+<tr class="separator:a23da14c2c1c6592ebaa6cab5f67de4ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad939c7a6803c3fe439a9e683cadc072a"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a36e385dacc7fc7a4ec87be4e7adf5f13">InvvpidSingleContextRetainGlobals</a>: 1</td></tr>
+<tr class="memdesc:ad939c7a6803c3fe439a9e683cadc072a"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Bit 43] When set to 1, the single-context-retaining-globals INVVPID type is supported.  <a href="struct___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r_1_1_0d12.html#ad939c7a6803c3fe439a9e683cadc072a">More...</a><br /></td></tr>
+<tr class="separator:ad939c7a6803c3fe439a9e683cadc072a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7416fe227c99768f7dcadaf5cc7d35f8"><td class="memItemLeft" >&#160;&#160;&#160;UINT64&#160;&#160;&#160;<a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#ab7015bfb54184da609a31e688e11cd39">Reserved9</a>: 20</td></tr>
+<tr class="separator:a7416fe227c99768f7dcadaf5cc7d35f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7531453388e19cd2499c0049cb75b2d1"><td class="memItemLeft" valign="top">};&#160;</td><td class="memItemRight" valign="bottom"></td></tr>
+<tr class="separator:a7531453388e19cd2499c0049cb75b2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a763f88f98e03dd53a22d7e6089318d1c"><td class="memItemLeft" align="right" valign="top">UINT64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html#a763f88f98e03dd53a22d7e6089318d1c">Flags</a></td></tr>
 <tr class="separator:a763f88f98e03dd53a22d7e6089318d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Structure of EPT AND VPID CAP. </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a176335e81b66264cabe65ee8d8736f2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a176335e81b66264cabe65ee8d8736f2e">&#9670;&nbsp;</a></span>@4</h2>
+<a id="a7531453388e19cd2499c0049cb75b2d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7531453388e19cd2499c0049cb75b2d1">&#9670;&nbsp;</a></span>@13</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -577,11 +597,15 @@ Vol3C[28.3.3.1(Operations that Invalidate Cached Mappings)] </dd></dl>
 <li>hyperdbg/hprdbghv/<a class="el" href="_ept_8h_source.html">Ept.h</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="union___i_a32___v_m_x___e_p_t___v_p_i_d___c_a_p___r_e_g_i_s_t_e_r.html">_IA32_VMX_EPT_VPID_CAP_REGISTER</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

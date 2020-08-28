@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_events_8c.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_19054a674c4bd5cb8fceb6542228579c.html">hprdbghv</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
@@ -74,8 +90,7 @@ $(function() {
 
 <p>Functions relating to Exception Bitmap and Event (Interrupt and Exception) Injection.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="_events_8h_source.html">Events.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_vmx_8h_source.html">Vmx.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="hprdbghv_2pch_8h_source.html">pch.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -88,9 +103,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ad328e1959f217955ece7ea133777ed21"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_events_8c.html#ad328e1959f217955ece7ea133777ed21">EventInjectGeneralProtection</a> ()</td></tr>
 <tr class="memdesc:ad328e1959f217955ece7ea133777ed21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inject #GP to the guest (Event Injection)  <a href="_events_8c.html#ad328e1959f217955ece7ea133777ed21">More...</a><br /></td></tr>
 <tr class="separator:ad328e1959f217955ece7ea133777ed21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0eee44503a38016aa67dadd65461864d"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_events_8c.html#a0eee44503a38016aa67dadd65461864d">EventInjectUndefinedOpcode</a> ()</td></tr>
-<tr class="memdesc:a0eee44503a38016aa67dadd65461864d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inject #UD to the guest (Invalid Opcode - Undefined Opcode)  <a href="_events_8c.html#a0eee44503a38016aa67dadd65461864d">More...</a><br /></td></tr>
-<tr class="separator:a0eee44503a38016aa67dadd65461864d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58c5b3b8a4a01b4fc9be1c88a549cf37"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_events_8c.html#a58c5b3b8a4a01b4fc9be1c88a549cf37">EventInjectUndefinedOpcode</a> (UINT32 CurrentProcessorIndex)</td></tr>
+<tr class="memdesc:a58c5b3b8a4a01b4fc9be1c88a549cf37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inject #UD to the guest (Invalid Opcode - Undefined Opcode)  <a href="_events_8c.html#a58c5b3b8a4a01b4fc9be1c88a549cf37">More...</a><br /></td></tr>
+<tr class="separator:a58c5b3b8a4a01b4fc9be1c88a549cf37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab27691a80df8d30baf8e9cf666a1855e"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_events_8c.html#ab27691a80df8d30baf8e9cf666a1855e">EventInjectDebugBreakpoint</a> ()</td></tr>
+<tr class="memdesc:ab27691a80df8d30baf8e9cf666a1855e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inject Debug Breakpoint Exception.  <a href="_events_8c.html#ab27691a80df8d30baf8e9cf666a1855e">More...</a><br /></td></tr>
+<tr class="separator:ab27691a80df8d30baf8e9cf666a1855e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8eef6f3b81a7e0be95692bf61e1fb04d"><td class="memItemLeft" align="right" valign="top">VOID&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_events_8c.html#a8eef6f3b81a7e0be95692bf61e1fb04d">EventInjectPageFault</a> (ULONG32 ErrorCode)</td></tr>
 <tr class="memdesc:a8eef6f3b81a7e0be95692bf61e1fb04d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inject #PF to the guest (Page-Fault for EFER Injector)  <a href="_events_8c.html#a8eef6f3b81a7e0be95692bf61e1fb04d">More...</a><br /></td></tr>
 <tr class="separator:a8eef6f3b81a7e0be95692bf61e1fb04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,12 +137,35 @@ Functions</h2></td></tr>
 
 <p>Inject #BP to the guest (Event Injection) </p>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
-<div class="fragment"><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="_events_8c.html#a175c8152bdcd5e2d588ffb2f73cfaf0d">EventInjectInterruption</a>(<a class="code" href="_events_8h.html#ade7b98ff2f26b359a8d902773a55df03a2985132456229e8009af891f304cf6ac">INTERRUPT_TYPE_SOFTWARE_EXCEPTION</a>, <a class="code" href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349af05cde4ca14e2535f235aa75286fa962">EXCEPTION_VECTOR_BREAKPOINT</a>, FALSE, 0);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    UINT32 ExitInstrLength;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    __vmx_vmread(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5aa3197d354c750132f5ee47c0b6d01689">VM_EXIT_INSTRUCTION_LEN</a>, &amp;ExitInstrLength);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a0bdf4c635c3b05ce1409c6f2cf36ed50">VM_ENTRY_INSTRUCTION_LEN</a>, ExitInstrLength);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="_events_8c.html#a175c8152bdcd5e2d588ffb2f73cfaf0d">EventInjectInterruption</a>(<a class="code" href="_events_8h.html#ade7b98ff2f26b359a8d902773a55df03a2985132456229e8009af891f304cf6ac">INTERRUPT_TYPE_SOFTWARE_EXCEPTION</a>, <a class="code" href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349af05cde4ca14e2535f235aa75286fa962">EXCEPTION_VECTOR_BREAKPOINT</a>, FALSE, 0);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    UINT32 ExitInstrLength;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    __vmx_vmread(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5aa3197d354c750132f5ee47c0b6d01689">VM_EXIT_INSTRUCTION_LEN</a>, &amp;ExitInstrLength);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a0bdf4c635c3b05ce1409c6f2cf36ed50">VM_ENTRY_INSTRUCTION_LEN</a>, ExitInstrLength);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab27691a80df8d30baf8e9cf666a1855e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab27691a80df8d30baf8e9cf666a1855e">&#9670;&nbsp;</a></span>EventInjectDebugBreakpoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VOID EventInjectDebugBreakpoint </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inject Debug Breakpoint Exception. </p>
+<dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="_events_8c.html#a175c8152bdcd5e2d588ffb2f73cfaf0d">EventInjectInterruption</a>(<a class="code" href="_events_8h.html#ade7b98ff2f26b359a8d902773a55df03a0b2729a9e84efd468a517d30955d1eb4">INTERRUPT_TYPE_HARDWARE_EXCEPTION</a>, <a class="code" href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a56a4f1677785327990a937d52760d5a1">EXCEPTION_VECTOR_DEBUG_BREAKPOINT</a>, FALSE, 0);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -145,12 +186,12 @@ Functions</h2></td></tr>
 
 <p>Inject #GP to the guest (Event Injection) </p>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;{</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="_events_8c.html#a175c8152bdcd5e2d588ffb2f73cfaf0d">EventInjectInterruption</a>(<a class="code" href="_events_8h.html#ade7b98ff2f26b359a8d902773a55df03a0b2729a9e84efd468a517d30955d1eb4">INTERRUPT_TYPE_HARDWARE_EXCEPTION</a>, <a class="code" href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a1d0d116b641e7f166383c63ed356f618">EXCEPTION_VECTOR_GENERAL_PROTECTION_FAULT</a>, TRUE, 0);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    UINT32 ExitInstrLength;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    __vmx_vmread(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5aa3197d354c750132f5ee47c0b6d01689">VM_EXIT_INSTRUCTION_LEN</a>, &amp;ExitInstrLength);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a0bdf4c635c3b05ce1409c6f2cf36ed50">VM_ENTRY_INSTRUCTION_LEN</a>, ExitInstrLength);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="_events_8c.html#a175c8152bdcd5e2d588ffb2f73cfaf0d">EventInjectInterruption</a>(<a class="code" href="_events_8h.html#ade7b98ff2f26b359a8d902773a55df03a0b2729a9e84efd468a517d30955d1eb4">INTERRUPT_TYPE_HARDWARE_EXCEPTION</a>, <a class="code" href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a1d0d116b641e7f166383c63ed356f618">EXCEPTION_VECTOR_GENERAL_PROTECTION_FAULT</a>, TRUE, 0);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    UINT32 ExitInstrLength;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    __vmx_vmread(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5aa3197d354c750132f5ee47c0b6d01689">VM_EXIT_INSTRUCTION_LEN</a>, &amp;ExitInstrLength);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a0bdf4c635c3b05ce1409c6f2cf36ed50">VM_ENTRY_INSTRUCTION_LEN</a>, ExitInstrLength);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -203,19 +244,19 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
-<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html">INTERRUPT_INFO</a> Inject = {0};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    Inject.<a class="code" href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#ab237f9df50dbe7ba94142b5ffca39a8a">Valid</a>          = TRUE;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Inject.<a class="code" href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#ab8b0bde7ca3849ba1bce47a565a683fb">InterruptType</a>  = InterruptionType;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Inject.<a class="code" href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#a6a8cb632150298f6d5dc6fc5050c4b7e">Vector</a>         = Vector;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    Inject.<a class="code" href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#a927eee1ee37c17d54aec87b62739f2dc">DeliverCode</a>    = DeliverErrorCode;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a595d2cafb9b2af931d5e263b456bca5b">VM_ENTRY_INTR_INFO</a>, Inject.<a class="code" href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#ab4a7a33036023bb4c9584e96797dab66">Flags</a>);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> (DeliverErrorCode)</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a49913941b894bea8a153fc7cda61b4a7">VM_ENTRY_EXCEPTION_ERROR_CODE</a>, ErrorCode);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html">INTERRUPT_INFO</a> Inject = {0};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    Inject.<a class="code" href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#ab237f9df50dbe7ba94142b5ffca39a8a">Valid</a>          = TRUE;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    Inject.<a class="code" href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#ab8b0bde7ca3849ba1bce47a565a683fb">InterruptType</a>  = InterruptionType;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Inject.<a class="code" href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#a6a8cb632150298f6d5dc6fc5050c4b7e">Vector</a>         = Vector;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Inject.<a class="code" href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#a927eee1ee37c17d54aec87b62739f2dc">DeliverCode</a>    = DeliverErrorCode;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a595d2cafb9b2af931d5e263b456bca5b">VM_ENTRY_INTR_INFO</a>, Inject.<a class="code" href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#ab4a7a33036023bb4c9584e96797dab66">Flags</a>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (DeliverErrorCode)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a49913941b894bea8a153fc7cda61b4a7">VM_ENTRY_EXCEPTION_ERROR_CODE</a>, ErrorCode);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -243,17 +284,17 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
-<div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// Error code is from PAGE_FAULT_ERROR_CODE structure</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="_events_8c.html#a175c8152bdcd5e2d588ffb2f73cfaf0d">EventInjectInterruption</a>(<a class="code" href="_events_8h.html#ade7b98ff2f26b359a8d902773a55df03a0b2729a9e84efd468a517d30955d1eb4">INTERRUPT_TYPE_HARDWARE_EXCEPTION</a>, <a class="code" href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a6a2e04f0e1552752bd9419a4019638a2">EXCEPTION_VECTOR_PAGE_FAULT</a>, TRUE, ErrorCode);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">// Error code is from PAGE_FAULT_ERROR_CODE structure</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <a class="code" href="_events_8c.html#a175c8152bdcd5e2d588ffb2f73cfaf0d">EventInjectInterruption</a>(<a class="code" href="_events_8h.html#ade7b98ff2f26b359a8d902773a55df03a0b2729a9e84efd468a517d30955d1eb4">INTERRUPT_TYPE_HARDWARE_EXCEPTION</a>, <a class="code" href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a6a2e04f0e1552752bd9419a4019638a2">EXCEPTION_VECTOR_PAGE_FAULT</a>, TRUE, ErrorCode);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a0eee44503a38016aa67dadd65461864d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0eee44503a38016aa67dadd65461864d">&#9670;&nbsp;</a></span>EventInjectUndefinedOpcode()</h2>
+<a id="a58c5b3b8a4a01b4fc9be1c88a549cf37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58c5b3b8a4a01b4fc9be1c88a549cf37">&#9670;&nbsp;</a></span>EventInjectUndefinedOpcode()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +302,8 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">VOID EventInjectUndefinedOpcode </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">UINT32&#160;</td>
+          <td class="paramname"><em>CurrentProcessorIndex</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -269,35 +311,47 @@ Functions</h2></td></tr>
 
 <p>Inject #UD to the guest (Invalid Opcode - Undefined Opcode) </p>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="_events_8c.html#a175c8152bdcd5e2d588ffb2f73cfaf0d">EventInjectInterruption</a>(<a class="code" href="_events_8h.html#ade7b98ff2f26b359a8d902773a55df03a0b2729a9e84efd468a517d30955d1eb4">INTERRUPT_TYPE_HARDWARE_EXCEPTION</a>, <a class="code" href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a33fbb650006f5fc9e3080438e80de36c">EXCEPTION_VECTOR_UNDEFINED_OPCODE</a>, FALSE, 0);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="_events_8c.html#a175c8152bdcd5e2d588ffb2f73cfaf0d">EventInjectInterruption</a>(<a class="code" href="_events_8h.html#ade7b98ff2f26b359a8d902773a55df03a0b2729a9e84efd468a517d30955d1eb4">INTERRUPT_TYPE_HARDWARE_EXCEPTION</a>, <a class="code" href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a33fbb650006f5fc9e3080438e80de36c">EXCEPTION_VECTOR_UNDEFINED_OPCODE</a>, FALSE, 0);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// Suppress RIP increment</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="_global_variables_8h.html#a04bac1f4beef0dcf1ce1a4d9ce72ea76">g_GuestState</a>[CurrentProcessorIndex].<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a95be62d62b8c4a2e9bd6bf75a0ba4cd1">IncrementRip</a> = FALSE;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="a_events_8h_html_af9640e4f7e36f7a6bf7c56e30a860349a33fbb650006f5fc9e3080438e80de36c"><div class="ttname"><a href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a33fbb650006f5fc9e3080438e80de36c">EXCEPTION_VECTOR_UNDEFINED_OPCODE</a></div><div class="ttdeci">@ EXCEPTION_VECTOR_UNDEFINED_OPCODE</div><div class="ttdef"><b>Definition:</b> Events.h:38</div></div>
-<div class="ttc" id="a_events_8h_html_af9640e4f7e36f7a6bf7c56e30a860349a6a2e04f0e1552752bd9419a4019638a2"><div class="ttname"><a href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a6a2e04f0e1552752bd9419a4019638a2">EXCEPTION_VECTOR_PAGE_FAULT</a></div><div class="ttdeci">@ EXCEPTION_VECTOR_PAGE_FAULT</div><div class="ttdef"><b>Definition:</b> Events.h:46</div></div>
-<div class="ttc" id="aunion___i_n_t_e_r_r_u_p_t___i_n_f_o_html_ab4a7a33036023bb4c9584e96797dab66"><div class="ttname"><a href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#ab4a7a33036023bb4c9584e96797dab66">_INTERRUPT_INFO::Flags</a></div><div class="ttdeci">UINT32 Flags</div><div class="ttdef"><b>Definition:</b> Events.h:98</div></div>
-<div class="ttc" id="a_events_8c_html_a175c8152bdcd5e2d588ffb2f73cfaf0d"><div class="ttname"><a href="_events_8c.html#a175c8152bdcd5e2d588ffb2f73cfaf0d">EventInjectInterruption</a></div><div class="ttdeci">VOID EventInjectInterruption(INTERRUPT_TYPE InterruptionType, EXCEPTION_VECTORS Vector, BOOLEAN DeliverErrorCode, ULONG32 ErrorCode)</div><div class="ttdoc">Injects interruption to a guest.</div><div class="ttdef"><b>Definition:</b> Events.c:25</div></div>
-<div class="ttc" id="a_events_8h_html_af9640e4f7e36f7a6bf7c56e30a860349a1d0d116b641e7f166383c63ed356f618"><div class="ttname"><a href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a1d0d116b641e7f166383c63ed356f618">EXCEPTION_VECTOR_GENERAL_PROTECTION_FAULT</a></div><div class="ttdeci">@ EXCEPTION_VECTOR_GENERAL_PROTECTION_FAULT</div><div class="ttdef"><b>Definition:</b> Events.h:45</div></div>
-<div class="ttc" id="aunion___i_n_t_e_r_r_u_p_t___i_n_f_o_html_ab237f9df50dbe7ba94142b5ffca39a8a"><div class="ttname"><a href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#ab237f9df50dbe7ba94142b5ffca39a8a">_INTERRUPT_INFO::Valid</a></div><div class="ttdeci">UINT32 Valid</div><div class="ttdef"><b>Definition:</b> Events.h:96</div></div>
-<div class="ttc" id="a_vmx_8h_html_a7ff71507e63e5659d2fc6db8b260d9e5aa3197d354c750132f5ee47c0b6d01689"><div class="ttname"><a href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5aa3197d354c750132f5ee47c0b6d01689">VM_EXIT_INSTRUCTION_LEN</a></div><div class="ttdeci">@ VM_EXIT_INSTRUCTION_LEN</div><div class="ttdef"><b>Definition:</b> Vmx.h:390</div></div>
-<div class="ttc" id="a_vmx_8h_html_a7ff71507e63e5659d2fc6db8b260d9e5a595d2cafb9b2af931d5e263b456bca5b"><div class="ttname"><a href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a595d2cafb9b2af931d5e263b456bca5b">VM_ENTRY_INTR_INFO</a></div><div class="ttdeci">@ VM_ENTRY_INTR_INFO</div><div class="ttdef"><b>Definition:</b> Vmx.h:377</div></div>
-<div class="ttc" id="aunion___i_n_t_e_r_r_u_p_t___i_n_f_o_html"><div class="ttname"><a href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html">_INTERRUPT_INFO</a></div><div class="ttdef"><b>Definition:</b> Events.h:86</div></div>
-<div class="ttc" id="a_events_8h_html_af9640e4f7e36f7a6bf7c56e30a860349af05cde4ca14e2535f235aa75286fa962"><div class="ttname"><a href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349af05cde4ca14e2535f235aa75286fa962">EXCEPTION_VECTOR_BREAKPOINT</a></div><div class="ttdeci">@ EXCEPTION_VECTOR_BREAKPOINT</div><div class="ttdef"><b>Definition:</b> Events.h:35</div></div>
-<div class="ttc" id="aunion___i_n_t_e_r_r_u_p_t___i_n_f_o_html_ab8b0bde7ca3849ba1bce47a565a683fb"><div class="ttname"><a href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#ab8b0bde7ca3849ba1bce47a565a683fb">_INTERRUPT_INFO::InterruptType</a></div><div class="ttdeci">UINT32 InterruptType</div><div class="ttdef"><b>Definition:</b> Events.h:93</div></div>
-<div class="ttc" id="a_vmx_8h_html_a7ff71507e63e5659d2fc6db8b260d9e5a0bdf4c635c3b05ce1409c6f2cf36ed50"><div class="ttname"><a href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a0bdf4c635c3b05ce1409c6f2cf36ed50">VM_ENTRY_INSTRUCTION_LEN</a></div><div class="ttdeci">@ VM_ENTRY_INSTRUCTION_LEN</div><div class="ttdef"><b>Definition:</b> Vmx.h:379</div></div>
-<div class="ttc" id="a_vmx_8h_html_a7ff71507e63e5659d2fc6db8b260d9e5a49913941b894bea8a153fc7cda61b4a7"><div class="ttname"><a href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a49913941b894bea8a153fc7cda61b4a7">VM_ENTRY_EXCEPTION_ERROR_CODE</a></div><div class="ttdeci">@ VM_ENTRY_EXCEPTION_ERROR_CODE</div><div class="ttdef"><b>Definition:</b> Vmx.h:378</div></div>
-<div class="ttc" id="aunion___i_n_t_e_r_r_u_p_t___i_n_f_o_html_a6a8cb632150298f6d5dc6fc5050c4b7e"><div class="ttname"><a href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#a6a8cb632150298f6d5dc6fc5050c4b7e">_INTERRUPT_INFO::Vector</a></div><div class="ttdeci">UINT32 Vector</div><div class="ttdef"><b>Definition:</b> Events.h:90</div></div>
-<div class="ttc" id="a_events_8h_html_ade7b98ff2f26b359a8d902773a55df03a0b2729a9e84efd468a517d30955d1eb4"><div class="ttname"><a href="_events_8h.html#ade7b98ff2f26b359a8d902773a55df03a0b2729a9e84efd468a517d30955d1eb4">INTERRUPT_TYPE_HARDWARE_EXCEPTION</a></div><div class="ttdeci">@ INTERRUPT_TYPE_HARDWARE_EXCEPTION</div><div class="ttdef"><b>Definition:</b> Events.h:75</div></div>
-<div class="ttc" id="aunion___i_n_t_e_r_r_u_p_t___i_n_f_o_html_a927eee1ee37c17d54aec87b62739f2dc"><div class="ttname"><a href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#a927eee1ee37c17d54aec87b62739f2dc">_INTERRUPT_INFO::DeliverCode</a></div><div class="ttdeci">UINT32 DeliverCode</div><div class="ttdef"><b>Definition:</b> Events.h:94</div></div>
-<div class="ttc" id="a_events_8h_html_ade7b98ff2f26b359a8d902773a55df03a2985132456229e8009af891f304cf6ac"><div class="ttname"><a href="_events_8h.html#ade7b98ff2f26b359a8d902773a55df03a2985132456229e8009af891f304cf6ac">INTERRUPT_TYPE_SOFTWARE_EXCEPTION</a></div><div class="ttdeci">@ INTERRUPT_TYPE_SOFTWARE_EXCEPTION</div><div class="ttdef"><b>Definition:</b> Events.h:78</div></div>
+</div><!-- doc-content -->
+<div class="ttc" id="a_events_8h_html_af9640e4f7e36f7a6bf7c56e30a860349a33fbb650006f5fc9e3080438e80de36c"><div class="ttname"><a href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a33fbb650006f5fc9e3080438e80de36c">EXCEPTION_VECTOR_UNDEFINED_OPCODE</a></div><div class="ttdeci">@ EXCEPTION_VECTOR_UNDEFINED_OPCODE</div><div class="ttdef"><b>Definition:</b> Events.h:37</div></div>
+<div class="ttc" id="a_events_8h_html_af9640e4f7e36f7a6bf7c56e30a860349a6a2e04f0e1552752bd9419a4019638a2"><div class="ttname"><a href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a6a2e04f0e1552752bd9419a4019638a2">EXCEPTION_VECTOR_PAGE_FAULT</a></div><div class="ttdeci">@ EXCEPTION_VECTOR_PAGE_FAULT</div><div class="ttdef"><b>Definition:</b> Events.h:45</div></div>
+<div class="ttc" id="aunion___i_n_t_e_r_r_u_p_t___i_n_f_o_html_ab4a7a33036023bb4c9584e96797dab66"><div class="ttname"><a href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#ab4a7a33036023bb4c9584e96797dab66">_INTERRUPT_INFO::Flags</a></div><div class="ttdeci">UINT32 Flags</div><div class="ttdef"><b>Definition:</b> Events.h:110</div></div>
+<div class="ttc" id="a_events_8c_html_a175c8152bdcd5e2d588ffb2f73cfaf0d"><div class="ttname"><a href="_events_8c.html#a175c8152bdcd5e2d588ffb2f73cfaf0d">EventInjectInterruption</a></div><div class="ttdeci">VOID EventInjectInterruption(INTERRUPT_TYPE InterruptionType, EXCEPTION_VECTORS Vector, BOOLEAN DeliverErrorCode, ULONG32 ErrorCode)</div><div class="ttdoc">Injects interruption to a guest.</div><div class="ttdef"><b>Definition:</b> Events.c:24</div></div>
+<div class="ttc" id="a_events_8h_html_af9640e4f7e36f7a6bf7c56e30a860349a1d0d116b641e7f166383c63ed356f618"><div class="ttname"><a href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a1d0d116b641e7f166383c63ed356f618">EXCEPTION_VECTOR_GENERAL_PROTECTION_FAULT</a></div><div class="ttdeci">@ EXCEPTION_VECTOR_GENERAL_PROTECTION_FAULT</div><div class="ttdef"><b>Definition:</b> Events.h:44</div></div>
+<div class="ttc" id="astruct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e_html_a95be62d62b8c4a2e9bd6bf75a0ba4cd1"><div class="ttname"><a href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a95be62d62b8c4a2e9bd6bf75a0ba4cd1">_VIRTUAL_MACHINE_STATE::IncrementRip</a></div><div class="ttdeci">BOOLEAN IncrementRip</div><div class="ttdef"><b>Definition:</b> Vmx.h:537</div></div>
+<div class="ttc" id="a_global_variables_8h_html_a04bac1f4beef0dcf1ce1a4d9ce72ea76"><div class="ttname"><a href="_global_variables_8h.html#a04bac1f4beef0dcf1ce1a4d9ce72ea76">g_GuestState</a></div><div class="ttdeci">VIRTUAL_MACHINE_STATE * g_GuestState</div><div class="ttdoc">Save the state and variables related to each to logical core.</div><div class="ttdef"><b>Definition:</b> GlobalVariables.h:25</div></div>
+<div class="ttc" id="aunion___i_n_t_e_r_r_u_p_t___i_n_f_o_html_ab237f9df50dbe7ba94142b5ffca39a8a"><div class="ttname"><a href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#ab237f9df50dbe7ba94142b5ffca39a8a">_INTERRUPT_INFO::Valid</a></div><div class="ttdeci">UINT32 Valid</div><div class="ttdef"><b>Definition:</b> Events.h:108</div></div>
+<div class="ttc" id="a_vmx_8h_html_a7ff71507e63e5659d2fc6db8b260d9e5aa3197d354c750132f5ee47c0b6d01689"><div class="ttname"><a href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5aa3197d354c750132f5ee47c0b6d01689">VM_EXIT_INSTRUCTION_LEN</a></div><div class="ttdeci">@ VM_EXIT_INSTRUCTION_LEN</div><div class="ttdef"><b>Definition:</b> Vmx.h:431</div></div>
+<div class="ttc" id="a_vmx_8h_html_a7ff71507e63e5659d2fc6db8b260d9e5a595d2cafb9b2af931d5e263b456bca5b"><div class="ttname"><a href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a595d2cafb9b2af931d5e263b456bca5b">VM_ENTRY_INTR_INFO</a></div><div class="ttdeci">@ VM_ENTRY_INTR_INFO</div><div class="ttdef"><b>Definition:</b> Vmx.h:418</div></div>
+<div class="ttc" id="aunion___i_n_t_e_r_r_u_p_t___i_n_f_o_html"><div class="ttname"><a href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html">_INTERRUPT_INFO</a></div><div class="ttdoc">Interrupt injection and event format.</div><div class="ttdef"><b>Definition:</b> Events.h:98</div></div>
+<div class="ttc" id="a_events_8h_html_af9640e4f7e36f7a6bf7c56e30a860349af05cde4ca14e2535f235aa75286fa962"><div class="ttname"><a href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349af05cde4ca14e2535f235aa75286fa962">EXCEPTION_VECTOR_BREAKPOINT</a></div><div class="ttdeci">@ EXCEPTION_VECTOR_BREAKPOINT</div><div class="ttdef"><b>Definition:</b> Events.h:34</div></div>
+<div class="ttc" id="aunion___i_n_t_e_r_r_u_p_t___i_n_f_o_html_ab8b0bde7ca3849ba1bce47a565a683fb"><div class="ttname"><a href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#ab8b0bde7ca3849ba1bce47a565a683fb">_INTERRUPT_INFO::InterruptType</a></div><div class="ttdeci">UINT32 InterruptType</div><div class="ttdef"><b>Definition:</b> Events.h:105</div></div>
+<div class="ttc" id="a_vmx_8h_html_a7ff71507e63e5659d2fc6db8b260d9e5a0bdf4c635c3b05ce1409c6f2cf36ed50"><div class="ttname"><a href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a0bdf4c635c3b05ce1409c6f2cf36ed50">VM_ENTRY_INSTRUCTION_LEN</a></div><div class="ttdeci">@ VM_ENTRY_INSTRUCTION_LEN</div><div class="ttdef"><b>Definition:</b> Vmx.h:420</div></div>
+<div class="ttc" id="a_vmx_8h_html_a7ff71507e63e5659d2fc6db8b260d9e5a49913941b894bea8a153fc7cda61b4a7"><div class="ttname"><a href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a49913941b894bea8a153fc7cda61b4a7">VM_ENTRY_EXCEPTION_ERROR_CODE</a></div><div class="ttdeci">@ VM_ENTRY_EXCEPTION_ERROR_CODE</div><div class="ttdef"><b>Definition:</b> Vmx.h:419</div></div>
+<div class="ttc" id="aunion___i_n_t_e_r_r_u_p_t___i_n_f_o_html_a6a8cb632150298f6d5dc6fc5050c4b7e"><div class="ttname"><a href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#a6a8cb632150298f6d5dc6fc5050c4b7e">_INTERRUPT_INFO::Vector</a></div><div class="ttdeci">UINT32 Vector</div><div class="ttdef"><b>Definition:</b> Events.h:102</div></div>
+<div class="ttc" id="a_events_8h_html_ade7b98ff2f26b359a8d902773a55df03a0b2729a9e84efd468a517d30955d1eb4"><div class="ttname"><a href="_events_8h.html#ade7b98ff2f26b359a8d902773a55df03a0b2729a9e84efd468a517d30955d1eb4">INTERRUPT_TYPE_HARDWARE_EXCEPTION</a></div><div class="ttdeci">@ INTERRUPT_TYPE_HARDWARE_EXCEPTION</div><div class="ttdef"><b>Definition:</b> Events.h:83</div></div>
+<div class="ttc" id="aunion___i_n_t_e_r_r_u_p_t___i_n_f_o_html_a927eee1ee37c17d54aec87b62739f2dc"><div class="ttname"><a href="union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#a927eee1ee37c17d54aec87b62739f2dc">_INTERRUPT_INFO::DeliverCode</a></div><div class="ttdeci">UINT32 DeliverCode</div><div class="ttdef"><b>Definition:</b> Events.h:106</div></div>
+<div class="ttc" id="a_events_8h_html_af9640e4f7e36f7a6bf7c56e30a860349a56a4f1677785327990a937d52760d5a1"><div class="ttname"><a href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a56a4f1677785327990a937d52760d5a1">EXCEPTION_VECTOR_DEBUG_BREAKPOINT</a></div><div class="ttdeci">@ EXCEPTION_VECTOR_DEBUG_BREAKPOINT</div><div class="ttdef"><b>Definition:</b> Events.h:32</div></div>
+<div class="ttc" id="a_events_8h_html_ade7b98ff2f26b359a8d902773a55df03a2985132456229e8009af891f304cf6ac"><div class="ttname"><a href="_events_8h.html#ade7b98ff2f26b359a8d902773a55df03a2985132456229e8009af891f304cf6ac">INTERRUPT_TYPE_SOFTWARE_EXCEPTION</a></div><div class="ttdeci">@ INTERRUPT_TYPE_SOFTWARE_EXCEPTION</div><div class="ttdef"><b>Definition:</b> Events.h:86</div></div>
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_19054a674c4bd5cb8fceb6542228579c.html">hprdbghv</a></li><li class="navelem"><a class="el" href="_events_8c.html">Events.c</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

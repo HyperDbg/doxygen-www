@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -46,6 +50,22 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('globals_d.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -64,29 +84,56 @@ $(function() {
 <div class="textblock">Here is a list of all file members with links to the files they belong to:</div>
 
 <h3><a id="index_d"></a>- d -</h3><ul>
+<li>DEBUG_REGISTER_6
+: <a class="el" href="hprdbghv_2_common_8h.html#a59762e541f82ae0770bd3961ef5a4986">Common.h</a>
+</li>
+<li>DEBUG_REGISTER_7
+: <a class="el" href="hprdbghv_2_common_8h.html#ab476c3ec6c25bee6580cc5e1b3b1ba64">Common.h</a>
+</li>
 <li>DEBUGGER_CORE_EVENTS
-: <a class="el" href="_debugger_8h.html#a61aff702c31f36b2e61c0d1ccdea4a56">Debugger.h</a>
+: <a class="el" href="hprdbghv_2_debugger_8h.html#a61aff702c31f36b2e61c0d1ccdea4a56">Debugger.h</a>
+</li>
+<li>DEBUGGER_TEST_ALL_COMMANDS
+: <a class="el" href="tests_8h.html#a028358b1d5fc0ec68c434c6e38e0d4d9">tests.h</a>
+</li>
+<li>DEBUGGER_TEST_VMM_MONITOR_COMMAND
+: <a class="el" href="tests_8h.html#ad59483c7f780b8a64740cdfb44fc1428">tests.h</a>
 </li>
 <li>DebuggerAddActionToEvent()
 : <a class="el" href="_debugger_8c.html#a963a3712b41b723d533832de776a705d">Debugger.c</a>
-, <a class="el" href="_debugger_8h.html#a963a3712b41b723d533832de776a705d">Debugger.h</a>
+, <a class="el" href="hprdbghv_2_debugger_8h.html#a963a3712b41b723d533832de776a705d">Debugger.h</a>
 </li>
 <li>DebuggerCheckForCondition
-: <a class="el" href="_debugger_8h.html#af973ba622a55c6cf5a6878550e59a838">Debugger.h</a>
+: <a class="el" href="hprdbghv_2_debugger_8h.html#af973ba622a55c6cf5a6878550e59a838">Debugger.h</a>
+</li>
+<li>DebuggerCommandEditMemory()
+: <a class="el" href="_debugger_commands_8c.html#af777c50999a33ad8c4555984d41c5ae5">DebuggerCommands.c</a>
+, <a class="el" href="_debugger_commands_8h.html#af777c50999a33ad8c4555984d41c5ae5">DebuggerCommands.h</a>
+</li>
+<li>DebuggerCommandFlush()
+: <a class="el" href="_debugger_commands_8c.html#aeaad6ca3d40207e5acacf96ae173aefe">DebuggerCommands.c</a>
+, <a class="el" href="_debugger_commands_8h.html#aeaad6ca3d40207e5acacf96ae173aefe">DebuggerCommands.h</a>
 </li>
 <li>DebuggerCommandReadMemory()
 : <a class="el" href="_debugger_commands_8c.html#aed26ac9a0e19f75d30c112aa8537c6e1">DebuggerCommands.c</a>
 , <a class="el" href="_debugger_commands_8h.html#aed26ac9a0e19f75d30c112aa8537c6e1">DebuggerCommands.h</a>
 </li>
+<li>DebuggerCommandSearchMemory()
+: <a class="el" href="_debugger_commands_8h.html#a90d49ed0d4f0c40139d885b24e4c5b81">DebuggerCommands.h</a>
+, <a class="el" href="_debugger_commands_8c.html#a90d49ed0d4f0c40139d885b24e4c5b81">DebuggerCommands.c</a>
+</li>
 <li>DebuggerCreateEvent()
-: <a class="el" href="_debugger_8h.html#a88f59580f1d5a0f204d734ff957efb28">Debugger.h</a>
-, <a class="el" href="_debugger_8c.html#a88f59580f1d5a0f204d734ff957efb28">Debugger.c</a>
+: <a class="el" href="_debugger_8c.html#ad87042b3b2ca8c20e723f750c8952ec2">Debugger.c</a>
+, <a class="el" href="hprdbghv_2_debugger_8h.html#ad87042b3b2ca8c20e723f750c8952ec2">Debugger.h</a>
 </li>
 <li>DebuggerDisableEvent()
 : <a class="el" href="_debugger_8c.html#a80484d0a5b060724315e4aac0a732671">Debugger.c</a>
 </li>
 <li>DebuggerEnableEvent()
 : <a class="el" href="_debugger_8c.html#ad01633c5f92dfb1414a969734e739e4b">Debugger.c</a>
+</li>
+<li>DebuggerEnableOrDisableAllEvents()
+: <a class="el" href="_debugger_8c.html#a4f1bd02e56b41c3760e452d2b0962fb0">Debugger.c</a>
 </li>
 <li>DebuggerEventDisableEferOnAllProcessors()
 : <a class="el" href="_debugger_events_8c.html#a4123040beace904804dad5fac1d22984">DebuggerEvents.c</a>
@@ -97,44 +144,55 @@ $(function() {
 , <a class="el" href="_debugger_events_8h.html#a99d50857c7106a46de155ef9d644f4f2">DebuggerEvents.h</a>
 </li>
 <li>DebuggerEventEnableMonitorReadAndWriteForAddress()
-: <a class="el" href="_debugger_events_8h.html#a1b06490ed0b857b2fb00f898308a77a1">DebuggerEvents.h</a>
-, <a class="el" href="_debugger_events_8c.html#a1b06490ed0b857b2fb00f898308a77a1">DebuggerEvents.c</a>
+: <a class="el" href="_debugger_events_8c.html#a9750741c5f7cef5f18b5443380182b42">DebuggerEvents.c</a>
+, <a class="el" href="_debugger_events_8h.html#a9750741c5f7cef5f18b5443380182b42">DebuggerEvents.h</a>
 </li>
-<li>DebuggerEventHiddenHookGeneralDetourEventHandler()
-: <a class="el" href="_debugger_events_8c.html#a8cae4508509eda167de9c2bb7b975e14">DebuggerEvents.c</a>
-, <a class="el" href="_debugger_events_8h.html#a8cae4508509eda167de9c2bb7b975e14">DebuggerEvents.h</a>
+<li>DebuggerEventEptHook2GeneralDetourEventHandler()
+: <a class="el" href="_debugger_events_8c.html#a1ce30b5fd38416ccbdaaf6995de33606">DebuggerEvents.c</a>
+, <a class="el" href="_debugger_events_8h.html#a1ce30b5fd38416ccbdaaf6995de33606">DebuggerEvents.h</a>
+</li>
+<li>DebuggerEventListCount()
+: <a class="el" href="_debugger_8c.html#ab39f5229ff2bdde6c47e09738e98d490">Debugger.c</a>
+, <a class="el" href="hprdbghv_2_debugger_8h.html#ab39f5229ff2bdde6c47e09738e98d490">Debugger.h</a>
 </li>
 <li>DebuggerGetEventByTag()
 : <a class="el" href="_debugger_8c.html#a43de3d8c768fd3293cd240646384164d">Debugger.c</a>
-, <a class="el" href="_debugger_8h.html#a43de3d8c768fd3293cd240646384164d">Debugger.h</a>
+, <a class="el" href="hprdbghv_2_debugger_8h.html#a43de3d8c768fd3293cd240646384164d">Debugger.h</a>
 </li>
 <li>DebuggerInitialize()
 : <a class="el" href="_debugger_8c.html#a6db6fc9c681fadbd5971d840f5cb9dca">Debugger.c</a>
-, <a class="el" href="_debugger_8h.html#a6db6fc9c681fadbd5971d840f5cb9dca">Debugger.h</a>
+, <a class="el" href="hprdbghv_2_debugger_8h.html#a6db6fc9c681fadbd5971d840f5cb9dca">Debugger.h</a>
+</li>
+<li>DebuggerIsTagValid()
+: <a class="el" href="_debugger_8c.html#abfdb05d6c34bdde4284c4f0eb3d5970f">Debugger.c</a>
 </li>
 <li>DebuggerParseActionFromUsermode()
 : <a class="el" href="_debugger_8c.html#a636e4397667f327bd318e0ced68c74c2">Debugger.c</a>
-, <a class="el" href="_debugger_8h.html#a636e4397667f327bd318e0ced68c74c2">Debugger.h</a>
+, <a class="el" href="hprdbghv_2_debugger_8h.html#a636e4397667f327bd318e0ced68c74c2">Debugger.h</a>
 </li>
 <li>DebuggerParseEventFromUsermode()
 : <a class="el" href="_debugger_8c.html#a488a2c7fa18f1f6378a03fcbb8fc60cf">Debugger.c</a>
-, <a class="el" href="_debugger_8h.html#a488a2c7fa18f1f6378a03fcbb8fc60cf">Debugger.h</a>
+, <a class="el" href="hprdbghv_2_debugger_8h.html#a488a2c7fa18f1f6378a03fcbb8fc60cf">Debugger.h</a>
+</li>
+<li>DebuggerParseEventsModificationFromUsermode()
+: <a class="el" href="_debugger_8c.html#a409b1876a7845d3c17979fc2ace2a567">Debugger.c</a>
+, <a class="el" href="hprdbghv_2_debugger_8h.html#a409b1876a7845d3c17979fc2ace2a567">Debugger.h</a>
 </li>
 <li>DebuggerPerformActions()
 : <a class="el" href="_debugger_8c.html#a00231c8b6a32a7cea70686acc1971588">Debugger.c</a>
-, <a class="el" href="_debugger_8h.html#a00231c8b6a32a7cea70686acc1971588">Debugger.h</a>
+, <a class="el" href="hprdbghv_2_debugger_8h.html#a00231c8b6a32a7cea70686acc1971588">Debugger.h</a>
 </li>
 <li>DebuggerPerformBreakToDebugger()
 : <a class="el" href="_debugger_8c.html#a7a37b4ac4674a750132c3377446b3c82">Debugger.c</a>
-, <a class="el" href="_debugger_8h.html#a7a37b4ac4674a750132c3377446b3c82">Debugger.h</a>
+, <a class="el" href="hprdbghv_2_debugger_8h.html#a7a37b4ac4674a750132c3377446b3c82">Debugger.h</a>
 </li>
 <li>DebuggerPerformLogTheStates()
-: <a class="el" href="_debugger_8h.html#af7142d673b51de9d12aa6bc40803bfdb">Debugger.h</a>
-, <a class="el" href="_debugger_8c.html#af7142d673b51de9d12aa6bc40803bfdb">Debugger.c</a>
+: <a class="el" href="_debugger_8c.html#af7142d673b51de9d12aa6bc40803bfdb">Debugger.c</a>
+, <a class="el" href="hprdbghv_2_debugger_8h.html#af7142d673b51de9d12aa6bc40803bfdb">Debugger.h</a>
 </li>
 <li>DebuggerPerformRunTheCustomCode()
 : <a class="el" href="_debugger_8c.html#aff4267bbbc02413eee5232e322796da2">Debugger.c</a>
-, <a class="el" href="_debugger_8h.html#aff4267bbbc02413eee5232e322796da2">Debugger.h</a>
+, <a class="el" href="hprdbghv_2_debugger_8h.html#aff4267bbbc02413eee5232e322796da2">Debugger.h</a>
 </li>
 <li>DebuggerReadOrWriteMsr()
 : <a class="el" href="_debugger_commands_8c.html#a6cacf53abe149ebe3e2c43ad68d43e22">DebuggerCommands.c</a>
@@ -142,24 +200,34 @@ $(function() {
 </li>
 <li>DebuggerRegisterEvent()
 : <a class="el" href="_debugger_8c.html#a3f29fb4a36e71433402f64988d355610">Debugger.c</a>
-, <a class="el" href="_debugger_8h.html#a3f29fb4a36e71433402f64988d355610">Debugger.h</a>
+, <a class="el" href="hprdbghv_2_debugger_8h.html#a3f29fb4a36e71433402f64988d355610">Debugger.h</a>
 </li>
 <li>DebuggerRemoveAllActionsFromEvent()
 : <a class="el" href="_debugger_8c.html#a48a05d581e75e633505771b789a53fc7">Debugger.c</a>
 </li>
+<li>DebuggerRemoveAllEvents()
+: <a class="el" href="_debugger_8c.html#a57e21c542c4398a07de0b401e1a3335b">Debugger.c</a>
+</li>
 <li>DebuggerRemoveEvent()
 : <a class="el" href="_debugger_8c.html#a0f0fb0834b9e5f62d3d4314e545df618">Debugger.c</a>
-, <a class="el" href="_debugger_8h.html#a0f0fb0834b9e5f62d3d4314e545df618">Debugger.h</a>
+, <a class="el" href="hprdbghv_2_debugger_8h.html#a0f0fb0834b9e5f62d3d4314e545df618">Debugger.h</a>
 </li>
 <li>DebuggerRemoveEventFromEventList()
 : <a class="el" href="_debugger_8c.html#aeff46d84155e764655bf6004e6ec2add">Debugger.c</a>
 </li>
 <li>DebuggerRunCustomCodeFunc
-: <a class="el" href="_debugger_8h.html#aa52a9abc0f3e369a009d506794f80e37">Debugger.h</a>
+: <a class="el" href="hprdbghv_2_debugger_8h.html#aa52a9abc0f3e369a009d506794f80e37">Debugger.h</a>
+</li>
+<li>DebuggerTerminateAllEvents()
+: <a class="el" href="_debugger_8c.html#a43ee6a34b5cfe3a5c5d7caa7a5470e31">Debugger.c</a>
+</li>
+<li>DebuggerTerminateEvent()
+: <a class="el" href="hprdbghv_2_debugger_8h.html#af1aa660594f5eb8c75f4fda7605b39fb">Debugger.h</a>
+, <a class="el" href="_debugger_8c.html#af1aa660594f5eb8c75f4fda7605b39fb">Debugger.c</a>
 </li>
 <li>DebuggerTriggerEvents()
 : <a class="el" href="_debugger_8c.html#aac71ecf7a7e99662000efef060a32775">Debugger.c</a>
-, <a class="el" href="_debugger_8h.html#aac71ecf7a7e99662000efef060a32775">Debugger.h</a>
+, <a class="el" href="hprdbghv_2_debugger_8h.html#aac71ecf7a7e99662000efef060a32775">Debugger.h</a>
 </li>
 <li>default_print_address_absolute
 : <a class="el" href="disassembler_8cpp.html#aed171a71a59152aeb13e39e504316bcb">disassembler.cpp</a>
@@ -170,19 +238,54 @@ $(function() {
 <li>DETOUR_HOOK_DETAILS
 : <a class="el" href="_pool_manager_8h.html#ac9e1b58ef1b236c646eb5ca0d4205f46a898d2549c3e40191c8e23e4ee687663b">PoolManager.h</a>
 </li>
-<li>DeviceHandle
-: <a class="el" href="_commands_8h.html#a775f9ac5ca6e581f07d41b537ea05e96">Commands.h</a>
-, <a class="el" href="hprdbgctrl_8cpp.html#a775f9ac5ca6e581f07d41b537ea05e96">hprdbgctrl.cpp</a>
-</li>
 <li>DisassembleBuffer()
 : <a class="el" href="disassembler_8cpp.html#a0938a8c533a415d0882e092a9e9a6ab5">disassembler.cpp</a>
 </li>
 <li>DllMain()
 : <a class="el" href="dllmain_8cpp.html#a26e64fb39b69bcd9d1274d279f1561b9">dllmain.cpp</a>
 </li>
+<li>DPC_INTERRUPT
+: <a class="el" href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349ac6c28232aa8eed4ca952c96da887b90d">Events.h</a>
+</li>
+<li>DpcRoutinePerformChangeIoBitmapOnSingleCore()
+: <a class="el" href="_dpc_routines_8c.html#a4ce952e8ebd61cde6d6dcc118fb77541">DpcRoutines.c</a>
+, <a class="el" href="_dpc_routines_8h.html#a4ce952e8ebd61cde6d6dcc118fb77541">DpcRoutines.h</a>
+</li>
+<li>DpcRoutinePerformChangeMsrBitmapReadOnSingleCore()
+: <a class="el" href="_dpc_routines_8c.html#a64193ff039021b05cfee8e048af68c31">DpcRoutines.c</a>
+, <a class="el" href="_dpc_routines_8h.html#a64193ff039021b05cfee8e048af68c31">DpcRoutines.h</a>
+</li>
+<li>DpcRoutinePerformChangeMsrBitmapWriteOnSingleCore()
+: <a class="el" href="_dpc_routines_8c.html#a7b111e2caa07e0259a61102db2ba61af">DpcRoutines.c</a>
+, <a class="el" href="_dpc_routines_8h.html#a7b111e2caa07e0259a61102db2ba61af">DpcRoutines.h</a>
+</li>
+<li>DpcRoutinePerformEnableEferSyscallHookOnSingleCore()
+: <a class="el" href="_dpc_routines_8c.html#a3aecac4c6c92d962339067855d42795a">DpcRoutines.c</a>
+, <a class="el" href="_dpc_routines_8h.html#a3aecac4c6c92d962339067855d42795a">DpcRoutines.h</a>
+</li>
+<li>DpcRoutinePerformEnableMovToDebugRegistersExiting()
+: <a class="el" href="_dpc_routines_8c.html#aef7db7dd1e1f564dd5db438db232c4ef">DpcRoutines.c</a>
+, <a class="el" href="_dpc_routines_8h.html#aef7db7dd1e1f564dd5db438db232c4ef">DpcRoutines.h</a>
+</li>
+<li>DpcRoutinePerformEnableRdpmcExitingOnSingleCore()
+: <a class="el" href="_dpc_routines_8c.html#a6fe8d23e3fd81eecba6f28a50f454222">DpcRoutines.c</a>
+, <a class="el" href="_dpc_routines_8h.html#a6fe8d23e3fd81eecba6f28a50f454222">DpcRoutines.h</a>
+</li>
+<li>DpcRoutinePerformEnableRdtscExitingOnSingleCore()
+: <a class="el" href="_dpc_routines_8h.html#a508772fcbdb9d34fd81501639eb996e1">DpcRoutines.h</a>
+, <a class="el" href="_dpc_routines_8c.html#a508772fcbdb9d34fd81501639eb996e1">DpcRoutines.c</a>
+</li>
 <li>DpcRoutinePerformReadMsr()
 : <a class="el" href="_dpc_routines_8c.html#a6b602a352170d025aa12387207214382">DpcRoutines.c</a>
 , <a class="el" href="_dpc_routines_8h.html#a6b602a352170d025aa12387207214382">DpcRoutines.h</a>
+</li>
+<li>DpcRoutinePerformSetExceptionBitmapOnSingleCore()
+: <a class="el" href="_dpc_routines_8c.html#ae81da9f18268df6f043f0f715099bdce">DpcRoutines.c</a>
+, <a class="el" href="_dpc_routines_8h.html#ae81da9f18268df6f043f0f715099bdce">DpcRoutines.h</a>
+</li>
+<li>DpcRoutinePerformSetExternalInterruptExitingOnSingleCore()
+: <a class="el" href="_dpc_routines_8c.html#acb4f0c4f4fc5c02f54f30cff5f4c8192">DpcRoutines.c</a>
+, <a class="el" href="_dpc_routines_8h.html#acb4f0c4f4fc5c02f54f30cff5f4c8192">DpcRoutines.h</a>
 </li>
 <li>DpcRoutinePerformWriteMsr()
 : <a class="el" href="_dpc_routines_8c.html#a5db83f6e1cbc79c9147fabc0c3b97744">DpcRoutines.c</a>
@@ -193,62 +296,62 @@ $(function() {
 , <a class="el" href="_dpc_routines_8c.html#a860d1d5fbe8605d03eda7327935c799e">DpcRoutines.c</a>
 </li>
 <li>DPL_SYSTEM
-: <a class="el" href="_common_8h.html#a4f7c225459deeff121691a7853c0cd71">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a4f7c225459deeff121691a7853c0cd71">Common.h</a>
 </li>
 <li>DPL_USER
-: <a class="el" href="_common_8h.html#a060d4d4e32af81cab881fe77e58d7b78">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a060d4d4e32af81cab881fe77e58d7b78">Common.h</a>
 </li>
 <li>DRIVER_FUNC_INSTALL
-: <a class="el" href="hprdbgctrl_8h.html#aa378ee498aed65ff64444bb86c60a86c">hprdbgctrl.h</a>
+: <a class="el" href="install_8h.html#aa378ee498aed65ff64444bb86c60a86c">install.h</a>
 </li>
 <li>DRIVER_FUNC_REMOVE
-: <a class="el" href="hprdbgctrl_8h.html#a59f927de3a1d0e607fc731b2875e8257">hprdbgctrl.h</a>
+: <a class="el" href="install_8h.html#a59f927de3a1d0e607fc731b2875e8257">install.h</a>
 </li>
 <li>DriverEntry()
 : <a class="el" href="_driver_8c.html#a4ed7faf004ab5dee6ce9d9b019cda097">Driver.c</a>
-, <a class="el" href="_common_8h.html#a4ed7faf004ab5dee6ce9d9b019cda097">Common.h</a>
-</li>
-<li>driverLocation
-: <a class="el" href="hprdbgctrl_8cpp.html#adf5f11ae4ed62e34b7058d4e8f3260b2">hprdbgctrl.cpp</a>
+, <a class="el" href="hprdbghv_2_common_8h.html#a4ed7faf004ab5dee6ce9d9b019cda097">Common.h</a>
 </li>
 <li>DrvClose()
-: <a class="el" href="_common_8h.html#acedde94550bde1b32c5bca85e04e1434">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#acedde94550bde1b32c5bca85e04e1434">Common.h</a>
 , <a class="el" href="_driver_8c.html#acedde94550bde1b32c5bca85e04e1434">Driver.c</a>
 </li>
 <li>DrvCreate()
-: <a class="el" href="_common_8h.html#af424483bd66c7560575c7b7b354c7d54">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#af424483bd66c7560575c7b7b354c7d54">Common.h</a>
 , <a class="el" href="_driver_8c.html#af424483bd66c7560575c7b7b354c7d54">Driver.c</a>
 </li>
 <li>DrvDispatchIoControl()
-: <a class="el" href="_driver_8c.html#a9b1c338b52f9ef55e63626ee2d0451f2">Driver.c</a>
-, <a class="el" href="_common_8h.html#a9b1c338b52f9ef55e63626ee2d0451f2">Common.h</a>
+: <a class="el" href="_ioctl_8c.html#a9b1c338b52f9ef55e63626ee2d0451f2">Ioctl.c</a>
+, <a class="el" href="hprdbghv_2_common_8h.html#a9b1c338b52f9ef55e63626ee2d0451f2">Common.h</a>
 </li>
 <li>DrvRead()
 : <a class="el" href="_driver_8c.html#aa9638ec0bc5007d380869cb23b494768">Driver.c</a>
-, <a class="el" href="_common_8h.html#aa9638ec0bc5007d380869cb23b494768">Common.h</a>
+, <a class="el" href="hprdbghv_2_common_8h.html#aa9638ec0bc5007d380869cb23b494768">Common.h</a>
 </li>
 <li>DrvUnload()
-: <a class="el" href="_common_8h.html#ae4d7e77b35f8a9a838a81383e8b156e2">Common.h</a>
-, <a class="el" href="_driver_8c.html#ae4d7e77b35f8a9a838a81383e8b156e2">Driver.c</a>
+: <a class="el" href="_driver_8c.html#ae4d7e77b35f8a9a838a81383e8b156e2">Driver.c</a>
+, <a class="el" href="hprdbghv_2_common_8h.html#ae4d7e77b35f8a9a838a81383e8b156e2">Common.h</a>
 </li>
 <li>DrvUnsupported()
 : <a class="el" href="_driver_8c.html#a5a6c7e0824c85801d440a906f3b0032f">Driver.c</a>
-, <a class="el" href="_common_8h.html#a5a6c7e0824c85801d440a906f3b0032f">Common.h</a>
+, <a class="el" href="hprdbghv_2_common_8h.html#a5a6c7e0824c85801d440a906f3b0032f">Common.h</a>
 </li>
 <li>DrvWrite()
-: <a class="el" href="_driver_8c.html#a0c62ea4c519b2e435cef6a7fdb773722">Driver.c</a>
-, <a class="el" href="_common_8h.html#a0c62ea4c519b2e435cef6a7fdb773722">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a0c62ea4c519b2e435cef6a7fdb773722">Common.h</a>
+, <a class="el" href="_driver_8c.html#a0c62ea4c519b2e435cef6a7fdb773722">Driver.c</a>
 </li>
 <li>DS
-: <a class="el" href="_common_8h.html#a7439723a15461f5bf1905bb57eb295bfab8092694163a64aa32694a8246d94210">Common.h</a>
+: <a class="el" href="hprdbghv_2_common_8h.html#a7439723a15461f5bf1905bb57eb295bfab8092694163a64aa32694a8246d94210">Common.h</a>
 </li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>

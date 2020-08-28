@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +49,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dir_2ba950cbe69a0dd8a769d65244bdf310.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -59,11 +80,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_2ba950cbe69a0dd8a769d65244bdf310.html">hprdbgctrl</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle">
 <div class="title">hprdbgctrl Directory Reference</div>  </div>
@@ -72,31 +88,124 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="files"></a>
 Files</h2></td></tr>
+<tr class="memitem:attach_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="attach_8cpp.html">attach.cpp</a></td></tr>
+<tr class="memdesc:attach_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">.attach command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:breakcontrol_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="breakcontrol_8cpp.html">breakcontrol.cpp</a></td></tr>
+<tr class="memdesc:breakcontrol_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">break control is the handler for CTRL+C and CTRL+BREAK Signals <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:cls_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cls_8cpp.html">cls.cpp</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:_commands_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_commands_8h.html">Commands.h</a> <a href="_commands_8h_source.html">[code]</a></td></tr>
 <tr class="memdesc:_commands_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">The hyperdbg command interpreter and driver connector. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:common_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="common_8cpp.html">common.cpp</a></td></tr>
+<tr class="memdesc:common_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">HyperDbg general functions for reading and converting and etc. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hprdbgctrl_2_common_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hprdbgctrl_2_common_8h.html">common.h</a> <a href="hprdbgctrl_2_common_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:hprdbgctrl_2_common_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">header for HyperDbg's general functions for reading and converting and etc <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:communication_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="communication_8h.html">communication.h</a> <a href="communication_8h_source.html">[code]</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:connect_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="connect_8cpp.html">connect.cpp</a></td></tr>
+<tr class="memdesc:connect_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">connect command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:cpu_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpu_8cpp.html">cpu.cpp</a></td></tr>
+<tr class="memdesc:cpu_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">cpu commands <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:cpuid_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cpuid_8cpp.html">cpuid.cpp</a></td></tr>
+<tr class="memdesc:cpuid_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!cpuid commands <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d-u_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="d-u_8cpp.html">d-u.cpp</a></td></tr>
+<tr class="memdesc:d-u_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!u* u* , !d* d* commands <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:debugger_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="debugger_8cpp.html">debugger.cpp</a></td></tr>
+<tr class="memdesc:debugger_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interpret general fields. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hprdbgctrl_2_debugger_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hprdbgctrl_2_debugger_8h.html">debugger.h</a> <a href="hprdbgctrl_2_debugger_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:hprdbgctrl_2_debugger_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">General debugger functions. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:detach_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="detach_8cpp.html">detach.cpp</a></td></tr>
+<tr class="memdesc:detach_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">.detach command <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:disassembler_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="disassembler_8cpp.html">disassembler.cpp</a></td></tr>
 <tr class="memdesc:disassembler_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Demonstrates basic hooking functionality of the <code>ZydisFormatter</code> class by implementing a custom symbol-resolver. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:disconnect_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="disconnect_8cpp.html">disconnect.cpp</a></td></tr>
+<tr class="memdesc:disconnect_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">disconnect command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:dllmain_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dllmain_8cpp.html">dllmain.cpp</a></td></tr>
 <tr class="memdesc:dllmain_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the entry point for the DLL application. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:framework_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="framework_8h.html">framework.h</a> <a href="framework_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:framework_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Framework of ctrl. <br /></td></tr>
+<tr class="memitem:dr_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="dr_8cpp.html">dr.cpp</a></td></tr>
+<tr class="memdesc:dr_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!dr commands <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:e_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="e_8cpp.html">e.cpp</a></td></tr>
+<tr class="memdesc:e_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">e* command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:eptcommands_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eptcommands_8cpp.html">eptcommands.cpp</a></td></tr>
+<tr class="memdesc:eptcommands_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement test for EPT related-functions. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:epthook_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epthook_8cpp.html">epthook.cpp</a></td></tr>
+<tr class="memdesc:epthook_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!epthook command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:epthook2_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="epthook2_8cpp.html">epthook2.cpp</a></td></tr>
+<tr class="memdesc:epthook2_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!epthook2 command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:events_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="events_8cpp.html">events.cpp</a></td></tr>
+<tr class="memdesc:events_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">events commands <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:exception_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exception_8cpp.html">exception.cpp</a></td></tr>
+<tr class="memdesc:exception_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!exception command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:exit_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exit_8cpp.html">exit.cpp</a></td></tr>
+<tr class="memdesc:exit_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">exit command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:exports_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="exports_8h.html">exports.h</a> <a href="exports_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:exports_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">HyperDbg exported functions. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:flush_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="flush_8cpp.html">flush.cpp</a></td></tr>
+<tr class="memdesc:flush_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">flush command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:formats_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="formats_8cpp.html">formats.cpp</a></td></tr>
+<tr class="memdesc:formats_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">.formats command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:g_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="g_8cpp.html">g.cpp</a></td></tr>
+<tr class="memdesc:g_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">g command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaussian-rng_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gaussian-rng_8cpp.html">gaussian-rng.cpp</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:globals_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="globals_8h.html">globals.h</a> <a href="globals_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:globals_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global Variables for user-mode interface. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:help_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="help_8cpp.html">help.cpp</a></td></tr>
+<tr class="memdesc:help_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">.help command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:help_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="help_8h.html">help.h</a> <a href="help_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:help_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">help of commands header <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hide_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hide_8cpp.html">hide.cpp</a></td></tr>
+<tr class="memdesc:hide_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!hide command <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:hprdbgctrl_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hprdbgctrl_8cpp.html">hprdbgctrl.cpp</a></td></tr>
 <tr class="memdesc:hprdbgctrl_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main interface to connect applications to driver. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:hprdbgctrl_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hprdbgctrl_8h.html">hprdbgctrl.h</a> <a href="hprdbgctrl_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:hprdbgctrl_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main interface to connect applications to driver headers. <br /></td></tr>
+<tr class="memitem:install_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="install_8cpp.html">install.cpp</a></td></tr>
+<tr class="memdesc:install_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install functions. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:_install_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_install_8cpp.html">Install.cpp</a></td></tr>
-<tr class="memdesc:_install_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Install functions. <br /></td></tr>
+<tr class="memitem:install_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="install_8h.html">install.h</a> <a href="install_8h_source.html">[code]</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:interpreter_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interpreter_8cpp.html">interpreter.cpp</a></td></tr>
 <tr class="memdesc:interpreter_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">The hyperdbg command interpreter and driver connector. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:interrupt_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interrupt_8cpp.html">interrupt.cpp</a></td></tr>
+<tr class="memdesc:interrupt_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!interrupt command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ioin_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioin_8cpp.html">ioin.cpp</a></td></tr>
+<tr class="memdesc:ioin_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!ioin command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ioout_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ioout_8cpp.html">ioout.cpp</a></td></tr>
+<tr class="memdesc:ioout_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!ioout command <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:list_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8cpp.html">list.cpp</a></td></tr>
 <tr class="memdesc:list_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list working functions headers. <br /></td></tr>
@@ -104,21 +213,131 @@ Files</h2></td></tr>
 <tr class="memitem:list_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="list_8h.html">list.h</a> <a href="list_8h_source.html">[code]</a></td></tr>
 <tr class="memdesc:list_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">The list working functions headers. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:listen_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="listen_8cpp.html">listen.cpp</a></td></tr>
+<tr class="memdesc:listen_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">listen command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:lm_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lm_8cpp.html">lm.cpp</a></td></tr>
+<tr class="memdesc:lm_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">lm command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:load_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="load_8cpp.html">load.cpp</a></td></tr>
+<tr class="memdesc:load_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">load command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:logclose_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logclose_8cpp.html">logclose.cpp</a></td></tr>
+<tr class="memdesc:logclose_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">.logclose command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:logopen_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logopen_8cpp.html">logopen.cpp</a></td></tr>
+<tr class="memdesc:logopen_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">.logopen command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:measure_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="measure_8cpp.html">measure.cpp</a></td></tr>
+<tr class="memdesc:measure_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!measure command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:monitor_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="monitor_8cpp.html">monitor.cpp</a></td></tr>
+<tr class="memdesc:monitor_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!monitor command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:msrread_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msrread_8cpp.html">msrread.cpp</a></td></tr>
+<tr class="memdesc:msrread_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!msrread command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:msrwrite_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="msrwrite_8cpp.html">msrwrite.cpp</a></td></tr>
+<tr class="memdesc:msrwrite_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!msrwrite command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namedpipe_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namedpipe_8cpp.html">namedpipe.cpp</a></td></tr>
+<tr class="memdesc:namedpipe_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server and Client communication over NamedPipes. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namedpipe_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namedpipe_8h.html">namedpipe.h</a> <a href="namedpipe_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:namedpipe_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">Named pipe communication headers. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:pa2va_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pa2va_8cpp.html">pa2va.cpp</a></td></tr>
+<tr class="memdesc:pa2va_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!pa2va command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:pause_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pause_8cpp.html">pause.cpp</a></td></tr>
+<tr class="memdesc:pause_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">pause command <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:pch_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pch_8cpp.html">pch.cpp</a></td></tr>
 <tr class="memdesc:pch_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">source file corresponding to the pre-compiled header <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:pch_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pch_8h.html">pch.h</a> <a href="pch_8h_source.html">[code]</a></td></tr>
-<tr class="memdesc:pch_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">header file corresponding to the pre-compiled header <br /></td></tr>
+<tr class="memitem:hprdbgctrl_2pch_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hprdbgctrl_2pch_8h.html">pch.h</a> <a href="hprdbgctrl_2pch_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:hprdbgctrl_2pch_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">header file corresponding to the pre-compiled header <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:pmc_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pmc_8cpp.html">pmc.cpp</a></td></tr>
+<tr class="memdesc:pmc_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!pmc commands <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:pte_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pte_8cpp.html">pte.cpp</a></td></tr>
+<tr class="memdesc:pte_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!pte command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:rdmsr_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rdmsr_8cpp.html">rdmsr.cpp</a></td></tr>
+<tr class="memdesc:rdmsr_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">rdmsr command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:readmem_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="readmem_8cpp.html">readmem.cpp</a></td></tr>
+<tr class="memdesc:readmem_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">HyperDbg command for u and d*. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:remoteconnection_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="remoteconnection_8cpp.html">remoteconnection.cpp</a></td></tr>
+<tr class="memdesc:remoteconnection_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle remote connections command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:s_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s_8cpp.html">s.cpp</a></td></tr>
+<tr class="memdesc:s_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">s* command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:script_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script_8cpp.html">script.cpp</a></td></tr>
+<tr class="memdesc:script_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">.script command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:settings_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="settings_8cpp.html">settings.cpp</a></td></tr>
+<tr class="memdesc:settings_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">settings command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:sleep_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sleep_8cpp.html">sleep.cpp</a></td></tr>
+<tr class="memdesc:sleep_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">sleep command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:status_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="status_8cpp.html">status.cpp</a></td></tr>
+<tr class="memdesc:status_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">status command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:syscall-sysret_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="syscall-sysret_8cpp.html">syscall-sysret.cpp</a></td></tr>
+<tr class="memdesc:syscall-sysret_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!syscall and !sysret commands <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:tcpclient_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcpclient_8cpp.html">tcpclient.cpp</a></td></tr>
+<tr class="memdesc:tcpclient_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server functions over TCP. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:tcpserver_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tcpserver_8cpp.html">tcpserver.cpp</a></td></tr>
+<tr class="memdesc:tcpserver_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Server functions over TCP. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:test_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="test_8cpp.html">test.cpp</a></td></tr>
+<tr class="memdesc:test_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">test command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:tests_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tests_8h.html">tests.h</a> <a href="tests_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:tests_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">headers for test functions <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:transparency_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="transparency_8cpp.html">transparency.cpp</a></td></tr>
+<tr class="memdesc:transparency_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Measurements for debugger transparency. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:hprdbgctrl_2_transparency_8h"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hprdbgctrl_2_transparency_8h.html">transparency.h</a> <a href="hprdbgctrl_2_transparency_8h_source.html">[code]</a></td></tr>
+<tr class="memdesc:hprdbgctrl_2_transparency_8h"><td class="mdescLeft">&#160;</td><td class="mdescRight">headers for test functions <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:tsc_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tsc_8cpp.html">tsc.cpp</a></td></tr>
+<tr class="memdesc:tsc_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!tsc commands <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:unhide_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unhide_8cpp.html">unhide.cpp</a></td></tr>
+<tr class="memdesc:unhide_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!unhide command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:unload_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unload_8cpp.html">unload.cpp</a></td></tr>
+<tr class="memdesc:unload_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">unload command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:va2pa_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="va2pa_8cpp.html">va2pa.cpp</a></td></tr>
+<tr class="memdesc:va2pa_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!va2pa command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:vmcall_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="vmcall_8cpp.html">vmcall.cpp</a></td></tr>
+<tr class="memdesc:vmcall_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">!vmcall command <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:wrmsr_8cpp"><td class="memItemLeft" align="right" valign="top">file &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="wrmsr_8cpp.html">wrmsr.cpp</a></td></tr>
+<tr class="memdesc:wrmsr_8cpp"><td class="mdescLeft">&#160;</td><td class="mdescRight">wrmsr command <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.17
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_2ba950cbe69a0dd8a769d65244bdf310.html">hprdbgctrl</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
 </body>
 </html>
