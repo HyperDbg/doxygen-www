@@ -1,11 +1,21 @@
 var searchData=
 [
-  ['name_3308',['name',['../struct_zydis_symbol__.html#a71a9736736859eb28a782138338453b5',1,'ZydisSymbol_']]],
-  ['nestedtaskflag_3309',['NestedTaskFlag',['../union___r_f_l_a_g_s.html#a236c5fee9f294576bc563c1feb6b1866',1,'_RFLAGS']]],
-  ['nhprdbgctrl_3310',['nhprdbgctrl',['../install_8h.html#a516d17179aa141d3a7bb042b2bf11ed2',1,'install.h']]],
-  ['nmiunblocking_3311',['NmiUnblocking',['../union___v_m_x___e_x_i_t___q_u_a_l_i_f_i_c_a_t_i_o_n___e_p_t___v_i_o_l_a_t_i_o_n.html#a58560f685dc8032a065fda2d9816d27a',1,'_VMX_EXIT_QUALIFICATION_EPT_VIOLATION::NmiUnblocking()'],['../union___v_m_e_x_i_t___i_n_t_e_r_r_u_p_t___i_n_f_o.html#abb493efadb8be3880367dc5e58edd25c',1,'_VMEXIT_INTERRUPT_INFO::NmiUnblocking()']]],
-  ['numberofbytes_3312',['NumberOfBytes',['../_hooks_8h.html#a61083d5dde730c2afd10a336322aaaac',1,'Hooks.h']]],
-  ['numberofenabledmemoryranges_3313',['NumberOfEnabledMemoryRanges',['../struct___e_p_t___s_t_a_t_e.html#ab16b6ea04ebdadd4e604ad884820476c',1,'_EPT_STATE']]],
-  ['numberofmodules_3314',['NumberOfModules',['../struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e_s.html#ab22b0e69c4970861ee208383c7fc7b86',1,'_RTL_PROCESS_MODULES']]],
-  ['numberofservices_3315',['NumberOfServices',['../struct___s_s_d_t_struct.html#a105fb7997377944486721f77f63b2e53',1,'_SSDTStruct']]]
+  ['objectattributes_4656',['ObjectAttributes',['../_hooks_8h.html#a22e2a9ce1ada928965365e448fd91e10',1,'Hooks.h']]],
+  ['offset_4657',['offset',['../structdbg__idtr.html#a64703859d8d7fe50bddeb8c8464f6a81',1,'dbg_idtr']]],
+  ['offset_5fhigh_4658',['offset_high',['../structdbg__idt__gate.html#a7bb73c7ea03088e29ca2b4ff8acb3767',1,'dbg_idt_gate']]],
+  ['offset_5flow_4659',['offset_low',['../structdbg__idt__gate.html#aa0116cef9d55b67eefe6341ac54808c7',1,'dbg_idt_gate']]],
+  ['offsettofilename_4660',['OffsetToFileName',['../struct___s_y_s_t_e_m___m_o_d_u_l_e___e_n_t_r_y.html#a6ab54de2910c7f27c9193da0610d2ac7',1,'_SYSTEM_MODULE_ENTRY::OffsetToFileName()'],['../struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#a92b9b526c495895a8a5c1034d5107164',1,'_RTL_PROCESS_MODULE_INFORMATION::OffsetToFileName()']]],
+  ['onecorelock_4661',['OneCoreLock',['../_dpc_routines_8c.html#ad770b621bcb6287f068300a85ba36233',1,'DpcRoutines.c']]],
+  ['opeationnumber_4662',['OpeationNumber',['../struct___b_u_f_f_e_r___h_e_a_d_e_r.html#a0cede21d0007ece748d1cb0413ab3269',1,'_BUFFER_HEADER']]],
+  ['operandencoding_4663',['OperandEncoding',['../struct___i_o___e_x_i_t___q_u_a_l_i_f_i_c_a_t_i_o_n.html#a1faac040011e12db2cbf23fd3325f16d',1,'_IO_EXIT_QUALIFICATION::OperandEncoding()'],['../struct___v_m_x___e_x_i_t___q_u_a_l_i_f_i_c_a_t_i_o_n___i_o___i_n_s_t_r_u_c_t_i_o_n.html#ade9a0e3ad66b2abbf0c2be01571455e0',1,'_VMX_EXIT_QUALIFICATION_IO_INSTRUCTION::OperandEncoding()']]],
+  ['originalentry_4664',['OriginalEntry',['../struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#acacf76428d2801be17ffb3e8b05e9374',1,'_EPT_HOOKED_PAGE_DETAIL']]],
+  ['originalentrycontent_4665',['OriginalEntryContent',['../struct___d_e_b_u_g_g_e_r___s_t_e_p_p_i_n_g___t_h_r_e_a_d___d_e_t_a_i_l_s.html#a603ec38bbb44ad315e15d5bcdc7186d0',1,'_DEBUGGER_STEPPING_THREAD_DETAILS']]],
+  ['osfxsavefxrstorsupport_4666',['OsFxsaveFxrstorSupport',['../struct___c_o_n_t_r_o_l___r_e_g_i_s_t_e_r__4.html#a23b4fdc0418875de1eeb81cae375be37',1,'_CONTROL_REGISTER_4']]],
+  ['osxmmexceptionsupport_4667',['OsXmmExceptionSupport',['../struct___c_o_n_t_r_o_l___r_e_g_i_s_t_e_r__4.html#ab1ee5d26becbb39b002298defc91df0b',1,'_CONTROL_REGISTER_4']]],
+  ['osxsave_4668',['OsXsave',['../struct___c_o_n_t_r_o_l___r_e_g_i_s_t_e_r__4.html#a9aa97fe8ba474ba8f60ac5dd8f33f492',1,'_CONTROL_REGISTER_4']]],
+  ['otherhookslist_4669',['OtherHooksList',['../struct___h_i_d_d_e_n___h_o_o_k_s___d_e_t_o_u_r___d_e_t_a_i_l_s.html#aa47949f02b08a654dbe910d6d107fa94',1,'_HIDDEN_HOOKS_DETOUR_DETAILS']]],
+  ['otherprocesses_4670',['OtherProcesses',['../struct___t_r_a_n_s_p_a_r_e_n_c_y___p_r_o_c_e_s_s.html#a11d3ae3ad49d156583f58ca71d097d0b',1,'_TRANSPARENCY_PROCESS']]],
+  ['outinstructionexecutioneventshead_4671',['OutInstructionExecutionEventsHead',['../struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#a3956421d8f23cbdb1b57a379c246ecb6',1,'_DEBUGGER_CORE_EVENTS']]],
+  ['outputsourceslist_4672',['OutputSourcesList',['../struct___d_e_b_u_g_g_e_r___e_v_e_n_t___f_o_r_w_a_r_d_i_n_g.html#a07ccec14ebd362ec4674bfc96339c582',1,'_DEBUGGER_EVENT_FORWARDING']]],
+  ['outputuniquetag_4673',['OutputUniqueTag',['../struct___d_e_b_u_g_g_e_r___e_v_e_n_t___f_o_r_w_a_r_d_i_n_g.html#ad4e075974aaa8822472f7e587dc7ca57',1,'_DEBUGGER_EVENT_FORWARDING']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['buffer_5fheader_3510',['BUFFER_HEADER',['../_logging_8h.html#a6b15292822c7b18e74ef05ec21a12fef',1,'Logging.h']]]
+  ['address_4856',['address',['../_gdb_stub_8h.html#ad76d42c74713883d2e0be489c80d93b1',1,'GdbStub.h']]]
 ];

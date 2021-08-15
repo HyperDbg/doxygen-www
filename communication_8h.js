@@ -1,8 +1,12 @@
 var communication_8h =
 [
+    [ "COM1_PORT", "communication_8h.html#a8982f081d8608e775b0739cde65373d5", null ],
+    [ "COM2_PORT", "communication_8h.html#a88373c3e34a242356333ec08389eae54", null ],
+    [ "COM3_PORT", "communication_8h.html#a7925c6aeb208ee101019bd2fab72bbdd", null ],
+    [ "COM4_PORT", "communication_8h.html#a6a073ab3980be7e830e801e76df9a1d0", null ],
     [ "CommunicationClientCleanup", "communication_8h.html#a4c9294eb185750c0579f9793b4f78d98", null ],
     [ "CommunicationClientConnectToServer", "communication_8h.html#a85f0659745121533284636d51a5e0b7f", null ],
-    [ "CommunicationClientReceiveMessage", "communication_8h.html#aeca52af0a58644fe3ba4b515851c8251", null ],
+    [ "CommunicationClientReceiveMessage", "communication_8h.html#a313f7914be8e36745e83319dbe065c7f", null ],
     [ "CommunicationClientSendMessage", "communication_8h.html#affc5b7bf7131d6d874b21c4de66fe5db", null ],
     [ "CommunicationClientShutdownConnection", "communication_8h.html#a4c233fdcd647c012b372e62f81daae97", null ],
     [ "CommunicationServerCreateServerAndWaitForClient", "communication_8h.html#a8366bb7405a2b4282b4b22c1a1fe9294", null ],

@@ -9,6 +9,7 @@ var _ept_8c =
     [ "EptHandleMisconfiguration", "_ept_8c.html#a7c09f0206d79fe09941b73181185749c", null ],
     [ "EptHandleMonitorTrapFlag", "_ept_8c.html#af49d77a4f295ed25af58bc428431d2b4", null ],
     [ "EptHandlePageHookExit", "_ept_8c.html#ab3f316406b0a695168efebac98d991a2", null ],
+    [ "EptInitializeSeconadaryEpt", "_ept_8c.html#aabfb5362a3817c79428ca0a549608c45", null ],
     [ "EptLogicalProcessorInitialize", "_ept_8c.html#a0df276ac02bb2ba45c710c4d28add769", null ],
     [ "EptSetPML1AndInvalidateTLB", "_ept_8c.html#a08ea39deb301ed3051e6353a9692cecc", null ],
     [ "EptSetupPML2Entry", "_ept_8c.html#ada11e17b221a92c77a3e6386ff951fa1", null ],

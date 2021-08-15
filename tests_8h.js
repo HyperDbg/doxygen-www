@@ -1,6 +1,6 @@
 var tests_8h =
 [
-    [ "DEBUGGER_TEST_ALL_COMMANDS", "tests_8h.html#a028358b1d5fc0ec68c434c6e38e0d4d9", null ],
-    [ "DEBUGGER_TEST_VMM_MONITOR_COMMAND", "tests_8h.html#ad59483c7f780b8a64740cdfb44fc1428", null ],
-    [ "TestMonitorCommand", "tests_8h.html#a1a27464770bdc7d175ade5832597f368", null ]
+    [ "TEST_PROCESS_NAME", "tests_8h.html#a5dd52b9d4913b4a3cb8657a17b17f279", null ],
+    [ "CloseProcessAndClosePipeConnection", "tests_8h.html#a8991e287488cf66d25061b8004cdf0ec", null ],
+    [ "CreateProcessAndOpenPipeConnection", "tests_8h.html#abd0e0aaf2871535c71a35ee92f5cfd5c", null ]
 ];

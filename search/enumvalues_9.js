@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['memorybasicinformation_3969',['MemoryBasicInformation',['../_ntifs2_8h.html#a14b86ef4016bb0d15128d87287e17c10a1cbbc60c6d5cab17b37e38ecbc4856f8',1,'Ntifs2.h']]],
-  ['msr_5fbitmap_3970',['MSR_BITMAP',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5ad4719b646fed8fd8c8ecb66beef2c18c',1,'Vmx.h']]]
+  ['ldtr_5382',['LDTR',['../hprdbghv_2_common_8h.html#a7439723a15461f5bf1905bb57eb295bfa3594a8ba3d161207b31fa82265f5638a',1,'Common.h']]],
+  ['log_5ferror_5383',['LOG_ERROR',['../hprdbghv_2_common_8h.html#a050bae65361e276b294f785581894867a230506cce5c68c3bac5a821c42ed3473',1,'Common.h']]],
+  ['log_5finfo_5384',['LOG_INFO',['../hprdbghv_2_common_8h.html#a050bae65361e276b294f785581894867a6e98ff471e3ce6c4ef2d75c37ee51837',1,'Common.h']]],
+  ['log_5fwarning_5385',['LOG_WARNING',['../hprdbghv_2_common_8h.html#a050bae65361e276b294f785581894867a8f6fe15bfe15104da6d1b360194a5400',1,'Common.h']]]
 ];

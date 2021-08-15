@@ -1,7 +1,22 @@
 var searchData=
 [
-  ['rand_5fmax_4250',['RAND_MAX',['../hprdbghv_2_transparency_8h.html#a690f251553b39fd4f31894826141b61a',1,'Transparency.h']]],
-  ['reserved_5fmsr_5frange_5fhi_4251',['RESERVED_MSR_RANGE_HI',['../hprdbghv_2_common_8h.html#a71f011d312371f0ad7fdad6d4ab0b7ec',1,'RESERVED_MSR_RANGE_HI():&#160;Common.h'],['../_events_8h.html#a71f011d312371f0ad7fdad6d4ab0b7ec',1,'RESERVED_MSR_RANGE_HI():&#160;Events.h']]],
-  ['reserved_5fmsr_5frange_5flow_4252',['RESERVED_MSR_RANGE_LOW',['../hprdbghv_2_common_8h.html#a28d944861642b2857cb5070d8216006d',1,'RESERVED_MSR_RANGE_LOW():&#160;Common.h'],['../_events_8h.html#a28d944861642b2857cb5070d8216006d',1,'RESERVED_MSR_RANGE_LOW():&#160;Events.h']]],
-  ['rpl_5fmask_4253',['RPL_MASK',['../hprdbghv_2_common_8h.html#ae66c526d730e6419f948b3a494b710dd',1,'Common.h']]]
+  ['paddinglength_5773',['PaddingLength',['../disassembler_8cpp.html#af7d2fb054c88f2258ef5cc0581fc9853',1,'disassembler.cpp']]],
+  ['page_5f1gb_5foffset_5774',['PAGE_1GB_OFFSET',['../_memory_mapper_8h.html#a91017fb0c353cf92dd16e0aba993ead4',1,'MemoryMapper.h']]],
+  ['page_5f2mb_5foffset_5775',['PAGE_2MB_OFFSET',['../_memory_mapper_8h.html#ad7e56080b3e4f3d677988222e895d87d',1,'MemoryMapper.h']]],
+  ['page_5f4kb_5foffset_5776',['PAGE_4KB_OFFSET',['../_memory_mapper_8h.html#ae02e97227ccca5175e0059f271569cf5',1,'MemoryMapper.h']]],
+  ['page_5f4mb_5foffset_5777',['PAGE_4MB_OFFSET',['../_memory_mapper_8h.html#ad9fc04b4baba3e9783f1b07b5f7a8afd',1,'MemoryMapper.h']]],
+  ['page_5fattrib_5fexec_5778',['PAGE_ATTRIB_EXEC',['../_ept_8h.html#a31b07aec49a907dc08696d9595c08e5f',1,'Ept.h']]],
+  ['page_5fattrib_5fread_5779',['PAGE_ATTRIB_READ',['../_ept_8h.html#a57f919b94c67edb76b752a2ca83b534a',1,'Ept.h']]],
+  ['page_5fattrib_5fwrite_5780',['PAGE_ATTRIB_WRITE',['../_ept_8h.html#a6a23c222f617b62cc621b5482a378d8a',1,'Ept.h']]],
+  ['page_5foffset_5781',['PAGE_OFFSET',['../hprdbghv_2_common_8h.html#a1ebb2ec82baedeecf55e15778b8dd0aa',1,'Common.h']]],
+  ['pch_5fh_5782',['PCH_H',['../hprdbgctrl_2pch_8h.html#ab7500e9a1ccffa3a59052fc2b860b1b1',1,'pch.h']]],
+  ['pcid_5fmask_5783',['PCID_MASK',['../hprdbghv_2_common_8h.html#a25cbba845d9f777a39e26bae01151079',1,'Common.h']]],
+  ['pcid_5fnone_5784',['PCID_NONE',['../hprdbghv_2_common_8h.html#ac5cc3f3d8f749509f26223d303f21c63',1,'Common.h']]],
+  ['pending_5finterrupts_5fbuffer_5fcapacity_5785',['PENDING_INTERRUPTS_BUFFER_CAPACITY',['../_vmx_8h.html#a61d2602bcd56d78c6df8262ebc7fa7b2',1,'Vmx.h']]],
+  ['pin_5fbased_5fvm_5fexecution_5fcontrols_5factive_5fvmx_5ftimer_5786',['PIN_BASED_VM_EXECUTION_CONTROLS_ACTIVE_VMX_TIMER',['../_vmx_8h.html#aede75c15664ad00acc9066a873396490',1,'Vmx.h']]],
+  ['pin_5fbased_5fvm_5fexecution_5fcontrols_5fexternal_5finterrupt_5787',['PIN_BASED_VM_EXECUTION_CONTROLS_EXTERNAL_INTERRUPT',['../_vmx_8h.html#a158e8b4e19f906a8f4867b17eec1a596',1,'Vmx.h']]],
+  ['pin_5fbased_5fvm_5fexecution_5fcontrols_5fnmi_5fexiting_5788',['PIN_BASED_VM_EXECUTION_CONTROLS_NMI_EXITING',['../_vmx_8h.html#abc2451b4f7835bf9e829b91c5a43a4e8',1,'Vmx.h']]],
+  ['pin_5fbased_5fvm_5fexecution_5fcontrols_5fprocess_5fposted_5finterrupts_5789',['PIN_BASED_VM_EXECUTION_CONTROLS_PROCESS_POSTED_INTERRUPTS',['../_vmx_8h.html#adb8df32693b7174c44768274510558f8',1,'Vmx.h']]],
+  ['pin_5fbased_5fvm_5fexecution_5fcontrols_5fvirtual_5fnmi_5790',['PIN_BASED_VM_EXECUTION_CONTROLS_VIRTUAL_NMI',['../_vmx_8h.html#a864408c647028df204a4a0b66faaddbf',1,'Vmx.h']]],
+  ['pooltag_5791',['POOLTAG',['../hprdbghv_2_common_8h.html#ab7f91e71074ce1488e61869adbc44d8d',1,'Common.h']]]
 ];

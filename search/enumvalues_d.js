@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['tpr_5fthreshold_3991',['TPR_THRESHOLD',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a792987faac7654283ef7928dc22be4e4',1,'Vmx.h']]],
-  ['tr_3992',['TR',['../hprdbghv_2_common_8h.html#a7439723a15461f5bf1905bb57eb295bfa1743e98464bf7bcabcf51101b49a6a3d',1,'Common.h']]],
-  ['tracking_5fhooked_5fpages_3993',['TRACKING_HOOKED_PAGES',['../_pool_manager_8h.html#ac9e1b58ef1b236c646eb5ca0d4205f46a1c4249f84cf779cd4cdd72ee27de08c1',1,'PoolManager.h']]],
-  ['tsc_5fmultiplier_3994',['TSC_MULTIPLIER',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a9a7e4460e84c2d7aa63661b5204cb65b',1,'Vmx.h']]],
-  ['tsc_5foffset_3995',['TSC_OFFSET',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a707adb497c92bc41a8e072d5eaf95526',1,'Vmx.h']]]
+  ['secondary_5fvm_5fexec_5fcontrol_5402',['SECONDARY_VM_EXEC_CONTROL',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a5cd1143ead3a8a020ebfbc00046191cb',1,'Vmx.h']]],
+  ['split_5f2mb_5fpaging_5fto_5f4kb_5fpage_5403',['SPLIT_2MB_PAGING_TO_4KB_PAGE',['../_pool_manager_8h.html#ac9e1b58ef1b236c646eb5ca0d4205f46a09f33e69ad8e184c21efd29fa2fe7380',1,'PoolManager.h']]],
+  ['ss_5404',['SS',['../hprdbghv_2_common_8h.html#a7439723a15461f5bf1905bb57eb295bfacc878d90418c98b0b3a20258310c0f52',1,'Common.h']]],
+  ['systemkerneldebuggerinformation_5405',['SystemKernelDebuggerInformation',['../_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0a18e658a754e39d6e6c1b653248b8aa78',1,'Hooks.h']]],
+  ['systemmoduleinformation_5406',['SystemModuleInformation',['../_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0a38627594543f01525bf40aa8e09607bd',1,'Hooks.h']]]
 ];

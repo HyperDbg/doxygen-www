@@ -46,6 +46,7 @@ var _events_8h =
       [ "APC_INTERRUPT", "_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a6725eda07423eaa8dc52f549c27d4808", null ],
       [ "DPC_INTERRUPT", "_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349ac6c28232aa8eed4ca952c96da887b90d", null ],
       [ "CLOCK_INTERRUPT", "_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a960ecb203830d9b67611e6edf3f2c9a5", null ],
+      [ "IPI_INTERRUPT", "_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a692efc86ae8e8aa1ff92ab7bddbe65d8", null ],
       [ "PMI_INTERRUPT", "_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a3ba64a05218e8bece8471c1d2f21dc2f", null ]
     ] ],
     [ "_INTERRUPT_TYPE", "_events_8h.html#ade7b98ff2f26b359a8d902773a55df03", [
@@ -62,6 +63,6 @@ var _events_8h =
     [ "EventInjectDebugBreakpoint", "_events_8h.html#ab27691a80df8d30baf8e9cf666a1855e", null ],
     [ "EventInjectGeneralProtection", "_events_8h.html#ad328e1959f217955ece7ea133777ed21", null ],
     [ "EventInjectInterruption", "_events_8h.html#a175c8152bdcd5e2d588ffb2f73cfaf0d", null ],
-    [ "EventInjectPageFault", "_events_8h.html#a8eef6f3b81a7e0be95692bf61e1fb04d", null ],
+    [ "EventInjectPageFault", "_events_8h.html#a7c60a0610d4ab52f530e9866ce84bd55", null ],
     [ "EventInjectUndefinedOpcode", "_events_8h.html#a58c5b3b8a4a01b4fc9be1c88a549cf37", null ]
 ];

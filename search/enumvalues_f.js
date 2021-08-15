@@ -1,4 +1,27 @@
 var searchData=
 [
-  ['xss_5fexit_5fbitmap_4020',['XSS_EXIT_BITMAP',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5af859ab98659dccc57a3ac758c199f5db',1,'Vmx.h']]]
+  ['virt_5fexception_5finfo_5413',['VIRT_EXCEPTION_INFO',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5adce464344f6a4818ec8ef640de6d67a5',1,'Vmx.h']]],
+  ['virtual_5fapic_5fpage_5faddr_5414',['VIRTUAL_APIC_PAGE_ADDR',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5abd2f2385d02e01d151c5b36c9403cf0f',1,'Vmx.h']]],
+  ['virtual_5fprocessor_5fid_5415',['VIRTUAL_PROCESSOR_ID',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a23f7b26157f382351f310112e0c6888c',1,'Vmx.h']]],
+  ['vm_5fentry_5fcontrols_5416',['VM_ENTRY_CONTROLS',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a580f2ee939b5dfdde2c6b06db61fe617',1,'Vmx.h']]],
+  ['vm_5fentry_5fexception_5ferror_5fcode_5417',['VM_ENTRY_EXCEPTION_ERROR_CODE',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a49913941b894bea8a153fc7cda61b4a7',1,'Vmx.h']]],
+  ['vm_5fentry_5finstruction_5flen_5418',['VM_ENTRY_INSTRUCTION_LEN',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a0bdf4c635c3b05ce1409c6f2cf36ed50',1,'Vmx.h']]],
+  ['vm_5fentry_5fintr_5finfo_5419',['VM_ENTRY_INTR_INFO',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a595d2cafb9b2af931d5e263b456bca5b',1,'Vmx.h']]],
+  ['vm_5fentry_5fmsr_5fload_5faddr_5420',['VM_ENTRY_MSR_LOAD_ADDR',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a3e26ca31558f502ac734cb677c5dd1e8',1,'Vmx.h']]],
+  ['vm_5fentry_5fmsr_5fload_5fcount_5421',['VM_ENTRY_MSR_LOAD_COUNT',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a6e2e305b2de767f4989f560db221dd78',1,'Vmx.h']]],
+  ['vm_5fexit_5fcontrols_5422',['VM_EXIT_CONTROLS',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a92a2459954f3e5469b434dc37d863900',1,'Vmx.h']]],
+  ['vm_5fexit_5finstruction_5flen_5423',['VM_EXIT_INSTRUCTION_LEN',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5aa3197d354c750132f5ee47c0b6d01689',1,'Vmx.h']]],
+  ['vm_5fexit_5fintr_5ferror_5fcode_5424',['VM_EXIT_INTR_ERROR_CODE',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a82e831d5a9f85b97573f096fc197b928',1,'Vmx.h']]],
+  ['vm_5fexit_5fintr_5finfo_5425',['VM_EXIT_INTR_INFO',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5ab76476236d3b76cf5879faafc256a44a',1,'Vmx.h']]],
+  ['vm_5fexit_5fmsr_5fload_5faddr_5426',['VM_EXIT_MSR_LOAD_ADDR',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a9e37d4cbf04f64f5be859e8ea3454560',1,'Vmx.h']]],
+  ['vm_5fexit_5fmsr_5fload_5fcount_5427',['VM_EXIT_MSR_LOAD_COUNT',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5ac42b7ed06fd8da4ac03ede076d178182',1,'Vmx.h']]],
+  ['vm_5fexit_5fmsr_5fstore_5faddr_5428',['VM_EXIT_MSR_STORE_ADDR',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5ae65e2497bfa8a568abf31ef76ea03789',1,'Vmx.h']]],
+  ['vm_5fexit_5fmsr_5fstore_5fcount_5429',['VM_EXIT_MSR_STORE_COUNT',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a59a2612e32bd1848d518ed8bc54d0f7f',1,'Vmx.h']]],
+  ['vm_5fexit_5freason_5430',['VM_EXIT_REASON',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a5560d9a098943be46a4e6099f26b6e3d',1,'Vmx.h']]],
+  ['vm_5ffunction_5fcontrol_5431',['VM_FUNCTION_CONTROL',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a8a78a4297601f10429f46c437df9036c',1,'Vmx.h']]],
+  ['vm_5finstruction_5ferror_5432',['VM_INSTRUCTION_ERROR',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a06ceae54a10c8c51a80890326e9b4043',1,'Vmx.h']]],
+  ['vmcs_5flink_5fpointer_5433',['VMCS_LINK_POINTER',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a87c36f19b7aeef3f5eea8d4f3b36c60d',1,'Vmx.h']]],
+  ['vmread_5fbitmap_5434',['VMREAD_BITMAP',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5ac4097aa63b704b0a4376b9cfaea7babe',1,'Vmx.h']]],
+  ['vmwrite_5fbitmap_5435',['VMWRITE_BITMAP',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a27ce48cdf1af09974fe9fe1c90661f1a',1,'Vmx.h']]],
+  ['vmx_5finstruction_5finfo_5436',['VMX_INSTRUCTION_INFO',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5abc7afe0afaaaa794f46240823820ad49',1,'Vmx.h']]]
 ];

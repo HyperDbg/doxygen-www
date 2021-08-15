@@ -1,6 +1,8 @@
 var _vmx_8c =
 [
+    [ "VmxCheckIsOnVmxRoot", "_vmx_8c.html#ae1383bf1b0ee0da71f29e832a1e86144", null ],
     [ "VmxClearVmcsState", "_vmx_8c.html#af48e137ee01468c68ec480ae5c7a4a04", null ],
+    [ "VmxFixCr4AndCr0Bits", "_vmx_8c.html#a56536723aab6c8ccb4719ff1eac2c25f", null ],
     [ "VmxInitializer", "_vmx_8c.html#aa15f12a3484a8de9976c54be6d727589", null ],
     [ "VmxLoadVmcs", "_vmx_8c.html#ae6282c03763c9494aaf6a7862d6cb163", null ],
     [ "VmxSetupVmcs", "_vmx_8c.html#a3b46813e79cb2c8657c58450e7f7abdc", null ],

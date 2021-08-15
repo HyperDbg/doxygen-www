@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['size_5f2_5fmb_4254',['SIZE_2_MB',['../_ept_8h.html#a9b5b0b5f414ce235f2b51bb6adde3c67',1,'Ept.h']]]
+  ['rand_5fmax_5792',['RAND_MAX',['../hprdbghv_2_transparency_8h.html#a690f251553b39fd4f31894826141b61a',1,'Transparency.h']]],
+  ['reserved_5fmsr_5frange_5fhi_5793',['RESERVED_MSR_RANGE_HI',['../hprdbghv_2_common_8h.html#a71f011d312371f0ad7fdad6d4ab0b7ec',1,'RESERVED_MSR_RANGE_HI():&#160;Common.h'],['../_events_8h.html#a71f011d312371f0ad7fdad6d4ab0b7ec',1,'RESERVED_MSR_RANGE_HI():&#160;Events.h']]],
+  ['reserved_5fmsr_5frange_5flow_5794',['RESERVED_MSR_RANGE_LOW',['../hprdbghv_2_common_8h.html#a28d944861642b2857cb5070d8216006d',1,'RESERVED_MSR_RANGE_LOW():&#160;Common.h'],['../_events_8h.html#a28d944861642b2857cb5070d8216006d',1,'RESERVED_MSR_RANGE_LOW():&#160;Events.h']]],
+  ['rpl_5fmask_5795',['RPL_MASK',['../hprdbghv_2_common_8h.html#ae66c526d730e6419f948b3a494b710dd',1,'Common.h']]]
 ];

@@ -1,11 +1,13 @@
 var searchData=
 [
-  ['ldisasm_5fc_4155',['LDISASM_C',['../_length_disassembler_engine_8h.html#ad0e911d5c86e626a73ef2dc2637b34e0',1,'LengthDisassemblerEngine.h']]],
-  ['ldisasm_5fh_4156',['LDISASM_H',['../_length_disassembler_engine_8h.html#a0eaebf2662e594d50bd0372205e7ae37',1,'LengthDisassemblerEngine.h']]],
-  ['ldisasm_5fr_4157',['LDISASM_R',['../_length_disassembler_engine_8h.html#a904b409dfdbf2bca337345ea59141adc',1,'LengthDisassemblerEngine.h']]],
-  ['log_4158',['Log',['../hprdbghv_2_common_8h.html#a0c38ca677b912fa03329447f5e235dc2',1,'Common.h']]],
-  ['logerror_4159',['LogError',['../hprdbghv_2_common_8h.html#a459b19922fecfbb9438dd56b66930d16',1,'Common.h']]],
-  ['loginfo_4160',['LogInfo',['../hprdbghv_2_common_8h.html#a97b0adbd65790fb90734daa8e5245a04',1,'Common.h']]],
-  ['loginfoimmediate_4161',['LogInfoImmediate',['../hprdbghv_2_common_8h.html#a72d28babc4f8764698c78a14cfa90dfa',1,'Common.h']]],
-  ['logwarning_4162',['LogWarning',['../hprdbghv_2_common_8h.html#abf506c814a6f717a87b5d808b828ef56',1,'Common.h']]]
+  ['kgdt64_5flast_5682',['KGDT64_LAST',['../hprdbghv_2_common_8h.html#a3684359488ce0b893cb65f01a171f14b',1,'Common.h']]],
+  ['kgdt64_5fnull_5683',['KGDT64_NULL',['../hprdbghv_2_common_8h.html#a51a429c8b9a2a2be4423bd0e4d7d6898',1,'Common.h']]],
+  ['kgdt64_5fr0_5fcmcode_5684',['KGDT64_R0_CMCODE',['../hprdbghv_2_common_8h.html#a559aa3fdc4150ac24bcbfdacb32a5758',1,'Common.h']]],
+  ['kgdt64_5fr0_5fcode_5685',['KGDT64_R0_CODE',['../hprdbghv_2_common_8h.html#a5bc1b920e0b1b8a1b35327b5f89ab6ac',1,'Common.h']]],
+  ['kgdt64_5fr0_5fdata_5686',['KGDT64_R0_DATA',['../hprdbghv_2_common_8h.html#ad702018f1e375964eeb78c97d0bbe384',1,'Common.h']]],
+  ['kgdt64_5fr3_5fcmcode_5687',['KGDT64_R3_CMCODE',['../hprdbghv_2_common_8h.html#a8b6aab65ae2c0a4e02ac1069d4ac46ad',1,'Common.h']]],
+  ['kgdt64_5fr3_5fcmteb_5688',['KGDT64_R3_CMTEB',['../hprdbghv_2_common_8h.html#aa90a54eed10c2ae6961eeba69b375a50',1,'Common.h']]],
+  ['kgdt64_5fr3_5fcode_5689',['KGDT64_R3_CODE',['../hprdbghv_2_common_8h.html#a3566c0de563735de786e1052440226a1',1,'Common.h']]],
+  ['kgdt64_5fr3_5fdata_5690',['KGDT64_R3_DATA',['../hprdbghv_2_common_8h.html#a7ffe33388acb2a5ae8437f0a330237be',1,'Common.h']]],
+  ['kgdt64_5fsys_5ftss_5691',['KGDT64_SYS_TSS',['../hprdbghv_2_common_8h.html#a2dfaa6e416e87c23f0b5ad458fa03cbb',1,'Common.h']]]
 ];

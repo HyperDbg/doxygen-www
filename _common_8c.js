@@ -1,8 +1,12 @@
 var _common_8c =
 [
     [ "BroadcastToProcessors", "_common_8c.html#aad0e61efe6d2e7a0002056daec44511e", null ],
+    [ "CheckCpuSupportRtm", "_common_8c.html#a1ca8d92943fe9fcfbf98b0de88820f07", null ],
+    [ "CheckIfAddressIsValidUsingTsx", "_common_8c.html#a80e28f3ea9a1bcf2b4e7e603784eba88", null ],
+    [ "CheckMemoryAccessSafety", "_common_8c.html#a9ea9e4cef167ff3664811bd8627cde9c", null ],
     [ "ClearBit", "_common_8c.html#a1325b69024a8a649457e13b496d678ee", null ],
     [ "FindSystemDirectoryTableBase", "_common_8c.html#adcbb2311c406c2d7866818d6461a8d02", null ],
+    [ "GetCpuid", "_common_8c.html#adf1ba210f06e66c4e8cfec3dd291e4b8", null ],
     [ "GetCr3FromProcessId", "_common_8c.html#a8380f037985bc787fd303aba07526379", null ],
     [ "GetProcessNameFromEprocess", "_common_8c.html#a7d8de41916e9cffe3cb1963847484806", null ],
     [ "GetSegmentDescriptor", "_common_8c.html#a15a1542d0e3666ab9265e0e17708333a", null ],
@@ -19,5 +23,7 @@ var _common_8c =
     [ "TestBit", "_common_8c.html#abf9996f46885e97a5d0f4d6fdbba98e0", null ],
     [ "VirtualAddressToPhysicalAddress", "_common_8c.html#ae6bbd169187c6e08bbe584c67175a61d", null ],
     [ "VirtualAddressToPhysicalAddressByProcessCr3", "_common_8c.html#aa257cde073bba99546f8edf56fd31661", null ],
-    [ "VirtualAddressToPhysicalAddressByProcessId", "_common_8c.html#af251f655d5814472abd5f50c68f209f0", null ]
+    [ "VirtualAddressToPhysicalAddressByProcessId", "_common_8c.html#af251f655d5814472abd5f50c68f209f0", null ],
+    [ "VmxrootCompatibleStrlen", "_common_8c.html#a3eb68998b6cd2546b6e4cc1ae0c30417", null ],
+    [ "VmxrootCompatibleWcslen", "_common_8c.html#a5bf7c4bfb01c3d44fc654a2de760f587", null ]
 ];

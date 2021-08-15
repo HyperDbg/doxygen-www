@@ -12,7 +12,9 @@ var _pool_manager_8h =
       [ "TRACKING_HOOKED_PAGES", "_pool_manager_8h.html#ac9e1b58ef1b236c646eb5ca0d4205f46a1c4249f84cf779cd4cdd72ee27de08c1", null ],
       [ "EXEC_TRAMPOLINE", "_pool_manager_8h.html#ac9e1b58ef1b236c646eb5ca0d4205f46a18c553f48bd909ebfea72c42edeea43d", null ],
       [ "SPLIT_2MB_PAGING_TO_4KB_PAGE", "_pool_manager_8h.html#ac9e1b58ef1b236c646eb5ca0d4205f46a09f33e69ad8e184c21efd29fa2fe7380", null ],
-      [ "DETOUR_HOOK_DETAILS", "_pool_manager_8h.html#ac9e1b58ef1b236c646eb5ca0d4205f46a898d2549c3e40191c8e23e4ee687663b", null ]
+      [ "DETOUR_HOOK_DETAILS", "_pool_manager_8h.html#ac9e1b58ef1b236c646eb5ca0d4205f46a898d2549c3e40191c8e23e4ee687663b", null ],
+      [ "THREAD_STEPPINGS_DETAIIL", "_pool_manager_8h.html#ac9e1b58ef1b236c646eb5ca0d4205f46af0697a19ca9e281c2cba07d3cdbac569", null ],
+      [ "BREAKPOINT_DEFINITION_STRUCTURE", "_pool_manager_8h.html#ac9e1b58ef1b236c646eb5ca0d4205f46ab8948b7a3ee40226d0f76b7fccf90b9a", null ]
     ] ],
     [ "PoolManagerCheckAndPerformAllocationAndDeallocation", "_pool_manager_8h.html#a03e9f251a31e86dcac849bd9d681aa6d", null ],
     [ "PoolManagerFreePool", "_pool_manager_8h.html#aac1a781a8d6463b65848555355e687dd", null ],

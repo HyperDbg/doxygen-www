@@ -1,5 +1,29 @@
 var searchData=
 [
-  ['kernelapcinprogress_3262',['KernelApcInProgress',['../struct___k_a_p_c___s_t_a_t_e.html#a798d82742914c528f03ad72e67d78542',1,'_KAPC_STATE']]],
-  ['kernelapcpending_3263',['KernelApcPending',['../struct___k_a_p_c___s_t_a_t_e.html#a326f0d72390131050e8875b427e82d1a',1,'_KAPC_STATE']]]
+  ['l_4596',['L',['../union___s_e_g_m_e_n_t___a_t_t_r_i_b_u_t_e_s.html#a5549a0d01b22068965c0919c5bdab5a5',1,'_SEGMENT_ATTRIBUTES']]],
+  ['largelpage_4597',['LargeLpage',['../struct___p_a_g_e___d_i_r_e_c_t_o_r_y___p_o_i_n_t_e_r___t_a_b_l_e___e_n_t_r_y.html#a6906b4475be410b88472b3b7b4294818',1,'_PAGE_DIRECTORY_POINTER_TABLE_ENTRY']]],
+  ['largepage_4598',['LargePage',['../union___e_p_d_p_t_e__1_g_b.html#a2f6e0a1aac4554226da6406ad371ee48',1,'_EPDPTE_1GB::LargePage()'],['../union___e_p_d_e__2_m_b.html#a6a88aa59692c458c0fa4fafe7207b2c4',1,'_EPDE_2MB::LargePage()'],['../struct___p_a_g_e___d_i_r_e_c_t_o_r_y___e_n_t_r_y.html#a04522891d1be056c59cc1c86670088ba',1,'_PAGE_DIRECTORY_ENTRY::LargePage()'],['../struct___l_a_r_g_e___p_a_g_e___d_i_r_e_c_t_o_r_y___e_n_t_r_y.html#a6b51310c488aa0ff9e72b020c2716764',1,'_LARGE_PAGE_DIRECTORY_ENTRY::LargePage()'],['../struct___l_a_r_g_e___p_a_g_e___d_i_r_e_c_t_o_r_y___p_o_i_n_t_e_r___t_a_b_l_e___e_n_t_r_y.html#a7a3e28bb222f526126d39fcaaca47ba0',1,'_LARGE_PAGE_DIRECTORY_POINTER_TABLE_ENTRY::LargePage()'],['../struct___p_a_g_e___e_n_t_r_y.html#a0ef3986bc7670eab1c52dba6e037b315',1,'_PAGE_ENTRY::LargePage()']]],
+  ['lastvmexitrip_4599',['LastVmexitRip',['../struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ae855827593a6f9ed1deb258ae3337e57',1,'_VIRTUAL_MACHINE_STATE']]],
+  ['len_4600',['len',['../structdbg__idtr.html#a1c78d8cbbca7946f21e8543eec0c51a7',1,'dbg_idtr']]],
+  ['length0_4601',['Length0',['../union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#ac4ee3391f8048d794016a87ac079e437',1,'_DEBUG_REGISTER_7']]],
+  ['length1_4602',['Length1',['../union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#a42c7e502760e5f6530abbf776149ad00',1,'_DEBUG_REGISTER_7']]],
+  ['length2_4603',['Length2',['../union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#a0d2d1559ea90f5c38206ba2c1f44b005',1,'_DEBUG_REGISTER_7']]],
+  ['length3_4604',['Length3',['../union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#acf5fa173de743d23baed2bdd3a51d265',1,'_DEBUG_REGISTER_7']]],
+  ['limit_4605',['LIMIT',['../struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a00cc9951394fcd04e2d26f7937511c72',1,'_SEGMENT_SELECTOR']]],
+  ['limit0_4606',['LIMIT0',['../struct___s_e_g_m_e_n_t___d_e_s_c_r_i_p_t_o_r.html#ab08cc4bd0a83e47d7f804dced7344a3b',1,'_SEGMENT_DESCRIPTOR']]],
+  ['limit1attr1_4607',['LIMIT1ATTR1',['../struct___s_e_g_m_e_n_t___d_e_s_c_r_i_p_t_o_r.html#ab2d9d010ca05031c26d932a2da975ef8',1,'_SEGMENT_DESCRIPTOR']]],
+  ['linear_5faddress_4608',['LINEAR_ADDRESS',['../struct___i_n_v_v_p_i_d___d_e_s_c_r_i_p_t_o_r.html#a174b46d7bcc7e3faf8bc978b2800ac24',1,'_INVVPID_DESCRIPTOR']]],
+  ['lmswoperandtype_4609',['LMSWOperandType',['../union___m_o_v___c_r___q_u_a_l_i_f_i_c_a_t_i_o_n.html#a2baf639cb3c838dacaba5488fe7ae24a',1,'_MOV_CR_QUALIFICATION']]],
+  ['lmswsourcedata_4610',['LMSWSourceData',['../union___m_o_v___c_r___q_u_a_l_i_f_i_c_a_t_i_o_n.html#a01728c74526bf61a4ba2086562afa682',1,'_MOV_CR_QUALIFICATION']]],
+  ['loadcount_4611',['LoadCount',['../struct___s_y_s_t_e_m___m_o_d_u_l_e___e_n_t_r_y.html#a5ae2cb7f8d4b797fac16a0c20c8cc667',1,'_SYSTEM_MODULE_ENTRY::LoadCount()'],['../struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#a48f77036cdd23acb040a735350220d97',1,'_RTL_PROCESS_MODULE_INFORMATION::LoadCount()']]],
+  ['loadorderindex_4612',['LoadOrderIndex',['../struct___s_y_s_t_e_m___m_o_d_u_l_e___e_n_t_r_y.html#a3455e147b91f578d66347ae02d3e1cb9',1,'_SYSTEM_MODULE_ENTRY::LoadOrderIndex()'],['../struct___r_t_l___p_r_o_c_e_s_s___m_o_d_u_l_e___i_n_f_o_r_m_a_t_i_o_n.html#adc89b2375dc54f48fa5725388f27b959',1,'_RTL_PROCESS_MODULE_INFORMATION::LoadOrderIndex()']]],
+  ['localbreakpoint0_4613',['LocalBreakpoint0',['../union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#a479a0bd40bce1c73d0cfb333abaa46cd',1,'_DEBUG_REGISTER_7']]],
+  ['localbreakpoint1_4614',['LocalBreakpoint1',['../union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#a3d80d3b37a06c64a42b8c251c161705a',1,'_DEBUG_REGISTER_7']]],
+  ['localbreakpoint2_4615',['LocalBreakpoint2',['../union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#a88f9bb3368e677568326c10491746c91',1,'_DEBUG_REGISTER_7']]],
+  ['localbreakpoint3_4616',['LocalBreakpoint3',['../union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#a31dbcb8fb33c214edee57c079a65f56d',1,'_DEBUG_REGISTER_7']]],
+  ['localexactbreakpoint_4617',['LocalExactBreakpoint',['../union___d_e_b_u_g___r_e_g_i_s_t_e_r__7.html#ad29b8c0b00f80957e8dd755ebc1ea9d2',1,'_DEBUG_REGISTER_7']]],
+  ['lock_4618',['Lock',['../struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a5cb1b3e0fee150e30f93529efdcb324b',1,'_PROCESSOR_DEBUGGING_STATE::Lock()'],['../union___i_a32___f_e_a_t_u_r_e___c_o_n_t_r_o_l___m_s_r.html#ab7b35380ec165acaf573de8723bb2e14',1,'_IA32_FEATURE_CONTROL_MSR::Lock()']]],
+  ['lockforreadingpool_4619',['LockForReadingPool',['../_pool_manager_8h.html#a101e73d3bade3311959349f95dc57245',1,'PoolManager.h']]],
+  ['lockforrequestallocation_4620',['LockForRequestAllocation',['../_pool_manager_8h.html#a5252cb3953eea439f92a39e36aedd57a',1,'PoolManager.h']]],
+  ['low_4621',['Low',['../union___c_r___f_i_x_e_d.html#a1295d83d7e48f5a6a180fea7978619a6',1,'_CR_FIXED::Low()'],['../union___m_s_r.html#a6fb09f6d07be060a585b8951fe951326',1,'_MSR::Low()']]]
 ];

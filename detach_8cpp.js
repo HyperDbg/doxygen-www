@@ -1,6 +1,7 @@
 var detach_8cpp =
 [
-    [ "CommandDetach", "detach_8cpp.html#ad5634c925d9f27e3d9f0975796c113d6", null ],
+    [ "CommandDetach", "detach_8cpp.html#ab0f2272662e9a576a9b943d0f87e9b78", null ],
     [ "CommandDetachHelp", "detach_8cpp.html#a3e224b5edc447b123ee6ef36fb850439", null ],
-    [ "g_IsAttachedToUsermodeProcess", "detach_8cpp.html#a53b3e66de9b9ebdf8408e7e08da8ec24", null ]
+    [ "DetachFromProcess", "detach_8cpp.html#a297df7772a7e4f53ca70926e9cf92a66", null ],
+    [ "g_DebuggingState", "detach_8cpp.html#af3677613efadcaa42527eea5c9c0bc0b", null ]
 ];
