@@ -1,28 +1,4 @@
 var searchData=
 [
-  ['dbg_5fcpu_5fi386_5fnum_5fregisters_5105',['DBG_CPU_I386_NUM_REGISTERS',['../_gdb_stub_8h.html#acebf7403f15f61d9949bcf3594127035a9ffe9616b30dce0e35eebc56d1a5843d',1,'GdbStub.h']]],
-  ['dbg_5fcpu_5fi386_5freg_5fcs_5106',['DBG_CPU_I386_REG_CS',['../_gdb_stub_8h.html#acebf7403f15f61d9949bcf3594127035ab0673456bc1a4d1dc1d3a10b226bf0b7',1,'GdbStub.h']]],
-  ['dbg_5fcpu_5fi386_5freg_5fds_5107',['DBG_CPU_I386_REG_DS',['../_gdb_stub_8h.html#acebf7403f15f61d9949bcf3594127035af9cab09c46c538dee2f3730c8de8bf12',1,'GdbStub.h']]],
-  ['dbg_5fcpu_5fi386_5freg_5feax_5108',['DBG_CPU_I386_REG_EAX',['../_gdb_stub_8h.html#acebf7403f15f61d9949bcf3594127035af44102769bd1390e4ad711993fc6a8df',1,'GdbStub.h']]],
-  ['dbg_5fcpu_5fi386_5freg_5febp_5109',['DBG_CPU_I386_REG_EBP',['../_gdb_stub_8h.html#acebf7403f15f61d9949bcf3594127035a3fa736105c80f542eb5ea7b79b3c0c4c',1,'GdbStub.h']]],
-  ['dbg_5fcpu_5fi386_5freg_5febx_5110',['DBG_CPU_I386_REG_EBX',['../_gdb_stub_8h.html#acebf7403f15f61d9949bcf3594127035a47987d2328351acbc0dd26cf1e1c51c7',1,'GdbStub.h']]],
-  ['dbg_5fcpu_5fi386_5freg_5fecx_5111',['DBG_CPU_I386_REG_ECX',['../_gdb_stub_8h.html#acebf7403f15f61d9949bcf3594127035a71c6fa0a63b82b2e0fb4743cbd8e7fda',1,'GdbStub.h']]],
-  ['dbg_5fcpu_5fi386_5freg_5fedi_5112',['DBG_CPU_I386_REG_EDI',['../_gdb_stub_8h.html#acebf7403f15f61d9949bcf3594127035aba4024cadd07a24ff1fdbb0c6f165040',1,'GdbStub.h']]],
-  ['dbg_5fcpu_5fi386_5freg_5fedx_5113',['DBG_CPU_I386_REG_EDX',['../_gdb_stub_8h.html#acebf7403f15f61d9949bcf3594127035a4c2c8300f38c7e596bf9c658a7f72aad',1,'GdbStub.h']]],
-  ['dbg_5fcpu_5fi386_5freg_5fes_5114',['DBG_CPU_I386_REG_ES',['../_gdb_stub_8h.html#acebf7403f15f61d9949bcf3594127035a6fd834ff9e0feea9dce1752dd16b5d2d',1,'GdbStub.h']]],
-  ['dbg_5fcpu_5fi386_5freg_5fesi_5115',['DBG_CPU_I386_REG_ESI',['../_gdb_stub_8h.html#acebf7403f15f61d9949bcf3594127035aaa3980dab6fa7f51b39c61de27e6c810',1,'GdbStub.h']]],
-  ['dbg_5fcpu_5fi386_5freg_5fesp_5116',['DBG_CPU_I386_REG_ESP',['../_gdb_stub_8h.html#acebf7403f15f61d9949bcf3594127035ac409077fdf472c6d65a844035b0945a7',1,'GdbStub.h']]],
-  ['dbg_5fcpu_5fi386_5freg_5ffs_5117',['DBG_CPU_I386_REG_FS',['../_gdb_stub_8h.html#acebf7403f15f61d9949bcf3594127035ac9cbee37118e75a10849760dd5241387',1,'GdbStub.h']]],
-  ['dbg_5fcpu_5fi386_5freg_5fgs_5118',['DBG_CPU_I386_REG_GS',['../_gdb_stub_8h.html#acebf7403f15f61d9949bcf3594127035a566d7b3011f394a54ae4f1b1f527d9ff',1,'GdbStub.h']]],
-  ['dbg_5fcpu_5fi386_5freg_5fpc_5119',['DBG_CPU_I386_REG_PC',['../_gdb_stub_8h.html#acebf7403f15f61d9949bcf3594127035a10a0ca7ab2b77f1e0f6d3f58d528814f',1,'GdbStub.h']]],
-  ['dbg_5fcpu_5fi386_5freg_5fps_5120',['DBG_CPU_I386_REG_PS',['../_gdb_stub_8h.html#acebf7403f15f61d9949bcf3594127035abee0a051bcd74c17bc28675debd781e7',1,'GdbStub.h']]],
-  ['dbg_5fcpu_5fi386_5freg_5fss_5121',['DBG_CPU_I386_REG_SS',['../_gdb_stub_8h.html#acebf7403f15f61d9949bcf3594127035a4533da8c2916c11326f7a1ef70f15ac8',1,'GdbStub.h']]],
-  ['debugger_5foutput_5fsource_5fstatus_5falready_5fclosed_5122',['DEBUGGER_OUTPUT_SOURCE_STATUS_ALREADY_CLOSED',['../forwarding_8h.html#ac82f26f4aa50aede627e9d8ee40c6312ac199631b173e6c1619ab8460454f1a69',1,'forwarding.h']]],
-  ['debugger_5foutput_5fsource_5fstatus_5falready_5fopened_5123',['DEBUGGER_OUTPUT_SOURCE_STATUS_ALREADY_OPENED',['../forwarding_8h.html#ac82f26f4aa50aede627e9d8ee40c6312a9c59fa835c556a02f9af97243c466f02',1,'forwarding.h']]],
-  ['debugger_5foutput_5fsource_5fstatus_5fsuccessfully_5fclosed_5124',['DEBUGGER_OUTPUT_SOURCE_STATUS_SUCCESSFULLY_CLOSED',['../forwarding_8h.html#ac82f26f4aa50aede627e9d8ee40c6312ab9a5a8225ce8367269bc24e035e27021',1,'forwarding.h']]],
-  ['debugger_5foutput_5fsource_5fstatus_5fsuccessfully_5fopened_5125',['DEBUGGER_OUTPUT_SOURCE_STATUS_SUCCESSFULLY_OPENED',['../forwarding_8h.html#ac82f26f4aa50aede627e9d8ee40c6312a2c48c6088027600725c9d54179ff2f87',1,'forwarding.h']]],
-  ['debugger_5foutput_5fsource_5fstatus_5funknown_5ferror_5126',['DEBUGGER_OUTPUT_SOURCE_STATUS_UNKNOWN_ERROR',['../forwarding_8h.html#ac82f26f4aa50aede627e9d8ee40c6312a68dfc99955fa2f449c2fe77a1870d9ee',1,'forwarding.h']]],
-  ['detour_5fhook_5fdetails_5127',['DETOUR_HOOK_DETAILS',['../_pool_manager_8h.html#ac9e1b58ef1b236c646eb5ca0d4205f46a898d2549c3e40191c8e23e4ee687663b',1,'PoolManager.h']]],
-  ['dpc_5finterrupt_5128',['DPC_INTERRUPT',['../_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349ac6c28232aa8eed4ca952c96da887b90d',1,'Events.h']]],
-  ['ds_5129',['DS',['../hprdbghv_2_common_8h.html#a7439723a15461f5bf1905bb57eb295bfab8092694163a64aa32694a8246d94210',1,'Common.h']]]
+  ['decimal_1866',['DECIMAL',['../script-engine_2common_8h.html#abbf72a04a030b0407c2a0d547f84e12daf08a543d5a1549321682e12569d0fbd6',1,'common.h']]]
 ];

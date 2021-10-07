@@ -6,4 +6,4 @@ Make sure to not delete the following files on next commits :
 - .nojekyll
 - CNAME
 
-Last update : 8/15/2021
+Last update : 10/07/2021

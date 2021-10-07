@@ -1,5 +1,0 @@
-var struct___d_e_b_u_g_g_e_e___r_e_q_u_e_s_t___t_o___i_g_n_o_r_e___b_r_e_a_k_s___u_n_t_i_l___a_n___e_v_e_n_t =
-[
-    [ "PauseBreaksUntilASpecialMessageSent", "struct___d_e_b_u_g_g_e_e___r_e_q_u_e_s_t___t_o___i_g_n_o_r_e___b_r_e_a_k_s___u_n_t_i_l___a_n___e_v_e_n_t.html#a2a8ddbd58528be9df9cc0b262503135f", null ],
-    [ "SpeialEventResponse", "struct___d_e_b_u_g_g_e_e___r_e_q_u_e_s_t___t_o___i_g_n_o_r_e___b_r_e_a_k_s___u_n_t_i_l___a_n___e_v_e_n_t.html#a2fd524be394b4879f607a7282d910a10", null ]
-];

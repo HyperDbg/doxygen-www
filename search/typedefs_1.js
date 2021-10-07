@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['buffer_5fheader_4857',['BUFFER_HEADER',['../_logging_8h.html#a6b15292822c7b18e74ef05ec21a12fef',1,'Logging.h']]]
+  ['dw_5fapb_5fssi_5fregisters_1842',['DW_APB_SSI_REGISTERS',['../spimax311_8c.html#a4f02cdf53e2836b0f4ac7beb0a91db0e',1,'spimax311.c']]]
 ];

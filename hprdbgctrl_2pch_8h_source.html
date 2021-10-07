@@ -141,60 +141,55 @@ $(document).ready(function(){initNavTree('hprdbgctrl_2pch_8h_source.html',''); i
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#    include &lt;list&gt;</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#    include &lt;locale&gt;</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#    include &lt;memory&gt;</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">// HyperDbg defined headers</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#    include &quot;ScriptEngineCommonDefinitions.h&quot;</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#    include &quot;<a class="code" href="inipp_8h.html">inipp.h</a>&quot;</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#    include &lt;psapi.h&gt;</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">// HyperDbg defined headers</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#    include &quot;ScriptEngineCommonDefinitions.h&quot;</span></div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#    include &quot;Configuration.h&quot;</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#    include &quot;Definition.h&quot;</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#    include &quot;<a class="code" href="commands_8h.html">commands.h</a>&quot;</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#    include &quot;<a class="code" href="hprdbgctrl_2_common_8h.html">common.h</a>&quot;</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#    include &quot;<a class="code" href="symbol_8h.html">symbol.h</a>&quot;</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#    include &quot;<a class="code" href="hprdbgctrl_2_debugger_8h.html">debugger.h</a>&quot;</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#    include &quot;<a class="code" href="exports_8h.html">exports.h</a>&quot;</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#    include &quot;<a class="code" href="help_8h.html">help.h</a>&quot;</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#    include &quot;<a class="code" href="install_8h.html">install.h</a>&quot;</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#    include &quot;<a class="code" href="list_8h.html">list.h</a>&quot;</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#    include &quot;<a class="code" href="tests_8h.html">tests.h</a>&quot;</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#    include &quot;<a class="code" href="hprdbgctrl_2_transparency_8h.html">transparency.h</a>&quot;</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#    include &quot;<a class="code" href="communication_8h.html">communication.h</a>&quot;</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#    include &quot;<a class="code" href="namedpipe_8h.html">namedpipe.h</a>&quot;</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#    include &quot;<a class="code" href="forwarding_8h.html">forwarding.h</a>&quot;</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#    include &quot;<a class="code" href="hprdbgctrl_2_kd_8h.html">kd.h</a>&quot;</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// PCH_H</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#    include &quot;header/inipp.h&quot;</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#    include &quot;header/commands.h&quot;</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#    include &quot;header/common.h&quot;</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#    include &quot;header/symbol.h&quot;</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#    include &quot;header/debugger.h&quot;</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#    include &quot;header/script-engine.h&quot;</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#    include &quot;header/exports.h&quot;</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#    include &quot;header/help.h&quot;</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#    include &quot;header/install.h&quot;</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#    include &quot;header/list.h&quot;</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#    include &quot;header/tests.h&quot;</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#    include &quot;header/transparency.h&quot;</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#    include &quot;header/communication.h&quot;</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#    include &quot;header/namedpipe.h&quot;</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#    include &quot;header/forwarding.h&quot;</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#    include &quot;header/kd.h&quot;</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;ntdll.lib&quot;</span>)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// PCH_H</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">// For path combine</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;ntdll.lib&quot;</span>)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;Shlwapi.lib&quot;</span>)</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">// Need to link with Ws2_32.lib, Mswsock.lib, and Advapi32.lib</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">// for tcpclient.cpp and tcpserver.cpp</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;Ws2_32.lib&quot;</span>)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;Mswsock.lib&quot;</span>)</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;AdvApi32.lib&quot;</span>)</div>
-<div class="ttc" id="acommands_8h_html"><div class="ttname"><a href="commands_8h.html">commands.h</a></div><div class="ttdoc">The hyperdbg command interpreter and driver connector.</div></div>
-<div class="ttc" id="acommunication_8h_html"><div class="ttname"><a href="communication_8h.html">communication.h</a></div></div>
-<div class="ttc" id="aexports_8h_html"><div class="ttname"><a href="exports_8h.html">exports.h</a></div><div class="ttdoc">HyperDbg exported functions.</div></div>
-<div class="ttc" id="aforwarding_8h_html"><div class="ttname"><a href="forwarding_8h.html">forwarding.h</a></div><div class="ttdoc">Headers for event source forwarding.</div></div>
-<div class="ttc" id="ahelp_8h_html"><div class="ttname"><a href="help_8h.html">help.h</a></div><div class="ttdoc">help of commands header</div></div>
-<div class="ttc" id="ahprdbgctrl_2_common_8h_html"><div class="ttname"><a href="hprdbgctrl_2_common_8h.html">common.h</a></div><div class="ttdoc">header for HyperDbg's general functions for reading and converting and etc</div></div>
-<div class="ttc" id="ahprdbgctrl_2_debugger_8h_html"><div class="ttname"><a href="hprdbgctrl_2_debugger_8h.html">debugger.h</a></div><div class="ttdoc">General debugger functions.</div></div>
-<div class="ttc" id="ahprdbgctrl_2_kd_8h_html"><div class="ttname"><a href="hprdbgctrl_2_kd_8h.html">kd.h</a></div><div class="ttdoc">routines for remote kernel debugging</div></div>
-<div class="ttc" id="ahprdbgctrl_2_transparency_8h_html"><div class="ttname"><a href="hprdbgctrl_2_transparency_8h.html">transparency.h</a></div><div class="ttdoc">headers for test functions</div></div>
-<div class="ttc" id="ainipp_8h_html"><div class="ttname"><a href="inipp_8h.html">inipp.h</a></div><div class="ttdoc">header file ini file manager</div></div>
-<div class="ttc" id="ainstall_8h_html"><div class="ttname"><a href="install_8h.html">install.h</a></div></div>
-<div class="ttc" id="alist_8h_html"><div class="ttname"><a href="list_8h.html">list.h</a></div><div class="ttdoc">The list working functions headers.</div></div>
-<div class="ttc" id="anamedpipe_8h_html"><div class="ttname"><a href="namedpipe_8h.html">namedpipe.h</a></div><div class="ttdoc">Named pipe communication headers.</div></div>
-<div class="ttc" id="asymbol_8h_html"><div class="ttname"><a href="symbol_8h.html">symbol.h</a></div><div class="ttdoc">Symbol related functions header.</div></div>
-<div class="ttc" id="atests_8h_html"><div class="ttname"><a href="tests_8h.html">tests.h</a></div><div class="ttdoc">headers for test functions</div></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">// For path combine</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;Shlwapi.lib&quot;</span>)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment">// Need to link with Ws2_32.lib, Mswsock.lib, and Advapi32.lib</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">// for tcpclient.cpp and tcpserver.cpp</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;Ws2_32.lib&quot;</span>)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;Mswsock.lib&quot;</span>)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;AdvApi32.lib&quot;</span>)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">// For GetModuleFileNameExA on script-engine for user-mode</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">// Kernel32.lib is not needed, but seems that it&#39;s the library</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">// for Windows 7</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;Psapi.lib&quot;</span>)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;Kernel32.lib&quot;</span>)</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

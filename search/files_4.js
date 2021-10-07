@@ -1,19 +1,5 @@
 var searchData=
 [
-  ['e_2ecpp_3116',['e.cpp',['../e_8cpp.html',1,'']]],
-  ['eferhook_2ec_3117',['EferHook.c',['../_efer_hook_8c.html',1,'']]],
-  ['ept_2ec_3118',['Ept.c',['../_ept_8c.html',1,'']]],
-  ['ept_2eh_3119',['Ept.h',['../_ept_8h.html',1,'']]],
-  ['epthook_2ec_3120',['EptHook.c',['../_ept_hook_8c.html',1,'']]],
-  ['epthook_2ecpp_3121',['epthook.cpp',['../epthook_8cpp.html',1,'']]],
-  ['epthook2_2ecpp_3122',['epthook2.cpp',['../epthook2_8cpp.html',1,'']]],
-  ['eval_2ecpp_3123',['eval.cpp',['../eval_8cpp.html',1,'']]],
-  ['events_2ec_3124',['Events.c',['../_events_8c.html',1,'']]],
-  ['events_2ecpp_3125',['events.cpp',['../events_8cpp.html',1,'']]],
-  ['events_2eh_3126',['Events.h',['../_events_8h.html',1,'']]],
-  ['exception_2ecpp_3127',['exception.cpp',['../exception_8cpp.html',1,'']]],
-  ['exit_2ecpp_3128',['exit.cpp',['../exit_8cpp.html',1,'']]],
-  ['exports_2eh_3129',['exports.h',['../exports_8h.html',1,'']]],
-  ['extensioncommands_2ec_3130',['ExtensionCommands.c',['../_extension_commands_8c.html',1,'']]],
-  ['extensioncommands_2eh_3131',['ExtensionCommands.h',['../_extension_commands_8h.html',1,'']]]
+  ['globals_2ec_1533',['globals.c',['../globals_8c.html',1,'']]],
+  ['globals_2eh_1534',['globals.h',['../globals_8h.html',1,'']]]
 ];

@@ -1,0 +1,28 @@
+var struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s =
+[
+    [ "Baudr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#aac63197e447eb610e3337c67c6a50d05", null ],
+    [ "Ctrlr0", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a92571fcc96a1820348acf9eea00a55a5", null ],
+    [ "Ctrlr1", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a5fd27f1b0655998184e42851b5882da8", null ],
+    [ "Dmacr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a424ae5d05af19a7d633995b29cae4a1f", null ],
+    [ "Dmardlr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a9164be7b9655eb2ac77c099248dbee32", null ],
+    [ "Dmatdlr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#abfca1a0fe66cf1b8a23f6bdb4db6f94d", null ],
+    [ "Dr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a7201d1326834f7b0c593612f5fdfded2", null ],
+    [ "Icr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a33597a63089c7c07f67e5d071372359d", null ],
+    [ "Idr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a182b38d42f43ebd6f80dc90d2865852e", null ],
+    [ "Imr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a99ff867098c4097dfe8978c0faa4daf2", null ],
+    [ "Isr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a66d77aabe0019e6096d6e79bf3dc9579", null ],
+    [ "Msticr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a21039f25134141dd00a694dc6804aed7", null ],
+    [ "Mwcr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a5c57340d5a61dae06fe5d8381fc4ad8e", null ],
+    [ "Risr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a2dd66e49375e2d3e9827ae286ce6fc3f", null ],
+    [ "Rxflr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a2fdbc0af4ba4b0a9acd31d872add8309", null ],
+    [ "Rxftlr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#ab6581f4d7d3172ac6ef2604596bbeace", null ],
+    [ "Rxoicr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a70fc90cbb554064c97478d0088f2e03f", null ],
+    [ "Rxuicr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a54e2da4fabd64a7027642a179e2effd1", null ],
+    [ "Ser", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a19deb696911240c12f3f09c0f6089c65", null ],
+    [ "Sr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#ae2f3d0455bb8bea56938cac354902da9", null ],
+    [ "Ssi_comp_version", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#aaccb39cc707ddb2d6a769bef6dfffdae", null ],
+    [ "Ssienr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#adab47551ff2e028a3a727897a23bbbed", null ],
+    [ "Txflr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a1301552ad9d8145f407c36524dd6f634", null ],
+    [ "Txftlr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a0069ac0d0082086a2b0dfb3ffb7e5cfc", null ],
+    [ "Txoicr", "struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#a508d6993dfe0bf2e05bb4ca2685f1843", null ]
+];

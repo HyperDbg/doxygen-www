@@ -1,23 +1,4 @@
 var searchData=
 [
-  ['dbg_5fdec_5ffunc_4867',['dbg_dec_func',['../_gdb_stub_8c.html#ae279c3b09e57d0e2ffe2f6102882a707',1,'GdbStub.c']]],
-  ['dbg_5fenc_5ffunc_4868',['dbg_enc_func',['../_gdb_stub_8c.html#a455829668986160ea26dafc0e707c6fc',1,'GdbStub.c']]],
-  ['debug_5fregister_5f6_4869',['DEBUG_REGISTER_6',['../hprdbghv_2_common_8h.html#a59762e541f82ae0770bd3961ef5a4986',1,'Common.h']]],
-  ['debug_5fregister_5f7_4870',['DEBUG_REGISTER_7',['../hprdbghv_2_common_8h.html#ab476c3ec6c25bee6580cc5e1b3b1ba64',1,'Common.h']]],
-  ['debug_5fregister_5ftype_4871',['DEBUG_REGISTER_TYPE',['../_steppings_8h.html#af688d54814415aae4cce34fece882a44',1,'Steppings.h']]],
-  ['debuggee_5finstrument_5fin_5ftrace_4872',['DEBUGGEE_INSTRUMENT_IN_TRACE',['../hprdbghv_2_debugger_8h.html#a2e52743d36ddeef742c75dba624160ee',1,'Debugger.h']]],
-  ['debuggee_5frequest_5fto_5fignore_5fbreaks_5funtil_5fan_5fevent_4873',['DEBUGGEE_REQUEST_TO_IGNORE_BREAKS_UNTIL_AN_EVENT',['../hprdbghv_2_kd_8h.html#aedf0b19343dd23c43662c511b9ef14f3',1,'Kd.h']]],
-  ['debugger_5fcore_5fevents_4874',['DEBUGGER_CORE_EVENTS',['../hprdbghv_2_debugger_8h.html#a61aff702c31f36b2e61c0d1ccdea4a56',1,'Debugger.h']]],
-  ['debugger_5fevent_5fforwarding_4875',['DEBUGGER_EVENT_FORWARDING',['../forwarding_8h.html#a34180306e42f9aa1df2cb6dc81826456',1,'forwarding.h']]],
-  ['debugger_5fevent_5fforwarding_5fstate_4876',['DEBUGGER_EVENT_FORWARDING_STATE',['../forwarding_8h.html#aab23075636f25c1e502b3fda58ed2031',1,'forwarding.h']]],
-  ['debugger_5fevent_5fforwarding_5ftype_4877',['DEBUGGER_EVENT_FORWARDING_TYPE',['../forwarding_8h.html#a729462f999e9bd091d2b38a2be323eac',1,'forwarding.h']]],
-  ['debugger_5foutput_5fsource_5fstatus_4878',['DEBUGGER_OUTPUT_SOURCE_STATUS',['../forwarding_8h.html#acfb9eb7c766687abbd105c83ce4310f5',1,'forwarding.h']]],
-  ['debugger_5fstepping_5fcore_5fspecific_5fdetails_4879',['DEBUGGER_STEPPING_CORE_SPECIFIC_DETAILS',['../_vmx_8h.html#a492b2653c1da0e335c940c7f76e43e92',1,'Vmx.h']]],
-  ['debugger_5fstepping_5fthread_5fdetails_4880',['DEBUGGER_STEPPING_THREAD_DETAILS',['../_steppings_8h.html#a07b73212ef24dd099891abaa99135f96',1,'Steppings.h']]],
-  ['debugger_5fsteppings_5fnop_5fsled_4881',['DEBUGGER_STEPPINGS_NOP_SLED',['../_steppings_8h.html#ab88bb9b03a8cb171c06b26e1edfcb7ac',1,'Steppings.h']]],
-  ['debugger_5fsteppings_5fpool_5frequests_4882',['DEBUGGER_STEPPINGS_POOL_REQUESTS',['../_steppings_8h.html#ae9ae04518d2fa91d76691390455bc87a',1,'Steppings.h']]],
-  ['debugger_5fsyncronization_5fevents_5fstate_4883',['DEBUGGER_SYNCRONIZATION_EVENTS_STATE',['../hprdbgctrl_2_debugger_8h.html#a95aa2b7f48f24531f0afd71d202a5706',1,'debugger.h']]],
-  ['debuggercheckforcondition_4884',['DebuggerCheckForCondition',['../hprdbghv_2_debugger_8h.html#af973ba622a55c6cf5a6878550e59a838',1,'Debugger.h']]],
-  ['debuggerruncustomcodefunc_4885',['DebuggerRunCustomCodeFunc',['../hprdbghv_2_debugger_8h.html#aa52a9abc0f3e369a009d506794f80e37',1,'Debugger.h']]],
-  ['debugging_5fstate_4886',['DEBUGGING_STATE',['../hprdbgctrl_2_debugger_8h.html#ab576fb7ef28a0bc79d5870b71d04f08c',1,'debugger.h']]]
+  ['mx6_5fuart_5fregisters_1844',['MX6_UART_REGISTERS',['../mx6uart_8c.html#a5ff29b0584394aed32e95c0692ee75d7',1,'mx6uart.c']]]
 ];

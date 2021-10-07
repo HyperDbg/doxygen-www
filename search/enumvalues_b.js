@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['opencodingdx_5387',['OpEncodingDx',['../_io_handler_8h.html#afb730582952b7ceec73d7dc9bf7bef39a8a9f1e066d698196f14eade47afa6a97',1,'IoHandler.h']]],
-  ['opencodingimm_5388',['OpEncodingImm',['../_io_handler_8h.html#afb730582952b7ceec73d7dc9bf7bef39a00671c5af11f70b9e66b72648e752e71',1,'IoHandler.h']]]
+  ['pseudo_5fregister_1877',['PSEUDO_REGISTER',['../script-engine_2common_8h.html#abbf72a04a030b0407c2a0d547f84e12da8986ff41674dea142eb8674d6ea24113',1,'common.h']]]
 ];
