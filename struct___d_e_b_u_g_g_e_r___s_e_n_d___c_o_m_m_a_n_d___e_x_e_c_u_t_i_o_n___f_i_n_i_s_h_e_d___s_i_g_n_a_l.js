@@ -1,0 +1,4 @@
+var struct___d_e_b_u_g_g_e_r___s_e_n_d___c_o_m_m_a_n_d___e_x_e_c_u_t_i_o_n___f_i_n_i_s_h_e_d___s_i_g_n_a_l =
+[
+    [ "KernelStatus", "struct___d_e_b_u_g_g_e_r___s_e_n_d___c_o_m_m_a_n_d___e_x_e_c_u_t_i_o_n___f_i_n_i_s_h_e_d___s_i_g_n_a_l.html#a7f6eb4942fa94da828b9425c3d49882c", null ]
+];

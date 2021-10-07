@@ -1,0 +1,7 @@
+var struct___d_e_b_u_g_g_e_e___s_e_n_d___g_e_n_e_r_a_l___p_a_c_k_e_t___f_r_o_m___d_e_b_u_g_g_e_e___t_o___d_e_b_u_g_g_e_r =
+[
+    [ "KernelResult", "struct___d_e_b_u_g_g_e_e___s_e_n_d___g_e_n_e_r_a_l___p_a_c_k_e_t___f_r_o_m___d_e_b_u_g_g_e_e___t_o___d_e_b_u_g_g_e_r.html#ac871117cd61b8e2eab2e16c2fba63c22", null ],
+    [ "LengthOfBuffer", "struct___d_e_b_u_g_g_e_e___s_e_n_d___g_e_n_e_r_a_l___p_a_c_k_e_t___f_r_o_m___d_e_b_u_g_g_e_e___t_o___d_e_b_u_g_g_e_r.html#a92a3d3408a5bc98f1e7600eb82f354fe", null ],
+    [ "PauseDebuggeeWhenSent", "struct___d_e_b_u_g_g_e_e___s_e_n_d___g_e_n_e_r_a_l___p_a_c_k_e_t___f_r_o_m___d_e_b_u_g_g_e_e___t_o___d_e_b_u_g_g_e_r.html#a25fe0135418760e9f5024dd05332bdae", null ],
+    [ "RequestedAction", "struct___d_e_b_u_g_g_e_e___s_e_n_d___g_e_n_e_r_a_l___p_a_c_k_e_t___f_r_o_m___d_e_b_u_g_g_e_e___t_o___d_e_b_u_g_g_e_r.html#a4cab0a68aca150468529326bf3e6da96", null ]
+];

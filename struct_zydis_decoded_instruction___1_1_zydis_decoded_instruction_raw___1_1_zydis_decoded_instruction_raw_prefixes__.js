@@ -1,0 +1,5 @@
+var struct_zydis_decoded_instruction___1_1_zydis_decoded_instruction_raw___1_1_zydis_decoded_instruction_raw_prefixes__ =
+[
+    [ "type", "struct_zydis_decoded_instruction___1_1_zydis_decoded_instruction_raw___1_1_zydis_decoded_instruction_raw_prefixes__.html#a204bb79bc4cbef3c7b4e06ec5cd07065", null ],
+    [ "value", "struct_zydis_decoded_instruction___1_1_zydis_decoded_instruction_raw___1_1_zydis_decoded_instruction_raw_prefixes__.html#aeffcf2cefe69a67f217fae1fbb0f5f66", null ]
+];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pseudo_5fregister_1877',['PSEUDO_REGISTER',['../script-engine_2common_8h.html#abbf72a04a030b0407c2a0d547f84e12da8986ff41674dea142eb8674d6ea24113',1,'common.h']]]
+  ['msr_5fbitmap_14476',['MSR_BITMAP',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5ad4719b646fed8fd8c8ecb66beef2c18c',1,'Vmx.h']]]
 ];

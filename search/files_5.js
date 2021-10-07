@@ -1,5 +1,30 @@
 var searchData=
 [
-  ['hardware_2ec_1535',['hardware.c',['../hardware_8c.html',1,'']]],
-  ['hyperdbg_2dcli_2ecpp_1536',['hyperdbg-cli.cpp',['../hyperdbg-cli_8cpp.html',1,'']]]
+  ['e_2ecpp_10209',['e.cpp',['../e_8cpp.html',1,'']]],
+  ['eferhook_2ec_10210',['EferHook.c',['../_efer_hook_8c.html',1,'']]],
+  ['encodableinstructions_2einc_10211',['EncodableInstructions.inc',['../_encodable_instructions_8inc.html',1,'']]],
+  ['enuminstructioncategory_2eh_10212',['EnumInstructionCategory.h',['../_enum_instruction_category_8h.html',1,'']]],
+  ['enuminstructioncategory_2einc_10213',['EnumInstructionCategory.inc',['../_enum_instruction_category_8inc.html',1,'']]],
+  ['enumisaext_2eh_10214',['EnumISAExt.h',['../_enum_i_s_a_ext_8h.html',1,'']]],
+  ['enumisaext_2einc_10215',['EnumISAExt.inc',['../_enum_i_s_a_ext_8inc.html',1,'']]],
+  ['enumisaset_2eh_10216',['EnumISASet.h',['../_enum_i_s_a_set_8h.html',1,'']]],
+  ['enumisaset_2einc_10217',['EnumISASet.inc',['../_enum_i_s_a_set_8inc.html',1,'']]],
+  ['enummnemonic_2eh_10218',['EnumMnemonic.h',['../_enum_mnemonic_8h.html',1,'']]],
+  ['enummnemonic_2einc_10219',['EnumMnemonic.inc',['../_enum_mnemonic_8inc.html',1,'']]],
+  ['enumregister_2eh_10220',['EnumRegister.h',['../_enum_register_8h.html',1,'']]],
+  ['enumregister_2einc_10221',['EnumRegister.inc',['../_enum_register_8inc.html',1,'']]],
+  ['ept_2ec_10222',['Ept.c',['../_ept_8c.html',1,'']]],
+  ['ept_2eh_10223',['Ept.h',['../_ept_8h.html',1,'']]],
+  ['epthook_2ec_10224',['EptHook.c',['../_ept_hook_8c.html',1,'']]],
+  ['epthook_2ecpp_10225',['epthook.cpp',['../epthook_8cpp.html',1,'']]],
+  ['epthook2_2ecpp_10226',['epthook2.cpp',['../epthook2_8cpp.html',1,'']]],
+  ['eval_2ecpp_10227',['eval.cpp',['../eval_8cpp.html',1,'']]],
+  ['events_2ec_10228',['Events.c',['../_events_8c.html',1,'']]],
+  ['events_2ecpp_10229',['events.cpp',['../events_8cpp.html',1,'']]],
+  ['events_2eh_10230',['Events.h',['../_events_8h.html',1,'']]],
+  ['exception_2ecpp_10231',['exception.cpp',['../exception_8cpp.html',1,'']]],
+  ['exit_2ecpp_10232',['exit.cpp',['../exit_8cpp.html',1,'']]],
+  ['exports_2eh_10233',['exports.h',['../exports_8h.html',1,'']]],
+  ['extensioncommands_2ec_10234',['ExtensionCommands.c',['../_extension_commands_8c.html',1,'']]],
+  ['extensioncommands_2eh_10235',['ExtensionCommands.h',['../_extension_commands_8h.html',1,'']]]
 ];

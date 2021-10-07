@@ -155,7 +155,7 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a485dded3b53d1b8c06745b0ce3e5bf9c"><td class="memItemLeft" align="right" valign="top">BOOLEAN&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uartp_8h.html#a485dded3b53d1b8c06745b0ce3e5bf9c">UartpSetAccess</a> (_Inout_ PCPPORT Port, const BOOLEAN MemoryMapped, const UCHAR AccessSize, const UCHAR BitWidth)</td></tr>
+<tr class="memitem:a485dded3b53d1b8c06745b0ce3e5bf9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="uartp_8h.html#a485dded3b53d1b8c06745b0ce3e5bf9c">UartpSetAccess</a> (_Inout_ PCPPORT Port, const <a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> MemoryMapped, const <a class="el" href="_script_engine_eval_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587">UCHAR</a> AccessSize, const <a class="el" href="_script_engine_eval_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587">UCHAR</a> BitWidth)</td></tr>
 <tr class="separator:a485dded3b53d1b8c06745b0ce3e5bf9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
@@ -545,7 +545,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">BOOLEAN UartpSetAccess </td>
+          <td class="memname"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> UartpSetAccess </td>
           <td>(</td>
           <td class="paramtype">_Inout_ PCPPORT&#160;</td>
           <td class="paramname"><em>Port</em>, </td>
@@ -553,19 +553,19 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const BOOLEAN&#160;</td>
+          <td class="paramtype">const <a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td>
           <td class="paramname"><em>MemoryMapped</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const UCHAR&#160;</td>
+          <td class="paramtype">const <a class="el" href="_script_engine_eval_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587">UCHAR</a>&#160;</td>
           <td class="paramname"><em>AccessSize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const UCHAR&#160;</td>
+          <td class="paramtype">const <a class="el" href="_script_engine_eval_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587">UCHAR</a>&#160;</td>
           <td class="paramname"><em>BitWidth</em>&#160;</td>
         </tr>
         <tr>
@@ -576,8 +576,8 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;{</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    UCHAR                             MinRegisterWidth;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    BOOLEAN                           PowerOfTwo;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587">UCHAR</a>                             MinRegisterWidth;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>                           PowerOfTwo;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    UART_HARDWARE_READ_INDEXED_UCHAR  ReadFunction;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    UART_HARDWARE_WRITE_INDEXED_UCHAR WriteFunction;</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
@@ -588,7 +588,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="comment">// serial port is mapped into memory or I/O space.</span></div>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">if</span> (MemoryMapped == FALSE)</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">if</span> (MemoryMapped == <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>)</div>
 <div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    {</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">switch</span> ((<a class="code" href="uartp_8h.html#a73b91d0909f471032cc0f7a090244be8">ACPI_GENERIC_ACCESS_SIZE</a>)AccessSize)</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        {</div>
@@ -621,7 +621,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            <span class="keywordflow">return</span> FALSE;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        }</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    }</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordflow">else</span></div>
@@ -659,7 +659,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keywordflow">default</span>:</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            <span class="keywordflow">return</span> FALSE;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        }</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    }</div>
 <div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
@@ -668,18 +668,22 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    PowerOfTwo = ((BitWidth &amp; (BitWidth - 1)) == 0);</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordflow">if</span> ((PowerOfTwo == FALSE) ||</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordflow">if</span> ((PowerOfTwo == <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>) ||</div>
 <div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        (BitWidth &lt; MinRegisterWidth) ||</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        (BitWidth &gt; <a class="code" href="uartio_8c.html#af765237f3b2c50cc3a6eb040d9b70674">MAX_REGISTER_WIDTH</a>))</div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    {</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="keywordflow">return</span> FALSE;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    }</div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    Port-&gt;ByteWidth = BitWidth / 8;</div>
 <div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    Port-&gt;Write     = WriteFunction;</div>
 <div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    Port-&gt;Read      = ReadFunction;</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordflow">return</span> TRUE;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;}</div>
+<div class="ttc" id="a_script_engine_eval_8h_html_a1cb18096b299d23458d3c7b85fd86555"><div class="ttname"><a href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a></div><div class="ttdeci">UCHAR BOOLEAN</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:80</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_a4f4bb67531a9bf6f0b9c6ad76aeba587"><div class="ttname"><a href="_script_engine_eval_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587">UCHAR</a></div><div class="ttdeci">unsigned char UCHAR</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:76</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:93</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:92</div></div>
 <div class="ttc" id="auartio_8c_html_af765237f3b2c50cc3a6eb040d9b70674"><div class="ttname"><a href="uartio_8c.html#af765237f3b2c50cc3a6eb040d9b70674">MAX_REGISTER_WIDTH</a></div><div class="ttdeci">#define MAX_REGISTER_WIDTH</div><div class="ttdef"><b>Definition:</b> uartio.c:32</div></div>
 </div><!-- fragment -->
 </div>

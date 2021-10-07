@@ -94,13 +94,13 @@ $(document).ready(function(){initNavTree('hyperdbg-cli_8cpp.html',''); initResiz
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;conio.h&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
-<code>#include &quot;Definition.h&quot;</code><br />
-<code>#include &quot;Configuration.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="_definition_8h_source.html">Definition.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_configuration_8h_source.html">Configuration.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="details_8h_source.html">details.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af0fe50b17a5e534d95ecbb6ff7fd5441"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperdbg-cli_8cpp.html#af0fe50b17a5e534d95ecbb6ff7fd5441">__declspec</a> (dllimport) int HyperdbgLoadVmm()</td></tr>
+<tr class="memitem:af0fe50b17a5e534d95ecbb6ff7fd5441"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperdbg-cli_8cpp.html#af0fe50b17a5e534d95ecbb6ff7fd5441">__declspec</a> (dllimport) int <a class="el" href="hprdbgctrl_8cpp.html#a62e242728fa313183e70b186f7647193">HyperdbgLoadVmm</a>()</td></tr>
 <tr class="separator:af0fe50b17a5e534d95ecbb6ff7fd5441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hyperdbg-cli_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="memdesc:a0ddf1224851353fc92bfbff6f499fa97"><td class="mdescLeft">&#160;</td><td class="mdescRight">CLI main function.  <a href="hyperdbg-cli_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">More...</a><br /></td></tr>
@@ -187,7 +187,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="comment">// Executing the script</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            sprintf_s(ScriptBuffer, <span class="keyword">sizeof</span>(ScriptBuffer), <span class="stringliteral">&quot;.script %s&quot;</span>, argv[2]);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            HyperdbgInterpreter(ScriptBuffer);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="interpreter_8cpp.html#ad855565920dd0b8f2aa7c6c1986dfb5c">HyperdbgInterpreter</a>(ScriptBuffer);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">else</span></div>
@@ -199,7 +199,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">while</span> (!ExitFromDebugger)</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        HyperdbgShowSignature();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="interpreter_8cpp.html#ae2c87e83aee492a7f5699b0e7a1326d3">HyperdbgShowSignature</a>();</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordtype">string</span> CurrentCommand;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
@@ -217,7 +217,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">if</span> (!CurrentCommand.compare(<span class="stringliteral">&quot;&quot;</span>) &amp;&amp;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            HyperdbgContinuePreviousCommand())</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <a class="code" href="interpreter_8cpp.html#a3ceb238f318fa9858eaa16cba4f56f53">HyperdbgContinuePreviousCommand</a>())</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        {</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="comment">// Retry the previous command</span></div>
@@ -232,7 +232,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            PreviousCommand = CurrentCommand;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordtype">int</span> CommandExecutionResult = HyperdbgInterpreter((<span class="keywordtype">char</span> *)CurrentCommand.c_str());</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordtype">int</span> CommandExecutionResult = <a class="code" href="interpreter_8cpp.html#ad855565920dd0b8f2aa7c6c1986dfb5c">HyperdbgInterpreter</a>((<span class="keywordtype">char</span> *)CurrentCommand.c_str());</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="comment">// if the debugger encounters an exit state then the return will be 1</span></div>
@@ -253,6 +253,9 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
 <div class="ttc" id="adetails_8h_html_a774c489d4a710f426e3ef7b97dd7d9d8"><div class="ttname"><a href="details_8h.html#a774c489d4a710f426e3ef7b97dd7d9d8">Version</a></div><div class="ttdeci">char Version[]</div><div class="ttdoc">the global variable used to indicate the version of HyperDbg</div><div class="ttdef"><b>Definition:</b> details.h:18</div></div>
+<div class="ttc" id="ainterpreter_8cpp_html_a3ceb238f318fa9858eaa16cba4f56f53"><div class="ttname"><a href="interpreter_8cpp.html#a3ceb238f318fa9858eaa16cba4f56f53">HyperdbgContinuePreviousCommand</a></div><div class="ttdeci">bool HyperdbgContinuePreviousCommand()</div><div class="ttdoc">Some of commands like stepping commands (i, p, t) and etc. need to be repeated when the user press en...</div><div class="ttdef"><b>Definition:</b> interpreter.cpp:340</div></div>
+<div class="ttc" id="ainterpreter_8cpp_html_ad855565920dd0b8f2aa7c6c1986dfb5c"><div class="ttname"><a href="interpreter_8cpp.html#ad855565920dd0b8f2aa7c6c1986dfb5c">HyperdbgInterpreter</a></div><div class="ttdeci">int HyperdbgInterpreter(char *Command)</div><div class="ttdoc">Interpret commands.</div><div class="ttdef"><b>Definition:</b> interpreter.cpp:45</div></div>
+<div class="ttc" id="ainterpreter_8cpp_html_ae2c87e83aee492a7f5699b0e7a1326d3"><div class="ttname"><a href="interpreter_8cpp.html#ae2c87e83aee492a7f5699b0e7a1326d3">HyperdbgShowSignature</a></div><div class="ttdeci">VOID HyperdbgShowSignature()</div><div class="ttdoc">Show signature of HyperDbg.</div><div class="ttdef"><b>Definition:</b> interpreter.cpp:298</div></div>
 </div><!-- fragment -->
 </div>
 </div>

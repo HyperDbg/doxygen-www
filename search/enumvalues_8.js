@@ -1,5 +1,24 @@
 var searchData=
 [
-  ['local_5fid_1873',['LOCAL_ID',['../script-engine_2common_8h.html#abbf72a04a030b0407c2a0d547f84e12da831cc183b609443602a360fc9ee9d157',1,'common.h']]],
-  ['local_5funresolved_5fid_1874',['LOCAL_UNRESOLVED_ID',['../script-engine_2common_8h.html#abbf72a04a030b0407c2a0d547f84e12da5e9b9e9bf89ca253f366014229c927b8',1,'common.h']]]
+  ['idt_5fvectoring_5ferror_5fcode_14448',['IDT_VECTORING_ERROR_CODE',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5ac6cab926f3cbd2b60abd912b9d634a54',1,'Vmx.h']]],
+  ['idt_5fvectoring_5finfo_14449',['IDT_VECTORING_INFO',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a77c3fd597529838a56f50c6e83a50153',1,'Vmx.h']]],
+  ['in_5finstruction_5fexecution_14450',['IN_INSTRUCTION_EXECUTION',['../_definition_8h.html#ac90d8337845597671bc9d95b598591daa6a202de571d60ac89bb974578614c435',1,'Definition.h']]],
+  ['interrupt_5ftype_5fexternal_5finterrupt_14451',['INTERRUPT_TYPE_EXTERNAL_INTERRUPT',['../_events_8h.html#ade7b98ff2f26b359a8d902773a55df03a0db6d5125644a63aa8be8163e24a0091',1,'Events.h']]],
+  ['interrupt_5ftype_5fhardware_5fexception_14452',['INTERRUPT_TYPE_HARDWARE_EXCEPTION',['../_events_8h.html#ade7b98ff2f26b359a8d902773a55df03a0b2729a9e84efd468a517d30955d1eb4',1,'Events.h']]],
+  ['interrupt_5ftype_5fnmi_14453',['INTERRUPT_TYPE_NMI',['../_events_8h.html#ade7b98ff2f26b359a8d902773a55df03aac69152d78fe2d37d38dbb5b1c637519',1,'Events.h']]],
+  ['interrupt_5ftype_5fother_5fevent_14454',['INTERRUPT_TYPE_OTHER_EVENT',['../_events_8h.html#ade7b98ff2f26b359a8d902773a55df03af90a31096dd732964d492fd86647f742',1,'Events.h']]],
+  ['interrupt_5ftype_5fprivileged_5fsoftware_5finterrupt_14455',['INTERRUPT_TYPE_PRIVILEGED_SOFTWARE_INTERRUPT',['../_events_8h.html#ade7b98ff2f26b359a8d902773a55df03a1bedd44a36d0f2633d1e0508dfa34af5',1,'Events.h']]],
+  ['interrupt_5ftype_5freserved_14456',['INTERRUPT_TYPE_RESERVED',['../_events_8h.html#ade7b98ff2f26b359a8d902773a55df03a37feec117dcb40eb43faacd5d869e1b2',1,'Events.h']]],
+  ['interrupt_5ftype_5fsoftware_5fexception_14457',['INTERRUPT_TYPE_SOFTWARE_EXCEPTION',['../_events_8h.html#ade7b98ff2f26b359a8d902773a55df03a2985132456229e8009af891f304cf6ac',1,'Events.h']]],
+  ['interrupt_5ftype_5fsoftware_5finterrupt_14458',['INTERRUPT_TYPE_SOFTWARE_INTERRUPT',['../_events_8h.html#ade7b98ff2f26b359a8d902773a55df03ab88ed9a9fd4bac7ff04d15ed75279ca2',1,'Events.h']]],
+  ['invept_5fall_5fcontexts_14459',['INVEPT_ALL_CONTEXTS',['../_ept_8h.html#ab219663e4f46d8928baba662d2a330d1a9b5dbef81c19b758731c014c3b14a07a',1,'Ept.h']]],
+  ['invept_5fsingle_5fcontext_14460',['INVEPT_SINGLE_CONTEXT',['../_ept_8h.html#ab219663e4f46d8928baba662d2a330d1a36d6f6073110ebe31c96fe3bb43f3380',1,'Ept.h']]],
+  ['invvpid_5fall_5fcontext_14461',['INVVPID_ALL_CONTEXT',['../_vpid_8h.html#af98b2360a75330433021f1c2dfb3fcc6ac2504aab4d0725281b97f180f3916125',1,'Vpid.h']]],
+  ['invvpid_5findividual_5faddress_14462',['INVVPID_INDIVIDUAL_ADDRESS',['../_vpid_8h.html#af98b2360a75330433021f1c2dfb3fcc6af180a9d768f2b729341fcdd74b381f06',1,'Vpid.h']]],
+  ['invvpid_5fsingle_5fcontext_14463',['INVVPID_SINGLE_CONTEXT',['../_vpid_8h.html#af98b2360a75330433021f1c2dfb3fcc6a168e513d0e3c0aa20aac448099c17fe6',1,'Vpid.h']]],
+  ['invvpid_5fsingle_5fcontext_5fretaining_5fglobals_14464',['INVVPID_SINGLE_CONTEXT_RETAINING_GLOBALS',['../_vpid_8h.html#af98b2360a75330433021f1c2dfb3fcc6a50a260fe80b1632c52e3fb977b3a5156',1,'Vpid.h']]],
+  ['io_5fbitmap_5fa_14465',['IO_BITMAP_A',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5ad8057775a7bf2707ac0ac09ec3f980f0',1,'Vmx.h']]],
+  ['io_5fbitmap_5fb_14466',['IO_BITMAP_B',['../_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a567f39f6f001616006259f2e014a76de',1,'Vmx.h']]],
+  ['ipi_5finterrupt_14467',['IPI_INTERRUPT',['../_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a692efc86ae8e8aa1ff92ab7bddbe65d8',1,'Events.h']]],
+  ['irp_5fbased_14468',['IRP_BASED',['../_definition_8h.html#a7df81690e4c6ed5fbbb74547c998e4b6a557243d0c993fb8d9b81a0a0db183c2e',1,'Definition.h']]]
 ];

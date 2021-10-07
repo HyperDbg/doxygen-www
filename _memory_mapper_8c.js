@@ -1,0 +1,26 @@
+var _memory_mapper_8c =
+[
+    [ "MemoryMapperCheckIfPageIsPresentByCr3", "_memory_mapper_8c.html#a17593f3a0cff16087e9352a30f2d7f26", null ],
+    [ "MemoryMapperGetIndex", "_memory_mapper_8c.html#aa9210104b2c24fcedeb00b44bf2a6862", null ],
+    [ "MemoryMapperGetOffset", "_memory_mapper_8c.html#ac8ddf533a9664cc624c89d24e47c401b", null ],
+    [ "MemoryMapperGetPte", "_memory_mapper_8c.html#a862eca5adf6827857a10eeb8d25a9de1", null ],
+    [ "MemoryMapperGetPteByCr3", "_memory_mapper_8c.html#a9661d7b1bc778ec93d2edc95e4f825db", null ],
+    [ "MemoryMapperGetPteVa", "_memory_mapper_8c.html#a6ad6175a38d43cc3d1bb2f8af10a404a", null ],
+    [ "MemoryMapperGetPteVaByCr3", "_memory_mapper_8c.html#aacf726b2080300fa3162d2d1950930a9", null ],
+    [ "MemoryMapperInitialize", "_memory_mapper_8c.html#a87027c3656905dd5301985602a608505", null ],
+    [ "MemoryMapperMapPageAndGetPte", "_memory_mapper_8c.html#ae249297e232d0a173ef4ee4f89ec63fd", null ],
+    [ "MemoryMapperMapPhysicalAddressToPte", "_memory_mapper_8c.html#a969f7ca750acf1fb220502f0b43b064c", null ],
+    [ "MemoryMapperMapReservedPageRange", "_memory_mapper_8c.html#ac17d4f1a6ffc69eb67128aea0ec86e3b", null ],
+    [ "MemoryMapperReadMemorySafe", "_memory_mapper_8c.html#ad34df1901286734c77884ce9fc7c4f2d", null ],
+    [ "MemoryMapperReadMemorySafeByPhysicalAddress", "_memory_mapper_8c.html#a9180924ac8c17cd8bce9cc7032313db3", null ],
+    [ "MemoryMapperReadMemorySafeByPte", "_memory_mapper_8c.html#a49af3dceb386e43cc196c7eafc4761c6", null ],
+    [ "MemoryMapperReadMemorySafeOnTargetProcess", "_memory_mapper_8c.html#a61b5fc7d63fb52d22c5fef26c2e336b1", null ],
+    [ "MemoryMapperReserveUsermodeAddressInTargetProcess", "_memory_mapper_8c.html#a4fe96aef68ef1d24d00243f43ae631f1", null ],
+    [ "MemoryMapperUninitialize", "_memory_mapper_8c.html#a4c1a12a407bc281cb9f03db67b203913", null ],
+    [ "MemoryMapperUnmapReservedPageRange", "_memory_mapper_8c.html#a39dc486eb10d6f82eeb2f7c7fee989c0", null ],
+    [ "MemoryMapperWriteMemorySafe", "_memory_mapper_8c.html#aaee787f12fdd5b55e8ed5f0fb0de723c", null ],
+    [ "MemoryMapperWriteMemorySafeByPhysicalAddress", "_memory_mapper_8c.html#a6e0b7c2fabdc17c0f5d97d4af32dce95", null ],
+    [ "MemoryMapperWriteMemorySafeByPte", "_memory_mapper_8c.html#a41ef5112f39e5a4b8c4c6b624edcb40c", null ],
+    [ "MemoryMapperWriteMemorySafeOnTargetProcess", "_memory_mapper_8c.html#ace0fc6e10464f15b8af1c8d9736d9acd", null ],
+    [ "MemoryMapperWriteMemoryUnsafe", "_memory_mapper_8c.html#ac61db55ba4253cc41f2cfa679cb29130", null ]
+];

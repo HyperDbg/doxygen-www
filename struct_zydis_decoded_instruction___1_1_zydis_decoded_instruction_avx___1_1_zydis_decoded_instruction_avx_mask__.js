@@ -1,0 +1,5 @@
+var struct_zydis_decoded_instruction___1_1_zydis_decoded_instruction_avx___1_1_zydis_decoded_instruction_avx_mask__ =
+[
+    [ "mode", "struct_zydis_decoded_instruction___1_1_zydis_decoded_instruction_avx___1_1_zydis_decoded_instruction_avx_mask__.html#a359612ab7970a80933ab874220538f68", null ],
+    [ "reg", "struct_zydis_decoded_instruction___1_1_zydis_decoded_instruction_avx___1_1_zydis_decoded_instruction_avx_mask__.html#a48784976e3e220242d70f5cc61ae8f61", null ]
+];

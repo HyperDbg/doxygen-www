@@ -1,0 +1,25 @@
+var hprdbghv_2header_2debugger_2core_2kd_8h =
+[
+    [ "_DEBUGGEE_REQUEST_TO_IGNORE_BREAKS_UNTIL_AN_EVENT", "struct___d_e_b_u_g_g_e_e___r_e_q_u_e_s_t___t_o___i_g_n_o_r_e___b_r_e_a_k_s___u_n_t_i_l___a_n___e_v_e_n_t.html", "struct___d_e_b_u_g_g_e_e___r_e_q_u_e_s_t___t_o___i_g_n_o_r_e___b_r_e_a_k_s___u_n_t_i_l___a_n___e_v_e_n_t" ],
+    [ "_HARDWARE_DEBUG_REGISTER_DETAILS", "struct___h_a_r_d_w_a_r_e___d_e_b_u_g___r_e_g_i_s_t_e_r___d_e_t_a_i_l_s.html", "struct___h_a_r_d_w_a_r_e___d_e_b_u_g___r_e_g_i_s_t_e_r___d_e_t_a_i_l_s" ],
+    [ "DEBUGGEE_REQUEST_TO_IGNORE_BREAKS_UNTIL_AN_EVENT", "hprdbghv_2header_2debugger_2core_2kd_8h.html#aedf0b19343dd23c43662c511b9ef14f3", null ],
+    [ "HARDWARE_DEBUG_REGISTER_DETAILS", "hprdbghv_2header_2debugger_2core_2kd_8h.html#a2caac9dcb648b3b97f9b1bc150ffa078", null ],
+    [ "PDEBUGGEE_REQUEST_TO_IGNORE_BREAKS_UNTIL_AN_EVENT", "hprdbghv_2header_2debugger_2core_2kd_8h.html#a2cf4b7231fd2b6d0250c9ffc8cacdc0c", null ],
+    [ "PHARDWARE_DEBUG_REGISTER_DETAILS", "hprdbghv_2header_2debugger_2core_2kd_8h.html#ac138c71071baa0775fc179a9b25eb114", null ],
+    [ "KdChangeCr3AndTriggerBreakpointHandler", "hprdbghv_2header_2debugger_2core_2kd_8h.html#a2b9dd8217d8685e9e516b3de6ffa9e1f", null ],
+    [ "KdCheckGuestOperatingModeChanges", "hprdbghv_2header_2debugger_2core_2kd_8h.html#a741a955565e9e421cb67d11ccd51b0d4", null ],
+    [ "KdHaltSystem", "hprdbghv_2header_2debugger_2core_2kd_8h.html#ac7a7e5c80ccd8650a1b4e6c9e9193845", null ],
+    [ "KdHandleBreakpointAndDebugBreakpoints", "hprdbghv_2header_2debugger_2core_2kd_8h.html#a7d5143c4048aabc6231c2b025f5b4fa6", null ],
+    [ "KdHandleDebugEventsWhenKernelDebuggerIsAttached", "hprdbghv_2header_2debugger_2core_2kd_8h.html#ae9c4a4c5bb69925c5f692a647099751e", null ],
+    [ "KdHandleNmi", "hprdbghv_2header_2debugger_2core_2kd_8h.html#ad5ff648cb163a31d9db14639d2f2a571", null ],
+    [ "KdInitializeKernelDebugger", "hprdbghv_2header_2debugger_2core_2kd_8h.html#aa6327269502f58fa975905189894eb48", null ],
+    [ "KdLoggingResponsePacketToDebugger", "hprdbghv_2header_2debugger_2core_2kd_8h.html#a618a5b58b4f7d4fc29fc40e8942c2043", null ],
+    [ "KdManageSystemHaltOnVmxRoot", "hprdbghv_2header_2debugger_2core_2kd_8h.html#a635e8de4e3719084efb056ec8475f105", null ],
+    [ "KdNmiCallback", "hprdbghv_2header_2debugger_2core_2kd_8h.html#a02f5e52512d1c2c6874040b512922e96", null ],
+    [ "KdResponsePacketToDebugger", "hprdbghv_2header_2debugger_2core_2kd_8h.html#a25d0f4314e4f4480d3a91a5d0a6cc23d", null ],
+    [ "KdSendCommandFinishedSignal", "hprdbghv_2header_2debugger_2core_2kd_8h.html#a8be94c5d30ae62efdde1e182200f642c", null ],
+    [ "KdSendFormatsFunctionResult", "hprdbghv_2header_2debugger_2core_2kd_8h.html#a0af968467072898abb6bbd25495a06eb", null ],
+    [ "KdUninitializeKernelDebugger", "hprdbghv_2header_2debugger_2core_2kd_8h.html#a93b5f11529ccadc52cc47bccb072ed27", null ],
+    [ "DebuggerHandleBreakpointLock", "hprdbghv_2header_2debugger_2core_2kd_8h.html#aa8f0690057ff0d1c6f2f42dbbdb3ee96", null ],
+    [ "DebuggerResponseLock", "hprdbghv_2header_2debugger_2core_2kd_8h.html#ac9e9a8a58602b96c760514fbe7a268d4", null ]
+];

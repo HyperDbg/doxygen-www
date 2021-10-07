@@ -123,11 +123,11 @@ Variables</h2></td></tr>
 <tr class="separator:a70f9eb04c54ab6c69a57a4e90b077c0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e741ee7c18fa56fda5dfb6039653159"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse-table_8c.html#a6e741ee7c18fa56fda5dfb6039653159">VarArgFunc1</a> []</td></tr>
 <tr class="separator:a6e741ee7c18fa56fda5dfb6039653159"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1eb506d9ade036749faa729fbfdf65d2"><td class="memItemLeft" align="right" valign="top">const SYMBOL_MAP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse-table_8c.html#a1eb506d9ade036749faa729fbfdf65d2">SemanticRulesMapList</a> []</td></tr>
+<tr class="memitem:a1eb506d9ade036749faa729fbfdf65d2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_s_y_m_b_o_l___m_a_p.html">SYMBOL_MAP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse-table_8c.html#a1eb506d9ade036749faa729fbfdf65d2">SemanticRulesMapList</a> []</td></tr>
 <tr class="separator:a1eb506d9ade036749faa729fbfdf65d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7409658b03dad3f492ed956457a3fb2"><td class="memItemLeft" align="right" valign="top">const SYMBOL_MAP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse-table_8c.html#ad7409658b03dad3f492ed956457a3fb2">RegisterMapList</a> []</td></tr>
+<tr class="memitem:ad7409658b03dad3f492ed956457a3fb2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_s_y_m_b_o_l___m_a_p.html">SYMBOL_MAP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse-table_8c.html#ad7409658b03dad3f492ed956457a3fb2">RegisterMapList</a> []</td></tr>
 <tr class="separator:ad7409658b03dad3f492ed956457a3fb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a3ff4ed16ca255bee9c3021879fb2a1"><td class="memItemLeft" align="right" valign="top">const SYMBOL_MAP&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse-table_8c.html#a3a3ff4ed16ca255bee9c3021879fb2a1">PseudoRegisterMapList</a> []</td></tr>
+<tr class="memitem:a3a3ff4ed16ca255bee9c3021879fb2a1"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_s_y_m_b_o_l___m_a_p.html">SYMBOL_MAP</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse-table_8c.html#a3a3ff4ed16ca255bee9c3021879fb2a1">PseudoRegisterMapList</a> []</td></tr>
 <tr class="separator:a3a3ff4ed16ca255bee9c3021879fb2a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2548769dbff8a53a9689e133a64fcddd"><td class="memItemLeft" align="right" valign="top">const struct <a class="el" href="struct___t_o_k_e_n.html">_TOKEN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="parse-table_8c.html#a2548769dbff8a53a9689e133a64fcddd">LalrLhs</a> [<a class="el" href="parse-table_8h.html#a2f664b9616173b03fe33735c0caca11a">RULES_COUNT</a>]</td></tr>
 <tr class="separator:a2548769dbff8a53a9689e133a64fcddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -425,23 +425,34 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const SYMBOL_MAP PseudoRegisterMapList[]</td>
+          <td class="memname">const <a class="el" href="struct_s_y_m_b_o_l___m_a_p.html">SYMBOL_MAP</a> PseudoRegisterMapList[]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">{<span class="stringliteral">&quot;pid&quot;</span>, PSEUDO_REGISTER_PID},</div>
-<div class="line">{<span class="stringliteral">&quot;tid&quot;</span>, PSEUDO_REGISTER_TID},</div>
-<div class="line">{<span class="stringliteral">&quot;pname&quot;</span>, PSEUDO_REGISTER_PNAME},</div>
-<div class="line">{<span class="stringliteral">&quot;core&quot;</span>, PSEUDO_REGISTER_CORE},</div>
-<div class="line">{<span class="stringliteral">&quot;proc&quot;</span>, PSEUDO_REGISTER_PROC},</div>
-<div class="line">{<span class="stringliteral">&quot;thread&quot;</span>, PSEUDO_REGISTER_THREAD},</div>
-<div class="line">{<span class="stringliteral">&quot;peb&quot;</span>, PSEUDO_REGISTER_PEB},</div>
-<div class="line">{<span class="stringliteral">&quot;teb&quot;</span>, PSEUDO_REGISTER_TEB},</div>
-<div class="line">{<span class="stringliteral">&quot;ip&quot;</span>, PSEUDO_REGISTER_IP},</div>
-<div class="line">{<span class="stringliteral">&quot;buffer&quot;</span>, PSEUDO_REGISTER_BUFFER},</div>
-<div class="line">{<span class="stringliteral">&quot;context&quot;</span>, PSEUDO_REGISTER_CONTEXT}</div>
+<div class="line">{<span class="stringliteral">&quot;pid&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#adb35173d5ff1b98fb77d2aabdf2c07d2">PSEUDO_REGISTER_PID</a>},</div>
+<div class="line">{<span class="stringliteral">&quot;tid&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#aef5ce7aa0f89021ed012fb989849ca72">PSEUDO_REGISTER_TID</a>},</div>
+<div class="line">{<span class="stringliteral">&quot;pname&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a521ad2d2680b67b690b707033915cf74">PSEUDO_REGISTER_PNAME</a>},</div>
+<div class="line">{<span class="stringliteral">&quot;core&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a651043f269d369bd0df2c23be5aa0336">PSEUDO_REGISTER_CORE</a>},</div>
+<div class="line">{<span class="stringliteral">&quot;proc&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a2d679a809d2e4daf6bfd6fe4926ebd00">PSEUDO_REGISTER_PROC</a>},</div>
+<div class="line">{<span class="stringliteral">&quot;thread&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a24d8aaa373fa6197ba533f85cd5cdf55">PSEUDO_REGISTER_THREAD</a>},</div>
+<div class="line">{<span class="stringliteral">&quot;peb&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a6c38db7f77a47252f8b9ae6c2caf595f">PSEUDO_REGISTER_PEB</a>},</div>
+<div class="line">{<span class="stringliteral">&quot;teb&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a7c1aee9d61e945ab1ff74134366ba5a4">PSEUDO_REGISTER_TEB</a>},</div>
+<div class="line">{<span class="stringliteral">&quot;ip&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a09191bee226efd6518c032a4cb867717">PSEUDO_REGISTER_IP</a>},</div>
+<div class="line">{<span class="stringliteral">&quot;buffer&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#accba43bec16da1bfc0f28ea507916260">PSEUDO_REGISTER_BUFFER</a>},</div>
+<div class="line">{<span class="stringliteral">&quot;context&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a0fb5e2005fe843c4a52391f2f7b9d9f3">PSEUDO_REGISTER_CONTEXT</a>}</div>
 <div class="line">}</div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_a09191bee226efd6518c032a4cb867717"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a09191bee226efd6518c032a4cb867717">PSEUDO_REGISTER_IP</a></div><div class="ttdeci">#define PSEUDO_REGISTER_IP</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:264</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_a0fb5e2005fe843c4a52391f2f7b9d9f3"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a0fb5e2005fe843c4a52391f2f7b9d9f3">PSEUDO_REGISTER_CONTEXT</a></div><div class="ttdeci">#define PSEUDO_REGISTER_CONTEXT</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:266</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_a24d8aaa373fa6197ba533f85cd5cdf55"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a24d8aaa373fa6197ba533f85cd5cdf55">PSEUDO_REGISTER_THREAD</a></div><div class="ttdeci">#define PSEUDO_REGISTER_THREAD</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:261</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_a2d679a809d2e4daf6bfd6fe4926ebd00"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a2d679a809d2e4daf6bfd6fe4926ebd00">PSEUDO_REGISTER_PROC</a></div><div class="ttdeci">#define PSEUDO_REGISTER_PROC</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:260</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_a521ad2d2680b67b690b707033915cf74"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a521ad2d2680b67b690b707033915cf74">PSEUDO_REGISTER_PNAME</a></div><div class="ttdeci">#define PSEUDO_REGISTER_PNAME</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:258</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_a651043f269d369bd0df2c23be5aa0336"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a651043f269d369bd0df2c23be5aa0336">PSEUDO_REGISTER_CORE</a></div><div class="ttdeci">#define PSEUDO_REGISTER_CORE</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:259</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_a6c38db7f77a47252f8b9ae6c2caf595f"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a6c38db7f77a47252f8b9ae6c2caf595f">PSEUDO_REGISTER_PEB</a></div><div class="ttdeci">#define PSEUDO_REGISTER_PEB</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:262</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_a7c1aee9d61e945ab1ff74134366ba5a4"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a7c1aee9d61e945ab1ff74134366ba5a4">PSEUDO_REGISTER_TEB</a></div><div class="ttdeci">#define PSEUDO_REGISTER_TEB</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:263</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_accba43bec16da1bfc0f28ea507916260"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#accba43bec16da1bfc0f28ea507916260">PSEUDO_REGISTER_BUFFER</a></div><div class="ttdeci">#define PSEUDO_REGISTER_BUFFER</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:265</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_adb35173d5ff1b98fb77d2aabdf2c07d2"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#adb35173d5ff1b98fb77d2aabdf2c07d2">PSEUDO_REGISTER_PID</a></div><div class="ttdeci">#define PSEUDO_REGISTER_PID</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:256</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_aef5ce7aa0f89021ed012fb989849ca72"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#aef5ce7aa0f89021ed012fb989849ca72">PSEUDO_REGISTER_TID</a></div><div class="ttdeci">#define PSEUDO_REGISTER_TID</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:257</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -452,7 +463,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const SYMBOL_MAP RegisterMapList[]</td>
+          <td class="memname">const <a class="el" href="struct_s_y_m_b_o_l___m_a_p.html">SYMBOL_MAP</a> RegisterMapList[]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -494,7 +505,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const SYMBOL_MAP SemanticRulesMapList[]</td>
+          <td class="memname">const <a class="el" href="struct_s_y_m_b_o_l___m_a_p.html">SYMBOL_MAP</a> SemanticRulesMapList[]</td>
         </tr>
       </table>
 </div><div class="memdoc">

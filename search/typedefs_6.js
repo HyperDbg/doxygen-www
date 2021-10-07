@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['token_1853',['TOKEN',['../script-engine_2common_8h.html#ad20b170192ed4369d4b197e07b20839f',1,'common.h']]],
-  ['token_5flist_1854',['TOKEN_LIST',['../script-engine_2common_8h.html#a77f94808c5ec4861326c67f8c7ee626f',1,'common.h']]],
-  ['token_5ftype_1855',['TOKEN_TYPE',['../script-engine_2common_8h.html#aca36262faa75df68159f9df47bb07646',1,'common.h']]]
+  ['guest_5fextra_5fregisters_13529',['GUEST_EXTRA_REGISTERS',['../_definition_8h.html#aff3c14c7a6a30b52600a1a3e0989ce60',1,'Definition.h']]],
+  ['guest_5fregs_13530',['GUEST_REGS',['../_definition_8h.html#a66d8437cb335fad8f1205799a6667869',1,'GUEST_REGS():&#160;Definition.h'],['../_script_engine_eval_8h.html#a2e5ebb17d5d691b927d2b0b4d4341342',1,'GUEST_REGS():&#160;ScriptEngineEval.h']]]
 ];
