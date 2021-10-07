@@ -849,7 +849,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;        <span class="keywordflow">while</span> (TempList2 != TempList-&gt;Flink)</div>
 <div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;        {</div>
 <div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;            TempList                     = TempList-&gt;Flink;</div>
-<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;            <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">PDEBUGGER_EVENT</a> CurrentEvent = <a class="code" href="hprdbgctrl_2header_2_list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">DEBUGGER_EVENT</a>, EventsOfSameTypeList);</div>
+<div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;            <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">PDEBUGGER_EVENT</a> CurrentEvent = <a class="code" href="list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">DEBUGGER_EVENT</a>, EventsOfSameTypeList);</div>
 <div class="line"><a name="l01253"></a><span class="lineno"> 1253</span>&#160; </div>
 <div class="line"><a name="l01254"></a><span class="lineno"> 1254</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l01255"></a><span class="lineno"> 1255</span>&#160;            <span class="comment">// Check if we find at least one event or not</span></div>
@@ -870,8 +870,8 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01270"></a><span class="lineno"> 1270</span>&#160;}</div>
 <div class="ttc" id="a_global_variables_8h_html_a2d2638d7b52281063d7e08a62cdfda12"><div class="ttname"><a href="_global_variables_8h.html#a2d2638d7b52281063d7e08a62cdfda12">g_Events</a></div><div class="ttdeci">DEBUGGER_CORE_EVENTS * g_Events</div><div class="ttdoc">events list (for debugger)</div><div class="ttdef"><b>Definition:</b> GlobalVariables.h:37</div></div>
 <div class="ttc" id="a_script_engine_eval_8h_html_a1cb18096b299d23458d3c7b85fd86555"><div class="ttname"><a href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a></div><div class="ttdeci">UCHAR BOOLEAN</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:80</div></div>
-<div class="ttc" id="ahprdbgctrl_2header_2_list_8h_html_adec42d53dc3b3e16ab7a1cd98af1c5fc"><div class="ttname"><a href="hprdbgctrl_2header_2_list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a></div><div class="ttdeci">#define CONTAINING_RECORD(address, type, field)</div><div class="ttdef"><b>Definition:</b> list.h:14</div></div>
 <div class="ttc" id="ahprdbghv_2header_2debugger_2core_2debugger_8h_html_a61aff702c31f36b2e61c0d1ccdea4a56"><div class="ttname"><a href="hprdbghv_2header_2debugger_2core_2debugger_8h.html#a61aff702c31f36b2e61c0d1ccdea4a56">DEBUGGER_CORE_EVENTS</a></div><div class="ttdeci">struct _DEBUGGER_CORE_EVENTS DEBUGGER_CORE_EVENTS</div><div class="ttdoc">List of all the different events.</div></div>
+<div class="ttc" id="alist_8h_html_adec42d53dc3b3e16ab7a1cd98af1c5fc"><div class="ttname"><a href="list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a></div><div class="ttdeci">#define CONTAINING_RECORD(address, type, field)</div><div class="ttdef"><b>Definition:</b> list.h:14</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -911,7 +911,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01383"></a><span class="lineno"> 1383</span>&#160;    <span class="keywordflow">while</span> (TargetEventList != TempList-&gt;Flink)</div>
 <div class="line"><a name="l01384"></a><span class="lineno"> 1384</span>&#160;    {</div>
 <div class="line"><a name="l01385"></a><span class="lineno"> 1385</span>&#160;        TempList                     = TempList-&gt;Flink;</div>
-<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;        <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">PDEBUGGER_EVENT</a> CurrentEvent = <a class="code" href="hprdbgctrl_2header_2_list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">DEBUGGER_EVENT</a>, EventsOfSameTypeList);</div>
+<div class="line"><a name="l01386"></a><span class="lineno"> 1386</span>&#160;        <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">PDEBUGGER_EVENT</a> CurrentEvent = <a class="code" href="list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">DEBUGGER_EVENT</a>, EventsOfSameTypeList);</div>
 <div class="line"><a name="l01387"></a><span class="lineno"> 1387</span>&#160; </div>
 <div class="line"><a name="l01388"></a><span class="lineno"> 1388</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l01389"></a><span class="lineno"> 1389</span>&#160;        <span class="comment">// Increase the counter</span></div>
@@ -972,7 +972,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01417"></a><span class="lineno"> 1417</span>&#160;    <span class="keywordflow">while</span> (TargetEventList != TempList-&gt;Flink)</div>
 <div class="line"><a name="l01418"></a><span class="lineno"> 1418</span>&#160;    {</div>
 <div class="line"><a name="l01419"></a><span class="lineno"> 1419</span>&#160;        TempList                     = TempList-&gt;Flink;</div>
-<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;        <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">PDEBUGGER_EVENT</a> CurrentEvent = <a class="code" href="hprdbgctrl_2header_2_list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">DEBUGGER_EVENT</a>, EventsOfSameTypeList);</div>
+<div class="line"><a name="l01420"></a><span class="lineno"> 1420</span>&#160;        <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">PDEBUGGER_EVENT</a> CurrentEvent = <a class="code" href="list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">DEBUGGER_EVENT</a>, EventsOfSameTypeList);</div>
 <div class="line"><a name="l01421"></a><span class="lineno"> 1421</span>&#160; </div>
 <div class="line"><a name="l01422"></a><span class="lineno"> 1422</span>&#160;        <span class="keywordflow">if</span> (CurrentEvent-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html#ab9c6cc7fa656cbf1548f99c647a1dc36">CoreId</a> == <a class="code" href="_definition_8h.html#a4ec73fff5b98e3049b859f7177956844">DEBUGGER_EVENT_APPLY_TO_ALL_CORES</a> ||</div>
 <div class="line"><a name="l01423"></a><span class="lineno"> 1423</span>&#160;            CurrentEvent-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html#ab9c6cc7fa656cbf1548f99c647a1dc36">CoreId</a> == TargetCore)</div>
@@ -1026,7 +1026,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01454"></a><span class="lineno"> 1454</span>&#160;    <span class="keywordflow">while</span> (&amp;<a class="code" href="_global_variables_8h.html#a2d2638d7b52281063d7e08a62cdfda12">g_Events</a>-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#abb683f519a808509bd1679c3a20008e6">ExceptionOccurredEventsHead</a> != TempList-&gt;Flink)</div>
 <div class="line"><a name="l01455"></a><span class="lineno"> 1455</span>&#160;    {</div>
 <div class="line"><a name="l01456"></a><span class="lineno"> 1456</span>&#160;        TempList                     = TempList-&gt;Flink;</div>
-<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;        <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">PDEBUGGER_EVENT</a> CurrentEvent = <a class="code" href="hprdbgctrl_2header_2_list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">DEBUGGER_EVENT</a>, EventsOfSameTypeList);</div>
+<div class="line"><a name="l01457"></a><span class="lineno"> 1457</span>&#160;        <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">PDEBUGGER_EVENT</a> CurrentEvent = <a class="code" href="list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">DEBUGGER_EVENT</a>, EventsOfSameTypeList);</div>
 <div class="line"><a name="l01458"></a><span class="lineno"> 1458</span>&#160; </div>
 <div class="line"><a name="l01459"></a><span class="lineno"> 1459</span>&#160;        <span class="keywordflow">if</span> (CurrentEvent-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html#ab9c6cc7fa656cbf1548f99c647a1dc36">CoreId</a> == <a class="code" href="_definition_8h.html#a4ec73fff5b98e3049b859f7177956844">DEBUGGER_EVENT_APPLY_TO_ALL_CORES</a> ||</div>
 <div class="line"><a name="l01460"></a><span class="lineno"> 1460</span>&#160;            CurrentEvent-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html#ab9c6cc7fa656cbf1548f99c647a1dc36">CoreId</a> == CoreIndex)</div>
@@ -1080,7 +1080,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01205"></a><span class="lineno"> 1205</span>&#160;        <span class="keywordflow">while</span> (TempList2 != TempList-&gt;Flink)</div>
 <div class="line"><a name="l01206"></a><span class="lineno"> 1206</span>&#160;        {</div>
 <div class="line"><a name="l01207"></a><span class="lineno"> 1207</span>&#160;            TempList                     = TempList-&gt;Flink;</div>
-<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;            <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">PDEBUGGER_EVENT</a> CurrentEvent = <a class="code" href="hprdbgctrl_2header_2_list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">DEBUGGER_EVENT</a>, EventsOfSameTypeList);</div>
+<div class="line"><a name="l01208"></a><span class="lineno"> 1208</span>&#160;            <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">PDEBUGGER_EVENT</a> CurrentEvent = <a class="code" href="list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">DEBUGGER_EVENT</a>, EventsOfSameTypeList);</div>
 <div class="line"><a name="l01209"></a><span class="lineno"> 1209</span>&#160; </div>
 <div class="line"><a name="l01210"></a><span class="lineno"> 1210</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l01211"></a><span class="lineno"> 1211</span>&#160;            <span class="comment">// Check if we find the event or not</span></div>
@@ -2561,7 +2561,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00979"></a><span class="lineno">  979</span>&#160;    <span class="keywordflow">while</span> (&amp;Event-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html#a39e305ea9e149b1f96defc4e326dbc8f">ActionsListHead</a> != TempList-&gt;Flink)</div>
 <div class="line"><a name="l00980"></a><span class="lineno">  980</span>&#160;    {</div>
 <div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;        TempList                             = TempList-&gt;Flink;</div>
-<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;        <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t___a_c_t_i_o_n.html">PDEBUGGER_EVENT_ACTION</a> CurrentAction = <a class="code" href="hprdbgctrl_2header_2_list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t___a_c_t_i_o_n.html">DEBUGGER_EVENT_ACTION</a>, ActionsList);</div>
+<div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;        <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t___a_c_t_i_o_n.html">PDEBUGGER_EVENT_ACTION</a> CurrentAction = <a class="code" href="list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t___a_c_t_i_o_n.html">DEBUGGER_EVENT_ACTION</a>, ActionsList);</div>
 <div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160; </div>
 <div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;        <span class="comment">// Perform the action</span></div>
@@ -3105,7 +3105,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01662"></a><span class="lineno"> 1662</span>&#160;    <span class="keywordflow">while</span> (TempList2 != TempList-&gt;Flink)</div>
 <div class="line"><a name="l01663"></a><span class="lineno"> 1663</span>&#160;    {</div>
 <div class="line"><a name="l01664"></a><span class="lineno"> 1664</span>&#160;        TempList                             = TempList-&gt;Flink;</div>
-<div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;        <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t___a_c_t_i_o_n.html">PDEBUGGER_EVENT_ACTION</a> CurrentAction = <a class="code" href="hprdbgctrl_2header_2_list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t___a_c_t_i_o_n.html">DEBUGGER_EVENT_ACTION</a>, ActionsList);</div>
+<div class="line"><a name="l01665"></a><span class="lineno"> 1665</span>&#160;        <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t___a_c_t_i_o_n.html">PDEBUGGER_EVENT_ACTION</a> CurrentAction = <a class="code" href="list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t___a_c_t_i_o_n.html">DEBUGGER_EVENT_ACTION</a>, ActionsList);</div>
 <div class="line"><a name="l01666"></a><span class="lineno"> 1666</span>&#160; </div>
 <div class="line"><a name="l01667"></a><span class="lineno"> 1667</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l01668"></a><span class="lineno"> 1668</span>&#160;        <span class="comment">// Check if it has a OptionalRequestedBuffer probably for</span></div>
@@ -3168,7 +3168,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;        <span class="keywordflow">while</span> (TempList2 != TempList-&gt;Flink)</div>
 <div class="line"><a name="l01344"></a><span class="lineno"> 1344</span>&#160;        {</div>
 <div class="line"><a name="l01345"></a><span class="lineno"> 1345</span>&#160;            TempList                     = TempList-&gt;Flink;</div>
-<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;            <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">PDEBUGGER_EVENT</a> CurrentEvent = <a class="code" href="hprdbgctrl_2header_2_list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">DEBUGGER_EVENT</a>, EventsOfSameTypeList);</div>
+<div class="line"><a name="l01346"></a><span class="lineno"> 1346</span>&#160;            <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">PDEBUGGER_EVENT</a> CurrentEvent = <a class="code" href="list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">DEBUGGER_EVENT</a>, EventsOfSameTypeList);</div>
 <div class="line"><a name="l01347"></a><span class="lineno"> 1347</span>&#160; </div>
 <div class="line"><a name="l01348"></a><span class="lineno"> 1348</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l01349"></a><span class="lineno"> 1349</span>&#160;            <span class="comment">// Check if we find at least one event or not</span></div>
@@ -3311,7 +3311,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01615"></a><span class="lineno"> 1615</span>&#160;        <span class="keywordflow">while</span> (TempList2 != TempList-&gt;Flink)</div>
 <div class="line"><a name="l01616"></a><span class="lineno"> 1616</span>&#160;        {</div>
 <div class="line"><a name="l01617"></a><span class="lineno"> 1617</span>&#160;            TempList                     = TempList-&gt;Flink;</div>
-<div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;            <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">PDEBUGGER_EVENT</a> CurrentEvent = <a class="code" href="hprdbgctrl_2header_2_list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">DEBUGGER_EVENT</a>, EventsOfSameTypeList);</div>
+<div class="line"><a name="l01618"></a><span class="lineno"> 1618</span>&#160;            <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">PDEBUGGER_EVENT</a> CurrentEvent = <a class="code" href="list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">DEBUGGER_EVENT</a>, EventsOfSameTypeList);</div>
 <div class="line"><a name="l01619"></a><span class="lineno"> 1619</span>&#160; </div>
 <div class="line"><a name="l01620"></a><span class="lineno"> 1620</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l01621"></a><span class="lineno"> 1621</span>&#160;            <span class="comment">// Check if we find the event or not</span></div>
@@ -3369,7 +3369,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01294"></a><span class="lineno"> 1294</span>&#160;        <span class="keywordflow">while</span> (TempList2 != TempList-&gt;Flink)</div>
 <div class="line"><a name="l01295"></a><span class="lineno"> 1295</span>&#160;        {</div>
 <div class="line"><a name="l01296"></a><span class="lineno"> 1296</span>&#160;            TempList                     = TempList-&gt;Flink;</div>
-<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;            <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">PDEBUGGER_EVENT</a> CurrentEvent = <a class="code" href="hprdbgctrl_2header_2_list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">DEBUGGER_EVENT</a>, EventsOfSameTypeList);</div>
+<div class="line"><a name="l01297"></a><span class="lineno"> 1297</span>&#160;            <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">PDEBUGGER_EVENT</a> CurrentEvent = <a class="code" href="list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">DEBUGGER_EVENT</a>, EventsOfSameTypeList);</div>
 <div class="line"><a name="l01298"></a><span class="lineno"> 1298</span>&#160; </div>
 <div class="line"><a name="l01299"></a><span class="lineno"> 1299</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l01300"></a><span class="lineno"> 1300</span>&#160;            <span class="comment">// Check if we find at least one event or not</span></div>
@@ -3814,7 +3814,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    <span class="keywordflow">while</span> (TempList2 != TempList-&gt;Flink)</div>
 <div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    {</div>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        TempList                     = TempList-&gt;Flink;</div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">PDEBUGGER_EVENT</a> CurrentEvent = <a class="code" href="hprdbgctrl_2header_2_list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">DEBUGGER_EVENT</a>, EventsOfSameTypeList);</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;        <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">PDEBUGGER_EVENT</a> CurrentEvent = <a class="code" href="list_8h.html#adec42d53dc3b3e16ab7a1cd98af1c5fc">CONTAINING_RECORD</a>(TempList, <a class="code" href="struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html">DEBUGGER_EVENT</a>, EventsOfSameTypeList);</div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160; </div>
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        <span class="comment">// check if the event is enabled or not</span></div>

@@ -1078,11 +1078,11 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'ray'+
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> Var4;</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    } TEST_STRUCT, *PTEST_STRUCT;</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    PTEST_STRUCT <a class="code" href="struct_test_struct__.html">TestStruct</a> = (PTEST_STRUCT)malloc(<span class="keyword">sizeof</span>(TEST_STRUCT));</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    RtlZeroMemory(<a class="code" href="struct_test_struct__.html">TestStruct</a>, <span class="keyword">sizeof</span>(TEST_STRUCT));</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    PTEST_STRUCT TestStruct = (PTEST_STRUCT)malloc(<span class="keyword">sizeof</span>(TEST_STRUCT));</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    RtlZeroMemory(TestStruct, <span class="keyword">sizeof</span>(TEST_STRUCT));</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <a class="code" href="struct_test_struct__.html">TestStruct</a>-&gt;Var1 = 0x41414141;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <a class="code" href="struct_test_struct__.html">TestStruct</a>-&gt;Var3 = 0x4242424242424242;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    TestStruct-&gt;Var1 = 0x41414141;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    TestStruct-&gt;Var3 = 0x4242424242424242;</div>
 <div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
 <div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <a class="code" href="struct_g_u_e_s_t___r_e_g_s.html">GUEST_REGS</a> GuestRegs = {0};</div>
 <div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
@@ -1092,7 +1092,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'ray'+
 <div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        L<span class="stringliteral">&quot;9 a b c d e f g h i j k l m n o p q r s t u v w x y z&quot;</span>;</div>
 <div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
 <div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    GuestRegs.<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a95695e8756c30083f7c7ca248a39c0a9">rax</a> = 0x1;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    GuestRegs.<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a52a78cf3199d7ee63633788556964bda">rcx</a> = (<a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>)<a class="code" href="struct_test_struct__.html">TestStruct</a>;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    GuestRegs.<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a52a78cf3199d7ee63633788556964bda">rcx</a> = (<a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>)TestStruct;</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    GuestRegs.<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#acd0a66cbad6f8a6d96f37decde4d7684">rdx</a> = 0x3;</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    GuestRegs.<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a118970078fd9d64d60fb60e94d55a9ac">rbx</a> = 0x4;</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    GuestRegs.<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#af0d36f4bd51a28e1754fde12939a2f8e">rsp</a> = 0x5;</div>
@@ -1109,7 +1109,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'ray'+
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;    GuestRegs.<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a7a2624baf22ea250aca11ffa50862372">r15</a> = (<a class="code" href="_script_engine_eval_8h.html#a879c8a1e8468389cf82a40cf0690bdce">ULONG64</a>)test;</div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
 <div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <a class="code" href="script-engine-wrapper_8cpp.html#aaddbdfd6e72593438b04711d510c3f45">ScriptEngineEvalWrapper</a>(&amp;GuestRegs, Expr);</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    free(<a class="code" href="struct_test_struct__.html">TestStruct</a>);</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    free(TestStruct);</div>
 <div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;}</div>
 <div class="ttc" id="a_script_engine_eval_8h_html_a879c8a1e8468389cf82a40cf0690bdce"><div class="ttname"><a href="_script_engine_eval_8h.html#a879c8a1e8468389cf82a40cf0690bdce">ULONG64</a></div><div class="ttdeci">unsigned __int64 ULONG64</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:70</div></div>
 <div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_a076dca6a0c1ecbb72a559c4b99d0b24e"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#a076dca6a0c1ecbb72a559c4b99d0b24e">GUEST_REGS::r13</a></div><div class="ttdeci">ULONG64 r13</div><div class="ttdef"><b>Definition:</b> Definition.h:384</div></div>
@@ -1128,7 +1128,6 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'ray'+
 <div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_ace9fcdebfe4b6b12a74a3b301594866c"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#ace9fcdebfe4b6b12a74a3b301594866c">GUEST_REGS::r12</a></div><div class="ttdeci">ULONG64 r12</div><div class="ttdef"><b>Definition:</b> Definition.h:383</div></div>
 <div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_af0d36f4bd51a28e1754fde12939a2f8e"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#af0d36f4bd51a28e1754fde12939a2f8e">GUEST_REGS::rsp</a></div><div class="ttdeci">ULONG64 rsp</div><div class="ttdef"><b>Definition:</b> Definition.h:375</div></div>
 <div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_af8cd8b9416abc4b2c6703110bb666932"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#af8cd8b9416abc4b2c6703110bb666932">GUEST_REGS::rbp</a></div><div class="ttdeci">ULONG64 rbp</div><div class="ttdef"><b>Definition:</b> Definition.h:376</div></div>
-<div class="ttc" id="astruct_test_struct___html"><div class="ttname"><a href="struct_test_struct__.html">TestStruct_</a></div><div class="ttdoc">Defines the TestStruct struct that represents a single element in the vector.</div><div class="ttdef"><b>Definition:</b> Vector.c:49</div></div>
 </div><!-- fragment -->
 </div>
 </div>

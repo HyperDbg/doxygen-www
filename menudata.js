@@ -25,7 +25,6 @@
 var menudata={children:[
 {text:"Main Page",url:"index.html"},
 {text:"Related Pages",url:"pages.html"},
-{text:"Modules",url:"modules.html"},
 {text:"Namespaces",url:"namespaces.html",children:[
 {text:"Namespace List",url:"namespaces.html"},
 {text:"Namespace Members",url:"namespacemembers.html",children:[
@@ -68,7 +67,6 @@ var menudata={children:[
 {text:"Classes",url:"annotated.html",children:[
 {text:"Class List",url:"annotated.html"},
 {text:"Class Index",url:"classes.html"},
-{text:"Class Hierarchy",url:"hierarchy.html"},
 {text:"Class Members",url:"functions.html",children:[
 {text:"All",url:"functions.html",children:[
 {text:"_",url:"functions.html#index__5F"},
@@ -117,7 +115,6 @@ var menudata={children:[
 {text:"v",url:"functions_func.html#index_v"},
 {text:"w",url:"functions_func.html#index_w"},
 {text:"x",url:"functions_func.html#index_x"},
-{text:"z",url:"functions_func.html#index_z"},
 {text:"~",url:"functions_func.html#index__7E"}]},
 {text:"Variables",url:"functions_vars.html",children:[
 {text:"a",url:"functions_vars.html#index_a"},
@@ -141,7 +138,6 @@ var menudata={children:[
 {text:"u",url:"functions_vars_u.html#index_u"},
 {text:"v",url:"functions_vars_v.html#index_v"},
 {text:"w",url:"functions_vars_w.html#index_w"},
-{text:"x",url:"functions_vars_x.html#index_x"},
 {text:"z",url:"functions_vars_z.html#index_z"}]},
 {text:"Typedefs",url:"functions_type.html"}]}]},
 {text:"Files",url:"files.html",children:[
@@ -251,8 +247,7 @@ var menudata={children:[
 {text:"m",url:"globals_enum.html#index_m"},
 {text:"p",url:"globals_enum.html#index_p"},
 {text:"r",url:"globals_enum.html#index_r"},
-{text:"t",url:"globals_enum.html#index_t"},
-{text:"z",url:"globals_enum.html#index_z"}]},
+{text:"t",url:"globals_enum.html#index_t"}]},
 {text:"Enumerator",url:"globals_eval.html",children:[
 {text:"a",url:"globals_eval.html#index_a"},
 {text:"b",url:"globals_eval_b.html#index_b"},
@@ -275,8 +270,7 @@ var menudata={children:[
 {text:"u",url:"globals_eval_u.html#index_u"},
 {text:"v",url:"globals_eval_v.html#index_v"},
 {text:"w",url:"globals_eval_w.html#index_w"},
-{text:"x",url:"globals_eval_x.html#index_x"},
-{text:"z",url:"globals_eval_z.html#index_z"}]},
+{text:"x",url:"globals_eval_x.html#index_x"}]},
 {text:"Macros",url:"globals_defs.html",children:[
 {text:"_",url:"globals_defs.html#index__5F"},
 {text:"a",url:"globals_defs_a.html#index_a"},

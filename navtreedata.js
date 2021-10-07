@@ -25,9 +25,19 @@
 var NAVTREE =
 [
   [ "HyperDbg Debugger", "index.html", [
-    [ "Zyan Core Library for C", "index.html", [
-      [ "Features", "index.html#autotoc_md22", null ],
-      [ "License", "index.html#autotoc_md23", null ]
+    [ "HyperDbg Debugger", "index.html#autotoc_md21", [
+      [ "Description", "index.html#autotoc_md23", null ],
+      [ "Unique Features", "index.html#autotoc_md24", [
+        [ "HyperDbg is now available for testing! Please test it and provide us with your valuable feedback and possible bugs.", "index.html#autotoc_md22", null ],
+        [ "First Release (v0.1.0.0)", "index.html#autotoc_md25", null ],
+        [ "Second Release (v0.2.0.0)", "index.html#autotoc_md26", null ]
+      ] ],
+      [ "Build & Installation", "index.html#autotoc_md27", null ],
+      [ "How does it work?", "index.html#autotoc_md28", null ],
+      [ "Plugins", "index.html#autotoc_md29", null ],
+      [ "Credits", "index.html#autotoc_md30", null ],
+      [ "Contributing", "index.html#autotoc_md31", null ],
+      [ "License", "index.html#autotoc_md32", null ]
     ] ],
     [ "Changelog", "md__c_h_a_n_g_e_l_o_g.html", [
       [ "[Unreleased]", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md1", [
@@ -51,7 +61,6 @@ var NAVTREE =
       [ "Coding Style", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md15", null ],
       [ "FAQ", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md16", null ]
     ] ],
-    [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -63,7 +72,6 @@ var NAVTREE =
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
@@ -89,56 +97,37 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "____init_____8py.html",
-"_debugger_events_8c.html#a29eb984baceb23c7c2a01cc947d4fe09",
-"_decoder_types_8h.html#a96a29eb91129d6a28647754dc7ccbe87",
-"_definition_8h.html#a6e2be89205e735ebae644cf4850ac21ba3383c140e8f057914f0b271a144b418c",
-"_definition_8h.html#af1ba3f54cbc47e5e8fcf8ddfa62149e0afeafc48e1cf4ccca239450c9f394611b",
-"_enum_i_s_a_set_8h.html#acd2efc3f0ffbc8c925087924f01644a4a27a39d8f4399feefb0e5370bb21b72c5",
-"_enum_mnemonic_8h.html#a8e72e9a67afaf7087eca5e3aac53202da00394296229d7654979deda8840cd6e6",
-"_enum_mnemonic_8h.html#a8e72e9a67afaf7087eca5e3aac53202da27ca2d9e617a2b22beb29c6d9564b3c0",
-"_enum_mnemonic_8h.html#a8e72e9a67afaf7087eca5e3aac53202da4d0995bef89b767a26c1e5722814d3df",
-"_enum_mnemonic_8h.html#a8e72e9a67afaf7087eca5e3aac53202da7751a009b974b067329d3ed9b7ce021b",
-"_enum_mnemonic_8h.html#a8e72e9a67afaf7087eca5e3aac53202da9ea31f36e72a4b7bbab47e31290bd290",
-"_enum_mnemonic_8h.html#a8e72e9a67afaf7087eca5e3aac53202dac892a265a6ef1860d233b43d72c9f122",
-"_enum_mnemonic_8h.html#a8e72e9a67afaf7087eca5e3aac53202daee07710deec5fea9a618af0857a4e4df",
-"_enum_register_8h.html#a10b6c9a56ea3347c85d46d89d5807281a8e5516161c603b31d4fc82664a0a6791",
-"_ept_hook_8c.html#a1a97cf8a3d1243edf02539139bbfb617",
-"_formatter_8h.html#ae333f6ad952c70c2f562b2295d12be73ac65f15a09b5aa5711eccdf8e561abcdd",
-"_global_variables_8h.html#aa18646fd48487bbd6d28a61f575afe4e",
-"_kd_8c.html#a735b8f9156f087cf8cfe8e4722977f37",
-"_manage_regs_8h.html#afbf675e809a42b22472e3b994447e2cd",
-"_script_engine_common_definitions_8h.html#a0b3910177562589945fead32f77fd5eb",
-"_script_engine_eval_8h.html#a33bcb620101166023d183bf48bb71af5",
-"_shared_data_8h.html#a3b2975f88026905f27e062f2c5c822aaaad6d9f1435c4f637130fda447db08792",
-"_shared_types_8h.html#a8e8832e13c91d098d8b7288a00aba02ba7389f144738f0ce89bb38f9e7de1f64d",
-"_transparency_8c.html#a0a627fcc590220a0b8a2c58b39ba3341",
-"_vmx_8h.html#a3f8cf05fd265cf9568bc5f3b1ee57897",
-"_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8a87d86644b7299c3ea2195984a5557097",
-"_zydis_p_e_8c.html#adaae0bb22c03f996a34a2b6acd4933ef",
-"classll1__parser_1_1_l_l1_parser.html#a6f5d160792e79e72b8d843c6158b2e57",
-"communication_8h.html#a85f0659745121533284636d51a5e0b7f",
-"dependencies_2zydis_2msvc_2_zydis_export_config_8h.html#a6ef44e2b15885a934a3a075dbb86cf02",
-"functions_vars.html",
-"group__mnemonic.html#gaefe174fa095290a41c0939c8414794e9",
-"hprdbgctrl_2header_2globals_8h.html#a6ef94e6628fbc9b04c9fecd492617e32",
-"hprdbghv_2header_2common_2common_8h.html#a62784ef2f29f265938a95ea2c4907bc4",
-"include_2_zydis_2_status_8h.html#a409926e936a471efe62e41240dc45be6",
-"lookup_8cpp.html#af5c58664a9964b34495da3d41d87a7c0",
-"msm8x60_8c.html#a9203f25620fd96deb8b2a269112f3935",
-"parse-table_8c.html#a734707811eac09c1e6441d39e46cc865",
-"script-engine-wrapper_8cpp.html#a7bcee6b80d2bd81251776643100c4ad1",
-"sdm845_8c.html#a0b380cbca7bfbce29a3a1b003bd8b582",
-"sdm845_8c.html#a5ec3cf1f7f793b05bec5330ad6e87d6c",
-"sdm845_8c.html#ab61be7e1fa2b334193f1447e3a2ac003",
-"spimax311_8c.html#a7d788ebe8585f9852ae9b44567ea8cee",
-"struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#a3dbb01039246e99717604b12a06d76c7",
-"struct___d_w___a_p_b___s_s_i___r_e_g_i_s_t_e_r_s.html#aaccb39cc707ddb2d6a769bef6dfffdae",
-"struct___p_a_g_e___t_a_b_l_e___e_n_t_r_y.html#a28086653cf3b305fec2c5349f0bf6e80",
-"struct_i_m_a_g_e___e_x_p_o_r_t___d_i_r_e_c_t_o_r_y__.html#ad6946c1ef4c57cffa4f468a448b2d768",
-"struct_zydis_decoded_instruction___1_1_zydis_decoded_instruction_raw___1_1_zydis_decoded_instruction_raw_disp__.html#a2c51abd9c226d5155a2022531a85eb7c",
-"struct_zydis_instruction_definition_v_e_x__.html#a6abb29738452fcdf61b5025fc127e0e8",
-"test_8cpp.html#a6f3ab06563a951f1c148c1186af2a64f",
-"union___i_a32___m_t_r_r___d_e_f___t_y_p_e___r_e_g_i_s_t_e_r.html#a9cf7358c6c064cffb4c76855d74f9195"
+"_definition_8h.html#a5466fd1b325859f4e5ab2d0f9b95c8ff",
+"_definition_8h.html#ad339afe7f8bab43a4ab1d3c623dbb8e0",
+"_ept_8h.html#a6f3fb4558d7dd5c09d0fd84d2a846bfa",
+"_gdb_stub_8c.html#af9e618b3a9fc1c140b7122b873ca4b30",
+"_inline_asm_8h.html#a99ddf21c2beb923fc68f01d200140782",
+"_manage_regs_8h.html#af6dadce353e3614a2d70189cc6a4a9af",
+"_script_engine_common_definitions_8h.html#a169890310bdffddf2d480009d75ff3e0a90a9291212dca326c1d70013b35bda6c",
+"_script_engine_eval_8h.html#aac859c405aacbf953383d88b404c9903",
+"_vmcall_8h.html#ab5531b07658822b77b4e1d5d69f38f51",
+"_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5addf6728485ae34980142ecf9114e35d8",
+"_zydis_export_config_8h.html#a02d806fceefd826bda55d8ffdab66195",
+"classll1__parser_1_1_l_l1_parser.html#ab39dd486b0d0c64cced734edcc3d4316",
+"counter_8py.html",
+"functions_d.html",
+"help_8h.html#a59388dd548701ff7f51ab75465936ec7",
+"hprdbgctrl_2header_2namedpipe_8h_source.html",
+"hprdbghv_2header_2common_2common_8h.html#ae66c526d730e6419f948b3a494b710dd",
+"kdcom_8h.html#a0494fe403fed099eedb368ec024e6e0b",
+"msm8974_8c.html#aa62f9cde09edb887b0279793f38e45d4",
+"namespacelalr__parsing_1_1lalr__one.html#a6f774eeb437a7baed15ad0d2ce447635",
+"pl011_8c.html#afa15b8528f4c1dbedbd37262871362e1",
+"script-engine_2pch_8h.html",
+"sdm845_8c.html#a382d6b6a820aeade383dcfe5076bcb4e",
+"sdm845_8c.html#a8e650e5c10c27bc2ff311752567d0654",
+"sdm845_8c.html#ae83b7cb9b863468b50b822bf98e8e179",
+"struct___d_e_b_u_g_g_e_e___b_p___d_e_s_c_r_i_p_t_o_r.html#ad46a87a0665b8d99405fec5650ae1eb1",
+"struct___d_e_b_u_g_g_e_r___s_t_e_p_p_i_n_g___c_o_r_e___s_p_e_c_i_f_i_c___d_e_t_a_i_l_s.html",
+"struct___n_o_t_i_f_y___r_e_c_o_r_d.html#a78945aa44f2cb6fe848b25ce6b40754e",
+"struct___v_m_x___e_x_i_t___q_u_a_l_i_f_i_c_a_t_i_o_n___i_o___i_n_s_t_r_u_c_t_i_o_n.html#ab9ca1a7f40f2f41b9396a85e225f4006",
+"test-case-generator_8py.html#aff0608f02670d86c638aff5999275b23",
+"union___i_a32___m_t_r_r___d_e_f___t_y_p_e___r_e_g_i_s_t_e_r.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
