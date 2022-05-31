@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HyperDbg Debugger: hyperdbg/script-engine/scanner.h Source File</title>
+<title>HyperDbg Debugger: hyperdbg/script-engine/header/scanner.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,65 +85,67 @@ $(document).ready(function(){initNavTree('scanner_8h_source.html',''); initResiz
 <div class="title">scanner.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="scanner_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef SCANNER_H</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="scanner_8h.html#a67800e4e12b135b1f9f3e2ac851267b9">    4</a></span>&#160;<span class="preprocessor">#    define SCANNER_H</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="scanner_8h.html#a503eb92e1ab41b8176e2b658e15f670b">    9</a></span>&#160;<a class="code" href="struct___t_o_k_e_n___l_i_s_t.html">TOKEN_LIST</a> <a class="code" href="scanner_8h.html#a503eb92e1ab41b8176e2b658e15f670b">IdTable</a>;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="scanner_8h.html#a847fdab98ebfda592d9c5754d638cba6">   14</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="scanner_8h.html#a847fdab98ebfda592d9c5754d638cba6">InputIdx</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="scanner_8h.html#ad324e84f11d36aeb0d7d4cbbca73ec9a">   19</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="scanner_8h.html#ad324e84f11d36aeb0d7d4cbbca73ec9a">CurrentLine</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">* @brief current line start postion  </span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="scanner_8h.html#af00a5650d7919c932ca761a1fb67d232">   24</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="scanner_8h.html#af00a5650d7919c932ca761a1fb67d232">CurrentLineIdx</a>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">* @brief curren token start postion</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="scanner_8h.html#a45eb1731f6a79d19eae9a4dba1ad87d1">   29</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="scanner_8h.html#a45eb1731f6a79d19eae9a4dba1ad87d1">CurrentTokenIdx</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// Interfacing functions                          //</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"></span><a class="code" href="struct___t_o_k_e_n.html">TOKEN</a></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<a class="code" href="scanner_8h.html#aaac8bb9da7e7c3de03d85b63bd554f0a">GetToken</a>(<span class="keywordtype">char</span> * c, <span class="keywordtype">char</span> * str);</div>
+<a href="scanner_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef SCANNER_H</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="scanner_8h.html#a67800e4e12b135b1f9f3e2ac851267b9">   15</a></span>&#160;<span class="preprocessor">#    define SCANNER_H</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="scanner_8h.html#a62b7c3881b396d1f11353fc3a7ceb829">   20</a></span>&#160;<a class="code" href="struct___t_o_k_e_n___l_i_s_t.html">PTOKEN_LIST</a> <a class="code" href="scanner_8h.html#a62b7c3881b396d1f11353fc3a7ceb829">IdTable</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="scanner_8h.html#a847fdab98ebfda592d9c5754d638cba6">   25</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="scanner_8h.html#a847fdab98ebfda592d9c5754d638cba6">InputIdx</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="scanner_8h.html#ad324e84f11d36aeb0d7d4cbbca73ec9a">   30</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="scanner_8h.html#ad324e84f11d36aeb0d7d4cbbca73ec9a">CurrentLine</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">* @brief current line start postion  </span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="scanner_8h.html#af00a5650d7919c932ca761a1fb67d232">   35</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="scanner_8h.html#af00a5650d7919c932ca761a1fb67d232">CurrentLineIdx</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="struct___t_o_k_e_n.html">TOKEN</a></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="scanner_8h.html#a96934ba9f74a284fa4aaf6ff8409c2af">Scan</a>(<span class="keywordtype">char</span> * str, <span class="keywordtype">char</span> * c);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">char</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<a class="code" href="scanner_8h.html#af670519bc4c9e00a71dd49cd442260ef">sgetc</a>(<span class="keywordtype">char</span> * str);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">char</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<a class="code" href="scanner_8h.html#aa7c1008f452289a7d271c190374faff5">IsKeyword</a>(<span class="keywordtype">char</span> * str);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keywordtype">char</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="scanner_8h.html#a2758792b4e744e0b4f76ba372c2fe195">IsId</a>(<span class="keywordtype">char</span> * str);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">* @brief curren PTOKEN start postion</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="scanner_8h.html#a45eb1731f6a79d19eae9a4dba1ad87d1">   40</a></span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="scanner_8h.html#a45eb1731f6a79d19eae9a4dba1ad87d1">CurrentTokenIdx</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//            Interfacing functions               //</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<a class="code" href="struct___t_o_k_e_n.html">PTOKEN</a></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<a class="code" href="scanner_8h.html#a49cb962e8683ab7082181678d36897fe">GetToken</a>(<span class="keywordtype">char</span> * c, <span class="keywordtype">char</span> * str);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">char</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="scanner_8h.html#a6448a71f0dee652f56e65f44374f84a9">IsRegister</a>(<span class="keywordtype">char</span> * str);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// !SCANNER_H</span></div>
-<div class="ttc" id="ascanner_8h_html_a2758792b4e744e0b4f76ba372c2fe195"><div class="ttname"><a href="scanner_8h.html#a2758792b4e744e0b4f76ba372c2fe195">IsId</a></div><div class="ttdeci">char IsId(char *str)</div><div class="ttdef"><b>Definition:</b> scanner.c:804</div></div>
-<div class="ttc" id="ascanner_8h_html_a45eb1731f6a79d19eae9a4dba1ad87d1"><div class="ttname"><a href="scanner_8h.html#a45eb1731f6a79d19eae9a4dba1ad87d1">CurrentTokenIdx</a></div><div class="ttdeci">unsigned int CurrentTokenIdx</div><div class="ttdef"><b>Definition:</b> scanner.h:29</div></div>
-<div class="ttc" id="ascanner_8h_html_a503eb92e1ab41b8176e2b658e15f670b"><div class="ttname"><a href="scanner_8h.html#a503eb92e1ab41b8176e2b658e15f670b">IdTable</a></div><div class="ttdeci">TOKEN_LIST IdTable</div><div class="ttdoc">lookup table for storing Ids</div><div class="ttdef"><b>Definition:</b> scanner.h:9</div></div>
-<div class="ttc" id="ascanner_8h_html_a6448a71f0dee652f56e65f44374f84a9"><div class="ttname"><a href="scanner_8h.html#a6448a71f0dee652f56e65f44374f84a9">IsRegister</a></div><div class="ttdeci">char IsRegister(char *str)</div><div class="ttdef"><b>Definition:</b> scanner.c:797</div></div>
-<div class="ttc" id="ascanner_8h_html_a847fdab98ebfda592d9c5754d638cba6"><div class="ttname"><a href="scanner_8h.html#a847fdab98ebfda592d9c5754d638cba6">InputIdx</a></div><div class="ttdeci">unsigned int InputIdx</div><div class="ttdoc">number of read characters from input</div><div class="ttdef"><b>Definition:</b> scanner.h:14</div></div>
-<div class="ttc" id="ascanner_8h_html_a96934ba9f74a284fa4aaf6ff8409c2af"><div class="ttname"><a href="scanner_8h.html#a96934ba9f74a284fa4aaf6ff8409c2af">Scan</a></div><div class="ttdeci">TOKEN Scan(char *str, char *c)</div><div class="ttdoc">reads a token and returns if it is not white space or comment</div><div class="ttdef"><b>Definition:</b> scanner.c:713</div></div>
-<div class="ttc" id="ascanner_8h_html_aa7c1008f452289a7d271c190374faff5"><div class="ttname"><a href="scanner_8h.html#aa7c1008f452289a7d271c190374faff5">IsKeyword</a></div><div class="ttdeci">char IsKeyword(char *str)</div><div class="ttdef"><b>Definition:</b> scanner.c:774</div></div>
-<div class="ttc" id="ascanner_8h_html_aaac8bb9da7e7c3de03d85b63bd554f0a"><div class="ttname"><a href="scanner_8h.html#aaac8bb9da7e7c3de03d85b63bd554f0a">GetToken</a></div><div class="ttdeci">TOKEN GetToken(char *c, char *str)</div><div class="ttdoc">reads a token from the input string</div><div class="ttdef"><b>Definition:</b> scanner.c:23</div></div>
-<div class="ttc" id="ascanner_8h_html_ad324e84f11d36aeb0d7d4cbbca73ec9a"><div class="ttname"><a href="scanner_8h.html#ad324e84f11d36aeb0d7d4cbbca73ec9a">CurrentLine</a></div><div class="ttdeci">unsigned int CurrentLine</div><div class="ttdoc">number of current reading line</div><div class="ttdef"><b>Definition:</b> scanner.h:19</div></div>
-<div class="ttc" id="ascanner_8h_html_af00a5650d7919c932ca761a1fb67d232"><div class="ttname"><a href="scanner_8h.html#af00a5650d7919c932ca761a1fb67d232">CurrentLineIdx</a></div><div class="ttdeci">unsigned int CurrentLineIdx</div><div class="ttdef"><b>Definition:</b> scanner.h:24</div></div>
-<div class="ttc" id="ascanner_8h_html_af670519bc4c9e00a71dd49cd442260ef"><div class="ttname"><a href="scanner_8h.html#af670519bc4c9e00a71dd49cd442260ef">sgetc</a></div><div class="ttdeci">char sgetc(char *str)</div><div class="ttdoc">returns last character of string</div><div class="ttdef"><b>Definition:</b> scanner.c:758</div></div>
-<div class="ttc" id="astruct___t_o_k_e_n___l_i_s_t_html"><div class="ttname"><a href="struct___t_o_k_e_n___l_i_s_t.html">_TOKEN_LIST</a></div><div class="ttdoc">this structure is a dynamic containter of TOKENS</div><div class="ttdef"><b>Definition:</b> common.h:68</div></div>
-<div class="ttc" id="astruct___t_o_k_e_n_html"><div class="ttname"><a href="struct___t_o_k_e_n.html">_TOKEN</a></div><div class="ttdoc">read tokens from input stored in this structure</div><div class="ttdef"><b>Definition:</b> common.h:52</div></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<a class="code" href="struct___t_o_k_e_n.html">PTOKEN</a></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="code" href="scanner_8h.html#a998457851327cfdb57e81c8f410a798d">Scan</a>(<span class="keywordtype">char</span> * str, <span class="keywordtype">char</span> * c);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keywordtype">char</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<a class="code" href="scanner_8h.html#af670519bc4c9e00a71dd49cd442260ef">sgetc</a>(<span class="keywordtype">char</span> * str);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keywordtype">char</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<a class="code" href="scanner_8h.html#aa7c1008f452289a7d271c190374faff5">IsKeyword</a>(<span class="keywordtype">char</span> * str);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">char</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<a class="code" href="scanner_8h.html#a2758792b4e744e0b4f76ba372c2fe195">IsId</a>(<span class="keywordtype">char</span> * str);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keywordtype">char</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="scanner_8h.html#a6448a71f0dee652f56e65f44374f84a9">IsRegister</a>(<span class="keywordtype">char</span> * str);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// !SCANNER_H</span></div>
+<div class="ttc" id="ascanner_8h_html_a2758792b4e744e0b4f76ba372c2fe195"><div class="ttname"><a href="scanner_8h.html#a2758792b4e744e0b4f76ba372c2fe195">IsId</a></div><div class="ttdeci">char IsId(char *str)</div><div class="ttdoc">eck if string is Id or not</div><div class="ttdef"><b>Definition:</b> scanner.c:871</div></div>
+<div class="ttc" id="ascanner_8h_html_a45eb1731f6a79d19eae9a4dba1ad87d1"><div class="ttname"><a href="scanner_8h.html#a45eb1731f6a79d19eae9a4dba1ad87d1">CurrentTokenIdx</a></div><div class="ttdeci">unsigned int CurrentTokenIdx</div><div class="ttdef"><b>Definition:</b> scanner.h:40</div></div>
+<div class="ttc" id="ascanner_8h_html_a49cb962e8683ab7082181678d36897fe"><div class="ttname"><a href="scanner_8h.html#a49cb962e8683ab7082181678d36897fe">GetToken</a></div><div class="ttdeci">PTOKEN GetToken(char *c, char *str)</div><div class="ttdoc">reads a token from the input string</div><div class="ttdef"><b>Definition:</b> scanner.c:22</div></div>
+<div class="ttc" id="ascanner_8h_html_a62b7c3881b396d1f11353fc3a7ceb829"><div class="ttname"><a href="scanner_8h.html#a62b7c3881b396d1f11353fc3a7ceb829">IdTable</a></div><div class="ttdeci">PTOKEN_LIST IdTable</div><div class="ttdoc">lookup table for storing Ids</div><div class="ttdef"><b>Definition:</b> scanner.h:20</div></div>
+<div class="ttc" id="ascanner_8h_html_a6448a71f0dee652f56e65f44374f84a9"><div class="ttname"><a href="scanner_8h.html#a6448a71f0dee652f56e65f44374f84a9">IsRegister</a></div><div class="ttdeci">char IsRegister(char *str)</div><div class="ttdoc">Check if string is register or not.</div><div class="ttdef"><b>Definition:</b> scanner.c:857</div></div>
+<div class="ttc" id="ascanner_8h_html_a847fdab98ebfda592d9c5754d638cba6"><div class="ttname"><a href="scanner_8h.html#a847fdab98ebfda592d9c5754d638cba6">InputIdx</a></div><div class="ttdeci">unsigned int InputIdx</div><div class="ttdoc">number of read characters from input</div><div class="ttdef"><b>Definition:</b> scanner.h:25</div></div>
+<div class="ttc" id="ascanner_8h_html_a998457851327cfdb57e81c8f410a798d"><div class="ttname"><a href="scanner_8h.html#a998457851327cfdb57e81c8f410a798d">Scan</a></div><div class="ttdeci">PTOKEN Scan(char *str, char *c)</div><div class="ttdoc">Perform scanning the script engine.</div><div class="ttdef"><b>Definition:</b> scanner.c:740</div></div>
+<div class="ttc" id="ascanner_8h_html_aa7c1008f452289a7d271c190374faff5"><div class="ttname"><a href="scanner_8h.html#aa7c1008f452289a7d271c190374faff5">IsKeyword</a></div><div class="ttdeci">char IsKeyword(char *str)</div><div class="ttdoc">Check whether a string is a keyword or not.</div><div class="ttdef"><b>Definition:</b> scanner.c:828</div></div>
+<div class="ttc" id="ascanner_8h_html_ad324e84f11d36aeb0d7d4cbbca73ec9a"><div class="ttname"><a href="scanner_8h.html#ad324e84f11d36aeb0d7d4cbbca73ec9a">CurrentLine</a></div><div class="ttdeci">unsigned int CurrentLine</div><div class="ttdoc">number of current reading line</div><div class="ttdef"><b>Definition:</b> scanner.h:30</div></div>
+<div class="ttc" id="ascanner_8h_html_af00a5650d7919c932ca761a1fb67d232"><div class="ttname"><a href="scanner_8h.html#af00a5650d7919c932ca761a1fb67d232">CurrentLineIdx</a></div><div class="ttdeci">unsigned int CurrentLineIdx</div><div class="ttdef"><b>Definition:</b> scanner.h:35</div></div>
+<div class="ttc" id="ascanner_8h_html_af670519bc4c9e00a71dd49cd442260ef"><div class="ttname"><a href="scanner_8h.html#af670519bc4c9e00a71dd49cd442260ef">sgetc</a></div><div class="ttdeci">char sgetc(char *str)</div><div class="ttdoc">returns last character of string</div><div class="ttdef"><b>Definition:</b> scanner.c:806</div></div>
+<div class="ttc" id="astruct___t_o_k_e_n___l_i_s_t_html"><div class="ttname"><a href="struct___t_o_k_e_n___l_i_s_t.html">_TOKEN_LIST</a></div><div class="ttdoc">this structure is a dynamic containter of TOKENS</div><div class="ttdef"><b>Definition:</b> common.h:77</div></div>
+<div class="ttc" id="astruct___t_o_k_e_n_html"><div class="ttname"><a href="struct___t_o_k_e_n.html">_TOKEN</a></div><div class="ttdoc">read tokens from input stored in this structure</div><div class="ttdef"><b>Definition:</b> common.h:66</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_f25ac98af02ac4f06b76afd5e5e18bba.html">script-engine</a></li><li class="navelem"><a class="el" href="scanner_8h.html">scanner.h</a></li>
+    <li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_f25ac98af02ac4f06b76afd5e5e18bba.html">script-engine</a></li><li class="navelem"><a class="el" href="dir_d781a7b659fd134a3c4697510aa2e220.html">header</a></li><li class="navelem"><a class="el" href="scanner_8h.html">scanner.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

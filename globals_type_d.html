@@ -84,20 +84,8 @@ $(document).ready(function(){initNavTree('globals_type_d.html',''); initResizabl
 &#160;
 
 <h3><a id="index_d"></a>- d -</h3><ul>
-<li>dbg_dec_func
-: <a class="el" href="_gdb_stub_8c.html#ae279c3b09e57d0e2ffe2f6102882a707">GdbStub.c</a>
-</li>
-<li>dbg_enc_func
-: <a class="el" href="_gdb_stub_8c.html#a455829668986160ea26dafc0e707c6fc">GdbStub.c</a>
-</li>
-<li>DEBUG_REGISTER_6
-: <a class="el" href="hprdbghv_2header_2common_2common_8h.html#a59762e541f82ae0770bd3961ef5a4986">Common.h</a>
-</li>
-<li>DEBUG_REGISTER_7
-: <a class="el" href="hprdbghv_2header_2common_2common_8h.html#ab476c3ec6c25bee6580cc5e1b3b1ba64">Common.h</a>
-</li>
 <li>DEBUG_REGISTER_TYPE
-: <a class="el" href="_steppings_8h.html#af688d54814415aae4cce34fece882a44">Steppings.h</a>
+: <a class="el" href="_debug_registers_8h.html#af688d54814415aae4cce34fece882a44">DebugRegisters.h</a>
 </li>
 <li>DEBUGGEE_BP_DESCRIPTOR
 : <a class="el" href="_definition_8h.html#a9b106414c7c6d3af435fe51c1a3358dd">Definition.h</a>
@@ -114,8 +102,17 @@ $(document).ready(function(){initNavTree('globals_type_d.html',''); initResizabl
 <li>DEBUGGEE_CHANGE_CORE_PACKET
 : <a class="el" href="_definition_8h.html#af5074e1342c1908080a3f44709c9e1b5">Definition.h</a>
 </li>
-<li>DEBUGGEE_CHANGE_PROCESS_PACKET
-: <a class="el" href="_definition_8h.html#a2b0f206da7f0727ee3af677ae34bd910">Definition.h</a>
+<li>DEBUGGEE_DETAILS_AND_SWITCH_PROCESS_PACKET
+: <a class="el" href="_definition_8h.html#a7073f83715fe1125e1ae801e474dfd3d">Definition.h</a>
+</li>
+<li>DEBUGGEE_DETAILS_AND_SWITCH_PROCESS_TYPE
+: <a class="el" href="_definition_8h.html#ac9698ac969e2fbbf1be420a599561a91">Definition.h</a>
+</li>
+<li>DEBUGGEE_DETAILS_AND_SWITCH_THREAD_PACKET
+: <a class="el" href="_definition_8h.html#aba1905c6ef980e18d0f2dd2c04e95a26">Definition.h</a>
+</li>
+<li>DEBUGGEE_DETAILS_AND_SWITCH_THREAD_TYPE
+: <a class="el" href="_definition_8h.html#a60d2e36cc1d68000804b406b07b420c0">Definition.h</a>
 </li>
 <li>DEBUGGEE_EVENT_AND_ACTION_HEADER_FOR_REMOTE_PACKET
 : <a class="el" href="_definition_8h.html#a76d9fcbddbaab68a67be73b99e34ccb9">Definition.h</a>
@@ -126,23 +123,41 @@ $(document).ready(function(){initNavTree('globals_type_d.html',''); initResizabl
 <li>DEBUGGEE_INSTRUMENTATION_STEP_IN_TRACE
 : <a class="el" href="hprdbghv_2header_2debugger_2core_2debugger_8h.html#a48fbd0935ecee1c03e423468d22141cb">Debugger.h</a>
 </li>
+<li>DEBUGGEE_KD_PAUSED_PACKET
+: <a class="el" href="_definition_8h.html#a68a94915d79554bf9356d33a54246292">Definition.h</a>
+</li>
 <li>DEBUGGEE_KERNEL_AND_USER_TEST_INFORMATION
 : <a class="el" href="_definition_8h.html#a1327dc8c562b04904f76feda189f7d22">Definition.h</a>
 </li>
 <li>DEBUGGEE_MESSAGE_PACKET
 : <a class="el" href="_definition_8h.html#ad3dccd9464579e3be2bfd42282275edb">Definition.h</a>
 </li>
-<li>DEBUGGEE_PAUSED_PACKET
-: <a class="el" href="_definition_8h.html#a7d23768056757631b2bb78bab2ae11dd">Definition.h</a>
-</li>
 <li>DEBUGGEE_PAUSING_REASON
 : <a class="el" href="_definition_8h.html#ac834b5b60f3a3213636632ea482a26a3">Definition.h</a>
+</li>
+<li>DEBUGGEE_PROCESS_LIST_DETAILS_ENTRY
+: <a class="el" href="_definition_8h.html#a9fe28a10feba201e3a4348d2e186bc1e">Definition.h</a>
+</li>
+<li>DEBUGGEE_PROCESS_LIST_NEEDED_DETAILS
+: <a class="el" href="_definition_8h.html#a3106daf99a74cf8d1007e6f574fe9d82">Definition.h</a>
+</li>
+<li>DEBUGGEE_PROCESS_OR_THREAD_TRACING_DETAILS
+: <a class="el" href="hprdbghv_2header_2debugger_2core_2debugger_8h.html#aa6abe13783693b79c5d8f7a25d530138">Debugger.h</a>
 </li>
 <li>DEBUGGEE_REGISTER_READ_DESCRIPTION
 : <a class="el" href="_definition_8h.html#a923e5338b79b8ee7d73ea7217ad87e39">Definition.h</a>
 </li>
+<li>DEBUGGEE_REQUEST_TO_CHANGE_PROCESS
+: <a class="el" href="hprdbghv_2header_2debugger_2kernel-level_2kd_8h.html#a1ad4ae8cc604353c84f45d060c15e641">Kd.h</a>
+</li>
+<li>DEBUGGEE_REQUEST_TO_CHANGE_THREAD
+: <a class="el" href="hprdbghv_2header_2debugger_2kernel-level_2kd_8h.html#a5fd44542909b860301b2b95fbfbca8ea">Kd.h</a>
+</li>
 <li>DEBUGGEE_REQUEST_TO_IGNORE_BREAKS_UNTIL_AN_EVENT
-: <a class="el" href="hprdbghv_2header_2debugger_2core_2kd_8h.html#aedf0b19343dd23c43662c511b9ef14f3">Kd.h</a>
+: <a class="el" href="hprdbghv_2header_2debugger_2kernel-level_2kd_8h.html#aedf0b19343dd23c43662c511b9ef14f3">Kd.h</a>
+</li>
+<li>DEBUGGEE_RESULT_OF_SEARCH_PACKET
+: <a class="el" href="_definition_8h.html#a2cd6d84786756f46f7e614e93853d05b">Definition.h</a>
 </li>
 <li>DEBUGGEE_SCRIPT_PACKET
 : <a class="el" href="_definition_8h.html#a182181a5816e309f58c36119a16f72c9">Definition.h</a>
@@ -153,8 +168,20 @@ $(document).ready(function(){initNavTree('globals_type_d.html',''); initResizabl
 <li>DEBUGGEE_STEP_PACKET
 : <a class="el" href="_definition_8h.html#a0354af3397e1734c64d1329e0c25212c">Definition.h</a>
 </li>
+<li>DEBUGGEE_SYMBOL_REQUEST_PACKET
+: <a class="el" href="_definition_8h.html#ac793ef0f21170689cfc349a9ca39d825">Definition.h</a>
+</li>
 <li>DEBUGGEE_SYMBOL_UPDATE_RESULT
 : <a class="el" href="_definition_8h.html#aceeaa49b913d19b63b41cfb91241cf75">Definition.h</a>
+</li>
+<li>DEBUGGEE_THREAD_LIST_DETAILS_ENTRY
+: <a class="el" href="_definition_8h.html#aca8b5d5396548d333fe5f282506b1b49">Definition.h</a>
+</li>
+<li>DEBUGGEE_THREAD_LIST_NEEDED_DETAILS
+: <a class="el" href="_definition_8h.html#ad0b30fea15b56afe5b4d8a09efa62bc0">Definition.h</a>
+</li>
+<li>DEBUGGEE_UD_PAUSED_PACKET
+: <a class="el" href="_definition_8h.html#abfde626b9db3e4732608708e92780f06">Definition.h</a>
 </li>
 <li>DEBUGGEE_USER_INPUT_PACKET
 : <a class="el" href="_definition_8h.html#adf387c7a162c465a9315be643cb4952f">Definition.h</a>
@@ -162,11 +189,26 @@ $(document).ready(function(){initNavTree('globals_type_d.html',''); initResizabl
 <li>DEBUGGER_ATTACH_DETACH_USER_MODE_PROCESS
 : <a class="el" href="_definition_8h.html#ab512b9a9fbb49da6fe34b918bf9a01d1">Definition.h</a>
 </li>
+<li>DEBUGGER_ATTACH_DETACH_USER_MODE_PROCESS_ACTION_TYPE
+: <a class="el" href="_definition_8h.html#a8cc6da2c9270caa236d33ca2a9394b2c">Definition.h</a>
+</li>
+<li>DEBUGGER_CALLSTACK_DISPLAY_METHOD
+: <a class="el" href="_definition_8h.html#a4af3eab96d13c5af6525b03011a62842">Definition.h</a>
+</li>
+<li>DEBUGGER_CALLSTACK_REQUEST
+: <a class="el" href="_definition_8h.html#a6c65af8b709e6cb23e806b927cca6cfc">Definition.h</a>
+</li>
 <li>DEBUGGER_CONDITIONAL_JUMP_STATUS
 : <a class="el" href="_definition_8h.html#a5a3b62701dda30f9bc8f94ab028d5b2b">Definition.h</a>
 </li>
 <li>DEBUGGER_CORE_EVENTS
 : <a class="el" href="hprdbghv_2header_2debugger_2core_2debugger_8h.html#a61aff702c31f36b2e61c0d1ccdea4a56">Debugger.h</a>
+</li>
+<li>DEBUGGER_DEBUGGER_TEST_QUERY_BUFFER
+: <a class="el" href="_definition_8h.html#adda186e7b1b785be26143ee926b82526">Definition.h</a>
+</li>
+<li>DEBUGGER_DT_COMMAND_OPTIONS
+: <a class="el" href="_definition_8h.html#a4ad4ec736bfb05cf8daee640ef42ea3f">Definition.h</a>
 </li>
 <li>DEBUGGER_EDIT_MEMORY
 : <a class="el" href="_definition_8h.html#aa347f4a3de53f86bd6f5744f88c6c991">Definition.h</a>
@@ -246,8 +288,23 @@ $(document).ready(function(){initNavTree('globals_type_d.html',''); initResizabl
 <li>DEBUGGER_PERFORM_KERNEL_TESTS
 : <a class="el" href="_definition_8h.html#ac93722973d1d51f2286bebd7b5fa7c11">Definition.h</a>
 </li>
+<li>DEBUGGER_PREALLOC_COMMAND
+: <a class="el" href="_definition_8h.html#a31b7c397ac8a573a06dbb30baf10cb9b">Definition.h</a>
+</li>
+<li>DEBUGGER_PREALLOC_COMMAND_TYPE
+: <a class="el" href="_definition_8h.html#a30c153dfafe16f2d4c78a0fe9bba0997">Definition.h</a>
+</li>
 <li>DEBUGGER_PREPARE_DEBUGGEE
 : <a class="el" href="_definition_8h.html#a2f590935c5bc3833ef6675f5ef7712af">Definition.h</a>
+</li>
+<li>DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS
+: <a class="el" href="_definition_8h.html#a9d966e666348d63e5dd07cf0d08e4197">Definition.h</a>
+</li>
+<li>DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTIONS
+: <a class="el" href="_definition_8h.html#af3eeb6f563c3ce604d30ae789c1682aa">Definition.h</a>
+</li>
+<li>DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_TYPES
+: <a class="el" href="_definition_8h.html#a933c56f204305988dc1bbe55e737d110">Definition.h</a>
 </li>
 <li>DEBUGGER_READ_AND_WRITE_ON_MSR
 : <a class="el" href="_definition_8h.html#a0f701e891ece1b927b6c9be2c0c1c595">Definition.h</a>
@@ -294,29 +351,23 @@ $(document).ready(function(){initNavTree('globals_type_d.html',''); initResizabl
 <li>DEBUGGER_SHOW_MEMORY_STYLE
 : <a class="el" href="_definition_8h.html#a203378205828e4fd7acdb6278fb4b0a2">Definition.h</a>
 </li>
-<li>DEBUGGER_STEPPING_CORE_SPECIFIC_DETAILS
-: <a class="el" href="_vmx_8h.html#a492b2653c1da0e335c940c7f76e43e92">Vmx.h</a>
-</li>
-<li>DEBUGGER_STEPPING_THREAD_DETAILS
-: <a class="el" href="_steppings_8h.html#a07b73212ef24dd099891abaa99135f96">Steppings.h</a>
-</li>
-<li>DEBUGGER_STEPPINGS
-: <a class="el" href="_definition_8h.html#a934aaed756e50d199df18e1256e56509">Definition.h</a>
-</li>
-<li>DEBUGGER_STEPPINGS_ACTIONS_ENUM
-: <a class="el" href="_definition_8h.html#a4f93f43dee8c7e649fb6fe7b32bf69fa">Definition.h</a>
-</li>
-<li>DEBUGGER_STEPPINGS_NOP_SLED
-: <a class="el" href="_steppings_8h.html#ab88bb9b03a8cb171c06b26e1edfcb7ac">Steppings.h</a>
-</li>
-<li>DEBUGGER_STEPPINGS_POOL_REQUESTS
-: <a class="el" href="_steppings_8h.html#ae9ae04518d2fa91d76691390455bc87a">Steppings.h</a>
+<li>DEBUGGER_SINGLE_CALLSTACK_FRAME
+: <a class="el" href="_definition_8h.html#ae869ffc6450091ba5190683567c2ee06">Definition.h</a>
 </li>
 <li>DEBUGGER_SYNCRONIZATION_EVENTS_STATE
 : <a class="el" href="hprdbgctrl_2header_2debugger_8h.html#a95aa2b7f48f24531f0afd71d202a5706">debugger.h</a>
 </li>
 <li>DEBUGGER_TRIGGERED_EVENT_DETAILS
 : <a class="el" href="_definition_8h.html#a1bac5f4181e86845b691be5682244568">Definition.h</a>
+</li>
+<li>DEBUGGER_UD_COMMAND_ACTION
+: <a class="el" href="_definition_8h.html#aef356ea7e1b81d30f2df4b6b10071e29">Definition.h</a>
+</li>
+<li>DEBUGGER_UD_COMMAND_ACTION_TYPE
+: <a class="el" href="_definition_8h.html#a246fe957e8b56ed0c8607f0f4a706d0b">Definition.h</a>
+</li>
+<li>DEBUGGER_UD_COMMAND_PACKET
+: <a class="el" href="_definition_8h.html#a41eedad1686d6338a876d1e342926df0">Definition.h</a>
 </li>
 <li>DEBUGGER_UPDATE_SYMBOL_TABLE
 : <a class="el" href="_definition_8h.html#aa0d0291cfcd17cd2f589dc63dca04c21">Definition.h</a>
@@ -329,9 +380,6 @@ $(document).ready(function(){initNavTree('globals_type_d.html',''); initResizabl
 </li>
 <li>DebuggerRunCustomCodeFunc
 : <a class="el" href="hprdbghv_2header_2debugger_2core_2debugger_8h.html#aa52a9abc0f3e369a009d506794f80e37">Debugger.h</a>
-</li>
-<li>DEBUGGING_STATE
-: <a class="el" href="hprdbgctrl_2header_2debugger_8h.html#ab576fb7ef28a0bc79d5870b71d04f08c">debugger.h</a>
 </li>
 <li>DW_APB_SSI_REGISTERS
 : <a class="el" href="spimax311_8c.html#a4f02cdf53e2836b0f4ac7beb0a91db0e">spimax311.c</a>

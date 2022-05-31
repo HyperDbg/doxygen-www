@@ -1,6 +1,7 @@
 var struct___d_e_b_u_g_g_e_r___r_e_a_d___m_e_m_o_r_y =
 [
     [ "Address", "struct___d_e_b_u_g_g_e_r___r_e_a_d___m_e_m_o_r_y.html#ae8a91a39973addb850d6fce45eba6b15", null ],
+    [ "DtDetails", "struct___d_e_b_u_g_g_e_r___r_e_a_d___m_e_m_o_r_y.html#a3f2e412370d2b8d343e40fb42e05b15a", null ],
     [ "KernelStatus", "struct___d_e_b_u_g_g_e_r___r_e_a_d___m_e_m_o_r_y.html#a0eb19dcba59d45b95f2157eb674476d8", null ],
     [ "MemoryType", "struct___d_e_b_u_g_g_e_r___r_e_a_d___m_e_m_o_r_y.html#ae6709d92b51f2c0ec9417a778b2cfa9f", null ],
     [ "Pid", "struct___d_e_b_u_g_g_e_r___r_e_a_d___m_e_m_o_r_y.html#a685a67cc05100b749ea071e9d9f7ff87", null ],

@@ -25,7 +25,7 @@ var forwarding_8h =
       [ "DEBUGGER_OUTPUT_SOURCE_STATUS_UNKNOWN_ERROR", "forwarding_8h.html#ac82f26f4aa50aede627e9d8ee40c6312a68dfc99955fa2f449c2fe77a1870d9ee", null ]
     ] ],
     [ "ForwardingCloseOutputSource", "forwarding_8h.html#a004d6080788ef354b01fc0b08a5f7609", null ],
-    [ "ForwardingCreateOutputSource", "forwarding_8h.html#af1606a58f63da2dbf2ffae9e7683a6a2", null ],
+    [ "ForwardingCreateOutputSource", "forwarding_8h.html#aba217dc9d1f2e242793541a92097a922", null ],
     [ "ForwardingGetNewOutputSourceTag", "forwarding_8h.html#a740430838e3e9b71ad6131ae48554ff7", null ],
     [ "ForwardingOpenOutputSource", "forwarding_8h.html#a15edd4f350e120500db07b5a60e6e145", null ],
     [ "ForwardingPerformEventForwarding", "forwarding_8h.html#ac84663bef0772945782e2533e31a07d2", null ],

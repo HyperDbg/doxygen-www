@@ -1,9 +1,27 @@
 var searchData=
 [
-  ['r_2ecpp_6107',['r.cpp',['../r_8cpp.html',1,'']]],
-  ['rdmsr_2ecpp_6108',['rdmsr.cpp',['../rdmsr_8cpp.html',1,'']]],
-  ['readme_2emd_6109',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['readmem_2ecpp_6110',['readmem.cpp',['../readmem_8cpp.html',1,'']]],
-  ['remote_2dconnection_2ecpp_6111',['remote-connection.cpp',['../remote-connection_8cpp.html',1,'']]],
-  ['routines_2eh_6112',['routines.h',['../routines_8h.html',1,'']]]
+  ['p_2ecpp_6402',['p.cpp',['../p_8cpp.html',1,'']]],
+  ['pa2va_2ecpp_6403',['pa2va.cpp',['../pa2va_8cpp.html',1,'']]],
+  ['parse_2dtable_2ec_6404',['parse-table.c',['../parse-table_8c.html',1,'']]],
+  ['parse_2dtable_2eh_6405',['parse-table.h',['../parse-table_8h.html',1,'']]],
+  ['pause_2ecpp_6406',['pause.cpp',['../pause_8cpp.html',1,'']]],
+  ['pch_2ec_6407',['pch.c',['../hprdbghv_2pch_8c.html',1,'(Global Namespace)'],['../script-engine_2pch_8c.html',1,'(Global Namespace)']]],
+  ['pch_2ecpp_6408',['pch.cpp',['../hprdbgctrl_2pch_8cpp.html',1,'(Global Namespace)'],['../hyperdbg-test_2pch_8cpp.html',1,'(Global Namespace)'],['../symbol-parser_2pch_8cpp.html',1,'(Global Namespace)']]],
+  ['pch_2eh_6409',['pch.h',['../hprdbgctrl_2pch_8h.html',1,'(Global Namespace)'],['../hprdbghv_2pch_8h.html',1,'(Global Namespace)'],['../hyperdbg-test_2pch_8h.html',1,'(Global Namespace)'],['../script-engine_2pch_8h.html',1,'(Global Namespace)'],['../symbol-parser_2pch_8h.html',1,'(Global Namespace)']]],
+  ['pe_2dparser_2ecpp_6410',['pe-parser.cpp',['../pe-parser_8cpp.html',1,'']]],
+  ['pe_2dparser_2eh_6411',['pe-parser.h',['../pe-parser_8h.html',1,'']]],
+  ['pe_2ecpp_6412',['pe.cpp',['../pe_8cpp.html',1,'']]],
+  ['pl011_2ec_6413',['pl011.c',['../pl011_8c.html',1,'']]],
+  ['pmc_2ecpp_6414',['pmc.cpp',['../pmc_8cpp.html',1,'']]],
+  ['poolmanager_2ec_6415',['PoolManager.c',['../_pool_manager_8c.html',1,'']]],
+  ['poolmanager_2eh_6416',['PoolManager.h',['../_pool_manager_8h.html',1,'']]],
+  ['prealloc_2ecpp_6417',['prealloc.cpp',['../prealloc_8cpp.html',1,'']]],
+  ['print_2ecpp_6418',['print.cpp',['../print_8cpp.html',1,'']]],
+  ['process_2ec_6419',['Process.c',['../_process_8c.html',1,'']]],
+  ['process_2ecpp_6420',['process.cpp',['../process_8cpp.html',1,'']]],
+  ['process_2eh_6421',['Process.h',['../_process_8h.html',1,'']]],
+  ['program_2ecs_6422',['Program.cs',['../_program_8cs.html',1,'']]],
+  ['protectedhv_2ec_6423',['ProtectedHv.c',['../_protected_hv_8c.html',1,'']]],
+  ['protectedhv_2eh_6424',['ProtectedHv.h',['../_protected_hv_8h.html',1,'']]],
+  ['pte_2ecpp_6425',['pte.cpp',['../pte_8cpp.html',1,'']]]
 ];

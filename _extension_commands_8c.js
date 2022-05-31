@@ -2,6 +2,7 @@ var _extension_commands_8c =
 [
     [ "ExtensionCommandChangeAllMsrBitmapReadAllCores", "_extension_commands_8c.html#a2f3a624376f44de89dc9fbb574b98dfb", null ],
     [ "ExtensionCommandChangeAllMsrBitmapWriteAllCores", "_extension_commands_8c.html#a8fc38f17d9632ae25fb1e93f2aaaca3d", null ],
+    [ "ExtensionCommandDisableMov2DebugRegsExitingForClearingEventsAllCores", "_extension_commands_8c.html#ad4051f8d2cd1b100d54e8244937eec2f", null ],
     [ "ExtensionCommandDisableMovDebugRegistersExitingAllCores", "_extension_commands_8c.html#a6fa9967a15acd2afa64046576ceb5ce7", null ],
     [ "ExtensionCommandDisableRdpmcExitingAllCores", "_extension_commands_8c.html#a5169eca60edbc39df01eb90e79fe6011", null ],
     [ "ExtensionCommandDisableRdtscExitingAllCores", "_extension_commands_8c.html#aab80fb8c5300b295324f08764283c979", null ],
@@ -11,12 +12,13 @@ var _extension_commands_8c =
     [ "ExtensionCommandEnableRdtscExitingAllCores", "_extension_commands_8c.html#a9261665977010b304a867ffb7429d842", null ],
     [ "ExtensionCommandIoBitmapChangeAllCores", "_extension_commands_8c.html#a060ca3feb68df46356a417a216706e51", null ],
     [ "ExtensionCommandIoBitmapResetAllCores", "_extension_commands_8c.html#a08fe1778e02afbdc57d2dad248ab2df6", null ],
-    [ "ExtensionCommandPte", "_extension_commands_8c.html#a47a19e76bdc479e60348501d7fd78af1", null ],
+    [ "ExtensionCommandPte", "_extension_commands_8c.html#ab879afa3f30039f61c2b50ac079789b4", null ],
     [ "ExtensionCommandResetAllMsrBitmapWriteAllCores", "_extension_commands_8c.html#a958fdc1728ced23932bdc96d55917942", null ],
     [ "ExtensionCommandResetChangeAllMsrBitmapReadAllCores", "_extension_commands_8c.html#a938c1e8f4be1a300cabc147cb5fd3a5d", null ],
     [ "ExtensionCommandResetExceptionBitmapAllCores", "_extension_commands_8c.html#a23f197801ddeb9e681281e5888e758b5", null ],
     [ "ExtensionCommandSetExceptionBitmapAllCores", "_extension_commands_8c.html#aac54592e1514c7893b073111c3dbf8d2", null ],
     [ "ExtensionCommandSetExternalInterruptExitingAllCores", "_extension_commands_8c.html#aa50bac2e815adc05396c00ad1ad05002", null ],
+    [ "ExtensionCommandUnsetExceptionBitmapAllCores", "_extension_commands_8c.html#a38364d524e37e0b9e7bb61e207b8a609", null ],
     [ "ExtensionCommandUnsetExternalInterruptExitingOnlyOnClearingInterruptEventsAllCores", "_extension_commands_8c.html#a6bed69536f638b3f33041cb3376726ce", null ],
-    [ "ExtensionCommandVa2paAndPa2va", "_extension_commands_8c.html#a4e2038a9aa5873691d66cf78d10104dc", null ]
+    [ "ExtensionCommandVa2paAndPa2va", "_extension_commands_8c.html#a6cb6d8c8ccbcdb5da138f9fe0659c66d", null ]
 ];

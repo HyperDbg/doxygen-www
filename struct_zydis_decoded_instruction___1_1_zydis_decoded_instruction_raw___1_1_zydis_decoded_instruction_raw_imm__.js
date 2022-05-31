@@ -1,9 +1,0 @@
-var struct_zydis_decoded_instruction___1_1_zydis_decoded_instruction_raw___1_1_zydis_decoded_instruction_raw_imm__ =
-[
-    [ "ZydisDecodedInstructionRawImmValue_", "union_zydis_decoded_instruction___1_1_zydis_decoded_instruction_raw___1_1_zydis_decoded_instruct095933652cf5367dbeae0fbf149d50db.html", "union_zydis_decoded_instruction___1_1_zydis_decoded_instruction_raw___1_1_zydis_decoded_instruct095933652cf5367dbeae0fbf149d50db" ],
-    [ "is_relative", "struct_zydis_decoded_instruction___1_1_zydis_decoded_instruction_raw___1_1_zydis_decoded_instruction_raw_imm__.html#a415ff3cfef800c42217b8a1e34d62dbf", null ],
-    [ "is_signed", "struct_zydis_decoded_instruction___1_1_zydis_decoded_instruction_raw___1_1_zydis_decoded_instruction_raw_imm__.html#aab67c07b8860b03308650d1fd6549ca6", null ],
-    [ "offset", "struct_zydis_decoded_instruction___1_1_zydis_decoded_instruction_raw___1_1_zydis_decoded_instruction_raw_imm__.html#a47ffa65a61ab59ceba67b0d3c17c939e", null ],
-    [ "size", "struct_zydis_decoded_instruction___1_1_zydis_decoded_instruction_raw___1_1_zydis_decoded_instruction_raw_imm__.html#a6cadef721093a1e1803e0ef94e49e880", null ],
-    [ "value", "struct_zydis_decoded_instruction___1_1_zydis_decoded_instruction_raw___1_1_zydis_decoded_instruction_raw_imm__.html#a66ce98e1aa9f2115240ae8f388ed1a67", null ]
-];

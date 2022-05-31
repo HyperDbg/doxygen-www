@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('be_8cpp.html',''); initResizable(); })
 
 <p>be command  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;..\hprdbgctrl\pch.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;pch.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -110,7 +110,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>be command </p>
-<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'ray'+'an'+'fam'+'.c'+'om'; return false;">sina@<span style="display: none;">.nosp@m.</span>raya<span style="display: none;">.nosp@m.</span>nfam.<span style="display: none;">.nosp@m.</span>com</a>)</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+'er'+'dbg'+'.o'+'rg'; return false;">sina@<span style="display: none;">.nosp@m.</span>hype<span style="display: none;">.nosp@m.</span>rdbg.<span style="display: none;">.nosp@m.</span>org</a>)</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2021-03-11</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>This project is released under the GNU Public License v3. </dd></dl>
@@ -150,67 +150,67 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
-<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>                            BreakpointId;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="struct___d_e_b_u_g_g_e_e___b_p___l_i_s_t___o_r___m_o_d_i_f_y___p_a_c_k_e_t.html">DEBUGGEE_BP_LIST_OR_MODIFY_PACKET</a> Request = {0};</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// Validate the commands</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (SplittedCommand.size() != 2)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;incorrect use of &#39;be&#39;\n\n&quot;</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="be_8cpp.html#aa5af9e80d7d855e9f331d4560b95e7f7">CommandBeHelp</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// Get the breakpoint id</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="common_8cpp.html#a659284da2352d3215bc8d47c714b21c3">ConvertStringToUInt64</a>(SplittedCommand.at(1), &amp;BreakpointId))</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;please specify a correct hex value for breakpoint id\n\n&quot;</span>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="be_8cpp.html#aa5af9e80d7d855e9f331d4560b95e7f7">CommandBeHelp</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>                            BreakpointId;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="struct___d_e_b_u_g_g_e_e___b_p___l_i_s_t___o_r___m_o_d_i_f_y___p_a_c_k_e_t.html">DEBUGGEE_BP_LIST_OR_MODIFY_PACKET</a> Request = {0};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// Validate the commands</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (SplittedCommand.size() != 2)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;incorrect use of &#39;be&#39;\n\n&quot;</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="be_8cpp.html#aa5af9e80d7d855e9f331d4560b95e7f7">CommandBeHelp</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// Get the breakpoint id</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="common_8cpp.html#a659284da2352d3215bc8d47c714b21c3">ConvertStringToUInt64</a>(SplittedCommand.at(1), &amp;BreakpointId))</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;please specify a correct hex value for breakpoint id\n\n&quot;</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="be_8cpp.html#aa5af9e80d7d855e9f331d4560b95e7f7">CommandBeHelp</a>();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// Check if the remote serial debuggee is paused or not (connected or not)</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="be_8cpp.html#abefaa871a249a20e1e19ce893e400774">g_IsSerialConnectedToRemoteDebuggee</a>)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">// Perform enabling breakpoint</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        Request.<a class="code" href="struct___d_e_b_u_g_g_e_e___b_p___l_i_s_t___o_r___m_o_d_i_f_y___p_a_c_k_e_t.html#aebd996d558ebf1098a392d19289254f7">Request</a> = <a class="code" href="_definition_8h.html#ad78b7fd71adbd22c68a264ac22df3847abaf5cd591c9f6ba6bb3f00cb3db2688f">DEBUGGEE_BREAKPOINT_MODIFICATION_REQUEST_ENABLE</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// Check if the remote serial debuggee is paused or not (connected or not)</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="be_8cpp.html#abefaa871a249a20e1e19ce893e400774">g_IsSerialConnectedToRemoteDebuggee</a>)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">// Perform enabling breakpoint</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="comment">// Set breakpoint id</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        Request.<a class="code" href="struct___d_e_b_u_g_g_e_e___b_p___l_i_s_t___o_r___m_o_d_i_f_y___p_a_c_k_e_t.html#a25fc09d01ee64cca03420fd72f7e1d1c">BreakpointId</a> = BreakpointId;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        Request.<a class="code" href="struct___d_e_b_u_g_g_e_e___b_p___l_i_s_t___o_r___m_o_d_i_f_y___p_a_c_k_e_t.html#aebd996d558ebf1098a392d19289254f7">Request</a> = <a class="code" href="_definition_8h.html#ad78b7fd71adbd22c68a264ac22df3847abaf5cd591c9f6ba6bb3f00cb3db2688f">DEBUGGEE_BREAKPOINT_MODIFICATION_REQUEST_ENABLE</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="comment">// Set breakpoint id</span></div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="comment">// Send the request</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="kd_8cpp.html#a1f65977634bfa21b467f0a959230f845">KdSendListOrModifyPacketToDebuggee</a>(&amp;Request);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;err, enabling breakpoints is only valid if you connected to &quot;</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                     <span class="stringliteral">&quot;a debuggee in debugger-mode\n&quot;</span>);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
-<div class="ttc" id="a_definition_8h_html_ad78b7fd71adbd22c68a264ac22df3847abaf5cd591c9f6ba6bb3f00cb3db2688f"><div class="ttname"><a href="_definition_8h.html#ad78b7fd71adbd22c68a264ac22df3847abaf5cd591c9f6ba6bb3f00cb3db2688f">DEBUGGEE_BREAKPOINT_MODIFICATION_REQUEST_ENABLE</a></div><div class="ttdeci">@ DEBUGGEE_BREAKPOINT_MODIFICATION_REQUEST_ENABLE</div><div class="ttdef"><b>Definition:</b> Definition.h:1603</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_aae17ebb9ef7279d026817fb22f8aebe9"><div class="ttname"><a href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a></div><div class="ttdeci">unsigned __int64 UINT64</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:62</div></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        Request.<a class="code" href="struct___d_e_b_u_g_g_e_e___b_p___l_i_s_t___o_r___m_o_d_i_f_y___p_a_c_k_e_t.html#a25fc09d01ee64cca03420fd72f7e1d1c">BreakpointId</a> = BreakpointId;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="comment">// Send the request</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="kd_8cpp.html#a1f65977634bfa21b467f0a959230f845">KdSendListOrModifyPacketToDebuggee</a>(&amp;Request);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;err, enabling breakpoints is only valid if you connected to &quot;</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                     <span class="stringliteral">&quot;a debuggee in debugger-mode\n&quot;</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="ttc" id="a_definition_8h_html_ad78b7fd71adbd22c68a264ac22df3847abaf5cd591c9f6ba6bb3f00cb3db2688f"><div class="ttname"><a href="_definition_8h.html#ad78b7fd71adbd22c68a264ac22df3847abaf5cd591c9f6ba6bb3f00cb3db2688f">DEBUGGEE_BREAKPOINT_MODIFICATION_REQUEST_ENABLE</a></div><div class="ttdeci">@ DEBUGGEE_BREAKPOINT_MODIFICATION_REQUEST_ENABLE</div><div class="ttdef"><b>Definition:</b> Definition.h:2291</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aae17ebb9ef7279d026817fb22f8aebe9"><div class="ttname"><a href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a></div><div class="ttdeci">unsigned __int64 UINT64</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:72</div></div>
 <div class="ttc" id="abe_8cpp_html_aa5af9e80d7d855e9f331d4560b95e7f7"><div class="ttname"><a href="be_8cpp.html#aa5af9e80d7d855e9f331d4560b95e7f7">CommandBeHelp</a></div><div class="ttdeci">VOID CommandBeHelp()</div><div class="ttdoc">help of be command</div><div class="ttdef"><b>Definition:</b> be.cpp:25</div></div>
-<div class="ttc" id="abe_8cpp_html_abefaa871a249a20e1e19ce893e400774"><div class="ttname"><a href="be_8cpp.html#abefaa871a249a20e1e19ce893e400774">g_IsSerialConnectedToRemoteDebuggee</a></div><div class="ttdeci">BOOLEAN g_IsSerialConnectedToRemoteDebuggee</div><div class="ttdoc">Shows if the debugger was connected to remote debuggee over (A remote guest)</div><div class="ttdef"><b>Definition:</b> globals.h:171</div></div>
-<div class="ttc" id="acommon_8cpp_html_a659284da2352d3215bc8d47c714b21c3"><div class="ttname"><a href="common_8cpp.html#a659284da2352d3215bc8d47c714b21c3">ConvertStringToUInt64</a></div><div class="ttdeci">BOOLEAN ConvertStringToUInt64(string TextToConvert, PUINT64 Result)</div><div class="ttdoc">check and convert string to a 64 bit unsigned integer and also check for special notations like 0x et...</div><div class="ttdef"><b>Definition:</b> common.cpp:235</div></div>
+<div class="ttc" id="abe_8cpp_html_abefaa871a249a20e1e19ce893e400774"><div class="ttname"><a href="be_8cpp.html#abefaa871a249a20e1e19ce893e400774">g_IsSerialConnectedToRemoteDebuggee</a></div><div class="ttdeci">BOOLEAN g_IsSerialConnectedToRemoteDebuggee</div><div class="ttdoc">Shows if the debugger was connected to remote debuggee over (A remote guest)</div><div class="ttdef"><b>Definition:</b> globals.h:231</div></div>
+<div class="ttc" id="acommon_8cpp_html_a659284da2352d3215bc8d47c714b21c3"><div class="ttname"><a href="common_8cpp.html#a659284da2352d3215bc8d47c714b21c3">ConvertStringToUInt64</a></div><div class="ttdeci">BOOLEAN ConvertStringToUInt64(string TextToConvert, PUINT64 Result)</div><div class="ttdoc">check and convert string to a 64 bit unsigned integer and also check for special notations like 0x et...</div><div class="ttdef"><b>Definition:</b> common.cpp:213</div></div>
 <div class="ttc" id="ahprdbgctrl_8cpp_html_a21c3c06b34d716c4680695c2b28127da"><div class="ttname"><a href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a></div><div class="ttdeci">VOID ShowMessages(const char *Fmt,...)</div><div class="ttdoc">Show messages.</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:51</div></div>
-<div class="ttc" id="akd_8cpp_html_a1f65977634bfa21b467f0a959230f845"><div class="ttname"><a href="kd_8cpp.html#a1f65977634bfa21b467f0a959230f845">KdSendListOrModifyPacketToDebuggee</a></div><div class="ttdeci">BOOLEAN KdSendListOrModifyPacketToDebuggee(PDEBUGGEE_BP_LIST_OR_MODIFY_PACKET ListOrModifyPacket)</div><div class="ttdoc">Sends a breakpoint list or modification packet to the debuggee.</div><div class="ttdef"><b>Definition:</b> kd.cpp:692</div></div>
-<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___b_p___l_i_s_t___o_r___m_o_d_i_f_y___p_a_c_k_e_t_html"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___b_p___l_i_s_t___o_r___m_o_d_i_f_y___p_a_c_k_e_t.html">_DEBUGGEE_BP_LIST_OR_MODIFY_PACKET</a></div><div class="ttdoc">The structure of breakpoint modification requests packet in HyperDbg.</div><div class="ttdef"><b>Definition:</b> Definition.h:1614</div></div>
-<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___b_p___l_i_s_t___o_r___m_o_d_i_f_y___p_a_c_k_e_t_html_a25fc09d01ee64cca03420fd72f7e1d1c"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___b_p___l_i_s_t___o_r___m_o_d_i_f_y___p_a_c_k_e_t.html#a25fc09d01ee64cca03420fd72f7e1d1c">_DEBUGGEE_BP_LIST_OR_MODIFY_PACKET::BreakpointId</a></div><div class="ttdeci">UINT64 BreakpointId</div><div class="ttdef"><b>Definition:</b> Definition.h:1615</div></div>
-<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___b_p___l_i_s_t___o_r___m_o_d_i_f_y___p_a_c_k_e_t_html_aebd996d558ebf1098a392d19289254f7"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___b_p___l_i_s_t___o_r___m_o_d_i_f_y___p_a_c_k_e_t.html#aebd996d558ebf1098a392d19289254f7">_DEBUGGEE_BP_LIST_OR_MODIFY_PACKET::Request</a></div><div class="ttdeci">DEBUGGEE_BREAKPOINT_MODIFICATION_REQUEST Request</div><div class="ttdef"><b>Definition:</b> Definition.h:1616</div></div>
+<div class="ttc" id="akd_8cpp_html_a1f65977634bfa21b467f0a959230f845"><div class="ttname"><a href="kd_8cpp.html#a1f65977634bfa21b467f0a959230f845">KdSendListOrModifyPacketToDebuggee</a></div><div class="ttdeci">BOOLEAN KdSendListOrModifyPacketToDebuggee(PDEBUGGEE_BP_LIST_OR_MODIFY_PACKET ListOrModifyPacket)</div><div class="ttdoc">Sends a breakpoint list or modification packet to the debuggee.</div><div class="ttdef"><b>Definition:</b> kd.cpp:881</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___b_p___l_i_s_t___o_r___m_o_d_i_f_y___p_a_c_k_e_t_html"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___b_p___l_i_s_t___o_r___m_o_d_i_f_y___p_a_c_k_e_t.html">_DEBUGGEE_BP_LIST_OR_MODIFY_PACKET</a></div><div class="ttdoc">The structure of breakpoint modification requests packet in HyperDbg.</div><div class="ttdef"><b>Definition:</b> Definition.h:2302</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___b_p___l_i_s_t___o_r___m_o_d_i_f_y___p_a_c_k_e_t_html_a25fc09d01ee64cca03420fd72f7e1d1c"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___b_p___l_i_s_t___o_r___m_o_d_i_f_y___p_a_c_k_e_t.html#a25fc09d01ee64cca03420fd72f7e1d1c">_DEBUGGEE_BP_LIST_OR_MODIFY_PACKET::BreakpointId</a></div><div class="ttdeci">UINT64 BreakpointId</div><div class="ttdef"><b>Definition:</b> Definition.h:2303</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___b_p___l_i_s_t___o_r___m_o_d_i_f_y___p_a_c_k_e_t_html_aebd996d558ebf1098a392d19289254f7"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___b_p___l_i_s_t___o_r___m_o_d_i_f_y___p_a_c_k_e_t.html#aebd996d558ebf1098a392d19289254f7">_DEBUGGEE_BP_LIST_OR_MODIFY_PACKET::Request</a></div><div class="ttdeci">DEBUGGEE_BREAKPOINT_MODIFICATION_REQUEST Request</div><div class="ttdef"><b>Definition:</b> Definition.h:2304</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -233,10 +233,13 @@ Variables</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
 <div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;be : enables a breakpoint using breakpoint id.\n\n&quot;</span>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;syntax : \tbe [breakpoint id (hex value)]\n&quot;</span>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\t\te.g : be 0\n&quot;</span>);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\t\te.g : be 2\n&quot;</span>);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;syntax : \tbe [BreakpointId (hex)]\n&quot;</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\t\te.g : be 0\n&quot;</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\t\te.g : be 2\n&quot;</span>);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>

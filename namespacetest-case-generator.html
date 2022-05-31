@@ -196,10 +196,10 @@ Variables</h2></td></tr>
 <tr class="separator:a0be3f609a0202d3c1f107e5e7a261549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af80156ea71ae0a5950e7c08fc5bd79f8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest-case-generator.html#af80156ea71ae0a5950e7c08fc5bd79f8">initCounter</a> = <a class="el" href="namespacetest-case-generator.html#a0be3f609a0202d3c1f107e5e7a261549">counter</a></td></tr>
 <tr class="separator:af80156ea71ae0a5950e7c08fc5bd79f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ef41e43d8e9cbbcbaa22238f5024fc2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest-case-generator.html#a7ef41e43d8e9cbbcbaa22238f5024fc2">sentence</a> = <a class="el" href="namespacetest-case-generator.html#a56942d95c772738fdb2a8c6b105966f3">EXPRESSION</a>()</td></tr>
+<tr class="memitem:a7ef41e43d8e9cbbcbaa22238f5024fc2"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest-case-generator.html#a7ef41e43d8e9cbbcbaa22238f5024fc2">sentence</a> = <a class="el" href="namespacetest-case-generator.html#a739037097fc44c2b088bfd4e9baa1254">FOR_STATEMENT</a>()</td></tr>
 <tr class="separator:a7ef41e43d8e9cbbcbaa22238f5024fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a6de471352e0dfbe9b35656953dac5d"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest-case-generator.html#a9a6de471352e0dfbe9b35656953dac5d">res</a> = '<a class="el" href="script-engine_2python_2script-test-cases_8txt.html#a2e6cf89ac7c9e742d0a822288109abb1">x</a> = ' + <a class="el" href="namespacetest-case-generator.html#a7ef41e43d8e9cbbcbaa22238f5024fc2">sentence</a> + '; <a class="el" href="script-engine_2python_2script-test-cases_8txt.html#a5a33e56082b8b3a68bc677a1bc3ff4f9">test_statement</a>(<a class="el" href="script-engine_2python_2script-test-cases_8txt.html#a2e6cf89ac7c9e742d0a822288109abb1">x</a>);'</td></tr>
-<tr class="separator:a9a6de471352e0dfbe9b35656953dac5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef43667d1d6456dc2ce7882ad3e462c"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest-case-generator.html#afef43667d1d6456dc2ce7882ad3e462c">res</a> = <a class="el" href="namespacetest-case-generator.html#a7ef41e43d8e9cbbcbaa22238f5024fc2">sentence</a></td></tr>
+<tr class="separator:afef43667d1d6456dc2ce7882ad3e462c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaeb6784b3463af26bc4c893996a54e47"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetest-case-generator.html#aaeb6784b3463af26bc4c893996a54e47">val</a> = <a class="el" href="namespacetest-case-generator.html#aaf741b9ec7c2eb8cace883eefc791770">evaluate</a>(<a class="el" href="namespacetest-case-generator.html#a7ef41e43d8e9cbbcbaa22238f5024fc2">sentence</a>)</td></tr>
 <tr class="separator:aaeb6784b3463af26bc4c893996a54e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -218,18 +218,18 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">def </span><a class="code" href="_grammar_8txt.html#a542d0e5732e04ab571344b7d6f092da5">ASSIGN_STATEMENT</a>():</div>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">def </span><a class="code" href="namespacetest-case-generator.html#aeba01ead4281a050588d0957fc67c2ae">ASSIGN_STATEMENT</a>():</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">global</span> depth</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    depth+=1</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    res = <a class="code" href="_grammar_8txt.html#ab23ef74ffaac3ac17273d655705a94d2">L_VALUE</a>() + <span class="stringliteral">&#39; = &#39;</span> + <a class="code" href="namespacetest-case-generator.html#a56942d95c772738fdb2a8c6b105966f3">EXPRESSION</a>() + <span class="stringliteral">&#39; &#39;</span> + <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>()</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    res = <a class="code" href="namespacetest-case-generator.html#a624c33705dae79660b556a336ebc68e4">L_VALUE</a>() + <span class="stringliteral">&#39; = &#39;</span> + <a class="code" href="namespacetest-case-generator.html#a56942d95c772738fdb2a8c6b105966f3">EXPRESSION</a>() + <span class="stringliteral">&#39; &#39;</span> + <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>()</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    depth-=1</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> res</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="ttc" id="a_gdb_stub_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> GdbStub.h:33</div></div>
-<div class="ttc" id="a_grammar_8txt_html_a542d0e5732e04ab571344b7d6f092da5"><div class="ttname"><a href="_grammar_8txt.html#a542d0e5732e04ab571344b7d6f092da5">ASSIGN_STATEMENT</a></div><div class="ttdeci">ThreeOpFunc1 interlocked_compare_exchange TwoOpFunc1 ed eb eq interlocked_exchange interlocked_exchange_add TwoOpFunc2 spinlock_lock_custom_wait OneOpFunc1 poi db dd dw dq neg hi low not check_address strlen wcslen interlocked_increment interlocked_decrement OneOpFunc2 print formats disable_event enable_event test_statement spinlock_lock spinlock_unlock ZeroOpFunc1 pause VarArgFunc1 printf OperatorsTwoOperand or xor and asr asl add sub mul div mod gt lt egt elt equal neq OperatorsOneOperand inc dec SemantiRules start_of_if jmp jz jnz jmp_to_end_and_jzcompleted end_of_if start_of_while end_of_while vargstart mov start_of_do_while start_of_do_while_commands end_of_do_while start_of_for for_inc_dec start_of_for_ommands end_of_if ignore_lvalue Registers rax eax ax ah al rcx ecx cx ch cl rdx edx dx dh dl rbx ebx bx bh bl rsp esp sp spl rbp ebp bp bpl rsi esi si sil rdi edi di dil r8 r8d r8w r8h r8l r9 r9d r9w r9h r9l r10 r10d r10w r10h r10l r11 r11d r11w r11h r11l r12 r12d r12w r12h r12l r13 r13d r13w r13h r13l r14 r14d r14w r14h r14l r15 r15d r15w r15h r15l ds es fs gs cs ss rflags eflags flags cf pf af zf sf tf if df of iopl nt rf vm ac vif vip id rip eip ip idtr ldtr gdtr tr cr0 cr2 cr3 cr4 cr8 dr0 dr1 dr2 dr3 dr6 dr7 PseudoRegisters pid tid pname core proc thread peb teb ip buffer context S STATEMENT S S eps STATEMENT IF_STATEMENT STATEMENT WHILE_STATEMENT STATEMENT DO_WHILE_STATEMENT STATEMENT FOR_STATEMENT STATEMENT ASSIGN_STATEMENT</div><div class="ttdef"><b>Definition:</b> Grammar.txt:39</div></div>
-<div class="ttc" id="a_grammar_8txt_html_ab23ef74ffaac3ac17273d655705a94d2"><div class="ttname"><a href="_grammar_8txt.html#ab23ef74ffaac3ac17273d655705a94d2">L_VALUE</a></div><div class="ttdeci">ASSIGN_STATEMENT L_VALUE</div><div class="ttdef"><b>Definition:</b> Grammar.txt:46</div></div>
+<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 <div class="ttc" id="anamespacetest-case-generator_html_a56942d95c772738fdb2a8c6b105966f3"><div class="ttname"><a href="namespacetest-case-generator.html#a56942d95c772738fdb2a8c6b105966f3">test-case-generator.EXPRESSION</a></div><div class="ttdeci">def EXPRESSION()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:205</div></div>
+<div class="ttc" id="anamespacetest-case-generator_html_a624c33705dae79660b556a336ebc68e4"><div class="ttname"><a href="namespacetest-case-generator.html#a624c33705dae79660b556a336ebc68e4">test-case-generator.L_VALUE</a></div><div class="ttdeci">def L_VALUE()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:520</div></div>
+<div class="ttc" id="anamespacetest-case-generator_html_aeba01ead4281a050588d0957fc67c2ae"><div class="ttname"><a href="namespacetest-case-generator.html#aeba01ead4281a050588d0957fc67c2ae">test-case-generator.ASSIGN_STATEMENT</a></div><div class="ttdeci">def ASSIGN_STATEMENT()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:68</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -274,7 +274,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    res = <span class="stringliteral">&#39;&#39;</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> res</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="ttc" id="a_grammar_8txt_html_a52e34bb625d2a486243d4f4996686ed9"><div class="ttname"><a href="_grammar_8txt.html#a52e34bb625d2a486243d4f4996686ed9">CALL_FUNC_STATEMENT</a></div><div class="ttdeci">STATEMENT CALL_FUNC_STATEMENT</div><div class="ttdef"><b>Definition:</b> Grammar.txt:40</div></div>
+<div class="ttc" id="a_grammar_8txt_html_a52e34bb625d2a486243d4f4996686ed9"><div class="ttname"><a href="_grammar_8txt.html#a52e34bb625d2a486243d4f4996686ed9">CALL_FUNC_STATEMENT</a></div><div class="ttdeci">STATEMENT CALL_FUNC_STATEMENT</div><div class="ttdef"><b>Definition:</b> Grammar.txt:42</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -317,11 +317,11 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">def </span><a class="code" href="namespacetest-case-generator.html#aa6f1bc4d0ad256ae2c3ed0917b02259e">DO_WHILE_STATEMENT</a>():</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keyword">global</span> depth</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    depth+=1</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    res = <span class="stringliteral">&#39;do  {&#39;</span> + <a class="code" href="namespacetest-case-generator.html#a57aa9582d40eea355976fb387eec1214">S</a>() + <span class="stringliteral">&#39;} while ( &#39;</span> + <a class="code" href="namespacetest-case-generator.html#a70db552214bbcc000ba9b5847c6022b2">BOOLEAN_EXPRESSION</a>() + <span class="stringliteral">&#39;) ;&#39;</span> </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    res = <span class="stringliteral">&#39;do  {&#39;</span> + <a class="code" href="_grammar_8txt.html#a05250664815950204e4091ddf9c9af89">S</a>() + <span class="stringliteral">&#39;} while ( &#39;</span> + <a class="code" href="namespacetest-case-generator.html#a70db552214bbcc000ba9b5847c6022b2">BOOLEAN_EXPRESSION</a>() + <span class="stringliteral">&#39;) ;&#39;</span> </div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    depth-=1</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">return</span> res</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="ttc" id="anamespacetest-case-generator_html_a57aa9582d40eea355976fb387eec1214"><div class="ttname"><a href="namespacetest-case-generator.html#a57aa9582d40eea355976fb387eec1214">test-case-generator.S</a></div><div class="ttdeci">def S()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:7</div></div>
+<div class="ttc" id="a_grammar_8txt_html_a05250664815950204e4091ddf9c9af89"><div class="ttname"><a href="_grammar_8txt.html#a05250664815950204e4091ddf9c9af89">S</a></div><div class="ttdeci">ThreeOpFunc1 interlocked_compare_exchange TwoOpFunc1 ed eb eq interlocked_exchange interlocked_exchange_add TwoOpFunc2 spinlock_lock_custom_wait OneOpFunc1 poi db dd dw dq neg hi low not check_address strlen wcslen interlocked_increment interlocked_decrement reference physical_to_virtual virtual_to_physical OneOpFunc2 print formats disable_event enable_event test_statement spinlock_lock spinlock_unlock ZeroOpFunc1 pause VarArgFunc1 printf OperatorsTwoOperand or xor and asr asl add sub mul div mod gt lt egt elt equal neq OperatorsOneOperand inc dec reference dereference SemantiRules start_of_if jmp jz jnz jmp_to_end_and_jzcompleted end_of_if start_of_while end_of_while vargstart mov start_of_do_while start_of_do_while_commands end_of_do_while start_of_for for_inc_dec start_of_for_ommands end_of_if ignore_lvalue Registers rax eax ax ah al rcx ecx cx ch cl rdx edx dx dh dl rbx ebx bx bh bl rsp esp sp spl rbp ebp bp bpl rsi esi si sil rdi edi di dil r8 r8d r8w r8h r8l r9 r9d r9w r9h r9l r10 r10d r10w r10h r10l r11 r11d r11w r11h r11l r12 r12d r12w r12h r12l r13 r13d r13w r13h r13l r14 r14d r14w r14h r14l r15 r15d r15w r15h r15l ds es fs gs cs ss rflags eflags flags cf pf af zf sf tf if df of iopl nt rf vm ac vif vip id rip eip ip idtr ldtr gdtr tr cr0 cr2 cr3 cr4 cr8 dr0 dr1 dr2 dr3 dr6 dr7 PseudoRegisters pid tid pname core proc thread peb teb ip buffer context S STATEMENT S S</div><div class="ttdef"><b>Definition:</b> Grammar.txt:33</div></div>
 <div class="ttc" id="anamespacetest-case-generator_html_aa6f1bc4d0ad256ae2c3ed0917b02259e"><div class="ttname"><a href="namespacetest-case-generator.html#aa6f1bc4d0ad256ae2c3ed0917b02259e">test-case-generator.DO_WHILE_STATEMENT</a></div><div class="ttdeci">def DO_WHILE_STATEMENT()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:132</div></div>
 </div><!-- fragment -->
 </div>
@@ -1053,7 +1053,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        r = 1</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">if</span> r==0:</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        res = <span class="stringliteral">&#39;else {&#39;</span> + <a class="code" href="namespacetest-case-generator.html#a57aa9582d40eea355976fb387eec1214">S</a>() + <span class="stringliteral">&#39;}&#39;</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        res = <span class="stringliteral">&#39;else {&#39;</span> + <a class="code" href="_grammar_8txt.html#a05250664815950204e4091ddf9c9af89">S</a>() + <span class="stringliteral">&#39;}&#39;</span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        depth-=1</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">return</span> res</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">elif</span> r==1: </div>
@@ -1088,7 +1088,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        r = 1</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> r==0:</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        res = <span class="stringliteral">&#39;elsif (&#39;</span> + <a class="code" href="namespacetest-case-generator.html#a70db552214bbcc000ba9b5847c6022b2">BOOLEAN_EXPRESSION</a>() + <span class="stringliteral">&#39;) {&#39;</span> + <a class="code" href="namespacetest-case-generator.html#a57aa9582d40eea355976fb387eec1214">S</a>() + <span class="stringliteral">&#39;}&#39;</span> + <a class="code" href="namespacetest-case-generator.html#acf5710289189996f6bc8e3e68c10ab72">ELSIF_STATEMENT</a>()</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        res = <span class="stringliteral">&#39;elsif (&#39;</span> + <a class="code" href="namespacetest-case-generator.html#a70db552214bbcc000ba9b5847c6022b2">BOOLEAN_EXPRESSION</a>() + <span class="stringliteral">&#39;) {&#39;</span> + <a class="code" href="_grammar_8txt.html#a05250664815950204e4091ddf9c9af89">S</a>() + <span class="stringliteral">&#39;}&#39;</span> + <a class="code" href="namespacetest-case-generator.html#acf5710289189996f6bc8e3e68c10ab72">ELSIF_STATEMENT</a>()</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        depth-=1</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">return</span> res</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">elif</span> r==1:</div>
@@ -1172,7 +1172,35 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;    <span class="keywordflow">return</span> v</div>
 <div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160; </div>
 <div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160; </div>
-<div class="ttc" id="anamespaceinipp_1_1detail_html_a63aea2f465d813d522827aa64058f053"><div class="ttname"><a href="namespaceinipp_1_1detail.html#a63aea2f465d813d522827aa64058f053">inipp::detail::replace</a></div><div class="ttdeci">bool replace(std::basic_string&lt; CharT &gt; &amp;str, const std::basic_string&lt; CharT &gt; &amp;from, const std::basic_string&lt; CharT &gt; &amp;to)</div><div class="ttdef"><b>Definition:</b> inipp.h:72</div></div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;<span class="stringliteral">&#39;&#39;&#39;</span></div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;<span class="stringliteral">if __name__ == &#39;__main__&#39;:</span></div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;<span class="stringliteral">#    global depth</span></div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;<span class="stringliteral">    </span></div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;<span class="stringliteral">    f = open(&#39;script-test-cases.txt&#39;, &#39;w&#39;)</span></div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;<span class="stringliteral">    counter = 1</span></div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;<span class="stringliteral"></span> </div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;<span class="stringliteral">    initCounter = counter</span></div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;<span class="stringliteral">    while counter-initCounter&lt;1000:</span></div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;<span class="stringliteral">        depth = 0</span></div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;<span class="stringliteral">        sentence = EXPRESSION()</span></div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;<span class="stringliteral">        if len(sentence)&lt;=150:</span></div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;<span class="stringliteral">            res = &#39;x = &#39; + sentence + &#39;; test_statement(x);&#39;</span></div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;<span class="stringliteral">            val = evaluate(sentence)</span></div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;<span class="stringliteral">            if type(val)==&#39;int&#39; and not(abs(val)&lt;=65536):</span></div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;<span class="stringliteral">                continue</span></div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;<span class="stringliteral">            f.write(str(counter)+&#39;\n&#39;)</span></div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;<span class="stringliteral">            f.write(res+&#39;\n&#39;)</span></div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;<span class="stringliteral">            f.write(str(val)+&#39;\n&#39;)</span></div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;<span class="stringliteral">            f.write(&#39;$end$&#39;+&#39;\n&#39;)</span></div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;<span class="stringliteral">            print(counter)</span></div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;<span class="stringliteral">            print(res)</span></div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;<span class="stringliteral">            print(val)</span></div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;<span class="stringliteral">            print()</span></div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;<span class="stringliteral">            counter+=1</span></div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;<span class="stringliteral">    </span></div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;<span class="stringliteral">    f.close()</span></div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;<span class="stringliteral">&#39;&#39;&#39;</span></div>
+<div class="ttc" id="anamespaceinipp_1_1detail_html_a63aea2f465d813d522827aa64058f053"><div class="ttname"><a href="namespaceinipp_1_1detail.html#a63aea2f465d813d522827aa64058f053">inipp::detail::replace</a></div><div class="ttdeci">bool replace(std::basic_string&lt; CharT &gt; &amp;str, const std::basic_string&lt; CharT &gt; &amp;from, const std::basic_string&lt; CharT &gt; &amp;to)</div><div class="ttdef"><b>Definition:</b> inipp.h:73</div></div>
 <div class="ttc" id="anamespacetest-case-generator_html_a3d10384f8a371ce1eb693db9c8463761"><div class="ttname"><a href="namespacetest-case-generator.html#a3d10384f8a371ce1eb693db9c8463761">test-case-generator.tohex</a></div><div class="ttdeci">def tohex(val, nbits)</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:534</div></div>
 <div class="ttc" id="anamespacetest-case-generator_html_aaf741b9ec7c2eb8cace883eefc791770"><div class="ttname"><a href="namespacetest-case-generator.html#aaf741b9ec7c2eb8cace883eefc791770">test-case-generator.evaluate</a></div><div class="ttdeci">def evaluate(s)</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:537</div></div>
 </div><!-- fragment -->
@@ -1219,7 +1247,7 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="keyword">def </span><a class="code" href="namespacetest-case-generator.html#a739037097fc44c2b088bfd4e9baa1254">FOR_STATEMENT</a>():</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keyword">global</span> depth</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    depth+=1</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    res = <span class="stringliteral">&#39;for (&#39;</span> + <a class="code" href="namespacetest-case-generator.html#aaa3f541b15e7f8d3350b3ecd8a84d34b">SIMPLE_ASSIGNMENT</a>() + <span class="stringliteral">&#39;; &#39;</span> + <a class="code" href="namespacetest-case-generator.html#a70db552214bbcc000ba9b5847c6022b2">BOOLEAN_EXPRESSION</a>() + <span class="stringliteral">&#39;;&#39;</span> +  <a class="code" href="namespacetest-case-generator.html#a4df83e9cad5b6b8be233b5a33b548ea2">INC_DEC</a>() + <span class="stringliteral">&#39;) { &#39;</span> + <a class="code" href="namespacetest-case-generator.html#a57aa9582d40eea355976fb387eec1214">S</a>() + <span class="stringliteral">&#39;}&#39;</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    res = <span class="stringliteral">&#39;for (&#39;</span> + <a class="code" href="namespacetest-case-generator.html#aaa3f541b15e7f8d3350b3ecd8a84d34b">SIMPLE_ASSIGNMENT</a>() + <span class="stringliteral">&#39;; &#39;</span> + <a class="code" href="namespacetest-case-generator.html#a70db552214bbcc000ba9b5847c6022b2">BOOLEAN_EXPRESSION</a>() + <span class="stringliteral">&#39;;&#39;</span> +  <a class="code" href="namespacetest-case-generator.html#a4df83e9cad5b6b8be233b5a33b548ea2">INC_DEC</a>() + <span class="stringliteral">&#39;) { &#39;</span> + <a class="code" href="_grammar_8txt.html#a05250664815950204e4091ddf9c9af89">S</a>() + <span class="stringliteral">&#39;}&#39;</span></div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    depth-=1</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordflow">return</span> res</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
@@ -1246,7 +1274,7 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">def </span><a class="code" href="namespacetest-case-generator.html#a425e4a39a12460dce88317365d18672a">IF_STATEMENT</a>():</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">global</span> depth</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    depth+=1</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    res = <span class="stringliteral">&#39;if (&#39;</span> + <a class="code" href="namespacetest-case-generator.html#a70db552214bbcc000ba9b5847c6022b2">BOOLEAN_EXPRESSION</a>() +<span class="stringliteral">&#39;)  {&#39;</span> + <a class="code" href="namespacetest-case-generator.html#a57aa9582d40eea355976fb387eec1214">S</a>() + <span class="stringliteral">&#39;}&#39;</span> + <a class="code" href="namespacetest-case-generator.html#acf5710289189996f6bc8e3e68c10ab72">ELSIF_STATEMENT</a>() + <a class="code" href="namespacetest-case-generator.html#ad5f31f06e1800b81ba25dcb73ae6be6b">ELSE_STATEMENT</a>() + <a class="code" href="namespacetest-case-generator.html#a404a3b8b10c267fdc790df5400365729">END_OF_IF</a>()</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    res = <span class="stringliteral">&#39;if (&#39;</span> + <a class="code" href="namespacetest-case-generator.html#a70db552214bbcc000ba9b5847c6022b2">BOOLEAN_EXPRESSION</a>() +<span class="stringliteral">&#39;)  {&#39;</span> + <a class="code" href="_grammar_8txt.html#a05250664815950204e4091ddf9c9af89">S</a>() + <span class="stringliteral">&#39;}&#39;</span> + <a class="code" href="namespacetest-case-generator.html#acf5710289189996f6bc8e3e68c10ab72">ELSIF_STATEMENT</a>() + <a class="code" href="namespacetest-case-generator.html#ad5f31f06e1800b81ba25dcb73ae6be6b">ELSE_STATEMENT</a>() + <a class="code" href="namespacetest-case-generator.html#a404a3b8b10c267fdc790df5400365729">END_OF_IF</a>()</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    depth-=1</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> res</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    </div>
@@ -1271,7 +1299,7 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keyword">def </span><a class="code" href="namespacetest-case-generator.html#a4df83e9cad5b6b8be233b5a33b548ea2">INC_DEC</a>():</div>
 <div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keyword">global</span> depth</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    depth+=1</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    res = <a class="code" href="_grammar_8txt.html#ab23ef74ffaac3ac17273d655705a94d2">L_VALUE</a>() + <a class="code" href="namespacetest-case-generator.html#abb642b5e7982cb269d03a7d8511e12f1">INC_DECP</a>()</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    res = <a class="code" href="namespacetest-case-generator.html#a624c33705dae79660b556a336ebc68e4">L_VALUE</a>() + <a class="code" href="namespacetest-case-generator.html#abb642b5e7982cb269d03a7d8511e12f1">INC_DECP</a>()</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    depth-=1</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordflow">return</span> res</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
@@ -1339,7 +1367,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;<span class="keyword">def </span><a class="code" href="_grammar_8txt.html#ab23ef74ffaac3ac17273d655705a94d2">L_VALUE</a>():</div>
+<div class="fragment"><div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;<span class="keyword">def </span><a class="code" href="namespacetest-case-generator.html#a624c33705dae79660b556a336ebc68e4">L_VALUE</a>():</div>
 <div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;    r = random.randrange(2)</div>
 <div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160; </div>
 <div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;    <span class="keywordflow">if</span> r==0:</div>
@@ -1366,7 +1394,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;<span class="keyword">def </span><a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>():</div>
+<div class="fragment"><div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;<span class="keyword">def </span><a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>():</div>
 <div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;    res = <span class="stringliteral">&#39;&#39;</span></div>
 <div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;    <span class="keywordflow">return</span> res</div>
 <div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160; </div>
@@ -1387,7 +1415,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">def </span><a class="code" href="namespacetest-case-generator.html#a57aa9582d40eea355976fb387eec1214">S</a>():</div>
+<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">def </span><a class="code" href="_grammar_8txt.html#a05250664815950204e4091ddf9c9af89">S</a>():</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    r = random.randrange(2)</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    </div>
@@ -1397,7 +1425,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        r = 1</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">if</span> r==0:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        res = <a class="code" href="namespacetest-case-generator.html#ae26a7dede63cb9765a02f34651b45216">STATEMENT</a>() + <span class="stringliteral">&#39; &#39;</span> + <a class="code" href="namespacetest-case-generator.html#a57aa9582d40eea355976fb387eec1214">S</a>()</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        res = <a class="code" href="namespacetest-case-generator.html#ae26a7dede63cb9765a02f34651b45216">STATEMENT</a>() + <span class="stringliteral">&#39; &#39;</span> + <a class="code" href="_grammar_8txt.html#a05250664815950204e4091ddf9c9af89">S</a>()</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        depth -= 1</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordflow">return</span> res</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">elif</span> r==1:</div>
@@ -1432,7 +1460,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        r = 1</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">if</span> r==0:</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        res = <a class="code" href="_grammar_8txt.html#ab23ef74ffaac3ac17273d655705a94d2">L_VALUE</a>() + <span class="stringliteral">&#39;= &#39;</span> + <a class="code" href="namespacetest-case-generator.html#a56942d95c772738fdb2a8c6b105966f3">EXPRESSION</a>()  + <a class="code" href="namespacetest-case-generator.html#adff83c88e183ca36fe840db9a701c26d">SIMPLE_ASSIGNMENTP</a>()</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        res = <a class="code" href="namespacetest-case-generator.html#a624c33705dae79660b556a336ebc68e4">L_VALUE</a>() + <span class="stringliteral">&#39;= &#39;</span> + <a class="code" href="namespacetest-case-generator.html#a56942d95c772738fdb2a8c6b105966f3">EXPRESSION</a>()  + <a class="code" href="namespacetest-case-generator.html#adff83c88e183ca36fe840db9a701c26d">SIMPLE_ASSIGNMENTP</a>()</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        depth-=1</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">return</span> res</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">elif</span> r==1:</div>
@@ -1502,7 +1530,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        depth-=1</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> res</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">elif</span> r== 4:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        res = <a class="code" href="_grammar_8txt.html#a542d0e5732e04ab571344b7d6f092da5">ASSIGN_STATEMENT</a>() + <span class="stringliteral">&quot;;&quot;</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        res = <a class="code" href="namespacetest-case-generator.html#aeba01ead4281a050588d0957fc67c2ae">ASSIGN_STATEMENT</a>() + <span class="stringliteral">&quot;;&quot;</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        depth-=1</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">return</span> res</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">elif</span> r== 5:</div>
@@ -1570,7 +1598,7 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">def </span><a class="code" href="namespacetest-case-generator.html#a0aa79a8f783fec01e7b3e72ef6373fb2">WHILE_STATEMENT</a>():</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">global</span> depth</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    depth+=1</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    res = <span class="stringliteral">&#39;while  (&#39;</span> + <a class="code" href="namespacetest-case-generator.html#a70db552214bbcc000ba9b5847c6022b2">BOOLEAN_EXPRESSION</a>() + <span class="stringliteral">&#39;)  { &#39;</span> + <a class="code" href="namespacetest-case-generator.html#a57aa9582d40eea355976fb387eec1214">S</a>() + <span class="stringliteral">&#39; }&#39;</span> </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    res = <span class="stringliteral">&#39;while  (&#39;</span> + <a class="code" href="namespacetest-case-generator.html#a70db552214bbcc000ba9b5847c6022b2">BOOLEAN_EXPRESSION</a>() + <span class="stringliteral">&#39;)  { &#39;</span> + <a class="code" href="_grammar_8txt.html#a05250664815950204e4091ddf9c9af89">S</a>() + <span class="stringliteral">&#39; }&#39;</span> </div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    depth-=1</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">return</span> res</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
@@ -1648,14 +1676,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9a6de471352e0dfbe9b35656953dac5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a6de471352e0dfbe9b35656953dac5d">&#9670;&nbsp;</a></span>res</h2>
+<a id="afef43667d1d6456dc2ce7882ad3e462c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afef43667d1d6456dc2ce7882ad3e462c">&#9670;&nbsp;</a></span>res</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">string test-case-generator.res = '<a class="el" href="script-engine_2python_2script-test-cases_8txt.html#a2e6cf89ac7c9e742d0a822288109abb1">x</a> = ' + <a class="el" href="namespacetest-case-generator.html#a7ef41e43d8e9cbbcbaa22238f5024fc2">sentence</a> + '; <a class="el" href="script-engine_2python_2script-test-cases_8txt.html#a5a33e56082b8b3a68bc677a1bc3ff4f9">test_statement</a>(<a class="el" href="script-engine_2python_2script-test-cases_8txt.html#a2e6cf89ac7c9e742d0a822288109abb1">x</a>);'</td>
+          <td class="memname">def test-case-generator.res = <a class="el" href="namespacetest-case-generator.html#a7ef41e43d8e9cbbcbaa22238f5024fc2">sentence</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1669,7 +1697,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">def test-case-generator.sentence = <a class="el" href="namespacetest-case-generator.html#a56942d95c772738fdb2a8c6b105966f3">EXPRESSION</a>()</td>
+          <td class="memname">def test-case-generator.sentence = <a class="el" href="namespacetest-case-generator.html#a739037097fc44c2b088bfd4e9baa1254">FOR_STATEMENT</a>()</td>
         </tr>
       </table>
 </div><div class="memdoc">

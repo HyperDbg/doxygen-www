@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HyperDbg Debugger: hyperdbg/dependencies/zydis/dependencies/zycore/src/API/Thread.c File Reference</title>
+<title>HyperDbg Debugger: hyperdbg/hprdbghv/code/debugger/objects/Thread.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -81,17 +81,1081 @@ $(document).ready(function(){initNavTree('_thread_8c.html',''); initResizable();
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">Thread.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="_thread_8h_source.html">Zycore/API/Thread.h</a>&gt;</code><br />
-</div></div><!-- contents -->
+
+<p>Implementation of kernel debugger functions for threads.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;pch.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ae32967e4b9e23684fda10ac528736ecb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_thread_8c.html#ae32967e4b9e23684fda10ac528736ecb">ThreadHandleThreadChange</a> (<a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> CurrentCore, <a class="el" href="_definition_8h.html#a2bd4673df5e6e2fb371d770f3f2886d9">PGUEST_REGS</a> GuestState)</td></tr>
+<tr class="memdesc:ae32967e4b9e23684fda10ac528736ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">handle thread changes  <a href="_thread_8c.html#ae32967e4b9e23684fda10ac528736ecb">More...</a><br /></td></tr>
+<tr class="separator:ae32967e4b9e23684fda10ac528736ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ea9b6835b355fd0b3468ecf47263b72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_thread_8c.html#a2ea9b6835b355fd0b3468ecf47263b72">ThreadSwitch</a> (<a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> ThreadId, PETHREAD EThread, <a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> CheckByClockInterrupt)</td></tr>
+<tr class="memdesc:a2ea9b6835b355fd0b3468ecf47263b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">make evnvironment ready to change the thread  <a href="_thread_8c.html#a2ea9b6835b355fd0b3468ecf47263b72">More...</a><br /></td></tr>
+<tr class="separator:a2ea9b6835b355fd0b3468ecf47263b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f18246abe755d7ba1f5bdccb9c078ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_thread_8c.html#a1f18246abe755d7ba1f5bdccb9c078ec">ThreadShowList</a> (<a class="el" href="_definition_8h.html#a2ff4a7d527d38937426e87036e9eb4a8">PDEBUGGEE_THREAD_LIST_NEEDED_DETAILS</a> ThreadListSymbolInfo, <a class="el" href="_definition_8h.html#af3eeb6f563c3ce604d30ae789c1682aa">DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTIONS</a> QueryAction, <a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> *CountOfThreads, PVOID ListSaveBuffer, <a class="el" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> ListSaveBuffSize)</td></tr>
+<tr class="memdesc:a1f18246abe755d7ba1f5bdccb9c078ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">shows the threads list  <a href="_thread_8c.html#a1f18246abe755d7ba1f5bdccb9c078ec">More...</a><br /></td></tr>
+<tr class="separator:a1f18246abe755d7ba1f5bdccb9c078ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5d19171685a6fc74975e70747a1af18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_thread_8c.html#af5d19171685a6fc74975e70747a1af18">ThreadInterpretThread</a> (<a class="el" href="_definition_8h.html#a4276aa25d9666471ade93e0abba28471">PDEBUGGEE_DETAILS_AND_SWITCH_THREAD_PACKET</a> TidRequest)</td></tr>
+<tr class="memdesc:af5d19171685a6fc74975e70747a1af18"><td class="mdescLeft">&#160;</td><td class="mdescRight">change the current thread  <a href="_thread_8c.html#af5d19171685a6fc74975e70747a1af18">More...</a><br /></td></tr>
+<tr class="separator:af5d19171685a6fc74975e70747a1af18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a9a91cb4b2e53e42b706b58abd1709c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_thread_8c.html#a9a9a91cb4b2e53e42b706b58abd1709c">ThreadDetectChangeByDebugRegisterOnGs</a> (<a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> CurrentProcessorIndex, <a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> Enable)</td></tr>
+<tr class="memdesc:a9a9a91cb4b2e53e42b706b58abd1709c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable the thread change monitoring detection on the running core based on putting a HW breakpoint on the gs:[188].  <a href="_thread_8c.html#a9a9a91cb4b2e53e42b706b58abd1709c">More...</a><br /></td></tr>
+<tr class="separator:a9a9a91cb4b2e53e42b706b58abd1709c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afeb34ecf4439b59e7b3b15fff9ef6127"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_thread_8c.html#afeb34ecf4439b59e7b3b15fff9ef6127">ThreadDetectChangeByInterceptingClockInterrupts</a> (<a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> CurrentProcessorIndex, <a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> Enable)</td></tr>
+<tr class="memdesc:afeb34ecf4439b59e7b3b15fff9ef6127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable the thread change monitoring detection on the running core based on intercepting clock interrupts.  <a href="_thread_8c.html#afeb34ecf4439b59e7b3b15fff9ef6127">More...</a><br /></td></tr>
+<tr class="separator:afeb34ecf4439b59e7b3b15fff9ef6127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4831a5cc2d835ba8f9238541e385f36a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_thread_8c.html#a4831a5cc2d835ba8f9238541e385f36a">ThreadEnableOrDisableThreadChangeMonitor</a> (<a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> CurrentProcessorIndex, <a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> Enable, <a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> CheckByClockInterrupts)</td></tr>
+<tr class="memdesc:a4831a5cc2d835ba8f9238541e385f36a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable the thread change monitoring detection on the running core.  <a href="_thread_8c.html#a4831a5cc2d835ba8f9238541e385f36a">More...</a><br /></td></tr>
+<tr class="separator:a4831a5cc2d835ba8f9238541e385f36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcbd4c472009e7a20c3c4df7fb92b0eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_thread_8c.html#adcbd4c472009e7a20c3c4df7fb92b0eb">ThreadQueryCount</a> (<a class="el" href="_definition_8h.html#a088abddf56a4e18ca3595540dec693b4">PDEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS</a> DebuggerUsermodeProcessOrThreadQueryRequest)</td></tr>
+<tr class="memdesc:adcbd4c472009e7a20c3c4df7fb92b0eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query thread details (count)  <a href="_thread_8c.html#adcbd4c472009e7a20c3c4df7fb92b0eb">More...</a><br /></td></tr>
+<tr class="separator:adcbd4c472009e7a20c3c4df7fb92b0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e0982ba2738bd6c7ceb426e2995fd0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_thread_8c.html#a8e0982ba2738bd6c7ceb426e2995fd0f">ThreadQueryList</a> (<a class="el" href="_definition_8h.html#a088abddf56a4e18ca3595540dec693b4">PDEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS</a> DebuggerUsermodeProcessOrThreadQueryRequest, PVOID AddressToSaveDetail, <a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> BufferSize)</td></tr>
+<tr class="memdesc:a8e0982ba2738bd6c7ceb426e2995fd0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query thread details (list)  <a href="_thread_8c.html#a8e0982ba2738bd6c7ceb426e2995fd0f">More...</a><br /></td></tr>
+<tr class="separator:a8e0982ba2738bd6c7ceb426e2995fd0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a754b5d3e15081f32fa9da2eef670e0fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_thread_8c.html#a754b5d3e15081f32fa9da2eef670e0fb">ThreadQueryDetails</a> (<a class="el" href="_definition_8h.html#a4276aa25d9666471ade93e0abba28471">PDEBUGGEE_DETAILS_AND_SWITCH_THREAD_PACKET</a> GetInformationThreadRequest)</td></tr>
+<tr class="memdesc:a754b5d3e15081f32fa9da2eef670e0fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Query thread details.  <a href="_thread_8c.html#a754b5d3e15081f32fa9da2eef670e0fb">More...</a><br /></td></tr>
+<tr class="separator:a754b5d3e15081f32fa9da2eef670e0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implementation of kernel debugger functions for threads. </p>
+<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+'er'+'dbg'+'.o'+'rg'; return false;">sina@<span style="display: none;">.nosp@m.</span>hype<span style="display: none;">.nosp@m.</span>rdbg.<span style="display: none;">.nosp@m.</span>org</a>)</dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2021-11-23</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>This project is released under the GNU Public License v3. </dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a9a9a91cb4b2e53e42b706b58abd1709c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a9a91cb4b2e53e42b706b58abd1709c">&#9670;&nbsp;</a></span>ThreadDetectChangeByDebugRegisterOnGs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_script_engine_eval_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> ThreadDetectChangeByDebugRegisterOnGs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>&#160;</td>
+          <td class="paramname"><em>CurrentProcessorIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td>
+          <td class="paramname"><em>Enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable or disable the thread change monitoring detection on the running core based on putting a HW breakpoint on the gs:[188]. </p>
+<p>should be called on vmx root</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CurrentProcessorIndex</td><td></td></tr>
+    <tr><td class="paramname">Enable</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;{</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> MsrGsBase;</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160; </div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    <span class="keywordflow">if</span> (Enable)</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    {</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        <span class="comment">// Enable Thread Change Detection</span></div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        <span class="comment">// *** Read the address of GS:188 to g_CurrentThreadLocation ***</span></div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160; </div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        <span class="comment">// We are in kernel, so we should read MSR GS_BASE</span></div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;        <span class="comment">// IA32_GS_BASE             0xC0000101</span></div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        <span class="comment">// IA32_KERNEL_GS_BASE      0xC0000102</span></div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;        <span class="comment">// IA32_KERNEL_GS_BASE is currently user&#39;s gs as</span></div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;        <span class="comment">// we are in the kernel-mode, if we need to intercept</span></div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        <span class="comment">// from user-mode then IA32_KERNEL_GS_BASE should be used</span></div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;        <span class="comment">// but it&#39;s not for our case</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        MsrGsBase = __readmsr(IA32_GS_BASE);</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160; </div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;        <span class="comment">// Now, we have the gs base on MSR</span></div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        <span class="comment">// while in Windows gs:188 has the address</span></div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        <span class="comment">// of where the store current _ETHREAD, so</span></div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        <span class="comment">// we have to 188 to the gs base</span></div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        MsrGsBase += 0x188;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160; </div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;        <span class="comment">// Set the global value for current thread of this processor</span></div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;        <a class="code" href="_global_variables_8h.html#a04bac1f4beef0dcf1ce1a4d9ce72ea76">g_GuestState</a>[CurrentProcessorIndex].<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#abeaf053196e625ac00ab12a5dc38c8f1">DebuggingState</a>.<a class="code" href="struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a8f17ce3238c1b7fcd0e8a53040cba548">ThreadOrProcessTracingDetails</a>.<a class="code" href="struct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s.html#a4a5e8eab22fff7fe0228f4fb2d61a0b0">CurrentThreadLocationOnGs</a> = MsrGsBase;</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160; </div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;        <span class="comment">// Set interception state</span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        <a class="code" href="_global_variables_8h.html#a04bac1f4beef0dcf1ce1a4d9ce72ea76">g_GuestState</a>[CurrentProcessorIndex].<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#abeaf053196e625ac00ab12a5dc38c8f1">DebuggingState</a>.<a class="code" href="struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a8f17ce3238c1b7fcd0e8a53040cba548">ThreadOrProcessTracingDetails</a>.<a class="code" href="struct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s.html#a828cb9812e870d901c9397930c02a451">DebugRegisterInterceptionState</a> = <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160; </div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;        <span class="comment">// Enable load debug controls and save debug controls because we don&#39;t</span></div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;        <span class="comment">// want dr7 and dr0 remove their configuration on vm-exits and also</span></div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;        <span class="comment">// we&#39;ll be able to change the dr7 of the guest on VMCS</span></div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;        <a class="code" href="_hv_8c.html#ac9aefb71e380eac56389960ac66cddc1">HvSetLoadDebugControls</a>(<a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;        <a class="code" href="_hv_8c.html#a437b35822e82e1192228e3f8e767a4ab">HvSetSaveDebugControls</a>(<a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160; </div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;        <span class="comment">// Intercept #DBs by changing exception bitmap (one core)</span></div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;        <a class="code" href="_hv_8c.html#ad81531a3022f3ccfc2c6ceb34160f18d">HvSetExceptionBitmap</a>(<a class="code" href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a56a4f1677785327990a937d52760d5a1">EXCEPTION_VECTOR_DEBUG_BREAKPOINT</a>);</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160; </div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;        <span class="comment">// Note, this function is running as a DPC routines, means that</span></div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;        <span class="comment">// we&#39;re currently on DISPATCH_LEVEL so after modifying debug</span></div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;        <span class="comment">// registers and after disabling mov to dr (using vmcall),</span></div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;        <span class="comment">// nothing is able to change debug registers so it&#39;s safe</span></div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160; </div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;        <span class="comment">// Set debug register to fire an exception in the case of</span></div>
+<div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;        <span class="comment">// read/write on the gs:188 as we intercept it on</span></div>
+<div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;        <span class="comment">// hypervisor side by exception bitmap on #DBs</span></div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;        <span class="comment">// However, this call is somehow useless because I also set it</span></div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;        <span class="comment">// on Mov 2 Debug regs handler (vm-exit), but we set from here</span></div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        <span class="comment">// to make sure that the vm-exit handler set this break on access</span></div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <a class="code" href="_debug_registers_8c.html#a99c4db0dc5c8e70be4cdf336c7459517">DebugRegistersSet</a>(</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            <a class="code" href="_definition_8h.html#a7f78d5db12abf3eb68376c3efbc479b1">DEBUGGER_DEBUG_REGISTER_FOR_THREAD_MANAGEMENT</a>,</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            <a class="code" href="_debug_registers_8h.html#acbbc04b3f929bcff66333b5968b3a796a9406c001c7f5902738ac9e4177844db3">BREAK_ON_WRITE_ONLY</a>,</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;            <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>,</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            <a class="code" href="_global_variables_8h.html#a04bac1f4beef0dcf1ce1a4d9ce72ea76">g_GuestState</a>[CurrentProcessorIndex].DebuggingState.ThreadOrProcessTracingDetails.CurrentThreadLocationOnGs);</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160; </div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;        <span class="comment">// Enables mov to debug registers exitings in primary cpu-based controls</span></div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;        <span class="comment">// it is because I realized that some other routines in Windows like</span></div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;        <span class="comment">// KiSaveProcessorControlState and KiRestoreProcessorControlState and</span></div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;        <span class="comment">// other functions directly change the debug registers, probably</span></div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;        <span class="comment">// because we should not modify debug registers directly, by the way, we</span></div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        <span class="comment">// are hypervisor and we can easily ignore mov to debug register (0 in</span></div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;        <span class="comment">// this case), however we should somehow hide this process in the future</span></div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        <a class="code" href="_hv_8c.html#a3eed992fc21aece2a1e80c3931d93f80">HvSetMovDebugRegsExiting</a>(<a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;    }</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;    {</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        <span class="comment">// Disable Thread Change Detection</span></div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;        <span class="comment">// *** Remove side changes ***</span></div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160; </div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        <span class="comment">// We should not ignore debug registers change anymore</span></div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        <a class="code" href="_global_variables_8h.html#a04bac1f4beef0dcf1ce1a4d9ce72ea76">g_GuestState</a>[CurrentProcessorIndex].<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#abeaf053196e625ac00ab12a5dc38c8f1">DebuggingState</a>.<a class="code" href="struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a8f17ce3238c1b7fcd0e8a53040cba548">ThreadOrProcessTracingDetails</a>.<a class="code" href="struct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s.html#a828cb9812e870d901c9397930c02a451">DebugRegisterInterceptionState</a> = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160; </div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        <span class="comment">// Disable mov to debug regs vm-exit</span></div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        <a class="code" href="_hv_8c.html#a3eed992fc21aece2a1e80c3931d93f80">HvSetMovDebugRegsExiting</a>(<a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160; </div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;        <span class="comment">// Disable load debug controls and save debug controls because</span></div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        <span class="comment">// no longer needed</span></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        <a class="code" href="_hv_8c.html#ac9aefb71e380eac56389960ac66cddc1">HvSetLoadDebugControls</a>(<a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        <a class="code" href="_hv_8c.html#a437b35822e82e1192228e3f8e767a4ab">HvSetSaveDebugControls</a>(<a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160; </div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;        <span class="comment">// Disable intercepting #DBs</span></div>
+<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        <a class="code" href="_hv_8c.html#a08d6a0baa778bb91ed163ba1e1df550a">HvUnsetExceptionBitmap</a>(<a class="code" href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a56a4f1677785327990a937d52760d5a1">EXCEPTION_VECTOR_DEBUG_BREAKPOINT</a>);</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160; </div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        <span class="comment">// No longer need to store such gs:188 value</span></div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        <a class="code" href="_global_variables_8h.html#a04bac1f4beef0dcf1ce1a4d9ce72ea76">g_GuestState</a>[CurrentProcessorIndex].<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#abeaf053196e625ac00ab12a5dc38c8f1">DebuggingState</a>.<a class="code" href="struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a8f17ce3238c1b7fcd0e8a53040cba548">ThreadOrProcessTracingDetails</a>.<a class="code" href="struct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s.html#a4a5e8eab22fff7fe0228f4fb2d61a0b0">CurrentThreadLocationOnGs</a> = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    }</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;}</div>
+<div class="ttc" id="a_debug_registers_8c_html_a99c4db0dc5c8e70be4cdf336c7459517"><div class="ttname"><a href="_debug_registers_8c.html#a99c4db0dc5c8e70be4cdf336c7459517">DebugRegistersSet</a></div><div class="ttdeci">BOOLEAN DebugRegistersSet(UINT32 DebugRegNum, DEBUG_REGISTER_TYPE ActionType, BOOLEAN ApplyToVmcs, UINT64 TargetAddress)</div><div class="ttdoc">Configure hardware debug register for access, write and fetch breakpoints.</div><div class="ttdef"><b>Definition:</b> DebugRegisters.c:37</div></div>
+<div class="ttc" id="a_debug_registers_8h_html_acbbc04b3f929bcff66333b5968b3a796a9406c001c7f5902738ac9e4177844db3"><div class="ttname"><a href="_debug_registers_8h.html#acbbc04b3f929bcff66333b5968b3a796a9406c001c7f5902738ac9e4177844db3">BREAK_ON_WRITE_ONLY</a></div><div class="ttdeci">@ BREAK_ON_WRITE_ONLY</div><div class="ttdef"><b>Definition:</b> DebugRegisters.h:22</div></div>
+<div class="ttc" id="a_definition_8h_html_a7f78d5db12abf3eb68376c3efbc479b1"><div class="ttname"><a href="_definition_8h.html#a7f78d5db12abf3eb68376c3efbc479b1">DEBUGGER_DEBUG_REGISTER_FOR_THREAD_MANAGEMENT</a></div><div class="ttdeci">#define DEBUGGER_DEBUG_REGISTER_FOR_THREAD_MANAGEMENT</div><div class="ttdoc">debug register to monitor thread changes</div><div class="ttdef"><b>Definition:</b> Definition.h:538</div></div>
+<div class="ttc" id="a_events_8h_html_af9640e4f7e36f7a6bf7c56e30a860349a56a4f1677785327990a937d52760d5a1"><div class="ttname"><a href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a56a4f1677785327990a937d52760d5a1">EXCEPTION_VECTOR_DEBUG_BREAKPOINT</a></div><div class="ttdeci">@ EXCEPTION_VECTOR_DEBUG_BREAKPOINT</div><div class="ttdef"><b>Definition:</b> Events.h:32</div></div>
+<div class="ttc" id="a_global_variables_8h_html_a04bac1f4beef0dcf1ce1a4d9ce72ea76"><div class="ttname"><a href="_global_variables_8h.html#a04bac1f4beef0dcf1ce1a4d9ce72ea76">g_GuestState</a></div><div class="ttdeci">VIRTUAL_MACHINE_STATE * g_GuestState</div><div class="ttdoc">Save the state and variables related to each to logical core.</div><div class="ttdef"><b>Definition:</b> GlobalVariables.h:31</div></div>
+<div class="ttc" id="a_hv_8c_html_a08d6a0baa778bb91ed163ba1e1df550a"><div class="ttname"><a href="_hv_8c.html#a08d6a0baa778bb91ed163ba1e1df550a">HvUnsetExceptionBitmap</a></div><div class="ttdeci">VOID HvUnsetExceptionBitmap(UINT32 IdtIndex)</div><div class="ttdoc">Unset exception bitmap in VMCS.</div><div class="ttdef"><b>Definition:</b> Hv.c:916</div></div>
+<div class="ttc" id="a_hv_8c_html_a3eed992fc21aece2a1e80c3931d93f80"><div class="ttname"><a href="_hv_8c.html#a3eed992fc21aece2a1e80c3931d93f80">HvSetMovDebugRegsExiting</a></div><div class="ttdeci">VOID HvSetMovDebugRegsExiting(BOOLEAN Set)</div><div class="ttdoc">Set or unset the Mov to Debug Registers Exiting.</div><div class="ttdef"><b>Definition:</b> Hv.c:958</div></div>
+<div class="ttc" id="a_hv_8c_html_a437b35822e82e1192228e3f8e767a4ab"><div class="ttname"><a href="_hv_8c.html#a437b35822e82e1192228e3f8e767a4ab">HvSetSaveDebugControls</a></div><div class="ttdeci">VOID HvSetSaveDebugControls(BOOLEAN Set)</div><div class="ttdoc">Set SAVE DEBUG CONTROLS on Vm-exit controls.</div><div class="ttdef"><b>Definition:</b> Hv.c:400</div></div>
+<div class="ttc" id="a_hv_8c_html_ac9aefb71e380eac56389960ac66cddc1"><div class="ttname"><a href="_hv_8c.html#ac9aefb71e380eac56389960ac66cddc1">HvSetLoadDebugControls</a></div><div class="ttdeci">VOID HvSetLoadDebugControls(BOOLEAN Set)</div><div class="ttdoc">Set LOAD DEBUG CONTROLS on Vm-entry controls.</div><div class="ttdef"><b>Definition:</b> Hv.c:369</div></div>
+<div class="ttc" id="a_hv_8c_html_ad81531a3022f3ccfc2c6ceb34160f18d"><div class="ttname"><a href="_hv_8c.html#ad81531a3022f3ccfc2c6ceb34160f18d">HvSetExceptionBitmap</a></div><div class="ttdeci">VOID HvSetExceptionBitmap(UINT32 IdtIndex)</div><div class="ttdoc">Set exception bitmap in VMCS.</div><div class="ttdef"><b>Definition:</b> Hv.c:900</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:103</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:102</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aae17ebb9ef7279d026817fb22f8aebe9"><div class="ttname"><a href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a></div><div class="ttdeci">unsigned __int64 UINT64</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:72</div></div>
+<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s_html_a4a5e8eab22fff7fe0228f4fb2d61a0b0"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s.html#a4a5e8eab22fff7fe0228f4fb2d61a0b0">_DEBUGGEE_PROCESS_OR_THREAD_TRACING_DETAILS::CurrentThreadLocationOnGs</a></div><div class="ttdeci">UINT64 CurrentThreadLocationOnGs</div><div class="ttdef"><b>Definition:</b> Debugger.h:115</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s_html_a828cb9812e870d901c9397930c02a451"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s.html#a828cb9812e870d901c9397930c02a451">_DEBUGGEE_PROCESS_OR_THREAD_TRACING_DETAILS::DebugRegisterInterceptionState</a></div><div class="ttdeci">BOOLEAN DebugRegisterInterceptionState</div><div class="ttdef"><b>Definition:</b> Debugger.h:116</div></div>
+<div class="ttc" id="astruct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e_html_a8f17ce3238c1b7fcd0e8a53040cba548"><div class="ttname"><a href="struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a8f17ce3238c1b7fcd0e8a53040cba548">_PROCESSOR_DEBUGGING_STATE::ThreadOrProcessTracingDetails</a></div><div class="ttdeci">DEBUGGEE_PROCESS_OR_THREAD_TRACING_DETAILS ThreadOrProcessTracingDetails</div><div class="ttdef"><b>Definition:</b> Debugger.h:149</div></div>
+<div class="ttc" id="astruct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e_html_abeaf053196e625ac00ab12a5dc38c8f1"><div class="ttname"><a href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#abeaf053196e625ac00ab12a5dc38c8f1">_VIRTUAL_MACHINE_STATE::DebuggingState</a></div><div class="ttdeci">PROCESSOR_DEBUGGING_STATE DebuggingState</div><div class="ttdef"><b>Definition:</b> Vmx.h:358</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="afeb34ecf4439b59e7b3b15fff9ef6127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afeb34ecf4439b59e7b3b15fff9ef6127">&#9670;&nbsp;</a></span>ThreadDetectChangeByInterceptingClockInterrupts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_script_engine_eval_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> ThreadDetectChangeByInterceptingClockInterrupts </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>&#160;</td>
+          <td class="paramname"><em>CurrentProcessorIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td>
+          <td class="paramname"><em>Enable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable or disable the thread change monitoring detection on the running core based on intercepting clock interrupts. </p>
+<p>should be called on vmx root</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CurrentProcessorIndex</td><td></td></tr>
+    <tr><td class="paramname">Enable</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;{</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;    <span class="keywordflow">if</span> (Enable)</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;    {</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;        <span class="comment">// We should get the clock interrupts</span></div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;        <a class="code" href="_global_variables_8h.html#a04bac1f4beef0dcf1ce1a4d9ce72ea76">g_GuestState</a>[CurrentProcessorIndex].<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#abeaf053196e625ac00ab12a5dc38c8f1">DebuggingState</a>.<a class="code" href="struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a8f17ce3238c1b7fcd0e8a53040cba548">ThreadOrProcessTracingDetails</a>.<a class="code" href="struct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s.html#abed37561390beafa280eb6b67b357c41">InterceptClockInterruptsForThreadChange</a> = <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160; </div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;        <span class="comment">// Intercept external interrupts (for monitoring clock interrupts)</span></div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;        <a class="code" href="_hv_8c.html#afda4e861e6b76d13ec4d2d16e80804cd">HvSetExternalInterruptExiting</a>(<a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    }</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;    {</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;        <span class="comment">// We should ignore intercepting any further clock interrupts</span></div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        <a class="code" href="_global_variables_8h.html#a04bac1f4beef0dcf1ce1a4d9ce72ea76">g_GuestState</a>[CurrentProcessorIndex].<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#abeaf053196e625ac00ab12a5dc38c8f1">DebuggingState</a>.<a class="code" href="struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a8f17ce3238c1b7fcd0e8a53040cba548">ThreadOrProcessTracingDetails</a>.<a class="code" href="struct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s.html#abed37561390beafa280eb6b67b357c41">InterceptClockInterruptsForThreadChange</a> = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160; </div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;        <span class="comment">// Undo intercepting external interrupts</span></div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;        <a class="code" href="_hv_8c.html#afda4e861e6b76d13ec4d2d16e80804cd">HvSetExternalInterruptExiting</a>(<a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    }</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;}</div>
+<div class="ttc" id="a_hv_8c_html_afda4e861e6b76d13ec4d2d16e80804cd"><div class="ttname"><a href="_hv_8c.html#afda4e861e6b76d13ec4d2d16e80804cd">HvSetExternalInterruptExiting</a></div><div class="ttdeci">VOID HvSetExternalInterruptExiting(BOOLEAN Set)</div><div class="ttdoc">Set the External Interrupt Exiting.</div><div class="ttdef"><b>Definition:</b> Hv.c:931</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s_html_abed37561390beafa280eb6b67b357c41"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s.html#abed37561390beafa280eb6b67b357c41">_DEBUGGEE_PROCESS_OR_THREAD_TRACING_DETAILS::InterceptClockInterruptsForThreadChange</a></div><div class="ttdeci">BOOLEAN InterceptClockInterruptsForThreadChange</div><div class="ttdef"><b>Definition:</b> Debugger.h:117</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4831a5cc2d835ba8f9238541e385f36a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4831a5cc2d835ba8f9238541e385f36a">&#9670;&nbsp;</a></span>ThreadEnableOrDisableThreadChangeMonitor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_script_engine_eval_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> ThreadEnableOrDisableThreadChangeMonitor </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>&#160;</td>
+          <td class="paramname"><em>CurrentProcessorIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td>
+          <td class="paramname"><em>Enable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td>
+          <td class="paramname"><em>CheckByClockInterrupts</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Enable or disable the thread change monitoring detection on the running core. </p>
+<p>should be called on vmx root</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CurrentProcessorIndex</td><td></td></tr>
+    <tr><td class="paramname">Enable</td><td></td></tr>
+    <tr><td class="paramname">CheckByClockInterrupts</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;{</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    <span class="comment">// Check if it&#39;s a HW breakpoint on gs:[188] or a clock interception</span></div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;    <span class="keywordflow">if</span> (!CheckByClockInterrupts)</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    {</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        <a class="code" href="_thread_8c.html#a9a9a91cb4b2e53e42b706b58abd1709c">ThreadDetectChangeByDebugRegisterOnGs</a>(CurrentProcessorIndex, Enable);</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    }</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    {</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        <a class="code" href="_thread_8c.html#afeb34ecf4439b59e7b3b15fff9ef6127">ThreadDetectChangeByInterceptingClockInterrupts</a>(CurrentProcessorIndex, Enable);</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    }</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;}</div>
+<div class="ttc" id="a_thread_8c_html_a9a9a91cb4b2e53e42b706b58abd1709c"><div class="ttname"><a href="_thread_8c.html#a9a9a91cb4b2e53e42b706b58abd1709c">ThreadDetectChangeByDebugRegisterOnGs</a></div><div class="ttdeci">VOID ThreadDetectChangeByDebugRegisterOnGs(UINT32 CurrentProcessorIndex, BOOLEAN Enable)</div><div class="ttdoc">Enable or disable the thread change monitoring detection on the running core based on putting a HW br...</div><div class="ttdef"><b>Definition:</b> Thread.c:418</div></div>
+<div class="ttc" id="a_thread_8c_html_afeb34ecf4439b59e7b3b15fff9ef6127"><div class="ttname"><a href="_thread_8c.html#afeb34ecf4439b59e7b3b15fff9ef6127">ThreadDetectChangeByInterceptingClockInterrupts</a></div><div class="ttdeci">VOID ThreadDetectChangeByInterceptingClockInterrupts(UINT32 CurrentProcessorIndex, BOOLEAN Enable)</div><div class="ttdoc">Enable or disable the thread change monitoring detection on the running core based on intercepting cl...</div><div class="ttdef"><b>Definition:</b> Thread.c:550</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae32967e4b9e23684fda10ac528736ecb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae32967e4b9e23684fda10ac528736ecb">&#9670;&nbsp;</a></span>ThreadHandleThreadChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> ThreadHandleThreadChange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>&#160;</td>
+          <td class="paramname"><em>CurrentCore</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_definition_8h.html#a2bd4673df5e6e2fb371d770f3f2886d9">PGUEST_REGS</a>&#160;</td>
+          <td class="paramname"><em>GuestState</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>handle thread changes </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">CurrentCore</td><td></td></tr>
+    <tr><td class="paramname">GuestState</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>BOOLEAN </dd></dl>
+<div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// Check if we reached to the target thread or not</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span> ((<a class="code" href="_global_variables_8h.html#ac4bd01d0cf0973fbceb4306bde6172dd">g_ThreadSwitch</a>.<a class="code" href="struct___d_e_b_u_g_g_e_e___r_e_q_u_e_s_t___t_o___c_h_a_n_g_e___t_h_r_e_a_d.html#abbc1326ff13106f098eedd8126ce3857">ThreadId</a> != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a> &amp;&amp; <a class="code" href="_global_variables_8h.html#ac4bd01d0cf0973fbceb4306bde6172dd">g_ThreadSwitch</a>.<a class="code" href="struct___d_e_b_u_g_g_e_e___r_e_q_u_e_s_t___t_o___c_h_a_n_g_e___t_h_r_e_a_d.html#abbc1326ff13106f098eedd8126ce3857">ThreadId</a> == PsGetCurrentThreadId()) ||</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        (<a class="code" href="_global_variables_8h.html#ac4bd01d0cf0973fbceb4306bde6172dd">g_ThreadSwitch</a>.<a class="code" href="struct___d_e_b_u_g_g_e_e___r_e_q_u_e_s_t___t_o___c_h_a_n_g_e___t_h_r_e_a_d.html#a35555cbeb7ea8747061e8aaa0d91a47d">Thread</a> != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a> &amp;&amp; <a class="code" href="_global_variables_8h.html#ac4bd01d0cf0973fbceb4306bde6172dd">g_ThreadSwitch</a>.<a class="code" href="struct___d_e_b_u_g_g_e_e___r_e_q_u_e_s_t___t_o___c_h_a_n_g_e___t_h_r_e_a_d.html#a35555cbeb7ea8747061e8aaa0d91a47d">Thread</a> == PsGetCurrentThread()))</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="comment">// Halt the debuggee, we have found the target thread</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="_kd_8c.html#a9ce30bdceae51152711188b524ef6354">KdHandleBreakpointAndDebugBreakpoints</a>(CurrentCore, GuestState, <a class="code" href="_definition_8h.html#a6e2be89205e735ebae644cf4850ac21ba34eeb7b86b2c07a811b889005a26eea6">DEBUGGEE_PAUSING_REASON_DEBUGGEE_THREAD_SWITCHED</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="comment">// Found</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Not found</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="ttc" id="a_definition_8h_html_a6e2be89205e735ebae644cf4850ac21ba34eeb7b86b2c07a811b889005a26eea6"><div class="ttname"><a href="_definition_8h.html#a6e2be89205e735ebae644cf4850ac21ba34eeb7b86b2c07a811b889005a26eea6">DEBUGGEE_PAUSING_REASON_DEBUGGEE_THREAD_SWITCHED</a></div><div class="ttdeci">@ DEBUGGEE_PAUSING_REASON_DEBUGGEE_THREAD_SWITCHED</div><div class="ttdef"><b>Definition:</b> Definition.h:917</div></div>
+<div class="ttc" id="a_global_variables_8h_html_ac4bd01d0cf0973fbceb4306bde6172dd"><div class="ttname"><a href="_global_variables_8h.html#ac4bd01d0cf0973fbceb4306bde6172dd">g_ThreadSwitch</a></div><div class="ttdeci">DEBUGGEE_REQUEST_TO_CHANGE_THREAD g_ThreadSwitch</div><div class="ttdoc">Thread switch to ETHREAD or Thread ID.</div><div class="ttdef"><b>Definition:</b> GlobalVariables.h:238</div></div>
+<div class="ttc" id="a_kd_8c_html_a9ce30bdceae51152711188b524ef6354"><div class="ttname"><a href="_kd_8c.html#a9ce30bdceae51152711188b524ef6354">KdHandleBreakpointAndDebugBreakpoints</a></div><div class="ttdeci">_Use_decl_annotations_ VOID KdHandleBreakpointAndDebugBreakpoints(UINT32 CurrentCore, PGUEST_REGS GuestRegs, DEBUGGEE_PAUSING_REASON Reason, PDEBUGGER_TRIGGERED_EVENT_DETAILS EventDetails)</div><div class="ttdoc">Handle #DBs and #BPs for kernel debugger.</div><div class="ttdef"><b>Definition:</b> Kd.c:1009</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___r_e_q_u_e_s_t___t_o___c_h_a_n_g_e___t_h_r_e_a_d_html_a35555cbeb7ea8747061e8aaa0d91a47d"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___r_e_q_u_e_s_t___t_o___c_h_a_n_g_e___t_h_r_e_a_d.html#a35555cbeb7ea8747061e8aaa0d91a47d">_DEBUGGEE_REQUEST_TO_CHANGE_THREAD::Thread</a></div><div class="ttdeci">UINT64 Thread</div><div class="ttdef"><b>Definition:</b> Kd.h:52</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___r_e_q_u_e_s_t___t_o___c_h_a_n_g_e___t_h_r_e_a_d_html_abbc1326ff13106f098eedd8126ce3857"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___r_e_q_u_e_s_t___t_o___c_h_a_n_g_e___t_h_r_e_a_d.html#abbc1326ff13106f098eedd8126ce3857">_DEBUGGEE_REQUEST_TO_CHANGE_THREAD::ThreadId</a></div><div class="ttdeci">UINT32 ThreadId</div><div class="ttdef"><b>Definition:</b> Kd.h:51</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af5d19171685a6fc74975e70747a1af18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5d19171685a6fc74975e70747a1af18">&#9670;&nbsp;</a></span>ThreadInterpretThread()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> ThreadInterpretThread </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_definition_8h.html#a4276aa25d9666471ade93e0abba28471">PDEBUGGEE_DETAILS_AND_SWITCH_THREAD_PACKET</a>&#160;</td>
+          <td class="paramname"><em>TidRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>change the current thread </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">TidRequest</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>BOOLEAN </dd></dl>
+<div class="fragment"><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;{</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">switch</span> (TidRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#a110a784944b26cb36258de4231daaa00">ActionType</a>)</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    {</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="_definition_8h.html#a7a3955d43cb53d79a1f2a7e20d37da14aa6d17307342d79707d70b0300a206202">DEBUGGEE_DETAILS_AND_SWITCH_THREAD_GET_THREAD_DETAILS</a>:</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="comment">// Debugger wants to know current tid, nt!_ETHREAD and process name, etc.</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        TidRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#a6b2fec29566ee0986de30299150b7b09">ProcessId</a> = PsGetCurrentProcessId();</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        TidRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#aa9fc083c3821012012226feb49219c60">ThreadId</a>  = PsGetCurrentThreadId();</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        TidRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#a5ae8867649ea6cd0947cdd8aa4e423e5">Process</a>   = PsGetCurrentProcess();</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;        TidRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#a36252b53911e94458085210ebc4e0611">Thread</a>    = PsGetCurrentThread();</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <a class="code" href="_memory_mapper_8c.html#ac3c23d5644111a6be18ca274f448e9ff">MemoryMapperReadMemorySafe</a>(<a class="code" href="hprdbghv_2code_2common_2_common_8c.html#a7d8de41916e9cffe3cb1963847484806">GetProcessNameFromEprocess</a>(PsGetCurrentProcess()), &amp;TidRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#a9ff4d4d1a19ad084750274fc5d14c9f6">ProcessName</a>, 16);</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="comment">// Operation was successful</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        TidRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#af8c6bc7ae42ae48b4fc727cb6739ca03">Result</a> = <a class="code" href="_definition_8h.html#abbd89315da3f894b7fb4985edd713bb1">DEBUGGER_OPERATION_WAS_SUCCESSFULL</a>;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160; </div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="_definition_8h.html#a7a3955d43cb53d79a1f2a7e20d37da14a826bdbc787efbf59a8b836114008d300">DEBUGGEE_DETAILS_AND_SWITCH_THREAD_PERFORM_SWITCH</a>:</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;        <span class="comment">// Perform the thread switch</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="_thread_8c.html#a2ea9b6835b355fd0b3468ecf47263b72">ThreadSwitch</a>(TidRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#aa9fc083c3821012012226feb49219c60">ThreadId</a>, TidRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#a36252b53911e94458085210ebc4e0611">Thread</a>, TidRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#acc6e02c3d093d08bd96f804309561776">CheckByClockInterrupt</a>))</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        {</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;            TidRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#af8c6bc7ae42ae48b4fc727cb6739ca03">Result</a> = <a class="code" href="_definition_8h.html#a4d9bacfb22824ffd68eefdd189938281">DEBUGGER_ERROR_DETAILS_OR_SWITCH_THREAD_INVALID_PARAMETER</a>;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        }</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="comment">// Operation was successful</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        TidRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#af8c6bc7ae42ae48b4fc727cb6739ca03">Result</a> = <a class="code" href="_definition_8h.html#abbd89315da3f894b7fb4985edd713bb1">DEBUGGER_OPERATION_WAS_SUCCESSFULL</a>;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="_definition_8h.html#a7a3955d43cb53d79a1f2a7e20d37da14a516e0cdb60796ff25b0215dee4e327a0">DEBUGGEE_DETAILS_AND_SWITCH_THREAD_GET_THREAD_LIST</a>:</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        <span class="comment">// Show the threads list</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="_thread_8c.html#a1f18246abe755d7ba1f5bdccb9c078ec">ThreadShowList</a>(&amp;TidRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#a4ae6fed5cbd0179862e181dc5e16f073">ThreadListSymDetails</a>,</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;                            <a class="code" href="_definition_8h.html#afac007ba1abb5a5ef542e8731170c9a5a953106ee52315b5082e34b933b0f947a">DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTION_SHOW_INSTANTLY</a>,</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;                            <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;                            <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;                            <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>))</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        {</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;            TidRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#af8c6bc7ae42ae48b4fc727cb6739ca03">Result</a> = <a class="code" href="_definition_8h.html#a4d9bacfb22824ffd68eefdd189938281">DEBUGGER_ERROR_DETAILS_OR_SWITCH_THREAD_INVALID_PARAMETER</a>;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        }</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="comment">// Operation was successful</span></div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        TidRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#af8c6bc7ae42ae48b4fc727cb6739ca03">Result</a> = <a class="code" href="_definition_8h.html#abbd89315da3f894b7fb4985edd713bb1">DEBUGGER_OPERATION_WAS_SUCCESSFULL</a>;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160; </div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;        <span class="comment">// Invalid type of action</span></div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        TidRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#af8c6bc7ae42ae48b4fc727cb6739ca03">Result</a> = <a class="code" href="_definition_8h.html#a4d9bacfb22824ffd68eefdd189938281">DEBUGGER_ERROR_DETAILS_OR_SWITCH_THREAD_INVALID_PARAMETER</a>;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    }</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="comment">// Check if the above operation contains error</span></div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    <span class="keywordflow">if</span> (TidRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#af8c6bc7ae42ae48b4fc727cb6739ca03">Result</a> == <a class="code" href="_definition_8h.html#abbd89315da3f894b7fb4985edd713bb1">DEBUGGER_OPERATION_WAS_SUCCESSFULL</a>)</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    {</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    }</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    {</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    }</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;}</div>
+<div class="ttc" id="a_definition_8h_html_a4d9bacfb22824ffd68eefdd189938281"><div class="ttname"><a href="_definition_8h.html#a4d9bacfb22824ffd68eefdd189938281">DEBUGGER_ERROR_DETAILS_OR_SWITCH_THREAD_INVALID_PARAMETER</a></div><div class="ttdeci">#define DEBUGGER_ERROR_DETAILS_OR_SWITCH_THREAD_INVALID_PARAMETER</div><div class="ttdoc">error, for thread switch or thread details, invalid parameter</div><div class="ttdef"><b>Definition:</b> Definition.h:2625</div></div>
+<div class="ttc" id="a_definition_8h_html_a7a3955d43cb53d79a1f2a7e20d37da14a516e0cdb60796ff25b0215dee4e327a0"><div class="ttname"><a href="_definition_8h.html#a7a3955d43cb53d79a1f2a7e20d37da14a516e0cdb60796ff25b0215dee4e327a0">DEBUGGEE_DETAILS_AND_SWITCH_THREAD_GET_THREAD_LIST</a></div><div class="ttdeci">@ DEBUGGEE_DETAILS_AND_SWITCH_THREAD_GET_THREAD_LIST</div><div class="ttdef"><b>Definition:</b> Definition.h:2150</div></div>
+<div class="ttc" id="a_definition_8h_html_a7a3955d43cb53d79a1f2a7e20d37da14a826bdbc787efbf59a8b836114008d300"><div class="ttname"><a href="_definition_8h.html#a7a3955d43cb53d79a1f2a7e20d37da14a826bdbc787efbf59a8b836114008d300">DEBUGGEE_DETAILS_AND_SWITCH_THREAD_PERFORM_SWITCH</a></div><div class="ttdeci">@ DEBUGGEE_DETAILS_AND_SWITCH_THREAD_PERFORM_SWITCH</div><div class="ttdef"><b>Definition:</b> Definition.h:2148</div></div>
+<div class="ttc" id="a_definition_8h_html_a7a3955d43cb53d79a1f2a7e20d37da14aa6d17307342d79707d70b0300a206202"><div class="ttname"><a href="_definition_8h.html#a7a3955d43cb53d79a1f2a7e20d37da14aa6d17307342d79707d70b0300a206202">DEBUGGEE_DETAILS_AND_SWITCH_THREAD_GET_THREAD_DETAILS</a></div><div class="ttdeci">@ DEBUGGEE_DETAILS_AND_SWITCH_THREAD_GET_THREAD_DETAILS</div><div class="ttdef"><b>Definition:</b> Definition.h:2149</div></div>
+<div class="ttc" id="a_definition_8h_html_abbd89315da3f894b7fb4985edd713bb1"><div class="ttname"><a href="_definition_8h.html#abbd89315da3f894b7fb4985edd713bb1">DEBUGGER_OPERATION_WAS_SUCCESSFULL</a></div><div class="ttdeci">#define DEBUGGER_OPERATION_WAS_SUCCESSFULL</div><div class="ttdoc">General value to indicate that the operation or request was successful.</div><div class="ttdef"><b>Definition:</b> Definition.h:2409</div></div>
+<div class="ttc" id="a_definition_8h_html_afac007ba1abb5a5ef542e8731170c9a5a953106ee52315b5082e34b933b0f947a"><div class="ttname"><a href="_definition_8h.html#afac007ba1abb5a5ef542e8731170c9a5a953106ee52315b5082e34b933b0f947a">DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTION_SHOW_INSTANTLY</a></div><div class="ttdeci">@ DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTION_SHOW_INSTANTLY</div><div class="ttdef"><b>Definition:</b> Definition.h:1676</div></div>
+<div class="ttc" id="a_memory_mapper_8c_html_ac3c23d5644111a6be18ca274f448e9ff"><div class="ttname"><a href="_memory_mapper_8c.html#ac3c23d5644111a6be18ca274f448e9ff">MemoryMapperReadMemorySafe</a></div><div class="ttdeci">_Use_decl_annotations_ BOOLEAN MemoryMapperReadMemorySafe(UINT64 VaAddressToRead, PVOID BufferToSaveMemory, SIZE_T SizeToRead)</div><div class="ttdoc">Read memory safely by mapping the buffer (It's a wrapper)</div><div class="ttdef"><b>Definition:</b> MemoryMapper.c:826</div></div>
+<div class="ttc" id="a_thread_8c_html_a1f18246abe755d7ba1f5bdccb9c078ec"><div class="ttname"><a href="_thread_8c.html#a1f18246abe755d7ba1f5bdccb9c078ec">ThreadShowList</a></div><div class="ttdeci">BOOLEAN ThreadShowList(PDEBUGGEE_THREAD_LIST_NEEDED_DETAILS ThreadListSymbolInfo, DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTIONS QueryAction, UINT32 *CountOfThreads, PVOID ListSaveBuffer, UINT64 ListSaveBuffSize)</div><div class="ttdoc">shows the threads list</div><div class="ttdef"><b>Definition:</b> Thread.c:122</div></div>
+<div class="ttc" id="a_thread_8c_html_a2ea9b6835b355fd0b3468ecf47263b72"><div class="ttname"><a href="_thread_8c.html#a2ea9b6835b355fd0b3468ecf47263b72">ThreadSwitch</a></div><div class="ttdeci">BOOLEAN ThreadSwitch(UINT32 ThreadId, PETHREAD EThread, BOOLEAN CheckByClockInterrupt)</div><div class="ttdoc">make evnvironment ready to change the thread</div><div class="ttdef"><b>Definition:</b> Thread.c:57</div></div>
+<div class="ttc" id="ahprdbghv_2code_2common_2_common_8c_html_a7d8de41916e9cffe3cb1963847484806"><div class="ttname"><a href="hprdbghv_2code_2common_2_common_8c.html#a7d8de41916e9cffe3cb1963847484806">GetProcessNameFromEprocess</a></div><div class="ttdeci">PCHAR GetProcessNameFromEprocess(PEPROCESS Eprocess)</div><div class="ttdoc">Get process name by eprocess.</div><div class="ttdef"><b>Definition:</b> Common.c:654</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t_html_a110a784944b26cb36258de4231daaa00"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#a110a784944b26cb36258de4231daaa00">_DEBUGGEE_DETAILS_AND_SWITCH_THREAD_PACKET::ActionType</a></div><div class="ttdeci">DEBUGGEE_DETAILS_AND_SWITCH_THREAD_TYPE ActionType</div><div class="ttdef"><b>Definition:</b> Definition.h:2160</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t_html_a36252b53911e94458085210ebc4e0611"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#a36252b53911e94458085210ebc4e0611">_DEBUGGEE_DETAILS_AND_SWITCH_THREAD_PACKET::Thread</a></div><div class="ttdeci">UINT64 Thread</div><div class="ttdef"><b>Definition:</b> Definition.h:2163</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t_html_a4ae6fed5cbd0179862e181dc5e16f073"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#a4ae6fed5cbd0179862e181dc5e16f073">_DEBUGGEE_DETAILS_AND_SWITCH_THREAD_PACKET::ThreadListSymDetails</a></div><div class="ttdeci">DEBUGGEE_THREAD_LIST_NEEDED_DETAILS ThreadListSymDetails</div><div class="ttdef"><b>Definition:</b> Definition.h:2167</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t_html_a5ae8867649ea6cd0947cdd8aa4e423e5"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#a5ae8867649ea6cd0947cdd8aa4e423e5">_DEBUGGEE_DETAILS_AND_SWITCH_THREAD_PACKET::Process</a></div><div class="ttdeci">UINT64 Process</div><div class="ttdef"><b>Definition:</b> Definition.h:2164</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t_html_a6b2fec29566ee0986de30299150b7b09"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#a6b2fec29566ee0986de30299150b7b09">_DEBUGGEE_DETAILS_AND_SWITCH_THREAD_PACKET::ProcessId</a></div><div class="ttdeci">UINT32 ProcessId</div><div class="ttdef"><b>Definition:</b> Definition.h:2162</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t_html_a9ff4d4d1a19ad084750274fc5d14c9f6"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#a9ff4d4d1a19ad084750274fc5d14c9f6">_DEBUGGEE_DETAILS_AND_SWITCH_THREAD_PACKET::ProcessName</a></div><div class="ttdeci">UCHAR ProcessName[16]</div><div class="ttdef"><b>Definition:</b> Definition.h:2166</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t_html_aa9fc083c3821012012226feb49219c60"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#aa9fc083c3821012012226feb49219c60">_DEBUGGEE_DETAILS_AND_SWITCH_THREAD_PACKET::ThreadId</a></div><div class="ttdeci">UINT32 ThreadId</div><div class="ttdef"><b>Definition:</b> Definition.h:2161</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t_html_acc6e02c3d093d08bd96f804309561776"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#acc6e02c3d093d08bd96f804309561776">_DEBUGGEE_DETAILS_AND_SWITCH_THREAD_PACKET::CheckByClockInterrupt</a></div><div class="ttdeci">BOOLEAN CheckByClockInterrupt</div><div class="ttdef"><b>Definition:</b> Definition.h:2165</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t_html_af8c6bc7ae42ae48b4fc727cb6739ca03"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#af8c6bc7ae42ae48b4fc727cb6739ca03">_DEBUGGEE_DETAILS_AND_SWITCH_THREAD_PACKET::Result</a></div><div class="ttdeci">UINT32 Result</div><div class="ttdef"><b>Definition:</b> Definition.h:2168</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adcbd4c472009e7a20c3c4df7fb92b0eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcbd4c472009e7a20c3c4df7fb92b0eb">&#9670;&nbsp;</a></span>ThreadQueryCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> ThreadQueryCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_definition_8h.html#a088abddf56a4e18ca3595540dec693b4">PDEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS</a>&#160;</td>
+          <td class="paramname"><em>DebuggerUsermodeProcessOrThreadQueryRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Query thread details (count) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">DebuggerUsermodeProcessOrThreadQueryRequest</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>BOOLEAN </dd></dl>
+<div class="fragment"><div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;{</div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> Result = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160; </div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;    <span class="comment">// Getting the count results</span></div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;    Result = <a class="code" href="_thread_8c.html#a1f18246abe755d7ba1f5bdccb9c078ec">ThreadShowList</a>(&amp;DebuggerUsermodeProcessOrThreadQueryRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___q_u_e_r_y___a_c_t_i_v_e___p_r_o_c_e_s_s_e_s___o_r___t_h_r_e_a_d_s.html#a4d47dd5e36285299c4cb50be65c681e5">ThreadListNeededDetails</a>,</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;                            <a class="code" href="_definition_8h.html#afac007ba1abb5a5ef542e8731170c9a5af19a725eb372008239214205fb97af53">DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTION_QUERY_COUNT</a>,</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;                            &amp;DebuggerUsermodeProcessOrThreadQueryRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___q_u_e_r_y___a_c_t_i_v_e___p_r_o_c_e_s_s_e_s___o_r___t_h_r_e_a_d_s.html#a0272b2e3193cf825b830a05053f8bee6">Count</a>,</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                            <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;                            <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160; </div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    <span class="keywordflow">if</span> (Result &amp;&amp; DebuggerUsermodeProcessOrThreadQueryRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___q_u_e_r_y___a_c_t_i_v_e___p_r_o_c_e_s_s_e_s___o_r___t_h_r_e_a_d_s.html#a0272b2e3193cf825b830a05053f8bee6">Count</a> != 0)</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;    {</div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;        DebuggerUsermodeProcessOrThreadQueryRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___q_u_e_r_y___a_c_t_i_v_e___p_r_o_c_e_s_s_e_s___o_r___t_h_r_e_a_d_s.html#a68f4ee9252d08afc97f7aa8bba4fe899">Result</a> = <a class="code" href="_definition_8h.html#abbd89315da3f894b7fb4985edd713bb1">DEBUGGER_OPERATION_WAS_SUCCESSFULL</a>;</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    }</div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160; </div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    DebuggerUsermodeProcessOrThreadQueryRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___q_u_e_r_y___a_c_t_i_v_e___p_r_o_c_e_s_s_e_s___o_r___t_h_r_e_a_d_s.html#a68f4ee9252d08afc97f7aa8bba4fe899">Result</a> = <a class="code" href="_definition_8h.html#af49ac2304716014da5d40763e309af3e">DEBUGGER_ERROR_UNABLE_TO_QUERY_COUNT_OF_PROCESSES_OR_THREADS</a>;</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;}</div>
+<div class="ttc" id="a_definition_8h_html_af49ac2304716014da5d40763e309af3e"><div class="ttname"><a href="_definition_8h.html#af49ac2304716014da5d40763e309af3e">DEBUGGER_ERROR_UNABLE_TO_QUERY_COUNT_OF_PROCESSES_OR_THREADS</a></div><div class="ttdeci">#define DEBUGGER_ERROR_UNABLE_TO_QUERY_COUNT_OF_PROCESSES_OR_THREADS</div><div class="ttdoc">error, unable to query count of processes or threads</div><div class="ttdef"><b>Definition:</b> Definition.h:2772</div></div>
+<div class="ttc" id="a_definition_8h_html_afac007ba1abb5a5ef542e8731170c9a5af19a725eb372008239214205fb97af53"><div class="ttname"><a href="_definition_8h.html#afac007ba1abb5a5ef542e8731170c9a5af19a725eb372008239214205fb97af53">DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTION_QUERY_COUNT</a></div><div class="ttdeci">@ DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTION_QUERY_COUNT</div><div class="ttdef"><b>Definition:</b> Definition.h:1677</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_a1cb18096b299d23458d3c7b85fd86555"><div class="ttname"><a href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a></div><div class="ttdeci">UCHAR BOOLEAN</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:90</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___q_u_e_r_y___a_c_t_i_v_e___p_r_o_c_e_s_s_e_s___o_r___t_h_r_e_a_d_s_html_a0272b2e3193cf825b830a05053f8bee6"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___q_u_e_r_y___a_c_t_i_v_e___p_r_o_c_e_s_s_e_s___o_r___t_h_r_e_a_d_s.html#a0272b2e3193cf825b830a05053f8bee6">_DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS::Count</a></div><div class="ttdeci">UINT32 Count</div><div class="ttdef"><b>Definition:</b> Definition.h:1751</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___q_u_e_r_y___a_c_t_i_v_e___p_r_o_c_e_s_s_e_s___o_r___t_h_r_e_a_d_s_html_a4d47dd5e36285299c4cb50be65c681e5"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___q_u_e_r_y___a_c_t_i_v_e___p_r_o_c_e_s_s_e_s___o_r___t_h_r_e_a_d_s.html#a4d47dd5e36285299c4cb50be65c681e5">_DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS::ThreadListNeededDetails</a></div><div class="ttdeci">DEBUGGEE_THREAD_LIST_NEEDED_DETAILS ThreadListNeededDetails</div><div class="ttdef"><b>Definition:</b> Definition.h:1748</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___q_u_e_r_y___a_c_t_i_v_e___p_r_o_c_e_s_s_e_s___o_r___t_h_r_e_a_d_s_html_a68f4ee9252d08afc97f7aa8bba4fe899"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___q_u_e_r_y___a_c_t_i_v_e___p_r_o_c_e_s_s_e_s___o_r___t_h_r_e_a_d_s.html#a68f4ee9252d08afc97f7aa8bba4fe899">_DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS::Result</a></div><div class="ttdeci">UINT64 Result</div><div class="ttdef"><b>Definition:</b> Definition.h:1752</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a754b5d3e15081f32fa9da2eef670e0fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a754b5d3e15081f32fa9da2eef670e0fb">&#9670;&nbsp;</a></span>ThreadQueryDetails()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> ThreadQueryDetails </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_definition_8h.html#a4276aa25d9666471ade93e0abba28471">PDEBUGGEE_DETAILS_AND_SWITCH_THREAD_PACKET</a>&#160;</td>
+          <td class="paramname"><em>GetInformationThreadRequest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Query thread details. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">GetInformationThreadRequest</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>BOOLEAN </dd></dl>
+<div class="fragment"><div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;{</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    GetInformationThreadRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#a6b2fec29566ee0986de30299150b7b09">ProcessId</a> = PsGetCurrentProcessId();</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    GetInformationThreadRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#a5ae8867649ea6cd0947cdd8aa4e423e5">Process</a>   = PsGetCurrentProcess();</div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    GetInformationThreadRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#a36252b53911e94458085210ebc4e0611">Thread</a>    = PsGetCurrentThread();</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;    GetInformationThreadRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#aa9fc083c3821012012226feb49219c60">ThreadId</a>  = PsGetCurrentThreadId();</div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160; </div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;    RtlCopyMemory(&amp;GetInformationThreadRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#a9ff4d4d1a19ad084750274fc5d14c9f6">ProcessName</a>,</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;                  <a class="code" href="hprdbghv_2code_2common_2_common_8c.html#a7d8de41916e9cffe3cb1963847484806">GetProcessNameFromEprocess</a>(PsGetCurrentProcess()),</div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;                  15);</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160; </div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    GetInformationThreadRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___d_e_t_a_i_l_s___a_n_d___s_w_i_t_c_h___t_h_r_e_a_d___p_a_c_k_e_t.html#af8c6bc7ae42ae48b4fc727cb6739ca03">Result</a> = <a class="code" href="_definition_8h.html#abbd89315da3f894b7fb4985edd713bb1">DEBUGGER_OPERATION_WAS_SUCCESSFULL</a>;</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160; </div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8e0982ba2738bd6c7ceb426e2995fd0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e0982ba2738bd6c7ceb426e2995fd0f">&#9670;&nbsp;</a></span>ThreadQueryList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> ThreadQueryList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_definition_8h.html#a088abddf56a4e18ca3595540dec693b4">PDEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS</a>&#160;</td>
+          <td class="paramname"><em>DebuggerUsermodeProcessOrThreadQueryRequest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PVOID&#160;</td>
+          <td class="paramname"><em>AddressToSaveDetail</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>&#160;</td>
+          <td class="paramname"><em>BufferSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Query thread details (list) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">DebuggerUsermodeProcessOrThreadQueryRequest</td><td></td></tr>
+    <tr><td class="paramname">AddressToSaveDetail</td><td></td></tr>
+    <tr><td class="paramname">BufferSize</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>BOOLEAN </dd></dl>
+<div class="fragment"><div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;{</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> Result = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160; </div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;    <span class="comment">// Getting the list of threads</span></div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;    Result = <a class="code" href="_thread_8c.html#a1f18246abe755d7ba1f5bdccb9c078ec">ThreadShowList</a>(&amp;DebuggerUsermodeProcessOrThreadQueryRequest-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___q_u_e_r_y___a_c_t_i_v_e___p_r_o_c_e_s_s_e_s___o_r___t_h_r_e_a_d_s.html#a4d47dd5e36285299c4cb50be65c681e5">ThreadListNeededDetails</a>,</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;                            <a class="code" href="_definition_8h.html#afac007ba1abb5a5ef542e8731170c9a5a1f0f3cfcf4074ccd4175902b3a35bd0e">DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTION_QUERY_SAVE_DETAILS</a>,</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                            <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;                            AddressToSaveDetail,</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;                            BufferSize);</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160; </div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;    <span class="keywordflow">return</span> Result;</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;}</div>
+<div class="ttc" id="a_definition_8h_html_afac007ba1abb5a5ef542e8731170c9a5a1f0f3cfcf4074ccd4175902b3a35bd0e"><div class="ttname"><a href="_definition_8h.html#afac007ba1abb5a5ef542e8731170c9a5a1f0f3cfcf4074ccd4175902b3a35bd0e">DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTION_QUERY_SAVE_DETAILS</a></div><div class="ttdeci">@ DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTION_QUERY_SAVE_DETAILS</div><div class="ttdef"><b>Definition:</b> Definition.h:1678</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1f18246abe755d7ba1f5bdccb9c078ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f18246abe755d7ba1f5bdccb9c078ec">&#9670;&nbsp;</a></span>ThreadShowList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> ThreadShowList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_definition_8h.html#a2ff4a7d527d38937426e87036e9eb4a8">PDEBUGGEE_THREAD_LIST_NEEDED_DETAILS</a>&#160;</td>
+          <td class="paramname"><em>ThreadListSymbolInfo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_definition_8h.html#af3eeb6f563c3ce604d30ae789c1682aa">DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTIONS</a>&#160;</td>
+          <td class="paramname"><em>QueryAction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> *&#160;</td>
+          <td class="paramname"><em>CountOfThreads</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PVOID&#160;</td>
+          <td class="paramname"><em>ListSaveBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>&#160;</td>
+          <td class="paramname"><em>ListSaveBuffSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>shows the threads list </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ThreadListSymbolInfo</td><td></td></tr>
+    <tr><td class="paramname">QueryAction</td><td></td></tr>
+    <tr><td class="paramname">CountOfThreads</td><td></td></tr>
+    <tr><td class="paramname">ListSaveBuffer</td><td></td></tr>
+    <tr><td class="paramname">ListSaveBuffSize</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>BOOLEAN </dd></dl>
+<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;{</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>                              ThreadListHead;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                              EnumerationCount   = 0;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>                              Thread             = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    LIST_ENTRY                          ThreadLinks        = {0};</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    CLIENT_ID                           ThreadCid          = {0};</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                              MaximumBufferCount = 0;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="code" href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___d_e_t_a_i_l_s___e_n_t_r_y.html">PDEBUGGEE_THREAD_LIST_DETAILS_ENTRY</a> SavingEntries      = ListSaveBuffer;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">// validate parameters</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">if</span> (QueryAction == <a class="code" href="_definition_8h.html#afac007ba1abb5a5ef542e8731170c9a5af19a725eb372008239214205fb97af53">DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTION_QUERY_COUNT</a> &amp;&amp;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        CountOfThreads == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    {</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">if</span> (QueryAction == <a class="code" href="_definition_8h.html#afac007ba1abb5a5ef542e8731170c9a5a1f0f3cfcf4074ccd4175902b3a35bd0e">DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTION_QUERY_SAVE_DETAILS</a> &amp;&amp;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        (ListSaveBuffer == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a> || ListSaveBuffSize == 0))</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="comment">// compute size to avoid overflow</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">if</span> (QueryAction == <a class="code" href="_definition_8h.html#afac007ba1abb5a5ef542e8731170c9a5a1f0f3cfcf4074ccd4175902b3a35bd0e">DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTION_QUERY_SAVE_DETAILS</a>)</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    {</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        MaximumBufferCount = ListSaveBuffSize / <span class="keyword">sizeof</span>(<a class="code" href="_definition_8h.html#aca8b5d5396548d333fe5f282506b1b49">DEBUGGEE_THREAD_LIST_DETAILS_ENTRY</a>);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> ThreadListHeadOffset       = ThreadListSymbolInfo-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#a34cd6c5fa97ee7f1ecf46a184cb7ea1e">ThreadListHeadOffset</a>;     <span class="comment">// nt!_EPROCESS.ThreadListHead</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> ThreadListEntryOffset      = ThreadListSymbolInfo-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#aa32e030eeb141ef3d04a707b514a400c">ThreadListEntryOffset</a>;    <span class="comment">// nt!_ETHREAD.ThreadListEntry</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> CidOffset                  = ThreadListSymbolInfo-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#a92dc0b206b904cf3374c5a553afb6d7e">CidOffset</a>;                <span class="comment">// nt!_ETHREAD.Cid</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> ActiveProcessLinksOffset   = ThreadListSymbolInfo-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#ae83da808851403416b7f694caddb6c08">ActiveProcessLinksOffset</a>; <span class="comment">// nt!_EPROCESS.ActiveProcessLinks</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> PsActiveProcessHeadAddress = ThreadListSymbolInfo-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#ac8ef9b6a9e179171da786233efc498c5">PsActiveProcessHead</a>;      <span class="comment">// nt!PsActiveProcessHead</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="comment">// Validate params</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">if</span> (ThreadListHeadOffset == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a> ||</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        ThreadListEntryOffset == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a> ||</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        CidOffset == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a> ||</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        ActiveProcessLinksOffset == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a> ||</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        PsActiveProcessHeadAddress == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="comment">// Set the target process</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">if</span> (ThreadListSymbolInfo-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#acab7b18af6515ecc19043c5458e6ef93">Process</a> == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    {</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="comment">// Means that it&#39;s for the current process</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        ThreadListSymbolInfo-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#acab7b18af6515ecc19043c5458e6ef93">Process</a> = PsGetCurrentProcess();</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        ThreadListHead                = (<a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>)PsGetCurrentProcess() + ThreadListHeadOffset;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="comment">// Means that the user specified a special process</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        ThreadListHead = (<a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>)ThreadListSymbolInfo-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#acab7b18af6515ecc19043c5458e6ef93">Process</a> + ThreadListHeadOffset;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="comment">// Check if the process&#39;s thread list head is valid or not</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="common_8cpp.html#a9ea9e4cef167ff3664811bd8627cde9c">CheckMemoryAccessSafety</a>(ThreadListHead, <span class="keyword">sizeof</span>(<a class="code" href="_script_engine_eval_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>)))</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    {</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="comment">// Check if the nt!_EPROCESS is valid or not (available in the system or not)</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="_process_8c.html#aab39c37cefd5d15192160f8cb9e3d66a">ProcessCheckIfEprocessIsValid</a>(ThreadListSymbolInfo-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#acab7b18af6515ecc19043c5458e6ef93">Process</a>,</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                                       PsActiveProcessHeadAddress,</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                                       ActiveProcessLinksOffset))</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    {</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">if</span> (QueryAction == <a class="code" href="_definition_8h.html#afac007ba1abb5a5ef542e8731170c9a5a953106ee52315b5082e34b933b0f947a">DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTION_SHOW_INSTANTLY</a>)</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;    {</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        <span class="comment">// Show the message of show the process</span></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <a class="code" href="hprdbghv_2header_2common_2common_8h.html#a0c38ca677b912fa03329447f5e235dc2">Log</a>(<span class="stringliteral">&quot;PROCESS\t%llx\tIMAGE\t%s\n&quot;</span>,</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            ThreadListSymbolInfo-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#acab7b18af6515ecc19043c5458e6ef93">Process</a>,</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <a class="code" href="hprdbghv_2code_2common_2_common_8c.html#a7d8de41916e9cffe3cb1963847484806">GetProcessNameFromEprocess</a>(ThreadListSymbolInfo-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#acab7b18af6515ecc19043c5458e6ef93">Process</a>));</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;    <span class="comment">// Show thread list, we read everything from the view of system process</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <a class="code" href="_memory_mapper_8c.html#ac3c23d5644111a6be18ca274f448e9ff">MemoryMapperReadMemorySafe</a>(ThreadListHead, &amp;ThreadLinks, <span class="keyword">sizeof</span>(ThreadLinks));</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="comment">// Find the top of ETHREAD from nt!_ETHREAD.ThreadListEntry</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    Thread = (<a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>)ThreadLinks.Flink - ThreadListEntryOffset;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keywordflow">do</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    {</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="comment">// Show thread list, we read everything from the view of system process</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <a class="code" href="_memory_mapper_8c.html#ac3c23d5644111a6be18ca274f448e9ff">MemoryMapperReadMemorySafe</a>(Thread + CidOffset,</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                                   &amp;ThreadCid,</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                                   <span class="keyword">sizeof</span>(ThreadCid));</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">switch</span> (QueryAction)</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="_definition_8h.html#afac007ba1abb5a5ef542e8731170c9a5a953106ee52315b5082e34b933b0f947a">DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTION_SHOW_INSTANTLY</a>:</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            <span class="comment">// Show the list of process</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            <a class="code" href="hprdbghv_2header_2common_2common_8h.html#a0c38ca677b912fa03329447f5e235dc2">Log</a>(<span class="stringliteral">&quot;\tTHREAD\t%llx (%llx.%llx)\n&quot;</span>, Thread, ThreadCid.UniqueProcess, ThreadCid.UniqueThread);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="_definition_8h.html#afac007ba1abb5a5ef542e8731170c9a5af19a725eb372008239214205fb97af53">DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTION_QUERY_COUNT</a>:</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            EnumerationCount++;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordflow">case</span> <a class="code" href="_definition_8h.html#afac007ba1abb5a5ef542e8731170c9a5a1f0f3cfcf4074ccd4175902b3a35bd0e">DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTION_QUERY_SAVE_DETAILS</a>:</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            EnumerationCount++;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="comment">// Check to avoid overflow</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="keywordflow">if</span> (EnumerationCount == MaximumBufferCount - 1)</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                <span class="comment">//</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                <span class="comment">// buffer is full</span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                <span class="comment">//</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;                <span class="keywordflow">goto</span> ReturnEnd;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            }</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            <span class="comment">// Save the details</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            SavingEntries[EnumerationCount - 1].<a class="code" href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___d_e_t_a_i_l_s___e_n_t_r_y.html#a90c4000a499cf8b02e8856939ff6e466">Eprocess</a> = ThreadListSymbolInfo-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#acab7b18af6515ecc19043c5458e6ef93">Process</a>;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            SavingEntries[EnumerationCount - 1].<a class="code" href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___d_e_t_a_i_l_s___e_n_t_r_y.html#a81d248a01e78fc8bed8f513732b21202">Pid</a>      = ThreadCid.UniqueProcess;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            SavingEntries[EnumerationCount - 1].<a class="code" href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___d_e_t_a_i_l_s___e_n_t_r_y.html#ac71a0fe15a9fc32a59992b6b93d70ea8">Tid</a>      = ThreadCid.UniqueThread;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            SavingEntries[EnumerationCount - 1].<a class="code" href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___d_e_t_a_i_l_s___e_n_t_r_y.html#a4d5bcd5d2b9b714004bb64131aa60aff">Ethread</a>  = Thread;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            RtlCopyMemory(&amp;SavingEntries[EnumerationCount - 1].ImageFileName,</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                          <a class="code" href="hprdbghv_2code_2common_2_common_8c.html#a7d8de41916e9cffe3cb1963847484806">GetProcessNameFromEprocess</a>(ThreadListSymbolInfo-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#acab7b18af6515ecc19043c5458e6ef93">Process</a>),</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                          15);</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160; </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;        }</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <a class="code" href="_memory_mapper_8c.html#ac3c23d5644111a6be18ca274f448e9ff">MemoryMapperReadMemorySafe</a>(Thread + ThreadListEntryOffset,</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                                   &amp;ThreadLinks,</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                                   <span class="keyword">sizeof</span>(ThreadLinks));</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <span class="comment">// Find the next process from the list of this process</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;        Thread = (<a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>)ThreadLinks.Flink - ThreadListEntryOffset;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    } <span class="keywordflow">while</span> ((<a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>)ThreadLinks.Flink != ThreadListHead);</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;ReturnEnd:</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="comment">// In case of query count of Threads, we&#39;ll set this parameter</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordflow">if</span> (QueryAction == <a class="code" href="_definition_8h.html#afac007ba1abb5a5ef542e8731170c9a5af19a725eb372008239214205fb97af53">DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTION_QUERY_COUNT</a>)</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    {</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        *CountOfThreads = EnumerationCount;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    }</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;}</div>
+<div class="ttc" id="a_definition_8h_html_aca8b5d5396548d333fe5f282506b1b49"><div class="ttname"><a href="_definition_8h.html#aca8b5d5396548d333fe5f282506b1b49">DEBUGGEE_THREAD_LIST_DETAILS_ENTRY</a></div><div class="ttdeci">struct _DEBUGGEE_THREAD_LIST_DETAILS_ENTRY DEBUGGEE_THREAD_LIST_DETAILS_ENTRY</div><div class="ttdoc">The structure showing list of threads (details of each entry)</div></div>
+<div class="ttc" id="a_process_8c_html_aab39c37cefd5d15192160f8cb9e3d66a"><div class="ttname"><a href="_process_8c.html#aab39c37cefd5d15192160f8cb9e3d66a">ProcessCheckIfEprocessIsValid</a></div><div class="ttdeci">BOOLEAN ProcessCheckIfEprocessIsValid(UINT64 Eprocess, UINT64 ActiveProcessHead, ULONG ActiveProcessLinksOffset)</div><div class="ttdoc">checks whether the given nt!_EPROCESS is valid or not</div><div class="ttdef"><b>Definition:</b> Process.c:244</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_a4ae1dab0fb4b072a66584546209e7d58"><div class="ttname"><a href="_script_engine_eval_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a></div><div class="ttdeci">unsigned char BYTE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:75</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_ae1e6edbbc26d6fbc71a90190d0266018"><div class="ttname"><a href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a></div><div class="ttdeci">unsigned int UINT32</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:99</div></div>
+<div class="ttc" id="acommon_8cpp_html_a9ea9e4cef167ff3664811bd8627cde9c"><div class="ttname"><a href="common_8cpp.html#a9ea9e4cef167ff3664811bd8627cde9c">CheckMemoryAccessSafety</a></div><div class="ttdeci">BOOLEAN CheckMemoryAccessSafety(UINT64 TargetAddress, UINT32 Size)</div><div class="ttdoc">Check the safety to access the memory.</div><div class="ttdef"><b>Definition:</b> common.cpp:895</div></div>
+<div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_a0c38ca677b912fa03329447f5e235dc2"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#a0c38ca677b912fa03329447f5e235dc2">Log</a></div><div class="ttdeci">#define Log(format,...)</div><div class="ttdoc">Log without any prefix.</div><div class="ttdef"><b>Definition:</b> Common.h:458</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___d_e_t_a_i_l_s___e_n_t_r_y_html"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___d_e_t_a_i_l_s___e_n_t_r_y.html">_DEBUGGEE_THREAD_LIST_DETAILS_ENTRY</a></div><div class="ttdoc">The structure showing list of threads (details of each entry)</div><div class="ttdef"><b>Definition:</b> Definition.h:1732</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___d_e_t_a_i_l_s___e_n_t_r_y_html_a4d5bcd5d2b9b714004bb64131aa60aff"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___d_e_t_a_i_l_s___e_n_t_r_y.html#a4d5bcd5d2b9b714004bb64131aa60aff">_DEBUGGEE_THREAD_LIST_DETAILS_ENTRY::Ethread</a></div><div class="ttdeci">UINT64 Ethread</div><div class="ttdef"><b>Definition:</b> Definition.h:1734</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___d_e_t_a_i_l_s___e_n_t_r_y_html_a81d248a01e78fc8bed8f513732b21202"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___d_e_t_a_i_l_s___e_n_t_r_y.html#a81d248a01e78fc8bed8f513732b21202">_DEBUGGEE_THREAD_LIST_DETAILS_ENTRY::Pid</a></div><div class="ttdeci">UINT64 Pid</div><div class="ttdef"><b>Definition:</b> Definition.h:1735</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___d_e_t_a_i_l_s___e_n_t_r_y_html_a90c4000a499cf8b02e8856939ff6e466"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___d_e_t_a_i_l_s___e_n_t_r_y.html#a90c4000a499cf8b02e8856939ff6e466">_DEBUGGEE_THREAD_LIST_DETAILS_ENTRY::Eprocess</a></div><div class="ttdeci">UINT64 Eprocess</div><div class="ttdef"><b>Definition:</b> Definition.h:1733</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___d_e_t_a_i_l_s___e_n_t_r_y_html_ac71a0fe15a9fc32a59992b6b93d70ea8"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___d_e_t_a_i_l_s___e_n_t_r_y.html#ac71a0fe15a9fc32a59992b6b93d70ea8">_DEBUGGEE_THREAD_LIST_DETAILS_ENTRY::Tid</a></div><div class="ttdeci">UINT64 Tid</div><div class="ttdef"><b>Definition:</b> Definition.h:1736</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s_html_a34cd6c5fa97ee7f1ecf46a184cb7ea1e"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#a34cd6c5fa97ee7f1ecf46a184cb7ea1e">_DEBUGGEE_THREAD_LIST_NEEDED_DETAILS::ThreadListHeadOffset</a></div><div class="ttdeci">UINT32 ThreadListHeadOffset</div><div class="ttdef"><b>Definition:</b> Definition.h:1703</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s_html_a92dc0b206b904cf3374c5a553afb6d7e"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#a92dc0b206b904cf3374c5a553afb6d7e">_DEBUGGEE_THREAD_LIST_NEEDED_DETAILS::CidOffset</a></div><div class="ttdeci">UINT32 CidOffset</div><div class="ttdef"><b>Definition:</b> Definition.h:1705</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s_html_aa32e030eeb141ef3d04a707b514a400c"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#aa32e030eeb141ef3d04a707b514a400c">_DEBUGGEE_THREAD_LIST_NEEDED_DETAILS::ThreadListEntryOffset</a></div><div class="ttdeci">UINT32 ThreadListEntryOffset</div><div class="ttdef"><b>Definition:</b> Definition.h:1704</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s_html_ac8ef9b6a9e179171da786233efc498c5"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#ac8ef9b6a9e179171da786233efc498c5">_DEBUGGEE_THREAD_LIST_NEEDED_DETAILS::PsActiveProcessHead</a></div><div class="ttdeci">UINT64 PsActiveProcessHead</div><div class="ttdef"><b>Definition:</b> Definition.h:1706</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s_html_acab7b18af6515ecc19043c5458e6ef93"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#acab7b18af6515ecc19043c5458e6ef93">_DEBUGGEE_THREAD_LIST_NEEDED_DETAILS::Process</a></div><div class="ttdeci">UINT64 Process</div><div class="ttdef"><b>Definition:</b> Definition.h:1708</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s_html_ae83da808851403416b7f694caddb6c08"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___n_e_e_d_e_d___d_e_t_a_i_l_s.html#ae83da808851403416b7f694caddb6c08">_DEBUGGEE_THREAD_LIST_NEEDED_DETAILS::ActiveProcessLinksOffset</a></div><div class="ttdeci">ULONG ActiveProcessLinksOffset</div><div class="ttdef"><b>Definition:</b> Definition.h:1707</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a2ea9b6835b355fd0b3468ecf47263b72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ea9b6835b355fd0b3468ecf47263b72">&#9670;&nbsp;</a></span>ThreadSwitch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> ThreadSwitch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>&#160;</td>
+          <td class="paramname"><em>ThreadId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PETHREAD&#160;</td>
+          <td class="paramname"><em>EThread</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td>
+          <td class="paramname"><em>CheckByClockInterrupt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>make evnvironment ready to change the thread </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ThreadId</td><td></td></tr>
+    <tr><td class="paramname">EThread</td><td></td></tr>
+    <tr><td class="paramname">CheckByClockInterrupt</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>BOOLEAN </dd></dl>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a> CoreCount = 0;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// Initialized with NULL</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="_global_variables_8h.html#ac4bd01d0cf0973fbceb4306bde6172dd">g_ThreadSwitch</a>.<a class="code" href="struct___d_e_b_u_g_g_e_e___r_e_q_u_e_s_t___t_o___c_h_a_n_g_e___t_h_r_e_a_d.html#a35555cbeb7ea8747061e8aaa0d91a47d">Thread</a>   = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="_global_variables_8h.html#ac4bd01d0cf0973fbceb4306bde6172dd">g_ThreadSwitch</a>.<a class="code" href="struct___d_e_b_u_g_g_e_e___r_e_q_u_e_s_t___t_o___c_h_a_n_g_e___t_h_r_e_a_d.html#abbc1326ff13106f098eedd8126ce3857">ThreadId</a> = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// Check to avoid invalid switch</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">if</span> (ThreadId == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a> &amp;&amp; EThread == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// Set the target thread id, ethread to switch</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (EThread != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="common_8cpp.html#a9ea9e4cef167ff3664811bd8627cde9c">CheckMemoryAccessSafety</a>(EThread, <span class="keyword">sizeof</span>(<a class="code" href="_script_engine_eval_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>)))</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="_global_variables_8h.html#ac4bd01d0cf0973fbceb4306bde6172dd">g_ThreadSwitch</a>.<a class="code" href="struct___d_e_b_u_g_g_e_e___r_e_q_u_e_s_t___t_o___c_h_a_n_g_e___t_h_r_e_a_d.html#a35555cbeb7ea8747061e8aaa0d91a47d">Thread</a> = EThread;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="comment">// An invalid address is specified by user</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ThreadId != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="_global_variables_8h.html#ac4bd01d0cf0973fbceb4306bde6172dd">g_ThreadSwitch</a>.<a class="code" href="struct___d_e_b_u_g_g_e_e___r_e_q_u_e_s_t___t_o___c_h_a_n_g_e___t_h_r_e_a_d.html#abbc1326ff13106f098eedd8126ce3857">ThreadId</a> = ThreadId;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">// Set the change thread alert for all the cores</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    CoreCount = KeQueryActiveProcessorCount(0);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; CoreCount; i++)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="_global_variables_8h.html#a04bac1f4beef0dcf1ce1a4d9ce72ea76">g_GuestState</a>[i].<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#abeaf053196e625ac00ab12a5dc38c8f1">DebuggingState</a>.<a class="code" href="struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a8f17ce3238c1b7fcd0e8a53040cba548">ThreadOrProcessTracingDetails</a>.<a class="code" href="struct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s.html#a70d7d091a000bcc33a21c80a88d26bcf">InitialSetThreadChangeEvent</a> = <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="_global_variables_8h.html#a04bac1f4beef0dcf1ce1a4d9ce72ea76">g_GuestState</a>[i].<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#abeaf053196e625ac00ab12a5dc38c8f1">DebuggingState</a>.<a class="code" href="struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a8f17ce3238c1b7fcd0e8a53040cba548">ThreadOrProcessTracingDetails</a>.<a class="code" href="struct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s.html#a25f9fbca2be7d68aaf09566dfda0148b">InitialSetByClockInterrupt</a>  = CheckByClockInterrupt;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
+<div class="ttc" id="a_script_engine_eval_8h_html_af632da489ebc3708ec3ab6791ee53fa4"><div class="ttname"><a href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a></div><div class="ttdeci">unsigned long ULONG</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:88</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s_html_a25f9fbca2be7d68aaf09566dfda0148b"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s.html#a25f9fbca2be7d68aaf09566dfda0148b">_DEBUGGEE_PROCESS_OR_THREAD_TRACING_DETAILS::InitialSetByClockInterrupt</a></div><div class="ttdeci">BOOLEAN InitialSetByClockInterrupt</div><div class="ttdef"><b>Definition:</b> Debugger.h:110</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s_html_a70d7d091a000bcc33a21c80a88d26bcf"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s.html#a70d7d091a000bcc33a21c80a88d26bcf">_DEBUGGEE_PROCESS_OR_THREAD_TRACING_DETAILS::InitialSetThreadChangeEvent</a></div><div class="ttdeci">BOOLEAN InitialSetThreadChangeEvent</div><div class="ttdef"><b>Definition:</b> Debugger.h:108</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_994b9c755798b8a2febb2248cc2d842d.html">dependencies</a></li><li class="navelem"><a class="el" href="dir_13f91d72b3079eff648efce52517736e.html">zydis</a></li><li class="navelem"><a class="el" href="dir_88a551afc54f1134ed5e7055d2155f6d.html">dependencies</a></li><li class="navelem"><a class="el" href="dir_a5f7f72eac03b5108431d0cd17d480a5.html">zycore</a></li><li class="navelem"><a class="el" href="dir_4c800bd9e2ddb4b35ff4b36769c1456f.html">src</a></li><li class="navelem"><a class="el" href="dir_37d2d4a375a9732f91b29938a130847e.html">API</a></li><li class="navelem"><a class="el" href="_thread_8c.html">Thread.c</a></li>
+    <li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_19054a674c4bd5cb8fceb6542228579c.html">hprdbghv</a></li><li class="navelem"><a class="el" href="dir_aac0c9299474d8b4035e61d55763e72a.html">code</a></li><li class="navelem"><a class="el" href="dir_e2f4eefc971f71d3c579835f2ac940cc.html">debugger</a></li><li class="navelem"><a class="el" href="dir_8d90115ce8edd5e789da02d73959a8a1.html">objects</a></li><li class="navelem"><a class="el" href="_thread_8c.html">Thread.c</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

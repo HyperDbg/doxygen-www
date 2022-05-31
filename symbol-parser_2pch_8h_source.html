@@ -97,22 +97,36 @@ $(document).ready(function(){initNavTree('symbol-parser_2pch_8h_source.html','')
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="symbol-parser_2pch_8h.html#af8660cbefcf140a8992e862e401bc473">   20</a></span>&#160;<span class="preprocessor">#define _NO_CVCONST_H </span><span class="comment">// for symbol parsing</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;DbgHelp.h&gt;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_definition_8h.html">Definition.h</a>&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;..\symbol-parser\header\common-utils.h&quot;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;..\symbol-parser\header\symbol-parser.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// IA32-doc has structures for the entire intel SDM.</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">// Needed to link symbol server</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;dbghelp.lib&quot;</span>)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// For URLDownloadToFileA</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;Urlmon.lib&quot;</span>)</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="symbol-parser_2pch_8h.html#affc8ec35f86f47e71f75d3bf70419a00">   27</a></span>&#160;<span class="preprocessor">#define USE_LIB_IA32</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#if defined(USE_LIB_IA32)</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#    pragma warning(push, 0)</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//#    pragma warning(disable : 4201) // suppress nameless struct/union warning</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#    include &lt;ia32-doc/out/ia32.h&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#    pragma warning(pop)</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="symbol-parser_2pch_8h.html#a17d789d36d7e0e6d2638b67059ab4ded">   33</a></span>&#160;<span class="keyword">typedef</span> RFLAGS * <a class="code" href="hprdbgctrl_2pch_8h.html#a17d789d36d7e0e6d2638b67059ab4ded">PRFLAGS</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif </span><span class="comment">//USE_LIB_IA32</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_definition_8h.html">Definition.h</a>&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;..\symbol-parser\header\common-utils.h&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;..\symbol-parser\header\symbol-parser.h&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">// Needed to link symbol server</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;dbghelp.lib&quot;</span>)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// For URLDownloadToFileA</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#pragma comment(lib, &quot;Urlmon.lib&quot;</span>)</div>
 <div class="ttc" id="a_definition_8h_html"><div class="ttname"><a href="_definition_8h.html">Definition.h</a></div><div class="ttdoc">Header files for global definitions.</div></div>
+<div class="ttc" id="ahprdbgctrl_2pch_8h_html_a17d789d36d7e0e6d2638b67059ab4ded"><div class="ttname"><a href="hprdbgctrl_2pch_8h.html#a17d789d36d7e0e6d2638b67059ab4ded">PRFLAGS</a></div><div class="ttdeci">RFLAGS * PRFLAGS</div><div class="ttdef"><b>Definition:</b> pch.h:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

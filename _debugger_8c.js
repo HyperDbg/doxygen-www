@@ -1,6 +1,5 @@
 var _debugger_8c =
 [
-    [ "SCRIPT_ENGINE_KERNEL_MODE", "_debugger_8c.html#a846b7530686e29aaea2eee3799df8f41", null ],
     [ "DebuggerAddActionToEvent", "_debugger_8c.html#ae8a64ecc277f65e4e5dfd3fd80e3016c", null ],
     [ "DebuggerCreateEvent", "_debugger_8c.html#ad87042b3b2ca8c20e723f750c8952ec2", null ],
     [ "DebuggerDisableEvent", "_debugger_8c.html#a80484d0a5b060724315e4aac0a732671", null ],
@@ -10,6 +9,7 @@ var _debugger_8c =
     [ "DebuggerEventListCountByCore", "_debugger_8c.html#a4e6a3fe2c07f7aff4a641b00daa64556", null ],
     [ "DebuggerExceptionEventBitmapMask", "_debugger_8c.html#a5aa884b905d6b4ea6404961471419d67", null ],
     [ "DebuggerGetEventByTag", "_debugger_8c.html#a43de3d8c768fd3293cd240646384164d", null ],
+    [ "DebuggerGetLastError", "_debugger_8c.html#aa6ee009c25be0f5996e862ae79b5df12", null ],
     [ "DebuggerGetRegValueWrapper", "_debugger_8c.html#a882e18de0f59d5f6caf3f8f6995a1eff", null ],
     [ "DebuggerInitialize", "_debugger_8c.html#a6db6fc9c681fadbd5971d840f5cb9dca", null ],
     [ "DebuggerIsTagValid", "_debugger_8c.html#abfdb05d6c34bdde4284c4f0eb3d5970f", null ],
@@ -26,6 +26,7 @@ var _debugger_8c =
     [ "DebuggerRemoveAllEvents", "_debugger_8c.html#a57e21c542c4398a07de0b401e1a3335b", null ],
     [ "DebuggerRemoveEvent", "_debugger_8c.html#a0f0fb0834b9e5f62d3d4314e545df618", null ],
     [ "DebuggerRemoveEventFromEventList", "_debugger_8c.html#aeff46d84155e764655bf6004e6ec2add", null ],
+    [ "DebuggerSetLastError", "_debugger_8c.html#acd71ed0bcec91bc712c14e88e40ede65", null ],
     [ "DebuggerTerminateAllEvents", "_debugger_8c.html#a43ee6a34b5cfe3a5c5d7caa7a5470e31", null ],
     [ "DebuggerTerminateEvent", "_debugger_8c.html#af1aa660594f5eb8c75f4fda7605b39fb", null ],
     [ "DebuggerTriggerEvents", "_debugger_8c.html#aac71ecf7a7e99662000efef060a32775", null ],

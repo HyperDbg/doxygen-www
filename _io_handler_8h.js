@@ -1,8 +1,5 @@
 var _io_handler_8h =
 [
-    [ "_IO_EXIT_QUALIFICATION", "struct___i_o___e_x_i_t___q_u_a_l_i_f_i_c_a_t_i_o_n.html", "struct___i_o___e_x_i_t___q_u_a_l_i_f_i_c_a_t_i_o_n" ],
-    [ "IO_EXIT_QUALIFICATION", "_io_handler_8h.html#a12ca3548a80790f566f4c3e91c552f86", null ],
-    [ "PIO_EXIT_QUALIFICATION", "_io_handler_8h.html#a2062f4b1ddb864bdfde1c1542bb3b890", null ],
     [ "__inbyte", "_io_handler_8h.html#ae166a4d02ae0cb617a0377b79dc99032", null ],
     [ "__inbytestring", "_io_handler_8h.html#a17a66b4d469a21c0c5da7328569470e0", null ],
     [ "__indword", "_io_handler_8h.html#a044f2eee261dc5f5c26ab00a241ebc6e", null ],
@@ -15,8 +12,10 @@ var _io_handler_8h =
     [ "__outdwordstring", "_io_handler_8h.html#aaaf822cc3e040c74933e6c17dddbc50c", null ],
     [ "__outword", "_io_handler_8h.html#a7499a8fb3ec33aa319a71d65fe949165", null ],
     [ "__outwordstring", "_io_handler_8h.html#a65f7eed25601e9cb0161828f452b6b27", null ],
-    [ "IoHandleIoVmExits", "_io_handler_8h.html#a93a525270504d44a6d07ccc291caeb84", null ],
-    [ "IoHandleIoVmExitsAndDisassemble", "_io_handler_8h.html#a10fb6e248f30a53925667f767d16c45e", null ],
+    [ "IoHandleIoVmExits", "_io_handler_8h.html#a28bee1363e1d60e13d5aae88cafd89f0", null ],
+    [ "IoHandleIoVmExitsAndDisassemble", "_io_handler_8h.html#a9515a5d78d143edd6d455f05f49d118b", null ],
+    [ "IoHandlePerformIoBitmapChange", "_io_handler_8h.html#af10acaaf3042306f07cb0074e8d4bd9e", null ],
+    [ "IoHandlePerformIoBitmapReset", "_io_handler_8h.html#a68b67f0bde31cabc4b96015e8b9bd0ed", null ],
     [ "IoInByte", "_io_handler_8h.html#ab1a84aef381c3413b06a88b3efd61b4b", null ],
     [ "IoInByteString", "_io_handler_8h.html#adec66a23f76c015e184281a9ab1ebd05", null ],
     [ "IoInDword", "_io_handler_8h.html#a0248e22f794dda68513e1c22a31465af", null ],

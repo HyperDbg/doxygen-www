@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('logclose_8cpp.html',''); initResizable
 
 <p>.logclose command  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;..\hprdbgctrl\pch.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;pch.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -113,7 +113,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>.logclose command </p>
-<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'ray'+'an'+'fam'+'.c'+'om'; return false;">sina@<span style="display: none;">.nosp@m.</span>raya<span style="display: none;">.nosp@m.</span>nfam.<span style="display: none;">.nosp@m.</span>com</a>)</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+'er'+'dbg'+'.o'+'rg'; return false;">sina@<span style="display: none;">.nosp@m.</span>hype<span style="display: none;">.nosp@m.</span>rdbg.<span style="display: none;">.nosp@m.</span>org</a>)</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2020-07-16</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>This project is released under the GNU Public License v3. </dd></dl>
@@ -153,48 +153,48 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">if</span> (SplittedCommand.size() != 1)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;incorrect use of &#39;.logclose&#39;\n\n&quot;</span>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="logclose_8cpp.html#a84af4a1cc6de257b8756d7b19acdd185">CommandLogcloseHelp</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="logclose_8cpp.html#a3d9102adae8f4c5bb1d077a2b72f725c">g_LogOpened</a>)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;there is no opened log, did you use &#39;.logopen&#39;? \n&quot;</span>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// Show the time and message before close</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    time_t    t  = time(<a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">struct </span>tm tm = *localtime(&amp;t);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;log file closed (%d-%02d-%02d &quot;</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                 <span class="stringliteral">&quot;%02d:%02d:%02d)\n&quot;</span>,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                 tm.tm_year + 1900,</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                 tm.tm_mon + 1,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                 tm.tm_mday,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                 tm.tm_hour,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                 tm.tm_min,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                 tm.tm_sec);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// close the file</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="logclose_8cpp.html#a7eb78aceaeca25ca611783bdb0d61e09">g_LogOpenFile</a>.close();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// Globally indicate that file is no longer available</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="logclose_8cpp.html#a3d9102adae8f4c5bb1d077a2b72f725c">g_LogOpened</a> = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
-<div class="ttc" id="a_gdb_stub_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> GdbStub.h:33</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:92</div></div>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">if</span> (SplittedCommand.size() != 1)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;incorrect use of &#39;.logclose&#39;\n\n&quot;</span>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="logclose_8cpp.html#a84af4a1cc6de257b8756d7b19acdd185">CommandLogcloseHelp</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="logclose_8cpp.html#a3d9102adae8f4c5bb1d077a2b72f725c">g_LogOpened</a>)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;there is no opened log, did you use &#39;.logopen&#39;? \n&quot;</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// Show the time and message before close</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    time_t    t  = time(<a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">struct </span>tm tm = *localtime(&amp;t);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;log file closed (%d-%02d-%02d &quot;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                 <span class="stringliteral">&quot;%02d:%02d:%02d)\n&quot;</span>,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                 tm.tm_year + 1900,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                 tm.tm_mon + 1,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                 tm.tm_mday,</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                 tm.tm_hour,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                 tm.tm_min,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                 tm.tm_sec);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// close the file</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="logclose_8cpp.html#a7eb78aceaeca25ca611783bdb0d61e09">g_LogOpenFile</a>.close();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// Globally indicate that file is no longer available</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="logclose_8cpp.html#a3d9102adae8f4c5bb1d077a2b72f725c">g_LogOpened</a> = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:102</div></div>
 <div class="ttc" id="ahprdbgctrl_8cpp_html_a21c3c06b34d716c4680695c2b28127da"><div class="ttname"><a href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a></div><div class="ttdeci">VOID ShowMessages(const char *Fmt,...)</div><div class="ttdoc">Show messages.</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:51</div></div>
-<div class="ttc" id="alogclose_8cpp_html_a3d9102adae8f4c5bb1d077a2b72f725c"><div class="ttname"><a href="logclose_8cpp.html#a3d9102adae8f4c5bb1d077a2b72f725c">g_LogOpened</a></div><div class="ttdeci">BOOLEAN g_LogOpened</div><div class="ttdoc">Shows whether the '.logopen' command is executed and the log file is open or not.</div><div class="ttdef"><b>Definition:</b> globals.h:373</div></div>
-<div class="ttc" id="alogclose_8cpp_html_a7eb78aceaeca25ca611783bdb0d61e09"><div class="ttname"><a href="logclose_8cpp.html#a7eb78aceaeca25ca611783bdb0d61e09">g_LogOpenFile</a></div><div class="ttdeci">ofstream g_LogOpenFile</div><div class="ttdoc">The object of log file ('.logopen' command)</div><div class="ttdef"><b>Definition:</b> globals.h:379</div></div>
+<div class="ttc" id="alogclose_8cpp_html_a3d9102adae8f4c5bb1d077a2b72f725c"><div class="ttname"><a href="logclose_8cpp.html#a3d9102adae8f4c5bb1d077a2b72f725c">g_LogOpened</a></div><div class="ttdeci">BOOLEAN g_LogOpened</div><div class="ttdoc">Shows whether the '.logopen' command is executed and the log file is open or not.</div><div class="ttdef"><b>Definition:</b> globals.h:445</div></div>
+<div class="ttc" id="alogclose_8cpp_html_a7eb78aceaeca25ca611783bdb0d61e09"><div class="ttname"><a href="logclose_8cpp.html#a7eb78aceaeca25ca611783bdb0d61e09">g_LogOpenFile</a></div><div class="ttdeci">ofstream g_LogOpenFile</div><div class="ttdoc">The object of log file ('.logopen' command)</div><div class="ttdef"><b>Definition:</b> globals.h:451</div></div>
 <div class="ttc" id="alogclose_8cpp_html_a84af4a1cc6de257b8756d7b19acdd185"><div class="ttname"><a href="logclose_8cpp.html#a84af4a1cc6de257b8756d7b19acdd185">CommandLogcloseHelp</a></div><div class="ttdeci">VOID CommandLogcloseHelp()</div><div class="ttdoc">help .logclose command</div><div class="ttdef"><b>Definition:</b> logclose.cpp:26</div></div>
+<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -216,9 +216,10 @@ Variables</h2></td></tr>
 <p>help .logclose command </p>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
 <div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;.logclose : close the previously opened log.\n\n&quot;</span>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;syntax : \.logclose\n&quot;</span>);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;.logclose : closes the previously opened log.\n\n&quot;</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;syntax : \t.logclose\n&quot;</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>

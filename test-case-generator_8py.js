@@ -51,7 +51,7 @@ var test_case_generator_8py =
     [ "f", "test-case-generator_8py.html#a67af8a2b234f3906636358935eaa202d", null ],
     [ "initCounter", "test-case-generator_8py.html#af80156ea71ae0a5950e7c08fc5bd79f8", null ],
     [ "MAX_DEPTH", "test-case-generator_8py.html#ac8047c575a1551d6101845d13db7e4f7", null ],
-    [ "res", "test-case-generator_8py.html#a9a6de471352e0dfbe9b35656953dac5d", null ],
+    [ "res", "test-case-generator_8py.html#afef43667d1d6456dc2ce7882ad3e462c", null ],
     [ "sentence", "test-case-generator_8py.html#a7ef41e43d8e9cbbcbaa22238f5024fc2", null ],
     [ "val", "test-case-generator_8py.html#aaeb6784b3463af26bc4c893996a54e47", null ]
 ];

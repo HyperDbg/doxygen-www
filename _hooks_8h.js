@@ -1,5 +1,6 @@
 var _hooks_8h =
 [
+    [ "_EPT_HOOKS_TEMPORARY_CONTEXT", "struct___e_p_t___h_o_o_k_s___t_e_m_p_o_r_a_r_y___c_o_n_t_e_x_t.html", "struct___e_p_t___h_o_o_k_s___t_e_m_p_o_r_a_r_y___c_o_n_t_e_x_t" ],
     [ "_SSDTStruct", "struct___s_s_d_t_struct.html", "struct___s_s_d_t_struct" ],
     [ "_HIDDEN_HOOKS_DETOUR_DETAILS", "struct___h_i_d_d_e_n___h_o_o_k_s___d_e_t_o_u_r___d_e_t_a_i_l_s.html", "struct___h_i_d_d_e_n___h_o_o_k_s___d_e_t_o_u_r___d_e_t_a_i_l_s" ],
     [ "_SYSTEM_MODULE_ENTRY", "struct___s_y_s_t_e_m___m_o_d_u_l_e___e_n_t_r_y.html", "struct___s_y_s_t_e_m___m_o_d_u_l_e___e_n_t_r_y" ],
@@ -11,7 +12,9 @@ var _hooks_8h =
     [ "IMAGE_VXD_SIGNATURE", "_hooks_8h.html#a0d59e625e438a014184cfc9e892553c3", null ],
     [ "IS_SYSCALL_INSTRUCTION", "_hooks_8h.html#a765571d13192493adf4e7baa5a9e9468", null ],
     [ "IS_SYSRET_INSTRUCTION", "_hooks_8h.html#a2633e7e4b97712c8a9924648d48b63f6", null ],
+    [ "EPT_HOOKS_TEMPORARY_CONTEXT", "_hooks_8h.html#ad170181d64f0f6a97b2bbe682a712fe0", null ],
     [ "HIDDEN_HOOKS_DETOUR_DETAILS", "_hooks_8h.html#afca3bba3357dab1c3380e4b9772f04da", null ],
+    [ "PEPT_HOOKS_TEMPORARY_CONTEXT", "_hooks_8h.html#ae4ef4e8d40900301a5701790c9f5ae74", null ],
     [ "PHIDDEN_HOOKS_DETOUR_DETAILS", "_hooks_8h.html#a0dd75bc2892ba7c908ee7f1da6f8c760", null ],
     [ "PSSDTStruct", "_hooks_8h.html#affb3200da2e6d1088947739169dfcfba", null ],
     [ "PSYSTEM_INFORMATION_CLASS", "_hooks_8h.html#aef74275b90a76319745df6047d624096", null ],
@@ -36,7 +39,7 @@ var _hooks_8h =
     [ "EptHookRestoreAllHooksToOrginalEntry", "_hooks_8h.html#acd59638727980bbd58fb4665ffce9091", null ],
     [ "EptHookRestoreSingleHookToOrginalEntry", "_hooks_8h.html#aba59e4d31f5cf37d9436d73933e8158c", null ],
     [ "EptHookUnHookAll", "_hooks_8h.html#ac8845ca75f3b4c267d3542d20621f547", null ],
-    [ "EptHookUnHookSingleAddress", "_hooks_8h.html#ad1e9c3160ff8af6421fcfd6942dcad2e", null ],
+    [ "EptHookUnHookSingleAddress", "_hooks_8h.html#a24ce2115ab4514ec8eed08d0911b64d6", null ],
     [ "AllocationSize", "_hooks_8h.html#a708148b18a52f70ef6c1e92504f29e92", null ],
     [ "CreateDisposition", "_hooks_8h.html#ab40749908b174e4a58a46b6bb9a8899f", null ],
     [ "CreateOptions", "_hooks_8h.html#ad07b47eb97df97ce6120a6ff17e9c6e2", null ],

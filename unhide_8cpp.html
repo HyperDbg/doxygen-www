@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('unhide_8cpp.html',''); initResizable()
 
 <p>!unhide command  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;..\hprdbgctrl\pch.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;pch.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -103,7 +103,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>!unhide command </p>
-<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'ray'+'an'+'fam'+'.c'+'om'; return false;">sina@<span style="display: none;">.nosp@m.</span>raya<span style="display: none;">.nosp@m.</span>nfam.<span style="display: none;">.nosp@m.</span>com</a>)</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+'er'+'dbg'+'.o'+'rg'; return false;">sina@<span style="display: none;">.nosp@m.</span>hype<span style="display: none;">.nosp@m.</span>rdbg.<span style="display: none;">.nosp@m.</span>org</a>)</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2020-07-07</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>This project is released under the GNU Public License v3. </dd></dl>
@@ -143,82 +143,80 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>                                     Status;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a>                                       ReturnedLength;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="struct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e.html">DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE</a> UnhideRequest = {0};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (SplittedCommand.size() &gt;= 2)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;incorrect use of &#39;!unhide&#39;\n\n&quot;</span>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="unhide_8cpp.html#a2940295f44980e30652ae01e6f9c8cb8">CommandUnhideHelp</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// Check if debugger is loaded or not</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a>)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;handle of the driver not found, probably the driver is not loaded. Did you &quot;</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                     <span class="stringliteral">&quot;use &#39;load&#39; command?\n&quot;</span>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>                                     Status;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a>                                       ReturnedLength;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="struct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e.html">DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE</a> UnhideRequest = {0};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (SplittedCommand.size() &gt;= 2)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;incorrect use of &#39;!unhide&#39;\n\n&quot;</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="unhide_8cpp.html#a2940295f44980e30652ae01e6f9c8cb8">CommandUnhideHelp</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    }</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// Check if debugger is loaded or not</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="hprdbgctrl_2header_2common_8h.html#a14c16a9f19d50a44bfde8e8a3029c5d1">AssertShowMessageReturnStmt</a>(<a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a>, <a class="code" href="hprdbgctrl_2header_2common_8h.html#aa984b32130ec28ae1dbb70f604463dd0">ASSERT_MESSAGE_DRIVER_NOT_LOADED</a>, <a class="code" href="hprdbgctrl_2header_2common_8h.html#aa6dfcb2d199ec22b858626aa3991779c">AssertReturn</a>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// We don&#39;t wanna hide the debugger and make transparent vm-exits</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// We don&#39;t wanna hide the debugger and make transparent vm-exits</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    UnhideRequest.<a class="code" href="struct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e.html#a674c7b83d23f833104fbad9ab932b114">IsHide</a> = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    UnhideRequest.<a class="code" href="struct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e.html#a674c7b83d23f833104fbad9ab932b114">IsHide</a> = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// Send the request to the kernel</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// Send the request to the kernel</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    Status = DeviceIoControl(</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a>,                                             <span class="comment">// Handle to device</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="_definition_8h.html#ab5da25e03644bff50fb16e6a7e9adc7b">IOCTL_DEBUGGER_HIDE_AND_UNHIDE_TO_TRANSPARENT_THE_DEBUGGER</a>, <span class="comment">// IO Control</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                                    <span class="comment">// code</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        &amp;UnhideRequest,                                             <span class="comment">// Input Buffer to driver.</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="_definition_8h.html#acff9f870e3194302bee58a0d76f1369d">SIZEOF_DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE</a>,         <span class="comment">// Input buffer length</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        &amp;UnhideRequest,                                             <span class="comment">// Output Buffer from driver.</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="_definition_8h.html#acff9f870e3194302bee58a0d76f1369d">SIZEOF_DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE</a>,         <span class="comment">// Length of output</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                                    <span class="comment">// buffer in bytes.</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        &amp;ReturnedLength,                                            <span class="comment">// Bytes placed in buffer.</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>                                                        <span class="comment">// synchronous call</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    );</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">if</span> (!Status)</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;ioctl failed with code 0x%x\n&quot;</span>, GetLastError());</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span> (UnhideRequest.<a class="code" href="struct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e.html#a2fefef084c4218cd817a4b8e4a1d565e">KernelStatus</a> == <a class="code" href="_definition_8h.html#ae144fe64c6f977af3958b135c61d5882">DEBUGEER_OPERATION_WAS_SUCCESSFULL</a>)</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;transparent debugging successfully disabled :)\n&quot;</span>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (UnhideRequest.<a class="code" href="struct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e.html#a2fefef084c4218cd817a4b8e4a1d565e">KernelStatus</a> ==</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;             <a class="code" href="_definition_8h.html#a65854082bbb6528a8a42473d0d9f21e6">DEBUGEER_ERROR_DEBUGGER_ALREADY_UHIDE</a>)</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;debugger is not in transparent-mode\n&quot;</span>);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;unknown error occurred :(\n&quot;</span>);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
-<div class="ttc" id="a_definition_8h_html_a65854082bbb6528a8a42473d0d9f21e6"><div class="ttname"><a href="_definition_8h.html#a65854082bbb6528a8a42473d0d9f21e6">DEBUGEER_ERROR_DEBUGGER_ALREADY_UHIDE</a></div><div class="ttdeci">#define DEBUGEER_ERROR_DEBUGGER_ALREADY_UHIDE</div><div class="ttdoc">error, the debugger is already in transparent-mode</div><div class="ttdef"><b>Definition:</b> Definition.h:1779</div></div>
-<div class="ttc" id="a_definition_8h_html_ab5da25e03644bff50fb16e6a7e9adc7b"><div class="ttname"><a href="_definition_8h.html#ab5da25e03644bff50fb16e6a7e9adc7b">IOCTL_DEBUGGER_HIDE_AND_UNHIDE_TO_TRANSPARENT_THE_DEBUGGER</a></div><div class="ttdeci">#define IOCTL_DEBUGGER_HIDE_AND_UNHIDE_TO_TRANSPARENT_THE_DEBUGGER</div><div class="ttdoc">ioctl, request to enable or disable transparent-mode</div><div class="ttdef"><b>Definition:</b> Definition.h:1978</div></div>
-<div class="ttc" id="a_definition_8h_html_acff9f870e3194302bee58a0d76f1369d"><div class="ttname"><a href="_definition_8h.html#acff9f870e3194302bee58a0d76f1369d">SIZEOF_DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE</a></div><div class="ttdeci">#define SIZEOF_DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE</div><div class="ttdef"><b>Definition:</b> Definition.h:1185</div></div>
-<div class="ttc" id="a_definition_8h_html_ae144fe64c6f977af3958b135c61d5882"><div class="ttname"><a href="_definition_8h.html#ae144fe64c6f977af3958b135c61d5882">DEBUGEER_OPERATION_WAS_SUCCESSFULL</a></div><div class="ttdeci">#define DEBUGEER_OPERATION_WAS_SUCCESSFULL</div><div class="ttdoc">General value to indicate that the operation or request was successful.</div><div class="ttdef"><b>Definition:</b> Definition.h:1709</div></div>
-<div class="ttc" id="a_gdb_stub_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> GdbStub.h:33</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_a1cb18096b299d23458d3c7b85fd86555"><div class="ttname"><a href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a></div><div class="ttdeci">UCHAR BOOLEAN</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:80</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:92</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_af632da489ebc3708ec3ab6791ee53fa4"><div class="ttname"><a href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a></div><div class="ttdeci">unsigned long ULONG</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:78</div></div>
-<div class="ttc" id="ahprdbgctrl_8cpp_html_a04aaf680ede15f5e7ba51ab9f157bfff"><div class="ttname"><a href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a></div><div class="ttdeci">HANDLE g_DeviceHandle</div><div class="ttdoc">Holds the global handle of device which is used to send the request to the kernel by IOCTL,...</div><div class="ttdef"><b>Definition:</b> globals.h:366</div></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    Status = DeviceIoControl(</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a>,                                             <span class="comment">// Handle to device</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="_definition_8h.html#ab5da25e03644bff50fb16e6a7e9adc7b">IOCTL_DEBUGGER_HIDE_AND_UNHIDE_TO_TRANSPARENT_THE_DEBUGGER</a>, <span class="comment">// IO Control</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                                    <span class="comment">// code</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        &amp;UnhideRequest,                                             <span class="comment">// Input Buffer to driver.</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <a class="code" href="_definition_8h.html#acff9f870e3194302bee58a0d76f1369d">SIZEOF_DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE</a>,         <span class="comment">// Input buffer length</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        &amp;UnhideRequest,                                             <span class="comment">// Output Buffer from driver.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="_definition_8h.html#acff9f870e3194302bee58a0d76f1369d">SIZEOF_DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE</a>,         <span class="comment">// Length of output</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                                    <span class="comment">// buffer in bytes.</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        &amp;ReturnedLength,                                            <span class="comment">// Bytes placed in buffer.</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>                                                        <span class="comment">// synchronous call</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    );</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">if</span> (!Status)</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;ioctl failed with code 0x%x\n&quot;</span>, GetLastError());</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> (UnhideRequest.<a class="code" href="struct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e.html#a2fefef084c4218cd817a4b8e4a1d565e">KernelStatus</a> == <a class="code" href="_definition_8h.html#abbd89315da3f894b7fb4985edd713bb1">DEBUGGER_OPERATION_WAS_SUCCESSFULL</a>)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;transparent debugging successfully disabled :)\n&quot;</span>);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (UnhideRequest.<a class="code" href="struct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e.html#a2fefef084c4218cd817a4b8e4a1d565e">KernelStatus</a> ==</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;             <a class="code" href="_definition_8h.html#ae7427ea6d7e4998956d067d8a7aed9ab">DEBUGGER_ERROR_DEBUGGER_ALREADY_UHIDE</a>)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;debugger is not in transparent-mode\n&quot;</span>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;unknown error occurred :(\n&quot;</span>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="ttc" id="a_definition_8h_html_ab5da25e03644bff50fb16e6a7e9adc7b"><div class="ttname"><a href="_definition_8h.html#ab5da25e03644bff50fb16e6a7e9adc7b">IOCTL_DEBUGGER_HIDE_AND_UNHIDE_TO_TRANSPARENT_THE_DEBUGGER</a></div><div class="ttdeci">#define IOCTL_DEBUGGER_HIDE_AND_UNHIDE_TO_TRANSPARENT_THE_DEBUGGER</div><div class="ttdoc">ioctl, request to enable or disable transparent-mode</div><div class="ttdef"><b>Definition:</b> Definition.h:2844</div></div>
+<div class="ttc" id="a_definition_8h_html_abbd89315da3f894b7fb4985edd713bb1"><div class="ttname"><a href="_definition_8h.html#abbd89315da3f894b7fb4985edd713bb1">DEBUGGER_OPERATION_WAS_SUCCESSFULL</a></div><div class="ttdeci">#define DEBUGGER_OPERATION_WAS_SUCCESSFULL</div><div class="ttdoc">General value to indicate that the operation or request was successful.</div><div class="ttdef"><b>Definition:</b> Definition.h:2409</div></div>
+<div class="ttc" id="a_definition_8h_html_acff9f870e3194302bee58a0d76f1369d"><div class="ttname"><a href="_definition_8h.html#acff9f870e3194302bee58a0d76f1369d">SIZEOF_DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE</a></div><div class="ttdeci">#define SIZEOF_DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE</div><div class="ttdef"><b>Definition:</b> Definition.h:1544</div></div>
+<div class="ttc" id="a_definition_8h_html_ae7427ea6d7e4998956d067d8a7aed9ab"><div class="ttname"><a href="_definition_8h.html#ae7427ea6d7e4998956d067d8a7aed9ab">DEBUGGER_ERROR_DEBUGGER_ALREADY_UHIDE</a></div><div class="ttdeci">#define DEBUGGER_ERROR_DEBUGGER_ALREADY_UHIDE</div><div class="ttdoc">error, the debugger is already in transparent-mode</div><div class="ttdef"><b>Definition:</b> Definition.h:2479</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_a1cb18096b299d23458d3c7b85fd86555"><div class="ttname"><a href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a></div><div class="ttdeci">UCHAR BOOLEAN</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:90</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:102</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_af632da489ebc3708ec3ab6791ee53fa4"><div class="ttname"><a href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a></div><div class="ttdeci">unsigned long ULONG</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:88</div></div>
+<div class="ttc" id="ahprdbgctrl_2header_2common_8h_html_a14c16a9f19d50a44bfde8e8a3029c5d1"><div class="ttname"><a href="hprdbgctrl_2header_2common_8h.html#a14c16a9f19d50a44bfde8e8a3029c5d1">AssertShowMessageReturnStmt</a></div><div class="ttdeci">#define AssertShowMessageReturnStmt(expr, message, rc)</div><div class="ttdef"><b>Definition:</b> common.h:41</div></div>
+<div class="ttc" id="ahprdbgctrl_2header_2common_8h_html_aa6dfcb2d199ec22b858626aa3991779c"><div class="ttname"><a href="hprdbgctrl_2header_2common_8h.html#aa6dfcb2d199ec22b858626aa3991779c">AssertReturn</a></div><div class="ttdeci">#define AssertReturn</div><div class="ttdef"><b>Definition:</b> common.h:19</div></div>
+<div class="ttc" id="ahprdbgctrl_2header_2common_8h_html_aa984b32130ec28ae1dbb70f604463dd0"><div class="ttname"><a href="hprdbgctrl_2header_2common_8h.html#aa984b32130ec28ae1dbb70f604463dd0">ASSERT_MESSAGE_DRIVER_NOT_LOADED</a></div><div class="ttdeci">#define ASSERT_MESSAGE_DRIVER_NOT_LOADED</div><div class="ttdef"><b>Definition:</b> common.h:25</div></div>
+<div class="ttc" id="ahprdbgctrl_8cpp_html_a04aaf680ede15f5e7ba51ab9f157bfff"><div class="ttname"><a href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a></div><div class="ttdeci">HANDLE g_DeviceHandle</div><div class="ttdoc">Holds the global handle of device which is used to send the request to the kernel by IOCTL,...</div><div class="ttdef"><b>Definition:</b> globals.h:438</div></div>
 <div class="ttc" id="ahprdbgctrl_8cpp_html_a21c3c06b34d716c4680695c2b28127da"><div class="ttname"><a href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a></div><div class="ttdeci">VOID ShowMessages(const char *Fmt,...)</div><div class="ttdoc">Show messages.</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:51</div></div>
-<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e_html"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e.html">_DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE</a></div><div class="ttdoc">request for enable or disable transparent-mode</div><div class="ttdef"><b>Definition:</b> Definition.h:1193</div></div>
-<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e_html_a2fefef084c4218cd817a4b8e4a1d565e"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e.html#a2fefef084c4218cd817a4b8e4a1d565e">_DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE::KernelStatus</a></div><div class="ttdeci">UINT64 KernelStatus</div><div class="ttdef"><b>Definition:</b> Definition.h:1209</div></div>
-<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e_html_a674c7b83d23f833104fbad9ab932b114"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e.html#a674c7b83d23f833104fbad9ab932b114">_DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE::IsHide</a></div><div class="ttdeci">BOOLEAN IsHide</div><div class="ttdef"><b>Definition:</b> Definition.h:1194</div></div>
+<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e_html"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e.html">_DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE</a></div><div class="ttdoc">request for enable or disable transparent-mode</div><div class="ttdef"><b>Definition:</b> Definition.h:1552</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e_html_a2fefef084c4218cd817a4b8e4a1d565e"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e.html#a2fefef084c4218cd817a4b8e4a1d565e">_DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE::KernelStatus</a></div><div class="ttdeci">UINT64 KernelStatus</div><div class="ttdef"><b>Definition:</b> Definition.h:1568</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e_html_a674c7b83d23f833104fbad9ab932b114"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e.html#a674c7b83d23f833104fbad9ab932b114">_DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE::IsHide</a></div><div class="ttdeci">BOOLEAN IsHide</div><div class="ttdef"><b>Definition:</b> Definition.h:1553</div></div>
 <div class="ttc" id="aunhide_8cpp_html_a2940295f44980e30652ae01e6f9c8cb8"><div class="ttname"><a href="unhide_8cpp.html#a2940295f44980e30652ae01e6f9c8cb8">CommandUnhideHelp</a></div><div class="ttdeci">VOID CommandUnhideHelp()</div><div class="ttdoc">help of !unhide command</div><div class="ttdef"><b>Definition:</b> unhide.cpp:20</div></div>
 </div><!-- fragment -->
 </div>
@@ -241,10 +239,13 @@ Functions</h2></td></tr>
 <p>help of !unhide command </p>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
 <div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;!unhide : Reveals the debugger to the applications.\n\n&quot;</span>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;syntax : \t!unhide\n&quot;</span>);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\t\te.g : !unhide\n&quot;</span>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;!unhide : reverts the transparency measures of the &#39;!hide&#39; command.\n\n&quot;</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;syntax : \t!unhide\n&quot;</span>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\t\te.g : !unhide\n&quot;</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>

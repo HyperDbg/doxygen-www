@@ -1,5 +1,0 @@
-var struct_zydis_decoded_instruction___1_1_zydis_decoded_instruction_avx___1_1_zydis_decoded_instruction_avx_broadcast__ =
-[
-    [ "is_static", "struct_zydis_decoded_instruction___1_1_zydis_decoded_instruction_avx___1_1_zydis_decoded_instruction_avx_broadcast__.html#afe822a931808ceffb7038c51cd375fcc", null ],
-    [ "mode", "struct_zydis_decoded_instruction___1_1_zydis_decoded_instruction_avx___1_1_zydis_decoded_instruction_avx_broadcast__.html#a4fedc00c89ca606f13b9be0fbd0b3036", null ]
-];

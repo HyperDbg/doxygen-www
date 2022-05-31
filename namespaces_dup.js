@@ -1,12 +1,13 @@
 var namespaces_dup =
 [
     [ "counter", "namespacecounter.html", [
-      [ "Did you write a patch that fixes a bug?", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md17", null ],
-      [ "Suggesting Enhancements", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md18", null ],
-      [ "Do you intend to add a new feature or change an existing one?", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md19", null ],
-      [ "Do you have questions about the source code?", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md20", null ],
+      [ "Did you write a patch that fixes a bug?", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md18", null ],
+      [ "Suggesting Enhancements", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md19", null ],
+      [ "Do you intend to add a new feature or change an existing one?", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md20", null ],
+      [ "Do you have questions about the source code?", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md21", null ],
       [ "CountLines", "namespacecounter.html#a69738eb12c0c6327da7618170c3dee17", null ]
     ] ],
+    [ "EvalScripts", "namespace_eval_scripts.html", "namespace_eval_scripts" ],
     [ "generator", "namespacegenerator.html", "namespacegenerator" ],
     [ "inipp", "namespaceinipp.html", "namespaceinipp" ],
     [ "lalr1_parser", "namespacelalr1__parser.html", "namespacelalr1__parser" ],
@@ -64,9 +65,13 @@ var namespaces_dup =
       [ "f", "namespacetest-case-generator.html#a67af8a2b234f3906636358935eaa202d", null ],
       [ "initCounter", "namespacetest-case-generator.html#af80156ea71ae0a5950e7c08fc5bd79f8", null ],
       [ "MAX_DEPTH", "namespacetest-case-generator.html#ac8047c575a1551d6101845d13db7e4f7", null ],
-      [ "res", "namespacetest-case-generator.html#a9a6de471352e0dfbe9b35656953dac5d", null ],
+      [ "res", "namespacetest-case-generator.html#afef43667d1d6456dc2ce7882ad3e462c", null ],
       [ "sentence", "namespacetest-case-generator.html#a7ef41e43d8e9cbbcbaa22238f5024fc2", null ],
       [ "val", "namespacetest-case-generator.html#aaeb6784b3463af26bc4c893996a54e47", null ]
+    ] ],
+    [ "test-environment", "namespacetest-environment.html", [
+      [ "copy_dir", "namespacetest-environment.html#a66d208fbc8fbb1ff1f5624d484a70e63", null ],
+      [ "main", "namespacetest-environment.html#a580072fb6108f6250318c86eea1b07e5", null ]
     ] ],
     [ "util", "namespaceutil.html", [
       [ "GetTop", "namespaceutil.html#a3206d44d413b59ff9240237a8c9594c8", null ],

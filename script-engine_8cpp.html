@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('script-engine_8cpp.html',''); initResi
 
 <p>Interpret script engine affairs.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;..\hprdbgctrl\pch.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;pch.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -113,7 +113,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interpret script engine affairs. </p>
-<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'ray'+'an'+'fam'+'.c'+'om'; return false;">sina@<span style="display: none;">.nosp@m.</span>raya<span style="display: none;">.nosp@m.</span>nfam.<span style="display: none;">.nosp@m.</span>com</a>)</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+'er'+'dbg'+'.o'+'rg'; return false;">sina@<span style="display: none;">.nosp@m.</span>hype<span style="display: none;">.nosp@m.</span>rdbg.<span style="display: none;">.nosp@m.</span>org</a>)</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2021-09-23</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>This project is released under the GNU Public License v3. </dd></dl>
@@ -155,10 +155,10 @@ Variables</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>UINT64 </dd></dl>
 <div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    PVOID  CodeBuffer;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> BufferAddress;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> <a class="code" href="script-engine_2header_2script-engine_8h.html#aa21398583d626b11a7796eb8d7555238">BufferAddress</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> BufferLength;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> Pointer;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> Result = <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> Result = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// Prepend and append &#39;formats(&#39; and &#39;)&#39;</span></div>
@@ -167,108 +167,104 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Expr.append(<span class="stringliteral">&quot;);&quot;</span>);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// TODO: end of string must have a whitspace. fix it.</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// Run script engine handler</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    Expr.append(<span class="stringliteral">&quot; &quot;</span>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    CodeBuffer = <a class="code" href="script-engine-wrapper_8cpp.html#a7bcee6b80d2bd81251776643100c4ad1">ScriptEngineParseWrapper</a>((<span class="keywordtype">char</span> *)Expr.c_str(), <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// Run script engine handler</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    CodeBuffer = <a class="code" href="script-engine-wrapper_8cpp.html#a7bcee6b80d2bd81251776643100c4ad1">ScriptEngineParseWrapper</a>((<span class="keywordtype">char</span> *)Expr.c_str(), <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (CodeBuffer == <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">// return to show that this item contains an script</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        *HasError = <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (CodeBuffer == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// return to show that this item contains an script</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        *HasError = <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    }</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// Print symbols (test)</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// PrintSymbolBufferWrapper(CodeBuffer);</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// Print symbols (test)</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// Set the buffer and length</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// PrintSymbolBufferWrapper(CodeBuffer);</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// Set the buffer and length</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="script-engine_2header_2script-engine_8h.html#aa21398583d626b11a7796eb8d7555238">BufferAddress</a> = <a class="code" href="script-engine-wrapper_8cpp.html#a9fcbf882105d50f90c208070e6d031b8">ScriptEngineWrapperGetHead</a>(CodeBuffer);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    BufferLength  = <a class="code" href="script-engine-wrapper_8cpp.html#a0df6fc18d3df65a0522815b428e41871">ScriptEngineWrapperGetSize</a>(CodeBuffer);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    Pointer       = <a class="code" href="script-engine-wrapper_8cpp.html#a66983554f61b85c232da45248551b4d9">ScriptEngineWrapperGetPointer</a>(CodeBuffer);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    BufferAddress = <a class="code" href="script-engine-wrapper_8cpp.html#a9fcbf882105d50f90c208070e6d031b8">ScriptEngineWrapperGetHead</a>(CodeBuffer);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    BufferLength  = <a class="code" href="script-engine-wrapper_8cpp.html#a0df6fc18d3df65a0522815b428e41871">ScriptEngineWrapperGetSize</a>(CodeBuffer);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    Pointer       = <a class="code" href="script-engine-wrapper_8cpp.html#a66983554f61b85c232da45248551b4d9">ScriptEngineWrapperGetPointer</a>(CodeBuffer);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// Check if it&#39;s connected over remote debuggee (in the Debugger Mode)</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="script-engine_8cpp.html#abefaa871a249a20e1e19ce893e400774">g_IsSerialConnectedToRemoteDebuggee</a>)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="comment">// Send over serial</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// Check if it&#39;s connected over remote debuggee (in the Debugger Mode)</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="script-engine_8cpp.html#abefaa871a249a20e1e19ce893e400774">g_IsSerialConnectedToRemoteDebuggee</a>)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="comment">// Send over serial</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="comment">// Send it to the remote debuggee</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="kd_8cpp.html#a9334e249258d57020a946705dcad722d">KdSendScriptPacketToDebuggee</a>(<a class="code" href="script-engine_2header_2script-engine_8h.html#aa21398583d626b11a7796eb8d7555238">BufferAddress</a>, BufferLength, Pointer, <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">// Send it to the remote debuggee</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">// Check whether there was an error in evaluation or not</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="kd_8cpp.html#a9334e249258d57020a946705dcad722d">KdSendScriptPacketToDebuggee</a>(BufferAddress, BufferLength, Pointer, <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="comment">// Check whether there was an error in evaluation or not</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="script-engine_8cpp.html#ac4f2b5ba3e02fc885e0397631b2db931">g_ErrorStateOfResultOfEvaluatedExpression</a> == <a class="code" href="_definition_8h.html#ae144fe64c6f977af3958b135c61d5882">DEBUGEER_OPERATION_WAS_SUCCESSFULL</a>)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="comment">//</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="comment">// Everything was fine, return the result of the evaluated</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="comment">// expression and null the global holders</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="comment">//</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            Result                                    = <a class="code" href="script-engine_8cpp.html#a7d600d55dac0fecc8ec201d0f25dacf8">g_ResultOfEvaluatedExpression</a>;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <a class="code" href="script-engine_8cpp.html#ac4f2b5ba3e02fc885e0397631b2db931">g_ErrorStateOfResultOfEvaluatedExpression</a> = <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <a class="code" href="script-engine_8cpp.html#a7d600d55dac0fecc8ec201d0f25dacf8">g_ResultOfEvaluatedExpression</a>             = <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            *HasError                                 = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="comment">//</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="comment">// There was an error evaluating the expression from the kernel (debuggee)</span></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="comment">//</span></div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <a class="code" href="script-engine_8cpp.html#ac4f2b5ba3e02fc885e0397631b2db931">g_ErrorStateOfResultOfEvaluatedExpression</a> = <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <a class="code" href="script-engine_8cpp.html#a7d600d55dac0fecc8ec201d0f25dacf8">g_ResultOfEvaluatedExpression</a>             = <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            *HasError = <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            Result    = <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="comment">// It&#39;s in vmi-mode,</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="comment">// execute it locally with regs set to ZERO</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        Result = <a class="code" href="script-engine-wrapper_8cpp.html#a55a4a4f97146939c78fd26c477779250">ScriptEngineEvalUInt64StyleExpressionWrapper</a>(Expr, HasError);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="script-engine_8cpp.html#ac4f2b5ba3e02fc885e0397631b2db931">g_ErrorStateOfResultOfEvaluatedExpression</a> == <a class="code" href="_definition_8h.html#abbd89315da3f894b7fb4985edd713bb1">DEBUGGER_OPERATION_WAS_SUCCESSFULL</a>)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="comment">// Everything was fine, return the result of the evaluated</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="comment">// expression and null the global holders</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            Result                                    = <a class="code" href="script-engine_8cpp.html#a7d600d55dac0fecc8ec201d0f25dacf8">g_ResultOfEvaluatedExpression</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <a class="code" href="script-engine_8cpp.html#ac4f2b5ba3e02fc885e0397631b2db931">g_ErrorStateOfResultOfEvaluatedExpression</a> = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <a class="code" href="script-engine_8cpp.html#a7d600d55dac0fecc8ec201d0f25dacf8">g_ResultOfEvaluatedExpression</a>             = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            *HasError                                 = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="comment">// There was an error evaluating the expression from the kernel (debuggee)</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <a class="code" href="script-engine_8cpp.html#ac4f2b5ba3e02fc885e0397631b2db931">g_ErrorStateOfResultOfEvaluatedExpression</a> = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <a class="code" href="script-engine_8cpp.html#a7d600d55dac0fecc8ec201d0f25dacf8">g_ResultOfEvaluatedExpression</a>             = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            *HasError = <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            Result    = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    {</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="comment">// It&#39;s in vmi-mode,</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="comment">// execute it locally with regs set to ZERO</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        Result = <a class="code" href="script-engine-wrapper_8cpp.html#a830cbdeec60075276e6529d7efca1a53">ScriptEngineEvalUInt64StyleExpressionWrapper</a>(Expr, HasError);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">// Remove the buffer of script engine interpreted code</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="script-engine-wrapper_8cpp.html#aae83336bc4976c7fbfbfcce491a04f91">ScriptEngineWrapperRemoveSymbolBuffer</a>(CodeBuffer);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="comment">// Remove the buffer of script engine interpreted code</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="script-engine-wrapper_8cpp.html#aae83336bc4976c7fbfbfcce491a04f91">ScriptEngineWrapperRemoveSymbolBuffer</a>(CodeBuffer);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">return</span> Result;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
-<div class="ttc" id="a_definition_8h_html_ae144fe64c6f977af3958b135c61d5882"><div class="ttname"><a href="_definition_8h.html#ae144fe64c6f977af3958b135c61d5882">DEBUGEER_OPERATION_WAS_SUCCESSFULL</a></div><div class="ttdeci">#define DEBUGEER_OPERATION_WAS_SUCCESSFULL</div><div class="ttdoc">General value to indicate that the operation or request was successful.</div><div class="ttdef"><b>Definition:</b> Definition.h:1709</div></div>
-<div class="ttc" id="a_gdb_stub_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> GdbStub.h:33</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:93</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:92</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_aae17ebb9ef7279d026817fb22f8aebe9"><div class="ttname"><a href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a></div><div class="ttdeci">unsigned __int64 UINT64</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:62</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_ae1e6edbbc26d6fbc71a90190d0266018"><div class="ttname"><a href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a></div><div class="ttdeci">unsigned int UINT32</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:89</div></div>
-<div class="ttc" id="akd_8cpp_html_a9334e249258d57020a946705dcad722d"><div class="ttname"><a href="kd_8cpp.html#a9334e249258d57020a946705dcad722d">KdSendScriptPacketToDebuggee</a></div><div class="ttdeci">BOOLEAN KdSendScriptPacketToDebuggee(UINT64 BufferAddress, UINT32 BufferLength, UINT32 Pointer, BOOLEAN IsFormat)</div><div class="ttdoc">Sends a script packet to the debuggee.</div><div class="ttdef"><b>Definition:</b> kd.cpp:732</div></div>
-<div class="ttc" id="ascript-engine-wrapper_8cpp_html_a0df6fc18d3df65a0522815b428e41871"><div class="ttname"><a href="script-engine-wrapper_8cpp.html#a0df6fc18d3df65a0522815b428e41871">ScriptEngineWrapperGetSize</a></div><div class="ttdeci">UINT32 ScriptEngineWrapperGetSize(PVOID SymbolBuffer)</div><div class="ttdoc">wrapper for getting size</div><div class="ttdef"><b>Definition:</b> script-engine-wrapper.cpp:426</div></div>
-<div class="ttc" id="ascript-engine-wrapper_8cpp_html_a55a4a4f97146939c78fd26c477779250"><div class="ttname"><a href="script-engine-wrapper_8cpp.html#a55a4a4f97146939c78fd26c477779250">ScriptEngineEvalUInt64StyleExpressionWrapper</a></div><div class="ttdeci">UINT64 ScriptEngineEvalUInt64StyleExpressionWrapper(string Expr, PBOOLEAN HasError)</div><div class="ttdoc">In the local debugging (VMI mode) environment, this function computes the expressions.</div><div class="ttdef"><b>Definition:</b> script-engine-wrapper.cpp:391</div></div>
-<div class="ttc" id="ascript-engine-wrapper_8cpp_html_a66983554f61b85c232da45248551b4d9"><div class="ttname"><a href="script-engine-wrapper_8cpp.html#a66983554f61b85c232da45248551b4d9">ScriptEngineWrapperGetPointer</a></div><div class="ttdeci">UINT32 ScriptEngineWrapperGetPointer(PVOID SymbolBuffer)</div><div class="ttdoc">wrapper for getting pointer</div><div class="ttdef"><b>Definition:</b> script-engine-wrapper.cpp:440</div></div>
-<div class="ttc" id="ascript-engine-wrapper_8cpp_html_a7bcee6b80d2bd81251776643100c4ad1"><div class="ttname"><a href="script-engine-wrapper_8cpp.html#a7bcee6b80d2bd81251776643100c4ad1">ScriptEngineParseWrapper</a></div><div class="ttdeci">PVOID ScriptEngineParseWrapper(char *Expr, BOOLEAN ShowErrorMessageIfAny)</div><div class="ttdoc">ScriptEngineParse wrapper.</div><div class="ttdef"><b>Definition:</b> script-engine-wrapper.cpp:187</div></div>
-<div class="ttc" id="ascript-engine-wrapper_8cpp_html_a9fcbf882105d50f90c208070e6d031b8"><div class="ttname"><a href="script-engine-wrapper_8cpp.html#a9fcbf882105d50f90c208070e6d031b8">ScriptEngineWrapperGetHead</a></div><div class="ttdeci">UINT64 ScriptEngineWrapperGetHead(PVOID SymbolBuffer)</div><div class="ttdoc">wrapper for getting head</div><div class="ttdef"><b>Definition:</b> script-engine-wrapper.cpp:414</div></div>
-<div class="ttc" id="ascript-engine-wrapper_8cpp_html_aae83336bc4976c7fbfbfcce491a04f91"><div class="ttname"><a href="script-engine-wrapper_8cpp.html#aae83336bc4976c7fbfbfcce491a04f91">ScriptEngineWrapperRemoveSymbolBuffer</a></div><div class="ttdeci">VOID ScriptEngineWrapperRemoveSymbolBuffer(PVOID SymbolBuffer)</div><div class="ttdoc">wrapper for removing symbol buffer</div><div class="ttdef"><b>Definition:</b> script-engine-wrapper.cpp:452</div></div>
-<div class="ttc" id="ascript-engine_8cpp_html_a7d600d55dac0fecc8ec201d0f25dacf8"><div class="ttname"><a href="script-engine_8cpp.html#a7d600d55dac0fecc8ec201d0f25dacf8">g_ResultOfEvaluatedExpression</a></div><div class="ttdeci">UINT64 g_ResultOfEvaluatedExpression</div><div class="ttdoc">Result of the expression that is evaluated in the debuggee.</div><div class="ttdef"><b>Definition:</b> globals.h:502</div></div>
-<div class="ttc" id="ascript-engine_8cpp_html_abefaa871a249a20e1e19ce893e400774"><div class="ttname"><a href="script-engine_8cpp.html#abefaa871a249a20e1e19ce893e400774">g_IsSerialConnectedToRemoteDebuggee</a></div><div class="ttdeci">BOOLEAN g_IsSerialConnectedToRemoteDebuggee</div><div class="ttdoc">Shows if the debugger was connected to remote debuggee over (A remote guest)</div><div class="ttdef"><b>Definition:</b> globals.h:171</div></div>
-<div class="ttc" id="ascript-engine_8cpp_html_ac4f2b5ba3e02fc885e0397631b2db931"><div class="ttname"><a href="script-engine_8cpp.html#ac4f2b5ba3e02fc885e0397631b2db931">g_ErrorStateOfResultOfEvaluatedExpression</a></div><div class="ttdeci">UINT32 g_ErrorStateOfResultOfEvaluatedExpression</div><div class="ttdoc">Shows the state of the evaluation of expression which whether contains error or not.</div><div class="ttdef"><b>Definition:</b> globals.h:509</div></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordflow">return</span> Result;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="ttc" id="a_definition_8h_html_abbd89315da3f894b7fb4985edd713bb1"><div class="ttname"><a href="_definition_8h.html#abbd89315da3f894b7fb4985edd713bb1">DEBUGGER_OPERATION_WAS_SUCCESSFULL</a></div><div class="ttdeci">#define DEBUGGER_OPERATION_WAS_SUCCESSFULL</div><div class="ttdoc">General value to indicate that the operation or request was successful.</div><div class="ttdef"><b>Definition:</b> Definition.h:2409</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:103</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:102</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aae17ebb9ef7279d026817fb22f8aebe9"><div class="ttname"><a href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a></div><div class="ttdeci">unsigned __int64 UINT64</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:72</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_ae1e6edbbc26d6fbc71a90190d0266018"><div class="ttname"><a href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a></div><div class="ttdeci">unsigned int UINT32</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:99</div></div>
+<div class="ttc" id="akd_8cpp_html_a9334e249258d57020a946705dcad722d"><div class="ttname"><a href="kd_8cpp.html#a9334e249258d57020a946705dcad722d">KdSendScriptPacketToDebuggee</a></div><div class="ttdeci">BOOLEAN KdSendScriptPacketToDebuggee(UINT64 BufferAddress, UINT32 BufferLength, UINT32 Pointer, BOOLEAN IsFormat)</div><div class="ttdoc">Sends a script packet to the debuggee.</div><div class="ttdef"><b>Definition:</b> kd.cpp:914</div></div>
+<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
+<div class="ttc" id="ascript-engine-wrapper_8cpp_html_a0df6fc18d3df65a0522815b428e41871"><div class="ttname"><a href="script-engine-wrapper_8cpp.html#a0df6fc18d3df65a0522815b428e41871">ScriptEngineWrapperGetSize</a></div><div class="ttdeci">UINT32 ScriptEngineWrapperGetSize(PVOID SymbolBuffer)</div><div class="ttdoc">wrapper for getting size</div><div class="ttdef"><b>Definition:</b> script-engine-wrapper.cpp:646</div></div>
+<div class="ttc" id="ascript-engine-wrapper_8cpp_html_a66983554f61b85c232da45248551b4d9"><div class="ttname"><a href="script-engine-wrapper_8cpp.html#a66983554f61b85c232da45248551b4d9">ScriptEngineWrapperGetPointer</a></div><div class="ttdeci">UINT32 ScriptEngineWrapperGetPointer(PVOID SymbolBuffer)</div><div class="ttdoc">wrapper for getting pointer</div><div class="ttdef"><b>Definition:</b> script-engine-wrapper.cpp:660</div></div>
+<div class="ttc" id="ascript-engine-wrapper_8cpp_html_a7bcee6b80d2bd81251776643100c4ad1"><div class="ttname"><a href="script-engine-wrapper_8cpp.html#a7bcee6b80d2bd81251776643100c4ad1">ScriptEngineParseWrapper</a></div><div class="ttdeci">PVOID ScriptEngineParseWrapper(char *Expr, BOOLEAN ShowErrorMessageIfAny)</div><div class="ttdoc">ScriptEngineParse wrapper.</div><div class="ttdef"><b>Definition:</b> script-engine-wrapper.cpp:267</div></div>
+<div class="ttc" id="ascript-engine-wrapper_8cpp_html_a830cbdeec60075276e6529d7efca1a53"><div class="ttname"><a href="script-engine-wrapper_8cpp.html#a830cbdeec60075276e6529d7efca1a53">ScriptEngineEvalUInt64StyleExpressionWrapper</a></div><div class="ttdeci">UINT64 ScriptEngineEvalUInt64StyleExpressionWrapper(const string &amp;Expr, PBOOLEAN HasError)</div><div class="ttdoc">In the local debugging (VMI mode) environment, this function computes the expressions.</div><div class="ttdef"><b>Definition:</b> script-engine-wrapper.cpp:611</div></div>
+<div class="ttc" id="ascript-engine-wrapper_8cpp_html_a9fcbf882105d50f90c208070e6d031b8"><div class="ttname"><a href="script-engine-wrapper_8cpp.html#a9fcbf882105d50f90c208070e6d031b8">ScriptEngineWrapperGetHead</a></div><div class="ttdeci">UINT64 ScriptEngineWrapperGetHead(PVOID SymbolBuffer)</div><div class="ttdoc">wrapper for getting head</div><div class="ttdef"><b>Definition:</b> script-engine-wrapper.cpp:634</div></div>
+<div class="ttc" id="ascript-engine-wrapper_8cpp_html_aae83336bc4976c7fbfbfcce491a04f91"><div class="ttname"><a href="script-engine-wrapper_8cpp.html#aae83336bc4976c7fbfbfcce491a04f91">ScriptEngineWrapperRemoveSymbolBuffer</a></div><div class="ttdeci">VOID ScriptEngineWrapperRemoveSymbolBuffer(PVOID SymbolBuffer)</div><div class="ttdoc">wrapper for removing symbol buffer</div><div class="ttdef"><b>Definition:</b> script-engine-wrapper.cpp:672</div></div>
+<div class="ttc" id="ascript-engine_2header_2script-engine_8h_html_aa21398583d626b11a7796eb8d7555238"><div class="ttname"><a href="script-engine_2header_2script-engine_8h.html#aa21398583d626b11a7796eb8d7555238">BufferAddress</a></div><div class="ttdeci">UINT64 BOOLEAN PVOID BufferAddress</div><div class="ttdef"><b>Definition:</b> script-engine.h:34</div></div>
+<div class="ttc" id="ascript-engine_8cpp_html_a7d600d55dac0fecc8ec201d0f25dacf8"><div class="ttname"><a href="script-engine_8cpp.html#a7d600d55dac0fecc8ec201d0f25dacf8">g_ResultOfEvaluatedExpression</a></div><div class="ttdeci">UINT64 g_ResultOfEvaluatedExpression</div><div class="ttdoc">Result of the expression that is evaluated in the debuggee.</div><div class="ttdef"><b>Definition:</b> globals.h:592</div></div>
+<div class="ttc" id="ascript-engine_8cpp_html_abefaa871a249a20e1e19ce893e400774"><div class="ttname"><a href="script-engine_8cpp.html#abefaa871a249a20e1e19ce893e400774">g_IsSerialConnectedToRemoteDebuggee</a></div><div class="ttdeci">BOOLEAN g_IsSerialConnectedToRemoteDebuggee</div><div class="ttdoc">Shows if the debugger was connected to remote debuggee over (A remote guest)</div><div class="ttdef"><b>Definition:</b> globals.h:231</div></div>
+<div class="ttc" id="ascript-engine_8cpp_html_ac4f2b5ba3e02fc885e0397631b2db931"><div class="ttname"><a href="script-engine_8cpp.html#ac4f2b5ba3e02fc885e0397631b2db931">g_ErrorStateOfResultOfEvaluatedExpression</a></div><div class="ttdeci">UINT32 g_ErrorStateOfResultOfEvaluatedExpression</div><div class="ttdoc">Shows the state of the evaluation of expression which whether contains error or not.</div><div class="ttdef"><b>Definition:</b> globals.h:599</div></div>
 </div><!-- fragment -->
 </div>
 </div>

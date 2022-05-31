@@ -1,4 +1,0 @@
-var struct_zydis_decoded_instruction___1_1_zydis_decoded_instruction_avx___1_1_zydis_decoded_instruction_avx_swizzle__ =
-[
-    [ "mode", "struct_zydis_decoded_instruction___1_1_zydis_decoded_instruction_avx___1_1_zydis_decoded_instruction_avx_swizzle__.html#a6c4c079116d0e8b06f3f588b08515a8a", null ]
-];

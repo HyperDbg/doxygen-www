@@ -1,6 +1,5 @@
 var struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e =
 [
-    [ "DebuggerUserModeSteppingDetails", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ad11cf48b0c5900315469d1e03f83ba63", null ],
     [ "DebuggingState", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#abeaf053196e625ac00ab12a5dc38c8f1", null ],
     [ "HasLaunched", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#aaacba0883eec22779a564fb93aea73fd", null ],
     [ "IgnoreMtfUnset", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a4baef1dfcc9cb114e6fbc7118e2da235", null ],
@@ -10,12 +9,12 @@ var struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e =
     [ "IoBitmapVirtualAddressA", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#adc08fd36ed7c5088b430d9d46de38772", null ],
     [ "IoBitmapVirtualAddressB", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a42bb99b3abac8271d5f430862b86fa12", null ],
     [ "IsOnVmxRootMode", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ac3a540948c9dbdb00cce2ef4beb6aa20", null ],
+    [ "KdDpcObject", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#af0dbd19ac9b97fb988ab90d10068be25", null ],
     [ "LastVmexitRip", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ae855827593a6f9ed1deb258ae3337e57", null ],
     [ "MemoryMapper", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#afaba9e791f66e8b72661807c895cf8c2", null ],
     [ "MsrBitmapPhysicalAddress", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a01fda82355aebcc1e29b22e6e7d6aa90", null ],
     [ "MsrBitmapVirtualAddress", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a7ca0fe2d6633bddddfc4839bd2ad393c", null ],
     [ "MtfEptHookRestorePoint", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a9b2af0257a3f605df8780f3a62be01cf", null ],
-    [ "MtfTest", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a12a8c4949df81c14ae39a836b66db229", null ],
     [ "PendingExternalInterrupts", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a7123e9d39156e57b44e62065ebe2fc9d", null ],
     [ "TransparencyState", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ae3e6fd97d8540b6d41a96abc247dffc3", null ],
     [ "VmcsRegionPhysicalAddress", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a78c799e28ded00cb661165c92d53272a", null ],
@@ -23,5 +22,6 @@ var struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e =
     [ "VmmStack", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a853f222f05d48aa4e74c882556ab25f8", null ],
     [ "VmxoffState", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#abe260607315f60c0e4676113b125d4a4", null ],
     [ "VmxonRegionPhysicalAddress", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#aead68c436a200fcbe3c7f1869bac41ae", null ],
-    [ "VmxonRegionVirtualAddress", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a1890e7a832ea68482839c0f8e6aa1bb7", null ]
+    [ "VmxonRegionVirtualAddress", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a1890e7a832ea68482839c0f8e6aa1bb7", null ],
+    [ "WaitForImmediateVmexit", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a8e7b60dd13a24ee494ce4f0d8547e671", null ]
 ];

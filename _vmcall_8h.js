@@ -7,6 +7,7 @@ var _vmcall_8h =
     [ "VMCALL_DISABLE_EXTERNAL_INTERRUPT_EXITING_ONLY_TO_CLEAR_INTERRUPT_COMMANDS", "_vmcall_8h.html#ae132a6e82064b05fd1b83d979becf8ae", null ],
     [ "VMCALL_DISABLE_MOV_TO_CR3_EXITING", "_vmcall_8h.html#af5e421b53efd853799e3450565d6a16f", null ],
     [ "VMCALL_DISABLE_MOV_TO_DEBUG_REGS_EXITING", "_vmcall_8h.html#a13c945f82e78bd3ec1f1b008c6e9fbde", null ],
+    [ "VMCALL_DISABLE_MOV_TO_HW_DR_EXITING_ONLY_FOR_DR_EVENTS", "_vmcall_8h.html#aeacaa8a476a8d6503dbdc38ceb76ad08", null ],
     [ "VMCALL_DISABLE_RDTSC_EXITING_ONLY_FOR_TSC_EVENTS", "_vmcall_8h.html#ade9df4e3f1141974c97a539ef86773a7", null ],
     [ "VMCALL_DISABLE_SYSCALL_HOOK_EFER", "_vmcall_8h.html#acb8a7542446710304e8de981abb62528", null ],
     [ "VMCALL_ENABLE_EXTERNAL_INTERRUPT_EXITING", "_vmcall_8h.html#acaa5481bef551455b84d24e6888a162a", null ],
@@ -39,10 +40,9 @@ var _vmcall_8h =
     [ "VMCALL_UNSET_VM_EXIT_ON_NMIS", "_vmcall_8h.html#a8cc1375f7c22268460a5a026343e0443", null ],
     [ "VMCALL_UNSET_VM_EXIT_SAVE_DEBUG_CONTROLS", "_vmcall_8h.html#ac26259df2e2de916949e5228b1d8bb37", null ],
     [ "VMCALL_VM_EXIT_HALT_SYSTEM", "_vmcall_8h.html#a035e3c697ae3b5d66ff4cb6e6ea9562a", null ],
-    [ "VMCALL_VM_EXIT_HALT_SYSTEM_AND_CHANGE_CR3", "_vmcall_8h.html#ab5531b07658822b77b4e1d5d69f38f51", null ],
     [ "VMCALL_VM_EXIT_HALT_SYSTEM_AS_A_RESULT_OF_TRIGGERING_EVENT", "_vmcall_8h.html#a716d6ce9649c65c6b95b22e780698ba5", null ],
     [ "VMCALL_VMXOFF", "_vmcall_8h.html#a589357d083b5353f74c07972e1448924", null ],
-    [ "VmcallTest", "_vmcall_8h.html#a51fa3a3d4245b314c52ce45377209bb2", null ],
-    [ "VmxHandleVmcallVmExit", "_vmcall_8h.html#a443d310a60c1653b7a07c75c36f3fa2a", null ],
-    [ "VmxVmcallHandler", "_vmcall_8h.html#a1e4f17f468b61d1cfcfdd4aae7e6ce79", null ]
+    [ "VmcallTest", "_vmcall_8h.html#a33cfb4436bd44e0edfc347cd877103df", null ],
+    [ "VmxHandleVmcallVmExit", "_vmcall_8h.html#a40fb3adc0a6010b12ede355c46995517", null ],
+    [ "VmxVmcallHandler", "_vmcall_8h.html#a7291f3b227003052628c293b9a0c13e6", null ]
 ];

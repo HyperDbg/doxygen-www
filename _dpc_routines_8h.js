@@ -6,6 +6,7 @@ var _dpc_routines_8h =
     [ "DpcRoutineDisableBreakpointOnExceptionBitmapOnAllCores", "_dpc_routines_8h.html#a9aefff8f1ad584a0e17871543bd23807", null ],
     [ "DpcRoutineDisableDbAndBpExitingOnAllCores", "_dpc_routines_8h.html#afb26889e884945cdbe2936631a93d1c2", null ],
     [ "DpcRoutineDisableEferSyscallEvents", "_dpc_routines_8h.html#a5a988956ce7f4b1875d20ce1c5ef5381", null ],
+    [ "DpcRoutineDisableMov2DrExitingForClearingDrEventsAllCores", "_dpc_routines_8h.html#a8fe1ed59c9469399e1c03e26f94ccbf2", null ],
     [ "DpcRoutineDisableMovDebigRegisterExitingAllCores", "_dpc_routines_8h.html#a7412f5485e61c4c86eeac418c6633590", null ],
     [ "DpcRoutineDisableMovToCr3Exiting", "_dpc_routines_8h.html#ab3f7c55b23a221186898ddef59e6f55a", null ],
     [ "DpcRoutineDisableNmiVmexitOnAllCores", "_dpc_routines_8h.html#a3d7cf6224dd66d1251ab54a5b400ca16", null ],
@@ -46,6 +47,7 @@ var _dpc_routines_8h =
     [ "DpcRoutineSetEnableExternalInterruptExitingOnAllCores", "_dpc_routines_8h.html#a2df1c72bc386e58a829d5f4015da8256", null ],
     [ "DpcRoutineSetExceptionBitmapOnAllCores", "_dpc_routines_8h.html#aeb904f9365ec27d97bc1960b589740a4", null ],
     [ "DpcRoutineTerminateGuest", "_dpc_routines_8h.html#a05844bdebfe78c424be8f44ecd65b48e", null ],
+    [ "DpcRoutineUnsetExceptionBitmapOnAllCores", "_dpc_routines_8h.html#ae492daa6ebc29959741b46333afbddb1", null ],
     [ "DpcRoutineVmExitAndHaltSystemAllCores", "_dpc_routines_8h.html#a9dfa6e7472910802d84b97ac5fa0d7aa", null ],
     [ "DpcRoutineWriteMsrToAllCores", "_dpc_routines_8h.html#ac9051976c97907c7b77703fd5b8d5a79", null ]
 ];

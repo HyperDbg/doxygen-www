@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('listen_8cpp.html',''); initResizable()
 
 <p>.listen command  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;..\hprdbgctrl\pch.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;pch.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -122,7 +122,7 @@ Variables</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>.listen command </p>
-<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'ray'+'an'+'fam'+'.c'+'om'; return false;">sina@<span style="display: none;">.nosp@m.</span>raya<span style="display: none;">.nosp@m.</span>nfam.<span style="display: none;">.nosp@m.</span>com</a>)</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+'er'+'dbg'+'.o'+'rg'; return false;">sina@<span style="display: none;">.nosp@m.</span>hype<span style="display: none;">.nosp@m.</span>rdbg.<span style="display: none;">.nosp@m.</span>org</a>)</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2020-08-21</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>This project is released under the GNU Public License v3. </dd></dl>
@@ -162,84 +162,84 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">string</span> port;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">if</span> (SplittedCommand.size() &gt;= 3)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">// Means that user entered invalid parameters</span></div>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">string</span> port;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (SplittedCommand.size() &gt;= 3)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;incorrect use of &#39;.listen&#39;\n\n&quot;</span>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="listen_8cpp.html#ab06cfce826ba891d5762a94bdc89f3c5">CommandListenHelp</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="listen_8cpp.html#accb0c27ac4bea6a87984fb828d896748">g_IsConnectedToHyperDbgLocally</a> || <a class="code" href="listen_8cpp.html#a08efbe1abcb717379a8ec5139e187983">g_IsConnectedToRemoteDebuggee</a> ||</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="listen_8cpp.html#aa6712815a46bbfaf04ac69c5f336d371">g_IsConnectedToRemoteDebugger</a>)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;you&#39;re connected to a debugger, please use &#39;.disconnect&#39; &quot;</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                     <span class="stringliteral">&quot;command\n&quot;</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// Check to avoid using this command in debugger-mode</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">// Means that user entered invalid parameters</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;incorrect use of &#39;.listen&#39;\n\n&quot;</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="listen_8cpp.html#ab06cfce826ba891d5762a94bdc89f3c5">CommandListenHelp</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="listen_8cpp.html#accb0c27ac4bea6a87984fb828d896748">g_IsConnectedToHyperDbgLocally</a> || <a class="code" href="listen_8cpp.html#a08efbe1abcb717379a8ec5139e187983">g_IsConnectedToRemoteDebuggee</a> ||</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="listen_8cpp.html#aa6712815a46bbfaf04ac69c5f336d371">g_IsConnectedToRemoteDebugger</a>)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;you&#39;re connected to a debugger, please use &#39;.disconnect&#39; &quot;</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                     <span class="stringliteral">&quot;command\n&quot;</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="listen_8cpp.html#abefaa871a249a20e1e19ce893e400774">g_IsSerialConnectedToRemoteDebuggee</a> || <a class="code" href="listen_8cpp.html#a07d4f30d5bc446a5c0dacc0b77b902db">g_IsSerialConnectedToRemoteDebugger</a>)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;you&#39;re connected to a an instance of HyperDbg, please use &quot;</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                     <span class="stringliteral">&quot;&#39;.debug close&#39; command\n&quot;</span>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> (SplittedCommand.size() == 1)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="comment">// listen on default port</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// Check to avoid using this command in debugger-mode</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="listen_8cpp.html#abefaa871a249a20e1e19ce893e400774">g_IsSerialConnectedToRemoteDebuggee</a> || <a class="code" href="listen_8cpp.html#a07d4f30d5bc446a5c0dacc0b77b902db">g_IsSerialConnectedToRemoteDebugger</a>)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;you&#39;re connected to a an instance of HyperDbg, please use &quot;</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                     <span class="stringliteral">&quot;&#39;.debug close&#39; command\n&quot;</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span> (SplittedCommand.size() == 1)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;listening on %s ...\n&quot;</span>, <a class="code" href="_definition_8h.html#a16b710f592bf8f7900666392adc444dc">DEFAULT_PORT</a>);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="remote-connection_8cpp.html#a0442ad058ac172fc489998fe7c97db9a">RemoteConnectionListen</a>(<a class="code" href="_definition_8h.html#a16b710f592bf8f7900666392adc444dc">DEFAULT_PORT</a>);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    }</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (SplittedCommand.size() == 2)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        port = SplittedCommand.at(1);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="comment">// means that probably wants to listen</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="comment">// on a specific port, let&#39;s see if the</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="comment">// port is valid or not</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="common_8cpp.html#a2bb3342908de9c4d306122193ae52645">IsNumber</a>(port) || stoi(port) &gt; 65535 || stoi(port) &lt; 0)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;incorrect port\n&quot;</span>);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="comment">// listen on the port</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="comment">// listen on default port</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;listening on %s ...\n&quot;</span>, <a class="code" href="_definition_8h.html#a16b710f592bf8f7900666392adc444dc">DEFAULT_PORT</a>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="remote-connection_8cpp.html#a0442ad058ac172fc489998fe7c97db9a">RemoteConnectionListen</a>(<a class="code" href="_definition_8h.html#a16b710f592bf8f7900666392adc444dc">DEFAULT_PORT</a>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (SplittedCommand.size() == 2)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        port = SplittedCommand.at(1);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="comment">// means that probably wants to listen</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">// on a specific port, let&#39;s see if the</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="comment">// port is valid or not</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="common_8cpp.html#a2bb3342908de9c4d306122193ae52645">IsNumber</a>(port) || stoi(port) &gt; 65535 || stoi(port) &lt; 0)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;incorrect port\n&quot;</span>);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;listening on %s ...\n&quot;</span>, port.c_str());</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <a class="code" href="remote-connection_8cpp.html#a0442ad058ac172fc489998fe7c97db9a">RemoteConnectionListen</a>(port.c_str());</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;incorrect use of &#39;.listen&#39;\n\n&quot;</span>);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <a class="code" href="listen_8cpp.html#ab06cfce826ba891d5762a94bdc89f3c5">CommandListenHelp</a>();</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="ttc" id="a_definition_8h_html_a16b710f592bf8f7900666392adc444dc"><div class="ttname"><a href="_definition_8h.html#a16b710f592bf8f7900666392adc444dc">DEFAULT_PORT</a></div><div class="ttdeci">#define DEFAULT_PORT</div><div class="ttdoc">default port of HyperDbg for listening by debuggee (server, guest)</div><div class="ttdef"><b>Definition:</b> Definition.h:108</div></div>
-<div class="ttc" id="acommon_8cpp_html_a2bb3342908de9c4d306122193ae52645"><div class="ttname"><a href="common_8cpp.html#a2bb3342908de9c4d306122193ae52645">IsNumber</a></div><div class="ttdeci">BOOLEAN IsNumber(const string &amp;str)</div><div class="ttdoc">check if given string is a numeric string or not</div><div class="ttdef"><b>Definition:</b> common.cpp:139</div></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="comment">// listen on the port</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;listening on %s ...\n&quot;</span>, port.c_str());</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <a class="code" href="remote-connection_8cpp.html#a0442ad058ac172fc489998fe7c97db9a">RemoteConnectionListen</a>(port.c_str());</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;incorrect use of &#39;.listen&#39;\n\n&quot;</span>);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="listen_8cpp.html#ab06cfce826ba891d5762a94bdc89f3c5">CommandListenHelp</a>();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="ttc" id="a_definition_8h_html_a16b710f592bf8f7900666392adc444dc"><div class="ttname"><a href="_definition_8h.html#a16b710f592bf8f7900666392adc444dc">DEFAULT_PORT</a></div><div class="ttdeci">#define DEFAULT_PORT</div><div class="ttdoc">default port of HyperDbg for listening by debuggee (server, guest)</div><div class="ttdef"><b>Definition:</b> Definition.h:311</div></div>
+<div class="ttc" id="acommon_8cpp_html_a2bb3342908de9c4d306122193ae52645"><div class="ttname"><a href="common_8cpp.html#a2bb3342908de9c4d306122193ae52645">IsNumber</a></div><div class="ttdeci">BOOLEAN IsNumber(const string &amp;str)</div><div class="ttdoc">check if given string is a numeric string or not</div><div class="ttdef"><b>Definition:</b> common.cpp:145</div></div>
 <div class="ttc" id="ahprdbgctrl_8cpp_html_a21c3c06b34d716c4680695c2b28127da"><div class="ttname"><a href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a></div><div class="ttdeci">VOID ShowMessages(const char *Fmt,...)</div><div class="ttdoc">Show messages.</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:51</div></div>
-<div class="ttc" id="alisten_8cpp_html_a07d4f30d5bc446a5c0dacc0b77b902db"><div class="ttname"><a href="listen_8cpp.html#a07d4f30d5bc446a5c0dacc0b77b902db">g_IsSerialConnectedToRemoteDebugger</a></div><div class="ttdeci">BOOLEAN g_IsSerialConnectedToRemoteDebugger</div><div class="ttdoc">Shows if the debugger was connected to remote debugger (A remote host)</div><div class="ttdef"><b>Definition:</b> globals.h:178</div></div>
-<div class="ttc" id="alisten_8cpp_html_a08efbe1abcb717379a8ec5139e187983"><div class="ttname"><a href="listen_8cpp.html#a08efbe1abcb717379a8ec5139e187983">g_IsConnectedToRemoteDebuggee</a></div><div class="ttdeci">BOOLEAN g_IsConnectedToRemoteDebuggee</div><div class="ttdoc">Shows whether the current debugger is the host and connected to a remote debuggee (guest)</div><div class="ttdef"><b>Definition:</b> globals.h:39</div></div>
-<div class="ttc" id="alisten_8cpp_html_aa6712815a46bbfaf04ac69c5f336d371"><div class="ttname"><a href="listen_8cpp.html#aa6712815a46bbfaf04ac69c5f336d371">g_IsConnectedToRemoteDebugger</a></div><div class="ttdeci">BOOLEAN g_IsConnectedToRemoteDebugger</div><div class="ttdoc">Shows whether the current system is a guest (debuggee) and a remote debugger is connected to this sys...</div><div class="ttdef"><b>Definition:</b> globals.h:46</div></div>
+<div class="ttc" id="alisten_8cpp_html_a07d4f30d5bc446a5c0dacc0b77b902db"><div class="ttname"><a href="listen_8cpp.html#a07d4f30d5bc446a5c0dacc0b77b902db">g_IsSerialConnectedToRemoteDebugger</a></div><div class="ttdeci">BOOLEAN g_IsSerialConnectedToRemoteDebugger</div><div class="ttdoc">Shows if the debugger was connected to remote debugger (A remote host)</div><div class="ttdef"><b>Definition:</b> globals.h:238</div></div>
+<div class="ttc" id="alisten_8cpp_html_a08efbe1abcb717379a8ec5139e187983"><div class="ttname"><a href="listen_8cpp.html#a08efbe1abcb717379a8ec5139e187983">g_IsConnectedToRemoteDebuggee</a></div><div class="ttdeci">BOOLEAN g_IsConnectedToRemoteDebuggee</div><div class="ttdoc">Shows whether the current debugger is the host and connected to a remote debuggee (guest)</div><div class="ttdef"><b>Definition:</b> globals.h:74</div></div>
+<div class="ttc" id="alisten_8cpp_html_aa6712815a46bbfaf04ac69c5f336d371"><div class="ttname"><a href="listen_8cpp.html#aa6712815a46bbfaf04ac69c5f336d371">g_IsConnectedToRemoteDebugger</a></div><div class="ttdeci">BOOLEAN g_IsConnectedToRemoteDebugger</div><div class="ttdoc">Shows whether the current system is a guest (debuggee) and a remote debugger is connected to this sys...</div><div class="ttdef"><b>Definition:</b> globals.h:81</div></div>
 <div class="ttc" id="alisten_8cpp_html_ab06cfce826ba891d5762a94bdc89f3c5"><div class="ttname"><a href="listen_8cpp.html#ab06cfce826ba891d5762a94bdc89f3c5">CommandListenHelp</a></div><div class="ttdeci">VOID CommandListenHelp()</div><div class="ttdoc">help of listen command</div><div class="ttdef"><b>Definition:</b> listen.cpp:29</div></div>
-<div class="ttc" id="alisten_8cpp_html_abefaa871a249a20e1e19ce893e400774"><div class="ttname"><a href="listen_8cpp.html#abefaa871a249a20e1e19ce893e400774">g_IsSerialConnectedToRemoteDebuggee</a></div><div class="ttdeci">BOOLEAN g_IsSerialConnectedToRemoteDebuggee</div><div class="ttdoc">Shows if the debugger was connected to remote debuggee over (A remote guest)</div><div class="ttdef"><b>Definition:</b> globals.h:171</div></div>
-<div class="ttc" id="alisten_8cpp_html_accb0c27ac4bea6a87984fb828d896748"><div class="ttname"><a href="listen_8cpp.html#accb0c27ac4bea6a87984fb828d896748">g_IsConnectedToHyperDbgLocally</a></div><div class="ttdeci">BOOLEAN g_IsConnectedToHyperDbgLocally</div><div class="ttdoc">Shows whether the user is allowed to use 'load' command to load modules locally in VMI (virtual machi...</div><div class="ttdef"><b>Definition:</b> globals.h:32</div></div>
+<div class="ttc" id="alisten_8cpp_html_abefaa871a249a20e1e19ce893e400774"><div class="ttname"><a href="listen_8cpp.html#abefaa871a249a20e1e19ce893e400774">g_IsSerialConnectedToRemoteDebuggee</a></div><div class="ttdeci">BOOLEAN g_IsSerialConnectedToRemoteDebuggee</div><div class="ttdoc">Shows if the debugger was connected to remote debuggee over (A remote guest)</div><div class="ttdef"><b>Definition:</b> globals.h:231</div></div>
+<div class="ttc" id="alisten_8cpp_html_accb0c27ac4bea6a87984fb828d896748"><div class="ttname"><a href="listen_8cpp.html#accb0c27ac4bea6a87984fb828d896748">g_IsConnectedToHyperDbgLocally</a></div><div class="ttdeci">BOOLEAN g_IsConnectedToHyperDbgLocally</div><div class="ttdoc">Shows whether the user is allowed to use 'load' command to load modules locally in VMI (virtual machi...</div><div class="ttdef"><b>Definition:</b> globals.h:67</div></div>
 <div class="ttc" id="aremote-connection_8cpp_html_a0442ad058ac172fc489998fe7c97db9a"><div class="ttname"><a href="remote-connection_8cpp.html#a0442ad058ac172fc489998fe7c97db9a">RemoteConnectionListen</a></div><div class="ttdeci">VOID RemoteConnectionListen(PCSTR Port)</div><div class="ttdoc">Listen of a port and wait for a client connection.</div><div class="ttdef"><b>Definition:</b> remote-connection.cpp:40</div></div>
 </div><!-- fragment -->
 </div>
@@ -262,17 +262,19 @@ Variables</h2></td></tr>
 <p>help of listen command </p>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
 <div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;.listen : listen for a client to connect to HyperDbg (works as &quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;.listen : listens for a client to connect to HyperDbg (works as &quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                 <span class="stringliteral">&quot;a guest server).\n\n&quot;</span>);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;note : \tif you don&#39;t specify port then HyperDbg uses the &quot;</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                 <span class="stringliteral">&quot;default port (%s)\n&quot;</span>,</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                 <a class="code" href="_definition_8h.html#a16b710f592bf8f7900666392adc444dc">DEFAULT_PORT</a>);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;syntax : \t.listen [port]\n&quot;</span>);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\t\te.g : .listen\n&quot;</span>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\t\te.g : .listen 50000\n&quot;</span>);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;syntax : \t.listen [Port (decimal)]\n&quot;</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\t\te.g : .listen\n&quot;</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\t\te.g : .listen 50000\n&quot;</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>

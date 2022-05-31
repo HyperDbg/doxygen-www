@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('_broadcast_8c.html',''); initResizable
 
 <p>Broadcast debugger function to all logical cores.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;..\hprdbghv\pch.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;pch.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -121,7 +121,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Broadcast debugger function to all logical cores. </p>
-<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'ray'+'an'+'fam'+'.c'+'om'; return false;">sina@<span style="display: none;">.nosp@m.</span>raya<span style="display: none;">.nosp@m.</span>nfam.<span style="display: none;">.nosp@m.</span>com</a>)</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+'er'+'dbg'+'.o'+'rg'; return false;">sina@<span style="display: none;">.nosp@m.</span>hype<span style="display: none;">.nosp@m.</span>rdbg.<span style="display: none;">.nosp@m.</span>org</a>)</dd></dl>
 <p>This file uses DPC to run its functions on all logical cores </p><dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2020-04-10</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>This project is released under the GNU Public License v3. </dd></dl>
@@ -147,10 +147,10 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    KeGenericCallDpc(<a class="code" href="_dpc_routines_8c.html#a9aefff8f1ad584a0e17871543bd23807">DpcRoutineDisableBreakpointOnExceptionBitmapOnAllCores</a>, <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    KeGenericCallDpc(<a class="code" href="_dpc_routines_8c.html#a9aefff8f1ad584a0e17871543bd23807">DpcRoutineDisableBreakpointOnExceptionBitmapOnAllCores</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
-<div class="ttc" id="a_dpc_routines_8c_html_a9aefff8f1ad584a0e17871543bd23807"><div class="ttname"><a href="_dpc_routines_8c.html#a9aefff8f1ad584a0e17871543bd23807">DpcRoutineDisableBreakpointOnExceptionBitmapOnAllCores</a></div><div class="ttdeci">VOID DpcRoutineDisableBreakpointOnExceptionBitmapOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disable breakpoint exiting on exception bitmaps on all cores.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:1119</div></div>
-<div class="ttc" id="a_gdb_stub_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> GdbStub.h:33</div></div>
+<div class="ttc" id="a_dpc_routines_8c_html_a9aefff8f1ad584a0e17871543bd23807"><div class="ttname"><a href="_dpc_routines_8c.html#a9aefff8f1ad584a0e17871543bd23807">DpcRoutineDisableBreakpointOnExceptionBitmapOnAllCores</a></div><div class="ttdeci">VOID DpcRoutineDisableBreakpointOnExceptionBitmapOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disable breakpoint exiting on exception bitmaps on all cores.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:1301</div></div>
+<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -175,9 +175,9 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    KeGenericCallDpc(<a class="code" href="_dpc_routines_8c.html#afb26889e884945cdbe2936631a93d1c2">DpcRoutineDisableDbAndBpExitingOnAllCores</a>, <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    KeGenericCallDpc(<a class="code" href="_dpc_routines_8c.html#afb26889e884945cdbe2936631a93d1c2">DpcRoutineDisableDbAndBpExitingOnAllCores</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="ttc" id="a_dpc_routines_8c_html_afb26889e884945cdbe2936631a93d1c2"><div class="ttname"><a href="_dpc_routines_8c.html#afb26889e884945cdbe2936631a93d1c2">DpcRoutineDisableDbAndBpExitingOnAllCores</a></div><div class="ttdeci">VOID DpcRoutineDisableDbAndBpExitingOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disable vm-exit on #DBs and #BPs on all cores.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:1264</div></div>
+<div class="ttc" id="a_dpc_routines_8c_html_afb26889e884945cdbe2936631a93d1c2"><div class="ttname"><a href="_dpc_routines_8c.html#afb26889e884945cdbe2936631a93d1c2">DpcRoutineDisableDbAndBpExitingOnAllCores</a></div><div class="ttdeci">VOID DpcRoutineDisableDbAndBpExitingOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disable vm-exit on #DBs and #BPs on all cores.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:1461</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -202,9 +202,9 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    KeGenericCallDpc(<a class="code" href="_dpc_routines_8c.html#a3d7cf6224dd66d1251ab54a5b400ca16">DpcRoutineDisableNmiVmexitOnAllCores</a>, <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    KeGenericCallDpc(<a class="code" href="_dpc_routines_8c.html#a3d7cf6224dd66d1251ab54a5b400ca16">DpcRoutineDisableNmiVmexitOnAllCores</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
-<div class="ttc" id="a_dpc_routines_8c_html_a3d7cf6224dd66d1251ab54a5b400ca16"><div class="ttname"><a href="_dpc_routines_8c.html#a3d7cf6224dd66d1251ab54a5b400ca16">DpcRoutineDisableNmiVmexitOnAllCores</a></div><div class="ttdeci">VOID DpcRoutineDisableNmiVmexitOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disable vm-exit on NMIs on all cores.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:1175</div></div>
+<div class="ttc" id="a_dpc_routines_8c_html_a3d7cf6224dd66d1251ab54a5b400ca16"><div class="ttname"><a href="_dpc_routines_8c.html#a3d7cf6224dd66d1251ab54a5b400ca16">DpcRoutineDisableNmiVmexitOnAllCores</a></div><div class="ttdeci">VOID DpcRoutineDisableNmiVmexitOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Disable vm-exit on NMIs on all cores.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:1363</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -229,9 +229,9 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    KeGenericCallDpc(<a class="code" href="_dpc_routines_8c.html#a50b7c50ff9cfd38043d66a9040ab2672">DpcRoutineEnableBreakpointOnExceptionBitmapOnAllCores</a>, <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    KeGenericCallDpc(<a class="code" href="_dpc_routines_8c.html#a50b7c50ff9cfd38043d66a9040ab2672">DpcRoutineEnableBreakpointOnExceptionBitmapOnAllCores</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="ttc" id="a_dpc_routines_8c_html_a50b7c50ff9cfd38043d66a9040ab2672"><div class="ttname"><a href="_dpc_routines_8c.html#a50b7c50ff9cfd38043d66a9040ab2672">DpcRoutineEnableBreakpointOnExceptionBitmapOnAllCores</a></div><div class="ttdeci">VOID DpcRoutineEnableBreakpointOnExceptionBitmapOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enable breakpoint exiting on exception bitmaps on all cores.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:1091</div></div>
+<div class="ttc" id="a_dpc_routines_8c_html_a50b7c50ff9cfd38043d66a9040ab2672"><div class="ttname"><a href="_dpc_routines_8c.html#a50b7c50ff9cfd38043d66a9040ab2672">DpcRoutineEnableBreakpointOnExceptionBitmapOnAllCores</a></div><div class="ttdeci">VOID DpcRoutineEnableBreakpointOnExceptionBitmapOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enable breakpoint exiting on exception bitmaps on all cores.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:1270</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -256,9 +256,9 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    KeGenericCallDpc(<a class="code" href="_dpc_routines_8c.html#a4fe24f8326d72d5a8017e6d2f7890fe7">DpcRoutineEnableDbAndBpExitingOnAllCores</a>, <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    KeGenericCallDpc(<a class="code" href="_dpc_routines_8c.html#a4fe24f8326d72d5a8017e6d2f7890fe7">DpcRoutineEnableDbAndBpExitingOnAllCores</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="ttc" id="a_dpc_routines_8c_html_a4fe24f8326d72d5a8017e6d2f7890fe7"><div class="ttname"><a href="_dpc_routines_8c.html#a4fe24f8326d72d5a8017e6d2f7890fe7">DpcRoutineEnableDbAndBpExitingOnAllCores</a></div><div class="ttdeci">VOID DpcRoutineEnableDbAndBpExitingOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enable vm-exit on #DBs and #BPs on all cores.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:1231</div></div>
+<div class="ttc" id="a_dpc_routines_8c_html_a4fe24f8326d72d5a8017e6d2f7890fe7"><div class="ttname"><a href="_dpc_routines_8c.html#a4fe24f8326d72d5a8017e6d2f7890fe7">DpcRoutineEnableDbAndBpExitingOnAllCores</a></div><div class="ttdeci">VOID DpcRoutineEnableDbAndBpExitingOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enable vm-exit on #DBs and #BPs on all cores.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:1425</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -283,9 +283,9 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    KeGenericCallDpc(<a class="code" href="_dpc_routines_8c.html#a6faa24f7256e68837a4a3ceccfdbf362">DpcRoutineEnableNmiVmexitOnAllCores</a>, <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    KeGenericCallDpc(<a class="code" href="_dpc_routines_8c.html#a6faa24f7256e68837a4a3ceccfdbf362">DpcRoutineEnableNmiVmexitOnAllCores</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
-<div class="ttc" id="a_dpc_routines_8c_html_a6faa24f7256e68837a4a3ceccfdbf362"><div class="ttname"><a href="_dpc_routines_8c.html#a6faa24f7256e68837a4a3ceccfdbf362">DpcRoutineEnableNmiVmexitOnAllCores</a></div><div class="ttdeci">VOID DpcRoutineEnableNmiVmexitOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enable vm-exit on NMIs on all cores.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:1147</div></div>
+<div class="ttc" id="a_dpc_routines_8c_html_a6faa24f7256e68837a4a3ceccfdbf362"><div class="ttname"><a href="_dpc_routines_8c.html#a6faa24f7256e68837a4a3ceccfdbf362">DpcRoutineEnableNmiVmexitOnAllCores</a></div><div class="ttdeci">VOID DpcRoutineEnableNmiVmexitOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Enable vm-exit on NMIs on all cores.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:1332</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -310,12 +310,11 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    KeGenericCallDpc(<a class="code" href="_dpc_routines_8c.html#a22a971a2f0a497b71fbe50ce1697e026">DpcRoutineInvalidateEptOnAllCores</a>, <a class="code" href="_global_variables_8h.html#a302f00c62e7ad092a9f44a3aa7452d99">g_EptState</a>-&gt;<a class="code" href="struct___e_p_t___s_t_a_t_e.html#a9cf7276cbad1d5a8a71527f474403794">EptPointer</a>.<a class="code" href="union___e_p_t_p.html#a0f1b0f5a1d969a22a820a7c84e018ada">Flags</a>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    KeGenericCallDpc(<a class="code" href="_dpc_routines_8c.html#a22a971a2f0a497b71fbe50ce1697e026">DpcRoutineInvalidateEptOnAllCores</a>, <a class="code" href="_global_variables_8h.html#a302f00c62e7ad092a9f44a3aa7452d99">g_EptState</a>-&gt;<a class="code" href="struct___e_p_t___s_t_a_t_e.html#a802f9cb6976aad8b6503cebfa3777a33">EptPointer</a>.Flags);</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
-<div class="ttc" id="a_dpc_routines_8c_html_a22a971a2f0a497b71fbe50ce1697e026"><div class="ttname"><a href="_dpc_routines_8c.html#a22a971a2f0a497b71fbe50ce1697e026">DpcRoutineInvalidateEptOnAllCores</a></div><div class="ttdeci">VOID DpcRoutineInvalidateEptOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">The broadcast function which invalidate EPT using Vmcall.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:1353</div></div>
-<div class="ttc" id="a_global_variables_8h_html_a302f00c62e7ad092a9f44a3aa7452d99"><div class="ttname"><a href="_global_variables_8h.html#a302f00c62e7ad092a9f44a3aa7452d99">g_EptState</a></div><div class="ttdeci">EPT_STATE * g_EptState</div><div class="ttdoc">Save the state and variables related to EPT.</div><div class="ttdef"><b>Definition:</b> GlobalVariables.h:31</div></div>
-<div class="ttc" id="astruct___e_p_t___s_t_a_t_e_html_a9cf7276cbad1d5a8a71527f474403794"><div class="ttname"><a href="struct___e_p_t___s_t_a_t_e.html#a9cf7276cbad1d5a8a71527f474403794">_EPT_STATE::EptPointer</a></div><div class="ttdeci">EPTP EptPointer</div><div class="ttdef"><b>Definition:</b> Ept.h:995</div></div>
-<div class="ttc" id="aunion___e_p_t_p_html_a0f1b0f5a1d969a22a820a7c84e018ada"><div class="ttname"><a href="union___e_p_t_p.html#a0f1b0f5a1d969a22a820a7c84e018ada">_EPTP::Flags</a></div><div class="ttdeci">UINT64 Flags</div><div class="ttdef"><b>Definition:</b> Ept.h:825</div></div>
+<div class="ttc" id="a_dpc_routines_8c_html_a22a971a2f0a497b71fbe50ce1697e026"><div class="ttname"><a href="_dpc_routines_8c.html#a22a971a2f0a497b71fbe50ce1697e026">DpcRoutineInvalidateEptOnAllCores</a></div><div class="ttdeci">VOID DpcRoutineInvalidateEptOnAllCores(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">The broadcast function which invalidate EPT using Vmcall.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:1559</div></div>
+<div class="ttc" id="a_global_variables_8h_html_a302f00c62e7ad092a9f44a3aa7452d99"><div class="ttname"><a href="_global_variables_8h.html#a302f00c62e7ad092a9f44a3aa7452d99">g_EptState</a></div><div class="ttdeci">EPT_STATE * g_EptState</div><div class="ttdoc">Save the state and variables related to EPT.</div><div class="ttdef"><b>Definition:</b> GlobalVariables.h:37</div></div>
+<div class="ttc" id="astruct___e_p_t___s_t_a_t_e_html_a802f9cb6976aad8b6503cebfa3777a33"><div class="ttname"><a href="struct___e_p_t___s_t_a_t_e.html#a802f9cb6976aad8b6503cebfa3777a33">_EPT_STATE::EptPointer</a></div><div class="ttdeci">EPT_POINTER EptPointer</div><div class="ttdef"><b>Definition:</b> Ept.h:171</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -340,7 +339,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// Broadcast to all cores</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    KeGenericCallDpc(<a class="code" href="_dpc_routines_8c.html#a216ccab8e2609b8d21afaeee16a508ab">DpcRoutinePerformVirtualization</a>, <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    KeGenericCallDpc(<a class="code" href="_dpc_routines_8c.html#a216ccab8e2609b8d21afaeee16a508ab">DpcRoutinePerformVirtualization</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 <div class="ttc" id="a_dpc_routines_8c_html_a216ccab8e2609b8d21afaeee16a508ab"><div class="ttname"><a href="_dpc_routines_8c.html#a216ccab8e2609b8d21afaeee16a508ab">DpcRoutinePerformVirtualization</a></div><div class="ttdeci">BOOLEAN DpcRoutinePerformVirtualization(KDPC *Dpc, PVOID DeferredContext, PVOID SystemArgument1, PVOID SystemArgument2)</div><div class="ttdoc">Broadcast VmxPerformVirtualizationOnSpecificCore.</div><div class="ttdef"><b>Definition:</b> DpcRoutines.c:128</div></div>
 </div><!-- fragment -->

@@ -90,111 +90,122 @@ $(document).ready(function(){initNavTree('_vmcall_8h_source.html',''); initResiz
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//                  Constants                   //</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a7b45a0cbafe7472996868357b52f1265">   22</a></span>&#160;<span class="preprocessor">#define VMCALL_TEST 0x1</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a7b45a0cbafe7472996868357b52f1265">   22</a></span>&#160;<span class="preprocessor">#define VMCALL_TEST 0x00000001</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a589357d083b5353f74c07972e1448924">   28</a></span>&#160;<span class="preprocessor">#define VMCALL_VMXOFF 0x2</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a589357d083b5353f74c07972e1448924">   28</a></span>&#160;<span class="preprocessor">#define VMCALL_VMXOFF 0x00000002</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a2f893b27a9a2cedec9f4c499011dce0a">   34</a></span>&#160;<span class="preprocessor">#define VMCALL_CHANGE_PAGE_ATTRIB 0x3</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a2f893b27a9a2cedec9f4c499011dce0a">   34</a></span>&#160;<span class="preprocessor">#define VMCALL_CHANGE_PAGE_ATTRIB 0x00000003</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a19cc3e737fde0dbb0b6bcaa07f323550">   40</a></span>&#160;<span class="preprocessor">#define VMCALL_INVEPT_ALL_CONTEXTS 0x4</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a19cc3e737fde0dbb0b6bcaa07f323550">   40</a></span>&#160;<span class="preprocessor">#define VMCALL_INVEPT_ALL_CONTEXTS 0x00000004</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a45441c9962f57151b6e7ac243bdb396f">   46</a></span>&#160;<span class="preprocessor">#define VMCALL_INVEPT_SINGLE_CONTEXT 0x5</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a45441c9962f57151b6e7ac243bdb396f">   46</a></span>&#160;<span class="preprocessor">#define VMCALL_INVEPT_SINGLE_CONTEXT 0x00000005</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a97a25939f7d07934b25028b877965889">   52</a></span>&#160;<span class="preprocessor">#define VMCALL_UNHOOK_ALL_PAGES 0x6</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a97a25939f7d07934b25028b877965889">   52</a></span>&#160;<span class="preprocessor">#define VMCALL_UNHOOK_ALL_PAGES 0x00000006</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#ae88058c24e03982fb3b9b268eceb9c39">   58</a></span>&#160;<span class="preprocessor">#define VMCALL_UNHOOK_SINGLE_PAGE 0x7</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#ae88058c24e03982fb3b9b268eceb9c39">   58</a></span>&#160;<span class="preprocessor">#define VMCALL_UNHOOK_SINGLE_PAGE 0x00000007</span></div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#abbb3d99ced0391c88b695b06603b31dd">   64</a></span>&#160;<span class="preprocessor">#define VMCALL_ENABLE_SYSCALL_HOOK_EFER 0x8</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#abbb3d99ced0391c88b695b06603b31dd">   64</a></span>&#160;<span class="preprocessor">#define VMCALL_ENABLE_SYSCALL_HOOK_EFER 0x00000008</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#acb8a7542446710304e8de981abb62528">   70</a></span>&#160;<span class="preprocessor">#define VMCALL_DISABLE_SYSCALL_HOOK_EFER 0x9</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#acb8a7542446710304e8de981abb62528">   70</a></span>&#160;<span class="preprocessor">#define VMCALL_DISABLE_SYSCALL_HOOK_EFER 0x00000009</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#affdc952605558fc2311612448745464f">   76</a></span>&#160;<span class="preprocessor">#define VMCALL_CHANGE_MSR_BITMAP_READ 0xa</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#affdc952605558fc2311612448745464f">   76</a></span>&#160;<span class="preprocessor">#define VMCALL_CHANGE_MSR_BITMAP_READ 0x0000000A</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a5d3db56f2450003c021cbeb98f11ae89">   82</a></span>&#160;<span class="preprocessor">#define VMCALL_CHANGE_MSR_BITMAP_WRITE 0xb</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a5d3db56f2450003c021cbeb98f11ae89">   82</a></span>&#160;<span class="preprocessor">#define VMCALL_CHANGE_MSR_BITMAP_WRITE 0x0000000B</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a84bc6a52b61013c70607768974cf38e3">   88</a></span>&#160;<span class="preprocessor">#define VMCALL_SET_RDTSC_EXITING 0xc</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a84bc6a52b61013c70607768974cf38e3">   88</a></span>&#160;<span class="preprocessor">#define VMCALL_SET_RDTSC_EXITING 0x0000000C</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a1e7f57f4bbbbb320e00e7d1533e15228">   94</a></span>&#160;<span class="preprocessor">#define VMCALL_SET_RDPMC_EXITING 0xd</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a1e7f57f4bbbbb320e00e7d1533e15228">   94</a></span>&#160;<span class="preprocessor">#define VMCALL_SET_RDPMC_EXITING 0x0000000D</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a95a7f87dabddcb74056419965555608d">  100</a></span>&#160;<span class="preprocessor">#define VMCALL_SET_EXCEPTION_BITMAP 0xe</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a95a7f87dabddcb74056419965555608d">  100</a></span>&#160;<span class="preprocessor">#define VMCALL_SET_EXCEPTION_BITMAP 0x0000000E</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#ac61778ddf78383144987deb0e48cddf1">  106</a></span>&#160;<span class="preprocessor">#define VMCALL_ENABLE_MOV_TO_DEBUG_REGS_EXITING 0xf</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#ac61778ddf78383144987deb0e48cddf1">  106</a></span>&#160;<span class="preprocessor">#define VMCALL_ENABLE_MOV_TO_DEBUG_REGS_EXITING 0x0000000F</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#acaa5481bef551455b84d24e6888a162a">  112</a></span>&#160;<span class="preprocessor">#define VMCALL_ENABLE_EXTERNAL_INTERRUPT_EXITING 0x10</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#acaa5481bef551455b84d24e6888a162a">  112</a></span>&#160;<span class="preprocessor">#define VMCALL_ENABLE_EXTERNAL_INTERRUPT_EXITING 0x00000010</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a8779c1a5dc3675bd60df12b85e9fc5a3">  118</a></span>&#160;<span class="preprocessor">#define VMCALL_CHANGE_IO_BITMAP 0x11</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a8779c1a5dc3675bd60df12b85e9fc5a3">  118</a></span>&#160;<span class="preprocessor">#define VMCALL_CHANGE_IO_BITMAP 0x00000011</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#aa23cf4e06f34a78d1efc1049c0c7c9a3">  124</a></span>&#160;<span class="preprocessor">#define VMCALL_SET_HIDDEN_CC_BREAKPOINT 0x12</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#aa23cf4e06f34a78d1efc1049c0c7c9a3">  124</a></span>&#160;<span class="preprocessor">#define VMCALL_SET_HIDDEN_CC_BREAKPOINT 0x00000012</span></div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#ac692eb720991db54bdc0930c114f5c1a">  130</a></span>&#160;<span class="preprocessor">#define VMCALL_UNSET_RDTSC_EXITING 0x13</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#ac692eb720991db54bdc0930c114f5c1a">  130</a></span>&#160;<span class="preprocessor">#define VMCALL_UNSET_RDTSC_EXITING 0x00000013</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#ae132a6e82064b05fd1b83d979becf8ae">  136</a></span>&#160;<span class="preprocessor">#define VMCALL_DISABLE_EXTERNAL_INTERRUPT_EXITING_ONLY_TO_CLEAR_INTERRUPT_COMMANDS 0x14</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#ae132a6e82064b05fd1b83d979becf8ae">  136</a></span>&#160;<span class="preprocessor">#define VMCALL_DISABLE_EXTERNAL_INTERRUPT_EXITING_ONLY_TO_CLEAR_INTERRUPT_COMMANDS 0x00000014</span></div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#ac8d7501d6f143271e221bb79410c1c8e">  142</a></span>&#160;<span class="preprocessor">#define VMCALL_UNSET_RDPMC_EXITING 0x15</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#ac8d7501d6f143271e221bb79410c1c8e">  142</a></span>&#160;<span class="preprocessor">#define VMCALL_UNSET_RDPMC_EXITING 0x00000015</span></div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a13c945f82e78bd3ec1f1b008c6e9fbde">  148</a></span>&#160;<span class="preprocessor">#define VMCALL_DISABLE_MOV_TO_DEBUG_REGS_EXITING 0x16</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a13c945f82e78bd3ec1f1b008c6e9fbde">  148</a></span>&#160;<span class="preprocessor">#define VMCALL_DISABLE_MOV_TO_DEBUG_REGS_EXITING 0x00000016</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a449984f06abf0354c5972bd93ab7529a">  154</a></span>&#160;<span class="preprocessor">#define VMCALL_RESET_MSR_BITMAP_READ 0x17</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a449984f06abf0354c5972bd93ab7529a">  154</a></span>&#160;<span class="preprocessor">#define VMCALL_RESET_MSR_BITMAP_READ 0x00000017</span></div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
-<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a2b7d10892af0a5d9c6e3a52b1e39607b">  160</a></span>&#160;<span class="preprocessor">#define VMCALL_RESET_MSR_BITMAP_WRITE 0x18</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a2b7d10892af0a5d9c6e3a52b1e39607b">  160</a></span>&#160;<span class="preprocessor">#define VMCALL_RESET_MSR_BITMAP_WRITE 0x00000018</span></div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a38a75ce57ba1b289882445153d869180">  168</a></span>&#160;<span class="preprocessor">#define VMCALL_RESET_EXCEPTION_BITMAP_ONLY_ON_CLEARING_EXCEPTION_EVENTS 0x19</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a38a75ce57ba1b289882445153d869180">  168</a></span>&#160;<span class="preprocessor">#define VMCALL_RESET_EXCEPTION_BITMAP_ONLY_ON_CLEARING_EXCEPTION_EVENTS 0x00000019</span></div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#ae621273430ce3a493c7273f90ddd9f0f">  174</a></span>&#160;<span class="preprocessor">#define VMCALL_RESET_IO_BITMAP 0x1a</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#ae621273430ce3a493c7273f90ddd9f0f">  174</a></span>&#160;<span class="preprocessor">#define VMCALL_RESET_IO_BITMAP 0x0000001A</span></div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160; </div>
-<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a816614b9895fb357bc7eee01714a3806">  180</a></span>&#160;<span class="preprocessor">#define VMCALL_ENABLE_MOV_TO_CR3_EXITING 0x1b</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a816614b9895fb357bc7eee01714a3806">  180</a></span>&#160;<span class="preprocessor">#define VMCALL_ENABLE_MOV_TO_CR3_EXITING 0x0000001B</span></div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#af5e421b53efd853799e3450565d6a16f">  186</a></span>&#160;<span class="preprocessor">#define VMCALL_DISABLE_MOV_TO_CR3_EXITING 0x1c</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#af5e421b53efd853799e3450565d6a16f">  186</a></span>&#160;<span class="preprocessor">#define VMCALL_DISABLE_MOV_TO_CR3_EXITING 0x0000001C</span></div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a495cdfcf6ee1a5136c4f45e5fc8c2848">  192</a></span>&#160;<span class="preprocessor">#define VMCALL_UNSET_EXCEPTION_BITMAP 0x1d</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a495cdfcf6ee1a5136c4f45e5fc8c2848">  192</a></span>&#160;<span class="preprocessor">#define VMCALL_UNSET_EXCEPTION_BITMAP 0x0000001D</span></div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a053f2981fbad868a5dd053a1df1bac20">  200</a></span>&#160;<span class="preprocessor">#define VMCALL_SET_VM_ENTRY_LOAD_DEBUG_CONTROLS 0x1e</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a053f2981fbad868a5dd053a1df1bac20">  200</a></span>&#160;<span class="preprocessor">#define VMCALL_SET_VM_ENTRY_LOAD_DEBUG_CONTROLS 0x0000001E</span></div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
-<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a0a886d0b99e07a1f987b19b08a8713a2">  208</a></span>&#160;<span class="preprocessor">#define VMCALL_UNSET_VM_ENTRY_LOAD_DEBUG_CONTROLS 0x1f</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a0a886d0b99e07a1f987b19b08a8713a2">  208</a></span>&#160;<span class="preprocessor">#define VMCALL_UNSET_VM_ENTRY_LOAD_DEBUG_CONTROLS 0x0000001F</span></div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
-<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a2601ab46e40f83ee118167579d20228d">  216</a></span>&#160;<span class="preprocessor">#define VMCALL_SET_VM_EXIT_SAVE_DEBUG_CONTROLS 0x20</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a2601ab46e40f83ee118167579d20228d">  216</a></span>&#160;<span class="preprocessor">#define VMCALL_SET_VM_EXIT_SAVE_DEBUG_CONTROLS 0x0000020</span></div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
-<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#ac26259df2e2de916949e5228b1d8bb37">  224</a></span>&#160;<span class="preprocessor">#define VMCALL_UNSET_VM_EXIT_SAVE_DEBUG_CONTROLS 0x21</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#ac26259df2e2de916949e5228b1d8bb37">  224</a></span>&#160;<span class="preprocessor">#define VMCALL_UNSET_VM_EXIT_SAVE_DEBUG_CONTROLS 0x0000021</span></div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
-<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a035e3c697ae3b5d66ff4cb6e6ea9562a">  230</a></span>&#160;<span class="preprocessor">#define VMCALL_VM_EXIT_HALT_SYSTEM 0x22</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a035e3c697ae3b5d66ff4cb6e6ea9562a">  230</a></span>&#160;<span class="preprocessor">#define VMCALL_VM_EXIT_HALT_SYSTEM 0x0000022</span></div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a5512b08230236da375c1c1b1dc5a151d">  236</a></span>&#160;<span class="preprocessor">#define VMCALL_SET_VM_EXIT_ON_NMIS 0x23</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a5512b08230236da375c1c1b1dc5a151d">  236</a></span>&#160;<span class="preprocessor">#define VMCALL_SET_VM_EXIT_ON_NMIS 0x0000023</span></div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a8cc1375f7c22268460a5a026343e0443">  242</a></span>&#160;<span class="preprocessor">#define VMCALL_UNSET_VM_EXIT_ON_NMIS 0x24</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a8cc1375f7c22268460a5a026343e0443">  242</a></span>&#160;<span class="preprocessor">#define VMCALL_UNSET_VM_EXIT_ON_NMIS 0x0000024</span></div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#ab5531b07658822b77b4e1d5d69f38f51">  248</a></span>&#160;<span class="preprocessor">#define VMCALL_VM_EXIT_HALT_SYSTEM_AND_CHANGE_CR3 0x25</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
-<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a473d3b0501f29daba3dade4f9cc912d6">  255</a></span>&#160;<span class="preprocessor">#define VMCALL_SIGNAL_DEBUGGER_EXECUTION_FINISHED 0x26</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a473d3b0501f29daba3dade4f9cc912d6">  249</a></span>&#160;<span class="preprocessor">#define VMCALL_SIGNAL_DEBUGGER_EXECUTION_FINISHED 0x25</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
+<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a52cc718ce732b5115c70a6a5c5aeade9">  255</a></span>&#160;<span class="preprocessor">#define VMCALL_SEND_MESSAGES_TO_DEBUGGER 0x26</span></div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a52cc718ce732b5115c70a6a5c5aeade9">  261</a></span>&#160;<span class="preprocessor">#define VMCALL_SEND_MESSAGES_TO_DEBUGGER 0x27</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
-<div class="line"><a name="l00268"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a3ef6b47ed3144ffe6c11e42ffd7bbd21">  268</a></span>&#160;<span class="preprocessor">#define VMCALL_SEND_GENERAL_BUFFER_TO_DEBUGGER 0x28</span></div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
-<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a716d6ce9649c65c6b95b22e780698ba5">  275</a></span>&#160;<span class="preprocessor">#define VMCALL_VM_EXIT_HALT_SYSTEM_AS_A_RESULT_OF_TRIGGERING_EVENT 0x29</span></div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
-<div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#ade9df4e3f1141974c97a539ef86773a7">  282</a></span>&#160;<span class="preprocessor">#define VMCALL_DISABLE_RDTSC_EXITING_ONLY_FOR_TSC_EVENTS 0x2a</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;<span class="comment">//                  Functions                   //</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;NTSTATUS</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;<a class="code" href="_vmcall_8h.html#a443d310a60c1653b7a07c75c36f3fa2a">VmxHandleVmcallVmExit</a>(<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html">PGUEST_REGS</a> GuestRegs, <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> CoreIndex);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;NTSTATUS</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<a class="code" href="_vmcall_8h.html#a1e4f17f468b61d1cfcfdd4aae7e6ce79">VmxVmcallHandler</a>(<a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>      VmcallNumber,</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                 <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>      OptionalParam1,</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;                 <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>      OptionalParam2,</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;                 <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>      OptionalParam3,</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;                 <a class="code" href="struct_g_u_e_s_t___r_e_g_s.html">PGUEST_REGS</a> GuestRegs,</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;                 <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>      CurrentCoreIndex);</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;NTSTATUS</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<a class="code" href="_vmcall_8h.html#a51fa3a3d4245b314c52ce45377209bb2">VmcallTest</a>(<a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> Param1, <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> Param2, <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> Param3);</div>
-<div class="ttc" id="a_script_engine_eval_8h_html_aae17ebb9ef7279d026817fb22f8aebe9"><div class="ttname"><a href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a></div><div class="ttdeci">unsigned __int64 UINT64</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:62</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_ae1e6edbbc26d6fbc71a90190d0266018"><div class="ttname"><a href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a></div><div class="ttdeci">unsigned int UINT32</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:89</div></div>
-<div class="ttc" id="a_vmcall_8h_html_a1e4f17f468b61d1cfcfdd4aae7e6ce79"><div class="ttname"><a href="_vmcall_8h.html#a1e4f17f468b61d1cfcfdd4aae7e6ce79">VmxVmcallHandler</a></div><div class="ttdeci">NTSTATUS VmxVmcallHandler(UINT64 VmcallNumber, UINT64 OptionalParam1, UINT64 OptionalParam2, UINT64 OptionalParam3, PGUEST_REGS GuestRegs, UINT32 CurrentCoreIndex)</div><div class="ttdoc">Main handler for VMCALLs.</div><div class="ttdef"><b>Definition:</b> Vmcall.c:89</div></div>
-<div class="ttc" id="a_vmcall_8h_html_a443d310a60c1653b7a07c75c36f3fa2a"><div class="ttname"><a href="_vmcall_8h.html#a443d310a60c1653b7a07c75c36f3fa2a">VmxHandleVmcallVmExit</a></div><div class="ttdeci">NTSTATUS VmxHandleVmcallVmExit(PGUEST_REGS GuestRegs, UINT32 CoreIndex)</div><div class="ttdoc">Handle vm-exits of VMCALLs.</div><div class="ttdef"><b>Definition:</b> Vmcall.c:21</div></div>
-<div class="ttc" id="a_vmcall_8h_html_a51fa3a3d4245b314c52ce45377209bb2"><div class="ttname"><a href="_vmcall_8h.html#a51fa3a3d4245b314c52ce45377209bb2">VmcallTest</a></div><div class="ttdeci">NTSTATUS VmcallTest(UINT64 Param1, UINT64 Param2, UINT64 Param3)</div><div class="ttdoc">Test function which shows a message to test a successfull VMCALL.</div><div class="ttdef"><b>Definition:</b> Vmcall.c:453</div></div>
-<div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html">GUEST_REGS</a></div><div class="ttdef"><b>Definition:</b> Definition.h:366</div></div>
+<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a3ef6b47ed3144ffe6c11e42ffd7bbd21">  262</a></span>&#160;<span class="preprocessor">#define VMCALL_SEND_GENERAL_BUFFER_TO_DEBUGGER 0x27</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a716d6ce9649c65c6b95b22e780698ba5">  269</a></span>&#160;<span class="preprocessor">#define VMCALL_VM_EXIT_HALT_SYSTEM_AS_A_RESULT_OF_TRIGGERING_EVENT 0x28</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
+<div class="line"><a name="l00276"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#ade9df4e3f1141974c97a539ef86773a7">  276</a></span>&#160;<span class="preprocessor">#define VMCALL_DISABLE_RDTSC_EXITING_ONLY_FOR_TSC_EVENTS 0x29</span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00283"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#aeacaa8a476a8d6503dbdc38ceb76ad08">  283</a></span>&#160;<span class="preprocessor">#define VMCALL_DISABLE_MOV_TO_HW_DR_EXITING_ONLY_FOR_DR_EVENTS 0x2a</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;<span class="comment">//                  Functions                   //</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="comment">// ----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment">// Private Interfaces</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;<span class="keyword">static</span> NTSTATUS</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<a class="code" href="_vmcall_8c.html#a80352657b07123c63892fd0992b99747">VmxHypervVmcallHandler</a>(_Inout_ <a class="code" href="struct_g_u_e_s_t___r_e_g_s.html">PGUEST_REGS</a> GuestRegs);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160; </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;NTSTATUS</div>
+<div class="line"><a name="l00303"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a40fb3adc0a6010b12ede355c46995517">  303</a></span>&#160;<a class="code" href="_vmcall_8h.html#a40fb3adc0a6010b12ede355c46995517">VmxHandleVmcallVmExit</a>(_In_ <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>         CoreIndex,</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                      _Inout_ <a class="code" href="struct_g_u_e_s_t___r_e_g_s.html">PGUEST_REGS</a> GuestRegs);</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;NTSTATUS</div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="_vmcall_8h.html#a7291f3b227003052628c293b9a0c13e6">  316</a></span>&#160;<a class="code" href="_vmcall_8h.html#a7291f3b227003052628c293b9a0c13e6">VmxVmcallHandler</a>(_In_ <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>         CurrentCoreIndex,</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                 _In_ <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>         VmcallNumber,</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                 _In_ <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>         OptionalParam1,</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                 _In_ <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>         OptionalParam2,</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;                 _In_ <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>         OptionalParam3,</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;                 _Inout_ <a class="code" href="struct_g_u_e_s_t___r_e_g_s.html">PGUEST_REGS</a> GuestRegs);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;NTSTATUS</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<a class="code" href="_vmcall_8h.html#a33cfb4436bd44e0edfc347cd877103df">VmcallTest</a>(_In_ <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> Param1,</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;           _In_ <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> Param2,</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;           _In_ <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> Param3);</div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aae17ebb9ef7279d026817fb22f8aebe9"><div class="ttname"><a href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a></div><div class="ttdeci">unsigned __int64 UINT64</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:72</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_ae1e6edbbc26d6fbc71a90190d0266018"><div class="ttname"><a href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a></div><div class="ttdeci">unsigned int UINT32</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:99</div></div>
+<div class="ttc" id="a_vmcall_8c_html_a80352657b07123c63892fd0992b99747"><div class="ttname"><a href="_vmcall_8c.html#a80352657b07123c63892fd0992b99747">VmxHypervVmcallHandler</a></div><div class="ttdeci">_Use_decl_annotations_ NTSTATUS VmxHypervVmcallHandler(PGUEST_REGS GuestRegs)</div><div class="ttdef"><b>Definition:</b> Vmcall.c:16</div></div>
+<div class="ttc" id="a_vmcall_8h_html_a33cfb4436bd44e0edfc347cd877103df"><div class="ttname"><a href="_vmcall_8h.html#a33cfb4436bd44e0edfc347cd877103df">VmcallTest</a></div><div class="ttdeci">NTSTATUS VmcallTest(_In_ UINT64 Param1, _In_ UINT64 Param2, _In_ UINT64 Param3)</div><div class="ttdoc">Test function which shows a message to test a successful VMCALL.</div><div class="ttdef"><b>Definition:</b> Vmcall.c:479</div></div>
+<div class="ttc" id="a_vmcall_8h_html_a40fb3adc0a6010b12ede355c46995517"><div class="ttname"><a href="_vmcall_8h.html#a40fb3adc0a6010b12ede355c46995517">VmxHandleVmcallVmExit</a></div><div class="ttdeci">NTSTATUS VmxHandleVmcallVmExit(_In_ UINT32 CoreIndex, _Inout_ PGUEST_REGS GuestRegs)</div><div class="ttdoc">Handle vm-exits of VMCALLs.</div></div>
+<div class="ttc" id="a_vmcall_8h_html_a7291f3b227003052628c293b9a0c13e6"><div class="ttname"><a href="_vmcall_8h.html#a7291f3b227003052628c293b9a0c13e6">VmxVmcallHandler</a></div><div class="ttdeci">NTSTATUS VmxVmcallHandler(_In_ UINT32 CurrentCoreIndex, _In_ UINT64 VmcallNumber, _In_ UINT64 OptionalParam1, _In_ UINT64 OptionalParam2, _In_ UINT64 OptionalParam3, _Inout_ PGUEST_REGS GuestRegs)</div><div class="ttdoc">Main handler for VMCALLs.</div></div>
+<div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html">GUEST_REGS</a></div><div class="ttdef"><b>Definition:</b> Definition.h:651</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

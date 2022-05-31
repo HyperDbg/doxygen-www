@@ -104,14 +104,47 @@ Functions</h2></td></tr>
 <tr class="memitem:a4d0357fc360109a93434110e5da524ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_counters_8h.html#a4d0357fc360109a93434110e5da524ff">CounterEmulateRdpmc</a> (<a class="el" href="_definition_8h.html#a2bd4673df5e6e2fb371d770f3f2886d9">PGUEST_REGS</a> GuestRegs)</td></tr>
 <tr class="memdesc:a4d0357fc360109a93434110e5da524ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emulate RDPMC.  <a href="_counters_8h.html#a4d0357fc360109a93434110e5da524ff">More...</a><br /></td></tr>
 <tr class="separator:a4d0357fc360109a93434110e5da524ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad48a138876261e252eed8a64e1661ccd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_counters_8h.html#ad48a138876261e252eed8a64e1661ccd">CounterSetPreemptionTimer</a> (<a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> TimerValue)</td></tr>
+<tr class="memdesc:ad48a138876261e252eed8a64e1661ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the timer value for preemption timer.  <a href="_counters_8h.html#ad48a138876261e252eed8a64e1661ccd">More...</a><br /></td></tr>
+<tr class="separator:ad48a138876261e252eed8a64e1661ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb92df8c6e0f35dd8379f361700493c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_counters_8h.html#afb92df8c6e0f35dd8379f361700493c0">CounterClearPreemptionTimer</a> ()</td></tr>
+<tr class="memdesc:afb92df8c6e0f35dd8379f361700493c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the preemption timer.  <a href="_counters_8h.html#afb92df8c6e0f35dd8379f361700493c0">More...</a><br /></td></tr>
+<tr class="separator:afb92df8c6e0f35dd8379f361700493c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The headers for functions for emulating counters. </p>
-<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'ray'+'an'+'fam'+'.c'+'om'; return false;">sina@<span style="display: none;">.nosp@m.</span>raya<span style="display: none;">.nosp@m.</span>nfam.<span style="display: none;">.nosp@m.</span>com</a>)</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+'er'+'dbg'+'.o'+'rg'; return false;">sina@<span style="display: none;">.nosp@m.</span>hype<span style="display: none;">.nosp@m.</span>rdbg.<span style="display: none;">.nosp@m.</span>org</a>)</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2020-06-14</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>This project is released under the GNU Public License v3. </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
+<a id="afb92df8c6e0f35dd8379f361700493c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb92df8c6e0f35dd8379f361700493c0">&#9670;&nbsp;</a></span>CounterClearPreemptionTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_script_engine_eval_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> CounterClearPreemptionTimer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Clears the preemption timer. </p>
+<dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;{</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// Set the time value to NULL</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    __vmx_vmwrite(VMCS_GUEST_VMX_PREEMPTION_TIMER_VALUE, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a4d0357fc360109a93434110e5da524ff"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d0357fc360109a93434110e5da524ff">&#9670;&nbsp;</a></span>CounterEmulateRdpmc()</h2>
 
@@ -139,16 +172,16 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a> EcxReg = 0;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    EcxReg         = GuestRegs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a52a78cf3199d7ee63633788556964bda">rcx</a> &amp; 0xffffffff;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a879c8a1e8468389cf82a40cf0690bdce">ULONG64</a> Pmc    = __readpmc(EcxReg);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    GuestRegs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a95695e8756c30083f7c7ca248a39c0a9">rax</a> = 0x00000000ffffffff &amp; Pmc;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    GuestRegs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#acd0a66cbad6f8a6d96f37decde4d7684">rdx</a> = 0x00000000ffffffff &amp; (Pmc &gt;&gt; 32);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    EcxReg         = GuestRegs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a9a9133a328f13d405c31df928307e9fd">rcx</a> &amp; 0xffffffff;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> Pmc     = __readpmc(EcxReg);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    GuestRegs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a346ed6ae20503154a9a8031491706b3e">rax</a> = 0x00000000ffffffff &amp; Pmc;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    GuestRegs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#aec9eaf1f15df1582b6f00119516a8e08">rdx</a> = 0x00000000ffffffff &amp; (Pmc &gt;&gt; 32);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
-<div class="ttc" id="a_script_engine_eval_8h_html_a879c8a1e8468389cf82a40cf0690bdce"><div class="ttname"><a href="_script_engine_eval_8h.html#a879c8a1e8468389cf82a40cf0690bdce">ULONG64</a></div><div class="ttdeci">unsigned __int64 ULONG64</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:70</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_af632da489ebc3708ec3ab6791ee53fa4"><div class="ttname"><a href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a></div><div class="ttdeci">unsigned long ULONG</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:78</div></div>
-<div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_a52a78cf3199d7ee63633788556964bda"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#a52a78cf3199d7ee63633788556964bda">GUEST_REGS::rcx</a></div><div class="ttdeci">ULONG64 rcx</div><div class="ttdef"><b>Definition:</b> Definition.h:372</div></div>
-<div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_a95695e8756c30083f7c7ca248a39c0a9"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#a95695e8756c30083f7c7ca248a39c0a9">GUEST_REGS::rax</a></div><div class="ttdeci">ULONG64 rax</div><div class="ttdef"><b>Definition:</b> Definition.h:371</div></div>
-<div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_acd0a66cbad6f8a6d96f37decde4d7684"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#acd0a66cbad6f8a6d96f37decde4d7684">GUEST_REGS::rdx</a></div><div class="ttdeci">ULONG64 rdx</div><div class="ttdef"><b>Definition:</b> Definition.h:373</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aae17ebb9ef7279d026817fb22f8aebe9"><div class="ttname"><a href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a></div><div class="ttdeci">unsigned __int64 UINT64</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:72</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_af632da489ebc3708ec3ab6791ee53fa4"><div class="ttname"><a href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a></div><div class="ttdeci">unsigned long ULONG</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:88</div></div>
+<div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_a346ed6ae20503154a9a8031491706b3e"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#a346ed6ae20503154a9a8031491706b3e">GUEST_REGS::rax</a></div><div class="ttdeci">UINT64 rax</div><div class="ttdef"><b>Definition:</b> Definition.h:656</div></div>
+<div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_a9a9133a328f13d405c31df928307e9fd"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#a9a9133a328f13d405c31df928307e9fd">GUEST_REGS::rcx</a></div><div class="ttdeci">UINT64 rcx</div><div class="ttdef"><b>Definition:</b> Definition.h:657</div></div>
+<div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_aec9eaf1f15df1582b6f00119516a8e08"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#aec9eaf1f15df1582b6f00119516a8e08">GUEST_REGS::rdx</a></div><div class="ttdeci">UINT64 rdx</div><div class="ttdef"><b>Definition:</b> Definition.h:658</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -183,9 +216,9 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// to solve it, in the future we solve it using tsc offsectiong</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// or tsc scalling (The reason is because of that fucking patchguard :( )</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a879c8a1e8468389cf82a40cf0690bdce">ULONG64</a> Tsc    = __rdtsc();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    GuestRegs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a95695e8756c30083f7c7ca248a39c0a9">rax</a> = 0x00000000ffffffff &amp; Tsc;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    GuestRegs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#acd0a66cbad6f8a6d96f37decde4d7684">rdx</a> = 0x00000000ffffffff &amp; (Tsc &gt;&gt; 32);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> Tsc     = __rdtsc();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    GuestRegs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a346ed6ae20503154a9a8031491706b3e">rax</a> = 0x00000000ffffffff &amp; Tsc;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    GuestRegs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#aec9eaf1f15df1582b6f00119516a8e08">rdx</a> = 0x00000000ffffffff &amp; (Tsc &gt;&gt; 32);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
@@ -215,13 +248,46 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
 <div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span>     Aux    = 0;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a879c8a1e8468389cf82a40cf0690bdce">ULONG64</a> Tsc    = __rdtscp(&amp;Aux);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    GuestRegs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a95695e8756c30083f7c7ca248a39c0a9">rax</a> = 0x00000000ffffffff &amp; Tsc;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    GuestRegs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#acd0a66cbad6f8a6d96f37decde4d7684">rdx</a> = 0x00000000ffffffff &amp; (Tsc &gt;&gt; 32);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">int</span>    Aux     = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> Tsc     = __rdtscp(&amp;Aux);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    GuestRegs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a346ed6ae20503154a9a8031491706b3e">rax</a> = 0x00000000ffffffff &amp; Tsc;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    GuestRegs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#aec9eaf1f15df1582b6f00119516a8e08">rdx</a> = 0x00000000ffffffff &amp; (Tsc &gt;&gt; 32);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    GuestRegs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a52a78cf3199d7ee63633788556964bda">rcx</a> = 0x00000000ffffffff &amp; Aux;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    GuestRegs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a9a9133a328f13d405c31df928307e9fd">rcx</a> = 0x00000000ffffffff &amp; Aux;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad48a138876261e252eed8a64e1661ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad48a138876261e252eed8a64e1661ccd">&#9670;&nbsp;</a></span>CounterSetPreemptionTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_script_engine_eval_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a> CounterSetPreemptionTimer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>&#160;</td>
+          <td class="paramname"><em>TimerValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the timer value for preemption timer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">TimerValue</td><td>Value of the timer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="comment">// Set the time value</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    __vmx_vmwrite(VMCS_GUEST_VMX_PREEMPTION_TIMER_VALUE, TimerValue);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>

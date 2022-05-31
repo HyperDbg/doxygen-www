@@ -284,7 +284,7 @@ Public Attributes</h2></td></tr>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        self.SPECIAL_TOKENS = [<span class="stringliteral">&#39;%&#39;</span>, <span class="stringliteral">&#39;+&#39;</span>, <span class="stringliteral">&#39;~&#39;</span>, <span class="stringliteral">&#39;++&#39;</span>, <span class="stringliteral">&#39;-&#39;</span>, <span class="stringliteral">&#39;--&#39;</span>, <span class="stringliteral">&quot;*&quot;</span>, <span class="stringliteral">&quot;/&quot;</span>, <span class="stringliteral">&quot;=&quot;</span>, <span class="stringliteral">&quot;==&quot;</span>, <span class="stringliteral">&quot;!=&quot;</span>, <span class="stringliteral">&quot;,&quot;</span>, <span class="stringliteral">&quot;;&quot;</span>, <span class="stringliteral">&quot;(&quot;</span>, <span class="stringliteral">&quot;)&quot;</span>, <span class="stringliteral">&quot;{&quot;</span>, <span class="stringliteral">&quot;}&quot;</span>, <span class="stringliteral">&quot;|&quot;</span>, <span class="stringliteral">&quot;||&quot;</span>, <span class="stringliteral">&quot;&gt;&gt;&quot;</span>, <span class="stringliteral">&quot;&gt;=&quot;</span>, <span class="stringliteral">&quot;&lt;&lt;&quot;</span>, <span class="stringliteral">&quot;&lt;=&quot;</span>, <span class="stringliteral">&quot;&amp;&quot;</span>, <span class="stringliteral">&quot;&amp;&amp;&quot;</span>, <span class="stringliteral">&quot;^&quot;</span>]</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="comment"># INVALID rule indicator</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        self.INVALID = -99</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        self.INVALID = -999</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        self.FunctionsDict = dict()</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        self.OperatorsTwoOperand = []</div>
@@ -561,7 +561,7 @@ Public Attributes</h2></td></tr>
 <div class="line"><a name="l00889"></a><span class="lineno">  889</span>&#160;            <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
 <div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;        </div>
 <div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;        X = p +1</div>
-<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;        <span class="keywordflow">while</span> self.IsSemanticRule(Rhs[X]):</div>
+<div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;        <span class="keywordflow">while</span> self.IsSemanticRule(Rhs[X]) <span class="keywordflow">and</span> X + 1 &lt; len(Rhs):</div>
 <div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;            X+=1</div>
 <div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;        <span class="keywordflow">return</span> Rhs[X]</div>
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;        </div>
@@ -627,14 +627,14 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    <span class="keyword">def </span><a class="code" href="script-engine_2_common_8c.html#aaa04ef7f608999ba00d00c88fc2dbc38">GetTerminalId</a>(self, Terminal):</div>
+<div class="fragment"><div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    <span class="keyword">def </span><a class="code" href="script-engine_2code_2_common_8c.html#add297be8c4ee916ead86b7ebe212ba4c">GetTerminalId</a>(self, Terminal):</div>
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;        <span class="keywordflow">for</span> i <span class="keywordflow">in</span> range(len(self.TerminalList)):</div>
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;            <span class="keywordflow">if</span> Terminal == self.TerminalList[i]:</div>
 <div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;                <span class="keywordflow">return</span> i</div>
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;        <span class="keywordflow">return</span> -1</div>
 <div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160; </div>
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160; </div>
-<div class="ttc" id="ascript-engine_2_common_8c_html_aaa04ef7f608999ba00d00c88fc2dbc38"><div class="ttname"><a href="script-engine_2_common_8c.html#aaa04ef7f608999ba00d00c88fc2dbc38">GetTerminalId</a></div><div class="ttdeci">int GetTerminalId(TOKEN Token)</div><div class="ttdef"><b>Definition:</b> common.c:628</div></div>
+<div class="ttc" id="ascript-engine_2code_2_common_8c_html_add297be8c4ee916ead86b7ebe212ba4c"><div class="ttname"><a href="script-engine_2code_2_common_8c.html#add297be8c4ee916ead86b7ebe212ba4c">GetTerminalId</a></div><div class="ttdeci">int GetTerminalId(PTOKEN Token)</div><div class="ttdoc">Gets the Terminal Id object.</div><div class="ttdef"><b>Definition:</b> common.c:761</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -708,13 +708,13 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;    <span class="keyword">def </span><a class="code" href="script-engine_2_common_8c.html#a8cfc8ee8c30cdfe1f15d6ca9ab393a68">IsNoneTerminal</a>(self,X):     </div>
+<div class="fragment"><div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;    <span class="keyword">def </span><a class="code" href="script-engine_2code_2_common_8c.html#a24ad972b1eb03146ae2f7c9bc1bee891">IsNoneTerminal</a>(self,X):     </div>
 <div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;        <span class="keywordflow">if</span> X[0].isupper():</div>
 <div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">True</span></div>
 <div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;        <span class="keywordflow">else</span>:</div>
 <div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">False</span></div>
 <div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160; </div>
-<div class="ttc" id="ascript-engine_2_common_8c_html_a8cfc8ee8c30cdfe1f15d6ca9ab393a68"><div class="ttname"><a href="script-engine_2_common_8c.html#a8cfc8ee8c30cdfe1f15d6ca9ab393a68">IsNoneTerminal</a></div><div class="ttdeci">char IsNoneTerminal(TOKEN Token)</div><div class="ttdef"><b>Definition:</b> common.c:584</div></div>
+<div class="ttc" id="ascript-engine_2code_2_common_8c_html_a24ad972b1eb03146ae2f7c9bc1bee891"><div class="ttname"><a href="script-engine_2code_2_common_8c.html#a24ad972b1eb03146ae2f7c9bc1bee891">IsNoneTerminal</a></div><div class="ttdeci">char IsNoneTerminal(PTOKEN Token)</div><div class="ttdoc">Checks whether this Token is noneterminal NoneTerminal token starts with capital letter.</div><div class="ttdef"><b>Definition:</b> common.c:713</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -794,13 +794,13 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="fragment"><div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;    <span class="keyword">def </span><a class="code" href="script-engine_2_common_8c.html#a963a0440af197c6a0bbb259ca7ab08d6">IsSemanticRule</a>(self, X):</div>
+<div class="fragment"><div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;    <span class="keyword">def </span><a class="code" href="script-engine_2code_2_common_8c.html#ae6da67f5453619a4bdba75daf2fc5beb">IsSemanticRule</a>(self, X):</div>
 <div class="line"><a name="l00910"></a><span class="lineno">  910</span>&#160;        <span class="keywordflow">if</span> X[0] == <span class="stringliteral">&#39;@&#39;</span>:</div>
 <div class="line"><a name="l00911"></a><span class="lineno">  911</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">True</span></div>
 <div class="line"><a name="l00912"></a><span class="lineno">  912</span>&#160;        <span class="keywordflow">else</span>: </div>
 <div class="line"><a name="l00913"></a><span class="lineno">  913</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">False</span></div>
 <div class="line"><a name="l00914"></a><span class="lineno">  914</span>&#160; </div>
-<div class="ttc" id="ascript-engine_2_common_8c_html_a963a0440af197c6a0bbb259ca7ab08d6"><div class="ttname"><a href="script-engine_2_common_8c.html#a963a0440af197c6a0bbb259ca7ab08d6">IsSemanticRule</a></div><div class="ttdeci">char IsSemanticRule(TOKEN Token)</div><div class="ttdef"><b>Definition:</b> common.c:598</div></div>
+<div class="ttc" id="ascript-engine_2code_2_common_8c_html_ae6da67f5453619a4bdba75daf2fc5beb"><div class="ttname"><a href="script-engine_2code_2_common_8c.html#ae6da67f5453619a4bdba75daf2fc5beb">IsSemanticRule</a></div><div class="ttdeci">char IsSemanticRule(PTOKEN Token)</div><div class="ttdoc">Checks whether this Token is semantic rule SemanticRule token starts with '@'.</div><div class="ttdef"><b>Definition:</b> common.c:729</div></div>
 </div><!-- fragment -->
 </div>
 </div>

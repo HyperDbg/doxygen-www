@@ -12,5 +12,7 @@ var disassembler_8cpp =
     [ "HyperDbgLengthDisassemblerEngine", "disassembler_8cpp.html#afb62b377dc161aa67af8b4d0e72e62e2", null ],
     [ "ZydisTest", "disassembler_8cpp.html#a970ca16d8fcfa7173b16cb6b16ed191d", null ],
     [ "default_print_address_absolute", "disassembler_8cpp.html#aed171a71a59152aeb13e39e504316bcb", null ],
+    [ "g_AddressConversion", "disassembler_8cpp.html#a9a4738de0c53320d8bfb36f27caeb05b", null ],
+    [ "g_DisassemblerSymbolMap", "disassembler_8cpp.html#a98a49deb0c9c1c8898cedd9949dfc85d", null ],
     [ "g_DisassemblerSyntax", "disassembler_8cpp.html#afdcfcfa1508e9df27e0b8fe2eb68d5ad", null ]
 ];

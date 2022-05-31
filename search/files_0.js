@@ -1,4 +1,23 @@
 var searchData=
 [
-  ['_5f_5finit_5f_5f_2epy_5930',['__init__.py',['../____init_____8py.html',1,'']]]
+  ['01_2dexpressions_2dcorrect_2etxt_6196',['01-expressions-correct.txt',['../01-expressions-correct_8txt.html',1,'']]],
+  ['01_2dexpressions_2dwrong_2etxt_6197',['01-expressions-wrong.txt',['../01-expressions-wrong_8txt.html',1,'']]],
+  ['02_2dconditional_2dstatements_2dcorrect_2etxt_6198',['02-conditional-statements-correct.txt',['../02-conditional-statements-correct_8txt.html',1,'']]],
+  ['02_2dconditional_2dstatements_2dwrong_2etxt_6199',['02-conditional-statements-wrong.txt',['../02-conditional-statements-wrong_8txt.html',1,'']]],
+  ['03_2dconditional_2dstatements_2dwith_2dstatements_2dcorrect_2etxt_6200',['03-conditional-statements-with-statements-correct.txt',['../03-conditional-statements-with-statements-correct_8txt.html',1,'']]],
+  ['03_2dconditional_2dstatements_2dwith_2dstatements_2dwrong_2etxt_6201',['03-conditional-statements-with-statements-wrong.txt',['../03-conditional-statements-with-statements-wrong_8txt.html',1,'']]],
+  ['04_2dfor_2dloop_2dcorrect_2etxt_6202',['04-for-loop-correct.txt',['../04-for-loop-correct_8txt.html',1,'']]],
+  ['04_2dfor_2dloop_2dwrong_2etxt_6203',['04-for-loop-wrong.txt',['../04-for-loop-wrong_8txt.html',1,'']]],
+  ['06_2ddo_2dwhile_2dloop_2dcorrect_2etxt_6204',['06-do-while-loop-correct.txt',['../06-do-while-loop-correct_8txt.html',1,'']]],
+  ['06_2ddo_2dwhile_2dloop_2dwrong_2etxt_6205',['06-do-while-loop-wrong.txt',['../06-do-while-loop-wrong_8txt.html',1,'']]],
+  ['06_2dwhile_2dloop_2dcorrect_2etxt_6206',['06-while-loop-correct.txt',['../06-while-loop-correct_8txt.html',1,'']]],
+  ['06_2dwhile_2dloop_2dwrong_2etxt_6207',['06-while-loop-wrong.txt',['../06-while-loop-wrong_8txt.html',1,'']]],
+  ['07_2dwhile_2dloop_2dwith_2dstatements_2dcorrect_2etxt_6208',['07-while-loop-with-statements-correct.txt',['../07-while-loop-with-statements-correct_8txt.html',1,'']]],
+  ['07_2dwhile_2dloop_2dwith_2dstatements_2dwrong_2etxt_6209',['07-while-loop-with-statements-wrong.txt',['../07-while-loop-with-statements-wrong_8txt.html',1,'']]],
+  ['08_2ddo_2dwhile_2dloop_2dcorrect_2etxt_6210',['08-do-while-loop-correct.txt',['../08-do-while-loop-correct_8txt.html',1,'']]],
+  ['08_2ddo_2dwhile_2dloop_2dwrong_2etxt_6211',['08-do-while-loop-wrong.txt',['../08-do-while-loop-wrong_8txt.html',1,'']]],
+  ['08_2dfor_2dloop_2dcorrect_2etxt_6212',['08-for-loop-correct.txt',['../08-for-loop-correct_8txt.html',1,'']]],
+  ['08_2dfor_2dloop_2dwrong_2etxt_6213',['08-for-loop-wrong.txt',['../08-for-loop-wrong_8txt.html',1,'']]],
+  ['09_2ddo_2dwhile_2dloop_2dwith_2dstatements_2dcorrect_2etxt_6214',['09-do-while-loop-with-statements-correct.txt',['../09-do-while-loop-with-statements-correct_8txt.html',1,'']]],
+  ['09_2ddo_2dwhile_2dloop_2dwith_2dstatements_2dwrong_2etxt_6215',['09-do-while-loop-with-statements-wrong.txt',['../09-do-while-loop-with-statements-wrong_8txt.html',1,'']]]
 ];

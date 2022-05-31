@@ -90,7 +90,7 @@ $(document).ready(function(){initNavTree('wrmsr_8cpp.html',''); initResizable();
 
 <p>wrmsr command  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;..\hprdbgctrl\pch.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;pch.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -103,7 +103,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>wrmsr command </p>
-<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'ray'+'an'+'fam'+'.c'+'om'; return false;">sina@<span style="display: none;">.nosp@m.</span>raya<span style="display: none;">.nosp@m.</span>nfam.<span style="display: none;">.nosp@m.</span>com</a>)</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+'er'+'dbg'+'.o'+'rg'; return false;">sina@<span style="display: none;">.nosp@m.</span>hype<span style="display: none;">.nosp@m.</span>rdbg.<span style="display: none;">.nosp@m.</span>org</a>)</dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>2020-05-27</dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>This project is released under the GNU Public License v3. </dd></dl>
@@ -143,158 +143,156 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
-<div class="fragment"><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;{</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>                           Status;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>                           IsNextCoreId = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>                           SetMsr       = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>                           <a class="code" href="_script_engine_eval_8h.html#a150a5c9e79c91b776324c85b80d5b8e0">SetValue</a>     = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html">DEBUGGER_READ_AND_WRITE_ON_MSR</a> MsrWriteRequest;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>                         Msr;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>                         Value     = 0;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                         CoreNumer = <a class="code" href="_definition_8h.html#ad4f1d4dd952194fa7b47a2ed193ea0ed">DEBUGGER_READ_AND_WRITE_ON_MSR_APPLY_ALL_CORES</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (SplittedCommand.size() &gt;= 6)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;incorrect use of &#39;wrmsr&#39;\n\n&quot;</span>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="wrmsr_8cpp.html#a60ea84b6f2296b1627d20f9c8547f307">CommandWrmsrHelp</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> Section : SplittedCommand)</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span> (!Section.compare(SplittedCommand.at(0)))</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">if</span> (IsNextCoreId)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="common_8cpp.html#a6d49b34b4d582be46c41da393e1a427c">ConvertStringToUInt32</a>(Section, &amp;CoreNumer))</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;please specify a correct hex value for core id\n\n&quot;</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <a class="code" href="wrmsr_8cpp.html#a60ea84b6f2296b1627d20f9c8547f307">CommandWrmsrHelp</a>();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            IsNextCoreId = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">if</span> (!Section.compare(<span class="stringliteral">&quot;core&quot;</span>))</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            IsNextCoreId = <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">if</span> (!SetMsr)</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="common_8cpp.html#a659284da2352d3215bc8d47c714b21c3">ConvertStringToUInt64</a>(Section, &amp;Msr))</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;please specify a correct hex value to be read\n\n&quot;</span>);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <a class="code" href="wrmsr_8cpp.html#a60ea84b6f2296b1627d20f9c8547f307">CommandWrmsrHelp</a>();</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="comment">// Means that the MSR is set, next we should read value</span></div>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>                           Status;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>                           IsNextCoreId = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>                           SetMsr       = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>                           <a class="code" href="_script_engine_eval_8h.html#a08d91fc5e81e545b31c978f6c6a02698">SetValue</a>     = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html">DEBUGGER_READ_AND_WRITE_ON_MSR</a> MsrWriteRequest;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>                         Msr;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>                         Value     = 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                         CoreNumer = <a class="code" href="_definition_8h.html#ad4f1d4dd952194fa7b47a2ed193ea0ed">DEBUGGER_READ_AND_WRITE_ON_MSR_APPLY_ALL_CORES</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (SplittedCommand.size() &gt;= 6)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;incorrect use of &#39;wrmsr&#39;\n\n&quot;</span>);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="wrmsr_8cpp.html#a60ea84b6f2296b1627d20f9c8547f307">CommandWrmsrHelp</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">auto</span> Section : SplittedCommand)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">if</span> (!Section.compare(SplittedCommand.at(0)))</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span> (IsNextCoreId)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="common_8cpp.html#a6d49b34b4d582be46c41da393e1a427c">ConvertStringToUInt32</a>(Section, &amp;CoreNumer))</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;please specify a correct hex value for core id\n\n&quot;</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <a class="code" href="wrmsr_8cpp.html#a60ea84b6f2296b1627d20f9c8547f307">CommandWrmsrHelp</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            IsNextCoreId = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">if</span> (!Section.compare(<span class="stringliteral">&quot;core&quot;</span>))</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        {</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            IsNextCoreId = <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">if</span> (!SetMsr)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="common_8cpp.html#a659284da2352d3215bc8d47c714b21c3">ConvertStringToUInt64</a>(Section, &amp;Msr))</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;please specify a correct hex value to be read\n\n&quot;</span>);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                <a class="code" href="wrmsr_8cpp.html#a60ea84b6f2296b1627d20f9c8547f307">CommandWrmsrHelp</a>();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                SetMsr = <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">if</span> (SetMsr)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="symbol_8cpp.html#a6be1547f40c36ec20c6a3e7f3ed94efd">SymbolConvertNameOrExprToAddress</a>(Section, &amp;Value))</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            {</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                    <span class="stringliteral">&quot;please specify a correct hex value or an expression to put on the msr\n\n&quot;</span>);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                <a class="code" href="wrmsr_8cpp.html#a60ea84b6f2296b1627d20f9c8547f307">CommandWrmsrHelp</a>();</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            }</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            {</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <a class="code" href="_script_engine_eval_8h.html#a150a5c9e79c91b776324c85b80d5b8e0">SetValue</a> = <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="comment">// Check if msr is set or not</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                <span class="comment">// Means that the MSR is set, next we should read value</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <span class="comment">//</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                SetMsr = <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">if</span> (SetMsr)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="symbol_8cpp.html#aae8c95f17a948c9f1a1e198527465e8b">SymbolConvertNameOrExprToAddress</a>(Section, &amp;Value))</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                    <span class="stringliteral">&quot;please specify a correct hex value or an expression to put on the msr\n\n&quot;</span>);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                <a class="code" href="wrmsr_8cpp.html#a60ea84b6f2296b1627d20f9c8547f307">CommandWrmsrHelp</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                <a class="code" href="_script_engine_eval_8h.html#a08d91fc5e81e545b31c978f6c6a02698">SetValue</a> = <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">if</span> (!SetMsr)</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;please specify a correct hex value to write\n\n&quot;</span>);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="wrmsr_8cpp.html#a60ea84b6f2296b1627d20f9c8547f307">CommandWrmsrHelp</a>();</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="_script_engine_eval_8h.html#a150a5c9e79c91b776324c85b80d5b8e0">SetValue</a>)</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;please specify a correct hex value to put on msr\n\n&quot;</span>);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <a class="code" href="wrmsr_8cpp.html#a60ea84b6f2296b1627d20f9c8547f307">CommandWrmsrHelp</a>();</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">if</span> (IsNextCoreId)</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    {</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;please specify a correct hex value for core\n\n&quot;</span>);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <a class="code" href="wrmsr_8cpp.html#a60ea84b6f2296b1627d20f9c8547f307">CommandWrmsrHelp</a>();</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    }</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a>)</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    {</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;handle of the driver not found, probably the driver is not loaded. Did you &quot;</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                     <span class="stringliteral">&quot;use &#39;load&#39; command?\n&quot;</span>);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    }</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    MsrWriteRequest.<a class="code" href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html#a38a6cf9e2ea5ef31a1f7e888db6dc649">ActionType</a> = <a class="code" href="_definition_8h.html#a9e99d3b0c6a6357a5f021dc82422f789a8b4846619d6bec50232910290764fff3">DEBUGGER_MSR_WRITE</a>;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    MsrWriteRequest.<a class="code" href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html#a3e43511772a5618a6bec9655e8a774d5">Msr</a>        = Msr;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    MsrWriteRequest.<a class="code" href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html#a1bc8c0010501f9125b025ecb933380d5">CoreNumber</a> = CoreNumer;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    MsrWriteRequest.<a class="code" href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html#aec2dc73b7eb1f1d455f0399bcb49e929">Value</a>      = Value;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    Status = DeviceIoControl(</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a>,                        <span class="comment">// Handle to device</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <a class="code" href="_definition_8h.html#a2e10715df5d41f777527db55f4fe4f1f">IOCTL_DEBUGGER_READ_OR_WRITE_MSR</a>,      <span class="comment">// IO Control code</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        &amp;MsrWriteRequest,                      <span class="comment">// Input Buffer to driver.</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <a class="code" href="_definition_8h.html#a1352bee1219aa51a2d22d67c6f25e666">SIZEOF_DEBUGGER_READ_AND_WRITE_ON_MSR</a>, <span class="comment">// Input buffer length</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,                                  <span class="comment">// Output Buffer from driver.</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,                                  <span class="comment">// Length of output buffer in bytes.</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>,                                  <span class="comment">// Bytes placed in buffer.</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <a class="code" href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>                                   <span class="comment">// synchronous call</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    );</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">if</span> (!Status)</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    {</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;ioctl failed with code (0x%x), either msr index or core id is invalid\n&quot;</span>,</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                     GetLastError());</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}</div>
-<div class="ttc" id="a_definition_8h_html_a1352bee1219aa51a2d22d67c6f25e666"><div class="ttname"><a href="_definition_8h.html#a1352bee1219aa51a2d22d67c6f25e666">SIZEOF_DEBUGGER_READ_AND_WRITE_ON_MSR</a></div><div class="ttdeci">#define SIZEOF_DEBUGGER_READ_AND_WRITE_ON_MSR</div><div class="ttdef"><b>Definition:</b> Definition.h:1067</div></div>
-<div class="ttc" id="a_definition_8h_html_a2e10715df5d41f777527db55f4fe4f1f"><div class="ttname"><a href="_definition_8h.html#a2e10715df5d41f777527db55f4fe4f1f">IOCTL_DEBUGGER_READ_OR_WRITE_MSR</a></div><div class="ttdeci">#define IOCTL_DEBUGGER_READ_OR_WRITE_MSR</div><div class="ttdoc">ioctl, request to read or write on a speical MSR</div><div class="ttdef"><b>Definition:</b> Definition.h:1950</div></div>
-<div class="ttc" id="a_definition_8h_html_a9e99d3b0c6a6357a5f021dc82422f789a8b4846619d6bec50232910290764fff3"><div class="ttname"><a href="_definition_8h.html#a9e99d3b0c6a6357a5f021dc82422f789a8b4846619d6bec50232910290764fff3">DEBUGGER_MSR_WRITE</a></div><div class="ttdeci">@ DEBUGGER_MSR_WRITE</div><div class="ttdef"><b>Definition:</b> Definition.h:1078</div></div>
-<div class="ttc" id="a_definition_8h_html_ad4f1d4dd952194fa7b47a2ed193ea0ed"><div class="ttname"><a href="_definition_8h.html#ad4f1d4dd952194fa7b47a2ed193ea0ed">DEBUGGER_READ_AND_WRITE_ON_MSR_APPLY_ALL_CORES</a></div><div class="ttdeci">#define DEBUGGER_READ_AND_WRITE_ON_MSR_APPLY_ALL_CORES</div><div class="ttdef"><b>Definition:</b> Definition.h:1069</div></div>
-<div class="ttc" id="a_gdb_stub_8h_html_a070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="_gdb_stub_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdef"><b>Definition:</b> GdbStub.h:33</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_a050c65e107f0c828f856a231f4b4e788"><div class="ttname"><a href="_script_engine_eval_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a></div><div class="ttdeci">int BOOL</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:64</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_a150a5c9e79c91b776324c85b80d5b8e0"><div class="ttname"><a href="_script_engine_eval_8h.html#a150a5c9e79c91b776324c85b80d5b8e0">SetValue</a></div><div class="ttdeci">VOID SetValue(PGUEST_REGS GuestRegs, UINT64 *g_TempList, UINT64 *g_VariableList, PSYMBOL Symbol, UINT64 Value)</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:3596</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:93</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:92</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_aae17ebb9ef7279d026817fb22f8aebe9"><div class="ttname"><a href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a></div><div class="ttdeci">unsigned __int64 UINT64</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:62</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_ae1e6edbbc26d6fbc71a90190d0266018"><div class="ttname"><a href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a></div><div class="ttdeci">unsigned int UINT32</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:89</div></div>
-<div class="ttc" id="acommon_8cpp_html_a659284da2352d3215bc8d47c714b21c3"><div class="ttname"><a href="common_8cpp.html#a659284da2352d3215bc8d47c714b21c3">ConvertStringToUInt64</a></div><div class="ttdeci">BOOLEAN ConvertStringToUInt64(string TextToConvert, PUINT64 Result)</div><div class="ttdoc">check and convert string to a 64 bit unsigned integer and also check for special notations like 0x et...</div><div class="ttdef"><b>Definition:</b> common.cpp:235</div></div>
-<div class="ttc" id="acommon_8cpp_html_a6d49b34b4d582be46c41da393e1a427c"><div class="ttname"><a href="common_8cpp.html#a6d49b34b4d582be46c41da393e1a427c">ConvertStringToUInt32</a></div><div class="ttdeci">BOOLEAN ConvertStringToUInt32(string TextToConvert, PUINT32 Result)</div><div class="ttdoc">check and convert string to a 32 bit unsigned it and also check for special notations like 0x etc.</div><div class="ttdef"><b>Definition:</b> common.cpp:285</div></div>
-<div class="ttc" id="ahprdbgctrl_8cpp_html_a04aaf680ede15f5e7ba51ab9f157bfff"><div class="ttname"><a href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a></div><div class="ttdeci">HANDLE g_DeviceHandle</div><div class="ttdoc">Holds the global handle of device which is used to send the request to the kernel by IOCTL,...</div><div class="ttdef"><b>Definition:</b> globals.h:366</div></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">// Check if msr is set or not</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">if</span> (!SetMsr)</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;please specify a correct hex value to write\n\n&quot;</span>);</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <a class="code" href="wrmsr_8cpp.html#a60ea84b6f2296b1627d20f9c8547f307">CommandWrmsrHelp</a>();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="_script_engine_eval_8h.html#a08d91fc5e81e545b31c978f6c6a02698">SetValue</a>)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;please specify a correct hex value to put on msr\n\n&quot;</span>);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <a class="code" href="wrmsr_8cpp.html#a60ea84b6f2296b1627d20f9c8547f307">CommandWrmsrHelp</a>();</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">if</span> (IsNextCoreId)</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    {</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;please specify a correct hex value for core\n\n&quot;</span>);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <a class="code" href="wrmsr_8cpp.html#a60ea84b6f2296b1627d20f9c8547f307">CommandWrmsrHelp</a>();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <a class="code" href="hprdbgctrl_2header_2common_8h.html#a14c16a9f19d50a44bfde8e8a3029c5d1">AssertShowMessageReturnStmt</a>(<a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a>, <a class="code" href="hprdbgctrl_2header_2common_8h.html#aa984b32130ec28ae1dbb70f604463dd0">ASSERT_MESSAGE_DRIVER_NOT_LOADED</a>, <a class="code" href="hprdbgctrl_2header_2common_8h.html#aa6dfcb2d199ec22b858626aa3991779c">AssertReturn</a>);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    MsrWriteRequest.<a class="code" href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html#a38a6cf9e2ea5ef31a1f7e888db6dc649">ActionType</a> = <a class="code" href="_definition_8h.html#a9e99d3b0c6a6357a5f021dc82422f789a8b4846619d6bec50232910290764fff3">DEBUGGER_MSR_WRITE</a>;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    MsrWriteRequest.<a class="code" href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html#a3e43511772a5618a6bec9655e8a774d5">Msr</a>        = Msr;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    MsrWriteRequest.<a class="code" href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html#a1bc8c0010501f9125b025ecb933380d5">CoreNumber</a> = CoreNumer;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    MsrWriteRequest.<a class="code" href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html#aec2dc73b7eb1f1d455f0399bcb49e929">Value</a>      = Value;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    Status = DeviceIoControl(</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a>,                        <span class="comment">// Handle to device</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <a class="code" href="_definition_8h.html#a2e10715df5d41f777527db55f4fe4f1f">IOCTL_DEBUGGER_READ_OR_WRITE_MSR</a>,      <span class="comment">// IO Control code</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        &amp;MsrWriteRequest,                      <span class="comment">// Input Buffer to driver.</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <a class="code" href="_definition_8h.html#a1352bee1219aa51a2d22d67c6f25e666">SIZEOF_DEBUGGER_READ_AND_WRITE_ON_MSR</a>, <span class="comment">// Input buffer length</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,                                  <span class="comment">// Output Buffer from driver.</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,                                  <span class="comment">// Length of output buffer in bytes.</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,                                  <span class="comment">// Bytes placed in buffer.</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>                                   <span class="comment">// synchronous call</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    );</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">if</span> (!Status)</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;ioctl failed with code (%x), either msr index or core id is invalid\n&quot;</span>,</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                     GetLastError());</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;}</div>
+<div class="ttc" id="a_definition_8h_html_a1352bee1219aa51a2d22d67c6f25e666"><div class="ttname"><a href="_definition_8h.html#a1352bee1219aa51a2d22d67c6f25e666">SIZEOF_DEBUGGER_READ_AND_WRITE_ON_MSR</a></div><div class="ttdeci">#define SIZEOF_DEBUGGER_READ_AND_WRITE_ON_MSR</div><div class="ttdef"><b>Definition:</b> Definition.h:1423</div></div>
+<div class="ttc" id="a_definition_8h_html_a2e10715df5d41f777527db55f4fe4f1f"><div class="ttname"><a href="_definition_8h.html#a2e10715df5d41f777527db55f4fe4f1f">IOCTL_DEBUGGER_READ_OR_WRITE_MSR</a></div><div class="ttdeci">#define IOCTL_DEBUGGER_READ_OR_WRITE_MSR</div><div class="ttdoc">ioctl, request to read or write on a speical MSR</div><div class="ttdef"><b>Definition:</b> Definition.h:2816</div></div>
+<div class="ttc" id="a_definition_8h_html_a9e99d3b0c6a6357a5f021dc82422f789a8b4846619d6bec50232910290764fff3"><div class="ttname"><a href="_definition_8h.html#a9e99d3b0c6a6357a5f021dc82422f789a8b4846619d6bec50232910290764fff3">DEBUGGER_MSR_WRITE</a></div><div class="ttdeci">@ DEBUGGER_MSR_WRITE</div><div class="ttdef"><b>Definition:</b> Definition.h:1434</div></div>
+<div class="ttc" id="a_definition_8h_html_ad4f1d4dd952194fa7b47a2ed193ea0ed"><div class="ttname"><a href="_definition_8h.html#ad4f1d4dd952194fa7b47a2ed193ea0ed">DEBUGGER_READ_AND_WRITE_ON_MSR_APPLY_ALL_CORES</a></div><div class="ttdeci">#define DEBUGGER_READ_AND_WRITE_ON_MSR_APPLY_ALL_CORES</div><div class="ttdef"><b>Definition:</b> Definition.h:1425</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_a050c65e107f0c828f856a231f4b4e788"><div class="ttname"><a href="_script_engine_eval_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a></div><div class="ttdeci">int BOOL</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:74</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_a08d91fc5e81e545b31c978f6c6a02698"><div class="ttname"><a href="_script_engine_eval_8h.html#a08d91fc5e81e545b31c978f6c6a02698">SetValue</a></div><div class="ttdeci">VOID SetValue(PGUEST_REGS GuestRegs, SCRIPT_ENGINE_VARIABLES_LIST *VariablesList, PSYMBOL Symbol, UINT64 Value)</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:3798</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:103</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:102</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aae17ebb9ef7279d026817fb22f8aebe9"><div class="ttname"><a href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a></div><div class="ttdeci">unsigned __int64 UINT64</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:72</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_ae1e6edbbc26d6fbc71a90190d0266018"><div class="ttname"><a href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a></div><div class="ttdeci">unsigned int UINT32</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:99</div></div>
+<div class="ttc" id="acommon_8cpp_html_a659284da2352d3215bc8d47c714b21c3"><div class="ttname"><a href="common_8cpp.html#a659284da2352d3215bc8d47c714b21c3">ConvertStringToUInt64</a></div><div class="ttdeci">BOOLEAN ConvertStringToUInt64(string TextToConvert, PUINT64 Result)</div><div class="ttdoc">check and convert string to a 64 bit unsigned integer and also check for special notations like 0x et...</div><div class="ttdef"><b>Definition:</b> common.cpp:213</div></div>
+<div class="ttc" id="acommon_8cpp_html_a6d49b34b4d582be46c41da393e1a427c"><div class="ttname"><a href="common_8cpp.html#a6d49b34b4d582be46c41da393e1a427c">ConvertStringToUInt32</a></div><div class="ttdeci">BOOLEAN ConvertStringToUInt32(string TextToConvert, PUINT32 Result)</div><div class="ttdoc">check and convert string to a 32 bit unsigned it and also check for special notations like 0x etc.</div><div class="ttdef"><b>Definition:</b> common.cpp:263</div></div>
+<div class="ttc" id="ahprdbgctrl_2header_2common_8h_html_a14c16a9f19d50a44bfde8e8a3029c5d1"><div class="ttname"><a href="hprdbgctrl_2header_2common_8h.html#a14c16a9f19d50a44bfde8e8a3029c5d1">AssertShowMessageReturnStmt</a></div><div class="ttdeci">#define AssertShowMessageReturnStmt(expr, message, rc)</div><div class="ttdef"><b>Definition:</b> common.h:41</div></div>
+<div class="ttc" id="ahprdbgctrl_2header_2common_8h_html_aa6dfcb2d199ec22b858626aa3991779c"><div class="ttname"><a href="hprdbgctrl_2header_2common_8h.html#aa6dfcb2d199ec22b858626aa3991779c">AssertReturn</a></div><div class="ttdeci">#define AssertReturn</div><div class="ttdef"><b>Definition:</b> common.h:19</div></div>
+<div class="ttc" id="ahprdbgctrl_2header_2common_8h_html_aa984b32130ec28ae1dbb70f604463dd0"><div class="ttname"><a href="hprdbgctrl_2header_2common_8h.html#aa984b32130ec28ae1dbb70f604463dd0">ASSERT_MESSAGE_DRIVER_NOT_LOADED</a></div><div class="ttdeci">#define ASSERT_MESSAGE_DRIVER_NOT_LOADED</div><div class="ttdef"><b>Definition:</b> common.h:25</div></div>
+<div class="ttc" id="ahprdbgctrl_8cpp_html_a04aaf680ede15f5e7ba51ab9f157bfff"><div class="ttname"><a href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a></div><div class="ttdeci">HANDLE g_DeviceHandle</div><div class="ttdoc">Holds the global handle of device which is used to send the request to the kernel by IOCTL,...</div><div class="ttdef"><b>Definition:</b> globals.h:438</div></div>
 <div class="ttc" id="ahprdbgctrl_8cpp_html_a21c3c06b34d716c4680695c2b28127da"><div class="ttname"><a href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a></div><div class="ttdeci">VOID ShowMessages(const char *Fmt,...)</div><div class="ttdoc">Show messages.</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:51</div></div>
-<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r_html"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html">_DEBUGGER_READ_AND_WRITE_ON_MSR</a></div><div class="ttdoc">request to read or write on MSRs</div><div class="ttdef"><b>Definition:</b> Definition.h:1086</div></div>
-<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r_html_a1bc8c0010501f9125b025ecb933380d5"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html#a1bc8c0010501f9125b025ecb933380d5">_DEBUGGER_READ_AND_WRITE_ON_MSR::CoreNumber</a></div><div class="ttdeci">UINT32 CoreNumber</div><div class="ttdef"><b>Definition:</b> Definition.h:1088</div></div>
-<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r_html_a38a6cf9e2ea5ef31a1f7e888db6dc649"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html#a38a6cf9e2ea5ef31a1f7e888db6dc649">_DEBUGGER_READ_AND_WRITE_ON_MSR::ActionType</a></div><div class="ttdeci">DEBUGGER_MSR_ACTION_TYPE ActionType</div><div class="ttdef"><b>Definition:</b> Definition.h:1092</div></div>
-<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r_html_a3e43511772a5618a6bec9655e8a774d5"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html#a3e43511772a5618a6bec9655e8a774d5">_DEBUGGER_READ_AND_WRITE_ON_MSR::Msr</a></div><div class="ttdeci">UINT64 Msr</div><div class="ttdef"><b>Definition:</b> Definition.h:1087</div></div>
-<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r_html_aec2dc73b7eb1f1d455f0399bcb49e929"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html#aec2dc73b7eb1f1d455f0399bcb49e929">_DEBUGGER_READ_AND_WRITE_ON_MSR::Value</a></div><div class="ttdeci">UINT64 Value</div><div class="ttdef"><b>Definition:</b> Definition.h:1093</div></div>
-<div class="ttc" id="asymbol_8cpp_html_a6be1547f40c36ec20c6a3e7f3ed94efd"><div class="ttname"><a href="symbol_8cpp.html#a6be1547f40c36ec20c6a3e7f3ed94efd">SymbolConvertNameOrExprToAddress</a></div><div class="ttdeci">BOOLEAN SymbolConvertNameOrExprToAddress(string TextToConvert, PUINT64 Result)</div><div class="ttdoc">check and convert string to a 64 bit unsigned interger and also check for symbol object names and eva...</div><div class="ttdef"><b>Definition:</b> symbol.cpp:201</div></div>
+<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r_html"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html">_DEBUGGER_READ_AND_WRITE_ON_MSR</a></div><div class="ttdoc">request to read or write on MSRs</div><div class="ttdef"><b>Definition:</b> Definition.h:1442</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r_html_a1bc8c0010501f9125b025ecb933380d5"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html#a1bc8c0010501f9125b025ecb933380d5">_DEBUGGER_READ_AND_WRITE_ON_MSR::CoreNumber</a></div><div class="ttdeci">UINT32 CoreNumber</div><div class="ttdef"><b>Definition:</b> Definition.h:1444</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r_html_a38a6cf9e2ea5ef31a1f7e888db6dc649"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html#a38a6cf9e2ea5ef31a1f7e888db6dc649">_DEBUGGER_READ_AND_WRITE_ON_MSR::ActionType</a></div><div class="ttdeci">DEBUGGER_MSR_ACTION_TYPE ActionType</div><div class="ttdef"><b>Definition:</b> Definition.h:1448</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r_html_a3e43511772a5618a6bec9655e8a774d5"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html#a3e43511772a5618a6bec9655e8a774d5">_DEBUGGER_READ_AND_WRITE_ON_MSR::Msr</a></div><div class="ttdeci">UINT64 Msr</div><div class="ttdef"><b>Definition:</b> Definition.h:1443</div></div>
+<div class="ttc" id="astruct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r_html_aec2dc73b7eb1f1d455f0399bcb49e929"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html#aec2dc73b7eb1f1d455f0399bcb49e929">_DEBUGGER_READ_AND_WRITE_ON_MSR::Value</a></div><div class="ttdeci">UINT64 Value</div><div class="ttdef"><b>Definition:</b> Definition.h:1449</div></div>
+<div class="ttc" id="asymbol_8cpp_html_aae8c95f17a948c9f1a1e198527465e8b"><div class="ttname"><a href="symbol_8cpp.html#aae8c95f17a948c9f1a1e198527465e8b">SymbolConvertNameOrExprToAddress</a></div><div class="ttdeci">BOOLEAN SymbolConvertNameOrExprToAddress(const string &amp;TextToConvert, PUINT64 Result)</div><div class="ttdoc">check and convert string to a 64 bit unsigned interger and also check for symbol object names and eva...</div><div class="ttdef"><b>Definition:</b> symbol.cpp:386</div></div>
 <div class="ttc" id="awrmsr_8cpp_html_a60ea84b6f2296b1627d20f9c8547f307"><div class="ttname"><a href="wrmsr_8cpp.html#a60ea84b6f2296b1627d20f9c8547f307">CommandWrmsrHelp</a></div><div class="ttdeci">VOID CommandWrmsrHelp()</div><div class="ttdoc">help of wrmsr command</div><div class="ttdef"><b>Definition:</b> wrmsr.cpp:20</div></div>
 </div><!-- fragment -->
 </div>
@@ -317,14 +315,16 @@ Functions</h2></td></tr>
 <p>help of wrmsr command </p>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
 <div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;wrmsr : Writes on a model-specific register (MSR).\n\n&quot;</span>);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;syntax : \twrmsr [ecx (hex value)] [value to write - EDX:EAX &quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                 <span class="stringliteral">&quot;(hex value)] core [core index (hex value - optional)]\n&quot;</span>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\t\te.g : wrmsr c0000082 fffff8077356f010\n&quot;</span>);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\t\te.g : wrmsr c0000082 @rcx\n&quot;</span>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\t\te.g : wrmsr c0000082 @rcx+@rdx+12\n&quot;</span>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\t\te.g : wrmsr c0000082 fffff8077356f010 core 2\n&quot;</span>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;wrmsr : writes on a model-specific register (MSR).\n\n&quot;</span>);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;syntax : \twrmsr [Msr (hex)] [Value (hex)] [core CoreNumber (hex)]\n&quot;</span>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\t\te.g : wrmsr c0000082 fffff8077356f010\n&quot;</span>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\t\te.g : wrmsr c0000082 @rcx\n&quot;</span>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\t\te.g : wrmsr c0000082 @rcx+@rdx+12\n&quot;</span>);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;\t\te.g : wrmsr c0000082 fffff8077356f010 core 2\n&quot;</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -90,26 +90,26 @@ $(document).ready(function(){initNavTree('_efer_hook_8c.html',''); initResizable
 
 <p>Implenetation of the fucntions related to the EFER Syscall Hook.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;..\hprdbghv\pch.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;pch.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9e6aa3a71bec2d2f001a992dbf31346b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a7f319bfc2492a2136964194204e7a8cf">VOID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_efer_hook_8c.html#a9e6aa3a71bec2d2f001a992dbf31346b">SyscallHookConfigureEFER</a> (<a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> EnableEFERSyscallHook)</td></tr>
 <tr class="memdesc:a9e6aa3a71bec2d2f001a992dbf31346b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function enables or disables EFER syscall hoo.  <a href="_efer_hook_8c.html#a9e6aa3a71bec2d2f001a992dbf31346b">More...</a><br /></td></tr>
 <tr class="separator:a9e6aa3a71bec2d2f001a992dbf31346b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a516e72d9809509503148692de5028090"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_efer_hook_8c.html#a516e72d9809509503148692de5028090">SyscallHookEmulateSYSCALL</a> (<a class="el" href="_definition_8h.html#a2bd4673df5e6e2fb371d770f3f2886d9">PGUEST_REGS</a> Regs)</td></tr>
-<tr class="memdesc:a516e72d9809509503148692de5028090"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function emulates the SYSCALL execution.  <a href="_efer_hook_8c.html#a516e72d9809509503148692de5028090">More...</a><br /></td></tr>
-<tr class="separator:a516e72d9809509503148692de5028090"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4526268be34d6d97eb459ec64e644142"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_efer_hook_8c.html#a4526268be34d6d97eb459ec64e644142">SyscallHookEmulateSYSRET</a> (<a class="el" href="_definition_8h.html#a2bd4673df5e6e2fb371d770f3f2886d9">PGUEST_REGS</a> Regs)</td></tr>
-<tr class="memdesc:a4526268be34d6d97eb459ec64e644142"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function emulates the SYSRET execution.  <a href="_efer_hook_8c.html#a4526268be34d6d97eb459ec64e644142">More...</a><br /></td></tr>
-<tr class="separator:a4526268be34d6d97eb459ec64e644142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba097f00fd4f3d3a4a972b391fe1ca98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_efer_hook_8c.html#aba097f00fd4f3d3a4a972b391fe1ca98">SyscallHookHandleUD</a> (<a class="el" href="_definition_8h.html#a2bd4673df5e6e2fb371d770f3f2886d9">PGUEST_REGS</a> Regs, <a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> CoreIndex)</td></tr>
-<tr class="memdesc:aba097f00fd4f3d3a4a972b391fe1ca98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detect whether the #UD was because of Syscall or Sysret or not.  <a href="_efer_hook_8c.html#aba097f00fd4f3d3a4a972b391fe1ca98">More...</a><br /></td></tr>
-<tr class="separator:aba097f00fd4f3d3a4a972b391fe1ca98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2d5e9863bf1456a765732554d12501a"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ <a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_efer_hook_8c.html#ab2d5e9863bf1456a765732554d12501a">SyscallHookEmulateSYSCALL</a> (<a class="el" href="_definition_8h.html#a2bd4673df5e6e2fb371d770f3f2886d9">PGUEST_REGS</a> Regs)</td></tr>
+<tr class="memdesc:ab2d5e9863bf1456a765732554d12501a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function emulates the SYSCALL execution.  <a href="_efer_hook_8c.html#ab2d5e9863bf1456a765732554d12501a">More...</a><br /></td></tr>
+<tr class="separator:ab2d5e9863bf1456a765732554d12501a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e2363f45e308ab8b69cea7f6d642613"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ <a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_efer_hook_8c.html#a2e2363f45e308ab8b69cea7f6d642613">SyscallHookEmulateSYSRET</a> (<a class="el" href="_definition_8h.html#a2bd4673df5e6e2fb371d770f3f2886d9">PGUEST_REGS</a> Regs)</td></tr>
+<tr class="memdesc:a2e2363f45e308ab8b69cea7f6d642613"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function emulates the SYSRET execution.  <a href="_efer_hook_8c.html#a2e2363f45e308ab8b69cea7f6d642613">More...</a><br /></td></tr>
+<tr class="separator:a2e2363f45e308ab8b69cea7f6d642613"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a4cc6ef2a50b810850bd3388e8b78f"><td class="memItemLeft" align="right" valign="top">_Use_decl_annotations_ <a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_efer_hook_8c.html#af2a4cc6ef2a50b810850bd3388e8b78f">SyscallHookHandleUD</a> (<a class="el" href="_definition_8h.html#a2bd4673df5e6e2fb371d770f3f2886d9">PGUEST_REGS</a> Regs, <a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a> CoreIndex)</td></tr>
+<tr class="memdesc:af2a4cc6ef2a50b810850bd3388e8b78f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detect whether the #UD was because of Syscall or Sysret or not.  <a href="_efer_hook_8c.html#af2a4cc6ef2a50b810850bd3388e8b78f">More...</a><br /></td></tr>
+<tr class="separator:af2a4cc6ef2a50b810850bd3388e8b78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implenetation of the fucntions related to the EFER Syscall Hook. </p>
-<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'ray'+'an'+'fam'+'.c'+'om'; return false;">sina@<span style="display: none;">.nosp@m.</span>raya<span style="display: none;">.nosp@m.</span>nfam.<span style="display: none;">.nosp@m.</span>com</a>)</dd></dl>
+<dl class="section author"><dt>Author</dt><dd>Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+'er'+'dbg'+'.o'+'rg'; return false;">sina@<span style="display: none;">.nosp@m.</span>hype<span style="display: none;">.nosp@m.</span>rdbg.<span style="display: none;">.nosp@m.</span>org</a>)</dd></dl>
 <p>This is derived by the method demonstrated at</p><ul>
 <li><a href="https://revers.engineering/syscall-hooking-via-extended-feature-enable-register-efer/">https://revers.engineering/syscall-hooking-via-extended-feature-enable-register-efer/</a></li>
 </ul>
@@ -147,115 +147,99 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
 <div class="fragment"><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="union___e_f_e_r___m_s_r.html">EFER_MSR</a>           MsrValue;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="union___i_a32___v_m_x___b_a_s_i_c___m_s_r.html">IA32_VMX_BASIC_MSR</a> VmxBasicMsr     = {0};</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>             VmEntryControls = 0;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>             VmExitControls  = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    IA32_EFER_REGISTER      MsrValue;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    IA32_VMX_BASIC_REGISTER VmxBasicMsr     = {0};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                  VmEntryControls = 0;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                  VmExitControls  = 0;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// Reading IA32_VMX_BASIC_MSR</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    VmxBasicMsr.<a class="code" href="union___i_a32___v_m_x___b_a_s_i_c___m_s_r.html#a582b956a99ea9d01d0f6403ab1acf421">All</a> = __readmsr(<a class="code" href="_msr_8h.html#a74dfe38ca3c30ba14870261a66be8033">MSR_IA32_VMX_BASIC</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    VmxBasicMsr.Flags = __readmsr(IA32_VMX_BASIC);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// Read previous VM-Entry and VM-Exit controls</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    __vmx_vmread(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a580f2ee939b5dfdde2c6b06db61fe617">VM_ENTRY_CONTROLS</a>, &amp;VmEntryControls);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    __vmx_vmread(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a92a2459954f3e5469b434dc37d863900">VM_EXIT_CONTROLS</a>, &amp;VmExitControls);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    __vmx_vmread(VMCS_CTRL_VMENTRY_CONTROLS, &amp;VmEntryControls);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    __vmx_vmread(VMCS_CTRL_VMEXIT_CONTROLS, &amp;VmExitControls);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    MsrValue.<a class="code" href="union___e_f_e_r___m_s_r.html#ae858bdb305c414fd2e7f5bdc613c2fd9">Flags</a> = __readmsr(<a class="code" href="_msr_8h.html#a6ccbf4c3059a646738b4ec7ffffe372d">MSR_EFER</a>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    MsrValue.Flags = __readmsr(IA32_EFER);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">if</span> (EnableEFERSyscallHook)</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        MsrValue.<a class="code" href="union___e_f_e_r___m_s_r.html#acde2c516433960acb359f89b258f7d9e">SyscallEnable</a> = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        MsrValue.SyscallEnable = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">// Set VM-Entry controls to load EFER</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a580f2ee939b5dfdde2c6b06db61fe617">VM_ENTRY_CONTROLS</a>, <a class="code" href="_hypervisor_routines_8c.html#af4b5fbb4d7aab890383c5ea30789e265">HvAdjustControls</a>(VmEntryControls | <a class="code" href="_vmx_8h.html#a92eb09bb4e3344efcdb3616970da1cf4">VM_ENTRY_LOAD_IA32_EFER</a>, VmxBasicMsr.<a class="code" href="union___i_a32___v_m_x___b_a_s_i_c___m_s_r.html#a2bac5919cd7002f7ac074cf72fc6e116">Fields</a>.<a class="code" href="union___i_a32___v_m_x___b_a_s_i_c___m_s_r.html#ac629c1f33af17745293795c83d06cb55">VmxCapabilityHint</a> ? <a class="code" href="_msr_8h.html#a283786002cde0cfaaa97762c09e901bf">MSR_IA32_VMX_TRUE_ENTRY_CTLS</a> : <a class="code" href="_msr_8h.html#a218bcf50a51d8ffb1fc76cda0d183069">MSR_IA32_VMX_ENTRY_CTLS</a>));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        __vmx_vmwrite(VMCS_CTRL_VMENTRY_CONTROLS, <a class="code" href="_hv_8c.html#af4b5fbb4d7aab890383c5ea30789e265">HvAdjustControls</a>(VmEntryControls | <a class="code" href="_vmx_8h.html#a92eb09bb4e3344efcdb3616970da1cf4">VM_ENTRY_LOAD_IA32_EFER</a>, VmxBasicMsr.VmxControls ? IA32_VMX_TRUE_ENTRY_CTLS : IA32_VMX_ENTRY_CTLS));</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">// Set VM-Exit controls to save EFER</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a92a2459954f3e5469b434dc37d863900">VM_EXIT_CONTROLS</a>, <a class="code" href="_hypervisor_routines_8c.html#af4b5fbb4d7aab890383c5ea30789e265">HvAdjustControls</a>(VmExitControls | <a class="code" href="_vmx_8h.html#a90a6b8fc528e099c6f0c614d09ad9931">VM_EXIT_SAVE_IA32_EFER</a>, VmxBasicMsr.<a class="code" href="union___i_a32___v_m_x___b_a_s_i_c___m_s_r.html#a2bac5919cd7002f7ac074cf72fc6e116">Fields</a>.<a class="code" href="union___i_a32___v_m_x___b_a_s_i_c___m_s_r.html#ac629c1f33af17745293795c83d06cb55">VmxCapabilityHint</a> ? <a class="code" href="_msr_8h.html#a880eb5d1956fb34092c9bec58514a65d">MSR_IA32_VMX_TRUE_EXIT_CTLS</a> : <a class="code" href="_msr_8h.html#a77fbae86e7d2122539d870424e3e3478">MSR_IA32_VMX_EXIT_CTLS</a>));</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        __vmx_vmwrite(VMCS_CTRL_VMEXIT_CONTROLS, <a class="code" href="_hv_8c.html#af4b5fbb4d7aab890383c5ea30789e265">HvAdjustControls</a>(VmExitControls | <a class="code" href="_vmx_8h.html#a90a6b8fc528e099c6f0c614d09ad9931">VM_EXIT_SAVE_IA32_EFER</a>, VmxBasicMsr.VmxControls ? IA32_VMX_TRUE_EXIT_CTLS : IA32_VMX_EXIT_CTLS));</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">// Set the GUEST EFER to use this value as the EFER</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a40a933b00c86aa88cf0cd13aa485d885">GUEST_EFER</a>, MsrValue.<a class="code" href="union___e_f_e_r___m_s_r.html#ae858bdb305c414fd2e7f5bdc613c2fd9">Flags</a>);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        __vmx_vmwrite(VMCS_GUEST_EFER, MsrValue.Flags);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">// also, we have to set exception bitmap to cause vm-exit on #UDs</span></div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="_hypervisor_routines_8c.html#ad81531a3022f3ccfc2c6ceb34160f18d">HvSetExceptionBitmap</a>(<a class="code" href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a33fbb650006f5fc9e3080438e80de36c">EXCEPTION_VECTOR_UNDEFINED_OPCODE</a>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="_hv_8c.html#ad81531a3022f3ccfc2c6ceb34160f18d">HvSetExceptionBitmap</a>(<a class="code" href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a33fbb650006f5fc9e3080438e80de36c">EXCEPTION_VECTOR_UNDEFINED_OPCODE</a>);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        MsrValue.<a class="code" href="union___e_f_e_r___m_s_r.html#acde2c516433960acb359f89b258f7d9e">SyscallEnable</a> = <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        MsrValue.SyscallEnable = <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="comment">// Set VM-Entry controls to load EFER</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a580f2ee939b5dfdde2c6b06db61fe617">VM_ENTRY_CONTROLS</a>, <a class="code" href="_hypervisor_routines_8c.html#af4b5fbb4d7aab890383c5ea30789e265">HvAdjustControls</a>(VmEntryControls &amp; ~<a class="code" href="_vmx_8h.html#a92eb09bb4e3344efcdb3616970da1cf4">VM_ENTRY_LOAD_IA32_EFER</a>, VmxBasicMsr.<a class="code" href="union___i_a32___v_m_x___b_a_s_i_c___m_s_r.html#a2bac5919cd7002f7ac074cf72fc6e116">Fields</a>.<a class="code" href="union___i_a32___v_m_x___b_a_s_i_c___m_s_r.html#ac629c1f33af17745293795c83d06cb55">VmxCapabilityHint</a> ? <a class="code" href="_msr_8h.html#a283786002cde0cfaaa97762c09e901bf">MSR_IA32_VMX_TRUE_ENTRY_CTLS</a> : <a class="code" href="_msr_8h.html#a218bcf50a51d8ffb1fc76cda0d183069">MSR_IA32_VMX_ENTRY_CTLS</a>));</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        __vmx_vmwrite(VMCS_CTRL_VMENTRY_CONTROLS, <a class="code" href="_hv_8c.html#af4b5fbb4d7aab890383c5ea30789e265">HvAdjustControls</a>(VmEntryControls &amp; ~<a class="code" href="_vmx_8h.html#a92eb09bb4e3344efcdb3616970da1cf4">VM_ENTRY_LOAD_IA32_EFER</a>, VmxBasicMsr.VmxControls ? IA32_VMX_TRUE_ENTRY_CTLS : IA32_VMX_ENTRY_CTLS));</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">// Set VM-Exit controls to save EFER</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a92a2459954f3e5469b434dc37d863900">VM_EXIT_CONTROLS</a>, <a class="code" href="_hypervisor_routines_8c.html#af4b5fbb4d7aab890383c5ea30789e265">HvAdjustControls</a>(VmExitControls &amp; ~<a class="code" href="_vmx_8h.html#a90a6b8fc528e099c6f0c614d09ad9931">VM_EXIT_SAVE_IA32_EFER</a>, VmxBasicMsr.<a class="code" href="union___i_a32___v_m_x___b_a_s_i_c___m_s_r.html#a2bac5919cd7002f7ac074cf72fc6e116">Fields</a>.<a class="code" href="union___i_a32___v_m_x___b_a_s_i_c___m_s_r.html#ac629c1f33af17745293795c83d06cb55">VmxCapabilityHint</a> ? <a class="code" href="_msr_8h.html#a880eb5d1956fb34092c9bec58514a65d">MSR_IA32_VMX_TRUE_EXIT_CTLS</a> : <a class="code" href="_msr_8h.html#a77fbae86e7d2122539d870424e3e3478">MSR_IA32_VMX_EXIT_CTLS</a>));</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        __vmx_vmwrite(VMCS_CTRL_VMEXIT_CONTROLS, <a class="code" href="_hv_8c.html#af4b5fbb4d7aab890383c5ea30789e265">HvAdjustControls</a>(VmExitControls &amp; ~<a class="code" href="_vmx_8h.html#a90a6b8fc528e099c6f0c614d09ad9931">VM_EXIT_SAVE_IA32_EFER</a>, VmxBasicMsr.VmxControls ? IA32_VMX_TRUE_EXIT_CTLS : IA32_VMX_EXIT_CTLS));</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="comment">// Set the GUEST EFER to use this value as the EFER</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a40a933b00c86aa88cf0cd13aa485d885">GUEST_EFER</a>, MsrValue.<a class="code" href="union___e_f_e_r___m_s_r.html#ae858bdb305c414fd2e7f5bdc613c2fd9">Flags</a>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        __vmx_vmwrite(VMCS_GUEST_EFER, MsrValue.Flags);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">// Because we&#39;re not save or load EFER on vm-exits so</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="comment">// we have to set it manually</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        __writemsr(<a class="code" href="_msr_8h.html#a6ccbf4c3059a646738b4ec7ffffe372d">MSR_EFER</a>, MsrValue.<a class="code" href="union___e_f_e_r___m_s_r.html#ae858bdb305c414fd2e7f5bdc613c2fd9">Flags</a>);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        __writemsr(IA32_EFER, MsrValue.Flags);</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="comment">// unset the exception to not cause vm-exit on #UDs</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="_protected_hv_routines_8c.html#aff114c09f5979b9aab0923773ce440e7">ProtectedHvRemoveUndefinedInstructionForDisablingSyscallSysretCommands</a>();</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="_protected_hv_8c.html#aff114c09f5979b9aab0923773ce440e7">ProtectedHvRemoveUndefinedInstructionForDisablingSyscallSysretCommands</a>();</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
 <div class="ttc" id="a_events_8h_html_af9640e4f7e36f7a6bf7c56e30a860349a33fbb650006f5fc9e3080438e80de36c"><div class="ttname"><a href="_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a33fbb650006f5fc9e3080438e80de36c">EXCEPTION_VECTOR_UNDEFINED_OPCODE</a></div><div class="ttdeci">@ EXCEPTION_VECTOR_UNDEFINED_OPCODE</div><div class="ttdef"><b>Definition:</b> Events.h:37</div></div>
-<div class="ttc" id="a_hypervisor_routines_8c_html_ad81531a3022f3ccfc2c6ceb34160f18d"><div class="ttname"><a href="_hypervisor_routines_8c.html#ad81531a3022f3ccfc2c6ceb34160f18d">HvSetExceptionBitmap</a></div><div class="ttdeci">VOID HvSetExceptionBitmap(UINT32 IdtIndex)</div><div class="ttdoc">Set exception bitmap in VMCS.</div><div class="ttdef"><b>Definition:</b> HypervisorRoutines.c:1238</div></div>
-<div class="ttc" id="a_hypervisor_routines_8c_html_af4b5fbb4d7aab890383c5ea30789e265"><div class="ttname"><a href="_hypervisor_routines_8c.html#af4b5fbb4d7aab890383c5ea30789e265">HvAdjustControls</a></div><div class="ttdeci">ULONG HvAdjustControls(ULONG Ctl, ULONG Msr)</div><div class="ttdoc">Adjust controls for VMCS based on processor capability.</div><div class="ttdef"><b>Definition:</b> HypervisorRoutines.c:23</div></div>
-<div class="ttc" id="a_msr_8h_html_a218bcf50a51d8ffb1fc76cda0d183069"><div class="ttname"><a href="_msr_8h.html#a218bcf50a51d8ffb1fc76cda0d183069">MSR_IA32_VMX_ENTRY_CTLS</a></div><div class="ttdeci">#define MSR_IA32_VMX_ENTRY_CTLS</div><div class="ttdef"><b>Definition:</b> Msr.h:26</div></div>
-<div class="ttc" id="a_msr_8h_html_a283786002cde0cfaaa97762c09e901bf"><div class="ttname"><a href="_msr_8h.html#a283786002cde0cfaaa97762c09e901bf">MSR_IA32_VMX_TRUE_ENTRY_CTLS</a></div><div class="ttdeci">#define MSR_IA32_VMX_TRUE_ENTRY_CTLS</div><div class="ttdef"><b>Definition:</b> Msr.h:38</div></div>
-<div class="ttc" id="a_msr_8h_html_a6ccbf4c3059a646738b4ec7ffffe372d"><div class="ttname"><a href="_msr_8h.html#a6ccbf4c3059a646738b4ec7ffffe372d">MSR_EFER</a></div><div class="ttdeci">#define MSR_EFER</div><div class="ttdef"><b>Definition:</b> Msr.h:44</div></div>
-<div class="ttc" id="a_msr_8h_html_a74dfe38ca3c30ba14870261a66be8033"><div class="ttname"><a href="_msr_8h.html#a74dfe38ca3c30ba14870261a66be8033">MSR_IA32_VMX_BASIC</a></div><div class="ttdeci">#define MSR_IA32_VMX_BASIC</div><div class="ttdef"><b>Definition:</b> Msr.h:22</div></div>
-<div class="ttc" id="a_msr_8h_html_a77fbae86e7d2122539d870424e3e3478"><div class="ttname"><a href="_msr_8h.html#a77fbae86e7d2122539d870424e3e3478">MSR_IA32_VMX_EXIT_CTLS</a></div><div class="ttdeci">#define MSR_IA32_VMX_EXIT_CTLS</div><div class="ttdef"><b>Definition:</b> Msr.h:25</div></div>
-<div class="ttc" id="a_msr_8h_html_a880eb5d1956fb34092c9bec58514a65d"><div class="ttname"><a href="_msr_8h.html#a880eb5d1956fb34092c9bec58514a65d">MSR_IA32_VMX_TRUE_EXIT_CTLS</a></div><div class="ttdeci">#define MSR_IA32_VMX_TRUE_EXIT_CTLS</div><div class="ttdef"><b>Definition:</b> Msr.h:37</div></div>
-<div class="ttc" id="a_protected_hv_routines_8c_html_aff114c09f5979b9aab0923773ce440e7"><div class="ttname"><a href="_protected_hv_routines_8c.html#aff114c09f5979b9aab0923773ce440e7">ProtectedHvRemoveUndefinedInstructionForDisablingSyscallSysretCommands</a></div><div class="ttdeci">VOID ProtectedHvRemoveUndefinedInstructionForDisablingSyscallSysretCommands()</div><div class="ttdoc">Reset exception bitmap in VMCS because of clearing !exception commands.</div><div class="ttdef"><b>Definition:</b> ProtectedHvRoutines.c:185</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:93</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:92</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_ae1e6edbbc26d6fbc71a90190d0266018"><div class="ttname"><a href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a></div><div class="ttdeci">unsigned int UINT32</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:89</div></div>
-<div class="ttc" id="a_vmx_8h_html_a7ff71507e63e5659d2fc6db8b260d9e5a40a933b00c86aa88cf0cd13aa485d885"><div class="ttname"><a href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a40a933b00c86aa88cf0cd13aa485d885">GUEST_EFER</a></div><div class="ttdeci">@ GUEST_EFER</div><div class="ttdef"><b>Definition:</b> Vmx.h:416</div></div>
-<div class="ttc" id="a_vmx_8h_html_a7ff71507e63e5659d2fc6db8b260d9e5a580f2ee939b5dfdde2c6b06db61fe617"><div class="ttname"><a href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a580f2ee939b5dfdde2c6b06db61fe617">VM_ENTRY_CONTROLS</a></div><div class="ttdeci">@ VM_ENTRY_CONTROLS</div><div class="ttdef"><b>Definition:</b> Vmx.h:433</div></div>
-<div class="ttc" id="a_vmx_8h_html_a7ff71507e63e5659d2fc6db8b260d9e5a92a2459954f3e5469b434dc37d863900"><div class="ttname"><a href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a92a2459954f3e5469b434dc37d863900">VM_EXIT_CONTROLS</a></div><div class="ttdeci">@ VM_EXIT_CONTROLS</div><div class="ttdef"><b>Definition:</b> Vmx.h:430</div></div>
+<div class="ttc" id="a_hv_8c_html_ad81531a3022f3ccfc2c6ceb34160f18d"><div class="ttname"><a href="_hv_8c.html#ad81531a3022f3ccfc2c6ceb34160f18d">HvSetExceptionBitmap</a></div><div class="ttdeci">VOID HvSetExceptionBitmap(UINT32 IdtIndex)</div><div class="ttdoc">Set exception bitmap in VMCS.</div><div class="ttdef"><b>Definition:</b> Hv.c:900</div></div>
+<div class="ttc" id="a_hv_8c_html_af4b5fbb4d7aab890383c5ea30789e265"><div class="ttname"><a href="_hv_8c.html#af4b5fbb4d7aab890383c5ea30789e265">HvAdjustControls</a></div><div class="ttdeci">ULONG HvAdjustControls(ULONG Ctl, ULONG Msr)</div><div class="ttdoc">Adjust controls for VMCS based on processor capability.</div><div class="ttdef"><b>Definition:</b> Hv.c:23</div></div>
+<div class="ttc" id="a_protected_hv_8c_html_aff114c09f5979b9aab0923773ce440e7"><div class="ttname"><a href="_protected_hv_8c.html#aff114c09f5979b9aab0923773ce440e7">ProtectedHvRemoveUndefinedInstructionForDisablingSyscallSysretCommands</a></div><div class="ttdeci">VOID ProtectedHvRemoveUndefinedInstructionForDisablingSyscallSysretCommands()</div><div class="ttdoc">Reset exception bitmap in VMCS because of clearing !exception commands.</div><div class="ttdef"><b>Definition:</b> ProtectedHv.c:201</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:103</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:102</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_ae1e6edbbc26d6fbc71a90190d0266018"><div class="ttname"><a href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a></div><div class="ttdeci">unsigned int UINT32</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:99</div></div>
 <div class="ttc" id="a_vmx_8h_html_a90a6b8fc528e099c6f0c614d09ad9931"><div class="ttname"><a href="_vmx_8h.html#a90a6b8fc528e099c6f0c614d09ad9931">VM_EXIT_SAVE_IA32_EFER</a></div><div class="ttdeci">#define VM_EXIT_SAVE_IA32_EFER</div><div class="ttdef"><b>Definition:</b> Vmx.h:89</div></div>
 <div class="ttc" id="a_vmx_8h_html_a92eb09bb4e3344efcdb3616970da1cf4"><div class="ttname"><a href="_vmx_8h.html#a92eb09bb4e3344efcdb3616970da1cf4">VM_ENTRY_LOAD_IA32_EFER</a></div><div class="ttdeci">#define VM_ENTRY_LOAD_IA32_EFER</div><div class="ttdef"><b>Definition:</b> Vmx.h:103</div></div>
-<div class="ttc" id="aunion___e_f_e_r___m_s_r_html"><div class="ttname"><a href="union___e_f_e_r___m_s_r.html">_EFER_MSR</a></div><div class="ttdoc">EFER MSR Structure.</div><div class="ttdef"><b>Definition:</b> Msr.h:61</div></div>
-<div class="ttc" id="aunion___e_f_e_r___m_s_r_html_acde2c516433960acb359f89b258f7d9e"><div class="ttname"><a href="union___e_f_e_r___m_s_r.html#acde2c516433960acb359f89b258f7d9e">_EFER_MSR::SyscallEnable</a></div><div class="ttdeci">UINT64 SyscallEnable</div><div class="ttdef"><b>Definition:</b> Msr.h:64</div></div>
-<div class="ttc" id="aunion___e_f_e_r___m_s_r_html_ae858bdb305c414fd2e7f5bdc613c2fd9"><div class="ttname"><a href="union___e_f_e_r___m_s_r.html#ae858bdb305c414fd2e7f5bdc613c2fd9">_EFER_MSR::Flags</a></div><div class="ttdeci">UINT64 Flags</div><div class="ttdef"><b>Definition:</b> Msr.h:72</div></div>
-<div class="ttc" id="aunion___i_a32___v_m_x___b_a_s_i_c___m_s_r_html"><div class="ttname"><a href="union___i_a32___v_m_x___b_a_s_i_c___m_s_r.html">_IA32_VMX_BASIC_MSR</a></div><div class="ttdoc">VMX Basic Information MSR Structure.</div><div class="ttdef"><b>Definition:</b> Msr.h:100</div></div>
-<div class="ttc" id="aunion___i_a32___v_m_x___b_a_s_i_c___m_s_r_html_a2bac5919cd7002f7ac074cf72fc6e116"><div class="ttname"><a href="union___i_a32___v_m_x___b_a_s_i_c___m_s_r.html#a2bac5919cd7002f7ac074cf72fc6e116">_IA32_VMX_BASIC_MSR::Fields</a></div><div class="ttdeci">struct _IA32_VMX_BASIC_MSR::@17 Fields</div></div>
-<div class="ttc" id="aunion___i_a32___v_m_x___b_a_s_i_c___m_s_r_html_a582b956a99ea9d01d0f6403ab1acf421"><div class="ttname"><a href="union___i_a32___v_m_x___b_a_s_i_c___m_s_r.html#a582b956a99ea9d01d0f6403ab1acf421">_IA32_VMX_BASIC_MSR::All</a></div><div class="ttdeci">ULONG64 All</div><div class="ttdef"><b>Definition:</b> Msr.h:101</div></div>
-<div class="ttc" id="aunion___i_a32___v_m_x___b_a_s_i_c___m_s_r_html_ac629c1f33af17745293795c83d06cb55"><div class="ttname"><a href="union___i_a32___v_m_x___b_a_s_i_c___m_s_r.html#ac629c1f33af17745293795c83d06cb55">_IA32_VMX_BASIC_MSR::VmxCapabilityHint</a></div><div class="ttdeci">ULONG32 VmxCapabilityHint</div><div class="ttdef"><b>Definition:</b> Msr.h:113</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a516e72d9809509503148692de5028090"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a516e72d9809509503148692de5028090">&#9670;&nbsp;</a></span>SyscallHookEmulateSYSCALL()</h2>
+<a id="ab2d5e9863bf1456a765732554d12501a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2d5e9863bf1456a765732554d12501a">&#9670;&nbsp;</a></span>SyscallHookEmulateSYSCALL()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> SyscallHookEmulateSYSCALL </td>
+          <td class="memname">_Use_decl_annotations_ <a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> SyscallHookEmulateSYSCALL </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_definition_8h.html#a2bd4673df5e6e2fb371d770f3f2886d9">PGUEST_REGS</a>&#160;</td>
           <td class="paramname"><em>Regs</em></td><td>)</td>
@@ -265,7 +249,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This function emulates the SYSCALL execution. </p>
-<p>SYSCALL instruction emulation routine.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Regs</td><td>Guest registers </td></tr>
@@ -273,94 +256,86 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>BOOLEAN </dd></dl>
-<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;{</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html">SEGMENT_SELECTOR</a> Cs, Ss;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>           InstructionLength;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>           MsrValue;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a879c8a1e8468389cf82a40cf0690bdce">ULONG64</a>          GuestRip;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a879c8a1e8468389cf82a40cf0690bdce">ULONG64</a>          GuestRflags;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">// Reading guest&#39;s RIP</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    __vmx_vmread(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a2d7dcf5269ce2d5e634c2838f41477a1">GUEST_RIP</a>, &amp;GuestRip);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">// Reading instruction length</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    __vmx_vmread(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5aa3197d354c750132f5ee47c0b6d01689">VM_EXIT_INSTRUCTION_LEN</a>, &amp;InstructionLength);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">// Reading guest&#39;s Rflags</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    __vmx_vmread(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a771f39b5ddafd74b9bfd26e2d8aaf83e">GUEST_RFLAGS</a>, &amp;GuestRflags);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">// Save the address of the instruction following SYSCALL into RCX and then</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">// load RIP from MSR_LSTAR.</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    MsrValue  = __readmsr(<a class="code" href="_msr_8h.html#abb8141269db4c7aa38de54ecffba3c6f">MSR_LSTAR</a>);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    Regs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a52a78cf3199d7ee63633788556964bda">rcx</a> = GuestRip + InstructionLength;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    GuestRip  = MsrValue;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a2d7dcf5269ce2d5e634c2838f41477a1">GUEST_RIP</a>, GuestRip);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="comment">// Save RFLAGS into R11 and then mask RFLAGS using MSR_FMASK</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    MsrValue  = __readmsr(<a class="code" href="_msr_8h.html#a0f35155236b573374a224382118f6c69">MSR_FMASK</a>);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    Regs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#ab540b83c5316224cd128ca447060b5ba">r11</a> = GuestRflags;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    GuestRflags &amp;= ~(MsrValue | <a class="code" href="hprdbghv_2header_2common_2common_8h.html#a1213b2821d839246d1dbfbcbde6c4780">X86_FLAGS_RF</a>);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a771f39b5ddafd74b9bfd26e2d8aaf83e">GUEST_RFLAGS</a>, GuestRflags);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">// Load the CS and SS selectors with values derived from bits 47:32 of MSR_STAR</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    MsrValue             = __readmsr(<a class="code" href="_msr_8h.html#a977e5c793bd9f61d1914e927b76466cd">MSR_STAR</a>);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    Cs.<a class="code" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a6fd9535ffa897da53ffd286b1dde5764">SEL</a>               = (<a class="code" href="_script_engine_eval_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1">UINT16</a>)((MsrValue &gt;&gt; 32) &amp; ~3); <span class="comment">// STAR[47:32] &amp; ~RPL3</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    Cs.<a class="code" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#ac5e3b9f0ef0d3ace0cc3a7828d330599">BASE</a>              = 0;                               <span class="comment">// flat segment</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    Cs.<a class="code" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a00cc9951394fcd04e2d26f7937511c72">LIMIT</a>             = (<a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>)~0;                      <span class="comment">// 4GB limit</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    Cs.<a class="code" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a3b8fc7707b8571fa5541bdedd8d9ba64">ATTRIBUTES</a>.<a class="code" href="union___s_e_g_m_e_n_t___a_t_t_r_i_b_u_t_e_s.html#affb4bd7b6ac107d67d49ced88853e459">UCHARs</a> = 0xA09B;                          <span class="comment">// L+DB+P+S+DPL0+Code</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="_manage_regs_8c.html#ac98c49082b8f4a190c820dc856bbdbd4">SetGuestCs</a>(&amp;Cs);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    Ss.<a class="code" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a6fd9535ffa897da53ffd286b1dde5764">SEL</a>               = (<a class="code" href="_script_engine_eval_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1">UINT16</a>)(((MsrValue &gt;&gt; 32) &amp; ~3) + 8); <span class="comment">// STAR[47:32] + 8</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    Ss.<a class="code" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#ac5e3b9f0ef0d3ace0cc3a7828d330599">BASE</a>              = 0;                                     <span class="comment">// flat segment</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    Ss.<a class="code" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a00cc9951394fcd04e2d26f7937511c72">LIMIT</a>             = (<a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>)~0;                            <span class="comment">// 4GB limit</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    Ss.<a class="code" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a3b8fc7707b8571fa5541bdedd8d9ba64">ATTRIBUTES</a>.<a class="code" href="union___s_e_g_m_e_n_t___a_t_t_r_i_b_u_t_e_s.html#affb4bd7b6ac107d67d49ced88853e459">UCHARs</a> = 0xC093;                                <span class="comment">// G+DB+P+S+DPL0+Data</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <a class="code" href="_manage_regs_8c.html#a5014b51c6badbe1314a345655d81e315">SetGuestSs</a>(&amp;Ss);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}</div>
-<div class="ttc" id="a_manage_regs_8c_html_a5014b51c6badbe1314a345655d81e315"><div class="ttname"><a href="_manage_regs_8c.html#a5014b51c6badbe1314a345655d81e315">SetGuestSs</a></div><div class="ttdeci">VOID SetGuestSs(PSEGMENT_SELECTOR Ss)</div><div class="ttdoc">Set the Guest Ss selector.</div><div class="ttdef"><b>Definition:</b> ManageRegs.c:80</div></div>
-<div class="ttc" id="a_manage_regs_8c_html_ac98c49082b8f4a190c820dc856bbdbd4"><div class="ttname"><a href="_manage_regs_8c.html#ac98c49082b8f4a190c820dc856bbdbd4">SetGuestCs</a></div><div class="ttdeci">VOID SetGuestCs(PSEGMENT_SELECTOR Cs)</div><div class="ttdoc">Set the Guest Cs</div><div class="ttdef"><b>Definition:</b> ManageRegs.c:35</div></div>
-<div class="ttc" id="a_msr_8h_html_a0f35155236b573374a224382118f6c69"><div class="ttname"><a href="_msr_8h.html#a0f35155236b573374a224382118f6c69">MSR_FMASK</a></div><div class="ttdeci">#define MSR_FMASK</div><div class="ttdef"><b>Definition:</b> Msr.h:47</div></div>
-<div class="ttc" id="a_msr_8h_html_a977e5c793bd9f61d1914e927b76466cd"><div class="ttname"><a href="_msr_8h.html#a977e5c793bd9f61d1914e927b76466cd">MSR_STAR</a></div><div class="ttdeci">#define MSR_STAR</div><div class="ttdef"><b>Definition:</b> Msr.h:45</div></div>
-<div class="ttc" id="a_msr_8h_html_abb8141269db4c7aa38de54ecffba3c6f"><div class="ttname"><a href="_msr_8h.html#abb8141269db4c7aa38de54ecffba3c6f">MSR_LSTAR</a></div><div class="ttdeci">#define MSR_LSTAR</div><div class="ttdef"><b>Definition:</b> Msr.h:46</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_a09f1a1fb2293e33483cc8d44aefb1eb1"><div class="ttname"><a href="_script_engine_eval_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1">UINT16</a></div><div class="ttdeci">unsigned short UINT16</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:88</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_a879c8a1e8468389cf82a40cf0690bdce"><div class="ttname"><a href="_script_engine_eval_8h.html#a879c8a1e8468389cf82a40cf0690bdce">ULONG64</a></div><div class="ttdeci">unsigned __int64 ULONG64</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:70</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_aae17ebb9ef7279d026817fb22f8aebe9"><div class="ttname"><a href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a></div><div class="ttdeci">unsigned __int64 UINT64</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:62</div></div>
-<div class="ttc" id="a_vmx_8h_html_a7ff71507e63e5659d2fc6db8b260d9e5a2d7dcf5269ce2d5e634c2838f41477a1"><div class="ttname"><a href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a2d7dcf5269ce2d5e634c2838f41477a1">GUEST_RIP</a></div><div class="ttdeci">@ GUEST_RIP</div><div class="ttdef"><b>Definition:</b> Vmx.h:502</div></div>
-<div class="ttc" id="a_vmx_8h_html_a7ff71507e63e5659d2fc6db8b260d9e5a771f39b5ddafd74b9bfd26e2d8aaf83e"><div class="ttname"><a href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a771f39b5ddafd74b9bfd26e2d8aaf83e">GUEST_RFLAGS</a></div><div class="ttdeci">@ GUEST_RFLAGS</div><div class="ttdef"><b>Definition:</b> Vmx.h:503</div></div>
-<div class="ttc" id="a_vmx_8h_html_a7ff71507e63e5659d2fc6db8b260d9e5aa3197d354c750132f5ee47c0b6d01689"><div class="ttname"><a href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5aa3197d354c750132f5ee47c0b6d01689">VM_EXIT_INSTRUCTION_LEN</a></div><div class="ttdeci">@ VM_EXIT_INSTRUCTION_LEN</div><div class="ttdef"><b>Definition:</b> Vmx.h:448</div></div>
-<div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_a1213b2821d839246d1dbfbcbde6c4780"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#a1213b2821d839246d1dbfbcbde6c4780">X86_FLAGS_RF</a></div><div class="ttdeci">#define X86_FLAGS_RF</div><div class="ttdef"><b>Definition:</b> Common.h:118</div></div>
-<div class="ttc" id="astruct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r_html"><div class="ttname"><a href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html">_SEGMENT_SELECTOR</a></div><div class="ttdoc">Segment selector.</div><div class="ttdef"><b>Definition:</b> Common.h:271</div></div>
-<div class="ttc" id="astruct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r_html_a00cc9951394fcd04e2d26f7937511c72"><div class="ttname"><a href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a00cc9951394fcd04e2d26f7937511c72">_SEGMENT_SELECTOR::LIMIT</a></div><div class="ttdeci">ULONG32 LIMIT</div><div class="ttdef"><b>Definition:</b> Common.h:274</div></div>
-<div class="ttc" id="astruct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r_html_a3b8fc7707b8571fa5541bdedd8d9ba64"><div class="ttname"><a href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a3b8fc7707b8571fa5541bdedd8d9ba64">_SEGMENT_SELECTOR::ATTRIBUTES</a></div><div class="ttdeci">SEGMENT_ATTRIBUTES ATTRIBUTES</div><div class="ttdef"><b>Definition:</b> Common.h:273</div></div>
-<div class="ttc" id="astruct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r_html_a6fd9535ffa897da53ffd286b1dde5764"><div class="ttname"><a href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a6fd9535ffa897da53ffd286b1dde5764">_SEGMENT_SELECTOR::SEL</a></div><div class="ttdeci">USHORT SEL</div><div class="ttdef"><b>Definition:</b> Common.h:272</div></div>
-<div class="ttc" id="astruct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r_html_ac5e3b9f0ef0d3ace0cc3a7828d330599"><div class="ttname"><a href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#ac5e3b9f0ef0d3ace0cc3a7828d330599">_SEGMENT_SELECTOR::BASE</a></div><div class="ttdeci">ULONG64 BASE</div><div class="ttdef"><b>Definition:</b> Common.h:275</div></div>
-<div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_a52a78cf3199d7ee63633788556964bda"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#a52a78cf3199d7ee63633788556964bda">GUEST_REGS::rcx</a></div><div class="ttdeci">ULONG64 rcx</div><div class="ttdef"><b>Definition:</b> Definition.h:372</div></div>
-<div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_ab540b83c5316224cd128ca447060b5ba"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#ab540b83c5316224cd128ca447060b5ba">GUEST_REGS::r11</a></div><div class="ttdeci">ULONG64 r11</div><div class="ttdef"><b>Definition:</b> Definition.h:382</div></div>
-<div class="ttc" id="aunion___s_e_g_m_e_n_t___a_t_t_r_i_b_u_t_e_s_html_affb4bd7b6ac107d67d49ced88853e459"><div class="ttname"><a href="union___s_e_g_m_e_n_t___a_t_t_r_i_b_u_t_e_s.html#affb4bd7b6ac107d67d49ced88853e459">_SEGMENT_ATTRIBUTES::UCHARs</a></div><div class="ttdeci">USHORT UCHARs</div><div class="ttdef"><b>Definition:</b> Common.h:235</div></div>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;{</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html">VMX_SEGMENT_SELECTOR</a> Cs, Ss;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>               InstructionLength;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>               MsrValue;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>               GuestRip;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>               GuestRflags;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">// Reading guest&#39;s RIP</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    __vmx_vmread(VMCS_GUEST_RIP, &amp;GuestRip);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">// Reading instruction length</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    __vmx_vmread(VMCS_VMEXIT_INSTRUCTION_LENGTH, &amp;InstructionLength);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="comment">// Reading guest&#39;s Rflags</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    __vmx_vmread(VMCS_GUEST_RFLAGS, &amp;GuestRflags);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="comment">// Save the address of the instruction following SYSCALL into RCX and then</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="comment">// load RIP from IA32_LSTAR.</span></div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    MsrValue  = __readmsr(IA32_LSTAR);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    Regs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a9a9133a328f13d405c31df928307e9fd">rcx</a> = GuestRip + InstructionLength;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    GuestRip  = MsrValue;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    __vmx_vmwrite(VMCS_GUEST_RIP, GuestRip);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="comment">// Save RFLAGS into R11 and then mask RFLAGS using IA32_FMASK</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    MsrValue  = __readmsr(IA32_FMASK);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    Regs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#ae60171ce8fbc006bf50e1238df2705e2">r11</a> = GuestRflags;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    GuestRflags &amp;= ~(MsrValue | <a class="code" href="hprdbghv_2header_2common_2common_8h.html#a1213b2821d839246d1dbfbcbde6c4780">X86_FLAGS_RF</a>);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    __vmx_vmwrite(VMCS_GUEST_RFLAGS, GuestRflags);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">// Load the CS and SS selectors with values derived from bits 47:32 of IA32_STAR</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    MsrValue            = __readmsr(IA32_STAR);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    Cs.<a class="code" href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#ab6ee44522229df1c55cca4f72f172abf">Selector</a>         = (<a class="code" href="_script_engine_eval_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1">UINT16</a>)((MsrValue &gt;&gt; 32) &amp; ~3); <span class="comment">// STAR[47:32] &amp; ~RPL3</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    Cs.<a class="code" href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#af782f7b350ce9911745618fa9051428a">Base</a>             = 0;                               <span class="comment">// flat segment</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    Cs.<a class="code" href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a0bd32da992b5c13d921807c82f3f932a">Limit</a>            = (<a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>)~0;                      <span class="comment">// 4GB limit</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    Cs.<a class="code" href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#add9e4cc36b93b9f13a2457f137fc689a">Attributes</a>.Flags = 0xA09B;                          <span class="comment">// L+DB+P+S+DPL0+Code</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="_manage_regs_8c.html#afe88f14bd74714b5db0a25442b0d41a0">SetGuestCs</a>(&amp;Cs);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    Ss.<a class="code" href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#ab6ee44522229df1c55cca4f72f172abf">Selector</a>         = (<a class="code" href="_script_engine_eval_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1">UINT16</a>)(((MsrValue &gt;&gt; 32) &amp; ~3) + 8); <span class="comment">// STAR[47:32] + 8</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    Ss.<a class="code" href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#af782f7b350ce9911745618fa9051428a">Base</a>             = 0;                                     <span class="comment">// flat segment</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    Ss.<a class="code" href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a0bd32da992b5c13d921807c82f3f932a">Limit</a>            = (<a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>)~0;                            <span class="comment">// 4GB limit</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    Ss.<a class="code" href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#add9e4cc36b93b9f13a2457f137fc689a">Attributes</a>.Flags = 0xC093;                                <span class="comment">// G+DB+P+S+DPL0+Data</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <a class="code" href="_manage_regs_8c.html#ae8d9923c2939f590d6abb518e09e8c4a">SetGuestSs</a>(&amp;Ss);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
+<div class="ttc" id="a_manage_regs_8c_html_ae8d9923c2939f590d6abb518e09e8c4a"><div class="ttname"><a href="_manage_regs_8c.html#ae8d9923c2939f590d6abb518e09e8c4a">SetGuestSs</a></div><div class="ttdeci">VOID SetGuestSs(PVMX_SEGMENT_SELECTOR Ss)</div><div class="ttdoc">Set the Guest Ss selector.</div><div class="ttdef"><b>Definition:</b> ManageRegs.c:80</div></div>
+<div class="ttc" id="a_manage_regs_8c_html_afe88f14bd74714b5db0a25442b0d41a0"><div class="ttname"><a href="_manage_regs_8c.html#afe88f14bd74714b5db0a25442b0d41a0">SetGuestCs</a></div><div class="ttdeci">VOID SetGuestCs(PVMX_SEGMENT_SELECTOR Cs)</div><div class="ttdoc">Set the Guest Cs</div><div class="ttdef"><b>Definition:</b> ManageRegs.c:35</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_a09f1a1fb2293e33483cc8d44aefb1eb1"><div class="ttname"><a href="_script_engine_eval_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1">UINT16</a></div><div class="ttdeci">unsigned short UINT16</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:98</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_aae17ebb9ef7279d026817fb22f8aebe9"><div class="ttname"><a href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a></div><div class="ttdeci">unsigned __int64 UINT64</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:72</div></div>
+<div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_a1213b2821d839246d1dbfbcbde6c4780"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#a1213b2821d839246d1dbfbcbde6c4780">X86_FLAGS_RF</a></div><div class="ttdeci">#define X86_FLAGS_RF</div><div class="ttdef"><b>Definition:</b> Common.h:156</div></div>
+<div class="ttc" id="astruct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r_html"><div class="ttname"><a href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html">_VMX_SEGMENT_SELECTOR</a></div><div class="ttdoc">Segment selector.</div><div class="ttdef"><b>Definition:</b> Common.h:275</div></div>
+<div class="ttc" id="astruct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r_html_a0bd32da992b5c13d921807c82f3f932a"><div class="ttname"><a href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a0bd32da992b5c13d921807c82f3f932a">_VMX_SEGMENT_SELECTOR::Limit</a></div><div class="ttdeci">UINT32 Limit</div><div class="ttdef"><b>Definition:</b> Common.h:278</div></div>
+<div class="ttc" id="astruct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r_html_ab6ee44522229df1c55cca4f72f172abf"><div class="ttname"><a href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#ab6ee44522229df1c55cca4f72f172abf">_VMX_SEGMENT_SELECTOR::Selector</a></div><div class="ttdeci">UINT16 Selector</div><div class="ttdef"><b>Definition:</b> Common.h:276</div></div>
+<div class="ttc" id="astruct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r_html_add9e4cc36b93b9f13a2457f137fc689a"><div class="ttname"><a href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#add9e4cc36b93b9f13a2457f137fc689a">_VMX_SEGMENT_SELECTOR::Attributes</a></div><div class="ttdeci">VMX_SEGMENT_ACCESS_RIGHTS Attributes</div><div class="ttdef"><b>Definition:</b> Common.h:277</div></div>
+<div class="ttc" id="astruct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r_html_af782f7b350ce9911745618fa9051428a"><div class="ttname"><a href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#af782f7b350ce9911745618fa9051428a">_VMX_SEGMENT_SELECTOR::Base</a></div><div class="ttdeci">UINT64 Base</div><div class="ttdef"><b>Definition:</b> Common.h:279</div></div>
+<div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_a9a9133a328f13d405c31df928307e9fd"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#a9a9133a328f13d405c31df928307e9fd">GUEST_REGS::rcx</a></div><div class="ttdeci">UINT64 rcx</div><div class="ttdef"><b>Definition:</b> Definition.h:657</div></div>
+<div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_ae60171ce8fbc006bf50e1238df2705e2"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#ae60171ce8fbc006bf50e1238df2705e2">GUEST_REGS::r11</a></div><div class="ttdeci">UINT64 r11</div><div class="ttdef"><b>Definition:</b> Definition.h:667</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a4526268be34d6d97eb459ec64e644142"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4526268be34d6d97eb459ec64e644142">&#9670;&nbsp;</a></span>SyscallHookEmulateSYSRET()</h2>
+<a id="a2e2363f45e308ab8b69cea7f6d642613"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e2363f45e308ab8b69cea7f6d642613">&#9670;&nbsp;</a></span>SyscallHookEmulateSYSRET()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> SyscallHookEmulateSYSRET </td>
+          <td class="memname">_Use_decl_annotations_ <a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> SyscallHookEmulateSYSRET </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_definition_8h.html#a2bd4673df5e6e2fb371d770f3f2886d9">PGUEST_REGS</a>&#160;</td>
           <td class="paramname"><em>Regs</em></td><td>)</td>
@@ -370,7 +345,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>This function emulates the SYSRET execution. </p>
-<p>SYSRET instruction emulation routine.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Regs</td><td>Guest registers </td></tr>
@@ -378,56 +352,56 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>BOOLEAN </dd></dl>
-<div class="fragment"><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;{</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <a class="code" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html">SEGMENT_SELECTOR</a> Cs, Ss;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>           MsrValue;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a879c8a1e8468389cf82a40cf0690bdce">ULONG64</a>          GuestRip;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a879c8a1e8468389cf82a40cf0690bdce">ULONG64</a>          GuestRflags;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="comment">// Load RIP from RCX</span></div>
+<div class="fragment"><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;{</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <a class="code" href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html">VMX_SEGMENT_SELECTOR</a> Cs, Ss;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>               MsrValue;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>               GuestRip;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>               GuestRflags;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    GuestRip = Regs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a52a78cf3199d7ee63633788556964bda">rcx</a>;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a2d7dcf5269ce2d5e634c2838f41477a1">GUEST_RIP</a>, GuestRip);</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="comment">// Load RFLAGS from R11. Clear RF, VM, reserved bits</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="comment">// Load RIP from RCX</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    GuestRip = Regs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a9a9133a328f13d405c31df928307e9fd">rcx</a>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    __vmx_vmwrite(VMCS_GUEST_RIP, GuestRip);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    GuestRflags = (Regs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#ab540b83c5316224cd128ca447060b5ba">r11</a> &amp; ~(<a class="code" href="hprdbghv_2header_2common_2common_8h.html#a1213b2821d839246d1dbfbcbde6c4780">X86_FLAGS_RF</a> | <a class="code" href="hprdbghv_2header_2common_2common_8h.html#a019634d4ea05b7c259f3ab5b7ecfaa6b">X86_FLAGS_VM</a> | <a class="code" href="hprdbghv_2header_2common_2common_8h.html#ad49ac2ad54e914fce41074f02c31a2e1">X86_FLAGS_RESERVED_BITS</a>)) | <a class="code" href="hprdbghv_2header_2common_2common_8h.html#a5113bc6d149446145e82cb90f4bfe1b3">X86_FLAGS_FIXED</a>;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    __vmx_vmwrite(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a771f39b5ddafd74b9bfd26e2d8aaf83e">GUEST_RFLAGS</a>, GuestRflags);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="comment">// SYSRET loads the CS and SS selectors with values derived from bits 63:48 of MSR_STAR</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="comment">// Load RFLAGS from R11. Clear RF, VM, reserved bits</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    GuestRflags = (Regs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#ae60171ce8fbc006bf50e1238df2705e2">r11</a> &amp; ~(<a class="code" href="hprdbghv_2header_2common_2common_8h.html#a1213b2821d839246d1dbfbcbde6c4780">X86_FLAGS_RF</a> | <a class="code" href="hprdbghv_2header_2common_2common_8h.html#a019634d4ea05b7c259f3ab5b7ecfaa6b">X86_FLAGS_VM</a> | <a class="code" href="hprdbghv_2header_2common_2common_8h.html#ad49ac2ad54e914fce41074f02c31a2e1">X86_FLAGS_RESERVED_BITS</a>)) | <a class="code" href="hprdbghv_2header_2common_2common_8h.html#a5113bc6d149446145e82cb90f4bfe1b3">X86_FLAGS_FIXED</a>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    __vmx_vmwrite(VMCS_GUEST_RFLAGS, GuestRflags);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    MsrValue             = __readmsr(<a class="code" href="_msr_8h.html#a977e5c793bd9f61d1914e927b76466cd">MSR_STAR</a>);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    Cs.<a class="code" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a6fd9535ffa897da53ffd286b1dde5764">SEL</a>               = (<a class="code" href="_script_engine_eval_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1">UINT16</a>)(((MsrValue &gt;&gt; 48) + 16) | 3); <span class="comment">// (STAR[63:48]+16) | 3 (* RPL forced to 3 *)</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    Cs.<a class="code" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#ac5e3b9f0ef0d3ace0cc3a7828d330599">BASE</a>              = 0;                                     <span class="comment">// Flat segment</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    Cs.<a class="code" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a00cc9951394fcd04e2d26f7937511c72">LIMIT</a>             = (<a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>)~0;                            <span class="comment">// 4GB limit</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    Cs.<a class="code" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a3b8fc7707b8571fa5541bdedd8d9ba64">ATTRIBUTES</a>.<a class="code" href="union___s_e_g_m_e_n_t___a_t_t_r_i_b_u_t_e_s.html#affb4bd7b6ac107d67d49ced88853e459">UCHARs</a> = 0xA0FB;                                <span class="comment">// L+DB+P+S+DPL3+Code</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <a class="code" href="_manage_regs_8c.html#ac98c49082b8f4a190c820dc856bbdbd4">SetGuestCs</a>(&amp;Cs);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    Ss.<a class="code" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a6fd9535ffa897da53ffd286b1dde5764">SEL</a>               = (<a class="code" href="_script_engine_eval_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1">UINT16</a>)(((MsrValue &gt;&gt; 48) + 8) | 3); <span class="comment">// (STAR[63:48]+8) | 3 (* RPL forced to 3 *)</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    Ss.<a class="code" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#ac5e3b9f0ef0d3ace0cc3a7828d330599">BASE</a>              = 0;                                    <span class="comment">// Flat segment</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    Ss.<a class="code" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a00cc9951394fcd04e2d26f7937511c72">LIMIT</a>             = (<a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>)~0;                           <span class="comment">// 4GB limit</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    Ss.<a class="code" href="struct___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a3b8fc7707b8571fa5541bdedd8d9ba64">ATTRIBUTES</a>.<a class="code" href="union___s_e_g_m_e_n_t___a_t_t_r_i_b_u_t_e_s.html#affb4bd7b6ac107d67d49ced88853e459">UCHARs</a> = 0xC0F3;                               <span class="comment">// G+DB+P+S+DPL3+Data</span></div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <a class="code" href="_manage_regs_8c.html#a5014b51c6badbe1314a345655d81e315">SetGuestSs</a>(&amp;Ss);</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;}</div>
-<div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_a019634d4ea05b7c259f3ab5b7ecfaa6b"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#a019634d4ea05b7c259f3ab5b7ecfaa6b">X86_FLAGS_VM</a></div><div class="ttdeci">#define X86_FLAGS_VM</div><div class="ttdef"><b>Definition:</b> Common.h:119</div></div>
-<div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_a5113bc6d149446145e82cb90f4bfe1b3"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#a5113bc6d149446145e82cb90f4bfe1b3">X86_FLAGS_FIXED</a></div><div class="ttdeci">#define X86_FLAGS_FIXED</div><div class="ttdef"><b>Definition:</b> Common.h:128</div></div>
-<div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_ad49ac2ad54e914fce41074f02c31a2e1"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#ad49ac2ad54e914fce41074f02c31a2e1">X86_FLAGS_RESERVED_BITS</a></div><div class="ttdeci">#define X86_FLAGS_RESERVED_BITS</div><div class="ttdef"><b>Definition:</b> Common.h:127</div></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="comment">// SYSRET loads the CS and SS selectors with values derived from bits 63:48 of IA32_STAR</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    MsrValue            = __readmsr(IA32_STAR);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    Cs.<a class="code" href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#ab6ee44522229df1c55cca4f72f172abf">Selector</a>         = (<a class="code" href="_script_engine_eval_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1">UINT16</a>)(((MsrValue &gt;&gt; 48) + 16) | 3); <span class="comment">// (STAR[63:48]+16) | 3 (* RPL forced to 3 *)</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    Cs.<a class="code" href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#af782f7b350ce9911745618fa9051428a">Base</a>             = 0;                                     <span class="comment">// Flat segment</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    Cs.<a class="code" href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a0bd32da992b5c13d921807c82f3f932a">Limit</a>            = (<a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>)~0;                            <span class="comment">// 4GB limit</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    Cs.<a class="code" href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#add9e4cc36b93b9f13a2457f137fc689a">Attributes</a>.Flags = 0xA0FB;                                <span class="comment">// L+DB+P+S+DPL3+Code</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="_manage_regs_8c.html#afe88f14bd74714b5db0a25442b0d41a0">SetGuestCs</a>(&amp;Cs);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    Ss.<a class="code" href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#ab6ee44522229df1c55cca4f72f172abf">Selector</a>         = (<a class="code" href="_script_engine_eval_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1">UINT16</a>)(((MsrValue &gt;&gt; 48) + 8) | 3); <span class="comment">// (STAR[63:48]+8) | 3 (* RPL forced to 3 *)</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    Ss.<a class="code" href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#af782f7b350ce9911745618fa9051428a">Base</a>             = 0;                                    <span class="comment">// Flat segment</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    Ss.<a class="code" href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#a0bd32da992b5c13d921807c82f3f932a">Limit</a>            = (<a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>)~0;                           <span class="comment">// 4GB limit</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    Ss.<a class="code" href="struct___v_m_x___s_e_g_m_e_n_t___s_e_l_e_c_t_o_r.html#add9e4cc36b93b9f13a2457f137fc689a">Attributes</a>.Flags = 0xC0F3;                               <span class="comment">// G+DB+P+S+DPL3+Data</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <a class="code" href="_manage_regs_8c.html#ae8d9923c2939f590d6abb518e09e8c4a">SetGuestSs</a>(&amp;Ss);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;}</div>
+<div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_a019634d4ea05b7c259f3ab5b7ecfaa6b"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#a019634d4ea05b7c259f3ab5b7ecfaa6b">X86_FLAGS_VM</a></div><div class="ttdeci">#define X86_FLAGS_VM</div><div class="ttdef"><b>Definition:</b> Common.h:157</div></div>
+<div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_a5113bc6d149446145e82cb90f4bfe1b3"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#a5113bc6d149446145e82cb90f4bfe1b3">X86_FLAGS_FIXED</a></div><div class="ttdeci">#define X86_FLAGS_FIXED</div><div class="ttdef"><b>Definition:</b> Common.h:166</div></div>
+<div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_ad49ac2ad54e914fce41074f02c31a2e1"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#ad49ac2ad54e914fce41074f02c31a2e1">X86_FLAGS_RESERVED_BITS</a></div><div class="ttdeci">#define X86_FLAGS_RESERVED_BITS</div><div class="ttdef"><b>Definition:</b> Common.h:165</div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="aba097f00fd4f3d3a4a972b391fe1ca98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba097f00fd4f3d3a4a972b391fe1ca98">&#9670;&nbsp;</a></span>SyscallHookHandleUD()</h2>
+<a id="af2a4cc6ef2a50b810850bd3388e8b78f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2a4cc6ef2a50b810850bd3388e8b78f">&#9670;&nbsp;</a></span>SyscallHookHandleUD()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> SyscallHookHandleUD </td>
+          <td class="memname">_Use_decl_annotations_ <a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> SyscallHookHandleUD </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="_definition_8h.html#a2bd4673df5e6e2fb371d770f3f2886d9">PGUEST_REGS</a>&#160;</td>
           <td class="paramname"><em>Regs</em>, </td>
@@ -447,7 +421,6 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Detect whether the #UD was because of Syscall or Sysret or not. </p>
-<p>Manage #UD Exceptions for EFER Syscall.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">Regs</td><td>Guest register </td></tr>
@@ -456,179 +429,175 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>BOOLEAN Shows whther the caller should inject #UD on the guest or not </dd></dl>
-<div class="fragment"><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;{</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <a class="code" href="struct___c_r3___t_y_p_e.html">CR3_TYPE</a> GuestCr3;</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>   OriginalCr3;</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>   Rip;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>  Result;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="comment">// Reading guest&#39;s RIP</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    __vmx_vmread(<a class="code" href="_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5a2d7dcf5269ce2d5e634c2838f41477a1">GUEST_RIP</a>, &amp;Rip);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_global_variables_8h.html#a79454511c45c422bb27a2d4429b65a53">g_IsUnsafeSyscallOrSysretHandling</a>)</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    {</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="comment">// In some computers, we realized that safe accessing to memory</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="comment">// is problematic. It means that our syscall approach might not</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="comment">// working properly.</span></div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="comment">// Based on our tests, we realized that system doesn&#39;t generate #UD</span></div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="comment">// regularly. So, we can imagine that only kernel addresses are SYSRET</span></div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="comment">// instruction and SYSCALL is on a user-mode RIP.</span></div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="comment">// It&#39;s faster than our safe methods but if the system generates a #UD</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="comment">// then a BSOD will happen. But if the system is working regularly, then</span></div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="comment">// no BSOD happens. For more information, see documentation at !syscall2</span></div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="comment">// or !sysret2 commands</span></div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordflow">if</span> (Rip &amp; 0xff00000000000000)</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        {</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            <span class="keywordflow">goto</span> EmulateSYSRET;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        }</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="fragment"><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;{</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <a class="code" href="struct___c_r3___t_y_p_e.html">CR3_TYPE</a>                GuestCr3;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>                  OriginalCr3;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>                  Rip;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>                 Result;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html">VIRTUAL_MACHINE_STATE</a> * CurrentVmState = &amp;<a class="code" href="_global_variables_8h.html#a04bac1f4beef0dcf1ce1a4d9ce72ea76">g_GuestState</a>[CoreIndex];</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="comment">// Reading guest&#39;s RIP</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    __vmx_vmread(VMCS_GUEST_RIP, &amp;Rip);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_global_variables_8h.html#a79454511c45c422bb27a2d4429b65a53">g_IsUnsafeSyscallOrSysretHandling</a>)</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="comment">// In some computers, we realized that safe accessing to memory</span></div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="comment">// is problematic. It means that our syscall approach might not</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="comment">// working properly.</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="comment">// Based on our tests, we realized that system doesn&#39;t generate #UD</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="comment">// regularly. So, we can imagine that only kernel addresses are SYSRET</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="comment">// instruction and SYSCALL is on a user-mode RIP.</span></div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="comment">// It&#39;s faster than our safe methods but if the system generates a #UD</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="comment">// then a BSOD will happen. But if the system is working regularly, then</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        <span class="comment">// no BSOD happens. For more information, see documentation at !syscall2</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="comment">// or !sysret2 commands</span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">if</span> (Rip &amp; 0xff00000000000000)</div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            <span class="keywordflow">goto</span> EmulateSYSCALL;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            <span class="keywordflow">goto</span> EmulateSYSRET;</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        }</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    }</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    {</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <span class="comment">// Due to KVA Shadowing, we need to switch to a different directory table base</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        <span class="comment">// if the PCID indicates this is a user mode directory table base.</span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <a class="code" href="struct___n_t___k_p_r_o_c_e_s_s.html">NT_KPROCESS</a> * CurrentProcess = (<a class="code" href="struct___n_t___k_p_r_o_c_e_s_s.html">NT_KPROCESS</a> *)(PsGetCurrentProcess());</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        GuestCr3.<a class="code" href="struct___c_r3___t_y_p_e.html#a04eb96cc99b0458be739bcc9c640e08b">Flags</a>               = CurrentProcess-&gt;<a class="code" href="struct___n_t___k_p_r_o_c_e_s_s.html#a0ba2f55aeffe5e3c92dd8787dc8af022">DirectoryTableBase</a>;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">if</span> ((GuestCr3.<a class="code" href="struct___c_r3___t_y_p_e.html#a04eb96cc99b0458be739bcc9c640e08b">Flags</a> &amp; <a class="code" href="hprdbghv_2header_2common_2common_8h.html#a25cbba845d9f777a39e26bae01151079">PCID_MASK</a>) != <a class="code" href="hprdbghv_2header_2common_2common_8h.html#ac5cc3f3d8f749509f26223d303f21c63">PCID_NONE</a>)</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        {</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            OriginalCr3 = __readcr3();</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            __writecr3(GuestCr3.<a class="code" href="struct___c_r3___t_y_p_e.html#a04eb96cc99b0458be739bcc9c640e08b">Flags</a>);</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;            <span class="comment">//</span></div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            <span class="comment">// Read the memory</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            <span class="comment">//</span></div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <a class="code" href="_script_engine_eval_8h.html#aebb9e13210d88d43e32e735ada43a425">CHAR</a> * InstructionBuffer[3] = {0};</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            <span class="keywordflow">goto</span> EmulateSYSCALL;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        }</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    }</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        <span class="comment">// Get the guest&#39;s running process&#39;s cr3</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        GuestCr3.<a class="code" href="struct___c_r3___t_y_p_e.html#a04eb96cc99b0458be739bcc9c640e08b">Flags</a> = <a class="code" href="hprdbghv_2code_2common_2_common_8c.html#a3cf8394ebbc5300f74b02f51bd8519f6">GetRunningCr3OnTargetProcess</a>().<a class="code" href="struct___c_r3___t_y_p_e.html#a04eb96cc99b0458be739bcc9c640e08b">Flags</a>;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="comment">// No, longer needs to be checked because we&#39;re sticking to system process</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="comment">// and we have to change the cr3</span></div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        <span class="comment">// if ((GuestCr3.Flags &amp; PCID_MASK) != PCID_NONE)</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        OriginalCr3 = __readcr3();</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        __writecr3(GuestCr3.<a class="code" href="struct___c_r3___t_y_p_e.html#a04eb96cc99b0458be739bcc9c640e08b">Flags</a>);</div>
 <div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="_memory_mapper_8c.html#a17593f3a0cff16087e9352a30f2d7f26">MemoryMapperCheckIfPageIsPresentByCr3</a>(Rip, GuestCr3))</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            {</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;                <span class="comment">// The page is safe to read (present)</span></div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;                <a class="code" href="_memory_mapper_8c.html#ad34df1901286734c77884ce9fc7c4f2d">MemoryMapperReadMemorySafe</a>(Rip, InstructionBuffer, 3);</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            }</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            {</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                <span class="comment">// The page is not present, we have to inject a #PF</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                <a class="code" href="_global_variables_8h.html#a04bac1f4beef0dcf1ce1a4d9ce72ea76">g_GuestState</a>[CoreIndex].<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a95be62d62b8c4a2e9bd6bf75a0ba4cd1">IncrementRip</a> = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160; </div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;                <span class="comment">// For testing purpose</span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                <span class="comment">// LogInfo(&quot;#PF Injected&quot;);</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                <span class="comment">// Inject #PF</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                <a class="code" href="_events_8c.html#a7c60a0610d4ab52f530e9866ce84bd55">EventInjectPageFault</a>(Rip);</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                <span class="comment">// We should not inject #UD</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            }</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="_hooks_8h.html#a2633e7e4b97712c8a9924648d48b63f6">IS_SYSRET_INSTRUCTION</a>(InstructionBuffer))</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            {</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;                __writecr3(OriginalCr3);</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;                <span class="keywordflow">goto</span> EmulateSYSRET;</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            }</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="_hooks_8h.html#a765571d13192493adf4e7baa5a9e9468">IS_SYSCALL_INSTRUCTION</a>(InstructionBuffer))</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            {</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;                __writecr3(OriginalCr3);</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                <span class="keywordflow">goto</span> EmulateSYSCALL;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            }</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            __writecr3(OriginalCr3);</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        }</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        {</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="_hooks_8h.html#a2633e7e4b97712c8a9924648d48b63f6">IS_SYSRET_INSTRUCTION</a>(Rip))</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;                <span class="keywordflow">goto</span> EmulateSYSRET;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="_hooks_8h.html#a765571d13192493adf4e7baa5a9e9468">IS_SYSCALL_INSTRUCTION</a>(Rip))</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;                <span class="keywordflow">goto</span> EmulateSYSCALL;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="comment">// Read the memory</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="comment">//</span></div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <a class="code" href="_script_engine_eval_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587">UCHAR</a> InstructionBuffer[3] = {0};</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="_memory_mapper_8c.html#ac8e4d2586a43095b5d829065524aef3e">MemoryMapperCheckIfPageIsPresentByCr3</a>(Rip, GuestCr3))</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        {</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            <span class="comment">// The page is safe to read (present)</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <span class="comment">// It&#39;s not necessary to use MemoryMapperReadMemorySafeOnTargetProcess</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            <span class="comment">// because we already switched to the process&#39;s cr3</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;            <a class="code" href="_memory_mapper_8c.html#ac3c23d5644111a6be18ca274f448e9ff">MemoryMapperReadMemorySafe</a>(Rip, InstructionBuffer, 3);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        }</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        {</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            <span class="comment">// The page is not present, we have to inject a #PF</span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            CurrentVmState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a95be62d62b8c4a2e9bd6bf75a0ba4cd1">IncrementRip</a> = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            <span class="comment">// For testing purpose</span></div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;            <span class="comment">// LogInfo(&quot;#PF Injected&quot;);</span></div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            <span class="comment">// Inject #PF</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;            <a class="code" href="_events_8c.html#a7c60a0610d4ab52f530e9866ce84bd55">EventInjectPageFault</a>(Rip);</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            <span class="comment">// We should not inject #UD</span></div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;            <span class="comment">//</span></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;        }</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        __writecr3(OriginalCr3);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160; </div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        <span class="keywordflow">if</span> (InstructionBuffer[0] == 0x0F &amp;&amp;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            InstructionBuffer[1] == 0x05)</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        {</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;            <span class="keywordflow">goto</span> EmulateSYSCALL;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        }</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordflow">if</span> (InstructionBuffer[0] == 0x48 &amp;&amp;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            InstructionBuffer[1] == 0x0F &amp;&amp;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            InstructionBuffer[2] == 0x07)</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        {</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;            <span class="keywordflow">goto</span> EmulateSYSRET;</div>
 <div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        }</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    }</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    <span class="comment">//----------------------------------------------------------------------------------------</span></div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="comment">// Emulate SYSRET instruction</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;EmulateSYSRET:</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="comment">// Test</span></div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="comment">// LogInfo(&quot;SYSRET instruction =&gt; 0x%llX&quot;, Rip);</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="comment">// We should trigger the event of SYSRET here</span></div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <a class="code" href="_debugger_8c.html#aac71ecf7a7e99662000efef060a32775">DebuggerTriggerEvents</a>(<a class="code" href="_definition_8h.html#ac90d8337845597671bc9d95b598591daaeee3aa3ce1846c251a566625ec524190">SYSCALL_HOOK_EFER_SYSRET</a>, Regs, Rip);</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    Result                               = <a class="code" href="_efer_hook_8c.html#a4526268be34d6d97eb459ec64e644142">SyscallHookEmulateSYSRET</a>(Regs);</div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <a class="code" href="_global_variables_8h.html#a04bac1f4beef0dcf1ce1a4d9ce72ea76">g_GuestState</a>[CoreIndex].<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a95be62d62b8c4a2e9bd6bf75a0ba4cd1">IncrementRip</a> = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="keywordflow">return</span> Result;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="comment">// Emulate SYSCALL instruction</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;EmulateSYSCALL:</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    <span class="comment">// Test</span></div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="comment">// LogInfo(&quot;SYSCALL instruction =&gt; 0x%llX , Process Id : 0x%x&quot;, Rip, PsGetCurrentProcessId());</span></div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160; </div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="comment">// We should trigger the event of SYSCALL here, we send the</span></div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="comment">// syscall number in rax</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    }</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <span class="comment">//----------------------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160; </div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="comment">// Emulate SYSRET instruction</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;EmulateSYSRET:</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    <span class="comment">// Test</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="comment">// LogInfo(&quot;SYSRET instruction =&gt; 0x%llX&quot;, Rip);</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="comment">// We should trigger the event of SYSRET here</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <a class="code" href="_debugger_8c.html#aac71ecf7a7e99662000efef060a32775">DebuggerTriggerEvents</a>(<a class="code" href="_definition_8h.html#ac90d8337845597671bc9d95b598591daaeee3aa3ce1846c251a566625ec524190">SYSCALL_HOOK_EFER_SYSRET</a>, Regs, Rip);</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    Result                       = <a class="code" href="_efer_hook_8c.html#a2e2363f45e308ab8b69cea7f6d642613">SyscallHookEmulateSYSRET</a>(Regs);</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    CurrentVmState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a95be62d62b8c4a2e9bd6bf75a0ba4cd1">IncrementRip</a> = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="keywordflow">return</span> Result;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="comment">// Emulate SYSCALL instruction</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;EmulateSYSCALL:</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160; </div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="comment">// Test</span></div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="comment">// LogInfo(&quot;SYSCALL instruction =&gt; 0x%llX , Process Id : 0x%x&quot;, Rip, PsGetCurrentProcessId());</span></div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <a class="code" href="_debugger_8c.html#aac71ecf7a7e99662000efef060a32775">DebuggerTriggerEvents</a>(<a class="code" href="_definition_8h.html#ac90d8337845597671bc9d95b598591daa101288c457f5b31c0bff4cda6af0f331">SYSCALL_HOOK_EFER_SYSCALL</a>, Regs, Regs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a95695e8756c30083f7c7ca248a39c0a9">rax</a>);</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160; </div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    Result = <a class="code" href="_efer_hook_8c.html#a516e72d9809509503148692de5028090">SyscallHookEmulateSYSCALL</a>(Regs);</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160; </div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <a class="code" href="_global_variables_8h.html#a04bac1f4beef0dcf1ce1a4d9ce72ea76">g_GuestState</a>[CoreIndex].<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a95be62d62b8c4a2e9bd6bf75a0ba4cd1">IncrementRip</a> = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordflow">return</span> Result;</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;}</div>
-<div class="ttc" id="a_debugger_8c_html_aac71ecf7a7e99662000efef060a32775"><div class="ttname"><a href="_debugger_8c.html#aac71ecf7a7e99662000efef060a32775">DebuggerTriggerEvents</a></div><div class="ttdeci">BOOLEAN DebuggerTriggerEvents(DEBUGGER_EVENT_TYPE_ENUM EventType, PGUEST_REGS Regs, PVOID Context)</div><div class="ttdoc">Trigger events of a special type to be managed by debugger.</div><div class="ttdef"><b>Definition:</b> Debugger.c:612</div></div>
-<div class="ttc" id="a_definition_8h_html_ac90d8337845597671bc9d95b598591daa101288c457f5b31c0bff4cda6af0f331"><div class="ttname"><a href="_definition_8h.html#ac90d8337845597671bc9d95b598591daa101288c457f5b31c0bff4cda6af0f331">SYSCALL_HOOK_EFER_SYSCALL</a></div><div class="ttdeci">@ SYSCALL_HOOK_EFER_SYSCALL</div><div class="ttdef"><b>Definition:</b> Definition.h:459</div></div>
-<div class="ttc" id="a_definition_8h_html_ac90d8337845597671bc9d95b598591daaeee3aa3ce1846c251a566625ec524190"><div class="ttname"><a href="_definition_8h.html#ac90d8337845597671bc9d95b598591daaeee3aa3ce1846c251a566625ec524190">SYSCALL_HOOK_EFER_SYSRET</a></div><div class="ttdeci">@ SYSCALL_HOOK_EFER_SYSRET</div><div class="ttdef"><b>Definition:</b> Definition.h:460</div></div>
-<div class="ttc" id="a_efer_hook_8c_html_a4526268be34d6d97eb459ec64e644142"><div class="ttname"><a href="_efer_hook_8c.html#a4526268be34d6d97eb459ec64e644142">SyscallHookEmulateSYSRET</a></div><div class="ttdeci">BOOLEAN SyscallHookEmulateSYSRET(PGUEST_REGS Regs)</div><div class="ttdoc">This function emulates the SYSRET execution.</div><div class="ttdef"><b>Definition:</b> EferHook.c:179</div></div>
-<div class="ttc" id="a_efer_hook_8c_html_a516e72d9809509503148692de5028090"><div class="ttname"><a href="_efer_hook_8c.html#a516e72d9809509503148692de5028090">SyscallHookEmulateSYSCALL</a></div><div class="ttdeci">BOOLEAN SyscallHookEmulateSYSCALL(PGUEST_REGS Regs)</div><div class="ttdoc">This function emulates the SYSCALL execution.</div><div class="ttdef"><b>Definition:</b> EferHook.c:113</div></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    <span class="comment">// We should trigger the event of SYSCALL here, we send the</span></div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="comment">// syscall number in rax</span></div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    <a class="code" href="_debugger_8c.html#aac71ecf7a7e99662000efef060a32775">DebuggerTriggerEvents</a>(<a class="code" href="_definition_8h.html#ac90d8337845597671bc9d95b598591daa101288c457f5b31c0bff4cda6af0f331">SYSCALL_HOOK_EFER_SYSCALL</a>, Regs, Regs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a346ed6ae20503154a9a8031491706b3e">rax</a>);</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    Result = <a class="code" href="_efer_hook_8c.html#ab2d5e9863bf1456a765732554d12501a">SyscallHookEmulateSYSCALL</a>(Regs);</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    CurrentVmState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a95be62d62b8c4a2e9bd6bf75a0ba4cd1">IncrementRip</a> = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    <span class="keywordflow">return</span> Result;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;}</div>
+<div class="ttc" id="a_debugger_8c_html_aac71ecf7a7e99662000efef060a32775"><div class="ttname"><a href="_debugger_8c.html#aac71ecf7a7e99662000efef060a32775">DebuggerTriggerEvents</a></div><div class="ttdeci">BOOLEAN DebuggerTriggerEvents(DEBUGGER_EVENT_TYPE_ENUM EventType, PGUEST_REGS Regs, PVOID Context)</div><div class="ttdoc">Trigger events of a special type to be managed by debugger.</div><div class="ttdef"><b>Definition:</b> Debugger.c:711</div></div>
+<div class="ttc" id="a_definition_8h_html_ac90d8337845597671bc9d95b598591daa101288c457f5b31c0bff4cda6af0f331"><div class="ttname"><a href="_definition_8h.html#ac90d8337845597671bc9d95b598591daa101288c457f5b31c0bff4cda6af0f331">SYSCALL_HOOK_EFER_SYSCALL</a></div><div class="ttdeci">@ SYSCALL_HOOK_EFER_SYSCALL</div><div class="ttdef"><b>Definition:</b> Definition.h:744</div></div>
+<div class="ttc" id="a_definition_8h_html_ac90d8337845597671bc9d95b598591daaeee3aa3ce1846c251a566625ec524190"><div class="ttname"><a href="_definition_8h.html#ac90d8337845597671bc9d95b598591daaeee3aa3ce1846c251a566625ec524190">SYSCALL_HOOK_EFER_SYSRET</a></div><div class="ttdeci">@ SYSCALL_HOOK_EFER_SYSRET</div><div class="ttdef"><b>Definition:</b> Definition.h:745</div></div>
+<div class="ttc" id="a_efer_hook_8c_html_a2e2363f45e308ab8b69cea7f6d642613"><div class="ttname"><a href="_efer_hook_8c.html#a2e2363f45e308ab8b69cea7f6d642613">SyscallHookEmulateSYSRET</a></div><div class="ttdeci">_Use_decl_annotations_ BOOLEAN SyscallHookEmulateSYSRET(PGUEST_REGS Regs)</div><div class="ttdoc">This function emulates the SYSRET execution.</div><div class="ttdef"><b>Definition:</b> EferHook.c:181</div></div>
+<div class="ttc" id="a_efer_hook_8c_html_ab2d5e9863bf1456a765732554d12501a"><div class="ttname"><a href="_efer_hook_8c.html#ab2d5e9863bf1456a765732554d12501a">SyscallHookEmulateSYSCALL</a></div><div class="ttdeci">_Use_decl_annotations_ BOOLEAN SyscallHookEmulateSYSCALL(PGUEST_REGS Regs)</div><div class="ttdoc">This function emulates the SYSCALL execution.</div><div class="ttdef"><b>Definition:</b> EferHook.c:114</div></div>
 <div class="ttc" id="a_events_8c_html_a7c60a0610d4ab52f530e9866ce84bd55"><div class="ttname"><a href="_events_8c.html#a7c60a0610d4ab52f530e9866ce84bd55">EventInjectPageFault</a></div><div class="ttdeci">VOID EventInjectPageFault(UINT64 PageFaultAddress)</div><div class="ttdoc">Inject #PF to the guest (Page-Fault for EFER Injector)</div><div class="ttdef"><b>Definition:</b> Events.c:101</div></div>
-<div class="ttc" id="a_global_variables_8h_html_a04bac1f4beef0dcf1ce1a4d9ce72ea76"><div class="ttname"><a href="_global_variables_8h.html#a04bac1f4beef0dcf1ce1a4d9ce72ea76">g_GuestState</a></div><div class="ttdeci">VIRTUAL_MACHINE_STATE * g_GuestState</div><div class="ttdoc">Save the state and variables related to each to logical core.</div><div class="ttdef"><b>Definition:</b> GlobalVariables.h:25</div></div>
-<div class="ttc" id="a_global_variables_8h_html_a79454511c45c422bb27a2d4429b65a53"><div class="ttname"><a href="_global_variables_8h.html#a79454511c45c422bb27a2d4429b65a53">g_IsUnsafeSyscallOrSysretHandling</a></div><div class="ttdeci">BOOLEAN g_IsUnsafeSyscallOrSysretHandling</div><div class="ttdoc">Shows whether the debuggee is waiting for an trap step or not.</div><div class="ttdef"><b>Definition:</b> GlobalVariables.h:231</div></div>
-<div class="ttc" id="a_hooks_8h_html_a2633e7e4b97712c8a9924648d48b63f6"><div class="ttname"><a href="_hooks_8h.html#a2633e7e4b97712c8a9924648d48b63f6">IS_SYSRET_INSTRUCTION</a></div><div class="ttdeci">#define IS_SYSRET_INSTRUCTION(Code)</div><div class="ttdoc">As we have just on sysret in all the Windows, we use the following variable to hold its address this ...</div><div class="ttdef"><b>Definition:</b> Hooks.h:32</div></div>
-<div class="ttc" id="a_hooks_8h_html_a765571d13192493adf4e7baa5a9e9468"><div class="ttname"><a href="_hooks_8h.html#a765571d13192493adf4e7baa5a9e9468">IS_SYSCALL_INSTRUCTION</a></div><div class="ttdeci">#define IS_SYSCALL_INSTRUCTION(Code)</div><div class="ttdef"><b>Definition:</b> Hooks.h:36</div></div>
-<div class="ttc" id="a_memory_mapper_8c_html_a17593f3a0cff16087e9352a30f2d7f26"><div class="ttname"><a href="_memory_mapper_8c.html#a17593f3a0cff16087e9352a30f2d7f26">MemoryMapperCheckIfPageIsPresentByCr3</a></div><div class="ttdeci">BOOLEAN MemoryMapperCheckIfPageIsPresentByCr3(PVOID Va, CR3_TYPE TargetCr3)</div><div class="ttdoc">This function checks if the page is mapped or not.</div><div class="ttdef"><b>Definition:</b> MemoryMapper.c:283</div></div>
-<div class="ttc" id="a_memory_mapper_8c_html_ad34df1901286734c77884ce9fc7c4f2d"><div class="ttname"><a href="_memory_mapper_8c.html#ad34df1901286734c77884ce9fc7c4f2d">MemoryMapperReadMemorySafe</a></div><div class="ttdeci">BOOLEAN MemoryMapperReadMemorySafe(UINT64 VaAddressToRead, PVOID BufferToSaveMemory, SIZE_T SizeToRead)</div><div class="ttdoc">Read memory safely by mapping the buffer (It's a wrapper)</div><div class="ttdef"><b>Definition:</b> MemoryMapper.c:628</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_a1cb18096b299d23458d3c7b85fd86555"><div class="ttname"><a href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a></div><div class="ttdeci">UCHAR BOOLEAN</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:80</div></div>
-<div class="ttc" id="a_script_engine_eval_8h_html_aebb9e13210d88d43e32e735ada43a425"><div class="ttname"><a href="_script_engine_eval_8h.html#aebb9e13210d88d43e32e735ada43a425">CHAR</a></div><div class="ttdeci">char CHAR</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:73</div></div>
-<div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_a25cbba845d9f777a39e26bae01151079"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#a25cbba845d9f777a39e26bae01151079">PCID_MASK</a></div><div class="ttdeci">#define PCID_MASK</div><div class="ttdef"><b>Definition:</b> Common.h:135</div></div>
-<div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_ac5cc3f3d8f749509f26223d303f21c63"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#ac5cc3f3d8f749509f26223d303f21c63">PCID_NONE</a></div><div class="ttdeci">#define PCID_NONE</div><div class="ttdoc">PCID Flags.</div><div class="ttdef"><b>Definition:</b> Common.h:134</div></div>
-<div class="ttc" id="astruct___c_r3___t_y_p_e_html"><div class="ttname"><a href="struct___c_r3___t_y_p_e.html">_CR3_TYPE</a></div><div class="ttdoc">CR3 Structure.</div><div class="ttdef"><b>Definition:</b> MemoryMapper.h:287</div></div>
-<div class="ttc" id="astruct___c_r3___t_y_p_e_html_a04eb96cc99b0458be739bcc9c640e08b"><div class="ttname"><a href="struct___c_r3___t_y_p_e.html#a04eb96cc99b0458be739bcc9c640e08b">_CR3_TYPE::Flags</a></div><div class="ttdeci">UINT64 Flags</div><div class="ttdef"><b>Definition:</b> MemoryMapper.h:290</div></div>
-<div class="ttc" id="astruct___n_t___k_p_r_o_c_e_s_s_html"><div class="ttname"><a href="struct___n_t___k_p_r_o_c_e_s_s.html">_NT_KPROCESS</a></div><div class="ttdoc">KPROCESS Brief structure.</div><div class="ttdef"><b>Definition:</b> Common.h:295</div></div>
-<div class="ttc" id="astruct___n_t___k_p_r_o_c_e_s_s_html_a0ba2f55aeffe5e3c92dd8787dc8af022"><div class="ttname"><a href="struct___n_t___k_p_r_o_c_e_s_s.html#a0ba2f55aeffe5e3c92dd8787dc8af022">_NT_KPROCESS::DirectoryTableBase</a></div><div class="ttdeci">ULONG_PTR DirectoryTableBase</div><div class="ttdef"><b>Definition:</b> Common.h:298</div></div>
-<div class="ttc" id="astruct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e_html_a95be62d62b8c4a2e9bd6bf75a0ba4cd1"><div class="ttname"><a href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a95be62d62b8c4a2e9bd6bf75a0ba4cd1">_VIRTUAL_MACHINE_STATE::IncrementRip</a></div><div class="ttdeci">BOOLEAN IncrementRip</div><div class="ttdef"><b>Definition:</b> Vmx.h:574</div></div>
-<div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_a95695e8756c30083f7c7ca248a39c0a9"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#a95695e8756c30083f7c7ca248a39c0a9">GUEST_REGS::rax</a></div><div class="ttdeci">ULONG64 rax</div><div class="ttdef"><b>Definition:</b> Definition.h:371</div></div>
+<div class="ttc" id="a_global_variables_8h_html_a04bac1f4beef0dcf1ce1a4d9ce72ea76"><div class="ttname"><a href="_global_variables_8h.html#a04bac1f4beef0dcf1ce1a4d9ce72ea76">g_GuestState</a></div><div class="ttdeci">VIRTUAL_MACHINE_STATE * g_GuestState</div><div class="ttdoc">Save the state and variables related to each to logical core.</div><div class="ttdef"><b>Definition:</b> GlobalVariables.h:31</div></div>
+<div class="ttc" id="a_global_variables_8h_html_a79454511c45c422bb27a2d4429b65a53"><div class="ttname"><a href="_global_variables_8h.html#a79454511c45c422bb27a2d4429b65a53">g_IsUnsafeSyscallOrSysretHandling</a></div><div class="ttdeci">BOOLEAN g_IsUnsafeSyscallOrSysretHandling</div><div class="ttdoc">Shows whether the debuggee is waiting for an trap step or not.</div><div class="ttdef"><b>Definition:</b> GlobalVariables.h:226</div></div>
+<div class="ttc" id="a_memory_mapper_8c_html_ac3c23d5644111a6be18ca274f448e9ff"><div class="ttname"><a href="_memory_mapper_8c.html#ac3c23d5644111a6be18ca274f448e9ff">MemoryMapperReadMemorySafe</a></div><div class="ttdeci">_Use_decl_annotations_ BOOLEAN MemoryMapperReadMemorySafe(UINT64 VaAddressToRead, PVOID BufferToSaveMemory, SIZE_T SizeToRead)</div><div class="ttdoc">Read memory safely by mapping the buffer (It's a wrapper)</div><div class="ttdef"><b>Definition:</b> MemoryMapper.c:826</div></div>
+<div class="ttc" id="a_memory_mapper_8c_html_ac8e4d2586a43095b5d829065524aef3e"><div class="ttname"><a href="_memory_mapper_8c.html#ac8e4d2586a43095b5d829065524aef3e">MemoryMapperCheckIfPageIsPresentByCr3</a></div><div class="ttdeci">_Use_decl_annotations_ BOOLEAN MemoryMapperCheckIfPageIsPresentByCr3(PVOID Va, CR3_TYPE TargetCr3)</div><div class="ttdoc">This function checks if the page is mapped or not.</div><div class="ttdef"><b>Definition:</b> MemoryMapper.c:234</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_a1cb18096b299d23458d3c7b85fd86555"><div class="ttname"><a href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a></div><div class="ttdeci">UCHAR BOOLEAN</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:90</div></div>
+<div class="ttc" id="a_script_engine_eval_8h_html_a4f4bb67531a9bf6f0b9c6ad76aeba587"><div class="ttname"><a href="_script_engine_eval_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587">UCHAR</a></div><div class="ttdeci">unsigned char UCHAR</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:86</div></div>
+<div class="ttc" id="ahprdbghv_2code_2common_2_common_8c_html_a3cf8394ebbc5300f74b02f51bd8519f6"><div class="ttname"><a href="hprdbghv_2code_2common_2_common_8c.html#a3cf8394ebbc5300f74b02f51bd8519f6">GetRunningCr3OnTargetProcess</a></div><div class="ttdeci">CR3_TYPE GetRunningCr3OnTargetProcess()</div><div class="ttdoc">Get cr3 of the target running process.</div><div class="ttdef"><b>Definition:</b> Common.c:466</div></div>
+<div class="ttc" id="astruct___c_r3___t_y_p_e_html"><div class="ttname"><a href="struct___c_r3___t_y_p_e.html">_CR3_TYPE</a></div><div class="ttdoc">CR3 Structure.</div><div class="ttdef"><b>Definition:</b> MemoryMapper.h:125</div></div>
+<div class="ttc" id="astruct___c_r3___t_y_p_e_html_a04eb96cc99b0458be739bcc9c640e08b"><div class="ttname"><a href="struct___c_r3___t_y_p_e.html#a04eb96cc99b0458be739bcc9c640e08b">_CR3_TYPE::Flags</a></div><div class="ttdeci">UINT64 Flags</div><div class="ttdef"><b>Definition:</b> MemoryMapper.h:128</div></div>
+<div class="ttc" id="astruct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e_html"><div class="ttname"><a href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html">_VIRTUAL_MACHINE_STATE</a></div><div class="ttdoc">The status of each core after and before VMX.</div><div class="ttdef"><b>Definition:</b> Vmx.h:332</div></div>
+<div class="ttc" id="astruct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e_html_a95be62d62b8c4a2e9bd6bf75a0ba4cd1"><div class="ttname"><a href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a95be62d62b8c4a2e9bd6bf75a0ba4cd1">_VIRTUAL_MACHINE_STATE::IncrementRip</a></div><div class="ttdeci">BOOLEAN IncrementRip</div><div class="ttdef"><b>Definition:</b> Vmx.h:334</div></div>
+<div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_a346ed6ae20503154a9a8031491706b3e"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#a346ed6ae20503154a9a8031491706b3e">GUEST_REGS::rax</a></div><div class="ttdeci">UINT64 rax</div><div class="ttdef"><b>Definition:</b> Definition.h:656</div></div>
 </div><!-- fragment -->
 </div>
 </div>

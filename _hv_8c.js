@@ -1,0 +1,27 @@
+var _hv_8c =
+[
+    [ "HvAdjustControls", "_hv_8c.html#af4b5fbb4d7aab890383c5ea30789e265", null ],
+    [ "HvFillGuestSelectorData", "_hv_8c.html#a2e77ab1584aa306f8c30a526fe6f63ad", null ],
+    [ "HvHandleControlRegisterAccess", "_hv_8c.html#a9aad43a1656ce17bd617f3af16456d39", null ],
+    [ "HvHandleCpuid", "_hv_8c.html#aec7e6880ca6233bb02899c12f9798918", null ],
+    [ "HvHandleMovDebugRegister", "_hv_8c.html#ac1a10a7ff4c7936daf19e7785d6ebb11", null ],
+    [ "HvReadExceptionBitmap", "_hv_8c.html#a356bf8e90c3548911031ccd655359517", null ],
+    [ "HvRestoreRegisters", "_hv_8c.html#a011d070043f596f715b8a1deee31786c", null ],
+    [ "HvResumeToNextInstruction", "_hv_8c.html#a635a41a75799273745a2af474455c4aa", null ],
+    [ "HvSetExceptionBitmap", "_hv_8c.html#ad81531a3022f3ccfc2c6ceb34160f18d", null ],
+    [ "HvSetExternalInterruptExiting", "_hv_8c.html#afda4e861e6b76d13ec4d2d16e80804cd", null ],
+    [ "HvSetGuestSelector", "_hv_8c.html#a4618a0079d5e32f8a61d459163dabcaf", null ],
+    [ "HvSetInterruptWindowExiting", "_hv_8c.html#a4e8c2928eefa854763176a7f18bb04ca", null ],
+    [ "HvSetLoadDebugControls", "_hv_8c.html#ac9aefb71e380eac56389960ac66cddc1", null ],
+    [ "HvSetMonitorTrapFlag", "_hv_8c.html#ae24c5aceac93fda6a1fcb4e15c85404c", null ],
+    [ "HvSetMovDebugRegsExiting", "_hv_8c.html#a3eed992fc21aece2a1e80c3931d93f80", null ],
+    [ "HvSetMovToCr3Vmexit", "_hv_8c.html#aa2764f929afeced2f522d6999079c0e4", null ],
+    [ "HvSetNmiExiting", "_hv_8c.html#a19458423f77db01c301caf54c301b24c", null ],
+    [ "HvSetNmiWindowExiting", "_hv_8c.html#ac7a6581e797aaeb78d1d4dba7cb3b7be", null ],
+    [ "HvSetPmcVmexit", "_hv_8c.html#a0d721b297a9930e02bfb88191a2e0b78", null ],
+    [ "HvSetRdtscExiting", "_hv_8c.html#a1bc185ccd408dc279e43d311c566ac77", null ],
+    [ "HvSetSaveDebugControls", "_hv_8c.html#a437b35822e82e1192228e3f8e767a4ab", null ],
+    [ "HvSetVmxPreemptionTimerExiting", "_hv_8c.html#a82c2dbbfaabfafcb556e12f0bfb93d4a", null ],
+    [ "HvUnsetExceptionBitmap", "_hv_8c.html#a08d6a0baa778bb91ed163ba1e1df550a", null ],
+    [ "HvWriteExceptionBitmap", "_hv_8c.html#a595e57580c35bb94687c29de95053e74", null ]
+];

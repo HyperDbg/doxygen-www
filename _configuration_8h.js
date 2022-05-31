@@ -1,5 +1,6 @@
 var _configuration_8h =
 [
+    [ "ActivateUserModeDebugger", "_configuration_8h.html#a3745c9be50e42269276f22426f4f8aeb", null ],
     [ "DebugMode", "_configuration_8h.html#a06a88383272df6b932eb32d83ee405bb", null ],
     [ "ShowMessagesOnDebugger", "_configuration_8h.html#ab0b427c21ff249fc424484a506b3bdaf", null ],
     [ "ShowSystemTimeOnDebugMessages", "_configuration_8h.html#a405a3dd10ad3b3b91e26596093a1f862", null ],

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HyperDbg Debugger: hyperdbg/script-engine/parse-table.c File Reference</title>
+<title>HyperDbg Debugger: hyperdbg/script-engine/code/parse-table.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -87,7 +87,7 @@ $(document).ready(function(){initNavTree('parse-table_8c.html',''); initResizabl
 <div class="title">parse-table.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="script-engine_2pch_8h_source.html">pch.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;pch.h&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -214,7 +214,24 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    {</div>
+<div class="line">        <span class="stringliteral">&quot;S&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;B6&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;E5&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;E12&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;EXP&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;E10&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;B1&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;E3&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;B4&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;E4&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;CMP&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;BE&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;B3&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;B2&quot;</span>,</div>
+<div class="line">        <span class="stringliteral">&quot;B5&quot;</span>}</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a0ed5a4e9601573cdb7655c6907c4ff39"></a>
@@ -313,20 +330,23 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line"><span class="stringliteral">&quot;@POI&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@DB&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@DD&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@DW&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@DQ&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@NEG&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@HI&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@LOW&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@NOT&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@CHECK_ADDRESS&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@STRLEN&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@WCSLEN&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@INTERLOCKED_INCREMENT&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@INTERLOCKED_DECREMENT&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@POI&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@DB&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@DD&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@DW&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@DQ&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@NEG&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@HI&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@LOW&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@NOT&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@CHECK_ADDRESS&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@STRLEN&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@WCSLEN&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@INTERLOCKED_INCREMENT&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@INTERLOCKED_DECREMENT&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@REFERENCE&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@PHYSICAL_TO_VIRTUAL&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@VIRTUAL_TO_PHYSICAL&quot;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -343,13 +363,13 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line"><span class="stringliteral">&quot;@PRINT&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@FORMATS&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@DISABLE_EVENT&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@ENABLE_EVENT&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@TEST_STATEMENT&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@SPINLOCK_LOCK&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@SPINLOCK_UNLOCK&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@PRINT&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@FORMATS&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@DISABLE_EVENT&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@ENABLE_EVENT&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@TEST_STATEMENT&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@SPINLOCK_LOCK&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@SPINLOCK_UNLOCK&quot;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -366,9 +386,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line"><span class="stringliteral">&quot;@INC&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@DEC&quot;</span></div>
-<div class="line">}</div>
+<div class="line">    <span class="stringliteral">&quot;@INC&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@DEC&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@REFERENCE&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@DEREFERENCE&quot;</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -384,23 +405,22 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line"><span class="stringliteral">&quot;@OR&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@XOR&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@AND&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@ASR&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@ASL&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@ADD&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@SUB&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@MUL&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@DIV&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@MOD&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@GT&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@LT&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@EGT&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@ELT&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@EQUAL&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@NEQ&quot;</span></div>
-<div class="line">}</div>
+<div class="line">    <span class="stringliteral">&quot;@OR&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@XOR&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@AND&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@ASR&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@ASL&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@ADD&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@SUB&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@MUL&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@DIV&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@MOD&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@GT&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@LT&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@EGT&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@ELT&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@EQUAL&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@NEQ&quot;</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -430,29 +450,28 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">{<span class="stringliteral">&quot;pid&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#adb35173d5ff1b98fb77d2aabdf2c07d2">PSEUDO_REGISTER_PID</a>},</div>
-<div class="line">{<span class="stringliteral">&quot;tid&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#aef5ce7aa0f89021ed012fb989849ca72">PSEUDO_REGISTER_TID</a>},</div>
-<div class="line">{<span class="stringliteral">&quot;pname&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a521ad2d2680b67b690b707033915cf74">PSEUDO_REGISTER_PNAME</a>},</div>
-<div class="line">{<span class="stringliteral">&quot;core&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a651043f269d369bd0df2c23be5aa0336">PSEUDO_REGISTER_CORE</a>},</div>
-<div class="line">{<span class="stringliteral">&quot;proc&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a2d679a809d2e4daf6bfd6fe4926ebd00">PSEUDO_REGISTER_PROC</a>},</div>
-<div class="line">{<span class="stringliteral">&quot;thread&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a24d8aaa373fa6197ba533f85cd5cdf55">PSEUDO_REGISTER_THREAD</a>},</div>
-<div class="line">{<span class="stringliteral">&quot;peb&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a6c38db7f77a47252f8b9ae6c2caf595f">PSEUDO_REGISTER_PEB</a>},</div>
-<div class="line">{<span class="stringliteral">&quot;teb&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a7c1aee9d61e945ab1ff74134366ba5a4">PSEUDO_REGISTER_TEB</a>},</div>
-<div class="line">{<span class="stringliteral">&quot;ip&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a09191bee226efd6518c032a4cb867717">PSEUDO_REGISTER_IP</a>},</div>
-<div class="line">{<span class="stringliteral">&quot;buffer&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#accba43bec16da1bfc0f28ea507916260">PSEUDO_REGISTER_BUFFER</a>},</div>
-<div class="line">{<span class="stringliteral">&quot;context&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a0fb5e2005fe843c4a52391f2f7b9d9f3">PSEUDO_REGISTER_CONTEXT</a>}</div>
-<div class="line">}</div>
-<div class="ttc" id="a_script_engine_common_definitions_8h_html_a09191bee226efd6518c032a4cb867717"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a09191bee226efd6518c032a4cb867717">PSEUDO_REGISTER_IP</a></div><div class="ttdeci">#define PSEUDO_REGISTER_IP</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:264</div></div>
-<div class="ttc" id="a_script_engine_common_definitions_8h_html_a0fb5e2005fe843c4a52391f2f7b9d9f3"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a0fb5e2005fe843c4a52391f2f7b9d9f3">PSEUDO_REGISTER_CONTEXT</a></div><div class="ttdeci">#define PSEUDO_REGISTER_CONTEXT</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:266</div></div>
-<div class="ttc" id="a_script_engine_common_definitions_8h_html_a24d8aaa373fa6197ba533f85cd5cdf55"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a24d8aaa373fa6197ba533f85cd5cdf55">PSEUDO_REGISTER_THREAD</a></div><div class="ttdeci">#define PSEUDO_REGISTER_THREAD</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:261</div></div>
-<div class="ttc" id="a_script_engine_common_definitions_8h_html_a2d679a809d2e4daf6bfd6fe4926ebd00"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a2d679a809d2e4daf6bfd6fe4926ebd00">PSEUDO_REGISTER_PROC</a></div><div class="ttdeci">#define PSEUDO_REGISTER_PROC</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:260</div></div>
-<div class="ttc" id="a_script_engine_common_definitions_8h_html_a521ad2d2680b67b690b707033915cf74"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a521ad2d2680b67b690b707033915cf74">PSEUDO_REGISTER_PNAME</a></div><div class="ttdeci">#define PSEUDO_REGISTER_PNAME</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:258</div></div>
-<div class="ttc" id="a_script_engine_common_definitions_8h_html_a651043f269d369bd0df2c23be5aa0336"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a651043f269d369bd0df2c23be5aa0336">PSEUDO_REGISTER_CORE</a></div><div class="ttdeci">#define PSEUDO_REGISTER_CORE</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:259</div></div>
-<div class="ttc" id="a_script_engine_common_definitions_8h_html_a6c38db7f77a47252f8b9ae6c2caf595f"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a6c38db7f77a47252f8b9ae6c2caf595f">PSEUDO_REGISTER_PEB</a></div><div class="ttdeci">#define PSEUDO_REGISTER_PEB</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:262</div></div>
-<div class="ttc" id="a_script_engine_common_definitions_8h_html_a7c1aee9d61e945ab1ff74134366ba5a4"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a7c1aee9d61e945ab1ff74134366ba5a4">PSEUDO_REGISTER_TEB</a></div><div class="ttdeci">#define PSEUDO_REGISTER_TEB</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:263</div></div>
-<div class="ttc" id="a_script_engine_common_definitions_8h_html_accba43bec16da1bfc0f28ea507916260"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#accba43bec16da1bfc0f28ea507916260">PSEUDO_REGISTER_BUFFER</a></div><div class="ttdeci">#define PSEUDO_REGISTER_BUFFER</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:265</div></div>
-<div class="ttc" id="a_script_engine_common_definitions_8h_html_adb35173d5ff1b98fb77d2aabdf2c07d2"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#adb35173d5ff1b98fb77d2aabdf2c07d2">PSEUDO_REGISTER_PID</a></div><div class="ttdeci">#define PSEUDO_REGISTER_PID</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:256</div></div>
-<div class="ttc" id="a_script_engine_common_definitions_8h_html_aef5ce7aa0f89021ed012fb989849ca72"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#aef5ce7aa0f89021ed012fb989849ca72">PSEUDO_REGISTER_TID</a></div><div class="ttdeci">#define PSEUDO_REGISTER_TID</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:257</div></div>
+<div class="line">    {<span class="stringliteral">&quot;pid&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#adb35173d5ff1b98fb77d2aabdf2c07d2">PSEUDO_REGISTER_PID</a>},</div>
+<div class="line">    {<span class="stringliteral">&quot;tid&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#aef5ce7aa0f89021ed012fb989849ca72">PSEUDO_REGISTER_TID</a>},</div>
+<div class="line">    {<span class="stringliteral">&quot;pname&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a521ad2d2680b67b690b707033915cf74">PSEUDO_REGISTER_PNAME</a>},</div>
+<div class="line">    {<span class="stringliteral">&quot;core&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a651043f269d369bd0df2c23be5aa0336">PSEUDO_REGISTER_CORE</a>},</div>
+<div class="line">    {<span class="stringliteral">&quot;proc&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a2d679a809d2e4daf6bfd6fe4926ebd00">PSEUDO_REGISTER_PROC</a>},</div>
+<div class="line">    {<span class="stringliteral">&quot;thread&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a24d8aaa373fa6197ba533f85cd5cdf55">PSEUDO_REGISTER_THREAD</a>},</div>
+<div class="line">    {<span class="stringliteral">&quot;peb&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a6c38db7f77a47252f8b9ae6c2caf595f">PSEUDO_REGISTER_PEB</a>},</div>
+<div class="line">    {<span class="stringliteral">&quot;teb&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a7c1aee9d61e945ab1ff74134366ba5a4">PSEUDO_REGISTER_TEB</a>},</div>
+<div class="line">    {<span class="stringliteral">&quot;ip&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a09191bee226efd6518c032a4cb867717">PSEUDO_REGISTER_IP</a>},</div>
+<div class="line">    {<span class="stringliteral">&quot;buffer&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#accba43bec16da1bfc0f28ea507916260">PSEUDO_REGISTER_BUFFER</a>},</div>
+<div class="line">    {<span class="stringliteral">&quot;context&quot;</span>, <a class="code" href="_script_engine_common_definitions_8h.html#a0fb5e2005fe843c4a52391f2f7b9d9f3">PSEUDO_REGISTER_CONTEXT</a>}}</div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_a09191bee226efd6518c032a4cb867717"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a09191bee226efd6518c032a4cb867717">PSEUDO_REGISTER_IP</a></div><div class="ttdeci">#define PSEUDO_REGISTER_IP</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:393</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_a0fb5e2005fe843c4a52391f2f7b9d9f3"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a0fb5e2005fe843c4a52391f2f7b9d9f3">PSEUDO_REGISTER_CONTEXT</a></div><div class="ttdeci">#define PSEUDO_REGISTER_CONTEXT</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:395</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_a24d8aaa373fa6197ba533f85cd5cdf55"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a24d8aaa373fa6197ba533f85cd5cdf55">PSEUDO_REGISTER_THREAD</a></div><div class="ttdeci">#define PSEUDO_REGISTER_THREAD</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:390</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_a2d679a809d2e4daf6bfd6fe4926ebd00"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a2d679a809d2e4daf6bfd6fe4926ebd00">PSEUDO_REGISTER_PROC</a></div><div class="ttdeci">#define PSEUDO_REGISTER_PROC</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:389</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_a521ad2d2680b67b690b707033915cf74"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a521ad2d2680b67b690b707033915cf74">PSEUDO_REGISTER_PNAME</a></div><div class="ttdeci">#define PSEUDO_REGISTER_PNAME</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:387</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_a651043f269d369bd0df2c23be5aa0336"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a651043f269d369bd0df2c23be5aa0336">PSEUDO_REGISTER_CORE</a></div><div class="ttdeci">#define PSEUDO_REGISTER_CORE</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:388</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_a6c38db7f77a47252f8b9ae6c2caf595f"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a6c38db7f77a47252f8b9ae6c2caf595f">PSEUDO_REGISTER_PEB</a></div><div class="ttdeci">#define PSEUDO_REGISTER_PEB</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:391</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_a7c1aee9d61e945ab1ff74134366ba5a4"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#a7c1aee9d61e945ab1ff74134366ba5a4">PSEUDO_REGISTER_TEB</a></div><div class="ttdeci">#define PSEUDO_REGISTER_TEB</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:392</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_accba43bec16da1bfc0f28ea507916260"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#accba43bec16da1bfc0f28ea507916260">PSEUDO_REGISTER_BUFFER</a></div><div class="ttdeci">#define PSEUDO_REGISTER_BUFFER</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:394</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_adb35173d5ff1b98fb77d2aabdf2c07d2"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#adb35173d5ff1b98fb77d2aabdf2c07d2">PSEUDO_REGISTER_PID</a></div><div class="ttdeci">#define PSEUDO_REGISTER_PID</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:385</div></div>
+<div class="ttc" id="a_script_engine_common_definitions_8h_html_aef5ce7aa0f89021ed012fb989849ca72"><div class="ttname"><a href="_script_engine_common_definitions_8h.html#aef5ce7aa0f89021ed012fb989849ca72">PSEUDO_REGISTER_TID</a></div><div class="ttdeci">#define PSEUDO_REGISTER_TID</div><div class="ttdef"><b>Definition:</b> ScriptEngineCommonDefinitions.h:386</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -538,8 +557,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line"><span class="stringliteral">&quot;@INTERLOCKED_COMPARE_EXCHANGE&quot;</span></div>
-<div class="line">}</div>
+<div class="line">    <span class="stringliteral">&quot;@INTERLOCKED_COMPARE_EXCHANGE&quot;</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -555,11 +573,11 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line"><span class="stringliteral">&quot;@ED&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@EB&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@EQ&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@INTERLOCKED_EXCHANGE&quot;</span>,</div>
-<div class="line"><span class="stringliteral">&quot;@INTERLOCKED_EXCHANGE_ADD&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@ED&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@EB&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@EQ&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@INTERLOCKED_EXCHANGE&quot;</span>,</div>
+<div class="line">    <span class="stringliteral">&quot;@INTERLOCKED_EXCHANGE_ADD&quot;</span>,</div>
 <div class="line">}</div>
 </div><!-- fragment -->
 </div>
@@ -576,8 +594,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line"><span class="stringliteral">&quot;@SPINLOCK_LOCK_CUSTOM_WAIT&quot;</span></div>
-<div class="line">}</div>
+<div class="line">    <span class="stringliteral">&quot;@SPINLOCK_LOCK_CUSTOM_WAIT&quot;</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -593,8 +610,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line"><span class="stringliteral">&quot;@PRINTF&quot;</span></div>
-<div class="line">}</div>
+<div class="line">    <span class="stringliteral">&quot;@PRINTF&quot;</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -610,8 +626,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line"><span class="stringliteral">&quot;@PAUSE&quot;</span></div>
-<div class="line">}</div>
+<div class="line">    <span class="stringliteral">&quot;@PAUSE&quot;</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -620,7 +635,7 @@ Variables</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_f25ac98af02ac4f06b76afd5e5e18bba.html">script-engine</a></li><li class="navelem"><a class="el" href="parse-table_8c.html">parse-table.c</a></li>
+    <li class="navelem"><a class="el" href="dir_53a6cdbae347618e9ee76d4be5c6ea96.html">hyperdbg</a></li><li class="navelem"><a class="el" href="dir_f25ac98af02ac4f06b76afd5e5e18bba.html">script-engine</a></li><li class="navelem"><a class="el" href="dir_40eb3b6e178efe1f0a5de2bc9949b27c.html">code</a></li><li class="navelem"><a class="el" href="parse-table_8c.html">parse-table.c</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

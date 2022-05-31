@@ -25,20 +25,7 @@
 var NAVTREE =
 [
   [ "HyperDbg Debugger", "index.html", [
-    [ "HyperDbg Debugger", "index.html#autotoc_md21", [
-      [ "Description", "index.html#autotoc_md23", null ],
-      [ "Unique Features", "index.html#autotoc_md24", [
-        [ "HyperDbg is now available for testing! Please test it and provide us with your valuable feedback and possible bugs.", "index.html#autotoc_md22", null ],
-        [ "First Release (v0.1.0.0)", "index.html#autotoc_md25", null ],
-        [ "Second Release (v0.2.0.0)", "index.html#autotoc_md26", null ]
-      ] ],
-      [ "Build & Installation", "index.html#autotoc_md27", null ],
-      [ "How does it work?", "index.html#autotoc_md28", null ],
-      [ "Plugins", "index.html#autotoc_md29", null ],
-      [ "Credits", "index.html#autotoc_md30", null ],
-      [ "Contributing", "index.html#autotoc_md31", null ],
-      [ "License", "index.html#autotoc_md32", null ]
-    ] ],
+    [ "script-engine-test", "index.html", null ],
     [ "Changelog", "md__c_h_a_n_g_e_l_o_g.html", [
       [ "[Unreleased]", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md1", [
         [ "Added", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md2", null ],
@@ -58,8 +45,12 @@ var NAVTREE =
       [ "Attribution", "md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md13", null ]
     ] ],
     [ "Contribution", "md__c_o_n_t_r_i_b_u_t_i_n_g.html", [
-      [ "Coding Style", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md15", null ],
-      [ "FAQ", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md16", null ]
+      [ "Things to work on", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md15", null ],
+      [ "Coding Style", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md16", null ],
+      [ "FAQ", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md17", null ]
+    ] ],
+    [ "HOWTO", "md__h_o_w_t_o.html", [
+      [ "Automatic testing for the script engine", "md__h_o_w_t_o.html#autotoc_md23", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -74,7 +65,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ]
       ] ]
@@ -97,37 +88,39 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "____init_____8py.html",
-"_definition_8h.html#a5466fd1b325859f4e5ab2d0f9b95c8ff",
-"_definition_8h.html#ad339afe7f8bab43a4ab1d3c623dbb8e0",
-"_ept_8h.html#a6f3fb4558d7dd5c09d0fd84d2a846bfa",
-"_gdb_stub_8c.html#af9e618b3a9fc1c140b7122b873ca4b30",
-"_inline_asm_8h.html#a99ddf21c2beb923fc68f01d200140782",
-"_manage_regs_8h.html#af6dadce353e3614a2d70189cc6a4a9af",
-"_script_engine_common_definitions_8h.html#a169890310bdffddf2d480009d75ff3e0a90a9291212dca326c1d70013b35bda6c",
-"_script_engine_eval_8h.html#aac859c405aacbf953383d88b404c9903",
-"_vmcall_8h.html#ab5531b07658822b77b4e1d5d69f38f51",
-"_vmx_8h.html#a7ff71507e63e5659d2fc6db8b260d9e5addf6728485ae34980142ecf9114e35d8",
-"_zydis_export_config_8h.html#a02d806fceefd826bda55d8ffdab66195",
-"classll1__parser_1_1_l_l1_parser.html#ab39dd486b0d0c64cced734edcc3d4316",
-"counter_8py.html",
-"functions_d.html",
-"help_8h.html#a59388dd548701ff7f51ab75465936ec7",
-"hprdbgctrl_2header_2namedpipe_8h_source.html",
-"hprdbghv_2header_2common_2common_8h.html#ae66c526d730e6419f948b3a494b710dd",
-"kdcom_8h.html#a0494fe403fed099eedb368ec024e6e0b",
-"msm8974_8c.html#aa62f9cde09edb887b0279793f38e45d4",
-"namespacelalr__parsing_1_1lalr__one.html#a6f774eeb437a7baed15ad0d2ce447635",
-"pl011_8c.html#afa15b8528f4c1dbedbd37262871362e1",
-"script-engine_2pch_8h.html",
-"sdm845_8c.html#a382d6b6a820aeade383dcfe5076bcb4e",
-"sdm845_8c.html#a8e650e5c10c27bc2ff311752567d0654",
-"sdm845_8c.html#ae83b7cb9b863468b50b822bf98e8e179",
-"struct___d_e_b_u_g_g_e_e___b_p___d_e_s_c_r_i_p_t_o_r.html#ad46a87a0665b8d99405fec5650ae1eb1",
-"struct___d_e_b_u_g_g_e_r___s_t_e_p_p_i_n_g___c_o_r_e___s_p_e_c_i_f_i_c___d_e_t_a_i_l_s.html",
-"struct___n_o_t_i_f_y___r_e_c_o_r_d.html#a78945aa44f2cb6fe848b25ce6b40754e",
-"struct___v_m_x___e_x_i_t___q_u_a_l_i_f_i_c_a_t_i_o_n___i_o___i_n_s_t_r_u_c_t_i_o_n.html#ab9ca1a7f40f2f41b9396a85e225f4006",
-"test-case-generator_8py.html#aff0608f02670d86c638aff5999275b23",
-"union___i_a32___m_t_r_r___d_e_f___t_y_p_e___r_e_g_i_s_t_e_r.html"
+"_cross_api_8h.html#a4ad2b18aca5302cb7b9faa8b6e74eeaf",
+"_definition_8h.html#a4f7aad93bd32f50b030c3efbab8864c1",
+"_definition_8h.html#ac0e6db4051893271cfa53c365980c7c7a1a8c021c051b587a7f7a282b19092eda",
+"_dpc_routines_8c.html#abb391d5fcf455df2fc237befb9a7d234",
+"_extension_commands_8c.html#aac54592e1514c7893b073111c3dbf8d2",
+"_io_handler_8c.html#af10acaaf3042306f07cb0074e8d4bd9e",
+"_memory_mapper_8c.html#aa78b2b9b329581388d50ecb1a69aed49",
+"_script_engine_common_definitions_8h.html#a169890310bdffddf2d480009d75ff3e0a5dea01e15cff05583768ce7c1654cf7f",
+"_script_engine_eval_8h.html#a4f2dbb7a4457c1f7209cb06db7e3240a",
+"_trace_8h.html#ae0f1cc8da8d54a908b3b7527b6d211e2",
+"_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8a834d0704d3c1bb81427842e3183fef32",
+"classgenerator_1_1_generator.html#a4a90a8bcfd7337f77b0683a6e7eb8489",
+"commands_8h.html#a4d7a173d8ee7e7b5e9d177458218f779",
+"debugger_8cpp.html#ae6d967f92305bc2539b2c0817513f3d5",
+"functions_func_c.html",
+"help_8h.html#a201584b920361c38764e19defbc1d52a",
+"hprdbgctrl_2header_2globals_8h.html#af212733923c3fa97ce582dcf62bfdd85",
+"hprdbghv_2header_2common_2common_8h.html#a3bb297a24c99cf7e9a97f21d9184643e",
+"hyperdbg-test_2code_2tests_2namedpipe_8cpp.html#a0eb9b1337b9484e03a962cb9974d4c65",
+"lalr__one_8py.html#ab9bb42aed96d9010a156afdfa7f0e51f",
+"msm8x60_8c.html#a3227a31bc162c44d6cf38bd847b0937f",
+"namespaceutil.html#a3206d44d413b59ff9240237a8c9594c8",
+"remote-connection_8cpp.html#a212885a62f5bfda070ea3bbb059fa51d",
+"script-engine_2header_2script-engine_8h.html#a5a1425bb2a3074c10b1f1acd2e8bbf9b",
+"sdm845_8c.html#a3832353c3d1c1a1f342cf4be18b10c72",
+"sdm845_8c.html#a8e7faf508c05338ab624761f6193b4ac",
+"sdm845_8c.html#ae93ef3bac59c67af475b4fce97a3b9e7",
+"struct___d_e_b_u_g_g_e_e___b_p___d_e_s_c_r_i_p_t_o_r.html#a92b8d8e3dfe78ced438c04c2fc9c8b08",
+"struct___d_e_b_u_g_g_e_r___f_l_u_s_h___l_o_g_g_i_n_g___b_u_f_f_e_r_s.html#a09e09b7c4094d0118e60286632bd832b",
+"struct___l_d_r___d_a_t_a___t_a_b_l_e___e_n_t_r_y32.html#a88b868bf7336b9bf57697944f4027691",
+"struct___t_r_a_n_s_p_a_r_e_n_c_y___m_e_a_s_u_r_e_m_e_n_t_s.html#aa3e856372d95a8fdd33928e88bc7b832",
+"symbol_8cpp.html#a05f301b303fc43bc4a7d3685a834c881",
+"union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#a6a8cb632150298f6d5dc6fc5050c4b7e"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

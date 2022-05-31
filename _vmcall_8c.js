@@ -1,6 +1,7 @@
 var _vmcall_8c =
 [
-    [ "VmcallTest", "_vmcall_8c.html#a51fa3a3d4245b314c52ce45377209bb2", null ],
-    [ "VmxHandleVmcallVmExit", "_vmcall_8c.html#a443d310a60c1653b7a07c75c36f3fa2a", null ],
-    [ "VmxVmcallHandler", "_vmcall_8c.html#a1e4f17f468b61d1cfcfdd4aae7e6ce79", null ]
+    [ "VmcallTest", "_vmcall_8c.html#a33cfb4436bd44e0edfc347cd877103df", null ],
+    [ "VmxHandleVmcallVmExit", "_vmcall_8c.html#abe2f32122b1d17877949fb8cc13e10f8", null ],
+    [ "VmxHypervVmcallHandler", "_vmcall_8c.html#a80352657b07123c63892fd0992b99747", null ],
+    [ "VmxVmcallHandler", "_vmcall_8c.html#a3e71a1ac4bc9124d8bf6301517e613cb", null ]
 ];
