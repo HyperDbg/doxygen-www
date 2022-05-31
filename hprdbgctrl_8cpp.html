@@ -294,10 +294,10 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;        <span class="stringliteral">&quot;\\\\.\\HyperdbgHypervisorDevice&quot;</span>,</div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        GENERIC_READ | GENERIC_WRITE,</div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;        FILE_SHARE_READ | FILE_SHARE_WRITE,</div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, </div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;        NULL, </div>
 <div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;        OPEN_EXISTING,</div>
 <div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;        FILE_ATTRIBUTE_NORMAL | FILE_FLAG_OVERLAPPED,</div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>); </div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;        NULL); </div>
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160; </div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a> == INVALID_HANDLE_VALUE)</div>
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;    {</div>
@@ -317,7 +317,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;            <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;err, CreateFile failed (%x)\n&quot;</span>, ErrorNum);</div>
 <div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        }</div>
 <div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160; </div>
-<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a> = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a> = NULL;</div>
 <div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;        <span class="keywordflow">return</span> 1;</div>
 <div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;    }</div>
 <div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160; </div>
@@ -327,7 +327,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;    <a class="code" href="list_8h.html#a71fd97aa8bac50a2f3a1d98cf680b2f4">InitializeListHead</a>(&amp;<a class="code" href="hprdbgctrl_8cpp.html#a5295702ad37c6640bf9d2df3091f9417">g_EventTrace</a>);</div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160; </div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;<span class="preprocessor">#if !UseDbgPrintInsteadOfUsermodeMessageTracking</span></div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    HANDLE Thread = CreateThread(<a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, 0, <a class="code" href="hprdbgctrl_8cpp.html#ad8558da611030c38b991779eeed5b6ce">ThreadFunc</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, 0, &amp;ThreadId);</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;    HANDLE Thread = CreateThread(NULL, 0, <a class="code" href="hprdbgctrl_8cpp.html#ad8558da611030c38b991779eeed5b6ce">ThreadFunc</a>, NULL, 0, &amp;ThreadId);</div>
 <div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160; </div>
 <div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    <span class="comment">// if (Thread)</span></div>
 <div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;    <span class="comment">// {</span></div>
@@ -347,7 +347,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="ahprdbgctrl_8cpp_html_a5295702ad37c6640bf9d2df3091f9417"><div class="ttname"><a href="hprdbgctrl_8cpp.html#a5295702ad37c6640bf9d2df3091f9417">g_EventTrace</a></div><div class="ttdeci">LIST_ENTRY g_EventTrace</div><div class="ttdoc">Holds a list of events in kernel and the state of events and the commands to show the state of each c...</div><div class="ttdef"><b>Definition:</b> globals.h:386</div></div>
 <div class="ttc" id="ahprdbgctrl_8cpp_html_ad8558da611030c38b991779eeed5b6ce"><div class="ttname"><a href="hprdbgctrl_8cpp.html#ad8558da611030c38b991779eeed5b6ce">ThreadFunc</a></div><div class="ttdeci">DWORD WINAPI ThreadFunc(void *data)</div><div class="ttdoc">Create a thread for pending buffers.</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:466</div></div>
 <div class="ttc" id="alist_8h_html_a71fd97aa8bac50a2f3a1d98cf680b2f4"><div class="ttname"><a href="list_8h.html#a71fd97aa8bac50a2f3a1d98cf680b2f4">InitializeListHead</a></div><div class="ttdeci">void InitializeListHead(PLIST_ENTRY ListHead)</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -484,13 +483,13 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;    Status = DeviceIoControl(<a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a>,      <span class="comment">// Handle to device</span></div>
 <div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;                             <a class="code" href="_definition_8h.html#a74e9d0c3605d1f407b4f4e08316a9f4b">IOCTL_TERMINATE_VMX</a>, <span class="comment">// IO Control code</span></div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;                             <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,                <span class="comment">// Input Buffer to driver.</span></div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;                             NULL,                <span class="comment">// Input Buffer to driver.</span></div>
 <div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;                             0,                   <span class="comment">// Length of input buffer in bytes. (x 2 is bcuz</span></div>
 <div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;                                                  <span class="comment">// as the driver is x64 and has 64 bit values)</span></div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;                             <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,                <span class="comment">// Output Buffer from driver.</span></div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;                             NULL,                <span class="comment">// Output Buffer from driver.</span></div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;                             0,                   <span class="comment">// Length of output buffer in bytes.</span></div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;                             <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,                <span class="comment">// Bytes placed in buffer.</span></div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;                             <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>                 <span class="comment">// synchronous call</span></div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;                             NULL,                <span class="comment">// Bytes placed in buffer.</span></div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;                             NULL                 <span class="comment">// synchronous call</span></div>
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    );</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160; </div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    <span class="comment">//</span></div>
@@ -510,13 +509,13 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;        <a class="code" href="_definition_8h.html#a58a948845b8edb96050374a542b9244d">IOCTL_RETURN_IRP_PENDING_PACKETS_AND_DISALLOW_IOCTL</a>, <span class="comment">// IO</span></div>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;                                                             <span class="comment">// Control</span></div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;                                                             <span class="comment">// code</span></div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,                                                <span class="comment">// Input Buffer to driver.</span></div>
+<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;        NULL,                                                <span class="comment">// Input Buffer to driver.</span></div>
 <div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;        0,                                                   <span class="comment">// Length of input buffer in bytes. (x 2 is bcuz as the</span></div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;                                                             <span class="comment">// driver is x64 and has 64 bit values)</span></div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,                                                <span class="comment">// Output Buffer from driver.</span></div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        NULL,                                                <span class="comment">// Output Buffer from driver.</span></div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;        0,                                                   <span class="comment">// Length of output buffer in bytes.</span></div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,                                                <span class="comment">// Bytes placed in buffer.</span></div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>                                                 <span class="comment">// synchronous call</span></div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;        NULL,                                                <span class="comment">// Bytes placed in buffer.</span></div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;        NULL                                                 <span class="comment">// synchronous call</span></div>
 <div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    );</div>
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160; </div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    <span class="comment">//</span></div>
@@ -548,7 +547,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    <span class="comment">// Null the handle to indicate that the driver&#39;s device is not ready</span></div>
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160;    <span class="comment">// to use</span></div>
 <div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a> = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a> = NULL;</div>
 <div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160; </div>
 <div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;    <span class="comment">// Debugger module is not loaded anymore</span></div>
@@ -611,7 +610,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>                OutputSourceFound;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    PLIST_ENTRY            TempList;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    RegisterEvent.<a class="code" href="struct___r_e_g_i_s_t_e_r___n_o_t_i_f_y___b_u_f_f_e_r.html#a0be90ffe07b5e70e32a2971852f29c8f">hEvent</a> = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    RegisterEvent.<a class="code" href="struct___r_e_g_i_s_t_e_r___n_o_t_i_f_y___b_u_f_f_e_r.html#a0be90ffe07b5e70e32a2971852f29c8f">hEvent</a> = NULL;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    RegisterEvent.<a class="code" href="struct___r_e_g_i_s_t_e_r___n_o_t_i_f_y___b_u_f_f_e_r.html#a05acd472c7bdb5b620ec76b2ece28dd0">Type</a>   = <a class="code" href="_definition_8h.html#a7df81690e4c6ed5fbbb74547c998e4b6a557243d0c993fb8d9b81a0a0db183c2e">IRP_BASED</a>;</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="comment">//</span></div>
@@ -626,10 +625,10 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="stringliteral">&quot;\\\\.\\HyperdbgHypervisorDevice&quot;</span>,</div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        GENERIC_READ | GENERIC_WRITE,</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        FILE_SHARE_READ | FILE_SHARE_WRITE,</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        NULL, </div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        OPEN_EXISTING,</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        FILE_ATTRIBUTE_NORMAL | FILE_FLAG_OVERLAPPED,</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>); </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        NULL); </div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordflow">if</span> (Handle == INVALID_HANDLE_VALUE)</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    {</div>
@@ -649,8 +648,8 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;err, CreateFile failed with (%x)\n&quot;</span>, ErrorNum);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        }</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a> = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        Handle         = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a> = NULL;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        Handle         = NULL;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    }</div>
@@ -683,7 +682,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                    OutputBuffer,       <span class="comment">// Output Buffer from driver.</span></div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                    <a class="code" href="_definition_8h.html#a4e12a0c1a102bb323458f19d591379e5">UsermodeBufferSize</a>, <span class="comment">// Length of output buffer in bytes.</span></div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                    &amp;ReturnedLength,    <span class="comment">// Bytes placed in buffer.</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                    <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>                <span class="comment">// synchronous call</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                    NULL                <span class="comment">// synchronous call</span></div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                );</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                <span class="keywordflow">if</span> (!Status)</div>
@@ -1028,7 +1027,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    va_list Args;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">char</span>    TempMessage[<a class="code" href="_definition_8h.html#a557424f6d2420b81a5bd72b346664631">COMMUNICATION_BUFFER_SIZE</a> + <a class="code" href="_definition_8h.html#a0c9efc30a3f2181d7f0be5e69501b2ca">TCP_END_OF_BUFFER_CHARS_COUNT</a>] = {0};</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="hprdbgctrl_8cpp.html#ad12c41c73b6d11e1703491f0d59e3f73">g_MessageHandler</a> == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a> &amp;&amp; !<a class="code" href="hprdbgctrl_8cpp.html#aa6712815a46bbfaf04ac69c5f336d371">g_IsConnectedToRemoteDebugger</a> &amp;&amp;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="hprdbgctrl_8cpp.html#ad12c41c73b6d11e1703491f0d59e3f73">g_MessageHandler</a> == NULL &amp;&amp; !<a class="code" href="hprdbgctrl_8cpp.html#aa6712815a46bbfaf04ac69c5f336d371">g_IsConnectedToRemoteDebugger</a> &amp;&amp;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        !<a class="code" href="hprdbgctrl_8cpp.html#a07d4f30d5bc446a5c0dacc0b77b902db">g_IsSerialConnectedToRemoteDebugger</a>)</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        va_start(Args, Fmt);</div>
@@ -1067,7 +1066,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <a class="code" href="logopen_8cpp.html#aa117e25b8d4fcb30878383e1c6dd6404">LogopenSaveToFile</a>(TempMessage);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        }</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="hprdbgctrl_8cpp.html#ad12c41c73b6d11e1703491f0d59e3f73">g_MessageHandler</a> != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="hprdbgctrl_8cpp.html#ad12c41c73b6d11e1703491f0d59e3f73">g_MessageHandler</a> != NULL)</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        {</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <span class="comment">// There is another handler</span></div>

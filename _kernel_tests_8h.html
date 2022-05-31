@@ -213,7 +213,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
 <div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> TempPool = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> TempPool = NULL;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="hprdbghv_2header_2common_2common_8h.html#a97b0adbd65790fb90734daa8e5245a04">LogInfo</a>(<span class="stringliteral">&quot;Starting kernel-test process...&quot;</span>);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
@@ -226,9 +226,9 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                                            NonPagedPool,          <span class="comment">// PoolType</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                                            <a class="code" href="hprdbgctrl_2header_2common_8h.html#a7d467c1d283fdfa1f2081ba1e0d01b6e">PAGE_SIZE</a>,             <span class="comment">// NumberOfBytes</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                                            <a class="code" href="hprdbghv_2header_2common_2common_8h.html#ab7f91e71074ce1488e61869adbc44d8d">POOLTAG</a>,               <span class="comment">// Tag</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                                            <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                                            NULL);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">if</span> (TempPool != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">if</span> (TempPool != NULL)</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">// Free the previous pool</span></div>
@@ -246,7 +246,6 @@ Functions</h2></td></tr>
 <div class="ttc" id="ahprdbgctrl_2header_2common_8h_html_a7d467c1d283fdfa1f2081ba1e0d01b6e"><div class="ttname"><a href="hprdbgctrl_2header_2common_8h.html#a7d467c1d283fdfa1f2081ba1e0d01b6e">PAGE_SIZE</a></div><div class="ttdeci">#define PAGE_SIZE</div><div class="ttdoc">Size of each page (4096 bytes)</div><div class="ttdef"><b>Definition:</b> common.h:59</div></div>
 <div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_a97b0adbd65790fb90734daa8e5245a04"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#a97b0adbd65790fb90734daa8e5245a04">LogInfo</a></div><div class="ttdeci">#define LogInfo(format,...)</div><div class="ttdoc">Define log variables.</div><div class="ttdef"><b>Definition:</b> Common.h:400</div></div>
 <div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_ab7f91e71074ce1488e61869adbc44d8d"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#ab7f91e71074ce1488e61869adbc44d8d">POOLTAG</a></div><div class="ttdeci">#define POOLTAG</div><div class="ttdoc">Pool tag.</div><div class="ttdef"><b>Definition:</b> Common.h:223</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 <div class="ttc" id="astruct___d_e_b_u_g_g_e_r___p_e_r_f_o_r_m___k_e_r_n_e_l___t_e_s_t_s_html_aeda8b9e467ae9639abfaf2cdc88740d3"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___p_e_r_f_o_r_m___k_e_r_n_e_l___t_e_s_t_s.html#aeda8b9e467ae9639abfaf2cdc88740d3">_DEBUGGER_PERFORM_KERNEL_TESTS::KernelStatus</a></div><div class="ttdeci">UINT32 KernelStatus</div><div class="ttdef"><b>Definition:</b> Definition.h:1335</div></div>
 </div><!-- fragment -->
 </div>

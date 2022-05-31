@@ -541,7 +541,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        <span class="comment">// Create a new file</span></div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        HANDLE <a class="code" href="_hooks_8h.html#a74bc6881ecc918d83da9c92e3b2bcc04">FileHandle</a> = CreateFileA(Description.c_str(), GENERIC_WRITE, 0, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, OPEN_ALWAYS, FILE_ATTRIBUTE_NORMAL, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        HANDLE <a class="code" href="_hooks_8h.html#a74bc6881ecc918d83da9c92e3b2bcc04">FileHandle</a> = CreateFileA(Description.c_str(), GENERIC_WRITE, 0, NULL, OPEN_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="comment">// The handle might be INVALID_HANDLE_VALUE which will be</span></div>
@@ -617,7 +617,6 @@ Functions</h2></td></tr>
 <div class="ttc" id="a_hooks_8h_html_a74bc6881ecc918d83da9c92e3b2bcc04"><div class="ttname"><a href="_hooks_8h.html#a74bc6881ecc918d83da9c92e3b2bcc04">FileHandle</a></div><div class="ttdeci">PHANDLE FileHandle</div><div class="ttdef"><b>Definition:</b> Hooks.h:138</div></div>
 <div class="ttc" id="a_script_engine_eval_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:103</div></div>
 <div class="ttc" id="ahprdbgctrl_2code_2debugger_2communication_2namedpipe_8cpp_html_a7603196b784c96a750aeb3aaf3e1a360"><div class="ttname"><a href="hprdbgctrl_2code_2debugger_2communication_2namedpipe_8cpp.html#a7603196b784c96a750aeb3aaf3e1a360">NamedPipeClientCreatePipe</a></div><div class="ttdeci">HANDLE NamedPipeClientCreatePipe(LPCSTR PipeName)</div><div class="ttdoc">Create a client named pipe.</div><div class="ttdef"><b>Definition:</b> namedpipe.cpp:187</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 <div class="ttc" id="atcpclient_8cpp_html_a85f0659745121533284636d51a5e0b7f"><div class="ttname"><a href="tcpclient_8cpp.html#a85f0659745121533284636d51a5e0b7f">CommunicationClientConnectToServer</a></div><div class="ttdeci">int CommunicationClientConnectToServer(PCSTR Ip, PCSTR Port, SOCKET *ConnectSocketArg)</div><div class="ttdoc">communication for client, connecting to the server</div><div class="ttdef"><b>Definition:</b> tcpclient.cpp:23</div></div>
 </div><!-- fragment -->
 </div>
@@ -778,7 +777,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="comment">// Check whether we reached to the end of the events</span></div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordflow">if</span> (EventDetail-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___e_v_e_n_t___d_e_t_a_i_l.html#a85fa80e6cd862f7f9ffc8050e97c8486">OutputSourceTags</a>[i] == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        <span class="keywordflow">if</span> (EventDetail-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___e_v_e_n_t___d_e_t_a_i_l.html#a85fa80e6cd862f7f9ffc8050e97c8486">OutputSourceTags</a>[i] == NULL)</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        {</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;            <span class="keywordflow">return</span> Result;</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        }</div>
@@ -1036,7 +1035,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;                          Message,       <span class="comment">// start of data to write</span></div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;                          MessageLength, <span class="comment">// number of bytes to write</span></div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;                          &amp;BytesWritten, <span class="comment">// number of bytes that were written</span></div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                          <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);         <span class="comment">// no overlapped structure</span></div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;                          NULL);         <span class="comment">// no overlapped structure</span></div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160; </div>
 <div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;    <span class="keywordflow">if</span> (ErrorFlag == <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>)</div>
 <div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    {</div>

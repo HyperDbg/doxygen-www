@@ -1,16 +1,16 @@
 var indexSectionsWithContent =
 {
-  0: "0_abcdefghijklmnopqrstuvwxz~",
-  1: "_acefghilnpsz",
-  2: "cegiltu",
-  3: "0_abcdefghiklmnoprstuvwxz~",
+  0: "_abcdefghijklmnopqrstuvwxz~",
+  1: "_acfghilnpsz",
+  2: "cgiltu",
+  3: "_abcdefghiklmnoprstuvwxz~",
   4: "_abcdefghijklmnoprstuvwxz~",
   5: "abcdefghiklmnopqrstuvwxz",
   6: "abcdefghilmnpqrstuvwz",
   7: "_hmrt",
   8: "abcdefghiklmnoprstuvw",
   9: "_abcdefghiklmnopqrstuvwxz",
-  10: "chs"
+  10: "ch"
 };
 
 var indexSectionNames =

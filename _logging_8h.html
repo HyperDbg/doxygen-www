@@ -598,15 +598,15 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160; </div>
 <div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;    NotifyRecord = DeferredContext;</div>
 <div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160; </div>
-<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;    ASSERT(NotifyRecord != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>); <span class="comment">// can&#39;t be NULL</span></div>
-<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;    _Analysis_assume_(NotifyRecord != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;    ASSERT(NotifyRecord != NULL); <span class="comment">// can&#39;t be NULL</span></div>
+<div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;    _Analysis_assume_(NotifyRecord != NULL);</div>
 <div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160; </div>
 <div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;    <span class="keywordflow">switch</span> (NotifyRecord-&gt;<a class="code" href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html#a31b9786fa1647737bd295f1db559cb10">Type</a>)</div>
 <div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;    {</div>
 <div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;    <span class="keywordflow">case</span> <a class="code" href="_definition_8h.html#a7df81690e4c6ed5fbbb74547c998e4b6a557243d0c993fb8d9b81a0a0db183c2e">IRP_BASED</a>:</div>
 <div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;        Irp = NotifyRecord-&gt;<a class="code" href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html#a9172742f916cd12e76a009eea5ad5c44">Message</a>.<a class="code" href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html#a18c7f6f0eab5d42bc7d19a6d5dcbc595">PendingIrp</a>;</div>
 <div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160; </div>
-<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;        <span class="keywordflow">if</span> (Irp != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;        <span class="keywordflow">if</span> (Irp != NULL)</div>
 <div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;        {</div>
 <div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;            PCHAR              OutBuff;       <span class="comment">// pointer to output buffer</span></div>
 <div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;            <a class="code" href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a>              InBuffLength;  <span class="comment">// Input buffer length</span></div>
@@ -685,7 +685,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01155"></a><span class="lineno"> 1155</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l01156"></a><span class="lineno"> 1156</span>&#160;    }</div>
 <div class="line"><a name="l01157"></a><span class="lineno"> 1157</span>&#160; </div>
-<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;    <span class="keywordflow">if</span> (NotifyRecord != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l01158"></a><span class="lineno"> 1158</span>&#160;    <span class="keywordflow">if</span> (NotifyRecord != NULL)</div>
 <div class="line"><a name="l01159"></a><span class="lineno"> 1159</span>&#160;    {</div>
 <div class="line"><a name="l01160"></a><span class="lineno"> 1160</span>&#160;        ExFreePoolWithTag(NotifyRecord, <a class="code" href="hprdbghv_2header_2common_2common_8h.html#ab7f91e71074ce1488e61869adbc44d8d">POOLTAG</a>);</div>
 <div class="line"><a name="l01161"></a><span class="lineno"> 1161</span>&#160;    }</div>
@@ -695,7 +695,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="a_logging_8c_html_a052d3294b1eb4f00873067baa1532f4e"><div class="ttname"><a href="_logging_8c.html#a052d3294b1eb4f00873067baa1532f4e">LogReadBuffer</a></div><div class="ttdeci">BOOLEAN LogReadBuffer(BOOLEAN IsVmxRoot, PVOID BufferToSaveMessage, UINT32 *ReturnedLength)</div><div class="ttdoc">Attempt to read the buffer.</div><div class="ttdef"><b>Definition:</b> Logging.c:490</div></div>
 <div class="ttc" id="a_script_engine_eval_8h_html_af632da489ebc3708ec3ab6791ee53fa4"><div class="ttname"><a href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a></div><div class="ttdeci">unsigned long ULONG</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:88</div></div>
 <div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_a459b19922fecfbb9438dd56b66930d16"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#a459b19922fecfbb9438dd56b66930d16">LogError</a></div><div class="ttdeci">#define LogError(format,...)</div><div class="ttdoc">Log in the case of error.</div><div class="ttdef"><b>Definition:</b> Common.h:442</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 <div class="ttc" id="astruct___n_o_t_i_f_y___r_e_c_o_r_d_html"><div class="ttname"><a href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html">_NOTIFY_RECORD</a></div><div class="ttdoc">The usermode request.</div><div class="ttdef"><b>Definition:</b> Logging.h:24</div></div>
 <div class="ttc" id="astruct___n_o_t_i_f_y___r_e_c_o_r_d_html_a18c7f6f0eab5d42bc7d19a6d5dcbc595"><div class="ttname"><a href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html#a18c7f6f0eab5d42bc7d19a6d5dcbc595">_NOTIFY_RECORD::PendingIrp</a></div><div class="ttdeci">PIRP PendingIrp</div><div class="ttdef"><b>Definition:</b> Logging.h:30</div></div>
 <div class="ttc" id="astruct___n_o_t_i_f_y___r_e_c_o_r_d_html_a31b9786fa1647737bd295f1db559cb10"><div class="ttname"><a href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html#a31b9786fa1647737bd295f1db559cb10">_NOTIFY_RECORD::Type</a></div><div class="ttdeci">NOTIFY_TYPE Type</div><div class="ttdef"><b>Definition:</b> Logging.h:25</div></div>
@@ -1212,7 +1211,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01301"></a><span class="lineno"> 1301</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01302"></a><span class="lineno"> 1302</span>&#160;    NotifyRecord = ExAllocatePoolWithQuotaTag(NonPagedPool, <span class="keyword">sizeof</span>(<a class="code" href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html">NOTIFY_RECORD</a>), <a class="code" href="hprdbghv_2header_2common_2common_8h.html#ab7f91e71074ce1488e61869adbc44d8d">POOLTAG</a>);</div>
 <div class="line"><a name="l01303"></a><span class="lineno"> 1303</span>&#160; </div>
-<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a> == NotifyRecord)</div>
+<div class="line"><a name="l01304"></a><span class="lineno"> 1304</span>&#160;    <span class="keywordflow">if</span> (NULL == NotifyRecord)</div>
 <div class="line"><a name="l01305"></a><span class="lineno"> 1305</span>&#160;    {</div>
 <div class="line"><a name="l01306"></a><span class="lineno"> 1306</span>&#160;        <span class="keywordflow">return</span> STATUS_INSUFFICIENT_RESOURCES;</div>
 <div class="line"><a name="l01307"></a><span class="lineno"> 1307</span>&#160;    }</div>
@@ -1233,7 +1232,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01322"></a><span class="lineno"> 1322</span>&#160;                                       *ExEventObjectType,</div>
 <div class="line"><a name="l01323"></a><span class="lineno"> 1323</span>&#160;                                       Irp-&gt;RequestorMode,</div>
 <div class="line"><a name="l01324"></a><span class="lineno"> 1324</span>&#160;                                       &amp;NotifyRecord-&gt;<a class="code" href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html#a9172742f916cd12e76a009eea5ad5c44">Message</a>.<a class="code" href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html#a78945aa44f2cb6fe848b25ce6b40754e">Event</a>,</div>
-<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;                                       <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l01325"></a><span class="lineno"> 1325</span>&#160;                                       NULL);</div>
 <div class="line"><a name="l01326"></a><span class="lineno"> 1326</span>&#160; </div>
 <div class="line"><a name="l01327"></a><span class="lineno"> 1327</span>&#160;    <span class="keywordflow">if</span> (!NT_SUCCESS(Status))</div>
 <div class="line"><a name="l01328"></a><span class="lineno"> 1328</span>&#160;    {</div>
@@ -1245,7 +1244,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01334"></a><span class="lineno"> 1334</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01335"></a><span class="lineno"> 1335</span>&#160;    <span class="comment">// Insert dpc to the queue</span></div>
 <div class="line"><a name="l01336"></a><span class="lineno"> 1336</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;    KeInsertQueueDpc(&amp;NotifyRecord-&gt;<a class="code" href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html#abcc12cc08f0f0840357e23b223662b49">Dpc</a>, NotifyRecord, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;    KeInsertQueueDpc(&amp;NotifyRecord-&gt;<a class="code" href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html#abcc12cc08f0f0840357e23b223662b49">Dpc</a>, NotifyRecord, NULL);</div>
 <div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160; </div>
 <div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;    <span class="keywordflow">return</span> STATUS_SUCCESS;</div>
 <div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;}</div>
@@ -1305,7 +1304,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01183"></a><span class="lineno"> 1183</span>&#160;    <span class="comment">// there is another thread waiting for message</span></div>
 <div class="line"><a name="l01184"></a><span class="lineno"> 1184</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01185"></a><span class="lineno"> 1185</span>&#160; </div>
-<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_global_variables_8h.html#ac6bb7efa110feb40ba04985a35783931">g_GlobalNotifyRecord</a> == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l01186"></a><span class="lineno"> 1186</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_global_variables_8h.html#ac6bb7efa110feb40ba04985a35783931">g_GlobalNotifyRecord</a> == NULL)</div>
 <div class="line"><a name="l01187"></a><span class="lineno"> 1187</span>&#160;    {</div>
 <div class="line"><a name="l01188"></a><span class="lineno"> 1188</span>&#160;        IrpStack      = IoGetCurrentIrpStackLocation(Irp);</div>
 <div class="line"><a name="l01189"></a><span class="lineno"> 1189</span>&#160;        RegisterEvent = (<a class="code" href="_definition_8h.html#a201ce095798ea9c9f9cb9dbcd400451a">PREGISTER_NOTIFY_BUFFER</a>)Irp-&gt;AssociatedIrp.SystemBuffer;</div>
@@ -1315,7 +1314,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01193"></a><span class="lineno"> 1193</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l01194"></a><span class="lineno"> 1194</span>&#160;        NotifyRecord = ExAllocatePoolWithQuotaTag(NonPagedPool, <span class="keyword">sizeof</span>(<a class="code" href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html">NOTIFY_RECORD</a>), <a class="code" href="hprdbghv_2header_2common_2common_8h.html#ab7f91e71074ce1488e61869adbc44d8d">POOLTAG</a>);</div>
 <div class="line"><a name="l01195"></a><span class="lineno"> 1195</span>&#160; </div>
-<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a> == NotifyRecord)</div>
+<div class="line"><a name="l01196"></a><span class="lineno"> 1196</span>&#160;        <span class="keywordflow">if</span> (NULL == NotifyRecord)</div>
 <div class="line"><a name="l01197"></a><span class="lineno"> 1197</span>&#160;        {</div>
 <div class="line"><a name="l01198"></a><span class="lineno"> 1198</span>&#160;            <span class="keywordflow">return</span> STATUS_INSUFFICIENT_RESOURCES;</div>
 <div class="line"><a name="l01199"></a><span class="lineno"> 1199</span>&#160;        }</div>
@@ -1345,7 +1344,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01223"></a><span class="lineno"> 1223</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l01224"></a><span class="lineno"> 1224</span>&#160;            <span class="comment">// Insert dpc to queue</span></div>
 <div class="line"><a name="l01225"></a><span class="lineno"> 1225</span>&#160;            <span class="comment">//</span></div>
-<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;            KeInsertQueueDpc(&amp;NotifyRecord-&gt;<a class="code" href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html#abcc12cc08f0f0840357e23b223662b49">Dpc</a>, NotifyRecord, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l01226"></a><span class="lineno"> 1226</span>&#160;            KeInsertQueueDpc(&amp;NotifyRecord-&gt;<a class="code" href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html#abcc12cc08f0f0840357e23b223662b49">Dpc</a>, NotifyRecord, NULL);</div>
 <div class="line"><a name="l01227"></a><span class="lineno"> 1227</span>&#160;        }</div>
 <div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="_logging_8c.html#aad41b92d4be87c61d620ffc5b5bf0977">LogCheckForNewMessage</a>(<a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>))</div>
 <div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;        {</div>
@@ -1356,7 +1355,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01234"></a><span class="lineno"> 1234</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l01235"></a><span class="lineno"> 1235</span>&#160;            <span class="comment">// Insert dpc to queue</span></div>
 <div class="line"><a name="l01236"></a><span class="lineno"> 1236</span>&#160;            <span class="comment">//</span></div>
-<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;            KeInsertQueueDpc(&amp;NotifyRecord-&gt;<a class="code" href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html#abcc12cc08f0f0840357e23b223662b49">Dpc</a>, NotifyRecord, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l01237"></a><span class="lineno"> 1237</span>&#160;            KeInsertQueueDpc(&amp;NotifyRecord-&gt;<a class="code" href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html#abcc12cc08f0f0840357e23b223662b49">Dpc</a>, NotifyRecord, NULL);</div>
 <div class="line"><a name="l01238"></a><span class="lineno"> 1238</span>&#160;        }</div>
 <div class="line"><a name="l01239"></a><span class="lineno"> 1239</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="_logging_8c.html#aad41b92d4be87c61d620ffc5b5bf0977">LogCheckForNewMessage</a>(<a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>))</div>
 <div class="line"><a name="l01240"></a><span class="lineno"> 1240</span>&#160;        {</div>
@@ -1368,7 +1367,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;            <span class="comment">// Insert dpc to queue</span></div>
 <div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160;            <span class="comment">//</span></div>
-<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;            KeInsertQueueDpc(&amp;NotifyRecord-&gt;<a class="code" href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html#abcc12cc08f0f0840357e23b223662b49">Dpc</a>, NotifyRecord, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;            KeInsertQueueDpc(&amp;NotifyRecord-&gt;<a class="code" href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html#abcc12cc08f0f0840357e23b223662b49">Dpc</a>, NotifyRecord, NULL);</div>
 <div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;        }</div>
 <div class="line"><a name="l01251"></a><span class="lineno"> 1251</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="_logging_8c.html#aad41b92d4be87c61d620ffc5b5bf0977">LogCheckForNewMessage</a>(<a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>))</div>
 <div class="line"><a name="l01252"></a><span class="lineno"> 1252</span>&#160;        {</div>
@@ -1379,7 +1378,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01257"></a><span class="lineno"> 1257</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l01258"></a><span class="lineno"> 1258</span>&#160;            <span class="comment">// Insert dpc to queue</span></div>
 <div class="line"><a name="l01259"></a><span class="lineno"> 1259</span>&#160;            <span class="comment">//</span></div>
-<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;            KeInsertQueueDpc(&amp;NotifyRecord-&gt;<a class="code" href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html#abcc12cc08f0f0840357e23b223662b49">Dpc</a>, NotifyRecord, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l01260"></a><span class="lineno"> 1260</span>&#160;            KeInsertQueueDpc(&amp;NotifyRecord-&gt;<a class="code" href="struct___n_o_t_i_f_y___r_e_c_o_r_d.html#abcc12cc08f0f0840357e23b223662b49">Dpc</a>, NotifyRecord, NULL);</div>
 <div class="line"><a name="l01261"></a><span class="lineno"> 1261</span>&#160;        }</div>
 <div class="line"><a name="l01262"></a><span class="lineno"> 1262</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l01263"></a><span class="lineno"> 1263</span>&#160;        {</div>

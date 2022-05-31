@@ -204,7 +204,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="comment">// Enable save to the file (Message + time)</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        time_t    t  = time(<a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        time_t    t  = time(NULL);</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">struct </span>tm tm = *localtime(&amp;t);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;save commands and results into file : %s (%d-%02d-%02d &quot;</span></div>
@@ -229,7 +229,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="alogopen_8cpp_html_a3d9102adae8f4c5bb1d077a2b72f725c"><div class="ttname"><a href="logopen_8cpp.html#a3d9102adae8f4c5bb1d077a2b72f725c">g_LogOpened</a></div><div class="ttdeci">BOOLEAN g_LogOpened</div><div class="ttdoc">Shows whether the '.logopen' command is executed and the log file is open or not.</div><div class="ttdef"><b>Definition:</b> globals.h:445</div></div>
 <div class="ttc" id="alogopen_8cpp_html_a6f29da0823fe8eaf61be8b7544a85202"><div class="ttname"><a href="logopen_8cpp.html#a6f29da0823fe8eaf61be8b7544a85202">CommandLogopenHelp</a></div><div class="ttdeci">VOID CommandLogopenHelp()</div><div class="ttdoc">help of .logopen command</div><div class="ttdef"><b>Definition:</b> logopen.cpp:28</div></div>
 <div class="ttc" id="alogopen_8cpp_html_a7eb78aceaeca25ca611783bdb0d61e09"><div class="ttname"><a href="logopen_8cpp.html#a7eb78aceaeca25ca611783bdb0d61e09">g_LogOpenFile</a></div><div class="ttdeci">ofstream g_LogOpenFile</div><div class="ttdoc">The object of log file ('.logopen' command)</div><div class="ttdef"><b>Definition:</b> globals.h:451</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 </div><!-- fragment -->
 </div>
 </div>

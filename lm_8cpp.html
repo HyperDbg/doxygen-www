@@ -162,9 +162,9 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> SearchStringEntered   = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> OnlyShowKernelModules = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> OnlyShowUserModules   = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>  TargetPid             = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>  TargetPid             = NULL;</div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    <span class="keywordtype">char</span>    Search[MAX_PATH]      = {0};</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordtype">char</span> *  SearchString          = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordtype">char</span> *  SearchString          = NULL;</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
 <div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    <span class="comment">// Interpret command specific details (if any)</span></div>
@@ -271,7 +271,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;    <span class="keywordflow">if</span> (!OnlyShowKernelModules)</div>
 <div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;    {</div>
-<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keywordflow">if</span> (TargetPid != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        <span class="keywordflow">if</span> (TargetPid != NULL)</div>
 <div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;        {</div>
 <div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;            <a class="code" href="lm_8cpp.html#af1bf9a2d61df2ee8de9034d6fb283245">CommandLmShowUserModeModule</a>(TargetPid, SearchString);</div>
 <div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;        }</div>
@@ -308,7 +308,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="alm_8cpp_html_a80d5bcb32655be0148ea5edc7916c8b8"><div class="ttname"><a href="lm_8cpp.html#a80d5bcb32655be0148ea5edc7916c8b8">CommandLmShowKernelModeModule</a></div><div class="ttdeci">BOOLEAN CommandLmShowKernelModeModule(const char *SearchModule)</div><div class="ttdoc">show modules for kernel mode</div><div class="ttdef"><b>Definition:</b> lm.cpp:229</div></div>
 <div class="ttc" id="alm_8cpp_html_ac8b9079c1d516b04b41fa56032412950"><div class="ttname"><a href="lm_8cpp.html#ac8b9079c1d516b04b41fa56032412950">g_ActiveProcessDebuggingState</a></div><div class="ttdeci">ACTIVE_DEBUGGING_PROCESS g_ActiveProcessDebuggingState</div><div class="ttdoc">State of active debugging thread.</div><div class="ttdef"><b>Definition:</b> globals.h:354</div></div>
 <div class="ttc" id="alm_8cpp_html_af1bf9a2d61df2ee8de9034d6fb283245"><div class="ttname"><a href="lm_8cpp.html#af1bf9a2d61df2ee8de9034d6fb283245">CommandLmShowUserModeModule</a></div><div class="ttdeci">BOOLEAN CommandLmShowUserModeModule(UINT32 ProcessId, const char *SearchModule)</div><div class="ttdoc">show modules for specified user mode process</div><div class="ttdef"><b>Definition:</b> lm.cpp:51</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 <div class="ttc" id="astruct___a_c_t_i_v_e___d_e_b_u_g_g_i_n_g___p_r_o_c_e_s_s_html_a14701d77f40d0bd81eaa8cb30fe9689c"><div class="ttname"><a href="struct___a_c_t_i_v_e___d_e_b_u_g_g_i_n_g___p_r_o_c_e_s_s.html#a14701d77f40d0bd81eaa8cb30fe9689c">_ACTIVE_DEBUGGING_PROCESS::ProcessId</a></div><div class="ttdeci">UINT32 ProcessId</div><div class="ttdef"><b>Definition:</b> ud.h:51</div></div>
 <div class="ttc" id="astruct___a_c_t_i_v_e___d_e_b_u_g_g_i_n_g___p_r_o_c_e_s_s_html_a71406d2d1143ced6af09108c345aba0e"><div class="ttname"><a href="struct___a_c_t_i_v_e___d_e_b_u_g_g_i_n_g___p_r_o_c_e_s_s.html#a71406d2d1143ced6af09108c345aba0e">_ACTIVE_DEBUGGING_PROCESS::IsActive</a></div><div class="ttdeci">BOOLEAN IsActive</div><div class="ttdef"><b>Definition:</b> ud.h:49</div></div>
 </div><!-- fragment -->
@@ -381,13 +380,13 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="comment">// Get required size of &quot;RTL_PROCESS_MODULES&quot; buffer</span></div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    Status = NtQuerySystemInformation(<a class="code" href="_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0a38627594543f01525bf40aa8e09607bd">SystemModuleInformation</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, &amp;SysModuleInfoBufferSize);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    Status = NtQuerySystemInformation(<a class="code" href="_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0a38627594543f01525bf40aa8e09607bd">SystemModuleInformation</a>, NULL, NULL, &amp;SysModuleInfoBufferSize);</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <span class="comment">// Allocate memory for the module list</span></div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    ModulesInfo = (PRTL_PROCESS_MODULES)VirtualAlloc(</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        NULL,</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        SysModuleInfoBufferSize,</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        MEM_COMMIT | MEM_RESERVE,</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        PAGE_READWRITE);</div>
@@ -402,7 +401,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    Status = NtQuerySystemInformation(<a class="code" href="_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0a38627594543f01525bf40aa8e09607bd">SystemModuleInformation</a>,</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                                      ModulesInfo,</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                                      SysModuleInfoBufferSize,</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                                      <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                                      NULL);</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordflow">if</span> (!NT_SUCCESS(Status))</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    {</div>
 <div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;err, unable to query module list (%x)\n&quot;</span>, Status);</div>
@@ -411,7 +410,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    }</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">if</span> (SearchModule != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">if</span> (SearchModule != NULL)</div>
 <div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    {</div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        SearchModuleString.assign(SearchModule, strlen(SearchModule));</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    }</div>
@@ -426,7 +425,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="comment">// Check if we need to search for the module or not</span></div>
 <div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="keywordflow">if</span> (SearchModule != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        <span class="keywordflow">if</span> (SearchModule != NULL)</div>
 <div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        {</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            <span class="comment">// Convert FullPathName to string</span></div>
@@ -521,11 +520,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a>                           ReturnedLength;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                          ModuleDetailsSize    = 0;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                          ModulesCount         = 0;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="struct___u_s_e_r_m_o_d_e___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html">PUSERMODE_LOADED_MODULE_DETAILS</a> ModuleDetailsRequest = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="struct___u_s_e_r_m_o_d_e___l_o_a_d_e_d___m_o_d_u_l_e___s_y_m_b_o_l_s.html">PUSERMODE_LOADED_MODULE_SYMBOLS</a> Modules              = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="struct___u_s_e_r_m_o_d_e___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html">PUSERMODE_LOADED_MODULE_DETAILS</a> ModuleDetailsRequest = NULL;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="struct___u_s_e_r_m_o_d_e___l_o_a_d_e_d___m_o_d_u_l_e___s_y_m_b_o_l_s.html">PUSERMODE_LOADED_MODULE_SYMBOLS</a> Modules              = NULL;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="struct___u_s_e_r_m_o_d_e___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html">USERMODE_LOADED_MODULE_DETAILS</a>  ModuleCountRequest   = {0};</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">size_t</span>                          CharSize             = 0;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">wchar_t</span> *                       WcharBuff            = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">wchar_t</span> *                       WcharBuff            = NULL;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    wstring                         SearchModuleString;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//</span></div>
@@ -552,7 +551,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">sizeof</span>(<a class="code" href="struct___u_s_e_r_m_o_d_e___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html">USERMODE_LOADED_MODULE_DETAILS</a>), <span class="comment">// Length of output</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                <span class="comment">// buffer in bytes.</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        &amp;ReturnedLength,                        <span class="comment">// Bytes placed in buffer.</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>                                    <span class="comment">// synchronous call</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        NULL                                    <span class="comment">// synchronous call</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    );</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> (!Status)</div>
@@ -575,7 +574,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        ModuleDetailsRequest = (<a class="code" href="_definition_8h.html#af36833294346f70e023f0aaa8fc3e887">PUSERMODE_LOADED_MODULE_DETAILS</a>)malloc(ModuleDetailsSize);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">if</span> (ModuleDetailsRequest == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">if</span> (ModuleDetailsRequest == NULL)</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        }</div>
@@ -601,7 +600,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            ModuleDetailsSize,                      <span class="comment">// Length of output</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;                                                    <span class="comment">// buffer in bytes.</span></div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            &amp;ReturnedLength,                        <span class="comment">// Bytes placed in buffer.</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>                                    <span class="comment">// synchronous call</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            NULL                                    <span class="comment">// synchronous call</span></div>
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        );</div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordflow">if</span> (!Status)</div>
@@ -621,12 +620,12 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;user mode\n&quot;</span>);</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;start\t\t\tentrypoint\t\tpath\n\n&quot;</span>);</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="keywordflow">if</span> (SearchModule != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="keywordflow">if</span> (SearchModule != NULL)</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            {</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                CharSize  = strlen(SearchModule) + 1;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                WcharBuff = (<span class="keywordtype">wchar_t</span> *)malloc(CharSize * 2);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                <span class="keywordflow">if</span> (WcharBuff == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                <span class="keywordflow">if</span> (WcharBuff == NULL)</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                {</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                    <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                }</div>
@@ -643,7 +642,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                <span class="comment">//</span></div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                <span class="comment">// Check if we need to search for the module or not</span></div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                <span class="keywordflow">if</span> (SearchModule != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                <span class="keywordflow">if</span> (SearchModule != NULL)</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                {</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                    <span class="comment">//</span></div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                    <span class="comment">// Convert FullPathName to string</span></div>
@@ -665,7 +664,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                             Modules[i].FilePath);</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            }</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordflow">if</span> (SearchModule != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            <span class="keywordflow">if</span> (SearchModule != NULL)</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            {</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                free(WcharBuff);</div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            }</div>

@@ -1872,7 +1872,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ab1d070e13cda97024882b0cce60e1860">PUINT16</a> RxBufferTail;</div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1">UINT16</a>  Value;</div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160; </div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    <span class="keywordflow">if</span> ((Port == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>) || (Port-&gt;Address == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>))</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    <span class="keywordflow">if</span> ((Port == NULL) || (Port-&gt;Address == NULL))</div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    {</div>
 <div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;        <span class="keywordflow">return</span> UartNotReady;</div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    }</div>
@@ -1930,7 +1930,6 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00785"></a><span class="lineno">  785</span>&#160;}</div>
 <div class="ttc" id="a_script_engine_eval_8h_html_a4f4bb67531a9bf6f0b9c6ad76aeba587"><div class="ttname"><a href="_script_engine_eval_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587">UCHAR</a></div><div class="ttdeci">unsigned char UCHAR</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:86</div></div>
 <div class="ttc" id="a_script_engine_eval_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:102</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 <div class="ttc" id="aspimax311_8c_html_a1162cce75940d1d3a948a1ee02216bf4"><div class="ttname"><a href="spimax311_8c.html#a1162cce75940d1d3a948a1ee02216bf4">SpiSend16</a></div><div class="ttdeci">UINT16 SpiSend16(_In_ PCPPORT Port, UINT16 Value)</div><div class="ttdef"><b>Definition:</b> spimax311.c:340</div></div>
 <div class="ttc" id="aspimax311_8c_html_a521d2b2e8e533e8255a2904cf89cd729"><div class="ttname"><a href="spimax311_8c.html#a521d2b2e8e533e8255a2904cf89cd729">MAX311XE_RD_RA_FE</a></div><div class="ttdeci">#define MAX311XE_RD_RA_FE</div><div class="ttdef"><b>Definition:</b> spimax311.c:159</div></div>
 <div class="ttc" id="aspimax311_8c_html_a8477b639fa58b6b7338f199efea64590"><div class="ttname"><a href="spimax311_8c.html#a8477b639fa58b6b7338f199efea64590">MAX311XE_READ_DATA</a></div><div class="ttdeci">#define MAX311XE_READ_DATA</div><div class="ttdef"><b>Definition:</b> spimax311.c:68</div></div>
@@ -2057,7 +2056,7 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;{</div>
 <div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1">UINT16</a> Value;</div>
 <div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160; </div>
-<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    <span class="keywordflow">if</span> ((Port == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>) || (Port-&gt;Address == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>))</div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;    <span class="keywordflow">if</span> ((Port == NULL) || (Port-&gt;Address == NULL))</div>
 <div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;    {</div>
 <div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;        <span class="keywordflow">return</span> UartNotReady;</div>
 <div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    }</div>
@@ -2136,7 +2135,7 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;{</div>
 <div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1">UINT16</a> Value;</div>
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160; </div>
-<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;    <span class="keywordflow">if</span> ((Port == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>) || (Port-&gt;Address == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>))</div>
+<div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;    <span class="keywordflow">if</span> ((Port == NULL) || (Port-&gt;Address == NULL))</div>
 <div class="line"><a name="l00897"></a><span class="lineno">  897</span>&#160;    {</div>
 <div class="line"><a name="l00898"></a><span class="lineno">  898</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00899"></a><span class="lineno">  899</span>&#160;    }</div>
@@ -2211,7 +2210,7 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;{</div>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1">UINT16</a> ConfigValue;</div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160; </div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    <span class="keywordflow">if</span> ((Port == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>) || (Port-&gt;Address == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>))</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    <span class="keywordflow">if</span> ((Port == NULL) || (Port-&gt;Address == NULL))</div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;    {</div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    }</div>

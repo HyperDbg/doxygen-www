@@ -284,7 +284,7 @@ Variables</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    ZydisFormatter formatter;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">int</span>            instr_decoded   = 0;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>         UsedBaseAddress = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>         UsedBaseAddress = NULL;</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="disassembler_8cpp.html#afdcfcfa1508e9df27e0b8fe2eb68d5ad">g_DisassemblerSyntax</a> == 1)</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    {</div>
@@ -428,7 +428,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="adisassembler_8cpp_html_af7d2fb054c88f2258ef5cc0581fc9853"><div class="ttname"><a href="disassembler_8cpp.html#af7d2fb054c88f2258ef5cc0581fc9853">PaddingLength</a></div><div class="ttdeci">#define PaddingLength</div></div>
 <div class="ttc" id="adisassembler_8cpp_html_afdcfcfa1508e9df27e0b8fe2eb68d5ad"><div class="ttname"><a href="disassembler_8cpp.html#afdcfcfa1508e9df27e0b8fe2eb68d5ad">g_DisassemblerSyntax</a></div><div class="ttdeci">UINT32 g_DisassemblerSyntax</div><div class="ttdoc">Shows the syntax used in !u !u2 u u2 commands.</div><div class="ttdef"><b>Definition:</b> globals.h:560</div></div>
 <div class="ttc" id="ahprdbgctrl_8cpp_html_a21c3c06b34d716c4680695c2b28127da"><div class="ttname"><a href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a></div><div class="ttdeci">VOID ShowMessages(const char *Fmt,...)</div><div class="ttdoc">Show messages.</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:51</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 <div class="ttc" id="asymbol_8cpp_html_ad048369f67890222714dac86554cc2d1"><div class="ttname"><a href="symbol_8cpp.html#ad048369f67890222714dac86554cc2d1">SymbolShowFunctionNameBasedOnAddress</a></div><div class="ttdeci">BOOLEAN SymbolShowFunctionNameBasedOnAddress(UINT64 Address, PUINT64 UsedBaseAddress)</div><div class="ttdoc">shows the functions' name for the disassembler</div><div class="ttdef"><b>Definition:</b> symbol.cpp:162</div></div>
 </div><!-- fragment -->
 </div>
@@ -1272,7 +1271,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    ZydisDecoder decoder;</div>
 <div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    ZydisDecoderInit(&amp;decoder, ZYDIS_MACHINE_MODE_LONG_64, ZYDIS_ADDRESS_WIDTH_64);</div>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160; </div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <a class="code" href="disassembler_8cpp.html#a7497e4fd0c0e2f55f42da2ba56751846">DisassembleBuffer</a>(&amp;decoder, 0x007FFFFFFF400000, &amp;data[0], <span class="keyword">sizeof</span>(data), 0xffffffff, <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <a class="code" href="disassembler_8cpp.html#a7497e4fd0c0e2f55f42da2ba56751846">DisassembleBuffer</a>(&amp;decoder, 0x007FFFFFFF400000, &amp;data[0], <span class="keyword">sizeof</span>(data), 0xffffffff, <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>, <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, NULL);</div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;}</div>

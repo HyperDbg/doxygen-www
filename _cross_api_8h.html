@@ -133,17 +133,16 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>PVOID </dd></dl>
 <div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    PVOID            Result          = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    PVOID            Result          = NULL;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    PHYSICAL_ADDRESS MaxPhysicalAddr = {.QuadPart = MAXULONG64};</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    Result = MmAllocateContiguousMemory(<a class="code" href="_hooks_8h.html#a61083d5dde730c2afd10a336322aaaac">NumberOfBytes</a>, MaxPhysicalAddr);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span> (Result != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">if</span> (Result != NULL)</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        RtlSecureZeroMemory(Result, <a class="code" href="_hooks_8h.html#a61083d5dde730c2afd10a336322aaaac">NumberOfBytes</a>);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> Result;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 <div class="ttc" id="a_hooks_8h_html_a61083d5dde730c2afd10a336322aaaac"><div class="ttname"><a href="_hooks_8h.html#a61083d5dde730c2afd10a336322aaaac">NumberOfBytes</a></div><div class="ttdeci">POOL_TYPE SIZE_T NumberOfBytes</div><div class="ttdef"><b>Definition:</b> Hooks.h:157</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -164,7 +163,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    PVOID Result = ExAllocatePoolWithTag(NonPagedPool, <a class="code" href="_hooks_8h.html#a61083d5dde730c2afd10a336322aaaac">NumberOfBytes</a>, <a class="code" href="hprdbghv_2header_2common_2common_8h.html#ab7f91e71074ce1488e61869adbc44d8d">POOLTAG</a>);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> (Result != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> (Result != NULL)</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        RtlSecureZeroMemory(Result, <a class="code" href="_hooks_8h.html#a61083d5dde730c2afd10a336322aaaac">NumberOfBytes</a>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> Result;</div>

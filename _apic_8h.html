@@ -100,7 +100,7 @@ Macros</h2></td></tr>
 <tr class="separator:adfee98906e6b5c048f76b1a8c1805bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ee9eaf7cca7c8f93f73fe5150e705e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a2ee9eaf7cca7c8f93f73fe5150e705e1">ICROffset</a>&#160;&#160;&#160;0x300</td></tr>
 <tr class="separator:a2ee9eaf7cca7c8f93f73fe5150e705e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37687685483afbf4e1c66a2426873c6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a37687685483afbf4e1c66a2426873c6d">TO_X2</a>(<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)&#160;&#160;&#160;(<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a> / 0x10)</td></tr>
+<tr class="memitem:a37687685483afbf4e1c66a2426873c6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a37687685483afbf4e1c66a2426873c6d">TO_X2</a>(x)&#160;&#160;&#160;(x / 0x10)</td></tr>
 <tr class="separator:a37687685483afbf4e1c66a2426873c6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac61aced0895d0ffc79621790807d28ef"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#ac61aced0895d0ffc79621790807d28ef">APIC_DEFAULT_PHYS_BASE</a>&#160;&#160;&#160;0xfee00000</td></tr>
 <tr class="separator:ac61aced0895d0ffc79621790807d28ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,13 +114,13 @@ Macros</h2></td></tr>
 <tr class="separator:ac625008949bb7b7abba2853f972a0ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6811339ac262973fe8f4dc93bd011124"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a6811339ac262973fe8f4dc93bd011124">APIC_LVR_MASK</a>&#160;&#160;&#160;0xFF00FF</td></tr>
 <tr class="separator:a6811339ac262973fe8f4dc93bd011124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a228abf4344184380dc9576a720cf87a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a228abf4344184380dc9576a720cf87a3">GET_APIC_VERSION</a>(<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)&#160;&#160;&#160;((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)&amp;0xFFu)</td></tr>
+<tr class="memitem:a228abf4344184380dc9576a720cf87a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a228abf4344184380dc9576a720cf87a3">GET_APIC_VERSION</a>(x)&#160;&#160;&#160;((x)&amp;0xFFu)</td></tr>
 <tr class="separator:a228abf4344184380dc9576a720cf87a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a607e6d924915cd008dba90fb3bad0e5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a607e6d924915cd008dba90fb3bad0e5e">GET_APIC_MAXLVT</a>(<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)&#160;&#160;&#160;(((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &gt;&gt; 16) &amp; 0xFFu)</td></tr>
+<tr class="memitem:a607e6d924915cd008dba90fb3bad0e5e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a607e6d924915cd008dba90fb3bad0e5e">GET_APIC_MAXLVT</a>(x)&#160;&#160;&#160;(((x) &gt;&gt; 16) &amp; 0xFFu)</td></tr>
 <tr class="separator:a607e6d924915cd008dba90fb3bad0e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87226956ffa5c30948d64adde68a1080"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a87226956ffa5c30948d64adde68a1080">APIC_INTEGRATED</a>(<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)&#160;&#160;&#160;(1)</td></tr>
+<tr class="memitem:a87226956ffa5c30948d64adde68a1080"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a87226956ffa5c30948d64adde68a1080">APIC_INTEGRATED</a>(x)&#160;&#160;&#160;(1)</td></tr>
 <tr class="separator:a87226956ffa5c30948d64adde68a1080"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48c8cdfee06f3fc7ff68dd36f07ae77e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a48c8cdfee06f3fc7ff68dd36f07ae77e">APIC_XAPIC</a>(<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)&#160;&#160;&#160;((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &gt;= 0x14)</td></tr>
+<tr class="memitem:a48c8cdfee06f3fc7ff68dd36f07ae77e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a48c8cdfee06f3fc7ff68dd36f07ae77e">APIC_XAPIC</a>(x)&#160;&#160;&#160;((x) &gt;= 0x14)</td></tr>
 <tr class="separator:a48c8cdfee06f3fc7ff68dd36f07ae77e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad47fc9c324a4c65bfc25988dcc6abf5d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#ad47fc9c324a4c65bfc25988dcc6abf5d">APIC_TASKPRI</a>&#160;&#160;&#160;0x80</td></tr>
 <tr class="separator:ad47fc9c324a4c65bfc25988dcc6abf5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,9 +140,9 @@ Macros</h2></td></tr>
 <tr class="separator:ac8f56182740b8d01128911994d19ebc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11a9d55611881ff343ea1974ff2256df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a11a9d55611881ff343ea1974ff2256df">APIC_LDR_MASK</a>&#160;&#160;&#160;(0xFFu &lt;&lt; 24)</td></tr>
 <tr class="separator:a11a9d55611881ff343ea1974ff2256df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1f741daca80a5fe03ed9e27a0c1fe77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#ac1f741daca80a5fe03ed9e27a0c1fe77">GET_APIC_LOGICAL_ID</a>(<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)&#160;&#160;&#160;(((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &gt;&gt; 24) &amp; 0xFFu)</td></tr>
+<tr class="memitem:ac1f741daca80a5fe03ed9e27a0c1fe77"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#ac1f741daca80a5fe03ed9e27a0c1fe77">GET_APIC_LOGICAL_ID</a>(x)&#160;&#160;&#160;(((x) &gt;&gt; 24) &amp; 0xFFu)</td></tr>
 <tr class="separator:ac1f741daca80a5fe03ed9e27a0c1fe77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70701bd16067b9fe1e69bc3c61b6b848"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a70701bd16067b9fe1e69bc3c61b6b848">SET_APIC_LOGICAL_ID</a>(<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)&#160;&#160;&#160;(((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &lt;&lt; 24))</td></tr>
+<tr class="memitem:a70701bd16067b9fe1e69bc3c61b6b848"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a70701bd16067b9fe1e69bc3c61b6b848">SET_APIC_LOGICAL_ID</a>(x)&#160;&#160;&#160;(((x) &lt;&lt; 24))</td></tr>
 <tr class="separator:a70701bd16067b9fe1e69bc3c61b6b848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac08210643a8222b9063bf12b6571d824"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#ac08210643a8222b9063bf12b6571d824">APIC_ALL_CPUS</a>&#160;&#160;&#160;0xFFu</td></tr>
 <tr class="separator:ac08210643a8222b9063bf12b6571d824"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -230,9 +230,9 @@ Macros</h2></td></tr>
 <tr class="separator:adedb94ca3e0682948cd0547a24d057dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2fb5d9955e427568ccaa278aeed8ef4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#ad2fb5d9955e427568ccaa278aeed8ef4">APIC_ICR2</a>&#160;&#160;&#160;0x310</td></tr>
 <tr class="separator:ad2fb5d9955e427568ccaa278aeed8ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5dee8ede47fc02e95ac8c1065141de6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#ab5dee8ede47fc02e95ac8c1065141de6">GET_APIC_DEST_FIELD</a>(<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)&#160;&#160;&#160;(((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &gt;&gt; 24) &amp; 0xFF)</td></tr>
+<tr class="memitem:ab5dee8ede47fc02e95ac8c1065141de6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#ab5dee8ede47fc02e95ac8c1065141de6">GET_APIC_DEST_FIELD</a>(x)&#160;&#160;&#160;(((x) &gt;&gt; 24) &amp; 0xFF)</td></tr>
 <tr class="separator:ab5dee8ede47fc02e95ac8c1065141de6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae231c3379aef7e41c42ccbca6624a766"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#ae231c3379aef7e41c42ccbca6624a766">SET_APIC_DEST_FIELD</a>(<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)&#160;&#160;&#160;((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &lt;&lt; 24)</td></tr>
+<tr class="memitem:ae231c3379aef7e41c42ccbca6624a766"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#ae231c3379aef7e41c42ccbca6624a766">SET_APIC_DEST_FIELD</a>(x)&#160;&#160;&#160;((x) &lt;&lt; 24)</td></tr>
 <tr class="separator:ae231c3379aef7e41c42ccbca6624a766"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67b4a1420ddd301f686bc48f1dc62e8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a67b4a1420ddd301f686bc48f1dc62e8a">APIC_LVTT</a>&#160;&#160;&#160;0x320</td></tr>
 <tr class="separator:a67b4a1420ddd301f686bc48f1dc62e8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -244,9 +244,9 @@ Macros</h2></td></tr>
 <tr class="separator:a134c38766b4e0b92f41035145740fed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6ce59c35e2ebcc9f5add5de1bebff93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#ac6ce59c35e2ebcc9f5add5de1bebff93">APIC_LVT_TIMER_BASE_MASK</a>&#160;&#160;&#160;(0x3 &lt;&lt; 18)</td></tr>
 <tr class="separator:ac6ce59c35e2ebcc9f5add5de1bebff93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3bf34014cd1e39e75bbb39c4ca86718"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#aa3bf34014cd1e39e75bbb39c4ca86718">GET_APIC_TIMER_BASE</a>(<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)&#160;&#160;&#160;(((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &gt;&gt; 18) &amp; 0x3)</td></tr>
+<tr class="memitem:aa3bf34014cd1e39e75bbb39c4ca86718"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#aa3bf34014cd1e39e75bbb39c4ca86718">GET_APIC_TIMER_BASE</a>(x)&#160;&#160;&#160;(((x) &gt;&gt; 18) &amp; 0x3)</td></tr>
 <tr class="separator:aa3bf34014cd1e39e75bbb39c4ca86718"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a456bc2a1a08ca449732c287d634375e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a456bc2a1a08ca449732c287d634375e8">SET_APIC_TIMER_BASE</a>(<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)&#160;&#160;&#160;(((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &lt;&lt; 18))</td></tr>
+<tr class="memitem:a456bc2a1a08ca449732c287d634375e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a456bc2a1a08ca449732c287d634375e8">SET_APIC_TIMER_BASE</a>(x)&#160;&#160;&#160;(((x) &lt;&lt; 18))</td></tr>
 <tr class="separator:a456bc2a1a08ca449732c287d634375e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af731a92907a1428862c4d1a6132da70f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#af731a92907a1428862c4d1a6132da70f">APIC_TIMER_BASE_CLKIN</a>&#160;&#160;&#160;0x0</td></tr>
 <tr class="separator:af731a92907a1428862c4d1a6132da70f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,9 +274,9 @@ Macros</h2></td></tr>
 <tr class="separator:aa1954b77dc3b033fa5f68ef9b60b3e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93dcd2e35c40ca13d9ca726675be089c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a93dcd2e35c40ca13d9ca726675be089c">APIC_MODE_MASK</a>&#160;&#160;&#160;0x700</td></tr>
 <tr class="separator:a93dcd2e35c40ca13d9ca726675be089c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a516ea2620671530756cbc600fd234748"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a516ea2620671530756cbc600fd234748">GET_APIC_DELIVERY_MODE</a>(<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)&#160;&#160;&#160;(((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &gt;&gt; 8) &amp; 0x7)</td></tr>
+<tr class="memitem:a516ea2620671530756cbc600fd234748"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a516ea2620671530756cbc600fd234748">GET_APIC_DELIVERY_MODE</a>(x)&#160;&#160;&#160;(((x) &gt;&gt; 8) &amp; 0x7)</td></tr>
 <tr class="separator:a516ea2620671530756cbc600fd234748"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa639e977f9d4fbb2c52426dd862e3147"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#aa639e977f9d4fbb2c52426dd862e3147">SET_APIC_DELIVERY_MODE</a>(<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>,  y)&#160;&#160;&#160;(((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &amp; ~0x700) | ((y) &lt;&lt; 8))</td></tr>
+<tr class="memitem:aa639e977f9d4fbb2c52426dd862e3147"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#aa639e977f9d4fbb2c52426dd862e3147">SET_APIC_DELIVERY_MODE</a>(x,  y)&#160;&#160;&#160;(((x) &amp; ~0x700) | ((y) &lt;&lt; 8))</td></tr>
 <tr class="separator:aa639e977f9d4fbb2c52426dd862e3147"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8853bbf5cc48af71a08e63cbd1ba48a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a8853bbf5cc48af71a08e63cbd1ba48a0">APIC_MODE_FIXED</a>&#160;&#160;&#160;0x0</td></tr>
 <tr class="separator:a8853bbf5cc48af71a08e63cbd1ba48a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -320,7 +320,7 @@ Macros</h2></td></tr>
 <tr class="separator:a866b92eb946a4cd2c52f730e9d0448fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb4c98b789887ab927d044397d6887df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#aeb4c98b789887ab927d044397d6887df">APIC_EILVT_NR_AMD_10H</a>&#160;&#160;&#160;4</td></tr>
 <tr class="separator:aeb4c98b789887ab927d044397d6887df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a345330df00f4ac13f3f65de413869fc2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a345330df00f4ac13f3f65de413869fc2">APIC_EILVT_LVTOFF</a>(<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)&#160;&#160;&#160;(((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &gt;&gt; 4) &amp; 0xF)</td></tr>
+<tr class="memitem:a345330df00f4ac13f3f65de413869fc2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a345330df00f4ac13f3f65de413869fc2">APIC_EILVT_LVTOFF</a>(x)&#160;&#160;&#160;(((x) &gt;&gt; 4) &amp; 0xF)</td></tr>
 <tr class="separator:a345330df00f4ac13f3f65de413869fc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5362c5ab1756cb5b0f2eefc833533926"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_apic_8h.html#a5362c5ab1756cb5b0f2eefc833533926">APIC_EILVT_MSG_FIX</a>&#160;&#160;&#160;0x0</td></tr>
 <tr class="separator:a5362c5ab1756cb5b0f2eefc833533926"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -756,8 +756,8 @@ Functions</h2></td></tr>
           <td class="memname">#define APIC_EILVT_LVTOFF</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &gt;&gt; 4) &amp; 0xF)</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(((x) &gt;&gt; 4) &amp; 0xF)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1166,7 +1166,7 @@ Functions</h2></td></tr>
           <td class="memname">#define APIC_INTEGRATED</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a></td><td>)</td>
+          <td class="paramname">x</td><td>)</td>
           <td>&#160;&#160;&#160;(1)</td>
         </tr>
       </table>
@@ -1898,8 +1898,8 @@ Functions</h2></td></tr>
           <td class="memname">#define APIC_XAPIC</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a></td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &gt;= 0x14)</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((x) &gt;= 0x14)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1916,8 +1916,8 @@ Functions</h2></td></tr>
           <td class="memname">#define GET_APIC_DELIVERY_MODE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &gt;&gt; 8) &amp; 0x7)</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(((x) &gt;&gt; 8) &amp; 0x7)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1934,8 +1934,8 @@ Functions</h2></td></tr>
           <td class="memname">#define GET_APIC_DEST_FIELD</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &gt;&gt; 24) &amp; 0xFF)</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(((x) &gt;&gt; 24) &amp; 0xFF)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1952,8 +1952,8 @@ Functions</h2></td></tr>
           <td class="memname">#define GET_APIC_LOGICAL_ID</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &gt;&gt; 24) &amp; 0xFFu)</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(((x) &gt;&gt; 24) &amp; 0xFFu)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1970,8 +1970,8 @@ Functions</h2></td></tr>
           <td class="memname">#define GET_APIC_MAXLVT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &gt;&gt; 16) &amp; 0xFFu)</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(((x) &gt;&gt; 16) &amp; 0xFFu)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1988,8 +1988,8 @@ Functions</h2></td></tr>
           <td class="memname">#define GET_APIC_TIMER_BASE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &gt;&gt; 18) &amp; 0x3)</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(((x) &gt;&gt; 18) &amp; 0x3)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2006,8 +2006,8 @@ Functions</h2></td></tr>
           <td class="memname">#define GET_APIC_VERSION</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a></td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)&amp;0xFFu)</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((x)&amp;0xFFu)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2038,7 +2038,7 @@ Functions</h2></td></tr>
           <td class="memname">#define SET_APIC_DELIVERY_MODE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>, </td>
+          <td class="paramname">x, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2049,7 +2049,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &amp; ~0x700) | ((y) &lt;&lt; 8))</td>
+          <td></td><td>&#160;&#160;&#160;(((x) &amp; ~0x700) | ((y) &lt;&lt; 8))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2066,8 +2066,8 @@ Functions</h2></td></tr>
           <td class="memname">#define SET_APIC_DEST_FIELD</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a></td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &lt;&lt; 24)</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;((x) &lt;&lt; 24)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2084,8 +2084,8 @@ Functions</h2></td></tr>
           <td class="memname">#define SET_APIC_LOGICAL_ID</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &lt;&lt; 24))</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(((x) &lt;&lt; 24))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2102,8 +2102,8 @@ Functions</h2></td></tr>
           <td class="memname">#define SET_APIC_TIMER_BASE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(((<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>) &lt;&lt; 18))</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(((x) &lt;&lt; 18))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2120,8 +2120,8 @@ Functions</h2></td></tr>
           <td class="memname">#define TO_X2</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a></td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a> / 0x10)</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(x / 0x10)</td>
         </tr>
       </table>
 </div><div class="memdoc">

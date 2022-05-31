@@ -398,7 +398,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160;        <a class="code" href="symbol-parser_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;downloading symbol &#39;%s&#39;...&quot;</span>, SymName.c_str());</div>
 <div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160;    }</div>
 <div class="line"><a name="l01758"></a><span class="lineno"> 1758</span>&#160; </div>
-<div class="line"><a name="l01759"></a><span class="lineno"> 1759</span>&#160;    HRESULT Result = URLDownloadToFileA(<a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, DownloadURL.c_str(), (SymFullDir + <span class="stringliteral">&quot;\\&quot;</span> + SymName).c_str(), 0, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l01759"></a><span class="lineno"> 1759</span>&#160;    HRESULT Result = URLDownloadToFileA(NULL, DownloadURL.c_str(), (SymFullDir + <span class="stringliteral">&quot;\\&quot;</span> + SymName).c_str(), 0, NULL);</div>
 <div class="line"><a name="l01760"></a><span class="lineno"> 1760</span>&#160; </div>
 <div class="line"><a name="l01761"></a><span class="lineno"> 1761</span>&#160;    <span class="keywordflow">if</span> (Result == S_OK)</div>
 <div class="line"><a name="l01762"></a><span class="lineno"> 1762</span>&#160;    {</div>
@@ -421,7 +421,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="a_script_engine_eval_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:102</div></div>
 <div class="ttc" id="acommon-utils_8cpp_html_a482ac80c47b617c066db788caf244a42"><div class="ttname"><a href="common-utils_8cpp.html#a482ac80c47b617c066db788caf244a42">CreateDirectoryRecursive</a></div><div class="ttdeci">BOOLEAN CreateDirectoryRecursive(const std::string &amp;Path)</div><div class="ttdoc">create a directory recursivly</div><div class="ttdef"><b>Definition:</b> common-utils.cpp:54</div></div>
 <div class="ttc" id="acommon_8cpp_html_a20a48512d7a5bfbacc58ed480cb198f6"><div class="ttname"><a href="common_8cpp.html#a20a48512d7a5bfbacc58ed480cb198f6">Split</a></div><div class="ttdeci">const vector&lt; string &gt; Split(const string &amp;s, const char &amp;c)</div><div class="ttdoc">general split command</div><div class="ttdef"><b>Definition:</b> common.cpp:117</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 <div class="ttc" id="ascript-engine_2header_2script-engine_8h_html_a65c63fca62521dae9b860f7b95ecbcbf"><div class="ttname"><a href="script-engine_2header_2script-engine_8h.html#a65c63fca62521dae9b860f7b95ecbcbf">IsSilentLoad</a></div><div class="ttdeci">UINT32 BOOLEAN const char BOOLEAN IsSilentLoad</div><div class="ttdef"><b>Definition:</b> script-engine.h:33</div></div>
 </div><!-- fragment -->
 </div>
@@ -469,7 +468,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>BOOL </dd></dl>
 <div class="fragment"><div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;{</div>
-<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;    <span class="keywordflow">if</span> (SymInfo != 0 &amp;&amp; <a class="code" href="symbol-parser_8cpp.html#ab0c07a0441be3a9e8df54d4206aa3c62">g_SymbolMapForDisassembler</a> != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;    <span class="keywordflow">if</span> (SymInfo != 0 &amp;&amp; <a class="code" href="symbol-parser_8cpp.html#ab0c07a0441be3a9e8df54d4206aa3c62">g_SymbolMapForDisassembler</a> != NULL)</div>
 <div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;    {</div>
 <div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;        <span class="comment">// Call the remote callback</span></div>
@@ -594,7 +593,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;    <span class="keywordtype">char</span> FileExt[_MAX_EXT] = {0};</div>
 <div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160; </div>
-<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;    _splitpath(FileName, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, FileExt);</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;    _splitpath(FileName, NULL, NULL, NULL, FileExt);</div>
 <div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160; </div>
 <div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;    <span class="comment">// Is it .PDB file?</span></div>
@@ -674,7 +673,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;    <span class="comment">// Open the file</span></div>
 <div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;    HANDLE hFile = CreateFileA(FileName, GENERIC_READ, FILE_SHARE_READ, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, OPEN_EXISTING, 0, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;    HANDLE hFile = CreateFileA(FileName, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, 0, NULL);</div>
 <div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160; </div>
 <div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;    <span class="keywordflow">if</span> (hFile == INVALID_HANDLE_VALUE)</div>
 <div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;    {</div>
@@ -685,7 +684,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;    <span class="comment">// Obtain the size of the file</span></div>
 <div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;    FileSize = GetFileSize(hFile, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;    FileSize = GetFileSize(hFile, NULL);</div>
 <div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160; </div>
 <div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;    <span class="keywordflow">if</span> (FileSize == INVALID_FILE_SIZE)</div>
 <div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;    {</div>
@@ -738,7 +737,7 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
 <div class="fragment"><div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;{</div>
-<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="symbol-parser_8cpp.html#aa5d3e7e6448b37fb0c53643693d4e43d">g_CurrentModuleName</a> == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="symbol-parser_8cpp.html#aa5d3e7e6448b37fb0c53643693d4e43d">g_CurrentModuleName</a> == NULL)</div>
 <div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;    {</div>
 <div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;        <span class="comment">// Name Address</span></div>

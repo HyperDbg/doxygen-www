@@ -105,13 +105,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a8d07b47eb27823f90eeaee58bb582da9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_transparency_8c.html#a8d07b47eb27823f90eeaee58bb582da9">TransparentGetRand</a> ()</td></tr>
 <tr class="memdesc:a8d07b47eb27823f90eeaee58bb582da9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a random number by utilizing RDTSC instruction.  <a href="_transparency_8c.html#a8d07b47eb27823f90eeaee58bb582da9">More...</a><br /></td></tr>
 <tr class="separator:a8d07b47eb27823f90eeaee58bb582da9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8294b3e44b374ebe6f095e86a7d4fbaa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_transparency_8c.html#a8294b3e44b374ebe6f095e86a7d4fbaa">TransparentPow</a> (int <a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>, int p)</td></tr>
+<tr class="memitem:a8294b3e44b374ebe6f095e86a7d4fbaa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_transparency_8c.html#a8294b3e44b374ebe6f095e86a7d4fbaa">TransparentPow</a> (int x, int p)</td></tr>
 <tr class="memdesc:a8294b3e44b374ebe6f095e86a7d4fbaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer power function definition.  <a href="_transparency_8c.html#a8294b3e44b374ebe6f095e86a7d4fbaa">More...</a><br /></td></tr>
 <tr class="separator:a8294b3e44b374ebe6f095e86a7d4fbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a627fcc590220a0b8a2c58b39ba3341"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_transparency_8c.html#a0a627fcc590220a0b8a2c58b39ba3341">TransparentLog</a> (int <a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)</td></tr>
+<tr class="memitem:a0a627fcc590220a0b8a2c58b39ba3341"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_transparency_8c.html#a0a627fcc590220a0b8a2c58b39ba3341">TransparentLog</a> (int x)</td></tr>
 <tr class="memdesc:a0a627fcc590220a0b8a2c58b39ba3341"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer Natural Logarithm function estimation.  <a href="_transparency_8c.html#a0a627fcc590220a0b8a2c58b39ba3341">More...</a><br /></td></tr>
 <tr class="separator:a0a627fcc590220a0b8a2c58b39ba3341"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22273f24ac233b6d25823fa658e9bb40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_transparency_8c.html#a22273f24ac233b6d25823fa658e9bb40">TransparentSqrt</a> (int <a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)</td></tr>
+<tr class="memitem:a22273f24ac233b6d25823fa658e9bb40"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_transparency_8c.html#a22273f24ac233b6d25823fa658e9bb40">TransparentSqrt</a> (int x)</td></tr>
 <tr class="memdesc:a22273f24ac233b6d25823fa658e9bb40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer root function estimation.  <a href="_transparency_8c.html#a22273f24ac233b6d25823fa658e9bb40">More...</a><br /></td></tr>
 <tr class="separator:a22273f24ac233b6d25823fa658e9bb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7fb3669c55c8efd61f9e0632300482ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_transparency_8c.html#a7fb3669c55c8efd61f9e0632300482ca">TransparentRandn</a> (int <a class="el" href="gaussian-rng_8cpp.html#ade362b949b94433c77aa630935578053">Average</a>, int Sigma)</td></tr>
@@ -211,7 +211,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    PidAndNameBuffer = ExAllocatePoolWithTag(NonPagedPool, SizeOfBuffer, <a class="code" href="hprdbghv_2header_2common_2common_8h.html#ab7f91e71074ce1488e61869adbc44d8d">POOLTAG</a>);</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">if</span> (PidAndNameBuffer == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">if</span> (PidAndNameBuffer == NULL)</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    {</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    }</div>
@@ -271,7 +271,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_ab7f91e71074ce1488e61869adbc44d8d"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#ab7f91e71074ce1488e61869adbc44d8d">POOLTAG</a></div><div class="ttdeci">#define POOLTAG</div><div class="ttdoc">Pool tag.</div><div class="ttdef"><b>Definition:</b> Common.h:223</div></div>
 <div class="ttc" id="ahprdbghv_2header_2debugger_2transparency_2transparency_8h_html_ad2974be42dc9bc8614215b922b30e0a5"><div class="ttname"><a href="hprdbghv_2header_2debugger_2transparency_2transparency_8h.html#ad2974be42dc9bc8614215b922b30e0a5">TRANSPARENCY_PROCESS</a></div><div class="ttdeci">struct _TRANSPARENCY_PROCESS TRANSPARENCY_PROCESS</div><div class="ttdoc">The ProcessList of TRANSPARENCY_MEASUREMENTS is from this architecture.</div></div>
 <div class="ttc" id="alist_8h_html_a77df31a5e6a1be59d08b93e9cb028f22"><div class="ttname"><a href="list_8h.html#a77df31a5e6a1be59d08b93e9cb028f22">InsertHeadList</a></div><div class="ttdeci">void InsertHeadList(PLIST_ENTRY ListHead, PLIST_ENTRY Entry)</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 <div class="ttc" id="astruct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e_html"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e.html">_DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE</a></div><div class="ttdoc">request for enable or disable transparent-mode</div><div class="ttdef"><b>Definition:</b> Definition.h:1552</div></div>
 <div class="ttc" id="astruct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e_html_aec10422c4a4de0f91154a31d0b76ea55"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e.html#aec10422c4a4de0f91154a31d0b76ea55">_DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE::LengthOfProcessName</a></div><div class="ttdeci">UINT32 LengthOfProcessName</div><div class="ttdef"><b>Definition:</b> Definition.h:1565</div></div>
 <div class="ttc" id="astruct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e_html_aecd3d47251ab1e3825c5e7f61f6bb996"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___h_i_d_e___a_n_d___t_r_a_n_s_p_a_r_e_n_t___d_e_b_u_g_g_e_r___m_o_d_e.html#aecd3d47251ab1e3825c5e7f61f6bb996">_DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE::TrueIfProcessIdAndFalseIfProcessName</a></div><div class="ttdeci">BOOLEAN TrueIfProcessIdAndFalseIfProcessName</div><div class="ttdef"><b>Definition:</b> Definition.h:1563</div></div>
@@ -447,7 +446,7 @@ Variables</h2></td></tr>
 <p>Integer Natural Logarithm function estimation. </p>
 <p>@params x input value </p><dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
 <div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;{</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">int</span> n     = <a class="code" href="01-expressions-correct_8txt.html#a018057b1c00ec52bb8706a211609df02">x</a>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordtype">int</span> n     = x;</div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keywordtype">int</span> Digit = 0;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">while</span> (n &gt;= 100)</div>
@@ -461,7 +460,6 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_transparency_8c.html#a06b052417ad51413065b8c67e1c960d2">TransparentTableLog</a>[n] / 100 + (Digit * 23) / 10;</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}</div>
-<div class="ttc" id="a01-expressions-correct_8txt_html_a018057b1c00ec52bb8706a211609df02"><div class="ttname"><a href="01-expressions-correct_8txt.html#a018057b1c00ec52bb8706a211609df02">x</a></div><div class="ttdeci">x</div><div class="ttdef"><b>Definition:</b> 01-expressions-correct.txt:2</div></div>
 <div class="ttc" id="a_transparency_8c_html_a06b052417ad51413065b8c67e1c960d2"><div class="ttname"><a href="_transparency_8c.html#a06b052417ad51413065b8c67e1c960d2">TransparentTableLog</a></div><div class="ttdeci">int TransparentTableLog[]</div><div class="ttdoc">pre-defined log result</div><div class="ttdef"><b>Definition:</b> Transparency.c:23</div></div>
 </div><!-- fragment -->
 </div>
@@ -564,7 +562,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;            <span class="comment">// This entry is a process name</span></div>
 <div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;            <span class="comment">//</span></div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;            <span class="keywordflow">if</span> (CurrentProcessName != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a> &amp;&amp; <a class="code" href="hprdbghv_2code_2common_2_common_8c.html#acd7a24f884afa520da81557896a4abcd">StartsWith</a>(CurrentProcessName, ProcessDetails-&gt;<a class="code" href="struct___t_r_a_n_s_p_a_r_e_n_c_y___p_r_o_c_e_s_s.html#aaac701b52a4551affc7e8b6f881879ef">ProcessName</a>))</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;            <span class="keywordflow">if</span> (CurrentProcessName != NULL &amp;&amp; <a class="code" href="hprdbghv_2code_2common_2_common_8c.html#acd7a24f884afa520da81557896a4abcd">StartsWith</a>(CurrentProcessName, ProcessDetails-&gt;<a class="code" href="struct___t_r_a_n_s_p_a_r_e_n_c_y___p_r_o_c_e_s_s.html#aaac701b52a4551affc7e8b6f881879ef">ProcessName</a>))</div>
 <div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;            {</div>
 <div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;                <span class="comment">//</span></div>
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;                <span class="comment">// Let the transparency handler to handle it</span></div>
@@ -600,7 +598,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;        <span class="comment">// It&#39;s a new thread Id reset everything</span></div>
 <div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;        CurrentVmState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ae3e6fd97d8540b6d41a96abc247dffc3">TransparencyState</a>.<a class="code" href="struct___v_m___e_x_i_t___t_r_a_n_s_p_a_r_e_n_c_y.html#ab06bd4f2eeda3476d454acd4270f62ce">ThreadId</a>                        = CurrentThreadId;</div>
-<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;        CurrentVmState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ae3e6fd97d8540b6d41a96abc247dffc3">TransparencyState</a>.<a class="code" href="struct___v_m___e_x_i_t___t_r_a_n_s_p_a_r_e_n_c_y.html#a9a4351c0697039c45c4d25f31ca863b3">RevealedTimeStampCounterByRdtsc</a> = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;        CurrentVmState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ae3e6fd97d8540b6d41a96abc247dffc3">TransparencyState</a>.<a class="code" href="struct___v_m___e_x_i_t___t_r_a_n_s_p_a_r_e_n_c_y.html#a9a4351c0697039c45c4d25f31ca863b3">RevealedTimeStampCounterByRdtsc</a> = NULL;</div>
 <div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        CurrentVmState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ae3e6fd97d8540b6d41a96abc247dffc3">TransparencyState</a>.<a class="code" href="struct___v_m___e_x_i_t___t_r_a_n_s_p_a_r_e_n_c_y.html#ab5136659316fce4bb20678f3f79bf112">CpuidAfterRdtscDetected</a>         = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;    }</div>
 <div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160; </div>
@@ -610,7 +608,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160; </div>
 <div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;    <span class="keywordflow">if</span> (ExitReason == VMX_EXIT_REASON_EXECUTE_RDTSC || ExitReason == VMX_EXIT_REASON_EXECUTE_RDTSCP)</div>
 <div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;    {</div>
-<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;        <span class="keywordflow">if</span> (CurrentVmState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ae3e6fd97d8540b6d41a96abc247dffc3">TransparencyState</a>.<a class="code" href="struct___v_m___e_x_i_t___t_r_a_n_s_p_a_r_e_n_c_y.html#a9a4351c0697039c45c4d25f31ca863b3">RevealedTimeStampCounterByRdtsc</a> == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;        <span class="keywordflow">if</span> (CurrentVmState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ae3e6fd97d8540b6d41a96abc247dffc3">TransparencyState</a>.<a class="code" href="struct___v_m___e_x_i_t___t_r_a_n_s_p_a_r_e_n_c_y.html#a9a4351c0697039c45c4d25f31ca863b3">RevealedTimeStampCounterByRdtsc</a> == NULL)</div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;        {</div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;            <span class="comment">// It&#39;s a timing and the previous time for the thread is null</span></div>
@@ -627,7 +625,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160; </div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;            <span class="comment">// LogInfo(&quot;Possible RDTSC+CPUID+RDTSC&quot;);</span></div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;        }</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (CurrentVmState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ae3e6fd97d8540b6d41a96abc247dffc3">TransparencyState</a>.<a class="code" href="struct___v_m___e_x_i_t___t_r_a_n_s_p_a_r_e_n_c_y.html#a9a4351c0697039c45c4d25f31ca863b3">RevealedTimeStampCounterByRdtsc</a> != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a> &amp;&amp;</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (CurrentVmState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ae3e6fd97d8540b6d41a96abc247dffc3">TransparencyState</a>.<a class="code" href="struct___v_m___e_x_i_t___t_r_a_n_s_p_a_r_e_n_c_y.html#a9a4351c0697039c45c4d25f31ca863b3">RevealedTimeStampCounterByRdtsc</a> != NULL &amp;&amp;</div>
 <div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;                 CurrentVmState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ae3e6fd97d8540b6d41a96abc247dffc3">TransparencyState</a>.<a class="code" href="struct___v_m___e_x_i_t___t_r_a_n_s_p_a_r_e_n_c_y.html#ab5136659316fce4bb20678f3f79bf112">CpuidAfterRdtscDetected</a> == <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>)</div>
 <div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;        {</div>
 <div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;            <span class="comment">//</span></div>
@@ -661,7 +659,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;        Result = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;    }</div>
 <div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (ExitReason == VMX_EXIT_REASON_EXECUTE_CPUID &amp;&amp;</div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;             CurrentVmState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ae3e6fd97d8540b6d41a96abc247dffc3">TransparencyState</a>.<a class="code" href="struct___v_m___e_x_i_t___t_r_a_n_s_p_a_r_e_n_c_y.html#a9a4351c0697039c45c4d25f31ca863b3">RevealedTimeStampCounterByRdtsc</a> != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;             CurrentVmState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ae3e6fd97d8540b6d41a96abc247dffc3">TransparencyState</a>.<a class="code" href="struct___v_m___e_x_i_t___t_r_a_n_s_p_a_r_e_n_c_y.html#a9a4351c0697039c45c4d25f31ca863b3">RevealedTimeStampCounterByRdtsc</a> != NULL)</div>
 <div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    {</div>
 <div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        <span class="comment">// The guy executed one or more CPUIDs after an rdtscp so we</span></div>
@@ -728,7 +726,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordtype">int</span> Res = 1;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; p; i++)</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        Res = Res * <a class="code" href="01-expressions-correct_8txt.html#a018057b1c00ec52bb8706a211609df02">x</a>;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        Res = Res * x;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    }</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordflow">return</span> Res;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;}</div>
@@ -838,14 +836,14 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="comment">// &quot;Bit&quot; starts at the highest power of four &lt;= the argument.</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">while</span> (Bit &gt; <a class="code" href="01-expressions-correct_8txt.html#a018057b1c00ec52bb8706a211609df02">x</a>)</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">while</span> (Bit &gt; x)</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        Bit &gt;&gt;= 2;</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">while</span> (Bit != 0)</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    {</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="01-expressions-correct_8txt.html#a018057b1c00ec52bb8706a211609df02">x</a> &gt;= Res + Bit)</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <span class="keywordflow">if</span> (x &gt;= Res + Bit)</div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        {</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <a class="code" href="01-expressions-correct_8txt.html#a018057b1c00ec52bb8706a211609df02">x</a> -= Res + Bit;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            x -= Res + Bit;</div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            Res = (Res &gt;&gt; 1) + Bit;</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        }</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keywordflow">else</span></div>

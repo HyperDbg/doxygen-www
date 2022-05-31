@@ -1,13 +1,14 @@
 var searchData=
 [
-  ['g_2ecpp_6310',['g.cpp',['../g_8cpp.html',1,'']]],
-  ['gaussian_2drng_2ecpp_6311',['gaussian-rng.cpp',['../gaussian-rng_8cpp.html',1,'']]],
-  ['generator_2epy_6312',['generator.py',['../generator_8py.html',1,'']]],
-  ['globals_2ec_6313',['globals.c',['../globals_8c.html',1,'']]],
-  ['globals_2eh_6314',['globals.h',['../hprdbgctrl_2header_2globals_8h.html',1,'(Global Namespace)'],['../script-engine_2header_2globals_8h.html',1,'(Global Namespace)']]],
-  ['globalvariablemanagement_2ec_6315',['GlobalVariableManagement.c',['../_global_variable_management_8c.html',1,'']]],
-  ['globalvariablemanagement_2eh_6316',['GlobalVariableManagement.h',['../_global_variable_management_8h.html',1,'']]],
-  ['globalvariables_2eh_6317',['GlobalVariables.h',['../_global_variables_8h.html',1,'']]],
-  ['grammar_2epy_6318',['grammar.py',['../grammar_8py.html',1,'']]],
-  ['grammar_2etxt_6319',['Grammar.txt',['../_grammar_8txt.html',1,'']]]
+  ['hardware_2ec_6183',['hardware.c',['../hardware_8c.html',1,'']]],
+  ['help_2ecpp_6184',['help.cpp',['../help_8cpp.html',1,'']]],
+  ['help_2eh_6185',['help.h',['../help_8h.html',1,'']]],
+  ['hide_2ecpp_6186',['hide.cpp',['../hide_8cpp.html',1,'']]],
+  ['hooks_2eh_6187',['Hooks.h',['../_hooks_8h.html',1,'']]],
+  ['howto_2emd_6188',['HOWTO.md',['../_h_o_w_t_o_8md.html',1,'']]],
+  ['hprdbgctrl_2ecpp_6189',['hprdbgctrl.cpp',['../hprdbgctrl_8cpp.html',1,'']]],
+  ['hv_2ec_6190',['Hv.c',['../_hv_8c.html',1,'']]],
+  ['hv_2eh_6191',['Hv.h',['../_hv_8h.html',1,'']]],
+  ['hyperdbg_2dcli_2ecpp_6192',['hyperdbg-cli.cpp',['../hyperdbg-cli_8cpp.html',1,'']]],
+  ['hyperdbg_2dtest_2ecpp_6193',['hyperdbg-test.cpp',['../hyperdbg-test_8cpp.html',1,'']]]
 ];

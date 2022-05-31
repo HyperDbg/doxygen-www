@@ -169,7 +169,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// Show the time and message before close</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    time_t    t  = time(<a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    time_t    t  = time(NULL);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">struct </span>tm tm = *localtime(&amp;t);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;log file closed (%d-%02d-%02d &quot;</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                 <span class="stringliteral">&quot;%02d:%02d:%02d)\n&quot;</span>,</div>
@@ -194,7 +194,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="alogclose_8cpp_html_a3d9102adae8f4c5bb1d077a2b72f725c"><div class="ttname"><a href="logclose_8cpp.html#a3d9102adae8f4c5bb1d077a2b72f725c">g_LogOpened</a></div><div class="ttdeci">BOOLEAN g_LogOpened</div><div class="ttdoc">Shows whether the '.logopen' command is executed and the log file is open or not.</div><div class="ttdef"><b>Definition:</b> globals.h:445</div></div>
 <div class="ttc" id="alogclose_8cpp_html_a7eb78aceaeca25ca611783bdb0d61e09"><div class="ttname"><a href="logclose_8cpp.html#a7eb78aceaeca25ca611783bdb0d61e09">g_LogOpenFile</a></div><div class="ttdeci">ofstream g_LogOpenFile</div><div class="ttdoc">The object of log file ('.logopen' command)</div><div class="ttdef"><b>Definition:</b> globals.h:451</div></div>
 <div class="ttc" id="alogclose_8cpp_html_a84af4a1cc6de257b8756d7b19acdd185"><div class="ttname"><a href="logclose_8cpp.html#a84af4a1cc6de257b8756d7b19acdd185">CommandLogcloseHelp</a></div><div class="ttdeci">VOID CommandLogcloseHelp()</div><div class="ttdoc">help .logclose command</div><div class="ttdef"><b>Definition:</b> logclose.cpp:26</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 </div><!-- fragment -->
 </div>
 </div>

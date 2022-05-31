@@ -180,10 +180,10 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="comment">// Send the packet to get current thread</span></div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <a class="code" href="kd_8cpp.html#a72839c2781e6cc7433aa3383ec1d64f0">KdSendSwitchThreadPacketToDebuggee</a>(<a class="code" href="_definition_8h.html#a7a3955d43cb53d79a1f2a7e20d37da14aa6d17307342d79707d70b0300a206202">DEBUGGEE_DETAILS_AND_SWITCH_THREAD_GET_THREAD_DETAILS</a>,</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                                               <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                                               <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                                               NULL,</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                                               NULL,</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                                               <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>,</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                                               <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;                                               NULL);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        }</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (SplittedCommand.size() == 2)</div>
@@ -194,7 +194,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="comment">// Sending null as the nt!_EPROCESS indicates that the target process is</span></div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="comment">// the current process (Current nt!_EPROCESS)</span></div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="comment">//</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="thread_8cpp.html#a1da0dbd22b0f8450fd9c59130f544aff">CommandThreadListThreads</a>(<a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>))</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="thread_8cpp.html#a1da0dbd22b0f8450fd9c59130f544aff">CommandThreadListThreads</a>(NULL))</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            {</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;err, the need offset to iterate over threads not found, &quot;</span></div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                             <span class="stringliteral">&quot;make sure to load ntoskrnl.exe&#39;s PDB file. use &#39;.help .sym&#39; for &quot;</span></div>
@@ -284,7 +284,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;                                           TargetThreadId,</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                                           TargetThread,</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                                           CheckByClkIntr,</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                                           <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;                                           NULL);</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    }</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (SplittedCommand.size() == 4)</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    {</div>
@@ -347,7 +347,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="acommon_8cpp_html_a6d49b34b4d582be46c41da393e1a427c"><div class="ttname"><a href="common_8cpp.html#a6d49b34b4d582be46c41da393e1a427c">ConvertStringToUInt32</a></div><div class="ttdeci">BOOLEAN ConvertStringToUInt32(string TextToConvert, PUINT32 Result)</div><div class="ttdoc">check and convert string to a 32 bit unsigned it and also check for special notations like 0x etc.</div><div class="ttdef"><b>Definition:</b> common.cpp:263</div></div>
 <div class="ttc" id="ahprdbgctrl_8cpp_html_a21c3c06b34d716c4680695c2b28127da"><div class="ttname"><a href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a></div><div class="ttdeci">VOID ShowMessages(const char *Fmt,...)</div><div class="ttdoc">Show messages.</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:51</div></div>
 <div class="ttc" id="akd_8cpp_html_a72839c2781e6cc7433aa3383ec1d64f0"><div class="ttname"><a href="kd_8cpp.html#a72839c2781e6cc7433aa3383ec1d64f0">KdSendSwitchThreadPacketToDebuggee</a></div><div class="ttdeci">BOOLEAN KdSendSwitchThreadPacketToDebuggee(DEBUGGEE_DETAILS_AND_SWITCH_THREAD_TYPE ActionType, UINT32 NewTid, UINT64 NewThread, BOOLEAN CheckByClockInterrupt, PDEBUGGEE_THREAD_LIST_NEEDED_DETAILS SymDetailsForThreadList)</div><div class="ttdoc">Sends a change thread or show threads detail packet to the debuggee.</div><div class="ttdef"><b>Definition:</b> kd.cpp:745</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 <div class="ttc" id="aobjects_8cpp_html_a9b4647f5534189f71a287297ca76197c"><div class="ttname"><a href="objects_8cpp.html#a9b4647f5534189f71a287297ca76197c">ObjectShowProcessesOrThreadDetails</a></div><div class="ttdeci">BOOLEAN ObjectShowProcessesOrThreadDetails(BOOLEAN IsProcess)</div><div class="ttdoc">Get details about processes or threads.</div><div class="ttdef"><b>Definition:</b> objects.cpp:26</div></div>
 <div class="ttc" id="asymbol_8cpp_html_aae8c95f17a948c9f1a1e198527465e8b"><div class="ttname"><a href="symbol_8cpp.html#aae8c95f17a948c9f1a1e198527465e8b">SymbolConvertNameOrExprToAddress</a></div><div class="ttdeci">BOOLEAN SymbolConvertNameOrExprToAddress(const string &amp;TextToConvert, PUINT64 Result)</div><div class="ttdoc">check and convert string to a 64 bit unsigned interger and also check for symbol object names and eva...</div><div class="ttdef"><b>Definition:</b> symbol.cpp:386</div></div>
 <div class="ttc" id="athread_8cpp_html_a1cdbd16c12be025154bf5847a5420ba5"><div class="ttname"><a href="thread_8cpp.html#a1cdbd16c12be025154bf5847a5420ba5">CommandThreadHelp</a></div><div class="ttdeci">VOID CommandThreadHelp()</div><div class="ttdoc">help of .thread command</div><div class="ttdef"><b>Definition:</b> thread.cpp:25</div></div>
@@ -449,8 +448,8 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="comment">// Get the thread details in VMI mode</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <a class="code" href="objects_8cpp.html#a78112c3bb77ec07d3e5bc6ff498ea288">ObjectShowProcessesOrThreadList</a>(<a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>,</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                            <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                            <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                                            NULL,</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                                            NULL,</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                            &amp;ThreadListNeededItems);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">else</span></div>
@@ -459,8 +458,8 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="comment">// Send the packet to list threads</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <a class="code" href="kd_8cpp.html#a72839c2781e6cc7433aa3383ec1d64f0">KdSendSwitchThreadPacketToDebuggee</a>(<a class="code" href="_definition_8h.html#a7a3955d43cb53d79a1f2a7e20d37da14a516e0cdb60796ff25b0215dee4e327a0">DEBUGGEE_DETAILS_AND_SWITCH_THREAD_GET_THREAD_LIST</a>,</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                               <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                               <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                               NULL,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                                               NULL,</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                               <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>,</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                                               &amp;ThreadListNeededItems);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>

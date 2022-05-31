@@ -961,7 +961,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01368"></a><span class="lineno"> 1368</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01369"></a><span class="lineno"> 1369</span>&#160;    <span class="comment">// Cause no vm-exit on NMIs</span></div>
 <div class="line"><a name="l01370"></a><span class="lineno"> 1370</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;    <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#a8cc1375f7c22268460a5a026343e0443">VMCALL_UNSET_VM_EXIT_ON_NMIS</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, 0, 0);</div>
+<div class="line"><a name="l01371"></a><span class="lineno"> 1371</span>&#160;    <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#a8cc1375f7c22268460a5a026343e0443">VMCALL_UNSET_VM_EXIT_ON_NMIS</a>, NULL, 0, 0);</div>
 <div class="line"><a name="l01372"></a><span class="lineno"> 1372</span>&#160; </div>
 <div class="line"><a name="l01373"></a><span class="lineno"> 1373</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01374"></a><span class="lineno"> 1374</span>&#160;    <span class="comment">// Wait for all DPCs to synchronize at this point</span></div>
@@ -974,7 +974,6 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01381"></a><span class="lineno"> 1381</span>&#160;    KeSignalCallDpcDone(SystemArgument1);</div>
 <div class="line"><a name="l01382"></a><span class="lineno"> 1382</span>&#160;}</div>
 <div class="ttc" id="a_vmcall_8h_html_a8cc1375f7c22268460a5a026343e0443"><div class="ttname"><a href="_vmcall_8h.html#a8cc1375f7c22268460a5a026343e0443">VMCALL_UNSET_VM_EXIT_ON_NMIS</a></div><div class="ttdeci">#define VMCALL_UNSET_VM_EXIT_ON_NMIS</div><div class="ttdoc">VMCALL to not cause vm-exit on NMIs.</div><div class="ttdef"><b>Definition:</b> Vmcall.h:242</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1615,7 +1614,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01337"></a><span class="lineno"> 1337</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01338"></a><span class="lineno"> 1338</span>&#160;    <span class="comment">// Cause vm-exit on NMIs</span></div>
 <div class="line"><a name="l01339"></a><span class="lineno"> 1339</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;    <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#a5512b08230236da375c1c1b1dc5a151d">VMCALL_SET_VM_EXIT_ON_NMIS</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, 0, 0);</div>
+<div class="line"><a name="l01340"></a><span class="lineno"> 1340</span>&#160;    <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#a5512b08230236da375c1c1b1dc5a151d">VMCALL_SET_VM_EXIT_ON_NMIS</a>, NULL, 0, 0);</div>
 <div class="line"><a name="l01341"></a><span class="lineno"> 1341</span>&#160; </div>
 <div class="line"><a name="l01342"></a><span class="lineno"> 1342</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01343"></a><span class="lineno"> 1343</span>&#160;    <span class="comment">// Wait for all DPCs to synchronize at this point</span></div>
@@ -1899,19 +1898,19 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l01560"></a><span class="lineno"> 1560</span>&#160;{</div>
 <div class="line"><a name="l01561"></a><span class="lineno"> 1561</span>&#160;    UNREFERENCED_PARAMETER(Dpc);</div>
 <div class="line"><a name="l01562"></a><span class="lineno"> 1562</span>&#160; </div>
-<div class="line"><a name="l01563"></a><span class="lineno"> 1563</span>&#160;    <span class="keywordflow">if</span> (DeferredContext == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l01563"></a><span class="lineno"> 1563</span>&#160;    <span class="keywordflow">if</span> (DeferredContext == NULL)</div>
 <div class="line"><a name="l01564"></a><span class="lineno"> 1564</span>&#160;    {</div>
 <div class="line"><a name="l01565"></a><span class="lineno"> 1565</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l01566"></a><span class="lineno"> 1566</span>&#160;        <span class="comment">// We have to invalidate all contexts</span></div>
 <div class="line"><a name="l01567"></a><span class="lineno"> 1567</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l01568"></a><span class="lineno"> 1568</span>&#160;        <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#a19cc3e737fde0dbb0b6bcaa07f323550">VMCALL_INVEPT_ALL_CONTEXTS</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l01568"></a><span class="lineno"> 1568</span>&#160;        <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#a19cc3e737fde0dbb0b6bcaa07f323550">VMCALL_INVEPT_ALL_CONTEXTS</a>, NULL, NULL, NULL);</div>
 <div class="line"><a name="l01569"></a><span class="lineno"> 1569</span>&#160;    }</div>
 <div class="line"><a name="l01570"></a><span class="lineno"> 1570</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l01571"></a><span class="lineno"> 1571</span>&#160;    {</div>
 <div class="line"><a name="l01572"></a><span class="lineno"> 1572</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l01573"></a><span class="lineno"> 1573</span>&#160;        <span class="comment">// We have to invalidate all contexts</span></div>
 <div class="line"><a name="l01574"></a><span class="lineno"> 1574</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l01575"></a><span class="lineno"> 1575</span>&#160;        <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#a45441c9962f57151b6e7ac243bdb396f">VMCALL_INVEPT_SINGLE_CONTEXT</a>, DeferredContext, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l01575"></a><span class="lineno"> 1575</span>&#160;        <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#a45441c9962f57151b6e7ac243bdb396f">VMCALL_INVEPT_SINGLE_CONTEXT</a>, DeferredContext, NULL, NULL);</div>
 <div class="line"><a name="l01576"></a><span class="lineno"> 1576</span>&#160;    }</div>
 <div class="line"><a name="l01577"></a><span class="lineno"> 1577</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01578"></a><span class="lineno"> 1578</span>&#160;    <span class="comment">// Wait for all DPCs to synchronize at this point</span></div>
@@ -2192,7 +2191,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="comment">// Enable syscall hook EFER</span></div>
 <div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#abbb3d99ced0391c88b695b06603b31dd">VMCALL_ENABLE_SYSCALL_HOOK_EFER</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, 0, 0);</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;    <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#abbb3d99ced0391c88b695b06603b31dd">VMCALL_ENABLE_SYSCALL_HOOK_EFER</a>, NULL, 0, 0);</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160; </div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;    <span class="comment">// As this function is designed for a single,</span></div>
@@ -2618,7 +2617,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="comment">// Enable external interrupt exiting</span></div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#acaa5481bef551455b84d24e6888a162a">VMCALL_ENABLE_EXTERNAL_INTERRUPT_EXITING</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, 0, 0);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#acaa5481bef551455b84d24e6888a162a">VMCALL_ENABLE_EXTERNAL_INTERRUPT_EXITING</a>, NULL, 0, 0);</div>
 <div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160; </div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    <span class="comment">// As this function is designed for a single,</span></div>
@@ -2907,7 +2906,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01502"></a><span class="lineno"> 1502</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01503"></a><span class="lineno"> 1503</span>&#160;    <span class="comment">// Execute the VMCALL to remove the hook and invalidate</span></div>
 <div class="line"><a name="l01504"></a><span class="lineno"> 1504</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;    <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#a97a25939f7d07934b25028b877965889">VMCALL_UNHOOK_ALL_PAGES</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l01505"></a><span class="lineno"> 1505</span>&#160;    <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#a97a25939f7d07934b25028b877965889">VMCALL_UNHOOK_ALL_PAGES</a>, NULL, NULL, NULL);</div>
 <div class="line"><a name="l01506"></a><span class="lineno"> 1506</span>&#160; </div>
 <div class="line"><a name="l01507"></a><span class="lineno"> 1507</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01508"></a><span class="lineno"> 1508</span>&#160;    <span class="comment">// Wait for all DPCs to synchronize at this point</span></div>
@@ -2979,7 +2978,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01533"></a><span class="lineno"> 1533</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01534"></a><span class="lineno"> 1534</span>&#160;    <span class="comment">// Execute the VMCALL to remove the hook and invalidate</span></div>
 <div class="line"><a name="l01535"></a><span class="lineno"> 1535</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;    <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#ae88058c24e03982fb3b9b268eceb9c39">VMCALL_UNHOOK_SINGLE_PAGE</a>, DeferredContext, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l01536"></a><span class="lineno"> 1536</span>&#160;    <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#ae88058c24e03982fb3b9b268eceb9c39">VMCALL_UNHOOK_SINGLE_PAGE</a>, DeferredContext, NULL, NULL);</div>
 <div class="line"><a name="l01537"></a><span class="lineno"> 1537</span>&#160; </div>
 <div class="line"><a name="l01538"></a><span class="lineno"> 1538</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01539"></a><span class="lineno"> 1539</span>&#160;    <span class="comment">// Wait for all DPCs to synchronize at this point</span></div>
@@ -3123,7 +3122,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01244"></a><span class="lineno"> 1244</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01245"></a><span class="lineno"> 1245</span>&#160;    <span class="comment">// Reset I/O Bitmaps on all cores</span></div>
 <div class="line"><a name="l01246"></a><span class="lineno"> 1246</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;    <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#ae621273430ce3a493c7273f90ddd9f0f">VMCALL_RESET_IO_BITMAP</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, 0, 0);</div>
+<div class="line"><a name="l01247"></a><span class="lineno"> 1247</span>&#160;    <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#ae621273430ce3a493c7273f90ddd9f0f">VMCALL_RESET_IO_BITMAP</a>, NULL, 0, 0);</div>
 <div class="line"><a name="l01248"></a><span class="lineno"> 1248</span>&#160; </div>
 <div class="line"><a name="l01249"></a><span class="lineno"> 1249</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01250"></a><span class="lineno"> 1250</span>&#160;    <span class="comment">// Wait for all DPCs to synchronize at this point</span></div>
@@ -3195,7 +3194,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    <span class="comment">// Reset msr bitmaps from vmx-root</span></div>
 <div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#a449984f06abf0354c5972bd93ab7529a">VMCALL_RESET_MSR_BITMAP_READ</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, 0, 0);</div>
+<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#a449984f06abf0354c5972bd93ab7529a">VMCALL_RESET_MSR_BITMAP_READ</a>, NULL, 0, 0);</div>
 <div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160; </div>
 <div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    <span class="comment">// Wait for all DPCs to synchronize at this point</span></div>
@@ -3267,7 +3266,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    <span class="comment">// Reset msr bitmaps from vmx-root</span></div>
 <div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;    <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#a2b7d10892af0a5d9c6e3a52b1e39607b">VMCALL_RESET_MSR_BITMAP_WRITE</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, 0, 0);</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;    <a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#a2b7d10892af0a5d9c6e3a52b1e39607b">VMCALL_RESET_MSR_BITMAP_WRITE</a>, NULL, 0, 0);</div>
 <div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160; </div>
 <div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;    <span class="comment">// Wait for all DPCs to synchronize at this point</span></div>
@@ -3391,7 +3390,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// Fire the DPC</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    KeInsertQueueDpc(Dpc, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    KeInsertQueueDpc(Dpc, NULL, NULL);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">// spin on lock to be release, immediately after we get the lock, we&#39;ll</span></div>

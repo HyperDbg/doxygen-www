@@ -608,7 +608,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keyword">volatile</span> <a class="code" href="struct___m_x6___u_a_r_t___r_e_g_i_s_t_e_r_s.html">PMX6_UART_REGISTERS</a> Registers;</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a>                        RxdReg;</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">if</span> ((Port == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>) || (Port-&gt;Address == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>))</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;    <span class="keywordflow">if</span> ((Port == NULL) || (Port-&gt;Address == NULL))</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    {</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keywordflow">return</span> UartNotReady;</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    }</div>
@@ -652,7 +652,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="amx6uart_8c_html_a4bebce0f0d08d1a6d95f4d0e6fafb560"><div class="ttname"><a href="mx6uart_8c.html#a4bebce0f0d08d1a6d95f4d0e6fafb560">MX6_RXD_DATA_MASK</a></div><div class="ttdeci">#define MX6_RXD_DATA_MASK</div><div class="ttdef"><b>Definition:</b> mx6uart.c:33</div></div>
 <div class="ttc" id="amx6uart_8c_html_ad2f319eb4c4f25f986ecb078d7a1d8c8"><div class="ttname"><a href="mx6uart_8c.html#ad2f319eb4c4f25f986ecb078d7a1d8c8">PMX6_UART_REGISTERS</a></div><div class="ttdeci">struct _MX6_UART_REGISTERS * PMX6_UART_REGISTERS</div></div>
 <div class="ttc" id="amx6uart_8c_html_af0d4ef634655b646bf0b36e6abb437b3"><div class="ttname"><a href="mx6uart_8c.html#af0d4ef634655b646bf0b36e6abb437b3">MX6_RXD_CHARRDY</a></div><div class="ttdeci">#define MX6_RXD_CHARRDY</div><div class="ttdef"><b>Definition:</b> mx6uart.c:29</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 <div class="ttc" id="astruct___m_x6___u_a_r_t___r_e_g_i_s_t_e_r_s_html"><div class="ttname"><a href="struct___m_x6___u_a_r_t___r_e_g_i_s_t_e_r_s.html">_MX6_UART_REGISTERS</a></div><div class="ttdef"><b>Definition:</b> mx6uart.c:55</div></div>
 <div class="ttc" id="astruct___m_x6___u_a_r_t___r_e_g_i_s_t_e_r_s_html_a448a11294bf5d49bfc59cbde43111a3b"><div class="ttname"><a href="struct___m_x6___u_a_r_t___r_e_g_i_s_t_e_r_s.html#a448a11294bf5d49bfc59cbde43111a3b">_MX6_UART_REGISTERS::Rxd</a></div><div class="ttdeci">ULONG Rxd</div><div class="ttdef"><b>Definition:</b> mx6uart.c:56</div></div>
 <div class="ttc" id="auartp_8h_html_acd7824ee1d8726a28eb60310c8c07343"><div class="ttname"><a href="uartp_8h.html#acd7824ee1d8726a28eb60310c8c07343">READ_REGISTER_ULONG</a></div><div class="ttdeci">#define READ_REGISTER_ULONG</div><div class="ttdef"><b>Definition:</b> uartp.h:41</div></div>
@@ -802,7 +801,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keyword">volatile</span> <a class="code" href="struct___m_x6___u_a_r_t___r_e_g_i_s_t_e_r_s.html">PMX6_UART_REGISTERS</a> Registers;</div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a>                        Usr1Reg;</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">if</span> ((Port == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>) || (Port-&gt;Address == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>))</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordflow">if</span> ((Port == NULL) || (Port-&gt;Address == NULL))</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    {</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;        <span class="keywordflow">return</span> UartNotReady;</div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    }</div>
@@ -813,7 +812,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    <span class="comment">// Wait for the transmit interface to be ready (TRDY bit HIGH).</span></div>
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <a class="code" href="02-conditional-statements-correct_8txt.html#ae95b2da66a6c28773b4995fd5eebedac">if</a> (BusyWait != <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>)</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    if (BusyWait != <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>)</div>
 <div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    {</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordflow">do</span></div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        {</div>
@@ -836,7 +835,6 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <a class="code" href="uartp_8h.html#a18b8f844ef70d6b8b2eafc301c69db80">WRITE_REGISTER_ULONG</a>(&amp;Registers-&gt;<a class="code" href="struct___m_x6___u_a_r_t___r_e_g_i_s_t_e_r_s.html#a068b8433968be8f4d77cef2b97c89f20">Txd</a>, Byte);</div>
 <div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    <span class="keywordflow">return</span> UartSuccess;</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;}</div>
-<div class="ttc" id="a02-conditional-statements-correct_8txt_html_ae95b2da66a6c28773b4995fd5eebedac"><div class="ttname"><a href="02-conditional-statements-correct_8txt.html#ae95b2da66a6c28773b4995fd5eebedac">if</a></div><div class="ttdeci">if(@rsi&lt;=@rbx+ @rdi)</div><div class="ttdef"><b>Definition:</b> 02-conditional-statements-correct.txt:2</div></div>
 <div class="ttc" id="amx6uart_8c_html_ae8389271283ee3ea7bd5b3436422834e"><div class="ttname"><a href="mx6uart_8c.html#ae8389271283ee3ea7bd5b3436422834e">MX6_USR1_TRDY</a></div><div class="ttdeci">#define MX6_USR1_TRDY</div><div class="ttdef"><b>Definition:</b> mx6uart.c:27</div></div>
 <div class="ttc" id="astruct___m_x6___u_a_r_t___r_e_g_i_s_t_e_r_s_html_a068b8433968be8f4d77cef2b97c89f20"><div class="ttname"><a href="struct___m_x6___u_a_r_t___r_e_g_i_s_t_e_r_s.html#a068b8433968be8f4d77cef2b97c89f20">_MX6_UART_REGISTERS::Txd</a></div><div class="ttdeci">ULONG Txd</div><div class="ttdef"><b>Definition:</b> mx6uart.c:58</div></div>
 <div class="ttc" id="astruct___m_x6___u_a_r_t___r_e_g_i_s_t_e_r_s_html_acd00e0d5f7c653f5aabf9b63ffbd1080"><div class="ttname"><a href="struct___m_x6___u_a_r_t___r_e_g_i_s_t_e_r_s.html#acd00e0d5f7c653f5aabf9b63ffbd1080">_MX6_UART_REGISTERS::Usr1</a></div><div class="ttdeci">ULONG Usr1</div><div class="ttdef"><b>Definition:</b> mx6uart.c:65</div></div>
@@ -862,7 +860,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keyword">volatile</span> <a class="code" href="struct___m_x6___u_a_r_t___r_e_g_i_s_t_e_r_s.html">PMX6_UART_REGISTERS</a> Registers;</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a>                        Usr2Reg;</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="keywordflow">if</span> ((Port == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>) || (Port-&gt;Address == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>))</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    <span class="keywordflow">if</span> ((Port == NULL) || (Port-&gt;Address == NULL))</div>
 <div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    {</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    }</div>
@@ -907,7 +905,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;{</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">if</span> ((Port == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>) || (Port-&gt;Address == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>))</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">if</span> ((Port == NULL) || (Port-&gt;Address == NULL))</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    {</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>

@@ -105,7 +105,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ae70136cdbb5cd8610eeb5200ebc2a14c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_length_disassembler_engine_8h.html#ae70136cdbb5cd8610eeb5200ebc2a14c">findByte</a> (const <a class="el" href="_script_engine_eval_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a> *arr, const size_t N, const <a class="el" href="_script_engine_eval_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a> <a class="el" href="09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1">x</a>)</td></tr>
+<tr class="memitem:ae70136cdbb5cd8610eeb5200ebc2a14c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_length_disassembler_engine_8h.html#ae70136cdbb5cd8610eeb5200ebc2a14c">findByte</a> (const <a class="el" href="_script_engine_eval_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a> *arr, const size_t N, const <a class="el" href="_script_engine_eval_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a> x)</td></tr>
 <tr class="separator:ae70136cdbb5cd8610eeb5200ebc2a14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cb27aa9bbb58191c485353fb40921ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_length_disassembler_engine_8h.html#a6cb27aa9bbb58191c485353fb40921ce">parseModRM</a> (<a class="el" href="_script_engine_eval_8h.html#ab27e9918b538ce9d8ca692479b375b6a">UINT8</a> **b, const <a class="el" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> addressPrefix)</td></tr>
 <tr class="separator:a6cb27aa9bbb58191c485353fb40921ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,14 +203,13 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; N; i++)</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (arr[i] == <a class="code" href="01-expressions-correct_8txt.html#a018057b1c00ec52bb8706a211609df02">x</a>)</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordflow">if</span> (arr[i] == x)</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        }</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    };</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="ttc" id="a01-expressions-correct_8txt_html_a018057b1c00ec52bb8706a211609df02"><div class="ttname"><a href="01-expressions-correct_8txt.html#a018057b1c00ec52bb8706a211609df02">x</a></div><div class="ttdeci">x</div><div class="ttdef"><b>Definition:</b> 01-expressions-correct.txt:2</div></div>
 <div class="ttc" id="a_script_engine_eval_8h_html_aa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:103</div></div>
 <div class="ttc" id="a_script_engine_eval_8h_html_aa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:102</div></div>
 </div><!-- fragment -->

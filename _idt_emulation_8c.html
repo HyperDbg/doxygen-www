@@ -373,7 +373,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <a class="code" href="_attaching_8c.html#a05cf006bba66d6b9df006deff64e5699">AttachingCheckPageFaultsWithUserDebugger</a>(CurrentProcessorIndex,</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                                     GuestRegs,</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                                                     InterruptExit,</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                                                     <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                                                     NULL,</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                                                     ErrorCode))</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        {</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            <span class="comment">//</span></div>
@@ -385,7 +385,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <span class="comment">// The #pf is not related to our debugger</span></div>
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            <span class="comment">//</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <a class="code" href="_idt_emulation_8c.html#abfb0c96c5173ff395f87b9cc485a25f9">IdtEmulationHandlePageFaults</a>(CurrentProcessorIndex, InterruptExit, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, ErrorCode);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <a class="code" href="_idt_emulation_8c.html#abfb0c96c5173ff395f87b9cc485a25f9">IdtEmulationHandlePageFaults</a>(CurrentProcessorIndex, InterruptExit, NULL, ErrorCode);</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        }</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keywordflow">break</span>;</div>
@@ -428,7 +428,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code" href="_ud_8c.html#a62081a4b5b5063edcc90904360f4d6b2">UdCheckAndHandleBreakpointsAndDebugBreaks</a>(CurrentProcessorIndex,</div>
 <div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                                                           GuestRegs,</div>
 <div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                                                           <a class="code" href="_definition_8h.html#a6e2be89205e735ebae644cf4850ac21ba369b24d73385054023d8aba1a5d3c8b5">DEBUGGEE_PAUSING_REASON_DEBUGGEE_GENERAL_DEBUG_BREAK</a>,</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                                                           <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>))</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                                                           NULL))</div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        {</div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            <span class="comment">// if the above function returns true, no need for further action</span></div>
@@ -501,7 +501,6 @@ Functions</h2></td></tr>
 <div class="ttc" id="a_script_engine_eval_8h_html_af632da489ebc3708ec3ab6791ee53fa4"><div class="ttname"><a href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a></div><div class="ttdeci">unsigned long ULONG</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:88</div></div>
 <div class="ttc" id="a_ud_8c_html_a62081a4b5b5063edcc90904360f4d6b2"><div class="ttname"><a href="_ud_8c.html#a62081a4b5b5063edcc90904360f4d6b2">UdCheckAndHandleBreakpointsAndDebugBreaks</a></div><div class="ttdeci">BOOLEAN UdCheckAndHandleBreakpointsAndDebugBreaks(UINT32 CurrentCore, PGUEST_REGS GuestRegs, DEBUGGEE_PAUSING_REASON Reason, PDEBUGGER_TRIGGERED_EVENT_DETAILS EventDetails)</div><div class="ttdoc">Handle #DBs and #BPs for kernel debugger.</div><div class="ttdef"><b>Definition:</b> Ud.c:466</div></div>
 <div class="ttc" id="a_vmx_broadcast_8c_html_a593d7b6e3a625701b3491c37445a769b"><div class="ttname"><a href="_vmx_broadcast_8c.html#a593d7b6e3a625701b3491c37445a769b">VmxBroadcastNmiHandler</a></div><div class="ttdeci">BOOLEAN VmxBroadcastNmiHandler(UINT32 CurrentCoreIndex, PGUEST_REGS GuestRegs, BOOLEAN IsOnVmxNmiHandler)</div><div class="ttdoc">Handle broadcast NMIs in vmx-root mode.</div><div class="ttdef"><b>Definition:</b> VmxBroadcast.c:181</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 <div class="ttc" id="astruct___d_e_b_u_g_g_e_e___i_n_s_t_r_u_m_e_n_t_a_t_i_o_n___s_t_e_p___i_n___t_r_a_c_e_html_a5b8381b83e0048014ed3784497a64ebf"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___i_n_s_t_r_u_m_e_n_t_a_t_i_o_n___s_t_e_p___i_n___t_r_a_c_e.html#a5b8381b83e0048014ed3784497a64ebf">_DEBUGGEE_INSTRUMENTATION_STEP_IN_TRACE::WaitForInstrumentationStepInMtf</a></div><div class="ttdeci">BOOLEAN WaitForInstrumentationStepInMtf</div><div class="ttdef"><b>Definition:</b> Debugger.h:95</div></div>
 <div class="ttc" id="astruct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s_html_a828cb9812e870d901c9397930c02a451"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_e___p_r_o_c_e_s_s___o_r___t_h_r_e_a_d___t_r_a_c_i_n_g___d_e_t_a_i_l_s.html#a828cb9812e870d901c9397930c02a451">_DEBUGGEE_PROCESS_OR_THREAD_TRACING_DETAILS::DebugRegisterInterceptionState</a></div><div class="ttdeci">BOOLEAN DebugRegisterInterceptionState</div><div class="ttdef"><b>Definition:</b> Debugger.h:116</div></div>
 <div class="ttc" id="astruct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e_html_a11c7d4793fef811ec81104af8b3f8fcd"><div class="ttname"><a href="struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a11c7d4793fef811ec81104af8b3f8fcd">_PROCESSOR_DEBUGGING_STATE::EnableExternalInterruptsOnContinueMtf</a></div><div class="ttdeci">BOOLEAN EnableExternalInterruptsOnContinueMtf</div><div class="ttdef"><b>Definition:</b> Debugger.h:146</div></div>
@@ -737,7 +736,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;        <span class="comment">// Find an empty space</span></div>
 <div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;        <span class="keywordflow">if</span> (CurrentGuestState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a7123e9d39156e57b44e62065ebe2fc9d">PendingExternalInterrupts</a>[i] != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;        <span class="keywordflow">if</span> (CurrentGuestState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a7123e9d39156e57b44e62065ebe2fc9d">PendingExternalInterrupts</a>[i] != NULL)</div>
 <div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;        {</div>
 <div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;            <span class="comment">// Save it for re-injection (interrupt-window exiting)</span></div>
@@ -747,7 +746,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;            <span class="comment">// Free the entry</span></div>
 <div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;            <span class="comment">//</span></div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;            CurrentGuestState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a7123e9d39156e57b44e62065ebe2fc9d">PendingExternalInterrupts</a>[i] = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;            CurrentGuestState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a7123e9d39156e57b44e62065ebe2fc9d">PendingExternalInterrupts</a>[i] = NULL;</div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;            <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;        }</div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;    }</div>
@@ -892,7 +891,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    __vmx_vmread(VMCS_VMEXIT_INTERRUPTION_ERROR_CODE, &amp;PageFaultCode);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="script-engine_2header_2script-engine_8h.html#a3f7c5b71d899e923be0a80d4ac7902fe">Address</a> == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="script-engine_2header_2script-engine_8h.html#a3f7c5b71d899e923be0a80d4ac7902fe">Address</a> == NULL)</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a> PageFaultAddress = 0;</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
@@ -991,7 +990,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        <span class="comment">// Find an empty space</span></div>
 <div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <span class="keywordflow">if</span> (CurrentGuestState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a7123e9d39156e57b44e62065ebe2fc9d">PendingExternalInterrupts</a>[i] == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;        <span class="keywordflow">if</span> (CurrentGuestState-&gt;<a class="code" href="struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a7123e9d39156e57b44e62065ebe2fc9d">PendingExternalInterrupts</a>[i] == NULL)</div>
 <div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        {</div>
 <div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            <span class="comment">// Save it for future re-injection (interrupt-window exiting)</span></div>

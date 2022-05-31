@@ -286,7 +286,7 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    WSADATA          wsaData;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    SOCKET           ConnectSocket = INVALID_SOCKET;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">struct </span>addrinfo *result = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, *ptr = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, hints;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">struct </span>addrinfo *result = NULL, *ptr = NULL, hints;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">int</span>              iResult;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">//</span></div>
@@ -318,7 +318,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// Attempt to connect to an address until one succeeds</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">for</span> (ptr = result; ptr != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>; ptr = ptr-&gt;ai_next)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">for</span> (ptr = result; ptr != NULL; ptr = ptr-&gt;ai_next)</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="comment">// Create a SOCKET for connecting to server</span></div>
@@ -361,7 +361,6 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> 0;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 <div class="ttc" id="ahprdbgctrl_8cpp_html_a21c3c06b34d716c4680695c2b28127da"><div class="ttname"><a href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a></div><div class="ttdeci">VOID ShowMessages(const char *Fmt,...)</div><div class="ttdoc">Show messages.</div><div class="ttdef"><b>Definition:</b> hprdbgctrl.cpp:51</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -614,7 +613,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    SOCKET ListenSocket = INVALID_SOCKET;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    SOCKET ClientSocket = INVALID_SOCKET;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">struct </span>addrinfo * result = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">struct </span>addrinfo * result = NULL;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">struct </span>addrinfo   hints;</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//</span></div>
@@ -636,7 +635,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// Resolve the server address and port</span></div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    iResult = getaddrinfo(<a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, Port, &amp;hints, &amp;result);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    iResult = getaddrinfo(NULL, Port, &amp;hints, &amp;result);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (iResult != 0)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;err, getaddrinfo failed (%x)\n&quot;</span>, iResult);</div>
@@ -1050,9 +1049,9 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="comment">// Create an event to show signature when the messages finished</span></div>
 <div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="remote-connection_8cpp.html#a91a4d806a2286f4fbd9e3bbd2d3843cd">g_EndOfMessageReceivedEvent</a> == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="remote-connection_8cpp.html#a91a4d806a2286f4fbd9e3bbd2d3843cd">g_EndOfMessageReceivedEvent</a> == NULL)</div>
 <div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        {</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            <a class="code" href="remote-connection_8cpp.html#a91a4d806a2286f4fbd9e3bbd2d3843cd">g_EndOfMessageReceivedEvent</a> = CreateEvent(<a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;            <a class="code" href="remote-connection_8cpp.html#a91a4d806a2286f4fbd9e3bbd2d3843cd">g_EndOfMessageReceivedEvent</a> = CreateEvent(NULL, <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>, NULL);</div>
 <div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        }</div>
 <div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160; </div>
 <div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <span class="comment">//</span></div>
@@ -1061,10 +1060,10 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="comment">// Listen for upcoming messages</span></div>
 <div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        <a class="code" href="remote-connection_8cpp.html#a4db275a2aad58e37c05bebc95258a3b5">g_RemoteDebuggeeListeningThread</a> = CreateThread(</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            NULL,</div>
 <div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            0,</div>
 <div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;            <a class="code" href="remote-connection_8cpp.html#a212885a62f5bfda070ea3bbb059fa51d">RemoteConnectionThreadListeningToDebuggee</a>,</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            NULL,</div>
 <div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;            0,</div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;            &amp;ThreadId);</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>

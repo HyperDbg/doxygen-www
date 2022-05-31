@@ -531,7 +531,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> (NT_SUCCESS(Status))</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        Status = ObOpenObjectByPointer(EProcess, 0, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, 0, 0, KernelMode, &amp;ProcessHandle);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        Status = ObOpenObjectByPointer(EProcess, 0, NULL, 0, 0, KernelMode, &amp;ProcessHandle);</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">if</span> (!NT_SUCCESS(Status))</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {</div>
@@ -549,7 +549,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_user_access_8h.html#a114772f502575fa8e6ff36c9fab0bf3e">g_ZwQueryInformationProcess</a> == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_user_access_8h.html#a114772f502575fa8e6ff36c9fab0bf3e">g_ZwQueryInformationProcess</a> == NULL)</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
@@ -559,7 +559,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    Status = <a class="code" href="_user_access_8h.html#a114772f502575fa8e6ff36c9fab0bf3e">g_ZwQueryInformationProcess</a>(ProcessHandle,</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                         ProcessImageFileName,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                         <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, <span class="comment">// Buffer</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                         NULL, <span class="comment">// Buffer</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                         0,    <span class="comment">// Buffer size</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                         &amp;ReturnedLength);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
@@ -587,7 +587,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    Buffer = ExAllocatePoolWithTag(NonPagedPool, ReturnedLength, <a class="code" href="hprdbghv_2header_2common_2common_8h.html#ab7f91e71074ce1488e61869adbc44d8d">POOLTAG</a>);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">if</span> (Buffer == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">if</span> (Buffer == NULL)</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
@@ -615,7 +615,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        ProcessImageName-&gt;<a class="code" href="struct___u_n_i_c_o_d_e___s_t_r_i_n_g.html#ae0487ecc173e55918bcee834bd3d107b">MaximumLength</a> = SizeOfImageNameToBeAllocated;</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        ProcessImageName-&gt;<a class="code" href="struct___u_n_i_c_o_d_e___s_t_r_i_n_g.html#afbc2ba2b7be88d0118e683a2eb289795">Buffer</a>        = (PWSTR)ExAllocatePoolWithTag(NonPagedPool, SizeOfImageNameToBeAllocated, <a class="code" href="hprdbghv_2header_2common_2common_8h.html#ab7f91e71074ce1488e61869adbc44d8d">POOLTAG</a>);</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">if</span> (ProcessImageName-&gt;<a class="code" href="struct___u_n_i_c_o_d_e___s_t_r_i_n_g.html#afbc2ba2b7be88d0118e683a2eb289795">Buffer</a> == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">if</span> (ProcessImageName-&gt;<a class="code" href="struct___u_n_i_c_o_d_e___s_t_r_i_n_g.html#afbc2ba2b7be88d0118e683a2eb289795">Buffer</a> == NULL)</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        {</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        }</div>
@@ -652,7 +652,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="acasting_8cpp_html_ac3cdef6ef4b9dc0593a4418019f3cbda"><div class="ttname"><a href="casting_8cpp.html#ac3cdef6ef4b9dc0593a4418019f3cbda">UNICODE_STRING</a></div><div class="ttdeci">struct _UNICODE_STRING UNICODE_STRING</div></div>
 <div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_a459b19922fecfbb9438dd56b66930d16"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#a459b19922fecfbb9438dd56b66930d16">LogError</a></div><div class="ttdeci">#define LogError(format,...)</div><div class="ttdoc">Log in the case of error.</div><div class="ttdef"><b>Definition:</b> Common.h:442</div></div>
 <div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_ab7f91e71074ce1488e61869adbc44d8d"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#ab7f91e71074ce1488e61869adbc44d8d">POOLTAG</a></div><div class="ttdeci">#define POOLTAG</div><div class="ttdoc">Pool tag.</div><div class="ttdef"><b>Definition:</b> Common.h:223</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 <div class="ttc" id="astruct___u_n_i_c_o_d_e___s_t_r_i_n_g_html"><div class="ttname"><a href="struct___u_n_i_c_o_d_e___s_t_r_i_n_g.html">_UNICODE_STRING</a></div><div class="ttdef"><b>Definition:</b> casting.cpp:25</div></div>
 <div class="ttc" id="astruct___u_n_i_c_o_d_e___s_t_r_i_n_g_html_a3ebb6a85103954fd7fc325ba30c54008"><div class="ttname"><a href="struct___u_n_i_c_o_d_e___s_t_r_i_n_g.html#a3ebb6a85103954fd7fc325ba30c54008">_UNICODE_STRING::Length</a></div><div class="ttdeci">USHORT Length</div><div class="ttdef"><b>Definition:</b> casting.cpp:26</div></div>
 <div class="ttc" id="astruct___u_n_i_c_o_d_e___s_t_r_i_n_g_html_ae0487ecc173e55918bcee834bd3d107b"><div class="ttname"><a href="struct___u_n_i_c_o_d_e___s_t_r_i_n_g.html#ae0487ecc173e55918bcee834bd3d107b">_UNICODE_STRING::MaximumLength</a></div><div class="ttdeci">USHORT MaximumLength</div><div class="ttdef"><b>Definition:</b> casting.cpp:27</div></div>
@@ -679,8 +678,8 @@ Variables</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>BOOLEAN </dd></dl>
 <div class="fragment"><div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;{</div>
 <div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;    <a class="code" href="struct___u_s_e_r_m_o_d_e___d_e_b_u_g_g_i_n_g___p_r_o_c_e_s_s___d_e_t_a_i_l_s.html">PUSERMODE_DEBUGGING_PROCESS_DETAILS</a> ProcessDebuggingDetail;</div>
-<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>                              BaseAddress = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
-<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>                              Entrypoint  = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>                              BaseAddress = NULL;</div>
+<div class="line"><a name="l00838"></a><span class="lineno">  838</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>                              Entrypoint  = NULL;</div>
 <div class="line"><a name="l00839"></a><span class="lineno">  839</span>&#160; </div>
 <div class="line"><a name="l00840"></a><span class="lineno">  840</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00841"></a><span class="lineno">  841</span>&#160;    <span class="comment">// Find the thread debugging detail structure</span></div>
@@ -691,12 +690,12 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00846"></a><span class="lineno">  846</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00847"></a><span class="lineno">  847</span>&#160;    <span class="comment">// Check if we find the debugging detail of the thread or not</span></div>
 <div class="line"><a name="l00848"></a><span class="lineno">  848</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;    <span class="keywordflow">if</span> (ProcessDebuggingDetail == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00849"></a><span class="lineno">  849</span>&#160;    <span class="keywordflow">if</span> (ProcessDebuggingDetail == NULL)</div>
 <div class="line"><a name="l00850"></a><span class="lineno">  850</span>&#160;    {</div>
 <div class="line"><a name="l00851"></a><span class="lineno">  851</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00852"></a><span class="lineno">  852</span>&#160;    }</div>
 <div class="line"><a name="l00853"></a><span class="lineno">  853</span>&#160; </div>
-<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;    <span class="keywordflow">if</span> (ProcessDebuggingDetail-&gt;<a class="code" href="struct___u_s_e_r_m_o_d_e___d_e_b_u_g_g_i_n_g___p_r_o_c_e_s_s___d_e_t_a_i_l_s.html#aefb16ed28844461dfa42f40f062015b0">PebAddressToMonitor</a> != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a> &amp;&amp;</div>
+<div class="line"><a name="l00854"></a><span class="lineno">  854</span>&#160;    <span class="keywordflow">if</span> (ProcessDebuggingDetail-&gt;<a class="code" href="struct___u_s_e_r_m_o_d_e___d_e_b_u_g_g_i_n_g___p_r_o_c_e_s_s___d_e_t_a_i_l_s.html#aefb16ed28844461dfa42f40f062015b0">PebAddressToMonitor</a> != NULL &amp;&amp;</div>
 <div class="line"><a name="l00855"></a><span class="lineno">  855</span>&#160;        <a class="code" href="_user_access_8c.html#a6abf9adc827f0d919208624917c45711">UserAccessGetBaseAndEntrypointOfMainModuleIfLoadedInVmxRoot</a>(ProcessDebuggingDetail-&gt;<a class="code" href="struct___u_s_e_r_m_o_d_e___d_e_b_u_g_g_i_n_g___p_r_o_c_e_s_s___d_e_t_a_i_l_s.html#aefb16ed28844461dfa42f40f062015b0">PebAddressToMonitor</a>,</div>
 <div class="line"><a name="l00856"></a><span class="lineno">  856</span>&#160;                                                                    ProcessDebuggingDetail-&gt;<a class="code" href="struct___u_s_e_r_m_o_d_e___d_e_b_u_g_g_i_n_g___p_r_o_c_e_s_s___d_e_t_a_i_l_s.html#ac1a80680491ceb043b754ab5e9a7eec8">Is32Bit</a>,</div>
 <div class="line"><a name="l00857"></a><span class="lineno">  857</span>&#160;                                                                    &amp;BaseAddress,</div>
@@ -901,7 +900,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160; </div>
 <div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    ObDereferenceObject(SourceProcess);</div>
 <div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160; </div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_user_access_8h.html#a7e5eee7c3615d4c3a4b2e080eebf3046">g_PsGetProcessWow64Process</a> == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a> || <a class="code" href="_user_access_8h.html#a2e58e91ee1d41c311736e026efcfe134">g_PsGetProcessPeb</a> == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_user_access_8h.html#a7e5eee7c3615d4c3a4b2e080eebf3046">g_PsGetProcessWow64Process</a> == NULL || <a class="code" href="_user_access_8h.html#a2e58e91ee1d41c311736e026efcfe134">g_PsGetProcessPeb</a> == NULL)</div>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    {</div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    }</div>

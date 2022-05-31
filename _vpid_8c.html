@@ -153,7 +153,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
 <div class="fragment"><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    INVVPID_DESCRIPTOR * TargetDescriptor = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    INVVPID_DESCRIPTOR * TargetDescriptor = NULL;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    INVVPID_DESCRIPTOR   ZeroDescriptor   = {0};</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">if</span> (!Descriptor)</div>
@@ -168,7 +168,6 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="_inline_asm_8h.html#af3de57bb4cbb2ce591f7817248e64bfe">AsmInvvpid</a>(Type, TargetDescriptor);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
 <div class="ttc" id="a_inline_asm_8h_html_af3de57bb4cbb2ce591f7817248e64bfe"><div class="ttname"><a href="_inline_asm_8h.html#af3de57bb4cbb2ce591f7817248e64bfe">AsmInvvpid</a></div><div class="ttdeci">unsigned char AsmInvvpid(unsigned long Type, void *Descriptors)</div><div class="ttdoc">INVVPID wrapper.</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -190,7 +189,7 @@ Functions</h2></td></tr>
 <p>INVVPID All Contexts. </p>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
 <div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="_vpid_8c.html#aa0ce3f441dc04a2bad0601bb7067273b">VpidInvvpid</a>(InvvpidAllContext, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="_vpid_8c.html#aa0ce3f441dc04a2bad0601bb7067273b">VpidInvvpid</a>(InvvpidAllContext, NULL);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 <div class="ttc" id="a_vpid_8c_html_aa0ce3f441dc04a2bad0601bb7067273b"><div class="ttname"><a href="_vpid_8c.html#aa0ce3f441dc04a2bad0601bb7067273b">VpidInvvpid</a></div><div class="ttdeci">_Use_decl_annotations_ VOID VpidInvvpid(INVVPID_TYPE Type, INVVPID_DESCRIPTOR *Descriptor)</div><div class="ttdoc">INVVPID Instruction.</div><div class="ttdef"><b>Definition:</b> Vpid.c:23</div></div>
 </div><!-- fragment -->

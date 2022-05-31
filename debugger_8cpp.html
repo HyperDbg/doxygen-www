@@ -200,18 +200,18 @@ Variables</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>UINT64 Base address of ntoskrnl.exe </dd></dl>
 <div class="fragment"><div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;{</div>
 <div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    NTSTATUS             Status                  = STATUS_UNSUCCESSFUL;</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>               NtoskrnlBase            = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    PRTL_PROCESS_MODULES Modules                 = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>               NtoskrnlBase            = NULL;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    PRTL_PROCESS_MODULES Modules                 = NULL;</div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a>                SysModuleInfoBufferSize = 0;</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="comment">// Get required size of &quot;RTL_PROCESS_MODULES&quot; buffer</span></div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    Status = NtQuerySystemInformation(<a class="code" href="_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0a38627594543f01525bf40aa8e09607bd">SystemModuleInformation</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, &amp;SysModuleInfoBufferSize);</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    Status = NtQuerySystemInformation(<a class="code" href="_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0a38627594543f01525bf40aa8e09607bd">SystemModuleInformation</a>, NULL, NULL, &amp;SysModuleInfoBufferSize);</div>
 <div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160; </div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    Modules = (PRTL_PROCESS_MODULES)malloc(SysModuleInfoBufferSize);</div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    NtQuerySystemInformation(<a class="code" href="_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0a38627594543f01525bf40aa8e09607bd">SystemModuleInformation</a>, Modules, SysModuleInfoBufferSize, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    NtQuerySystemInformation(<a class="code" href="_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0a38627594543f01525bf40aa8e09607bd">SystemModuleInformation</a>, Modules, SysModuleInfoBufferSize, NULL);</div>
 <div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
 <div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; Modules-&gt;NumberOfModules; i++)</div>
 <div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    {</div>
@@ -231,7 +231,6 @@ Variables</h2></td></tr>
 <div class="ttc" id="a_hooks_8h_html_ad5d815b48e8f4da1ef2eb7a2f18a54e0a38627594543f01525bf40aa8e09607bd"><div class="ttname"><a href="_hooks_8h.html#ad5d815b48e8f4da1ef2eb7a2f18a54e0a38627594543f01525bf40aa8e09607bd">SystemModuleInformation</a></div><div class="ttdeci">@ SystemModuleInformation</div><div class="ttdef"><b>Definition:</b> Hooks.h:125</div></div>
 <div class="ttc" id="a_script_engine_eval_8h_html_aae17ebb9ef7279d026817fb22f8aebe9"><div class="ttname"><a href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a></div><div class="ttdeci">unsigned __int64 UINT64</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:72</div></div>
 <div class="ttc" id="a_script_engine_eval_8h_html_af632da489ebc3708ec3ab6791ee53fa4"><div class="ttname"><a href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a></div><div class="ttdeci">unsigned long ULONG</div><div class="ttdef"><b>Definition:</b> ScriptEngineEval.h:88</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -270,7 +269,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;                        <a class="code" href="_definition_8h.html#a27a31a4e870cfc3c2b6642ed08eb8b7b">SIZEOF_DEBUGGER_PAUSE_PACKET_RECEIVED</a>, <span class="comment">// Length of output</span></div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;                                                               <span class="comment">// buffer in bytes.</span></div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;                        &amp;ReturnedLength,                       <span class="comment">// Bytes placed in buffer.</span></div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>                                   <span class="comment">// synchronous call</span></div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;                        NULL                                   <span class="comment">// synchronous call</span></div>
 <div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;        );</div>
 <div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160; </div>
 <div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    <span class="keywordflow">if</span> (!StatusIoctl)</div>
@@ -353,9 +352,9 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <div class="fragment"><div class="line"><a name="l02029"></a><span class="lineno"> 2029</span>&#160;{</div>
-<div class="line"><a name="l02030"></a><span class="lineno"> 2030</span>&#160;    <span class="keywordflow">if</span> (Event != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02030"></a><span class="lineno"> 2030</span>&#160;    <span class="keywordflow">if</span> (Event != NULL)</div>
 <div class="line"><a name="l02031"></a><span class="lineno"> 2031</span>&#160;    {</div>
-<div class="line"><a name="l02032"></a><span class="lineno"> 2032</span>&#160;        <span class="keywordflow">if</span> (Event-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___e_v_e_n_t___d_e_t_a_i_l.html#af140cf4ec65f312bb8fb705b68a5a5d3">CommandStringBuffer</a> != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02032"></a><span class="lineno"> 2032</span>&#160;        <span class="keywordflow">if</span> (Event-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___e_v_e_n_t___d_e_t_a_i_l.html#af140cf4ec65f312bb8fb705b68a5a5d3">CommandStringBuffer</a> != NULL)</div>
 <div class="line"><a name="l02033"></a><span class="lineno"> 2033</span>&#160;        {</div>
 <div class="line"><a name="l02034"></a><span class="lineno"> 2034</span>&#160;            free(Event-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___e_v_e_n_t___d_e_t_a_i_l.html#af140cf4ec65f312bb8fb705b68a5a5d3">CommandStringBuffer</a>);</div>
 <div class="line"><a name="l02035"></a><span class="lineno"> 2035</span>&#160;        }</div>
@@ -363,15 +362,15 @@ Variables</h2></td></tr>
 <div class="line"><a name="l02037"></a><span class="lineno"> 2037</span>&#160;        free(Event);</div>
 <div class="line"><a name="l02038"></a><span class="lineno"> 2038</span>&#160;    }</div>
 <div class="line"><a name="l02039"></a><span class="lineno"> 2039</span>&#160; </div>
-<div class="line"><a name="l02040"></a><span class="lineno"> 2040</span>&#160;    <span class="keywordflow">if</span> (ActionBreakToDebugger != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02040"></a><span class="lineno"> 2040</span>&#160;    <span class="keywordflow">if</span> (ActionBreakToDebugger != NULL)</div>
 <div class="line"><a name="l02041"></a><span class="lineno"> 2041</span>&#160;    {</div>
 <div class="line"><a name="l02042"></a><span class="lineno"> 2042</span>&#160;        free(ActionBreakToDebugger);</div>
 <div class="line"><a name="l02043"></a><span class="lineno"> 2043</span>&#160;    }</div>
-<div class="line"><a name="l02044"></a><span class="lineno"> 2044</span>&#160;    <span class="keywordflow">if</span> (ActionCustomCode != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02044"></a><span class="lineno"> 2044</span>&#160;    <span class="keywordflow">if</span> (ActionCustomCode != NULL)</div>
 <div class="line"><a name="l02045"></a><span class="lineno"> 2045</span>&#160;    {</div>
 <div class="line"><a name="l02046"></a><span class="lineno"> 2046</span>&#160;        free(ActionCustomCode);</div>
 <div class="line"><a name="l02047"></a><span class="lineno"> 2047</span>&#160;    }</div>
-<div class="line"><a name="l02048"></a><span class="lineno"> 2048</span>&#160;    <span class="keywordflow">if</span> (ActionScript != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02048"></a><span class="lineno"> 2048</span>&#160;    <span class="keywordflow">if</span> (ActionScript != NULL)</div>
 <div class="line"><a name="l02049"></a><span class="lineno"> 2049</span>&#160;    {</div>
 <div class="line"><a name="l02050"></a><span class="lineno"> 2050</span>&#160;        free(ActionScript);</div>
 <div class="line"><a name="l02051"></a><span class="lineno"> 2051</span>&#160;    }</div>
@@ -928,10 +927,10 @@ Variables</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>BOOLEAN If this function returns true then it means that there was no error in parsing the general event details </dd></dl>
 <div class="fragment"><div class="line"><a name="l02088"></a><span class="lineno"> 2088</span>&#160;{</div>
 <div class="line"><a name="l02089"></a><span class="lineno"> 2089</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>                        Result                         = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l02090"></a><span class="lineno"> 2090</span>&#160;    <a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___e_v_e_n_t___d_e_t_a_i_l.html">PDEBUGGER_GENERAL_EVENT_DETAIL</a> TempEvent                      = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
-<div class="line"><a name="l02091"></a><span class="lineno"> 2091</span>&#160;    <a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___a_c_t_i_o_n.html">PDEBUGGER_GENERAL_ACTION</a>       TempActionBreak                = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
-<div class="line"><a name="l02092"></a><span class="lineno"> 2092</span>&#160;    <a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___a_c_t_i_o_n.html">PDEBUGGER_GENERAL_ACTION</a>       TempActionScript               = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
-<div class="line"><a name="l02093"></a><span class="lineno"> 2093</span>&#160;    <a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___a_c_t_i_o_n.html">PDEBUGGER_GENERAL_ACTION</a>       TempActionCustomCode           = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l02090"></a><span class="lineno"> 2090</span>&#160;    <a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___e_v_e_n_t___d_e_t_a_i_l.html">PDEBUGGER_GENERAL_EVENT_DETAIL</a> TempEvent                      = NULL;</div>
+<div class="line"><a name="l02091"></a><span class="lineno"> 2091</span>&#160;    <a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___a_c_t_i_o_n.html">PDEBUGGER_GENERAL_ACTION</a>       TempActionBreak                = NULL;</div>
+<div class="line"><a name="l02092"></a><span class="lineno"> 2092</span>&#160;    <a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___a_c_t_i_o_n.html">PDEBUGGER_GENERAL_ACTION</a>       TempActionScript               = NULL;</div>
+<div class="line"><a name="l02093"></a><span class="lineno"> 2093</span>&#160;    <a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___a_c_t_i_o_n.html">PDEBUGGER_GENERAL_ACTION</a>       TempActionCustomCode           = NULL;</div>
 <div class="line"><a name="l02094"></a><span class="lineno"> 2094</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                         LengthOfCustomCodeActionBuffer = 0;</div>
 <div class="line"><a name="l02095"></a><span class="lineno"> 2095</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                         LengthOfScriptActionBuffer     = 0;</div>
 <div class="line"><a name="l02096"></a><span class="lineno"> 2096</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                         LengthOfBreakActionBuffer      = 0;</div>
@@ -1290,7 +1289,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l02449"></a><span class="lineno"> 2449</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l02450"></a><span class="lineno"> 2450</span>&#160;    <span class="comment">// Check if buffer is availabe</span></div>
 <div class="line"><a name="l02451"></a><span class="lineno"> 2451</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l02452"></a><span class="lineno"> 2452</span>&#160;    <span class="keywordflow">if</span> (TempEvent == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02452"></a><span class="lineno"> 2452</span>&#160;    <span class="keywordflow">if</span> (TempEvent == NULL)</div>
 <div class="line"><a name="l02453"></a><span class="lineno"> 2453</span>&#160;    {</div>
 <div class="line"><a name="l02454"></a><span class="lineno"> 2454</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;err, allocation error\n&quot;</span>);</div>
 <div class="line"><a name="l02455"></a><span class="lineno"> 2455</span>&#160;        *ReasonForErrorInParsing = <a class="code" href="_definition_8h.html#a0f0e5844704ac7091b843c30f3f85059ae151c9ed4f3300c9e2be7e85d039ab08">DEBUGGER_EVENT_PARSING_ERROR_CAUSE_ALLOCATION_ERROR</a>;</div>
@@ -1499,15 +1498,15 @@ Variables</h2></td></tr>
 <div class="line"><a name="l02658"></a><span class="lineno"> 2658</span>&#160;                <span class="comment">//</span></div>
 <div class="line"><a name="l02659"></a><span class="lineno"> 2659</span>&#160;                <span class="comment">// Set the specific requested buffer size</span></div>
 <div class="line"><a name="l02660"></a><span class="lineno"> 2660</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l02661"></a><span class="lineno"> 2661</span>&#160;                <span class="keywordflow">if</span> (TempActionBreak != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02661"></a><span class="lineno"> 2661</span>&#160;                <span class="keywordflow">if</span> (TempActionBreak != NULL)</div>
 <div class="line"><a name="l02662"></a><span class="lineno"> 2662</span>&#160;                {</div>
 <div class="line"><a name="l02663"></a><span class="lineno"> 2663</span>&#160;                    TempActionBreak-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___a_c_t_i_o_n.html#ab3f9bb2526bd1163e85e2e3326925e74">PreAllocatedBuffer</a> = RequestBuffer;</div>
 <div class="line"><a name="l02664"></a><span class="lineno"> 2664</span>&#160;                }</div>
-<div class="line"><a name="l02665"></a><span class="lineno"> 2665</span>&#160;                <span class="keywordflow">if</span> (TempActionScript != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02665"></a><span class="lineno"> 2665</span>&#160;                <span class="keywordflow">if</span> (TempActionScript != NULL)</div>
 <div class="line"><a name="l02666"></a><span class="lineno"> 2666</span>&#160;                {</div>
 <div class="line"><a name="l02667"></a><span class="lineno"> 2667</span>&#160;                    TempActionScript-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___a_c_t_i_o_n.html#ab3f9bb2526bd1163e85e2e3326925e74">PreAllocatedBuffer</a> = RequestBuffer;</div>
 <div class="line"><a name="l02668"></a><span class="lineno"> 2668</span>&#160;                }</div>
-<div class="line"><a name="l02669"></a><span class="lineno"> 2669</span>&#160;                <span class="keywordflow">if</span> (TempActionCustomCode != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02669"></a><span class="lineno"> 2669</span>&#160;                <span class="keywordflow">if</span> (TempActionCustomCode != NULL)</div>
 <div class="line"><a name="l02670"></a><span class="lineno"> 2670</span>&#160;                {</div>
 <div class="line"><a name="l02671"></a><span class="lineno"> 2671</span>&#160;                    TempActionCustomCode-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___a_c_t_i_o_n.html#ab3f9bb2526bd1163e85e2e3326925e74">PreAllocatedBuffer</a> = RequestBuffer;</div>
 <div class="line"><a name="l02672"></a><span class="lineno"> 2672</span>&#160;                }</div>
@@ -1690,7 +1689,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l02849"></a><span class="lineno"> 2849</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l02850"></a><span class="lineno"> 2850</span>&#160;    <span class="comment">// It&#39;s not possible to break to debugger in vmi-mode</span></div>
 <div class="line"><a name="l02851"></a><span class="lineno"> 2851</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l02852"></a><span class="lineno"> 2852</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="debugger_8cpp.html#abefaa871a249a20e1e19ce893e400774">g_IsSerialConnectedToRemoteDebuggee</a> &amp;&amp; TempActionBreak != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02852"></a><span class="lineno"> 2852</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="debugger_8cpp.html#abefaa871a249a20e1e19ce893e400774">g_IsSerialConnectedToRemoteDebuggee</a> &amp;&amp; TempActionBreak != NULL)</div>
 <div class="line"><a name="l02853"></a><span class="lineno"> 2853</span>&#160;    {</div>
 <div class="line"><a name="l02854"></a><span class="lineno"> 2854</span>&#160;        <a class="code" href="hprdbgctrl_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(</div>
 <div class="line"><a name="l02855"></a><span class="lineno"> 2855</span>&#160;            <span class="stringliteral">&quot;err, it&#39;s not possible to break to the debugger in VMI Mode. &quot;</span></div>
@@ -1718,15 +1717,15 @@ Variables</h2></td></tr>
 <div class="line"><a name="l02877"></a><span class="lineno"> 2877</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l02878"></a><span class="lineno"> 2878</span>&#160;    <span class="comment">// Set the specific requested immediate message passing</span></div>
 <div class="line"><a name="l02879"></a><span class="lineno"> 2879</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l02880"></a><span class="lineno"> 2880</span>&#160;    <span class="keywordflow">if</span> (TempActionBreak != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02880"></a><span class="lineno"> 2880</span>&#160;    <span class="keywordflow">if</span> (TempActionBreak != NULL)</div>
 <div class="line"><a name="l02881"></a><span class="lineno"> 2881</span>&#160;    {</div>
 <div class="line"><a name="l02882"></a><span class="lineno"> 2882</span>&#160;        TempActionBreak-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___a_c_t_i_o_n.html#aca35c4eaff757f6297c82840dfbe886d">ImmediateMessagePassing</a> = ImmediateMessagePassing;</div>
 <div class="line"><a name="l02883"></a><span class="lineno"> 2883</span>&#160;    }</div>
-<div class="line"><a name="l02884"></a><span class="lineno"> 2884</span>&#160;    <span class="keywordflow">if</span> (TempActionScript != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02884"></a><span class="lineno"> 2884</span>&#160;    <span class="keywordflow">if</span> (TempActionScript != NULL)</div>
 <div class="line"><a name="l02885"></a><span class="lineno"> 2885</span>&#160;    {</div>
 <div class="line"><a name="l02886"></a><span class="lineno"> 2886</span>&#160;        TempActionScript-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___a_c_t_i_o_n.html#aca35c4eaff757f6297c82840dfbe886d">ImmediateMessagePassing</a> = ImmediateMessagePassing;</div>
 <div class="line"><a name="l02887"></a><span class="lineno"> 2887</span>&#160;    }</div>
-<div class="line"><a name="l02888"></a><span class="lineno"> 2888</span>&#160;    <span class="keywordflow">if</span> (TempActionCustomCode != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02888"></a><span class="lineno"> 2888</span>&#160;    <span class="keywordflow">if</span> (TempActionCustomCode != NULL)</div>
 <div class="line"><a name="l02889"></a><span class="lineno"> 2889</span>&#160;    {</div>
 <div class="line"><a name="l02890"></a><span class="lineno"> 2890</span>&#160;        TempActionCustomCode-&gt;<a class="code" href="struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___a_c_t_i_o_n.html#aca35c4eaff757f6297c82840dfbe886d">ImmediateMessagePassing</a> = ImmediateMessagePassing;</div>
 <div class="line"><a name="l02891"></a><span class="lineno"> 2891</span>&#160;    }</div>
@@ -1762,17 +1761,17 @@ Variables</h2></td></tr>
 <div class="line"><a name="l02921"></a><span class="lineno"> 2921</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l02922"></a><span class="lineno"> 2922</span>&#160;    <span class="comment">// Fill the address and length of action before release</span></div>
 <div class="line"><a name="l02923"></a><span class="lineno"> 2923</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l02924"></a><span class="lineno"> 2924</span>&#160;    <span class="keywordflow">if</span> (TempActionBreak != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02924"></a><span class="lineno"> 2924</span>&#160;    <span class="keywordflow">if</span> (TempActionBreak != NULL)</div>
 <div class="line"><a name="l02925"></a><span class="lineno"> 2925</span>&#160;    {</div>
 <div class="line"><a name="l02926"></a><span class="lineno"> 2926</span>&#160;        *ActionDetailsToFillBreakToDebugger = TempActionBreak;</div>
 <div class="line"><a name="l02927"></a><span class="lineno"> 2927</span>&#160;        *ActionBufferLengthBreakToDebugger  = LengthOfBreakActionBuffer;</div>
 <div class="line"><a name="l02928"></a><span class="lineno"> 2928</span>&#160;    }</div>
-<div class="line"><a name="l02929"></a><span class="lineno"> 2929</span>&#160;    <span class="keywordflow">if</span> (TempActionScript != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02929"></a><span class="lineno"> 2929</span>&#160;    <span class="keywordflow">if</span> (TempActionScript != NULL)</div>
 <div class="line"><a name="l02930"></a><span class="lineno"> 2930</span>&#160;    {</div>
 <div class="line"><a name="l02931"></a><span class="lineno"> 2931</span>&#160;        *ActionDetailsToFillScript = TempActionScript;</div>
 <div class="line"><a name="l02932"></a><span class="lineno"> 2932</span>&#160;        *ActionBufferLengthScript  = LengthOfScriptActionBuffer;</div>
 <div class="line"><a name="l02933"></a><span class="lineno"> 2933</span>&#160;    }</div>
-<div class="line"><a name="l02934"></a><span class="lineno"> 2934</span>&#160;    <span class="keywordflow">if</span> (TempActionCustomCode != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02934"></a><span class="lineno"> 2934</span>&#160;    <span class="keywordflow">if</span> (TempActionCustomCode != NULL)</div>
 <div class="line"><a name="l02935"></a><span class="lineno"> 2935</span>&#160;    {</div>
 <div class="line"><a name="l02936"></a><span class="lineno"> 2936</span>&#160;        *ActionDetailsToFillCustomCode = TempActionCustomCode;</div>
 <div class="line"><a name="l02937"></a><span class="lineno"> 2937</span>&#160;        *ActionBufferLengthCustomCode  = LengthOfCustomCodeActionBuffer;</div>
@@ -1825,15 +1824,15 @@ Variables</h2></td></tr>
 <div class="line"><a name="l02984"></a><span class="lineno"> 2984</span>&#160;        free(TempEvent);</div>
 <div class="line"><a name="l02985"></a><span class="lineno"> 2985</span>&#160;    }</div>
 <div class="line"><a name="l02986"></a><span class="lineno"> 2986</span>&#160; </div>
-<div class="line"><a name="l02987"></a><span class="lineno"> 2987</span>&#160;    <span class="keywordflow">if</span> (TempActionBreak != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02987"></a><span class="lineno"> 2987</span>&#160;    <span class="keywordflow">if</span> (TempActionBreak != NULL)</div>
 <div class="line"><a name="l02988"></a><span class="lineno"> 2988</span>&#160;    {</div>
 <div class="line"><a name="l02989"></a><span class="lineno"> 2989</span>&#160;        free(TempActionBreak);</div>
 <div class="line"><a name="l02990"></a><span class="lineno"> 2990</span>&#160;    }</div>
-<div class="line"><a name="l02991"></a><span class="lineno"> 2991</span>&#160;    <span class="keywordflow">if</span> (TempActionScript != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02991"></a><span class="lineno"> 2991</span>&#160;    <span class="keywordflow">if</span> (TempActionScript != NULL)</div>
 <div class="line"><a name="l02992"></a><span class="lineno"> 2992</span>&#160;    {</div>
 <div class="line"><a name="l02993"></a><span class="lineno"> 2993</span>&#160;        free(TempActionScript);</div>
 <div class="line"><a name="l02994"></a><span class="lineno"> 2994</span>&#160;    }</div>
-<div class="line"><a name="l02995"></a><span class="lineno"> 2995</span>&#160;    <span class="keywordflow">if</span> (TempActionCustomCode != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l02995"></a><span class="lineno"> 2995</span>&#160;    <span class="keywordflow">if</span> (TempActionCustomCode != NULL)</div>
 <div class="line"><a name="l02996"></a><span class="lineno"> 2996</span>&#160;    {</div>
 <div class="line"><a name="l02997"></a><span class="lineno"> 2997</span>&#160;        free(TempActionCustomCode);</div>
 <div class="line"><a name="l02998"></a><span class="lineno"> 2998</span>&#160;    }</div>
@@ -2690,7 +2689,7 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;    PVOID CodeBuffer =</div>
 <div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;        <a class="code" href="script-engine-wrapper_8cpp.html#a7bcee6b80d2bd81251776643100c4ad1">ScriptEngineParseWrapper</a>((<span class="keywordtype">char</span> *)AppendedFinalBuffer.c_str(), <a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
 <div class="line"><a name="l00983"></a><span class="lineno">  983</span>&#160; </div>
-<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;    <span class="keywordflow">if</span> (CodeBuffer == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00984"></a><span class="lineno">  984</span>&#160;    <span class="keywordflow">if</span> (CodeBuffer == NULL)</div>
 <div class="line"><a name="l00985"></a><span class="lineno">  985</span>&#160;    {</div>
 <div class="line"><a name="l00986"></a><span class="lineno">  986</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00987"></a><span class="lineno">  987</span>&#160;        <span class="comment">// There was an error</span></div>
@@ -2954,7 +2953,7 @@ debuggee or debugger is already connected to an instance</p>
 <div class="line"><a name="l01838"></a><span class="lineno"> 1838</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l01839"></a><span class="lineno"> 1839</span>&#160;        <span class="comment">// Send Break to debugger packet to debuggee</span></div>
 <div class="line"><a name="l01840"></a><span class="lineno"> 1840</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l01841"></a><span class="lineno"> 1841</span>&#160;        <span class="keywordflow">if</span> (ActionBreakToDebugger != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l01841"></a><span class="lineno"> 1841</span>&#160;        <span class="keywordflow">if</span> (ActionBreakToDebugger != NULL)</div>
 <div class="line"><a name="l01842"></a><span class="lineno"> 1842</span>&#160;        {</div>
 <div class="line"><a name="l01843"></a><span class="lineno"> 1843</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l01844"></a><span class="lineno"> 1844</span>&#160;            <span class="comment">// Send the add action to event from here</span></div>
@@ -2972,7 +2971,7 @@ debuggee or debugger is already connected to an instance</p>
 <div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;        <span class="comment">// Send custom code packet to debuggee</span></div>
 <div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;        <span class="keywordflow">if</span> (ActionCustomCode != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;        <span class="keywordflow">if</span> (ActionCustomCode != NULL)</div>
 <div class="line"><a name="l01860"></a><span class="lineno"> 1860</span>&#160;        {</div>
 <div class="line"><a name="l01861"></a><span class="lineno"> 1861</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l01862"></a><span class="lineno"> 1862</span>&#160;            <span class="comment">// Send the add action to event from here</span></div>
@@ -2990,7 +2989,7 @@ debuggee or debugger is already connected to an instance</p>
 <div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l01875"></a><span class="lineno"> 1875</span>&#160;        <span class="comment">// Send custom code packet to debuggee</span></div>
 <div class="line"><a name="l01876"></a><span class="lineno"> 1876</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;        <span class="keywordflow">if</span> (ActionScript != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l01877"></a><span class="lineno"> 1877</span>&#160;        <span class="keywordflow">if</span> (ActionScript != NULL)</div>
 <div class="line"><a name="l01878"></a><span class="lineno"> 1878</span>&#160;        {</div>
 <div class="line"><a name="l01879"></a><span class="lineno"> 1879</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l01880"></a><span class="lineno"> 1880</span>&#160;            <span class="comment">// Send the add action to event from here</span></div>
@@ -3020,7 +3019,7 @@ debuggee or debugger is already connected to an instance</p>
 <div class="line"><a name="l01904"></a><span class="lineno"> 1904</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l01905"></a><span class="lineno"> 1905</span>&#160;        <span class="comment">// Send Break to debugger ioctl</span></div>
 <div class="line"><a name="l01906"></a><span class="lineno"> 1906</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l01907"></a><span class="lineno"> 1907</span>&#160;        <span class="keywordflow">if</span> (ActionBreakToDebugger != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l01907"></a><span class="lineno"> 1907</span>&#160;        <span class="keywordflow">if</span> (ActionBreakToDebugger != NULL)</div>
 <div class="line"><a name="l01908"></a><span class="lineno"> 1908</span>&#160;        {</div>
 <div class="line"><a name="l01909"></a><span class="lineno"> 1909</span>&#160;            Status = DeviceIoControl(</div>
 <div class="line"><a name="l01910"></a><span class="lineno"> 1910</span>&#160;                <a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a>,                               <span class="comment">// Handle to device</span></div>
@@ -3035,7 +3034,7 @@ debuggee or debugger is already connected to an instance</p>
 <div class="line"><a name="l01919"></a><span class="lineno"> 1919</span>&#160;                                                              <span class="comment">// in</span></div>
 <div class="line"><a name="l01920"></a><span class="lineno"> 1920</span>&#160;                                                              <span class="comment">// bytes.</span></div>
 <div class="line"><a name="l01921"></a><span class="lineno"> 1921</span>&#160;                &amp;ReturnedLength,                              <span class="comment">// Bytes placed in buffer.</span></div>
-<div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;                <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>                                          <span class="comment">// synchronous call</span></div>
+<div class="line"><a name="l01922"></a><span class="lineno"> 1922</span>&#160;                NULL                                          <span class="comment">// synchronous call</span></div>
 <div class="line"><a name="l01923"></a><span class="lineno"> 1923</span>&#160;            );</div>
 <div class="line"><a name="l01924"></a><span class="lineno"> 1924</span>&#160; </div>
 <div class="line"><a name="l01925"></a><span class="lineno"> 1925</span>&#160;            <span class="keywordflow">if</span> (!Status)</div>
@@ -3048,7 +3047,7 @@ debuggee or debugger is already connected to an instance</p>
 <div class="line"><a name="l01932"></a><span class="lineno"> 1932</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l01933"></a><span class="lineno"> 1933</span>&#160;        <span class="comment">// Send custom code ioctl</span></div>
 <div class="line"><a name="l01934"></a><span class="lineno"> 1934</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;        <span class="keywordflow">if</span> (ActionCustomCode != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l01935"></a><span class="lineno"> 1935</span>&#160;        <span class="keywordflow">if</span> (ActionCustomCode != NULL)</div>
 <div class="line"><a name="l01936"></a><span class="lineno"> 1936</span>&#160;        {</div>
 <div class="line"><a name="l01937"></a><span class="lineno"> 1937</span>&#160;            Status = DeviceIoControl(</div>
 <div class="line"><a name="l01938"></a><span class="lineno"> 1938</span>&#160;                <a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a>,                               <span class="comment">// Handle to device</span></div>
@@ -3063,7 +3062,7 @@ debuggee or debugger is already connected to an instance</p>
 <div class="line"><a name="l01947"></a><span class="lineno"> 1947</span>&#160;                                                              <span class="comment">// in</span></div>
 <div class="line"><a name="l01948"></a><span class="lineno"> 1948</span>&#160;                                                              <span class="comment">// bytes.</span></div>
 <div class="line"><a name="l01949"></a><span class="lineno"> 1949</span>&#160;                &amp;ReturnedLength,                              <span class="comment">// Bytes placed in buffer.</span></div>
-<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;                <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>                                          <span class="comment">// synchronous call</span></div>
+<div class="line"><a name="l01950"></a><span class="lineno"> 1950</span>&#160;                NULL                                          <span class="comment">// synchronous call</span></div>
 <div class="line"><a name="l01951"></a><span class="lineno"> 1951</span>&#160;            );</div>
 <div class="line"><a name="l01952"></a><span class="lineno"> 1952</span>&#160; </div>
 <div class="line"><a name="l01953"></a><span class="lineno"> 1953</span>&#160;            <span class="keywordflow">if</span> (!Status)</div>
@@ -3076,7 +3075,7 @@ debuggee or debugger is already connected to an instance</p>
 <div class="line"><a name="l01960"></a><span class="lineno"> 1960</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l01961"></a><span class="lineno"> 1961</span>&#160;        <span class="comment">// Send custom code ioctl</span></div>
 <div class="line"><a name="l01962"></a><span class="lineno"> 1962</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;        <span class="keywordflow">if</span> (ActionScript != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l01963"></a><span class="lineno"> 1963</span>&#160;        <span class="keywordflow">if</span> (ActionScript != NULL)</div>
 <div class="line"><a name="l01964"></a><span class="lineno"> 1964</span>&#160;        {</div>
 <div class="line"><a name="l01965"></a><span class="lineno"> 1965</span>&#160;            Status = DeviceIoControl(</div>
 <div class="line"><a name="l01966"></a><span class="lineno"> 1966</span>&#160;                <a class="code" href="hprdbgctrl_8cpp.html#a04aaf680ede15f5e7ba51ab9f157bfff">g_DeviceHandle</a>,                               <span class="comment">// Handle to device</span></div>
@@ -3091,7 +3090,7 @@ debuggee or debugger is already connected to an instance</p>
 <div class="line"><a name="l01975"></a><span class="lineno"> 1975</span>&#160;                                                              <span class="comment">// in</span></div>
 <div class="line"><a name="l01976"></a><span class="lineno"> 1976</span>&#160;                                                              <span class="comment">// bytes.</span></div>
 <div class="line"><a name="l01977"></a><span class="lineno"> 1977</span>&#160;                &amp;ReturnedLength,                              <span class="comment">// Bytes placed in buffer.</span></div>
-<div class="line"><a name="l01978"></a><span class="lineno"> 1978</span>&#160;                <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>                                          <span class="comment">// synchronous call</span></div>
+<div class="line"><a name="l01978"></a><span class="lineno"> 1978</span>&#160;                NULL                                          <span class="comment">// synchronous call</span></div>
 <div class="line"><a name="l01979"></a><span class="lineno"> 1979</span>&#160;            );</div>
 <div class="line"><a name="l01980"></a><span class="lineno"> 1980</span>&#160; </div>
 <div class="line"><a name="l01981"></a><span class="lineno"> 1981</span>&#160;            <span class="keywordflow">if</span> (!Status)</div>
@@ -3107,7 +3106,7 @@ debuggee or debugger is already connected to an instance</p>
 <div class="line"><a name="l01991"></a><span class="lineno"> 1991</span>&#160;    <span class="comment">// here in the case of a successful registeration of action, however</span></div>
 <div class="line"><a name="l01992"></a><span class="lineno"> 1992</span>&#160;    <span class="comment">// event detail is needed for the &#39;event&#39; command&#39;s list</span></div>
 <div class="line"><a name="l01993"></a><span class="lineno"> 1993</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l01994"></a><span class="lineno"> 1994</span>&#160;    <a class="code" href="debugger_8cpp.html#a2b12a86ffd8a77016c58a3553ee97560">FreeEventsAndActionsMemory</a>(<a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, ActionBreakToDebugger, ActionCustomCode, ActionScript);</div>
+<div class="line"><a name="l01994"></a><span class="lineno"> 1994</span>&#160;    <a class="code" href="debugger_8cpp.html#a2b12a86ffd8a77016c58a3553ee97560">FreeEventsAndActionsMemory</a>(NULL, ActionBreakToDebugger, ActionCustomCode, ActionScript);</div>
 <div class="line"><a name="l01995"></a><span class="lineno"> 1995</span>&#160; </div>
 <div class="line"><a name="l01996"></a><span class="lineno"> 1996</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01997"></a><span class="lineno"> 1997</span>&#160;    <span class="comment">// Now, we&#39;ll register the command as returned buffer shows that</span></div>
@@ -3215,7 +3214,7 @@ debuggee or debugger is already connected to an instance</p>
 <div class="line"><a name="l01745"></a><span class="lineno"> 1745</span>&#160;                                                                          <span class="comment">// in</span></div>
 <div class="line"><a name="l01746"></a><span class="lineno"> 1746</span>&#160;                                                                          <span class="comment">// bytes.</span></div>
 <div class="line"><a name="l01747"></a><span class="lineno"> 1747</span>&#160;                            &amp;ReturnedLength,                              <span class="comment">// Bytes placed in buffer.</span></div>
-<div class="line"><a name="l01748"></a><span class="lineno"> 1748</span>&#160;                            <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>                                          <span class="comment">// synchronous call</span></div>
+<div class="line"><a name="l01748"></a><span class="lineno"> 1748</span>&#160;                            NULL                                          <span class="comment">// synchronous call</span></div>
 <div class="line"><a name="l01749"></a><span class="lineno"> 1749</span>&#160;            );</div>
 <div class="line"><a name="l01750"></a><span class="lineno"> 1750</span>&#160; </div>
 <div class="line"><a name="l01751"></a><span class="lineno"> 1751</span>&#160;        <span class="keywordflow">if</span> (!Status)</div>

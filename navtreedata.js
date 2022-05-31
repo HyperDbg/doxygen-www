@@ -25,7 +25,20 @@
 var NAVTREE =
 [
   [ "HyperDbg Debugger", "index.html", [
-    [ "script-engine-test", "index.html", null ],
+    [ "HyperDbg Debugger", "index.html#autotoc_md24", [
+      [ "Description", "index.html#autotoc_md25", null ],
+      [ "Build & Installation", "index.html#autotoc_md26", null ],
+      [ "Publications", "index.html#autotoc_md27", null ],
+      [ "Unique Features", "index.html#autotoc_md28", [
+        [ "First Release (v0.1.0.0)", "index.html#autotoc_md29", null ],
+        [ "Second Release (v0.2.0.0)", "index.html#autotoc_md30", null ]
+      ] ],
+      [ "How does it work?", "index.html#autotoc_md31", null ],
+      [ "Scripts", "index.html#autotoc_md32", null ],
+      [ "Credits", "index.html#autotoc_md33", null ],
+      [ "Contributing", "index.html#autotoc_md34", null ],
+      [ "License", "index.html#autotoc_md35", null ]
+    ] ],
     [ "Changelog", "md__c_h_a_n_g_e_l_o_g.html", [
       [ "[Unreleased]", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md1", [
         [ "Added", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md2", null ],
@@ -65,7 +78,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", "functions_func" ],
+        [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ]
       ] ]
@@ -88,39 +101,38 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "____init_____8py.html",
-"_cross_api_8h.html#a4ad2b18aca5302cb7b9faa8b6e74eeaf",
-"_definition_8h.html#a4f7aad93bd32f50b030c3efbab8864c1",
-"_definition_8h.html#ac0e6db4051893271cfa53c365980c7c7a1a8c021c051b587a7f7a282b19092eda",
-"_dpc_routines_8c.html#abb391d5fcf455df2fc237befb9a7d234",
-"_extension_commands_8c.html#aac54592e1514c7893b073111c3dbf8d2",
-"_io_handler_8c.html#af10acaaf3042306f07cb0074e8d4bd9e",
-"_memory_mapper_8c.html#aa78b2b9b329581388d50ecb1a69aed49",
-"_script_engine_common_definitions_8h.html#a169890310bdffddf2d480009d75ff3e0a5dea01e15cff05583768ce7c1654cf7f",
-"_script_engine_eval_8h.html#a4f2dbb7a4457c1f7209cb06db7e3240a",
-"_trace_8h.html#ae0f1cc8da8d54a908b3b7527b6d211e2",
-"_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8a834d0704d3c1bb81427842e3183fef32",
-"classgenerator_1_1_generator.html#a4a90a8bcfd7337f77b0683a6e7eb8489",
-"commands_8h.html#a4d7a173d8ee7e7b5e9d177458218f779",
-"debugger_8cpp.html#ae6d967f92305bc2539b2c0817513f3d5",
-"functions_func_c.html",
-"help_8h.html#a201584b920361c38764e19defbc1d52a",
-"hprdbgctrl_2header_2globals_8h.html#af212733923c3fa97ce582dcf62bfdd85",
-"hprdbghv_2header_2common_2common_8h.html#a3bb297a24c99cf7e9a97f21d9184643e",
-"hyperdbg-test_2code_2tests_2namedpipe_8cpp.html#a0eb9b1337b9484e03a962cb9974d4c65",
-"lalr__one_8py.html#ab9bb42aed96d9010a156afdfa7f0e51f",
-"msm8x60_8c.html#a3227a31bc162c44d6cf38bd847b0937f",
-"namespaceutil.html#a3206d44d413b59ff9240237a8c9594c8",
-"remote-connection_8cpp.html#a212885a62f5bfda070ea3bbb059fa51d",
-"script-engine_2header_2script-engine_8h.html#a5a1425bb2a3074c10b1f1acd2e8bbf9b",
-"sdm845_8c.html#a3832353c3d1c1a1f342cf4be18b10c72",
-"sdm845_8c.html#a8e7faf508c05338ab624761f6193b4ac",
-"sdm845_8c.html#ae93ef3bac59c67af475b4fce97a3b9e7",
-"struct___d_e_b_u_g_g_e_e___b_p___d_e_s_c_r_i_p_t_o_r.html#a92b8d8e3dfe78ced438c04c2fc9c8b08",
-"struct___d_e_b_u_g_g_e_r___f_l_u_s_h___l_o_g_g_i_n_g___b_u_f_f_e_r_s.html#a09e09b7c4094d0118e60286632bd832b",
-"struct___l_d_r___d_a_t_a___t_a_b_l_e___e_n_t_r_y32.html#a88b868bf7336b9bf57697944f4027691",
-"struct___t_r_a_n_s_p_a_r_e_n_c_y___m_e_a_s_u_r_e_m_e_n_t_s.html#aa3e856372d95a8fdd33928e88bc7b832",
-"symbol_8cpp.html#a05f301b303fc43bc4a7d3685a834c881",
-"union___i_n_t_e_r_r_u_p_t___i_n_f_o.html#a6a8cb632150298f6d5dc6fc5050c4b7e"
+"_cross_api_8h.html#a4e472678de954020ca178ea6c71a09dc",
+"_definition_8h.html#a4fdcd4d2200ee93ba3dbf9da4d8e76e0",
+"_definition_8h.html#ac0e6db4051893271cfa53c365980c7c7a27c9153ba2044f2c1854ca59d29f46d1",
+"_dpc_routines_8c.html#ac0df5b089250515279b8c348e0817977",
+"_extension_commands_8c.html#ad4051f8d2cd1b100d54e8244937eec2f",
+"_io_handler_8h.html#a034bb67c5edbfaa804e07047f059aaad",
+"_memory_mapper_8c.html#ac5e3028203ff7bfbebf360083d7bd25e",
+"_script_engine_common_definitions_8h.html#a169890310bdffddf2d480009d75ff3e0a6d0af5fb66d2939cfe3dc5653c1e3d5a",
+"_script_engine_eval_8h.html#a512d364d2dd0d34a9204f87e5751cee1",
+"_trace_8h_source.html",
+"_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8a8a7b48043231ced36f0bc6ec70ba0f7a",
+"classinipp_1_1_format.html#a20ccfba91bfdee56714952f2c047b607",
+"commands_8h.html#a5e83f4b6325a334a0968b05bbc29d0fc",
+"dir_02d9474f1d22691b7c61904f4c980db3.html",
+"functions_vars_b.html",
+"help_8h.html#a8e33b0e861d3b787bebafd82a5add20b",
+"hprdbgctrl_2header_2kd_8h.html#a9a239c7ec052b819fc8953a8af3da101",
+"hprdbghv_2header_2common_2common_8h.html#a6b5ea74a23199b25cd91da7cb7307f5fa8a7a9cbb4d530cb0fcd48b9c39a1ada7",
+"index.html#autotoc_md27",
+"load_8cpp.html#a0858c53b46dd9ffe2515eefa896e220c",
+"msm8x60_8c.html#a653fe5321168cf5e50fb3974443ed04e",
+"parse-table_8h.html#a2548769dbff8a53a9689e133a64fcddd",
+"script-engine-wrapper_8cpp.html#a57f187c5719e21e58bba4d24d62829b9",
+"script-engine_8cpp.html#ae3d4f5bdc862a5eea8a8e11398d7dd25",
+"sdm845_8c.html#a4ed4cf2a2577bd0fe6b4a81a62285bde",
+"sdm845_8c.html#aa8ec19c8ad0bd89c571cf40ff6b36b9b",
+"spimax311_8c.html#a0d55fea801a07be06e221a7962100c8b",
+"struct___d_e_b_u_g_g_e_e___r_e_g_i_s_t_e_r___r_e_a_d___d_e_s_c_r_i_p_t_i_o_n.html#a83b75d88303c7185bb82e6ca5236e86b",
+"struct___d_e_b_u_g_g_e_r___r_e_a_d___p_a_g_e___t_a_b_l_e___e_n_t_r_i_e_s___d_e_t_a_i_l_s.html#a46fab01fe8f69f79cf80ec73c09c0ee0",
+"struct___p_a_g_e___e_n_t_r_y.html#a8335c1b1d9eb26c201753831dc7964c8",
+"struct___v_m___e_x_i_t___t_r_a_n_s_p_a_r_e_n_c_y.html#ab5136659316fce4bb20678f3f79bf112",
+"thread_8cpp.html#a238df6df488d7eab78141da1685b1db9"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

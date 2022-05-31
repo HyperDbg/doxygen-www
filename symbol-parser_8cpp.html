@@ -241,7 +241,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    va_list ArgList;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    va_list Args;</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="symbol-parser_8cpp.html#ad12c41c73b6d11e1703491f0d59e3f73">g_MessageHandler</a> == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="symbol-parser_8cpp.html#ad12c41c73b6d11e1703491f0d59e3f73">g_MessageHandler</a> == NULL)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    {</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        va_start(Args, Fmt);</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        vprintf(Fmt, Args);</div>
@@ -265,7 +265,6 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
 <div class="ttc" id="a_definition_8h_html_a0c9efc30a3f2181d7f0be5e69501b2ca"><div class="ttname"><a href="_definition_8h.html#a0c9efc30a3f2181d7f0be5e69501b2ca">TCP_END_OF_BUFFER_CHARS_COUNT</a></div><div class="ttdeci">#define TCP_END_OF_BUFFER_CHARS_COUNT</div><div class="ttdoc">count of characters for tcp end of buffer</div><div class="ttdef"><b>Definition:</b> Definition.h:515</div></div>
 <div class="ttc" id="a_definition_8h_html_a557424f6d2420b81a5bd72b346664631"><div class="ttname"><a href="_definition_8h.html#a557424f6d2420b81a5bd72b346664631">COMMUNICATION_BUFFER_SIZE</a></div><div class="ttdeci">#define COMMUNICATION_BUFFER_SIZE</div><div class="ttdoc">Packet size for TCP connections.</div><div class="ttdef"><b>Definition:</b> Definition.h:318</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 <div class="ttc" id="asymbol-parser_8cpp_html_ad12c41c73b6d11e1703491f0d59e3f73"><div class="ttname"><a href="symbol-parser_8cpp.html#ad12c41c73b6d11e1703491f0d59e3f73">g_MessageHandler</a></div><div class="ttdeci">Callback g_MessageHandler</div><div class="ttdoc">The handler for ShowMessages function this is because the user might choose not to use printf and ins...</div><div class="ttdef"><b>Definition:</b> symbol-parser.cpp:23</div></div>
 </div><!-- fragment -->
 </div>
@@ -583,7 +582,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l01756"></a><span class="lineno"> 1756</span>&#160;        <a class="code" href="symbol-parser_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;downloading symbol &#39;%s&#39;...&quot;</span>, SymName.c_str());</div>
 <div class="line"><a name="l01757"></a><span class="lineno"> 1757</span>&#160;    }</div>
 <div class="line"><a name="l01758"></a><span class="lineno"> 1758</span>&#160; </div>
-<div class="line"><a name="l01759"></a><span class="lineno"> 1759</span>&#160;    HRESULT Result = URLDownloadToFileA(<a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, DownloadURL.c_str(), (SymFullDir + <span class="stringliteral">&quot;\\&quot;</span> + SymName).c_str(), 0, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l01759"></a><span class="lineno"> 1759</span>&#160;    HRESULT Result = URLDownloadToFileA(NULL, DownloadURL.c_str(), (SymFullDir + <span class="stringliteral">&quot;\\&quot;</span> + SymName).c_str(), 0, NULL);</div>
 <div class="line"><a name="l01760"></a><span class="lineno"> 1760</span>&#160; </div>
 <div class="line"><a name="l01761"></a><span class="lineno"> 1761</span>&#160;    <span class="keywordflow">if</span> (Result == S_OK)</div>
 <div class="line"><a name="l01762"></a><span class="lineno"> 1762</span>&#160;    {</div>
@@ -816,7 +815,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <dl class="section return"><dt>Returns</dt><dd>UINT64 </dd></dl>
 <div class="fragment"><div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;{</div>
 <div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>      Found   = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>       <a class="code" href="script-engine_2header_2script-engine_8h.html#a3f7c5b71d899e923be0a80d4ac7902fe">Address</a> = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>       <a class="code" href="script-engine_2header_2script-engine_8h.html#a3f7c5b71d899e923be0a80d4ac7902fe">Address</a> = NULL;</div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>       Buffer[(<span class="keyword">sizeof</span>(SYMBOL_INFO) + MAX_SYM_NAME * <span class="keyword">sizeof</span>(<a class="code" href="_script_engine_eval_8h.html#aebb9e13210d88d43e32e735ada43a425">CHAR</a>) + <span class="keyword">sizeof</span>(<a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>) - 1) / <span class="keyword">sizeof</span>(<a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>)];</div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;    PSYMBOL_INFO Symbol = (PSYMBOL_INFO)Buffer;</div>
 <div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160; </div>
@@ -929,9 +928,9 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l00950"></a><span class="lineno">  950</span>&#160;        Ret = SymEnumSymbols(</div>
 <div class="line"><a name="l00951"></a><span class="lineno">  951</span>&#160;            GetCurrentProcess(),                     <span class="comment">// Process handle of the current process</span></div>
 <div class="line"><a name="l00952"></a><span class="lineno">  952</span>&#160;            item-&gt;BaseAddress,                       <span class="comment">// Base address of the module</span></div>
-<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;            <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,                                    <span class="comment">// Mask (NULL -&gt; all symbols)</span></div>
+<div class="line"><a name="l00953"></a><span class="lineno">  953</span>&#160;            NULL,                                    <span class="comment">// Mask (NULL -&gt; all symbols)</span></div>
 <div class="line"><a name="l00954"></a><span class="lineno">  954</span>&#160;            <a class="code" href="symbol-parser_8cpp.html#a820fb77a73caa0b76d3623b50a87fb90">SymDeliverDisassemblerSymbolMapCallback</a>, <span class="comment">// The callback function</span></div>
-<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;            <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>                                     <span class="comment">// A used-defined context can be passed here, if necessary</span></div>
+<div class="line"><a name="l00955"></a><span class="lineno">  955</span>&#160;            NULL                                     <span class="comment">// A used-defined context can be passed here, if necessary</span></div>
 <div class="line"><a name="l00956"></a><span class="lineno">  956</span>&#160;        );</div>
 <div class="line"><a name="l00957"></a><span class="lineno">  957</span>&#160; </div>
 <div class="line"><a name="l00958"></a><span class="lineno">  958</span>&#160;        <span class="keywordflow">if</span> (!Ret)</div>
@@ -997,7 +996,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>BOOL </dd></dl>
 <div class="fragment"><div class="line"><a name="l01286"></a><span class="lineno"> 1286</span>&#160;{</div>
-<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;    <span class="keywordflow">if</span> (SymInfo != 0 &amp;&amp; <a class="code" href="symbol-parser_8cpp.html#ab0c07a0441be3a9e8df54d4206aa3c62">g_SymbolMapForDisassembler</a> != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l01287"></a><span class="lineno"> 1287</span>&#160;    <span class="keywordflow">if</span> (SymInfo != 0 &amp;&amp; <a class="code" href="symbol-parser_8cpp.html#ab0c07a0441be3a9e8df54d4206aa3c62">g_SymbolMapForDisassembler</a> != NULL)</div>
 <div class="line"><a name="l01288"></a><span class="lineno"> 1288</span>&#160;    {</div>
 <div class="line"><a name="l01289"></a><span class="lineno"> 1289</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l01290"></a><span class="lineno"> 1290</span>&#160;        <span class="comment">// Call the remote callback</span></div>
@@ -1109,7 +1108,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="fragment"><div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;{</div>
 <div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>                          Ret        = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                        Index      = 0;</div>
-<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    <a class="code" href="struct___s_y_m_b_o_l___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html">PSYMBOL_LOADED_MODULE_DETAILS</a> SymbolInfo = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;    <a class="code" href="struct___s_y_m_b_o_l___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html">PSYMBOL_LOADED_MODULE_DETAILS</a> SymbolInfo = NULL;</div>
 <div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>                       Result     = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160; </div>
 <div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;    <span class="comment">//</span></div>
@@ -1120,7 +1119,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l00830"></a><span class="lineno">  830</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;    <span class="comment">// Check if module is found</span></div>
 <div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    <span class="keywordflow">if</span> (SymbolInfo == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    <span class="keywordflow">if</span> (SymbolInfo == NULL)</div>
 <div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;    {</div>
 <div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00836"></a><span class="lineno">  836</span>&#160;        <span class="comment">// Module not found or there was an error</span></div>
@@ -1296,7 +1295,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="fragment"><div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;{</div>
 <div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>                          Ret        = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                        Index      = 0;</div>
-<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    <a class="code" href="struct___s_y_m_b_o_l___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html">PSYMBOL_LOADED_MODULE_DETAILS</a> SymbolInfo = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00748"></a><span class="lineno">  748</span>&#160;    <a class="code" href="struct___s_y_m_b_o_l___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html">PSYMBOL_LOADED_MODULE_DETAILS</a> SymbolInfo = NULL;</div>
 <div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>                       Result     = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00750"></a><span class="lineno">  750</span>&#160; </div>
 <div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;    <span class="comment">//</span></div>
@@ -1307,7 +1306,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;    <span class="comment">// Check if module is found</span></div>
 <div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    <span class="keywordflow">if</span> (SymbolInfo == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    <span class="keywordflow">if</span> (SymbolInfo == NULL)</div>
 <div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;    {</div>
 <div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00762"></a><span class="lineno">  762</span>&#160;        <span class="comment">// Module not found or there was an error</span></div>
@@ -1583,7 +1582,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;    <span class="keywordtype">char</span> FileExt[_MAX_EXT] = {0};</div>
 <div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160; </div>
-<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;    _splitpath(FileName, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, FileExt);</div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;    _splitpath(FileName, NULL, NULL, NULL, FileExt);</div>
 <div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160; </div>
 <div class="line"><a name="l01017"></a><span class="lineno"> 1017</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01018"></a><span class="lineno"> 1018</span>&#160;    <span class="comment">// Is it .PDB file?</span></div>
@@ -1663,7 +1662,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l01064"></a><span class="lineno"> 1064</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01065"></a><span class="lineno"> 1065</span>&#160;    <span class="comment">// Open the file</span></div>
 <div class="line"><a name="l01066"></a><span class="lineno"> 1066</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;    HANDLE hFile = CreateFileA(FileName, GENERIC_READ, FILE_SHARE_READ, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, OPEN_EXISTING, 0, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l01067"></a><span class="lineno"> 1067</span>&#160;    HANDLE hFile = CreateFileA(FileName, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, 0, NULL);</div>
 <div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160; </div>
 <div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;    <span class="keywordflow">if</span> (hFile == INVALID_HANDLE_VALUE)</div>
 <div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;    {</div>
@@ -1674,7 +1673,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;    <span class="comment">// Obtain the size of the file</span></div>
 <div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;    FileSize = GetFileSize(hFile, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;    FileSize = GetFileSize(hFile, NULL);</div>
 <div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160; </div>
 <div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;    <span class="keywordflow">if</span> (FileSize == INVALID_FILE_SIZE)</div>
 <div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;    {</div>
@@ -1740,14 +1739,14 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">string</span> Token;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">char</span>   ModuleName[_MAX_FNAME] = {0};</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">int</span>    Index                  = 0;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">char</span>   Ch                     = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">char</span>   Ch                     = NULL;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="symbol-parser_8cpp.html#ae4658fe21ce6771410ab7dda6ecef34b">g_IsLoadedModulesInitialized</a> || SearchMask == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span> (!<a class="code" href="symbol-parser_8cpp.html#ae4658fe21ce6771410ab7dda6ecef34b">g_IsLoadedModulesInitialized</a> || SearchMask == NULL)</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="comment">// no module is loaded or search mask is invalid</span></div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="comment">//</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">//</span></div>
@@ -1773,7 +1772,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            <span class="comment">//</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <span class="comment">// Invalid name</span></div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <span class="comment">//</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        }</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="comment">//</span></div>
@@ -1838,7 +1837,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="comment">// If the function continues until here then it means</span></div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="comment">// that the module not found</span></div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">return</span> NULL;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;}</div>
 <div class="ttc" id="asymbol-parser_8cpp_html_ae4658fe21ce6771410ab7dda6ecef34b"><div class="ttname"><a href="symbol-parser_8cpp.html#ae4658fe21ce6771410ab7dda6ecef34b">g_IsLoadedModulesInitialized</a></div><div class="ttdeci">BOOLEAN g_IsLoadedModulesInitialized</div><div class="ttdef"><b>Definition:</b> symbol-parser.cpp:19</div></div>
 </div><!-- fragment -->
@@ -1885,10 +1884,10 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a>                         Options                         = 0;</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ad342ac907eb044443153a22f964bf0af">DWORD</a>                         FileSize                        = 0;</div>
 <div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;    <span class="keywordtype">int</span>                           Index                           = 0;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keywordtype">char</span>                          Ch                              = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    <span class="keywordtype">char</span>                          Ch                              = NULL;</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;    <span class="keywordtype">char</span>                          ModuleName[_MAX_FNAME]          = {0};</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="keywordtype">char</span>                          AlternateModuleName[_MAX_FNAME] = {0};</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <a class="code" href="struct___s_y_m_b_o_l___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html">PSYMBOL_LOADED_MODULE_DETAILS</a> ModuleDetails                   = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    <a class="code" href="struct___s_y_m_b_o_l___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html">PSYMBOL_LOADED_MODULE_DETAILS</a> ModuleDetails                   = NULL;</div>
 <div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
 <div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="comment">// Get options</span></div>
@@ -1908,7 +1907,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    Ret = SymInitialize(</div>
 <div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        GetCurrentProcess(), <span class="comment">// Process handle of the current process</span></div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,                <span class="comment">// No user-defined search path -&gt; use default</span></div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        NULL,                <span class="comment">// No user-defined search path -&gt; use default</span></div>
 <div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>                <span class="comment">// Do not load symbols for modules in the current process</span></div>
 <div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    );</div>
 <div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160; </div>
@@ -1931,7 +1930,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="comment">// Determine the extension of the file</span></div>
 <div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    _splitpath(<a class="code" href="script-engine_2header_2script-engine_8h.html#a2db310d536749feb962168fe4faa86de">PdbFileName</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>, ModuleName, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    _splitpath(<a class="code" href="script-engine_2header_2script-engine_8h.html#a2db310d536749feb962168fe4faa86de">PdbFileName</a>, NULL, NULL, ModuleName, NULL);</div>
 <div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160; </div>
 <div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    <span class="comment">// Move to alternate list</span></div>
@@ -1988,7 +1987,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;    ModuleDetails = (<a class="code" href="struct___s_y_m_b_o_l___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html">SYMBOL_LOADED_MODULE_DETAILS</a> *)malloc(<span class="keyword">sizeof</span>(<a class="code" href="struct___s_y_m_b_o_l___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html">SYMBOL_LOADED_MODULE_DETAILS</a>));</div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160; </div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <span class="keywordflow">if</span> (ModuleDetails == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;    <span class="keywordflow">if</span> (ModuleDetails == NULL)</div>
 <div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;    {</div>
 <div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        <a class="code" href="symbol-parser_8cpp.html#a21c3c06b34d716c4680695c2b28127da">ShowMessages</a>(<span class="stringliteral">&quot;err, allocating buffer for storing symbol details (%x)\n&quot;</span>,</div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;                     GetLastError());</div>
@@ -2000,16 +1999,16 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160; </div>
 <div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;    ModuleDetails-&gt;<a class="code" href="struct___s_y_m_b_o_l___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html#a754d70f58edeb4baeb3ba7d014629c90">ModuleBase</a> = SymLoadModule64(</div>
 <div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        GetCurrentProcess(), <span class="comment">// Process handle of the current process</span></div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,                <span class="comment">// Handle to the module&#39;s image file (not needed)</span></div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;        NULL,                <span class="comment">// Handle to the module&#39;s image file (not needed)</span></div>
 <div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        <a class="code" href="script-engine_2header_2script-engine_8h.html#a2db310d536749feb962168fe4faa86de">PdbFileName</a>,         <span class="comment">// Path/name of the file</span></div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>,                <span class="comment">// User-defined short name of the module (it can be NULL)</span></div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;        NULL,                <span class="comment">// User-defined short name of the module (it can be NULL)</span></div>
 <div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        BaseAddress,         <span class="comment">// Base address of the module (cannot be NULL if .PDB file is</span></div>
 <div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                             <span class="comment">// used, otherwise it can be NULL)</span></div>
 <div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        FileSize             <span class="comment">// Size of the file (cannot be NULL if .PDB file is used,</span></div>
 <div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                             <span class="comment">// otherwise it can be NULL)</span></div>
 <div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;    );</div>
 <div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160; </div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <span class="keywordflow">if</span> (ModuleDetails-&gt;<a class="code" href="struct___s_y_m_b_o_l___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html#a754d70f58edeb4baeb3ba7d014629c90">ModuleBase</a> == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;    <span class="keywordflow">if</span> (ModuleDetails-&gt;<a class="code" href="struct___s_y_m_b_o_l___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html#a754d70f58edeb4baeb3ba7d014629c90">ModuleBase</a> == NULL)</div>
 <div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;    {</div>
 <div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        <span class="comment">//ShowMessages(&quot;err, loading symbols failed (%x)\n&quot;,</span></div>
@@ -2094,7 +2093,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <dl class="section return"><dt>Returns</dt><dd>UINT32 </dd></dl>
 <div class="fragment"><div class="line"><a name="l00881"></a><span class="lineno">  881</span>&#160;{</div>
 <div class="line"><a name="l00882"></a><span class="lineno">  882</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a050c65e107f0c828f856a231f4b4e788">BOOL</a>                          Ret        = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;    <a class="code" href="struct___s_y_m_b_o_l___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html">PSYMBOL_LOADED_MODULE_DETAILS</a> SymbolInfo = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00883"></a><span class="lineno">  883</span>&#160;    <a class="code" href="struct___s_y_m_b_o_l___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html">PSYMBOL_LOADED_MODULE_DETAILS</a> SymbolInfo = NULL;</div>
 <div class="line"><a name="l00884"></a><span class="lineno">  884</span>&#160; </div>
 <div class="line"><a name="l00885"></a><span class="lineno">  885</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00886"></a><span class="lineno">  886</span>&#160;    <span class="comment">// Get the module info</span></div>
@@ -2104,7 +2103,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l00890"></a><span class="lineno">  890</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00891"></a><span class="lineno">  891</span>&#160;    <span class="comment">// Check to see if module info is found</span></div>
 <div class="line"><a name="l00892"></a><span class="lineno">  892</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    <span class="keywordflow">if</span> (SymbolInfo == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00893"></a><span class="lineno">  893</span>&#160;    <span class="keywordflow">if</span> (SymbolInfo == NULL)</div>
 <div class="line"><a name="l00894"></a><span class="lineno">  894</span>&#160;    {</div>
 <div class="line"><a name="l00895"></a><span class="lineno">  895</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00896"></a><span class="lineno">  896</span>&#160;        <span class="comment">// Module not found or there was an error</span></div>
@@ -2117,7 +2116,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l00903"></a><span class="lineno">  903</span>&#160;        SymbolInfo-&gt;<a class="code" href="struct___s_y_m_b_o_l___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html#a754d70f58edeb4baeb3ba7d014629c90">ModuleBase</a>,        <span class="comment">// Base address of the module</span></div>
 <div class="line"><a name="l00904"></a><span class="lineno">  904</span>&#160;        SearchMask,                    <span class="comment">// Mask (NULL -&gt; all symbols)</span></div>
 <div class="line"><a name="l00905"></a><span class="lineno">  905</span>&#160;        <a class="code" href="symbol-parser_8cpp.html#a2d34f643fb9525a5d349388d7783a1de">SymDisplayMaskSymbolsCallback</a>, <span class="comment">// The callback function</span></div>
-<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;        <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>                           <span class="comment">// A used-defined context can be passed here, if necessary</span></div>
+<div class="line"><a name="l00906"></a><span class="lineno">  906</span>&#160;        NULL                           <span class="comment">// A used-defined context can be passed here, if necessary</span></div>
 <div class="line"><a name="l00907"></a><span class="lineno">  907</span>&#160;    );</div>
 <div class="line"><a name="l00908"></a><span class="lineno">  908</span>&#160; </div>
 <div class="line"><a name="l00909"></a><span class="lineno">  909</span>&#160;    <span class="keywordflow">if</span> (!Ret)</div>
@@ -2263,8 +2262,8 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <dl class="section return"><dt>Returns</dt><dd>BOOLEAN </dd></dl>
 <div class="fragment"><div class="line"><a name="l01814"></a><span class="lineno"> 1814</span>&#160;{</div>
 <div class="line"><a name="l01815"></a><span class="lineno"> 1815</span>&#160;    vector&lt;string&gt;                SplitedsymPath;</div>
-<div class="line"><a name="l01816"></a><span class="lineno"> 1816</span>&#160;    <span class="keywordtype">char</span> **                       ArgvArray     = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
-<div class="line"><a name="l01817"></a><span class="lineno"> 1817</span>&#160;    <a class="code" href="struct___s_y_m_b_o_l___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html">PSYMBOL_LOADED_MODULE_DETAILS</a> SymbolInfo    = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l01816"></a><span class="lineno"> 1816</span>&#160;    <span class="keywordtype">char</span> **                       ArgvArray     = NULL;</div>
+<div class="line"><a name="l01817"></a><span class="lineno"> 1817</span>&#160;    <a class="code" href="struct___s_y_m_b_o_l___l_o_a_d_e_d___m_o_d_u_l_e___d_e_t_a_i_l_s.html">PSYMBOL_LOADED_MODULE_DETAILS</a> SymbolInfo    = NULL;</div>
 <div class="line"><a name="l01818"></a><span class="lineno"> 1818</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                        SizeOfArgv    = 0;</div>
 <div class="line"><a name="l01819"></a><span class="lineno"> 1819</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#ae1e6edbbc26d6fbc71a90190d0266018">UINT32</a>                        TypeNameIndex = 0;</div>
 <div class="line"><a name="l01820"></a><span class="lineno"> 1820</span>&#160; </div>
@@ -2303,7 +2302,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l01853"></a><span class="lineno"> 1853</span>&#160;    SizeOfArgv = SplitedsymPath.size() + 3;</div>
 <div class="line"><a name="l01854"></a><span class="lineno"> 1854</span>&#160;    ArgvArray  = (<span class="keywordtype">char</span> **)malloc(SizeOfArgv * <span class="keyword">sizeof</span>(<span class="keywordtype">char</span> *));</div>
 <div class="line"><a name="l01855"></a><span class="lineno"> 1855</span>&#160; </div>
-<div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160;    <span class="keywordflow">if</span> (ArgvArray == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l01856"></a><span class="lineno"> 1856</span>&#160;    <span class="keywordflow">if</span> (ArgvArray == NULL)</div>
 <div class="line"><a name="l01857"></a><span class="lineno"> 1857</span>&#160;    {</div>
 <div class="line"><a name="l01858"></a><span class="lineno"> 1858</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l01859"></a><span class="lineno"> 1859</span>&#160;    }</div>
@@ -2313,12 +2312,12 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 <div class="line"><a name="l01863"></a><span class="lineno"> 1863</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01864"></a><span class="lineno"> 1864</span>&#160;    <span class="comment">// First argument is the file name, we let it blank</span></div>
 <div class="line"><a name="l01865"></a><span class="lineno"> 1865</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l01866"></a><span class="lineno"> 1866</span>&#160;    ArgvArray[0] = (<span class="keywordtype">char</span> *)<a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l01866"></a><span class="lineno"> 1866</span>&#160;    ArgvArray[0] = (<span class="keywordtype">char</span> *)NULL;</div>
 <div class="line"><a name="l01867"></a><span class="lineno"> 1867</span>&#160; </div>
 <div class="line"><a name="l01868"></a><span class="lineno"> 1868</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01869"></a><span class="lineno"> 1869</span>&#160;    <span class="comment">// Remove the module name (if any)</span></div>
 <div class="line"><a name="l01870"></a><span class="lineno"> 1870</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;    <span class="keywordflow">while</span> (TypeName[TypeNameIndex] != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l01871"></a><span class="lineno"> 1871</span>&#160;    <span class="keywordflow">while</span> (TypeName[TypeNameIndex] != NULL)</div>
 <div class="line"><a name="l01872"></a><span class="lineno"> 1872</span>&#160;    {</div>
 <div class="line"><a name="l01873"></a><span class="lineno"> 1873</span>&#160;        <span class="keywordflow">if</span> (TypeName[TypeNameIndex] == <span class="charliteral">&#39;!&#39;</span>)</div>
 <div class="line"><a name="l01874"></a><span class="lineno"> 1874</span>&#160;        {</div>
@@ -2397,7 +2396,7 @@ Sina Karvandi (<a href="#" onclick="location.href='mai'+'lto:'+'sin'+'a@'+'hyp'+
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>VOID </dd></dl>
 <div class="fragment"><div class="line"><a name="l01310"></a><span class="lineno"> 1310</span>&#160;{</div>
-<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="symbol-parser_8cpp.html#aa5d3e7e6448b37fb0c53643693d4e43d">g_CurrentModuleName</a> == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l01311"></a><span class="lineno"> 1311</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="symbol-parser_8cpp.html#aa5d3e7e6448b37fb0c53643693d4e43d">g_CurrentModuleName</a> == NULL)</div>
 <div class="line"><a name="l01312"></a><span class="lineno"> 1312</span>&#160;    {</div>
 <div class="line"><a name="l01313"></a><span class="lineno"> 1313</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l01314"></a><span class="lineno"> 1314</span>&#160;        <span class="comment">// Name Address</span></div>

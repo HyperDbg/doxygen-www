@@ -810,7 +810,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">while</span> (<a class="code" href="_script_engine_eval_8h.html#aa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>)</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="_script_engine_eval_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587">UCHAR</a> RecvChar = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="_script_engine_eval_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587">UCHAR</a> RecvChar = NULL;</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="_serial_connection_8h.html#a42e4ceafbbdb35c500dcea0550ed9bee">KdHyperDbgRecvByte</a>(&amp;RecvChar))</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        {</div>
@@ -854,7 +854,6 @@ Functions</h2></td></tr>
 <div class="ttc" id="a_serial_connection_8c_html_aadfbb282679eb9d7d0fc8744f5551a87"><div class="ttname"><a href="_serial_connection_8c.html#aadfbb282679eb9d7d0fc8744f5551a87">SerialConnectionCheckForTheEndOfTheBuffer</a></div><div class="ttdeci">BOOLEAN SerialConnectionCheckForTheEndOfTheBuffer(PUINT32 CurrentLoopIndex, BYTE *Buffer)</div><div class="ttdoc">compares the buffer with a string</div><div class="ttdef"><b>Definition:</b> SerialConnection.c:53</div></div>
 <div class="ttc" id="a_serial_connection_8h_html_a42e4ceafbbdb35c500dcea0550ed9bee"><div class="ttname"><a href="_serial_connection_8h.html#a42e4ceafbbdb35c500dcea0550ed9bee">KdHyperDbgRecvByte</a></div><div class="ttdeci">BOOLEAN KdHyperDbgRecvByte(PUCHAR RecvByte)</div><div class="ttdef"><b>Definition:</b> uart16550.c:103</div></div>
 <div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_a459b19922fecfbb9438dd56b66930d16"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#a459b19922fecfbb9438dd56b66930d16">LogError</a></div><div class="ttdeci">#define LogError(format,...)</div><div class="ttdoc">Log in the case of error.</div><div class="ttdef"><b>Definition:</b> Common.h:442</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 </div><!-- fragment -->
 </div>
 </div>

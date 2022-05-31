@@ -307,10 +307,9 @@ template&lt;class CharT &gt; </div>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    {</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp; sec2 : <a class="code" href="classinipp_1_1_ini.html#a1b3bcddab885b74a4b240a1792148582">sections</a>)</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; <a class="code" href="namespacetest-case-generator.html#aaeb6784b3463af26bc4c893996a54e47">val</a> : sec)</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                sec2.second.insert(<a class="code" href="namespacetest-case-generator.html#aaeb6784b3463af26bc4c893996a54e47">val</a>);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp; val : sec)</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                sec2.second.insert(val);</div>
 <div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    }</div>
-<div class="ttc" id="anamespacetest-case-generator_html_aaeb6784b3463af26bc4c893996a54e47"><div class="ttname"><a href="namespacetest-case-generator.html#aaeb6784b3463af26bc4c893996a54e47">test-case-generator.val</a></div><div class="ttdeci">def val</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:590</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -343,9 +342,9 @@ template&lt;class CharT &gt; </div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span> &amp; sec : <a class="code" href="classinipp_1_1_ini.html#a1b3bcddab885b74a4b240a1792148582">sections</a>)</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        {</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            os &lt;&lt; <a class="code" href="classinipp_1_1_ini.html#a95c4eeb40dba2c0a9bfbb3124e0bf39d">format</a>-&gt;char_section_start &lt;&lt; sec.first &lt;&lt; <a class="code" href="classinipp_1_1_ini.html#a95c4eeb40dba2c0a9bfbb3124e0bf39d">format</a>-&gt;char_section_end &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span> &amp; <a class="code" href="namespacetest-case-generator.html#aaeb6784b3463af26bc4c893996a54e47">val</a> : sec.second)</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">auto</span> <span class="keyword">const</span> &amp; val : sec.second)</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                os &lt;&lt; <a class="code" href="namespacetest-case-generator.html#aaeb6784b3463af26bc4c893996a54e47">val</a>.first &lt;&lt; <a class="code" href="classinipp_1_1_ini.html#a95c4eeb40dba2c0a9bfbb3124e0bf39d">format</a>-&gt;char_assign &lt;&lt; <a class="code" href="namespacetest-case-generator.html#aaeb6784b3463af26bc4c893996a54e47">val</a>.second &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                os &lt;&lt; val.first &lt;&lt; <a class="code" href="classinipp_1_1_ini.html#a95c4eeb40dba2c0a9bfbb3124e0bf39d">format</a>-&gt;char_assign &lt;&lt; val.second &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            }</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            os &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        }</div>
@@ -496,10 +495,10 @@ template&lt;class CharT &gt; </div>
 <div class="fragment"><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    {</div>
 <div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keyword">const</span> std::locale loc {<span class="stringliteral">&quot;C&quot;</span>};</div>
 <div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp; sec : <a class="code" href="classinipp_1_1_ini.html#a1b3bcddab885b74a4b240a1792148582">sections</a>)</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp; <a class="code" href="namespacetest-case-generator.html#aaeb6784b3463af26bc4c893996a54e47">val</a> : sec.second)</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp; val : sec.second)</div>
 <div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            {</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                <a class="code" href="namespaceinipp_1_1detail.html#a431429562a1fb7104b149511c8a1b01d">detail::rtrim2</a>(<a class="code" href="namespacetest-case-generator.html#aaeb6784b3463af26bc4c893996a54e47">val</a>.second, [<span class="keyword">this</span>](CharT ch) { return format-&gt;is_comment(ch); });</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                <a class="code" href="namespaceinipp_1_1detail.html#a20fba329d12745714763f65f1d2e350a">detail::rtrim</a>(<a class="code" href="namespacetest-case-generator.html#aaeb6784b3463af26bc4c893996a54e47">val</a>.second, loc);</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                <a class="code" href="namespaceinipp_1_1detail.html#a431429562a1fb7104b149511c8a1b01d">detail::rtrim2</a>(val.second, [<span class="keyword">this</span>](CharT ch) { return format-&gt;is_comment(ch); });</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                <a class="code" href="namespaceinipp_1_1detail.html#a20fba329d12745714763f65f1d2e350a">detail::rtrim</a>(val.second, loc);</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            }</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    }</div>
 <div class="ttc" id="anamespaceinipp_1_1detail_html_a431429562a1fb7104b149511c8a1b01d"><div class="ttname"><a href="namespaceinipp_1_1detail.html#a431429562a1fb7104b149511c8a1b01d">inipp::detail::rtrim2</a></div><div class="ttdeci">void rtrim2(std::basic_string&lt; CharT &gt; &amp;s, UnaryPredicate pred)</div><div class="ttdef"><b>Definition:</b> inipp.h:64</div></div>

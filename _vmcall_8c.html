@@ -215,7 +215,7 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>NTSTATUS </dd></dl>
 <div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;{</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>  GuestRsp         = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>  GuestRsp         = NULL;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a> IsHyperdbgVmcall = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//</span></div>
@@ -226,7 +226,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="hprdbghv_2header_2debugger_2core_2debugger_8h.html#a551f1bc8f7fe50864796298011256cbd">g_TriggerEventForVmcalls</a>)</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="_debugger_8c.html#aac71ecf7a7e99662000efef060a32775">DebuggerTriggerEvents</a>(<a class="code" href="_definition_8h.html#ac90d8337845597671bc9d95b598591daaf3a1c84d32c23f7021ecf9717179fd47">VMCALL_INSTRUCTION_EXECUTION</a>, GuestRegs, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="_debugger_8c.html#aac71ecf7a7e99662000efef060a32775">DebuggerTriggerEvents</a>(<a class="code" href="_definition_8h.html#ac90d8337845597671bc9d95b598591daaf3a1c84d32c23f7021ecf9717179fd47">VMCALL_INSTRUCTION_EXECUTION</a>, GuestRegs, NULL);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    IsHyperdbgVmcall = (GuestRegs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a8c9ee2201d6334cdd8386785d242dc2c">r10</a> == 0x48564653 &amp;&amp;</div>
@@ -259,7 +259,6 @@ Functions</h2></td></tr>
 <div class="ttc" id="a_vmcall_8c_html_a3e71a1ac4bc9124d8bf6301517e613cb"><div class="ttname"><a href="_vmcall_8c.html#a3e71a1ac4bc9124d8bf6301517e613cb">VmxVmcallHandler</a></div><div class="ttdeci">_Use_decl_annotations_ NTSTATUS VmxVmcallHandler(UINT32 CurrentCoreIndex, UINT64 VmcallNumber, UINT64 OptionalParam1, UINT64 OptionalParam2, UINT64 OptionalParam3, PGUEST_REGS GuestRegs)</div><div class="ttdoc">Main Vmcall Handler.</div><div class="ttdef"><b>Definition:</b> Vmcall.c:117</div></div>
 <div class="ttc" id="a_vmcall_8c_html_a80352657b07123c63892fd0992b99747"><div class="ttname"><a href="_vmcall_8c.html#a80352657b07123c63892fd0992b99747">VmxHypervVmcallHandler</a></div><div class="ttdeci">_Use_decl_annotations_ NTSTATUS VmxHypervVmcallHandler(PGUEST_REGS GuestRegs)</div><div class="ttdef"><b>Definition:</b> Vmcall.c:16</div></div>
 <div class="ttc" id="ahprdbghv_2header_2debugger_2core_2debugger_8h_html_a551f1bc8f7fe50864796298011256cbd"><div class="ttname"><a href="hprdbghv_2header_2debugger_2core_2debugger_8h.html#a551f1bc8f7fe50864796298011256cbd">g_TriggerEventForVmcalls</a></div><div class="ttdeci">BOOLEAN g_TriggerEventForVmcalls</div><div class="ttdoc">Showes whether the vmcall handler is allowed to trigger an event or not.</div><div class="ttdef"><b>Definition:</b> Debugger.h:23</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 <div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_a346ed6ae20503154a9a8031491706b3e"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#a346ed6ae20503154a9a8031491706b3e">GUEST_REGS::rax</a></div><div class="ttdeci">UINT64 rax</div><div class="ttdef"><b>Definition:</b> Definition.h:656</div></div>
 <div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_a3d6ecd2e50ac54f06231fdf1c721ecc4"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#a3d6ecd2e50ac54f06231fdf1c721ecc4">GUEST_REGS::r12</a></div><div class="ttdeci">UINT64 r12</div><div class="ttdef"><b>Definition:</b> Definition.h:668</div></div>
 <div class="ttc" id="astruct_g_u_e_s_t___r_e_g_s_html_a52c8a777462e3d62c533b319475d1b66"><div class="ttname"><a href="struct_g_u_e_s_t___r_e_g_s.html#a52c8a777462e3d62c533b319475d1b66">GUEST_REGS::r9</a></div><div class="ttdeci">UINT64 r9</div><div class="ttdef"><b>Definition:</b> Definition.h:665</div></div>
@@ -287,7 +286,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>                GuestRsp   = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#aae17ebb9ef7279d026817fb22f8aebe9">UINT64</a>                GuestRsp   = NULL;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="union___h_y_p_e_r_c_a_l_l___i_n_p_u_t___v_a_l_u_e.html">HYPERCALL_INPUT_VALUE</a> InputValue = {.<a class="code" href="union___h_y_p_e_r_c_a_l_l___i_n_p_u_t___v_a_l_u_e.html#ac12e9fbaade150adcb08a42a6c1ba0b7">Flags</a> = GuestRegs-&gt;<a class="code" href="struct_g_u_e_s_t___r_e_g_s.html#a9a9133a328f13d405c31df928307e9fd">rcx</a>};</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordflow">switch</span> (InputValue.<a class="code" href="union___h_y_p_e_r_c_a_l_l___i_n_p_u_t___v_a_l_u_e.html#a85b999c9043c5fb0c769f066546ab80c">Fields</a>.<a class="code" href="union___h_y_p_e_r_c_a_l_l___i_n_p_u_t___v_a_l_u_e.html#a5f045db6ab6a6ef3239992dab8103568">CallCode</a>)</div>
@@ -650,7 +649,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        <a class="code" href="_kd_8c.html#a9ce30bdceae51152711188b524ef6354">KdHandleBreakpointAndDebugBreakpoints</a>(CurrentCoreIndex,</div>
 <div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;                                              GuestRegs,</div>
 <div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;                                              <a class="code" href="_definition_8h.html#a6e2be89205e735ebae644cf4850ac21baa375fab564c6e6097622c25709e98af0">DEBUGGEE_PAUSING_REASON_REQUEST_FROM_DEBUGGER</a>,</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                                              <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;                                              NULL);</div>
 <div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;        VmcallStatus = STATUS_SUCCESS;</div>
 <div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        <span class="keywordflow">break</span>;</div>
 <div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    }</div>
@@ -709,7 +708,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;            <a class="code" href="_kd_8c.html#a9ce30bdceae51152711188b524ef6354">KdHandleBreakpointAndDebugBreakpoints</a>(CurrentCoreIndex,</div>
 <div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;                                                  GuestRegs,</div>
 <div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;                                                  <a class="code" href="_definition_8h.html#a6e2be89205e735ebae644cf4850ac21ba979ed1c454b7c655d06d12f89fe787b2">DEBUGGEE_PAUSING_REASON_PAUSE_WITHOUT_DISASM</a>,</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                                                  <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>);</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;                                                  NULL);</div>
 <div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        }</div>
 <div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; </div>
 <div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        VmcallStatus = STATUS_SUCCESS;</div>

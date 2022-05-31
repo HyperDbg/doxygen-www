@@ -145,11 +145,10 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        RtlZeroBytes(<a class="code" href="_global_variables_8h.html#a2d2638d7b52281063d7e08a62cdfda12">g_Events</a>, <span class="keyword">sizeof</span>(<a class="code" href="struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html">DEBUGGER_CORE_EVENTS</a>));</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_global_variables_8h.html#a2d2638d7b52281063d7e08a62cdfda12">g_Events</a> != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_global_variables_8h.html#a2d2638d7b52281063d7e08a62cdfda12">g_Events</a> != NULL;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 <div class="ttc" id="a_global_variables_8h_html_a2d2638d7b52281063d7e08a62cdfda12"><div class="ttname"><a href="_global_variables_8h.html#a2d2638d7b52281063d7e08a62cdfda12">g_Events</a></div><div class="ttdeci">DEBUGGER_CORE_EVENTS * g_Events</div><div class="ttdoc">events list (for debugger)</div><div class="ttdef"><b>Definition:</b> GlobalVariables.h:43</div></div>
 <div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_ab7f91e71074ce1488e61869adbc44d8d"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#ab7f91e71074ce1488e61869adbc44d8d">POOLTAG</a></div><div class="ttdeci">#define POOLTAG</div><div class="ttdoc">Pool tag.</div><div class="ttdef"><b>Definition:</b> Common.h:223</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 <div class="ttc" id="astruct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s_html"><div class="ttname"><a href="struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html">_DEBUGGER_CORE_EVENTS</a></div><div class="ttdoc">List of all the different events.</div><div class="ttdef"><b>Definition:</b> Debugger.h:48</div></div>
 </div><!-- fragment -->
 </div>
@@ -170,13 +169,13 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_global_variables_8h.html#a2d2638d7b52281063d7e08a62cdfda12">g_Events</a> != <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="_global_variables_8h.html#a2d2638d7b52281063d7e08a62cdfda12">g_Events</a> != NULL)</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        ExFreePoolWithTag(<a class="code" href="_global_variables_8h.html#a2d2638d7b52281063d7e08a62cdfda12">g_Events</a>, <a class="code" href="hprdbghv_2header_2common_2common_8h.html#ab7f91e71074ce1488e61869adbc44d8d">POOLTAG</a>);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="_global_variables_8h.html#a2d2638d7b52281063d7e08a62cdfda12">g_Events</a> = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="_global_variables_8h.html#a2d2638d7b52281063d7e08a62cdfda12">g_Events</a> = NULL;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_global_variables_8h.html#a2d2638d7b52281063d7e08a62cdfda12">g_Events</a> == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="_global_variables_8h.html#a2d2638d7b52281063d7e08a62cdfda12">g_Events</a> == NULL;</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
 </div><!-- fragment -->
 </div>

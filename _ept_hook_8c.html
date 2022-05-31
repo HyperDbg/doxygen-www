@@ -207,7 +207,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        <span class="comment">//</span></div>
 <div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <a class="code" href="_broadcast_8c.html#ad3f6212e75c6a7fa25e423c71d9dc1d9">BroadcastEnableBreakpointExitingOnExceptionBitmapAllCores</a>();</div>
 <div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#aa23cf4e06f34a78d1efc1049c0c7c9a3">VMCALL_SET_HIDDEN_CC_BREAKPOINT</a>, TargetAddress, <a class="code" href="hprdbghv_2code_2common_2_common_8c.html#af530cb1a7ccd595fa84d7e27001ab933">GetCr3FromProcessId</a>(ProcessId).Flags, <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>) == STATUS_SUCCESS)</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c">AsmVmxVmcall</a>(<a class="code" href="_vmcall_8h.html#aa23cf4e06f34a78d1efc1049c0c7c9a3">VMCALL_SET_HIDDEN_CC_BREAKPOINT</a>, TargetAddress, <a class="code" href="hprdbghv_2code_2common_2_common_8c.html#af530cb1a7ccd595fa84d7e27001ab933">GetCr3FromProcessId</a>(ProcessId).Flags, NULL) == STATUS_SUCCESS)</div>
 <div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        {</div>
 <div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            <a class="code" href="hprdbghv_2header_2common_2common_8h.html#a108126279e46f4d46d25abe24da43fdc">LogDebugInfo</a>(<span class="stringliteral">&quot;Hidden breakpoint hook applied from VMX Root Mode&quot;</span>);</div>
 <div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160; </div>
@@ -252,7 +252,6 @@ Functions</h2></td></tr>
 <div class="ttc" id="ahprdbghv_2code_2common_2_common_8c_html_af530cb1a7ccd595fa84d7e27001ab933"><div class="ttname"><a href="hprdbghv_2code_2common_2_common_8c.html#af530cb1a7ccd595fa84d7e27001ab933">GetCr3FromProcessId</a></div><div class="ttdeci">_Use_decl_annotations_ CR3_TYPE GetCr3FromProcessId(UINT32 ProcessId)</div><div class="ttdoc">Converts pid to kernel cr3.</div><div class="ttdef"><b>Definition:</b> Common.c:131</div></div>
 <div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_a108126279e46f4d46d25abe24da43fdc"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#a108126279e46f4d46d25abe24da43fdc">LogDebugInfo</a></div><div class="ttdeci">#define LogDebugInfo(format,...)</div><div class="ttdoc">Log, initilize boot information and debug information.</div><div class="ttdef"><b>Definition:</b> Common.h:484</div></div>
 <div class="ttc" id="ahprdbghv_2header_2common_2common_8h_html_a459b19922fecfbb9438dd56b66930d16"><div class="ttname"><a href="hprdbghv_2header_2common_2common_8h.html#a459b19922fecfbb9438dd56b66930d16">LogError</a></div><div class="ttdeci">#define LogError(format,...)</div><div class="ttdoc">Log in the case of error.</div><div class="ttdef"><b>Definition:</b> Common.h:442</div></div>
-<div class="ttc" id="anamespacetest-case-generator_html_a24d84c157fb3518eabe5eb9d0304e39f"><div class="ttname"><a href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">test-case-generator.NULL</a></div><div class="ttdeci">def NULL()</div><div class="ttdef"><b>Definition:</b> test-case-generator.py:530</div></div>
 <div class="ttc" id="astruct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l_html"><div class="ttname"><a href="struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html">_EPT_HOOKED_PAGE_DETAIL</a></div><div class="ttdoc">Structure to save the state of each hooked pages.</div><div class="ttdef"><b>Definition:</b> Ept.h:214</div></div>
 </div><!-- fragment -->
 </div>
@@ -904,7 +903,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a>                   LogicalCoreIndex;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="struct___c_r3___t_y_p_e.html">CR3_TYPE</a>                Cr3OfCurrentProcess;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a4ae1dab0fb4b072a66584546209e7d58">BYTE</a>                    OriginalByte;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html">PEPT_HOOKED_PAGE_DETAIL</a> HookedEntry      = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html">PEPT_HOOKED_PAGE_DETAIL</a> HookedEntry      = NULL;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#a1cb18096b299d23458d3c7b85fd86555">BOOLEAN</a>                 HookedEntryFound = <a class="code" href="_script_engine_eval_8h.html#aa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    PLIST_ENTRY             TempList         = 0;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
@@ -1309,7 +1308,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    <a class="code" href="_script_engine_eval_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a>                   LogicalCoreIndex;</div>
 <div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    <a class="code" href="struct___c_r3___t_y_p_e.html">CR3_TYPE</a>                Cr3OfCurrentProcess;</div>
 <div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    PLIST_ENTRY             TempList    = 0;</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    <a class="code" href="struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html">PEPT_HOOKED_PAGE_DETAIL</a> HookedEntry = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;    <a class="code" href="struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html">PEPT_HOOKED_PAGE_DETAIL</a> HookedEntry = NULL;</div>
 <div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160; </div>
 <div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;    <span class="comment">// Check whether we are in VMX Root Mode or Not</span></div>
@@ -1860,7 +1859,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01492"></a><span class="lineno"> 1492</span>&#160;    <span class="comment">//</span></div>
 <div class="line"><a name="l01493"></a><span class="lineno"> 1493</span>&#160;    <span class="comment">// Check if the physical address is available or not</span></div>
 <div class="line"><a name="l01494"></a><span class="lineno"> 1494</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;    <span class="keywordflow">if</span> (PhysAddress == <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>)</div>
+<div class="line"><a name="l01495"></a><span class="lineno"> 1495</span>&#160;    <span class="keywordflow">if</span> (PhysAddress == NULL)</div>
 <div class="line"><a name="l01496"></a><span class="lineno"> 1496</span>&#160;    {</div>
 <div class="line"><a name="l01497"></a><span class="lineno"> 1497</span>&#160;        PhysicalAddress = <a class="code" href="hprdbgctrl_2header_2common_8h.html#aa02188de52b66a3aa5e1aecc6bd963ae">PAGE_ALIGN</a>(<a class="code" href="hprdbghv_2code_2common_2_common_8c.html#a507e3ba3c1076ac38e61c34f53ef5c38">VirtualAddressToPhysicalAddressByProcessId</a>(VirtualAddress, ProcessId));</div>
 <div class="line"><a name="l01498"></a><span class="lineno"> 1498</span>&#160;    }</div>
@@ -2101,7 +2100,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l01438"></a><span class="lineno"> 1438</span>&#160;                <span class="comment">// Remove just that special entry</span></div>
 <div class="line"><a name="l01439"></a><span class="lineno"> 1439</span>&#160;                <span class="comment">// Btw, No need to remove it, it will be replaced automatically</span></div>
 <div class="line"><a name="l01440"></a><span class="lineno"> 1440</span>&#160;                <span class="comment">//</span></div>
-<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;                HookedEntry-&gt;<a class="code" href="struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#aaaf2650f56c9581f4724da1e833257ef">BreakpointAddresses</a>[i]                = <a class="code" href="namespacetest-case-generator.html#a24d84c157fb3518eabe5eb9d0304e39f">NULL</a>;</div>
+<div class="line"><a name="l01441"></a><span class="lineno"> 1441</span>&#160;                HookedEntry-&gt;<a class="code" href="struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#aaaf2650f56c9581f4724da1e833257ef">BreakpointAddresses</a>[i]                = NULL;</div>
 <div class="line"><a name="l01442"></a><span class="lineno"> 1442</span>&#160;                HookedEntry-&gt;<a class="code" href="struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#a9a3a0a03e6ce50440efa6185f63a6882">PreviousBytesOnBreakpointAddresses</a>[i] = 0x0;</div>
 <div class="line"><a name="l01443"></a><span class="lineno"> 1443</span>&#160; </div>
 <div class="line"><a name="l01444"></a><span class="lineno"> 1444</span>&#160;                <span class="comment">//</span></div>
