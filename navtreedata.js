@@ -24,46 +24,51 @@
 */
 var NAVTREE =
 [
-  [ "HyperDbg Debugger", "index.html", [
-    [ "HyperDbg Debugger", "index.html#autotoc_md24", [
-      [ "Description", "index.html#autotoc_md25", null ],
-      [ "Build & Installation", "index.html#autotoc_md26", null ],
-      [ "Publications", "index.html#autotoc_md27", null ],
-      [ "Unique Features", "index.html#autotoc_md28", [
-        [ "First Release (v0.1.0.0)", "index.html#autotoc_md29", null ],
-        [ "Second Release (v0.2.0.0)", "index.html#autotoc_md30", null ]
+  [ "HyperDbg", "index.html", [
+    [ "HyperDbg Debugger", "index.html#autotoc_md28", [
+      [ "Description", "index.html#autotoc_md29", null ],
+      [ "Build & Installation", "index.html#autotoc_md30", null ],
+      [ "Publications", "index.html#autotoc_md31", null ],
+      [ "Unique Features", "index.html#autotoc_md32", [
+        [ "First Release (v0.1.0.0)", "index.html#autotoc_md33", null ],
+        [ "Second Release (v0.2.0.0)", "index.html#autotoc_md34", null ]
       ] ],
-      [ "How does it work?", "index.html#autotoc_md31", null ],
-      [ "Scripts", "index.html#autotoc_md32", null ],
-      [ "Credits", "index.html#autotoc_md33", null ],
-      [ "Contributing", "index.html#autotoc_md34", null ],
-      [ "License", "index.html#autotoc_md35", null ]
+      [ "How does it work?", "index.html#autotoc_md35", null ],
+      [ "Scripts", "index.html#autotoc_md36", null ],
+      [ "Contributing", "index.html#autotoc_md37", null ],
+      [ "License", "index.html#autotoc_md38", null ]
     ] ],
     [ "Changelog", "md__c_h_a_n_g_e_l_o_g.html", [
-      [ "[Unreleased]", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md1", [
-        [ "Added", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md2", null ],
-        [ "Changed", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md3", null ],
-        [ "Removed", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md4", null ]
+      [ "[0.3.0.0] - 2023-XX-XX", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md1", [
+        [ "Added", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md2", null ]
       ] ],
-      [ "[0.1.0.0] - 2021-03-31", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md5", [
-        [ "Added", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md6", null ]
+      [ "[0.2.0.0] - 2023-05-03", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md3", [
+        [ "Added", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md4", null ],
+        [ "Changed", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md5", null ],
+        [ "Removed", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md6", null ]
+      ] ],
+      [ "[0.1.0.0] - 2022-05-31", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md7", [
+        [ "Added", "md__c_h_a_n_g_e_l_o_g.html#autotoc_md8", null ]
       ] ]
     ] ],
     [ "Contributor Covenant Code of Conduct", "md__c_o_d_e__o_f__c_o_n_d_u_c_t.html", [
-      [ "Our Pledge", "md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md8", null ],
-      [ "Our Standards", "md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md9", null ],
-      [ "Our Responsibilities", "md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md10", null ],
-      [ "Scope", "md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md11", null ],
-      [ "Enforcement", "md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md12", null ],
-      [ "Attribution", "md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md13", null ]
+      [ "Our Pledge", "md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md10", null ],
+      [ "Our Standards", "md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md11", null ],
+      [ "Our Responsibilities", "md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md12", null ],
+      [ "Scope", "md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md13", null ],
+      [ "Enforcement", "md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md14", null ],
+      [ "Attribution", "md__c_o_d_e__o_f__c_o_n_d_u_c_t.html#autotoc_md15", null ]
     ] ],
     [ "Contribution", "md__c_o_n_t_r_i_b_u_t_i_n_g.html", [
-      [ "Things to work on", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md15", null ],
-      [ "Coding Style", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md16", null ],
-      [ "FAQ", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md17", null ]
+      [ "Things to work on", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md17", null ],
+      [ "Coding Style", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md18", null ],
+      [ "FAQ", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md19", null ]
+    ] ],
+    [ "Contributors", "md__c_r_e_d_i_t_s.html", [
+      [ "Credits", "md__c_r_e_d_i_t_s.html#autotoc_md25", null ]
     ] ],
     [ "HOWTO", "md__h_o_w_t_o.html", [
-      [ "Automatic testing for the script engine", "md__h_o_w_t_o.html#autotoc_md23", null ]
+      [ "Automatic testing for the script engine", "md__h_o_w_t_o.html#autotoc_md27", null ]
     ] ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -101,38 +106,51 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "____init_____8py.html",
-"_cross_api_8h.html#a4e472678de954020ca178ea6c71a09dc",
-"_definition_8h.html#a4fdcd4d2200ee93ba3dbf9da4d8e76e0",
-"_definition_8h.html#ac0e6db4051893271cfa53c365980c7c7a27c9153ba2044f2c1854ca59d29f46d1",
-"_dpc_routines_8c.html#ac0df5b089250515279b8c348e0817977",
-"_extension_commands_8c.html#ad4051f8d2cd1b100d54e8244937eec2f",
-"_io_handler_8h.html#a034bb67c5edbfaa804e07047f059aaad",
-"_memory_mapper_8c.html#ac5e3028203ff7bfbebf360083d7bd25e",
-"_script_engine_common_definitions_8h.html#a169890310bdffddf2d480009d75ff3e0a6d0af5fb66d2939cfe3dc5653c1e3d5a",
-"_script_engine_eval_8h.html#a512d364d2dd0d34a9204f87e5751cee1",
-"_trace_8h_source.html",
-"_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8a8a7b48043231ced36f0bc6ec70ba0f7a",
-"classinipp_1_1_format.html#a20ccfba91bfdee56714952f2c047b607",
-"commands_8h.html#a5e83f4b6325a334a0968b05bbc29d0fc",
-"dir_02d9474f1d22691b7c61904f4c980db3.html",
-"functions_vars_b.html",
-"help_8h.html#a8e33b0e861d3b787bebafd82a5add20b",
-"hprdbgctrl_2header_2kd_8h.html#a9a239c7ec052b819fc8953a8af3da101",
-"hprdbghv_2header_2common_2common_8h.html#a6b5ea74a23199b25cd91da7cb7307f5fa8a7a9cbb4d530cb0fcd48b9c39a1ada7",
-"index.html#autotoc_md27",
-"load_8cpp.html#a0858c53b46dd9ffe2515eefa896e220c",
-"msm8x60_8c.html#a653fe5321168cf5e50fb3974443ed04e",
-"parse-table_8h.html#a2548769dbff8a53a9689e133a64fcddd",
-"script-engine-wrapper_8cpp.html#a57f187c5719e21e58bba4d24d62829b9",
-"script-engine_8cpp.html#ae3d4f5bdc862a5eea8a8e11398d7dd25",
-"sdm845_8c.html#a4ed4cf2a2577bd0fe6b4a81a62285bde",
-"sdm845_8c.html#aa8ec19c8ad0bd89c571cf40ff6b36b9b",
-"spimax311_8c.html#a0d55fea801a07be06e221a7962100c8b",
-"struct___d_e_b_u_g_g_e_e___r_e_g_i_s_t_e_r___r_e_a_d___d_e_s_c_r_i_p_t_i_o_n.html#a83b75d88303c7185bb82e6ca5236e86b",
-"struct___d_e_b_u_g_g_e_r___r_e_a_d___p_a_g_e___t_a_b_l_e___e_n_t_r_i_e_s___d_e_t_a_i_l_s.html#a46fab01fe8f69f79cf80ec73c09c0ee0",
-"struct___p_a_g_e___e_n_t_r_y.html#a8335c1b1d9eb26c201753831dc7964c8",
-"struct___v_m___e_x_i_t___t_r_a_n_s_p_a_r_e_n_c_y.html#ab5136659316fce4bb20678f3f79bf112",
-"thread_8cpp.html#a238df6df488d7eab78141da1685b1db9"
+"_broadcast_8c.html#a7e05354f0353068c3d7968d9f7cb0627",
+"_dirty_logging_8h.html",
+"_functions_8c.html#a5e483c8aa8c85cddcc0c24a3c46843a1",
+"_hyperv_tlfs_8h.html#a5200d5b04cbbbff011ae90d9f1e6f7a4",
+"_kd_8c.html#ac2228441b67faeb7dd74f4eb23260df2",
+"_msr_handlers_8h.html#a59678cd7a7fb63225a137af3c1066ade",
+"_script_engine_common_definitions_8h.html#a169890310bdffddf2d480009d75ff3e0afb316c3c415059f5c6025674736ec8b0",
+"_ssdt_hook_8c.html#a2252d8f31a2a6826928c9a192ef59193",
+"_vmx_8c.html#a3f8cf05fd265cf9568bc5f3b1ee57897",
+"_vmx_mechanisms_8h.html#a0c5059c38c6528c2e0010613efc72643",
+"build_2bin_2debug_2_s_d_k_2_headers_2_connection_8h.html#ac0e6db4051893271cfa53c365980c7c7a4d7ddc01642a8dbcd2e0465da0dcda20",
+"build_2bin_2debug_2_s_d_k_2_headers_2_data_types_8h.html#acbbc04b3f929bcff66333b5968b3a796a7ac40342d32f5c5a8145a09ed887f10b",
+"build_2bin_2debug_2_s_d_k_2_headers_2_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a56a4f1677785327990a937d52760d5a1",
+"build_2bin_2debug_2_s_d_k_2_headers_2_request_structures_8h.html#a84380c5425f8362a9e7ebc8ae0d7a504abc233c6bd13bd067efef1cb07135b413",
+"build_2bin_2debug_2_s_d_k_2_imports_2_hyper_dbg_vmm_imports_8h.html#a0165bcf4bab3563fb46aa46792ea6df5",
+"classgenerator_1_1_generator.html#a49903b68a4698ec5d374b09e6372a6c1",
+"classlalr__parsing_1_1lr__zero_1_1_automaton.html#a83b8eba829c8bdb40bfed08186ec1a47",
+"commands_8h.html#aad72868312d80a2c793e12763f9c73b1",
+"dir_4b1dd6c14d905994889db0bd24e6a7f0.html",
+"functions_r.html",
+"help_8h.html#a5e6756f14c730412009d07655d6ea647",
+"hprdbgctrl_2header_2globals_8h.html#ac349c87de6bbcaced412e300b1232a2d",
+"hprdbghv_2code_2broadcast_2_dpc_routines_8c.html#afb26889e884945cdbe2936631a93d1c2",
+"hprdbghv_2header_2vmm_2vmx_2_events_8h.html#ade7b98ff2f26b359a8d902773a55df03ab88ed9a9fd4bac7ff04d15ed75279ca2",
+"hprdbgrm_2code_2driver_2_ioctl_8c.html",
+"include_2_s_d_k_2_headers_2_connection_8h.html#ac0e6db4051893271cfa53c365980c7c7a964486510276b655bcf43e66f28e3f7f",
+"include_2_s_d_k_2_headers_2_data_types_8h.html#aff1cef85516f67b49c8cb6ebba6c0b91",
+"include_2_s_d_k_2_headers_2_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349abe8641bf31397bf917fe5c3a346fbb3b",
+"include_2_s_d_k_2_headers_2_request_structures_8h.html#aa347f4a3de53f86bd6f5744f88c6c991",
+"include_2_s_d_k_2_imports_2_hyper_dbg_vmm_imports_8h.html#a2891f4d54dee5f19283d10a9db22e2d6",
+"interpreter_8cpp.html#accb0c27ac4bea6a87984fb828d896748",
+"measure_8cpp.html#acc1a3ed8290d2e2a71f47172bb6c0c50",
+"msm8x60_8c.html#ace1a001057bda20945a54c9f56cba2fc",
+"pause_8cpp.html#ac8b9079c1d516b04b41fa56032412950",
+"script-engine_2code_2_common_8c.html#a688c316b446af0bebacbf168b055d069",
+"sdm845_8c.html#a0d1c70aab643995150d9f4dfd3c2cdfd",
+"sdm845_8c.html#a6171768347dbddc20e810ed1dc0dfbff",
+"sdm845_8c.html#ab8c799910ac7d45734d578a6f6dbeec1",
+"spimax311_8c.html#a7d788ebe8585f9852ae9b44567ea8cee",
+"struct___d_e_b_u_g_g_e_e___t_h_r_e_a_d___l_i_s_t___d_e_t_a_i_l_s___e_n_t_r_y.html#a81d248a01e78fc8bed8f513732b21202",
+"struct___d_e_b_u_g_g_e_r___s_e_n_d___c_o_m_m_a_n_d___e_x_e_c_u_t_i_o_n___f_i_n_i_s_h_e_d___s_i_g_n_a_l.html#a7f6eb4942fa94da828b9425c3d49882c",
+"struct___p_e_b.html#a72839780d4b76efe8132a010cde3e4a6",
+"struct___v_m_m___c_a_l_l_b_a_c_k_s.html",
+"structhv__nested__enlightenments__control.html#aae56c411f36886b43a0a5f620f7b2db8",
+"uartp_8h.html#a4181d9a661679ac66a07d51c34983a0d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

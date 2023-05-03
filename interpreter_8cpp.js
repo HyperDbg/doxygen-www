@@ -1,10 +1,10 @@
 var interpreter_8cpp =
 [
     [ "GetCommandAttributes", "interpreter_8cpp.html#aab97cd5f9978d66c6e83739faf8575e9", null ],
-    [ "HyperDbgCheckMultilineCommand", "interpreter_8cpp.html#a10307ce44174ac47a70983ec8c6f7b9f", null ],
-    [ "HyperdbgContinuePreviousCommand", "interpreter_8cpp.html#a3ceb238f318fa9858eaa16cba4f56f53", null ],
-    [ "HyperdbgInterpreter", "interpreter_8cpp.html#ad855565920dd0b8f2aa7c6c1986dfb5c", null ],
-    [ "HyperdbgShowSignature", "interpreter_8cpp.html#ae2c87e83aee492a7f5699b0e7a1326d3", null ],
+    [ "HyperDbgCheckMultilineCommand", "interpreter_8cpp.html#ab73de70b99fc29da20f4be22939b87c0", null ],
+    [ "HyperDbgContinuePreviousCommand", "interpreter_8cpp.html#a88204bf2e78403f29384799c08c39e0b", null ],
+    [ "HyperDbgInterpreter", "interpreter_8cpp.html#ab5003d322c2dacdafbe30132f33e2734", null ],
+    [ "HyperDbgShowSignature", "interpreter_8cpp.html#a828d416c857adf6380b84c113fce5217", null ],
     [ "InitializeCommandsDictionary", "interpreter_8cpp.html#a291ece4b1333c68be4c8cda3cc03b9e4", null ],
     [ "InitializeDebugger", "interpreter_8cpp.html#ae85f00eb630e881eafecd00b976f0bdb", null ],
     [ "InterpreterRemoveComments", "interpreter_8cpp.html#a4cd31721bb57b0759b1101cb0a158ae7", null ],

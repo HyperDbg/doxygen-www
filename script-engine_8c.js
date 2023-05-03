@@ -5,7 +5,7 @@ var script_engine_8c =
     [ "GetGlobalIdentifierVal", "script-engine_8c.html#a3d20267e9d2b0af35b57d7cacb863be5", null ],
     [ "GetLocalIdentifierVal", "script-engine_8c.html#a6c7d746bbdc942cfca1d5972a16f3379", null ],
     [ "GetStringSymbolSize", "script-engine_8c.html#a5a1425bb2a3074c10b1f1acd2e8bbf9b", null ],
-    [ "HandleError", "script-engine_8c.html#a8d0ce2aaa8831ad96f845a749f39e6b8", null ],
+    [ "HandleError", "script-engine_8c.html#af17b0a9b40bba1864b4920f065c9c969", null ],
     [ "LalrGetRhsSize", "script-engine_8c.html#a06c5210a2c49199b534925a438e27f60", null ],
     [ "LalrIsOperandType", "script-engine_8c.html#a9b60817cffe99864de2812e609d10c6f", null ],
     [ "NewGlobalIdentifier", "script-engine_8c.html#a4b050afd8db1d5181a19442dfc7713f3", null ],

@@ -1,11 +1,9 @@
 var _idt_emulation_8c =
 [
-    [ "IdtEmulationCheckProcessOrThreadChange", "_idt_emulation_8c.html#ae7f35312190aeb6769381705fd6d1469", null ],
-    [ "IdtEmulationHandleExceptionAndNmi", "_idt_emulation_8c.html#ad4db185e57989c97b9a62d3066c03b33", null ],
-    [ "IdtEmulationHandleExternalInterrupt", "_idt_emulation_8c.html#afb8ed4cd17bb5485dda4eddc573f4ab3", null ],
-    [ "IdtEmulationHandleInterruptWindowExiting", "_idt_emulation_8c.html#a934882cc2d9216e42a8a664ede23aedf", null ],
-    [ "IdtEmulationHandleNmiWindowExiting", "_idt_emulation_8c.html#ab8cbe1114305f94a1bd4bfdaec0592a9", null ],
-    [ "IdtEmulationHandlePageFaults", "_idt_emulation_8c.html#abfb0c96c5173ff395f87b9cc485a25f9", null ],
-    [ "IdtEmulationInjectInterruptWhenInterruptWindowIsOpen", "_idt_emulation_8c.html#a83eddba471f3afa2710daf6d6871b2c9", null ],
-    [ "IdtEmulationReInjectInterruptOrException", "_idt_emulation_8c.html#af7aa9896070e422a0aefaadb3f356575", null ]
+    [ "IdtEmulationHandleExceptionAndNmi", "_idt_emulation_8c.html#a15c1173efc7c60e61dbe11c328549e3c", null ],
+    [ "IdtEmulationHandleExternalInterrupt", "_idt_emulation_8c.html#a7e398c6b4bc80396994ebdddef64ca16", null ],
+    [ "IdtEmulationHandleInterruptWindowExiting", "_idt_emulation_8c.html#a4e9c5a9e3374fe0d150e4834c5c534be", null ],
+    [ "IdtEmulationHandleNmiWindowExiting", "_idt_emulation_8c.html#ac5c68acc4557648f94de746eb8710850", null ],
+    [ "IdtEmulationHandlePageFaults", "_idt_emulation_8c.html#a3a22b21108d2c22fbdcbdc649943fbbf", null ],
+    [ "IdtEmulationInjectInterruptWhenInterruptWindowIsOpen", "_idt_emulation_8c.html#a2c978e1a65b06f9d032391ef96043926", null ]
 ];

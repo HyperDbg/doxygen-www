@@ -1,7 +1,7 @@
 var _efer_hook_8c =
 [
-    [ "SyscallHookConfigureEFER", "_efer_hook_8c.html#a9e6aa3a71bec2d2f001a992dbf31346b", null ],
-    [ "SyscallHookEmulateSYSCALL", "_efer_hook_8c.html#ab2d5e9863bf1456a765732554d12501a", null ],
-    [ "SyscallHookEmulateSYSRET", "_efer_hook_8c.html#a2e2363f45e308ab8b69cea7f6d642613", null ],
-    [ "SyscallHookHandleUD", "_efer_hook_8c.html#af2a4cc6ef2a50b810850bd3388e8b78f", null ]
+    [ "SyscallHookConfigureEFER", "_efer_hook_8c.html#a018ba30cbafd5ebc786414637eb7b8f3", null ],
+    [ "SyscallHookEmulateSYSCALL", "_efer_hook_8c.html#ac90baba1bf06921f9a5e8f0a7c0836a4", null ],
+    [ "SyscallHookEmulateSYSRET", "_efer_hook_8c.html#a3dfdd8d0afe5e4efafb11314e1660823", null ],
+    [ "SyscallHookHandleUD", "_efer_hook_8c.html#a674600726df2e5198a5b58d0773d91d9", null ]
 ];

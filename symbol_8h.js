@@ -1,6 +1,7 @@
 var symbol_8h =
 [
     [ "_LOCAL_FUNCTION_DESCRIPTION", "struct___l_o_c_a_l___f_u_n_c_t_i_o_n___d_e_s_c_r_i_p_t_i_o_n.html", "struct___l_o_c_a_l___f_u_n_c_t_i_o_n___d_e_s_c_r_i_p_t_i_o_n" ],
+    [ "PDBEX_DEFAULT_CONFIGURATION", "symbol_8h.html#a95c332437c004f0b0758f48992661037", null ],
     [ "LOCAL_FUNCTION_DESCRIPTION", "symbol_8h.html#ae6fb67e8d27af2dc3f7f75fcf880279d", null ],
     [ "PLOCAL_FUNCTION_DESCRIPTION", "symbol_8h.html#a82830390888748f795e7ede0a0743f34", null ],
     [ "SymbolBuildAndShowSymbolTable", "symbol_8h.html#af4535f2b01cfb27c3cf4f7916a255159", null ],

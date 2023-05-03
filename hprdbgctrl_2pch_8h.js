@@ -2,6 +2,7 @@ var hprdbgctrl_2pch_8h =
 [
     [ "HYPERDBG_USER_MODE", "hprdbgctrl_2pch_8h.html#a1825f8ac85fddade5c75a12ce1fe03e9", null ],
     [ "PHNT_MODE", "hprdbgctrl_2pch_8h.html#a3572e6d55cae1ba8530802d37af0b40c", null ],
+    [ "PHNT_PATCH_FOR_HYPERDBG", "hprdbgctrl_2pch_8h.html#a0c64765d5f10798a21677a393af6557c", null ],
     [ "PHNT_VERSION", "hprdbgctrl_2pch_8h.html#aed35e3885206831742f5e80fab971414", null ],
     [ "SCRIPT_ENGINE_USER_MODE", "hprdbgctrl_2pch_8h.html#a4abeb502deaddccb1f7d8ec0a7b0db99", null ],
     [ "USE__NATIVE_PHNT_HEADERS", "hprdbgctrl_2pch_8h.html#a9b8e86d4e732e96188656c5a95e4ef61", null ],

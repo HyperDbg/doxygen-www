@@ -1,7 +1,7 @@
 var namespacelalr__parsing_1_1lalr__one =
 [
-    [ "ParsingTable", "classlalr__parsing_1_1lalr__one_1_1_parsing_table.html", "classlalr__parsing_1_1lalr__one_1_1_parsing_table" ],
     [ "LrZeroItemTableEntry", "classlalr__parsing_1_1lalr__one_1_1_lr_zero_item_table_entry.html", "classlalr__parsing_1_1lalr__one_1_1_lr_zero_item_table_entry" ],
+    [ "ParsingTable", "classlalr__parsing_1_1lalr__one_1_1_parsing_table.html", "classlalr__parsing_1_1lalr__one_1_1_parsing_table" ],
     [ "closure", "namespacelalr__parsing_1_1lalr__one.html#a6f774eeb437a7baed15ad0d2ce447635", null ],
     [ "drop_itemset_lookaheads", "namespacelalr__parsing_1_1lalr__one.html#aba910d787b6c821a1e8305fd288fab8b", null ],
     [ "get_canonical_collection", "namespacelalr__parsing_1_1lalr__one.html#a8dde3d0c40ecf3afb49d815573002d13", null ],

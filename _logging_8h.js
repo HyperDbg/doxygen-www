@@ -9,17 +9,13 @@ var _logging_8h =
     [ "PBUFFER_HEADER", "_logging_8h.html#ace409b3795ae7e654b44795c4235e06b", null ],
     [ "PLOG_BUFFER_INFORMATION", "_logging_8h.html#ae3f0e284f4dd0a82c849a75fcef0332c", null ],
     [ "PNOTIFY_RECORD", "_logging_8h.html#a22fd26c1f9f0af01341f8ddaf65bfda8", null ],
-    [ "LogInitialize", "_logging_8h.html#aeaa67f662b711adc90d5cfbf023c734d", null ],
-    [ "LogMarkAllAsRead", "_logging_8h.html#a480d59927ef95ff8c6aa39a77e88ccc2", null ],
     [ "LogNotifyUsermodeCallback", "_logging_8h.html#a27b764f2e199e62752ff76d155385971", null ],
-    [ "LogPrepareAndSendMessageToQueue", "_logging_8h.html#a3c9994f3bdd203f25b76970fa1a8b854", null ],
     [ "LogReadBuffer", "_logging_8h.html#a052d3294b1eb4f00873067baa1532f4e", null ],
-    [ "LogRegisterEventBasedNotification", "_logging_8h.html#a7ddf4fe5591715ae0a9b0f7cf387fe84", null ],
-    [ "LogRegisterIrpBasedNotification", "_logging_8h.html#a25775dd4877092053342d243d80f1210", null ],
-    [ "LogSendBuffer", "_logging_8h.html#abeb53586c262e9cf7317897115abc094", null ],
-    [ "LogSendMessageToQueue", "_logging_8h.html#a48ae65ca14845b48d0e35caf83052b16", null ],
-    [ "LogUnInitialize", "_logging_8h.html#a1883978309bb4fa9f2fca9804389a577", null ],
+    [ "g_GlobalNotifyRecord", "_logging_8h.html#ac6bb7efa110feb40ba04985a35783931", null ],
+    [ "g_MsgTracingCallbacks", "_logging_8h.html#aeda9ca9e008dc7b6a0531a65384df214", null ],
     [ "MessageBufferInformation", "_logging_8h.html#a987d4dee46588ff399ecac12bd633e3d", null ],
+    [ "VmxLogMessage", "_logging_8h.html#a1e9503e7c74275f81ef1d665ac76047f", null ],
     [ "VmxRootLoggingLock", "_logging_8h.html#a0f18907a482e2771b5ac3129a8181c53", null ],
-    [ "VmxRootLoggingLockForNonImmBuffers", "_logging_8h.html#a7cda9705b4fb350b4b1b167c929e09ed", null ]
+    [ "VmxRootLoggingLockForNonImmBuffers", "_logging_8h.html#a7cda9705b4fb350b4b1b167c929e09ed", null ],
+    [ "VmxTempMessage", "_logging_8h.html#a4b628d2543b6bdf2ef6110d3e5bca85b", null ]
 ];

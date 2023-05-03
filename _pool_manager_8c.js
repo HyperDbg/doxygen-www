@@ -8,5 +8,6 @@ var _pool_manager_8c =
     [ "PoolManagerInitialize", "_pool_manager_8c.html#a8c4426c380bebca34fd7b6d10722ee8e", null ],
     [ "PoolManagerRequestAllocation", "_pool_manager_8c.html#a3660fd340db1240d410e847fb1ffe3d8", null ],
     [ "PoolManagerRequestPool", "_pool_manager_8c.html#a065841edb44331344b1a71a2ea397923", null ],
+    [ "PoolManagerShowPreAllocatedPools", "_pool_manager_8c.html#acf6b4a23da05e0414bcc58a791f72a7e", null ],
     [ "PoolManagerUninitialize", "_pool_manager_8c.html#ac159e1f3a096c5e9da7aaff001987237", null ]
 ];

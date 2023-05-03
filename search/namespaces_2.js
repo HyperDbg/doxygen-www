@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['detail_6071',['detail',['../namespaceinipp_1_1detail.html',1,'inipp']]],
-  ['inipp_6072',['inipp',['../namespaceinipp.html',1,'']]]
+  ['generator_0',['generator',['../namespacegenerator.html',1,'']]]
 ];

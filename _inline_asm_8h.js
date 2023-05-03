@@ -1,11 +1,8 @@
 var _inline_asm_8h =
 [
     [ "AsmCliInstruction", "_inline_asm_8h.html#afffea89ac106d72611f3c7675bad04c1", null ],
-    [ "AsmDebuggerConditionCodeHandler", "_inline_asm_8h.html#a0652f5e08f2e423045dd14d6bc753cfe", null ],
-    [ "AsmDebuggerCustomCodeHandler", "_inline_asm_8h.html#ad007e9becddac7e472107e026abd5c24", null ],
-    [ "AsmDebuggerSpinOnThread", "_inline_asm_8h.html#a04d59d1425e51de69c6cf5fde92e4723", null ],
     [ "AsmEnableVmxOperation", "_inline_asm_8h.html#a141567e2e7a4abc1106cccca5d365af3", null ],
-    [ "AsmGeneralDetourHook", "_inline_asm_8h.html#a119c789794680db52a415b9516662879", null ],
+    [ "AsmGeneralDetourHook", "_inline_asm_8h.html#ab0e909131196cbec54246cc925e89251", null ],
     [ "AsmGetAccessRights", "_inline_asm_8h.html#aedeb3f3df41e4bb43b6aed532e969195", null ],
     [ "AsmGetCs", "_inline_asm_8h.html#a75e25107aec121e0874c846b0d8d67cb", null ],
     [ "AsmGetDs", "_inline_asm_8h.html#a17937fce94794fd648657badd1af77d1", null ],
@@ -30,6 +27,7 @@ var _inline_asm_8h =
     [ "AsmStiInstruction", "_inline_asm_8h.html#a7a0c6617dd44b5372e8b5d1c1b91732e", null ],
     [ "AsmTestWrapperWithTestTags", "_inline_asm_8h.html#a109a87259b0e999852f282203d13a002", null ],
     [ "AsmVmexitHandler", "_inline_asm_8h.html#a13081cdd78e83db6cd8e1d2f3b501379", null ],
+    [ "AsmVmfunc", "_inline_asm_8h.html#ab7fb7831f7b835f04bb05ad4e9631913", null ],
     [ "AsmVmxRestoreState", "_inline_asm_8h.html#a99ddf21c2beb923fc68f01d200140782", null ],
     [ "AsmVmxSaveState", "_inline_asm_8h.html#a2aaa8ea80b125a1df12754b26b9b3ba0", null ],
     [ "AsmVmxVmcall", "_inline_asm_8h.html#a0fd87b88c03b3c10883f0ad70239bf6c", null ]

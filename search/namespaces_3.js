@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['grammar_6073',['grammar',['../namespacelalr__parsing_1_1grammar.html',1,'lalr_parsing']]],
-  ['lalr1_5fparser_6074',['lalr1_parser',['../namespacelalr1__parser.html',1,'']]],
-  ['lalr_5fone_6075',['lalr_one',['../namespacelalr__parsing_1_1lalr__one.html',1,'lalr_parsing']]],
-  ['lalr_5fparsing_6076',['lalr_parsing',['../namespacelalr__parsing.html',1,'']]],
-  ['ll1_5fparser_6077',['ll1_parser',['../namespacell1__parser.html',1,'']]],
-  ['lr_5fzero_6078',['lr_zero',['../namespacelalr__parsing_1_1lr__zero.html',1,'lalr_parsing']]]
+  ['detail_0',['detail',['../namespaceinipp_1_1detail.html',1,'inipp']]],
+  ['inipp_1',['inipp',['../namespaceinipp.html',1,'']]]
 ];

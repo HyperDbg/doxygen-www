@@ -1,6 +1,7 @@
 var dir_3caefd3e27db8f6755759324e61d48da =
 [
     [ "cpuid.cpp", "cpuid_8cpp.html", "cpuid_8cpp" ],
+    [ "crwrite.cpp", "crwrite_8cpp.html", "crwrite_8cpp" ],
     [ "dr.cpp", "dr_8cpp.html", "dr_8cpp" ],
     [ "epthook.cpp", "epthook_8cpp.html", "epthook_8cpp" ],
     [ "epthook2.cpp", "epthook2_8cpp.html", "epthook2_8cpp" ],
@@ -16,6 +17,7 @@ var dir_3caefd3e27db8f6755759324e61d48da =
     [ "pa2va.cpp", "pa2va_8cpp.html", "pa2va_8cpp" ],
     [ "pmc.cpp", "pmc_8cpp.html", "pmc_8cpp" ],
     [ "pte.cpp", "pte_8cpp.html", "pte_8cpp" ],
+    [ "rev.cpp", "rev_8cpp.html", "rev_8cpp" ],
     [ "syscall-sysret.cpp", "syscall-sysret_8cpp.html", "syscall-sysret_8cpp" ],
     [ "tsc.cpp", "tsc_8cpp.html", "tsc_8cpp" ],
     [ "unhide.cpp", "unhide_8cpp.html", "unhide_8cpp" ],

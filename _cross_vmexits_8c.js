@@ -1,5 +1,5 @@
 var _cross_vmexits_8c =
 [
-    [ "VmxHandleVmxPreemptionTimerVmexit", "_cross_vmexits_8c.html#a586c6b7b84a5238ae10b1a694a6df2b6", null ],
-    [ "VmxHandleXsetbv", "_cross_vmexits_8c.html#a981cc09c005f2331e6b04d2f38e30121", null ]
+    [ "VmxHandleVmxPreemptionTimerVmexit", "_cross_vmexits_8c.html#a7d722cd80873651fe42d3af85b812622", null ],
+    [ "VmxHandleXsetbv", "_cross_vmexits_8c.html#ac31024ae20ebac7de8789baa1e29ab1d", null ]
 ];

@@ -1,7 +1,7 @@
 var lalr__one_8py =
 [
-    [ "ParsingTable", "classlalr__parsing_1_1lalr__one_1_1_parsing_table.html", "classlalr__parsing_1_1lalr__one_1_1_parsing_table" ],
-    [ "LrZeroItemTableEntry", "classlalr__parsing_1_1lalr__one_1_1_lr_zero_item_table_entry.html", "classlalr__parsing_1_1lalr__one_1_1_lr_zero_item_table_entry" ],
+    [ "lalr_parsing.lalr_one.ParsingTable", "classlalr__parsing_1_1lalr__one_1_1_parsing_table.html", "classlalr__parsing_1_1lalr__one_1_1_parsing_table" ],
+    [ "lalr_parsing.lalr_one.LrZeroItemTableEntry", "classlalr__parsing_1_1lalr__one_1_1_lr_zero_item_table_entry.html", "classlalr__parsing_1_1lalr__one_1_1_lr_zero_item_table_entry" ],
     [ "closure", "lalr__one_8py.html#a6f774eeb437a7baed15ad0d2ce447635", null ],
     [ "drop_itemset_lookaheads", "lalr__one_8py.html#aba910d787b6c821a1e8305fd288fab8b", null ],
     [ "get_canonical_collection", "lalr__one_8py.html#a8dde3d0c40ecf3afb49d815573002d13", null ],

@@ -1,5 +1,6 @@
 var _termination_8c =
 [
+    [ "TerminateControlRegistersEvent", "_termination_8c.html#ab4bea2070285dcf7912b11d3cc0410ed", null ],
     [ "TerminateCpuidExecutionEvent", "_termination_8c.html#a08678a8e338118e08b4a2c97d32fb8b3", null ],
     [ "TerminateDebugRegistersEvent", "_termination_8c.html#a32645ae2e8607c29644fbfff0491eedb", null ],
     [ "TerminateExceptionEvent", "_termination_8c.html#a99d3611fa706dd12f4903f543d0f3903", null ],
@@ -10,6 +11,13 @@ var _termination_8c =
     [ "TerminateInInstructionExecutionEvent", "_termination_8c.html#a0740bacfdb77c46e27ca4bcba7cb5928", null ],
     [ "TerminateOutInstructionExecutionEvent", "_termination_8c.html#a902083eddb6e5b1fb8b650d0457faf9b", null ],
     [ "TerminatePmcEvent", "_termination_8c.html#a19f1a83cb86963c372bf9c2afee630c5", null ],
+    [ "TerminateQueryDebuggerResource", "_termination_8c.html#ab6ff18e2df9705aed12f9ff57a873144", null ],
+    [ "TerminateQueryDebuggerResourceExceptionBitmap", "_termination_8c.html#a16068595570275abde607ffaee41736e", null ],
+    [ "TerminateQueryDebuggerResourceExternalInterruptExiting", "_termination_8c.html#ab9a6d981fbca199f9425c859a970416a", null ],
+    [ "TerminateQueryDebuggerResourceMov2DebugRegExiting", "_termination_8c.html#a47ee98f6b094dffa006d1ebc0cdd94a7", null ],
+    [ "TerminateQueryDebuggerResourceMovControlRegsExiting", "_termination_8c.html#ade81b87d3697cffacb177196618065ca", null ],
+    [ "TerminateQueryDebuggerResourceMovToCr3Exiting", "_termination_8c.html#a0b68fb1292d9b1a7f537509235171e8c", null ],
+    [ "TerminateQueryDebuggerResourceTscExiting", "_termination_8c.html#ae8582ac55702e66fe86eeed5fa8f5872", null ],
     [ "TerminateRdmsrExecutionEvent", "_termination_8c.html#a43b5681379cca8108df552ec2d823f7a", null ],
     [ "TerminateSyscallHookEferEvent", "_termination_8c.html#aa341d58073efde632ade05ca0aaa673e", null ],
     [ "TerminateSysretHookEferEvent", "_termination_8c.html#a2116f9aea39f52d2e49a689803bcd9d0", null ],

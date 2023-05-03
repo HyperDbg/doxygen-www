@@ -4,7 +4,7 @@ var classinipp_1_1_ini =
     [ "Sections", "classinipp_1_1_ini.html#a8df0311bbe8da3f6e163b47edf329906", null ],
     [ "String", "classinipp_1_1_ini.html#ae2269b9146afceff5ab9c596eb3fa58f", null ],
     [ "Ini", "classinipp_1_1_ini.html#ae8a8ce329626d10d8e4120614d2c8f3e", null ],
-    [ "Ini", "classinipp_1_1_ini.html#ac2186f249c3aed5c3339cf19edba2362", null ],
+    [ "Ini", "classinipp_1_1_ini.html#a3c89d451dc6313fbe01710ff7c5aef7e", null ],
     [ "clear", "classinipp_1_1_ini.html#a86f4ddfc480db560d9e7e7c70bdb4f0f", null ],
     [ "default_section", "classinipp_1_1_ini.html#a124c49a9b2dc503c5a15581fb6097659", null ],
     [ "generate", "classinipp_1_1_ini.html#a64e3676c17618bff82f4818aab559003", null ],

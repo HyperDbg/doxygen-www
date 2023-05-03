@@ -1,21 +1,12 @@
 var searchData=
 [
-  ['script_5fengine_5ferror_5ftype_9156',['SCRIPT_ENGINE_ERROR_TYPE',['../script-engine_2header_2script-engine_8h.html#a3965f01dedb0823e8e5ef9d815fb8736',1,'script-engine.h']]],
-  ['script_5fengine_5fvariables_5flist_9157',['SCRIPT_ENGINE_VARIABLES_LIST',['../_script_engine_eval_8h.html#a31d689027f2f9713d9659a3bcb72acbc',1,'ScriptEngineEval.h']]],
-  ['section_9158',['Section',['../classinipp_1_1_ini.html#a53cd03f84a2e2f93f378d095d6cc50aa',1,'inipp::Ini']]],
-  ['sections_9159',['Sections',['../classinipp_1_1_ini.html#a8df0311bbe8da3f6e163b47edf329906',1,'inipp::Ini']]],
-  ['segment_5fregisters_9160',['SEGMENT_REGISTERS',['../hprdbghv_2header_2common_2common_8h.html#a7dfdbbfbf59491160424f6086bc9c25d',1,'Common.h']]],
-  ['serial_5fport_5fmax311xe_9161',['SERIAL_PORT_MAX311XE',['../spimax311_8c.html#a69785e73529b29508b98e99a04b70a21',1,'spimax311.c']]],
-  ['ssdtstruct_9162',['SSDTStruct',['../_hooks_8h.html#a7ef67836bf52e4d218108fb05855a5ee',1,'Hooks.h']]],
-  ['string_9163',['String',['../classinipp_1_1_ini.html#ae2269b9146afceff5ab9c596eb3fa58f',1,'inipp::Ini']]],
-  ['stupid_5fstruct1_9164',['STUPID_STRUCT1',['../casting_8cpp.html#a0249f0d8cd5a3579626ec6fc3e6d7609',1,'casting.cpp']]],
-  ['stupid_5fstruct2_9165',['STUPID_STRUCT2',['../casting_8cpp.html#ae25774f3e3f23a6109949fccc4abd187',1,'casting.cpp']]],
-  ['symbol_9166',['SYMBOL',['../_script_engine_common_definitions_8h.html#a7197e2cdc8a29a33c57f250ea0569c4b',1,'ScriptEngineCommonDefinitions.h']]],
-  ['symbol_5fbuffer_9167',['SYMBOL_BUFFER',['../_script_engine_common_definitions_8h.html#a7434f8588e6621d58e9b17c703f1f3dd',1,'ScriptEngineCommonDefinitions.h']]],
-  ['symbol_5floaded_5fmodule_5fdetails_9168',['SYMBOL_LOADED_MODULE_DETAILS',['../symbol-parser_8h.html#a7f77be92eb40be5d9690891aa3ac25d5',1,'symbol-parser.h']]],
-  ['symbol_5fmap_9169',['SYMBOL_MAP',['../_script_engine_common_definitions_8h.html#a0f71a34ca0fed44fee2eaac3ed75a433',1,'ScriptEngineCommonDefinitions.h']]],
-  ['symbolmapcallback_9170',['SymbolMapCallback',['../_definition_8h.html#abc9d11a62b03b47bdcabcdec814b1828',1,'Definition.h']]],
-  ['system_5finformation_5fclass_9171',['SYSTEM_INFORMATION_CLASS',['../_hooks_8h.html#ae75edb0a85f69b42a96960e023f58c47',1,'Hooks.h']]],
-  ['system_5fmodule_5fentry_9172',['SYSTEM_MODULE_ENTRY',['../_hooks_8h.html#a6874334f705ea54c18fe8e417b192bcf',1,'Hooks.h']]],
-  ['system_5fmodule_5finformation_9173',['SYSTEM_MODULE_INFORMATION',['../_hooks_8h.html#ab544297b0d5c1d52d774046be13f483d',1,'Hooks.h']]]
+  ['register_5fnotify_5fbuffer_0',['REGISTER_NOTIFY_BUFFER',['../build_2bin_2debug_2_s_d_k_2_headers_2_data_types_8h.html#a267b85a172feb822b0acfc530f52e023',1,'REGISTER_NOTIFY_BUFFER():&#160;DataTypes.h'],['../include_2_s_d_k_2_headers_2_data_types_8h.html#a267b85a172feb822b0acfc530f52e023',1,'REGISTER_NOTIFY_BUFFER():&#160;DataTypes.h']]],
+  ['regs_5fenum_1',['REGS_ENUM',['../_script_engine_common_definitions_8h.html#ae5ba28575fb1d1a672a006dddf836b71',1,'ScriptEngineCommonDefinitions.h']]],
+  ['request_5fnew_5fallocation_2',['REQUEST_NEW_ALLOCATION',['../_pool_manager_8h.html#a16d34f4315fe6b271be10df99e25fd03',1,'PoolManager.h']]],
+  ['reversing_5fmachine_5freconstruct_5fmemory_5fform_3',['REVERSING_MACHINE_RECONSTRUCT_MEMORY_FORM',['../build_2bin_2debug_2_s_d_k_2_headers_2_request_structures_8h.html#a3182436b4ed1a79ccd19a406b9a3f413',1,'REVERSING_MACHINE_RECONSTRUCT_MEMORY_FORM():&#160;RequestStructures.h'],['../include_2_s_d_k_2_headers_2_request_structures_8h.html#a3182436b4ed1a79ccd19a406b9a3f413',1,'REVERSING_MACHINE_RECONSTRUCT_MEMORY_FORM():&#160;RequestStructures.h']]],
+  ['reversing_5fmachine_5freconstruct_5fmemory_5fmode_4',['REVERSING_MACHINE_RECONSTRUCT_MEMORY_MODE',['../build_2bin_2debug_2_s_d_k_2_headers_2_request_structures_8h.html#acfedce76f5dfea555ce33c90f3dd3f08',1,'REVERSING_MACHINE_RECONSTRUCT_MEMORY_MODE():&#160;RequestStructures.h'],['../include_2_s_d_k_2_headers_2_request_structures_8h.html#acfedce76f5dfea555ce33c90f3dd3f08',1,'REVERSING_MACHINE_RECONSTRUCT_MEMORY_MODE():&#160;RequestStructures.h']]],
+  ['reversing_5fmachine_5freconstruct_5fmemory_5frequest_5',['REVERSING_MACHINE_RECONSTRUCT_MEMORY_REQUEST',['../build_2bin_2debug_2_s_d_k_2_headers_2_request_structures_8h.html#a0f6df7ca85274aadea5ac62811f60836',1,'REVERSING_MACHINE_RECONSTRUCT_MEMORY_REQUEST():&#160;RequestStructures.h'],['../include_2_s_d_k_2_headers_2_request_structures_8h.html#a0f6df7ca85274aadea5ac62811f60836',1,'REVERSING_MACHINE_RECONSTRUCT_MEMORY_REQUEST():&#160;RequestStructures.h']]],
+  ['reversing_5fmachine_5freconstruct_5fmemory_5ftype_6',['REVERSING_MACHINE_RECONSTRUCT_MEMORY_TYPE',['../build_2bin_2debug_2_s_d_k_2_headers_2_request_structures_8h.html#a76af36e6d06eaaf1300169f22c4b86ea',1,'REVERSING_MACHINE_RECONSTRUCT_MEMORY_TYPE():&#160;RequestStructures.h'],['../include_2_s_d_k_2_headers_2_request_structures_8h.html#a76af36e6d06eaaf1300169f22c4b86ea',1,'REVERSING_MACHINE_RECONSTRUCT_MEMORY_TYPE():&#160;RequestStructures.h']]],
+  ['rtl_5fuser_5fprocess_5fparameters_7',['RTL_USER_PROCESS_PARAMETERS',['../_user_access_8h.html#a40973b6b990f0c2f76db8c2927ac6b4e',1,'UserAccess.h']]],
+  ['runonlogicalcorefunc_8',['RunOnLogicalCoreFunc',['../hprdbghv_2header_2common_2common_8h.html#a25f777554b949fe8dfd4ffbd1313f30d',1,'Common.h']]]
 ];

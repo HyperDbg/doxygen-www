@@ -1,8 +1,8 @@
 var _io_handler_8c =
 [
-    [ "IoHandleIoVmExits", "_io_handler_8c.html#a28bee1363e1d60e13d5aae88cafd89f0", null ],
+    [ "IoHandleIoVmExits", "_io_handler_8c.html#a8c882cef497ffae117ee4badbd7805dd", null ],
     [ "IoHandleIoVmExitsAndDisassemble", "_io_handler_8c.html#a9515a5d78d143edd6d455f05f49d118b", null ],
-    [ "IoHandlePerformIoBitmapChange", "_io_handler_8c.html#af10acaaf3042306f07cb0074e8d4bd9e", null ],
-    [ "IoHandlePerformIoBitmapReset", "_io_handler_8c.html#a68b67f0bde31cabc4b96015e8b9bd0ed", null ],
-    [ "IoHandleSetIoBitmap", "_io_handler_8c.html#adce9ed27be4b816c4929d3f1a2b15440", null ]
+    [ "IoHandlePerformIoBitmapChange", "_io_handler_8c.html#ae50554389153e31e713b0ed5df57ead9", null ],
+    [ "IoHandlePerformIoBitmapReset", "_io_handler_8c.html#a54b01254d943b0ad2dbf7d97cb705671", null ],
+    [ "IoHandleSetIoBitmap", "_io_handler_8c.html#a1e7a3a285de217b0afeb0fded3ff7eb5", null ]
 ];

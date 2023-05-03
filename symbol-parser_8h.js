@@ -14,7 +14,7 @@ var symbol_parser_8h =
     [ "SymGetFileSize", "symbol-parser_8h.html#a07de0bda1a23ffb9a4e64ce1816f672e", null ],
     [ "SymShowSymbolDetails", "symbol-parser_8h.html#a031cd1a4cd0cb7a62f70580ec4111ff8", null ],
     [ "SymShowSymbolInfo", "symbol-parser_8h.html#a4067bf36b8110e2933efee1c58a23d6c", null ],
-    [ "SymTagStr", "symbol-parser_8h.html#a166de8c629a100ade3564a18713a343f", null ],
+    [ "SymTagStr", "symbol-parser_8h.html#a7e27a043bb2b585ce9398c096c7bcb9f", null ],
     [ "AdditionalParameters", "symbol-parser_8h.html#a9e69ee1e0aada79b1eb588a214a79c07", null ],
     [ "Address", "symbol-parser_8h.html#a3f7c5b71d899e923be0a80d4ac7902fe", null ],
     [ "argv", "symbol-parser_8h.html#af2efa898e9eed6fe6715279cb1ec35b0", null ],

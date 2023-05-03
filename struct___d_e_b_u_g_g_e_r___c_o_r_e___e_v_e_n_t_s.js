@@ -1,5 +1,6 @@
 var struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s =
 [
+    [ "ControlRegisterModifiedEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#a956aed5db5000087cffd1327ab27c9b0", null ],
     [ "CpuidInstructionExecutionEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#ac2871ec44e23104b71326876c308d8a7", null ],
     [ "DebugRegistersAccessedEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#ab0e5de37ec84960aa1ab3ec2c20c3607", null ],
     [ "EptHook2sExecDetourEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#a80936129383bcd1c6a0cab006f7ebb69", null ],

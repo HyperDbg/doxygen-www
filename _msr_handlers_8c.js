@@ -1,13 +1,13 @@
 var _msr_handlers_8c =
 [
-    [ "MsrHandleFilterMsrReadBitmap", "_msr_handlers_8c.html#a9225cf7e4ae0be9e15437c3759ba2622", null ],
-    [ "MsrHandleFilterMsrWriteBitmap", "_msr_handlers_8c.html#a786d8f542534c1e4ffa34cc81320ab83", null ],
-    [ "MsrHandlePerformMsrBitmapReadChange", "_msr_handlers_8c.html#a951c090405a0364fd6a5ebb2a52037f4", null ],
-    [ "MsrHandlePerformMsrBitmapReadReset", "_msr_handlers_8c.html#abc966adc77cecbde6d5f3a2cee1b42d0", null ],
-    [ "MsrHandlePerformMsrBitmapWriteChange", "_msr_handlers_8c.html#a97813ed32a3cec3945b531336fd422fc", null ],
-    [ "MsrHandlePerformMsrBitmapWriteReset", "_msr_handlers_8c.html#a2937c01bd01cdb079e1e5f893e55523f", null ],
+    [ "MsrHandleFilterMsrReadBitmap", "_msr_handlers_8c.html#aa1d0c0a64a7d1e861cdd8eeb6f44868e", null ],
+    [ "MsrHandleFilterMsrWriteBitmap", "_msr_handlers_8c.html#aebe49ee9a3a6cea56754a336573e501c", null ],
+    [ "MsrHandlePerformMsrBitmapReadChange", "_msr_handlers_8c.html#a9fd1720b6ad547a4ace4dea51f56c92b", null ],
+    [ "MsrHandlePerformMsrBitmapReadReset", "_msr_handlers_8c.html#ad08fe98ebb27cd63bf38bdd39774903b", null ],
+    [ "MsrHandlePerformMsrBitmapWriteChange", "_msr_handlers_8c.html#a8e1f934ee91cb223118ab6ec8b335fed", null ],
+    [ "MsrHandlePerformMsrBitmapWriteReset", "_msr_handlers_8c.html#a76fcb889d44411cc8f0090892b0c9592", null ],
     [ "MsrHandleRdmsrVmexit", "_msr_handlers_8c.html#acab5fb643fae7a845f5d3d71ce18e9ef", null ],
-    [ "MsrHandleSetMsrBitmap", "_msr_handlers_8c.html#ae95784d548163c86364066ab13f82d3d", null ],
-    [ "MsrHandleUnSetMsrBitmap", "_msr_handlers_8c.html#a9b17594a51b91ac75128f37ecb00a70a", null ],
+    [ "MsrHandleSetMsrBitmap", "_msr_handlers_8c.html#a59678cd7a7fb63225a137af3c1066ade", null ],
+    [ "MsrHandleUnSetMsrBitmap", "_msr_handlers_8c.html#a8318e57f99c82f03dd4fed6b9eee5767", null ],
     [ "MsrHandleWrmsrVmexit", "_msr_handlers_8c.html#a45e9291a2ab844cf31a38aa39a6131b9", null ]
 ];

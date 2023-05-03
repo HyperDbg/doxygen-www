@@ -1,20 +1,28 @@
 var _vmx_8c =
 [
+    [ "SELECTOR_TABLE_GDT", "_vmx_8c.html#a16f7f49927e1575a97fc0c3b57dceba1", null ],
+    [ "SELECTOR_TABLE_LDT", "_vmx_8c.html#aefc23d5a8cd57a497e57045930e55eed", null ],
     [ "VmxCheckIsOnVmxRoot", "_vmx_8c.html#ae1383bf1b0ee0da71f29e832a1e86144", null ],
     [ "VmxCheckVmxSupport", "_vmx_8c.html#abbbc35bf970ac6b655e08bc3c0f46905", null ],
-    [ "VmxClearVmcsState", "_vmx_8c.html#ad48df1363867c5ca5096f3bae7eea5b3", null ],
+    [ "VmxClearVmcsState", "_vmx_8c.html#a40b4c16e2a106d27460f4a5dc8c76d70", null ],
+    [ "VmxCompatibleStrlen", "_vmx_8c.html#a84a3bd5efc8ff0858c095e18fe0999da", null ],
+    [ "VmxCompatibleWcslen", "_vmx_8c.html#a2e2e419641070da1b794c2c62e691cc3", null ],
     [ "VmxFixCr4AndCr0Bits", "_vmx_8c.html#a56536723aab6c8ccb4719ff1eac2c25f", null ],
+    [ "VmxGetCurrentExecutionMode", "_vmx_8c.html#a21a5facaf10e8fbeb70dd00942e51ef1", null ],
+    [ "VmxGetCurrentLaunchState", "_vmx_8c.html#a54291454c7d99c90bf5e19a939825634", null ],
+    [ "VmxGetSegmentDescriptor", "_vmx_8c.html#a4f273dcefdaca4adfd02199030214a0c", null ],
     [ "VmxInitialize", "_vmx_8c.html#ae8edcdeb74c24f1408eca2daf1ce986a", null ],
-    [ "VmxLoadVmcs", "_vmx_8c.html#a073608c763903a2c79a3efc008885bd3", null ],
+    [ "VmxLoadVmcs", "_vmx_8c.html#a5d502eb714f3e5b8a9a405674190d1ca", null ],
     [ "VmxPerformTermination", "_vmx_8c.html#a3f8cf05fd265cf9568bc5f3b1ee57897", null ],
     [ "VmxPerformVirtualizationOnAllCores", "_vmx_8c.html#a412b9cc437ccd62987c8f5a01e0a3f2d", null ],
     [ "VmxPerformVirtualizationOnSpecificCore", "_vmx_8c.html#ad7d79ec1775eef01d11b05fd316b7eb7", null ],
     [ "VmxReturnInstructionPointerForVmxoff", "_vmx_8c.html#a121be6f80493612573f2177d8a17424e", null ],
     [ "VmxReturnStackPointerForVmxoff", "_vmx_8c.html#a1493a49dc1f387ee57f95207869ad3b4", null ],
-    [ "VmxSetupVmcs", "_vmx_8c.html#a71878947d525bc4b94e02e7cbe6fe234", null ],
+    [ "VmxSetupVmcs", "_vmx_8c.html#ab410d0d271e13e18eb97f0870de4380d", null ],
     [ "VmxTerminate", "_vmx_8c.html#ae683fd4d4ecd99c28292045bc8a65e18", null ],
     [ "VmxVirtualizeCurrentSystem", "_vmx_8c.html#af666da6f076709f466795cf1627d5e94", null ],
+    [ "VmxVmfunc", "_vmx_8c.html#aeebf0c9346849df0d8fbf5a008c593dc", null ],
     [ "VmxVmptrst", "_vmx_8c.html#a099f2c93689489c8a4117c8f6648efc1", null ],
     [ "VmxVmresume", "_vmx_8c.html#a78415dd94deee3861f8cdfe695331aa9", null ],
-    [ "VmxVmxoff", "_vmx_8c.html#aa302ffc62e184fa0fd51878e72af972b", null ]
+    [ "VmxVmxoff", "_vmx_8c.html#ad9193ed1677033cd08c5d5b7788b15c7", null ]
 ];

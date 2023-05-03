@@ -5,7 +5,7 @@ var _transparency_8c =
     [ "TransparentGetRand", "_transparency_8c.html#a8d07b47eb27823f90eeaee58bb582da9", null ],
     [ "TransparentHideDebugger", "_transparency_8c.html#ab85c4de5209246066185bebf22a88420", null ],
     [ "TransparentLog", "_transparency_8c.html#a0a627fcc590220a0b8a2c58b39ba3341", null ],
-    [ "TransparentModeStart", "_transparency_8c.html#aa938d787356c8e32f82224cc58fe59c4", null ],
+    [ "TransparentModeStart", "_transparency_8c.html#a518294a2dc5f50f3ba42e025e1e3bfdc", null ],
     [ "TransparentPow", "_transparency_8c.html#a8294b3e44b374ebe6f095e86a7d4fbaa", null ],
     [ "TransparentRandn", "_transparency_8c.html#a7fb3669c55c8efd61f9e0632300482ca", null ],
     [ "TransparentSqrt", "_transparency_8c.html#a22273f24ac233b6d25823fa658e9bb40", null ],

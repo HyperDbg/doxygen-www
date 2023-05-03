@@ -9,6 +9,5 @@ var usif_8c =
     [ "UsifInitializePort", "usif_8c.html#aecfc25d508301ab66d9229b607695d9e", null ],
     [ "UsifPutByte", "usif_8c.html#ac2001a4204cfdb4076e84a072beaae4a", null ],
     [ "UsifRxReady", "usif_8c.html#a76e6875e34a1fbb61a74710be8226fd1", null ],
-    [ "UsifSetBaud", "usif_8c.html#a70550942b87692ea796a97bf471675e3", null ],
-    [ "UsifHardwareDriver", "usif_8c.html#a2becacd5b65f88ab8d804e1e06887a2a", null ]
+    [ "UsifSetBaud", "usif_8c.html#a70550942b87692ea796a97bf471675e3", null ]
 ];

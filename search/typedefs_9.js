@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['ldr_5fdata_5ftable_5fentry_8956',['LDR_DATA_TABLE_ENTRY',['../_user_access_8h.html#a6a9488236802f861c58fc40b2be41af4',1,'UserAccess.h']]],
-  ['ldr_5fdata_5ftable_5fentry32_8957',['LDR_DATA_TABLE_ENTRY32',['../_user_access_8h.html#a8e2480d1d10c69dce6fe5cb8238e8df0',1,'UserAccess.h']]],
-  ['local_5ffunction_5fdescription_8958',['LOCAL_FUNCTION_DESCRIPTION',['../symbol_8h.html#ae6fb67e8d27af2dc3f7f75fcf880279d',1,'symbol.h']]],
-  ['log_5fbuffer_5finformation_8959',['LOG_BUFFER_INFORMATION',['../_logging_8h.html#ad46380d62a8edc51783b47650b8bd6f9',1,'Logging.h']]],
-  ['log_5ftype_8960',['LOG_TYPE',['../hprdbghv_2header_2common_2common_8h.html#a00e4548dd1db35b54cbeb1ee0fe45f66',1,'Common.h']]],
-  ['lpcwchar_8961',['LPCWCHAR',['../hprdbgctrl_2pch_8h.html#a522f6bb0cf6c9e549e901e1b31266edc',1,'pch.h']]]
+  ['kd_5fcheck_5fand_5fhandle_5fnmi_5fcallback_0',['KD_CHECK_AND_HANDLE_NMI_CALLBACK',['../build_2bin_2debug_2_s_d_k_2_modules_2_v_m_m_8h.html#ad88941b7d5ee8788e90586790689dc42',1,'KD_CHECK_AND_HANDLE_NMI_CALLBACK():&#160;VMM.h'],['../include_2_s_d_k_2_modules_2_v_m_m_8h.html#ad88941b7d5ee8788e90586790689dc42',1,'KD_CHECK_AND_HANDLE_NMI_CALLBACK():&#160;VMM.h']]],
+  ['kd_5fnmi_5fstate_1',['KD_NMI_STATE',['../hprdbgkd_2header_2debugger_2core_2_state_8h.html#a6c1ac51a61503e35571d07b5d00fda77',1,'State.h']]],
+  ['kd_5fquery_5fdebugger_5fthread_5for_5fprocess_5ftracing_5fdetails_5fby_5fcore_5fid_2',['KD_QUERY_DEBUGGER_THREAD_OR_PROCESS_TRACING_DETAILS_BY_CORE_ID',['../build_2bin_2debug_2_s_d_k_2_modules_2_v_m_m_8h.html#aedeb7b0dde809aade03f444f266f4b6b',1,'KD_QUERY_DEBUGGER_THREAD_OR_PROCESS_TRACING_DETAILS_BY_CORE_ID():&#160;VMM.h'],['../include_2_s_d_k_2_modules_2_v_m_m_8h.html#aedeb7b0dde809aade03f444f266f4b6b',1,'KD_QUERY_DEBUGGER_THREAD_OR_PROCESS_TRACING_DETAILS_BY_CORE_ID():&#160;VMM.h']]]
 ];

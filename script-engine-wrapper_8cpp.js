@@ -28,6 +28,8 @@ var script_engine_wrapper_8cpp =
     [ "ScriptEngineWrapperGetSize", "script-engine-wrapper_8cpp.html#a0df6fc18d3df65a0522815b428e41871", null ],
     [ "ScriptEngineWrapperRemoveSymbolBuffer", "script-engine-wrapper_8cpp.html#aae83336bc4976c7fbfbfcce491a04f91", null ],
     [ "ScriptEngineWrapperTestParser", "script-engine-wrapper_8cpp.html#a3fdc23c7c8098ec9da34bd273b068091", null ],
+    [ "g_CurrentExprEvalResult", "script-engine-wrapper_8cpp.html#addd210289ab44e2c5b5e275c17e3d61a", null ],
+    [ "g_CurrentExprEvalResultHasError", "script-engine-wrapper_8cpp.html#a63aed86a66786384314d6fc325055e54", null ],
     [ "g_ScriptGlobalVariables", "script-engine-wrapper_8cpp.html#a6ef94e6628fbc9b04c9fecd492617e32", null ],
     [ "g_ScriptLocalVariables", "script-engine-wrapper_8cpp.html#adc42315e9a1710c59512954afe940baa", null ],
     [ "g_ScriptTempVariables", "script-engine-wrapper_8cpp.html#aec8fb023e1400e5f0df84063026dab7d", null ]

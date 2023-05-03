@@ -24,7 +24,7 @@ var symbol_parser_8cpp =
     [ "SymShowDataBasedOnSymbolTypes", "symbol-parser_8cpp.html#acf92228b6fc0c4bd81b895aad1e036ba", null ],
     [ "SymShowSymbolDetails", "symbol-parser_8cpp.html#a031cd1a4cd0cb7a62f70580ec4111ff8", null ],
     [ "SymShowSymbolInfo", "symbol-parser_8cpp.html#a125f78aedd27773e15cb95f4302244d4", null ],
-    [ "SymTagStr", "symbol-parser_8cpp.html#a166de8c629a100ade3564a18713a343f", null ],
+    [ "SymTagStr", "symbol-parser_8cpp.html#a7e27a043bb2b585ce9398c096c7bcb9f", null ],
     [ "SymUnloadAllSymbols", "symbol-parser_8cpp.html#a0b31e31f9d103824f683cc49b31b01fa", null ],
     [ "SymUnloadModuleSymbol", "symbol-parser_8cpp.html#a15a900c8b4cf92c1d09f11b5254b55c2", null ],
     [ "g_AbortLoadingExecution", "symbol-parser_8cpp.html#acb0366caecf32e4b991a8bcec9d5e9cb", null ],

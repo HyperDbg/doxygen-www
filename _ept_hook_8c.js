@@ -1,9 +1,12 @@
 var _ept_hook_8c =
 [
+    [ "_Success_", "_ept_hook_8c.html#a07e6c832deccdf103509a4d362897a7f", null ],
     [ "EptHook", "_ept_hook_8c.html#abcbdb9cd3dbdf238b8b5d484522855e3", null ],
     [ "EptHook2", "_ept_hook_8c.html#a3c5eb45ffb3514149f329aeb0cf04071", null ],
+    [ "EptHook2GeneralDetourEventHandler", "_ept_hook_8c.html#a2d6894b9430a2758f65c2a646ee6c872", null ],
+    [ "EptHookAllocateExtraHookingPages", "_ept_hook_8c.html#a568ee71ca657b5e7f5d613288be096b9", null ],
     [ "EptHookGetCountOfEpthooks", "_ept_hook_8c.html#acd0179b7c5730f636141dfea2afcdc5a", null ],
-    [ "EptHookHandleHookedPage", "_ept_hook_8c.html#a163596fcc88f51c8bfa4def02ac577a7", null ],
+    [ "EptHookHandleHookedPage", "_ept_hook_8c.html#a3d7fb010ec1756aa2f27e861271fc0f0", null ],
     [ "EptHookInstructionMemory", "_ept_hook_8c.html#a1a97cf8a3d1243edf02539139bbfb617", null ],
     [ "EptHookPerformPageHook", "_ept_hook_8c.html#a194622a3ba05a449923eb105cdb37405", null ],
     [ "EptHookPerformPageHook2", "_ept_hook_8c.html#a77e3785963c79b3ff0efdf13efe0be13", null ],

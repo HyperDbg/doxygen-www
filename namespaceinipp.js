@@ -10,6 +10,6 @@ var namespaceinipp =
     [ "Ini", "classinipp_1_1_ini.html", "classinipp_1_1_ini" ],
     [ "extract", "namespaceinipp.html#a7ccefed1dab43a342b733a0b63d0b09c", null ],
     [ "extract", "namespaceinipp.html#a647f51dbb697e507a5a3f9a2cbd37c10", null ],
-    [ "get_value", "namespaceinipp.html#a6fe94305c6566fb17d6415580f5e5724", null ],
-    [ "get_value", "namespaceinipp.html#aed6533928ce9a47fc796127af69a104d", null ]
+    [ "get_value", "namespaceinipp.html#a2abf5d5a997f1b6126a7a48c2e269605", null ],
+    [ "get_value", "namespaceinipp.html#a93ef1ec3b520a9c5b428ad7eac773571", null ]
 ];

@@ -1,11 +1,14 @@
 var namespaces_dup =
 [
     [ "counter", "namespacecounter.html", [
-      [ "Did you write a patch that fixes a bug?", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md18", null ],
-      [ "Suggesting Enhancements", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md19", null ],
-      [ "Do you intend to add a new feature or change an existing one?", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md20", null ],
-      [ "Do you have questions about the source code?", "md__c_o_n_t_r_i_b_u_t_i_n_g.html#autotoc_md21", null ],
       [ "CountLines", "namespacecounter.html#a69738eb12c0c6327da7618170c3dee17", null ]
+    ] ],
+    [ "example", "namespaceexample.html", [
+      [ "ApiProto", "namespaceexample.html#ace8d815dc82575660d24f90fc048a32a", null ],
+      [ "hllApi", "namespaceexample.html#a7d616a9164f7cbdd1d821087ebe3ab76", null ],
+      [ "hllApiParams", "namespaceexample.html#abe1c82fa38eb024122b6cef6ac0ed46c", null ],
+      [ "hllDll", "namespaceexample.html#a135f2c0f1e3b2c21505a25c7c50df696", null ],
+      [ "p1", "namespaceexample.html#ae37a3721a55e64e128014b4d239eceae", null ]
     ] ],
     [ "generator", "namespacegenerator.html", "namespacegenerator" ],
     [ "inipp", "namespaceinipp.html", "namespaceinipp" ],
