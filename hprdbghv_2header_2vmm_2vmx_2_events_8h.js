@@ -2,6 +2,7 @@ var hprdbghv_2header_2vmm_2vmx_2_events_8h =
 [
     [ "_INTERRUPT_INFO", "union___i_n_t_e_r_r_u_p_t___i_n_f_o.html", "union___i_n_t_e_r_r_u_p_t___i_n_f_o" ],
     [ "_EVENT_INFORMATION", "struct___e_v_e_n_t___i_n_f_o_r_m_a_t_i_o_n.html", "struct___e_v_e_n_t___i_n_f_o_r_m_a_t_i_o_n" ],
+    [ "EXCEPTION_BITMAP_MASK_ALL", "hprdbghv_2header_2vmm_2vmx_2_events_8h.html#a5c754fae1ee25d338026ec65610b2d23", null ],
     [ "RESERVED_MSR_RANGE_HI", "hprdbghv_2header_2vmm_2vmx_2_events_8h.html#a71f011d312371f0ad7fdad6d4ab0b7ec", null ],
     [ "RESERVED_MSR_RANGE_LOW", "hprdbghv_2header_2vmm_2vmx_2_events_8h.html#a28d944861642b2857cb5070d8216006d", null ],
     [ "EVENT_INFORMATION", "hprdbghv_2header_2vmm_2vmx_2_events_8h.html#ab9ca73d7d8108ea3c1f48ef6c6931a77", null ],
@@ -24,7 +25,8 @@ var hprdbghv_2header_2vmm_2vmx_2_events_8h =
     [ "EventInjectGeneralProtection", "hprdbghv_2header_2vmm_2vmx_2_events_8h.html#ad328e1959f217955ece7ea133777ed21", null ],
     [ "EventInjectInterruption", "hprdbghv_2header_2vmm_2vmx_2_events_8h.html#a49f096255577ebc25d2576710d88871c", null ],
     [ "EventInjectInterruptOrException", "hprdbghv_2header_2vmm_2vmx_2_events_8h.html#a260b7c617c034390817efe358c66379d", null ],
-    [ "EventInjectPageFault", "hprdbghv_2header_2vmm_2vmx_2_events_8h.html#a7c60a0610d4ab52f530e9866ce84bd55", null ],
-    [ "EventInjectPageFaultWithCr2", "hprdbghv_2header_2vmm_2vmx_2_events_8h.html#a467e04d160410ead66dd28b3cdb21dbf", null ],
+    [ "EventInjectPageFaults", "hprdbghv_2header_2vmm_2vmx_2_events_8h.html#a25738909d29cf3cb47d0c6c0bf1cb321", null ],
+    [ "EventInjectPageFaultWithCr2", "hprdbghv_2header_2vmm_2vmx_2_events_8h.html#afb1f107eef21fcef13b43dbcd9e59ad7", null ],
+    [ "EventInjectPageFaultWithoutErrorCode", "hprdbghv_2header_2vmm_2vmx_2_events_8h.html#a44eb9969d25be0b67a5e2ac6750885b1", null ],
     [ "EventInjectUndefinedOpcode", "hprdbghv_2header_2vmm_2vmx_2_events_8h.html#a286a8e064b7ca03d3f27750a8613683c", null ]
 ];

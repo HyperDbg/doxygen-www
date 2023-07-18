@@ -1,5 +1,6 @@
 var _debugger_commands_8c =
 [
+    [ "DebuggerCommandBringPagein", "_debugger_commands_8c.html#a3f45afd6fe059d8dfdb0d7cc7ea130a6", null ],
     [ "DebuggerCommandEditMemory", "_debugger_commands_8c.html#af777c50999a33ad8c4555984d41c5ae5", null ],
     [ "DebuggerCommandEditMemoryVmxRoot", "_debugger_commands_8c.html#a0af7ab7231ae69429262b4061e93ccfe", null ],
     [ "DebuggerCommandFlush", "_debugger_commands_8c.html#aeaad6ca3d40207e5acacf96ae173aefe", null ],

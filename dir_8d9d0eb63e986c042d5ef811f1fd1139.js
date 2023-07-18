@@ -12,6 +12,7 @@ var dir_8d9d0eb63e986c042d5ef811f1fd1139 =
     [ "listen.cpp", "listen_8cpp.html", "listen_8cpp" ],
     [ "logclose.cpp", "logclose_8cpp.html", "logclose_8cpp" ],
     [ "logopen.cpp", "logopen_8cpp.html", "logopen_8cpp" ],
+    [ "pagein.cpp", "pagein_8cpp.html", "pagein_8cpp" ],
     [ "pe.cpp", "pe_8cpp.html", "pe_8cpp" ],
     [ "process.cpp", "process_8cpp.html", "process_8cpp" ],
     [ "restart.cpp", "restart_8cpp.html", "restart_8cpp" ],

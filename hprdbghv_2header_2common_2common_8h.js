@@ -1,7 +1,6 @@
 var hprdbghv_2header_2common_2common_8h =
 [
     [ "_CPUID", "struct___c_p_u_i_d.html", "struct___c_p_u_i_d" ],
-    [ "_PAGE_FAULT_ERROR_CODE", "union___p_a_g_e___f_a_u_l_t___e_r_r_o_r___c_o_d_e.html", "union___p_a_g_e___f_a_u_l_t___e_r_r_o_r___c_o_d_e" ],
     [ "_CR_FIXED", "union___c_r___f_i_x_e_d.html", "union___c_r___f_i_x_e_d" ],
     [ "_NT_KPROCESS", "struct___n_t___k_p_r_o_c_e_s_s.html", "struct___n_t___k_p_r_o_c_e_s_s" ],
     [ "__CPU_INDEX__", "hprdbghv_2header_2common_2common_8h.html#a59c1e6afdb17de26c86efb60c7c9f40a", null ],
@@ -102,11 +101,9 @@ var hprdbghv_2header_2common_2common_8h =
     [ "CPUID", "hprdbghv_2header_2common_2common_8h.html#a306d733e5a181cbda9ec88dc2e29e3f6", null ],
     [ "CR_FIXED", "hprdbghv_2header_2common_2common_8h.html#af2b9da44b3234664d62fedc0901297f0", null ],
     [ "NT_KPROCESS", "hprdbghv_2header_2common_2common_8h.html#ac61c911e4f2fb2e010ae5955011110b9", null ],
-    [ "PAGE_FAULT_ERROR_CODE", "hprdbghv_2header_2common_2common_8h.html#a02c62712343c3f4eb12c4a442ccf812b", null ],
     [ "PCPUID", "hprdbghv_2header_2common_2common_8h.html#a8ba759cc1a4f0d63d73cacb58c9be950", null ],
     [ "PCR_FIXED", "hprdbghv_2header_2common_2common_8h.html#a69ded1f4caa20a926eb450ac78804251", null ],
     [ "PNT_KPROCESS", "hprdbghv_2header_2common_2common_8h.html#a71d723dcfce7ba0dcfe4902cabb3ea05", null ],
-    [ "PPAGE_FAULT_ERROR_CODE", "hprdbghv_2header_2common_2common_8h.html#a469eeb0e769df1348bb132f1a0854990", null ],
     [ "PSEGMENT_DESCRIPTOR", "hprdbghv_2header_2common_2common_8h.html#a7079fa0686c932fbd96905901216f33e", null ],
     [ "RunOnLogicalCoreFunc", "hprdbghv_2header_2common_2common_8h.html#a25f777554b949fe8dfd4ffbd1313f30d", null ],
     [ "SEGMENT_REGISTERS", "hprdbghv_2header_2common_2common_8h.html#a7dfdbbfbf59491160424f6086bc9c25d", null ],
@@ -123,6 +120,8 @@ var hprdbghv_2header_2common_2common_8h =
     [ "CommonAffinityBroadcastToProcessors", "hprdbghv_2header_2common_2common_8h.html#aad8d9a015ddecd2291428c335d5f6f1e", null ],
     [ "CommonCpuidInstruction", "hprdbghv_2header_2common_2common_8h.html#a19bb6bce6f4d0ce9a13e0cfa6630089a", null ],
     [ "CommonGetProcessNameFromProcessControlBlock", "hprdbghv_2header_2common_2common_8h.html#a93664fbdd97ab6b1299d6b69eca9daf2", null ],
+    [ "CommonIsGuestOnUsermode32Bit", "hprdbghv_2header_2common_2common_8h.html#a153d08800fd1590e568a471510cb8ba0", null ],
     [ "CommonIsStringStartsWith", "hprdbghv_2header_2common_2common_8h.html#a530cd9c2214719ddb3539e546a163306", null ],
+    [ "CommonWriteDebugInformation", "hprdbghv_2header_2common_2common_8h.html#a9ddd380f0a0e4d2f8b316a119f8d929b", null ],
     [ "PsGetProcessImageFileName", "hprdbghv_2header_2common_2common_8h.html#ad3d5f17bed48eb00253fa331d8713d66", null ]
 ];

@@ -33,5 +33,5 @@ var dir_75eb25c28ae2f663e2e11f86006dc781 =
     [ "unload.cpp", "unload_8cpp.html", "unload_8cpp" ],
     [ "wrmsr.cpp", "wrmsr_8cpp.html", "wrmsr_8cpp" ],
     [ "x.cpp", "x_8cpp.html", "x_8cpp" ],
-    [ "~.cpp", "~_8cpp.html", "~_8cpp" ]
+    [ "~.cpp", "_0i_8cpp.html", "_0i_8cpp" ]
 ];

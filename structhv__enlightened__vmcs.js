@@ -100,7 +100,7 @@ var structhv__enlightened__vmcs =
     [ "host_tr_base", "structhv__enlightened__vmcs.html#ad5f1ffebef15365fc1448121ccab20d3", null ],
     [ "host_tr_selector", "structhv__enlightened__vmcs.html#a02eaa13d1d5aeff87e64731e7d1d2a0e", null ],
     [ "hv_clean_fields", "structhv__enlightened__vmcs.html#a30517848a38c0b3aca4ad43199305c9d", null ],
-    [ "hv_enlightenments_control", "structhv__enlightened__vmcs.html#a2a081ef585a71f6d062527500814ca91", null ],
+    [ "hv_enlightenments_control", "structhv__enlightened__vmcs.html#a0c8a34db93a7a9bf23ef901f502e9337", null ],
     [ "hv_padding_32", "structhv__enlightened__vmcs.html#a56c8b25f1813d0baaf47c3517670decf", null ],
     [ "hv_synthetic_controls", "structhv__enlightened__vmcs.html#affb1997bcd737db77b86985917005c9a", null ],
     [ "hv_vm_id", "structhv__enlightened__vmcs.html#a2d50acf02cde7759897693b0efd8208f", null ],

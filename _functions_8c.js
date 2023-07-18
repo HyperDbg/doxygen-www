@@ -7,6 +7,7 @@ var _functions_8c =
     [ "GetValue", "_functions_8c.html#a5e483c8aa8c85cddcc0c24a3c46843a1", null ],
     [ "ScriptEngineFunctionCheckAddress", "_functions_8c.html#a6e351a0b8d7c0869e31d59be606fd695", null ],
     [ "ScriptEngineFunctionDisableEvent", "_functions_8c.html#a47a24bc5401aba54c56c102869b79574", null ],
+    [ "ScriptEngineFunctionDisassembleLen", "_functions_8c.html#a3c3b7316551fac802b9ec1ead5db0e08", null ],
     [ "ScriptEngineFunctionEb", "_functions_8c.html#add624b429cdd05ae37b0f973acd1b99f", null ],
     [ "ScriptEngineFunctionEd", "_functions_8c.html#a4852c9c360e94ccc388a65d63a40e03e", null ],
     [ "ScriptEngineFunctionEnableEvent", "_functions_8c.html#a484474039ebba2e6d5cabf81bec7a648", null ],

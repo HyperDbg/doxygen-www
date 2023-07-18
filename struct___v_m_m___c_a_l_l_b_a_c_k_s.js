@@ -13,6 +13,7 @@ var struct___v_m_m___c_a_l_l_b_a_c_k_s =
     [ "LogCallbackSendBuffer", "struct___v_m_m___c_a_l_l_b_a_c_k_s.html#a3b957926e66fc6cc8b8c41eaa78196ed", null ],
     [ "LogCallbackSendMessageToQueue", "struct___v_m_m___c_a_l_l_b_a_c_k_s.html#a948cc08c303bbd8a8be63a35311df423", null ],
     [ "UdCheckForCommand", "struct___v_m_m___c_a_l_l_b_a_c_k_s.html#ab0d2caf9709eefa640c62964b4b3c20d", null ],
+    [ "VmmCallbackCheckUnhandledEptViolations", "struct___v_m_m___c_a_l_l_b_a_c_k_s.html#aa8c37c03afa99b8e2cb84da037dce908", null ],
     [ "VmmCallbackNmiBroadcastRequestHandler", "struct___v_m_m___c_a_l_l_b_a_c_k_s.html#a33aed35fab3b3c0124e4aea1ce1a9a61", null ],
     [ "VmmCallbackQueryTerminateProtectedResource", "struct___v_m_m___c_a_l_l_b_a_c_k_s.html#acf5ff0598b6418f25c740b261fdfd2a4", null ],
     [ "VmmCallbackRegisteredMtfHandler", "struct___v_m_m___c_a_l_l_b_a_c_k_s.html#a4bdf3f194662dc2262658dc3aa5c7b36", null ],

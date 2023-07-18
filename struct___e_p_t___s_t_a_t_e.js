@@ -8,6 +8,5 @@ var struct___e_p_t___s_t_a_t_e =
     [ "MemoryRanges", "struct___e_p_t___s_t_a_t_e.html#a1f4c6a1cd36037fa5fa488df27264808", null ],
     [ "ModeBasedEptPageTable", "struct___e_p_t___s_t_a_t_e.html#ac027510d5d86c50286c869cf2919b891", null ],
     [ "ModeBasedEptPointer", "struct___e_p_t___s_t_a_t_e.html#aa71bffe5c8b5b5939bcba6813b33b549", null ],
-    [ "NumberOfEnabledMemoryRanges", "struct___e_p_t___s_t_a_t_e.html#ab16b6ea04ebdadd4e604ad884820476c", null ],
-    [ "SecondaryEptPageTable", "struct___e_p_t___s_t_a_t_e.html#a1768d5cd998f2d4f0fbc913606fbd60f", null ]
+    [ "NumberOfEnabledMemoryRanges", "struct___e_p_t___s_t_a_t_e.html#ab16b6ea04ebdadd4e604ad884820476c", null ]
 ];

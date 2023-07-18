@@ -26,7 +26,7 @@ var searchData=
   ['spinlock_2eh_23',['Spinlock.h',['../_spinlock_8h.html',1,'']]],
   ['ssdthook_2ec_24',['SsdtHook.c',['../_ssdt_hook_8c.html',1,'']]],
   ['start_2ecpp_25',['start.cpp',['../start_8cpp.html',1,'']]],
-  ['state_2eh_26',['State.h',['../hprdbgkd_2header_2debugger_2core_2_state_8h.html',1,'(Global Namespace)'],['../hprdbghv_2header_2common_2_state_8h.html',1,'(Global Namespace)']]],
+  ['state_2eh_26',['State.h',['../hprdbghv_2header_2common_2_state_8h.html',1,'(Global Namespace)'],['../hprdbgkd_2header_2debugger_2core_2_state_8h.html',1,'(Global Namespace)']]],
   ['status_2ecpp_27',['status.cpp',['../status_8cpp.html',1,'']]],
   ['switch_2ecpp_28',['switch.cpp',['../switch_8cpp.html',1,'']]],
   ['switchlayout_2ec_29',['SwitchLayout.c',['../_switch_layout_8c.html',1,'']]],
@@ -36,7 +36,7 @@ var searchData=
   ['symbol_2dparser_2eh_33',['symbol-parser.h',['../symbol-parser_8h.html',1,'']]],
   ['symbol_2ecpp_34',['symbol.cpp',['../symbol_8cpp.html',1,'']]],
   ['symbol_2eh_35',['symbol.h',['../symbol_8h.html',1,'']]],
-  ['symbols_2eh_36',['Symbols.h',['../include_2_s_d_k_2_headers_2_symbols_8h.html',1,'(Global Namespace)'],['../build_2bin_2debug_2_s_d_k_2_headers_2_symbols_8h.html',1,'(Global Namespace)']]],
+  ['symbols_2eh_36',['Symbols.h',['../_symbols_8h.html',1,'']]],
   ['sympath_2ecpp_37',['sympath.cpp',['../sympath_8cpp.html',1,'']]],
   ['syscall_2dsysret_2ecpp_38',['syscall-sysret.cpp',['../syscall-sysret_8cpp.html',1,'']]]
 ];

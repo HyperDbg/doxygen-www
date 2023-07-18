@@ -5,7 +5,8 @@ var _events_8c =
     [ "EventInjectGeneralProtection", "_events_8c.html#ad328e1959f217955ece7ea133777ed21", null ],
     [ "EventInjectInterruption", "_events_8c.html#a49f096255577ebc25d2576710d88871c", null ],
     [ "EventInjectInterruptOrException", "_events_8c.html#a260b7c617c034390817efe358c66379d", null ],
-    [ "EventInjectPageFault", "_events_8c.html#a7c60a0610d4ab52f530e9866ce84bd55", null ],
-    [ "EventInjectPageFaultWithCr2", "_events_8c.html#a467e04d160410ead66dd28b3cdb21dbf", null ],
+    [ "EventInjectPageFaults", "_events_8c.html#a25738909d29cf3cb47d0c6c0bf1cb321", null ],
+    [ "EventInjectPageFaultWithCr2", "_events_8c.html#afb1f107eef21fcef13b43dbcd9e59ad7", null ],
+    [ "EventInjectPageFaultWithoutErrorCode", "_events_8c.html#a44eb9969d25be0b67a5e2ac6750885b1", null ],
     [ "EventInjectUndefinedOpcode", "_events_8c.html#a286a8e064b7ca03d3f27750a8613683c", null ]
 ];

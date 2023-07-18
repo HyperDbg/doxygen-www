@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['zeroopfunc1_0',['ZeroOpFunc1',['../parse-table_8c.html#a70f9eb04c54ab6c69a57a4e90b077c0f',1,'ZeroOpFunc1():&#160;parse-table.c'],['../parse-table_8h.html#a70f9eb04c54ab6c69a57a4e90b077c0f',1,'ZeroOpFunc1():&#160;parse-table.c']]],
+  ['zeroopfunc1_0',['ZeroOpFunc1',['../parse-table_8c.html#a70f9eb04c54ab6c69a57a4e90b077c0f',1,'ZeroOpFunc1:&#160;parse-table.c'],['../parse-table_8h.html#a70f9eb04c54ab6c69a57a4e90b077c0f',1,'ZeroOpFunc1:&#160;parse-table.c']]],
   ['zeroopfunc1_5flength_1',['ZEROOPFUNC1_LENGTH',['../parse-table_8h.html#af235a07da345caa6f380f0a5cf5b9893',1,'parse-table.h']]],
   ['zwqueryinformationprocess_2',['ZwQueryInformationProcess',['../_user_access_8h.html#aeb00925a7719b80558821f57265bf112',1,'UserAccess.h']]],
   ['zwquerysysteminformation_3',['ZWQUERYSYSTEMINFORMATION',['../_hooks_8h.html#a017811c2b939ab5a3ced279a946f990c',1,'Hooks.h']]],
@@ -17,7 +17,8 @@ var searchData=
   ['zydis_5fexport_5fh_14',['ZYDIS_EXPORT_H',['../_zydis_export_config_8h.html#a369f95a4224b3d3044a0334b70b3aeee',1,'ZydisExportConfig.h']]],
   ['zydis_5fno_5fexport_15',['ZYDIS_NO_EXPORT',['../_zydis_export_config_8h.html#a6ef44e2b15885a934a3a075dbb86cf02',1,'ZydisExportConfig.h']]],
   ['zydisexportconfig_2eh_16',['ZydisExportConfig.h',['../_zydis_export_config_8h.html',1,'']]],
-  ['zydissymbol_17',['ZydisSymbol',['../disassembler_8cpp.html#a1e3a00b08166327b6cae4f8ae032deea',1,'disassembler.cpp']]],
-  ['zydissymbol_5f_18',['ZydisSymbol_',['../struct_zydis_symbol__.html',1,'']]],
-  ['zydistest_19',['ZydisTest',['../disassembler_8cpp.html#a970ca16d8fcfa7173b16cb6b16ed191d',1,'disassembler.cpp']]]
+  ['zydiskernel_2ec_17',['ZydisKernel.c',['../_zydis_kernel_8c.html',1,'']]],
+  ['zydissymbol_18',['ZydisSymbol',['../disassembler_8cpp.html#a1e3a00b08166327b6cae4f8ae032deea',1,'disassembler.cpp']]],
+  ['zydissymbol_5f_19',['ZydisSymbol_',['../struct_zydis_symbol__.html',1,'']]],
+  ['zydistest_20',['ZydisTest',['../disassembler_8cpp.html#a970ca16d8fcfa7173b16cb6b16ed191d',1,'disassembler.cpp']]]
 ];

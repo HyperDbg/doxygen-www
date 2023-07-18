@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['basictypes_2eh_0',['BasicTypes.h',['../build_2bin_2debug_2_s_d_k_2_headers_2_basic_types_8h.html',1,'(Global Namespace)'],['../include_2_s_d_k_2_headers_2_basic_types_8h.html',1,'(Global Namespace)']]],
+  ['basictypes_2eh_0',['BasicTypes.h',['../_basic_types_8h.html',1,'']]],
   ['bc_2ecpp_1',['bc.cpp',['../bc_8cpp.html',1,'']]],
   ['bcm2835_2ec_2',['bcm2835.c',['../bcm2835_8c.html',1,'']]],
   ['bd_2ecpp_3',['bd.cpp',['../bd_8cpp.html',1,'']]],

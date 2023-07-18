@@ -1,20 +1,20 @@
 var searchData=
 [
-  ['uchar_0',['UCHAR',['../build_2bin_2debug_2_s_d_k_2_headers_2_basic_types_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587',1,'UCHAR():&#160;BasicTypes.h'],['../include_2_s_d_k_2_headers_2_basic_types_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587',1,'UCHAR():&#160;BasicTypes.h']]],
-  ['ud_5fcheck_5ffor_5fcommand_1',['UD_CHECK_FOR_COMMAND',['../build_2bin_2debug_2_s_d_k_2_modules_2_v_m_m_8h.html#ae55e9160a46e762a0dc53b01d56de883',1,'UD_CHECK_FOR_COMMAND():&#160;VMM.h'],['../include_2_s_d_k_2_modules_2_v_m_m_8h.html#ae55e9160a46e762a0dc53b01d56de883',1,'UD_CHECK_FOR_COMMAND():&#160;VMM.h']]],
-  ['uint_2',['UINT',['../build_2bin_2debug_2_s_d_k_2_headers_2_basic_types_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec',1,'UINT():&#160;BasicTypes.h'],['../include_2_s_d_k_2_headers_2_basic_types_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec',1,'UINT():&#160;BasicTypes.h']]],
-  ['uint16_3',['UINT16',['../build_2bin_2debug_2_s_d_k_2_headers_2_basic_types_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1',1,'UINT16():&#160;BasicTypes.h'],['../include_2_s_d_k_2_headers_2_basic_types_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1',1,'UINT16():&#160;BasicTypes.h']]],
-  ['uint32_4',['UINT32',['../build_2bin_2debug_2_s_d_k_2_headers_2_basic_types_8h.html#ae1e6edbbc26d6fbc71a90190d0266018',1,'UINT32():&#160;BasicTypes.h'],['../include_2_s_d_k_2_headers_2_basic_types_8h.html#ae1e6edbbc26d6fbc71a90190d0266018',1,'UINT32():&#160;BasicTypes.h']]],
-  ['uint64_5',['UINT64',['../build_2bin_2debug_2_s_d_k_2_headers_2_basic_types_8h.html#aae17ebb9ef7279d026817fb22f8aebe9',1,'UINT64():&#160;BasicTypes.h'],['../include_2_s_d_k_2_headers_2_basic_types_8h.html#aae17ebb9ef7279d026817fb22f8aebe9',1,'UINT64():&#160;BasicTypes.h']]],
-  ['uint8_6',['UINT8',['../build_2bin_2debug_2_s_d_k_2_headers_2_basic_types_8h.html#ab27e9918b538ce9d8ca692479b375b6a',1,'UINT8():&#160;BasicTypes.h'],['../include_2_s_d_k_2_headers_2_basic_types_8h.html#ab27e9918b538ce9d8ca692479b375b6a',1,'UINT8():&#160;BasicTypes.h']]],
-  ['ulong_7',['ULONG',['../build_2bin_2debug_2_s_d_k_2_headers_2_basic_types_8h.html#af632da489ebc3708ec3ab6791ee53fa4',1,'ULONG():&#160;BasicTypes.h'],['../include_2_s_d_k_2_headers_2_basic_types_8h.html#af632da489ebc3708ec3ab6791ee53fa4',1,'ULONG():&#160;BasicTypes.h']]],
-  ['ulong64_8',['ULONG64',['../build_2bin_2debug_2_s_d_k_2_headers_2_basic_types_8h.html#a879c8a1e8468389cf82a40cf0690bdce',1,'ULONG64():&#160;BasicTypes.h'],['../include_2_s_d_k_2_headers_2_basic_types_8h.html#a879c8a1e8468389cf82a40cf0690bdce',1,'ULONG64():&#160;BasicTypes.h']]],
+  ['uchar_0',['UCHAR',['../_basic_types_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587',1,'BasicTypes.h']]],
+  ['ud_5fcheck_5ffor_5fcommand_1',['UD_CHECK_FOR_COMMAND',['../_v_m_m_8h.html#ae55e9160a46e762a0dc53b01d56de883',1,'VMM.h']]],
+  ['uint_2',['UINT',['../_basic_types_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec',1,'BasicTypes.h']]],
+  ['uint16_3',['UINT16',['../_basic_types_8h.html#a09f1a1fb2293e33483cc8d44aefb1eb1',1,'BasicTypes.h']]],
+  ['uint32_4',['UINT32',['../_basic_types_8h.html#ae1e6edbbc26d6fbc71a90190d0266018',1,'BasicTypes.h']]],
+  ['uint64_5',['UINT64',['../_basic_types_8h.html#aae17ebb9ef7279d026817fb22f8aebe9',1,'BasicTypes.h']]],
+  ['uint8_6',['UINT8',['../_basic_types_8h.html#ab27e9918b538ce9d8ca692479b375b6a',1,'BasicTypes.h']]],
+  ['ulong_7',['ULONG',['../_basic_types_8h.html#af632da489ebc3708ec3ab6791ee53fa4',1,'BasicTypes.h']]],
+  ['ulong64_8',['ULONG64',['../_basic_types_8h.html#a879c8a1e8468389cf82a40cf0690bdce',1,'BasicTypes.h']]],
   ['unicode_5fstring_9',['UNICODE_STRING',['../casting_8cpp.html#ac3cdef6ef4b9dc0593a4418019f3cbda',1,'casting.cpp']]],
   ['usermode_5fdebugging_5fprocess_5fdetails_10',['USERMODE_DEBUGGING_PROCESS_DETAILS',['../_attaching_8h.html#ae69b85159349c201bde2de678d985193',1,'Attaching.h']]],
   ['usermode_5fdebugging_5fthread_5fdetails_11',['USERMODE_DEBUGGING_THREAD_DETAILS',['../_thread_holder_8h.html#a08ef4f3c9f895f6f6c7e28fd29c1c156',1,'ThreadHolder.h']]],
   ['usermode_5fdebugging_5fthread_5fholder_12',['USERMODE_DEBUGGING_THREAD_HOLDER',['../_thread_holder_8h.html#a6a3d37d8b8fbfaa07c7173f6b97e4f57',1,'ThreadHolder.h']]],
-  ['usermode_5fdebugging_5fthread_5for_5fprocess_5fstate_5fdetails_13',['USERMODE_DEBUGGING_THREAD_OR_PROCESS_STATE_DETAILS',['../build_2bin_2debug_2_s_d_k_2_headers_2_request_structures_8h.html#ac7aac921d83411cb9ae91f8fe3fba401',1,'USERMODE_DEBUGGING_THREAD_OR_PROCESS_STATE_DETAILS():&#160;RequestStructures.h'],['../include_2_s_d_k_2_headers_2_request_structures_8h.html#ac7aac921d83411cb9ae91f8fe3fba401',1,'USERMODE_DEBUGGING_THREAD_OR_PROCESS_STATE_DETAILS():&#160;RequestStructures.h']]],
-  ['usermode_5floaded_5fmodule_5fdetails_14',['USERMODE_LOADED_MODULE_DETAILS',['../build_2bin_2debug_2_s_d_k_2_headers_2_symbols_8h.html#aac77e165a134629907fe58b4643f55f2',1,'USERMODE_LOADED_MODULE_DETAILS():&#160;Symbols.h'],['../include_2_s_d_k_2_headers_2_symbols_8h.html#aac77e165a134629907fe58b4643f55f2',1,'USERMODE_LOADED_MODULE_DETAILS():&#160;Symbols.h']]],
-  ['usermode_5floaded_5fmodule_5fsymbols_15',['USERMODE_LOADED_MODULE_SYMBOLS',['../build_2bin_2debug_2_s_d_k_2_headers_2_symbols_8h.html#ab58961752b4f259bec43ba50f985c6c1',1,'USERMODE_LOADED_MODULE_SYMBOLS():&#160;Symbols.h'],['../include_2_s_d_k_2_headers_2_symbols_8h.html#ab58961752b4f259bec43ba50f985c6c1',1,'USERMODE_LOADED_MODULE_SYMBOLS():&#160;Symbols.h']]],
-  ['ushort_16',['USHORT',['../build_2bin_2debug_2_s_d_k_2_headers_2_basic_types_8h.html#a5850d5316caf7f4cedd742fdf8cd7c02',1,'USHORT():&#160;BasicTypes.h'],['../include_2_s_d_k_2_headers_2_basic_types_8h.html#a5850d5316caf7f4cedd742fdf8cd7c02',1,'USHORT():&#160;BasicTypes.h']]]
+  ['usermode_5fdebugging_5fthread_5for_5fprocess_5fstate_5fdetails_13',['USERMODE_DEBUGGING_THREAD_OR_PROCESS_STATE_DETAILS',['../_request_structures_8h.html#ac7aac921d83411cb9ae91f8fe3fba401',1,'RequestStructures.h']]],
+  ['usermode_5floaded_5fmodule_5fdetails_14',['USERMODE_LOADED_MODULE_DETAILS',['../_symbols_8h.html#aac77e165a134629907fe58b4643f55f2',1,'Symbols.h']]],
+  ['usermode_5floaded_5fmodule_5fsymbols_15',['USERMODE_LOADED_MODULE_SYMBOLS',['../_symbols_8h.html#ab58961752b4f259bec43ba50f985c6c1',1,'Symbols.h']]],
+  ['ushort_16',['USHORT',['../_basic_types_8h.html#a5850d5316caf7f4cedd742fdf8cd7c02',1,'BasicTypes.h']]]
 ];

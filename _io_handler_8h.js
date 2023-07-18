@@ -13,7 +13,6 @@ var _io_handler_8h =
     [ "__outword", "_io_handler_8h.html#a7499a8fb3ec33aa319a71d65fe949165", null ],
     [ "__outwordstring", "_io_handler_8h.html#a65f7eed25601e9cb0161828f452b6b27", null ],
     [ "IoHandleIoVmExits", "_io_handler_8h.html#a8c882cef497ffae117ee4badbd7805dd", null ],
-    [ "IoHandleIoVmExitsAndDisassemble", "_io_handler_8h.html#a9515a5d78d143edd6d455f05f49d118b", null ],
     [ "IoHandlePerformIoBitmapChange", "_io_handler_8h.html#ae50554389153e31e713b0ed5df57ead9", null ],
     [ "IoHandlePerformIoBitmapReset", "_io_handler_8h.html#a54b01254d943b0ad2dbf7d97cb705671", null ],
     [ "IoInByte", "_io_handler_8h.html#ab1a84aef381c3413b06a88b3efd61b4b", null ],

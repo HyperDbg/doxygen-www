@@ -3,6 +3,7 @@ var struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e =
     [ "CoreId", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ad166851f334095bff309813f73ea394e", null ],
     [ "EnableExternalInterruptsOnContinue", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ae354e9ba7dbd2547a6fa39c3e8335131", null ],
     [ "EnableExternalInterruptsOnContinueMtf", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a6532add9fa7c9358728a495d904a8b87", null ],
+    [ "ExecuteOnlyEptp", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a95cd3cd692b1bf9a8a9fbbc65ad5cace", null ],
     [ "ExitQualification", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a02c526f56dd4a8b75459fe908e6e14d3", null ],
     [ "ExitReason", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a9166fecc92585d87ad6e52af6c7c01ef", null ],
     [ "HasLaunched", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#aaacba0883eec22779a564fb93aea73fd", null ],

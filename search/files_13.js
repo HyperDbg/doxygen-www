@@ -9,9 +9,11 @@ var searchData=
   ['ud_2eh_6',['Ud.h',['../hprdbgkd_2header_2debugger_2user-level_2ud_8h.html',1,'']]],
   ['unhide_2ecpp_7',['unhide.cpp',['../unhide_8cpp.html',1,'']]],
   ['unload_2ecpp_8',['unload.cpp',['../unload_8cpp.html',1,'']]],
-  ['user_2dlistening_2ecpp_9',['user-listening.cpp',['../user-listening_8cpp.html',1,'']]],
-  ['useraccess_2ec_10',['UserAccess.c',['../_user_access_8c.html',1,'']]],
-  ['useraccess_2eh_11',['UserAccess.h',['../_user_access_8h.html',1,'']]],
-  ['usif_2ec_12',['usif.c',['../usif_8c.html',1,'']]],
-  ['util_2epy_13',['util.py',['../util_8py.html',1,'']]]
+  ['unloaddll_2ec_9',['UnloadDll.c',['../hprdbghv_2code_2common_2_unload_dll_8c.html',1,'(Global Namespace)'],['../hyperlog_2code_2_unload_dll_8c.html',1,'(Global Namespace)']]],
+  ['unloaddll_2eh_10',['UnloadDll.h',['../hprdbghv_2header_2common_2_unload_dll_8h.html',1,'(Global Namespace)'],['../hyperlog_2header_2_unload_dll_8h.html',1,'(Global Namespace)']]],
+  ['user_2dlistening_2ecpp_11',['user-listening.cpp',['../user-listening_8cpp.html',1,'']]],
+  ['useraccess_2ec_12',['UserAccess.c',['../_user_access_8c.html',1,'']]],
+  ['useraccess_2eh_13',['UserAccess.h',['../_user_access_8h.html',1,'']]],
+  ['usif_2ec_14',['usif.c',['../usif_8c.html',1,'']]],
+  ['util_2epy_15',['util.py',['../util_8py.html',1,'']]]
 ];

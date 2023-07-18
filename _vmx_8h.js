@@ -195,6 +195,7 @@ var _vmx_8h =
     [ "VmxFixCr4AndCr0Bits", "_vmx_8h.html#a56536723aab6c8ccb4719ff1eac2c25f", null ],
     [ "VmxGetCurrentExecutionMode", "_vmx_8h.html#a21a5facaf10e8fbeb70dd00942e51ef1", null ],
     [ "VmxGetCurrentLaunchState", "_vmx_8h.html#a54291454c7d99c90bf5e19a939825634", null ],
+    [ "VmxHandleTripleFaults", "_vmx_8h.html#a27cfa5f4da41fd687cdcb7e4f0054db6", null ],
     [ "VmxHandleVmxPreemptionTimerVmexit", "_vmx_8h.html#a7d722cd80873651fe42d3af85b812622", null ],
     [ "VmxHandleXsetbv", "_vmx_8h.html#ac31024ae20ebac7de8789baa1e29ab1d", null ],
     [ "VmxInitialize", "_vmx_8h.html#ae8edcdeb74c24f1408eca2daf1ce986a", null ],

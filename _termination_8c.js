@@ -7,7 +7,7 @@ var _termination_8c =
     [ "TerminateExternalInterruptEvent", "_termination_8c.html#a4a28660c7e849475c18adb0fa84854f3", null ],
     [ "TerminateHiddenHookExecCcEvent", "_termination_8c.html#afd25fd0635f607699fed2846697fed13", null ],
     [ "TerminateHiddenHookExecDetoursEvent", "_termination_8c.html#af3f7d907e14479646dc6938c926234ff", null ],
-    [ "TerminateHiddenHookReadAndWriteEvent", "_termination_8c.html#aa91b9821b01491da5cbb8811234916a5", null ],
+    [ "TerminateHiddenHookReadAndWriteAndExecuteEvent", "_termination_8c.html#a275aed29a19e3f9851f535a7d9a9b3a5", null ],
     [ "TerminateInInstructionExecutionEvent", "_termination_8c.html#a0740bacfdb77c46e27ca4bcba7cb5928", null ],
     [ "TerminateOutInstructionExecutionEvent", "_termination_8c.html#a902083eddb6e5b1fb8b650d0457faf9b", null ],
     [ "TerminatePmcEvent", "_termination_8c.html#a19f1a83cb86963c372bf9c2afee630c5", null ],

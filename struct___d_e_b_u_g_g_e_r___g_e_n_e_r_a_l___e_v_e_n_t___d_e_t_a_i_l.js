@@ -15,7 +15,7 @@ var struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___e_v_e_n_t___d_e_t_a_i_l =
     [ "OptionalParam2", "struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___e_v_e_n_t___d_e_t_a_i_l.html#a283d993e5ce238e1102cf0756b0648cf", null ],
     [ "OptionalParam3", "struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___e_v_e_n_t___d_e_t_a_i_l.html#aa4c7be532fac6e0ec39c6efd8222db99", null ],
     [ "OptionalParam4", "struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___e_v_e_n_t___d_e_t_a_i_l.html#aeb621140c425dfac69208ea9f178eed1", null ],
-    [ "OutputSourceTags", "struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___e_v_e_n_t___d_e_t_a_i_l.html#aaae9e92b5e1a3c48a87a4c0af53cabe7", null ],
+    [ "OutputSourceTags", "struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___e_v_e_n_t___d_e_t_a_i_l.html#a85fa80e6cd862f7f9ffc8050e97c8486", null ],
     [ "ProcessId", "struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___e_v_e_n_t___d_e_t_a_i_l.html#ad38ad258a18837355faff4c53dfe51df", null ],
     [ "Tag", "struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___e_v_e_n_t___d_e_t_a_i_l.html#a96e2349de9dc1406105e49f0c37957c5", null ]
 ];

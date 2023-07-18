@@ -5,7 +5,6 @@ var hprdbgkd_2header_2debugger_2core_2debugger_8h =
     [ "_DEBUGGER_EVENT", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t" ],
     [ "DEBUGGER_DEBUG_REGISTER_FOR_STEP_OVER", "hprdbgkd_2header_2debugger_2core_2debugger_8h.html#a658b2dec7e55b47e8b8b1f2b57747953", null ],
     [ "DEBUGGER_DEBUG_REGISTER_FOR_THREAD_MANAGEMENT", "hprdbgkd_2header_2debugger_2core_2debugger_8h.html#a7f78d5db12abf3eb68376c3efbc479b1", null ],
-    [ "DEBUGGER_DEBUG_REGISTER_FOR_USER_MODE_ENTRY_POINT", "hprdbgkd_2header_2debugger_2core_2debugger_8h.html#a16caf2380681d228c79d6ae481c7e6bc", null ],
     [ "DEBUGGER_CORE_EVENTS", "hprdbgkd_2header_2debugger_2core_2debugger_8h.html#a61aff702c31f36b2e61c0d1ccdea4a56", null ],
     [ "DEBUGGER_EVENT", "hprdbgkd_2header_2debugger_2core_2debugger_8h.html#a9a0f27c2436372595b6dfe052e7d1138", null ],
     [ "DEBUGGER_EVENT_ACTION", "hprdbgkd_2header_2debugger_2core_2debugger_8h.html#ad0dcb2cd94016b338c1a41fab9b30199", null ],

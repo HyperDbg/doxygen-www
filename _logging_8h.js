@@ -14,8 +14,8 @@ var _logging_8h =
     [ "g_GlobalNotifyRecord", "_logging_8h.html#ac6bb7efa110feb40ba04985a35783931", null ],
     [ "g_MsgTracingCallbacks", "_logging_8h.html#aeda9ca9e008dc7b6a0531a65384df214", null ],
     [ "MessageBufferInformation", "_logging_8h.html#a987d4dee46588ff399ecac12bd633e3d", null ],
-    [ "VmxLogMessage", "_logging_8h.html#a1e9503e7c74275f81ef1d665ac76047f", null ],
+    [ "VmxLogMessage", "_logging_8h.html#ae9c153924d485dd59862c5d6bf94d33c", null ],
     [ "VmxRootLoggingLock", "_logging_8h.html#a0f18907a482e2771b5ac3129a8181c53", null ],
     [ "VmxRootLoggingLockForNonImmBuffers", "_logging_8h.html#a7cda9705b4fb350b4b1b167c929e09ed", null ],
-    [ "VmxTempMessage", "_logging_8h.html#a4b628d2543b6bdf2ef6110d3e5bca85b", null ]
+    [ "VmxTempMessage", "_logging_8h.html#ab45b7a0369600519fee53032eb4a5ee9", null ]
 ];

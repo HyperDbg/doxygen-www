@@ -15,7 +15,7 @@ var searchData=
   ['ioaccess_2ec_12',['ioaccess.c',['../ioaccess_8c.html',1,'']]],
   ['ioctl_2ec_13',['Ioctl.c',['../hprdbgkd_2code_2driver_2_ioctl_8c.html',1,'(Global Namespace)'],['../hprdbgrm_2code_2driver_2_ioctl_8c.html',1,'(Global Namespace)']]],
   ['ioctl_2etxt_14',['ioctl.txt',['../ioctl_8txt.html',1,'']]],
-  ['ioctls_2eh_15',['Ioctls.h',['../build_2bin_2debug_2_s_d_k_2_headers_2_ioctls_8h.html',1,'(Global Namespace)'],['../include_2_s_d_k_2_headers_2_ioctls_8h.html',1,'(Global Namespace)']]],
+  ['ioctls_2eh_15',['Ioctls.h',['../_ioctls_8h.html',1,'']]],
   ['iohandler_2ec_16',['IoHandler.c',['../_io_handler_8c.html',1,'']]],
   ['iohandler_2eh_17',['IoHandler.h',['../_io_handler_8h.html',1,'']]],
   ['ioin_2ecpp_18',['ioin.cpp',['../ioin_8cpp.html',1,'']]],

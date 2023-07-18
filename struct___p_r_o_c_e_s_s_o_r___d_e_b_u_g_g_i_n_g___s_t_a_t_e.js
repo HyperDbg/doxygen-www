@@ -5,6 +5,7 @@ var struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e =
     [ "DisableTrapFlagOnContinue", "struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#abec12156c3d1d4a4a3c76d7cee2ee254", null ],
     [ "DoNotNmiNotifyOtherCoresByThisCore", "struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a380521d105e2fad6b13a5258fa2b10f9", null ],
     [ "HardwareDebugRegisterForStepping", "struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#ab2da75301bc81c2d11c3ea24930c05d4", null ],
+    [ "IgnoreDisasmInNextPacket", "struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a2cde0a767eadada91cab15f3a0db5dbb", null ],
     [ "InstructionLengthHint", "struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#ac0735b6e84ce3ae397f74cfd5b4eabb4", null ],
     [ "InstrumentationStepInTrace", "struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#ad81a8736b22d9f3a93355140edbe9755", null ],
     [ "KdDpcObject", "struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a0bbf541e504d21f1ef9c41558b465770", null ],

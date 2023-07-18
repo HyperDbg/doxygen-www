@@ -8,7 +8,6 @@ var struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l =
     [ "FakePageContents", "struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#a4c523ca3a1b46bf34681abfec4fef75e", null ],
     [ "IsExecutionHook", "struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#a40f5606fe57295d12c430ce08421e544", null ],
     [ "IsHiddenBreakpoint", "struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#a97690afae33315665d9d82ed19b7725c", null ],
-    [ "IsMonitorToWriteOnPages", "struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#a5db4424bb300aec4ffabd7bfc5964417", null ],
     [ "IsPostEventTriggerAllowed", "struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#ad458b314b35c4f269cb7998b04ab28ea", null ],
     [ "LastContextState", "struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#a59fdf10619377cfa0697486767d1ed81", null ],
     [ "OriginalEntry", "struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#acacf76428d2801be17ffb3e8b05e9374", null ],

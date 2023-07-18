@@ -4,6 +4,6 @@ var _debugger_events_8h =
     [ "DebuggerEventDisableEferOnAllProcessors", "_debugger_events_8h.html#a4123040beace904804dad5fac1d22984", null ],
     [ "DebuggerEventDisableMovToCr3ExitingOnAllProcessors", "_debugger_events_8h.html#a29eb984baceb23c7c2a01cc947d4fe09", null ],
     [ "DebuggerEventEnableEferOnAllProcessors", "_debugger_events_8h.html#adef2dcab2a071b7afb0e79036753b5ae", null ],
-    [ "DebuggerEventEnableMonitorReadAndWriteForAddress", "_debugger_events_8h.html#a9750741c5f7cef5f18b5443380182b42", null ],
+    [ "DebuggerEventEnableMonitorReadWriteExec", "_debugger_events_8h.html#ad07ccfdaf5ec931a064fa166699e7fa5", null ],
     [ "DebuggerEventEnableMovToCr3ExitingOnAllProcessors", "_debugger_events_8h.html#a9fc0885a9799673255c0e61a4bf34a59", null ]
 ];

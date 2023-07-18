@@ -2,6 +2,7 @@ var _kd_8c =
 [
     [ "KdApplyTasksPostContinueCore", "_kd_8c.html#aefe9d84bf256f6624b2c9c2376479514", null ],
     [ "KdApplyTasksPreHaltCore", "_kd_8c.html#a26ca81a35a0a6e96b7067f59e97d657f", null ],
+    [ "KdBringPagein", "_kd_8c.html#a45432e2f204ca4480b157e6741afd20e", null ],
     [ "KdBroadcastHaltOnAllCores", "_kd_8c.html#ae68e00ba77013f6f0e00c8c67f88e9b5", null ],
     [ "KdCheckAndHandleNmiCallback", "_kd_8c.html#abe6bc148173ec5dfb8749db96e2a3b2c", null ],
     [ "KdCheckGuestOperatingModeChanges", "_kd_8c.html#a741a955565e9e421cb67d11ccd51b0d4", null ],

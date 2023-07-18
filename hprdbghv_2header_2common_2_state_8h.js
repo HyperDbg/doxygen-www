@@ -31,6 +31,8 @@ var hprdbghv_2header_2common_2_state_8h =
     [ "_NMI_BROADCAST_ACTION_TYPE", "hprdbghv_2header_2common_2_state_8h.html#a85e3f154b589dfee0fb64bd03ee2b16d", [
       [ "NMI_BROADCAST_ACTION_NONE", "hprdbghv_2header_2common_2_state_8h.html#a85e3f154b589dfee0fb64bd03ee2b16da238487fac1cdde89e55c4ff4aecb74c0", null ],
       [ "NMI_BROADCAST_ACTION_TEST", "hprdbghv_2header_2common_2_state_8h.html#a85e3f154b589dfee0fb64bd03ee2b16da4074796a388d144e5d1a95e9a029b541", null ],
-      [ "NMI_BROADCAST_ACTION_REQUEST", "hprdbghv_2header_2common_2_state_8h.html#a85e3f154b589dfee0fb64bd03ee2b16da27b431986deb197c32fe12552f92f835", null ]
+      [ "NMI_BROADCAST_ACTION_REQUEST", "hprdbghv_2header_2common_2_state_8h.html#a85e3f154b589dfee0fb64bd03ee2b16da27b431986deb197c32fe12552f92f835", null ],
+      [ "NMI_BROADCAST_ACTION_INVALIDATE_EPT_CACHE_SINGLE_CONTEXT", "hprdbghv_2header_2common_2_state_8h.html#a85e3f154b589dfee0fb64bd03ee2b16da377e9e84be8102108ce3d6f1c220c364", null ],
+      [ "NMI_BROADCAST_ACTION_INVALIDATE_EPT_CACHE_ALL_CONTEXTS", "hprdbghv_2header_2common_2_state_8h.html#a85e3f154b589dfee0fb64bd03ee2b16daa7ddd61542ac9db89a9ae069dcd13ff8", null ]
     ] ]
 ];

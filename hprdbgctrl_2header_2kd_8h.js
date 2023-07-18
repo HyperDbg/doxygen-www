@@ -27,6 +27,7 @@ var hprdbgctrl_2header_2kd_8h =
     [ "KdSendListOrModifyPacketToDebuggee", "hprdbgctrl_2header_2kd_8h.html#a1f65977634bfa21b467f0a959230f845", null ],
     [ "KdSendModifyEventInDebuggee", "hprdbgctrl_2header_2kd_8h.html#acfad7a2dfb875760edabcc35f3cead15", null ],
     [ "KdSendPacketToDebuggee", "hprdbgctrl_2header_2kd_8h.html#af0fc220c5e123bbf19bc2291fa31339f", null ],
+    [ "KdSendPageinPacketToDebuggee", "hprdbgctrl_2header_2kd_8h.html#a356b49e8d73404cb88725dbb8ba12098", null ],
     [ "KdSendPtePacketToDebuggee", "hprdbgctrl_2header_2kd_8h.html#a4a215b13b4dbd741c12d89cc51276f86", null ],
     [ "KdSendReadMemoryPacketToDebuggee", "hprdbgctrl_2header_2kd_8h.html#af8787dbd4dbe1e626f6b5f94f71a6019", null ],
     [ "KdSendReadRegisterPacketToDebuggee", "hprdbgctrl_2header_2kd_8h.html#a07f5d23e7bceb5cba7a88e1d04ebaa80", null ],

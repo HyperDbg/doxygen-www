@@ -6,14 +6,16 @@ var _attaching_8h =
     [ "MAX_USER_ACTIONS_FOR_THREADS", "_attaching_8h.html#a71a7b969b4769247f9e1c54276f6514f", null ],
     [ "PUSERMODE_DEBUGGING_PROCESS_DETAILS", "_attaching_8h.html#ac289d6b25a670c70d1f6a5105788fb04", null ],
     [ "USERMODE_DEBUGGING_PROCESS_DETAILS", "_attaching_8h.html#ae69b85159349c201bde2de678d985193", null ],
-    [ "AttachingCheckPageFaultsWithUserDebugger", "_attaching_8h.html#a8f9af990d6577e64c128ffc63dd3890b", null ],
+    [ "AttachingCheckPageFaultsWithUserDebugger", "_attaching_8h.html#af709328759d9b5fb6d0213ee458723dd", null ],
+    [ "AttachingCheckUnhandledEptViolation", "_attaching_8h.html#af92565f7d626021eb2e7312480126fa5", null ],
     [ "AttachingConfigureInterceptingThreads", "_attaching_8h.html#a7f67611f7474cb9199c0b941fcf82a85", null ],
     [ "AttachingFindProcessDebuggingDetailsByProcessId", "_attaching_8h.html#a733d0f343ddcccaeec221bbbb20483c7", null ],
     [ "AttachingFindProcessDebuggingDetailsByToken", "_attaching_8h.html#ab826f65586e0a294b97e505c6affe8b5", null ],
     [ "AttachingHandleCr3VmexitsForThreadInterception", "_attaching_8h.html#a2a634f245bfc5d1ce07e9df31f37f26a", null ],
-    [ "AttachingHandleEntrypointDebugBreak", "_attaching_8h.html#a29f7e27bd80ff2354ac96b8d87335897", null ],
+    [ "AttachingHandleEntrypointInterception", "_attaching_8h.html#adadde19c6465b57b781fff52e7f8db85", null ],
     [ "AttachingInitialize", "_attaching_8h.html#ac973601a8671bd7f982fb9f7fd13ccc4", null ],
     [ "AttachingQueryDetailsOfActiveDebuggingThreadsAndProcesses", "_attaching_8h.html#a640e936614ebe9a68cf54e78f7d8f323", null ],
+    [ "AttachingReachedToValidLoadedModule", "_attaching_8h.html#afb4b04c662929a9dc3b74b45b634aff4", null ],
     [ "AttachingRemoveAndFreeAllProcessDebuggingDetails", "_attaching_8h.html#ad16b106f9f7b6a857bafc12252bcfadd", null ],
     [ "AttachingTargetProcess", "_attaching_8h.html#a6fba37d8db6966c26c921887bcf11656", null ]
 ];

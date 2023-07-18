@@ -13,6 +13,7 @@ var kd_8cpp =
     [ "KdSendEventQueryAndModifyPacketToDebuggee", "kd_8cpp.html#a18997a2b3d2a5ae54466c48fe0e8973e", null ],
     [ "KdSendFlushPacketToDebuggee", "kd_8cpp.html#a47f7a3f63a9ec84015a3928a46cebf15", null ],
     [ "KdSendListOrModifyPacketToDebuggee", "kd_8cpp.html#a1f65977634bfa21b467f0a959230f845", null ],
+    [ "KdSendPageinPacketToDebuggee", "kd_8cpp.html#a356b49e8d73404cb88725dbb8ba12098", null ],
     [ "KdSendPausePacketToDebuggee", "kd_8cpp.html#a28d6202e4e416d76c06ba1781b0f5586", null ],
     [ "KdSendPtePacketToDebuggee", "kd_8cpp.html#a4a215b13b4dbd741c12d89cc51276f86", null ],
     [ "KdSendReadMemoryPacketToDebuggee", "kd_8cpp.html#af8787dbd4dbe1e626f6b5f94f71a6019", null ],

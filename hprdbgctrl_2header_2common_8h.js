@@ -1,5 +1,6 @@
 var hprdbgctrl_2header_2common_8h =
 [
+    [ "ASSERT_MESSAGE_CANNOT_SPECIFY_PID", "hprdbgctrl_2header_2common_8h.html#a287784477159cd9c618ec16aa87cb59c", null ],
     [ "ASSERT_MESSAGE_DRIVER_NOT_LOADED", "hprdbgctrl_2header_2common_8h.html#aa984b32130ec28ae1dbb70f604463dd0", null ],
     [ "AssertReturn", "hprdbgctrl_2header_2common_8h.html#aa6dfcb2d199ec22b858626aa3991779c", null ],
     [ "AssertReturnFalse", "hprdbgctrl_2header_2common_8h.html#ad69ae8cdae7ad953228f230b7e6f477a", null ],

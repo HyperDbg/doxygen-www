@@ -19,6 +19,7 @@ var dir_3caefd3e27db8f6755759324e61d48da =
     [ "pte.cpp", "pte_8cpp.html", "pte_8cpp" ],
     [ "rev.cpp", "rev_8cpp.html", "rev_8cpp" ],
     [ "syscall-sysret.cpp", "syscall-sysret_8cpp.html", "syscall-sysret_8cpp" ],
+    [ "track.cpp", "track_8cpp.html", "track_8cpp" ],
     [ "tsc.cpp", "tsc_8cpp.html", "tsc_8cpp" ],
     [ "unhide.cpp", "unhide_8cpp.html", "unhide_8cpp" ],
     [ "va2pa.cpp", "va2pa_8cpp.html", "va2pa_8cpp" ],

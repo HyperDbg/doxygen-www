@@ -1,10 +1,13 @@
 var _breakpoint_commands_8c =
 [
     [ "BreakpointAddNew", "_breakpoint_commands_8c.html#a295701da4a28b591937893cfbb3dcd75", null ],
+    [ "BreakpointAdjustUnsetTrapFlagsOnCurrentThread", "_breakpoint_commands_8c.html#a462860a027e1e81083a6df87f8e4a32a", null ],
     [ "BreakpointCheckAndHandleDebugBreakpoint", "_breakpoint_commands_8c.html#a6de84d2bb5c24bf8c4edcbad8e9dc055", null ],
     [ "BreakpointCheckAndHandleDebuggerDefinedBreakpoints", "_breakpoint_commands_8c.html#af249a8d277f3fe6fdeeb1796e537572b", null ],
     [ "BreakpointCheckAndHandleReApplyingBreakpoint", "_breakpoint_commands_8c.html#ac2d64f1a4448078440fa5e05a511e3bb", null ],
+    [ "BreakpointCheckAndPerformActionsOnTrapFlags", "_breakpoint_commands_8c.html#acc41a2fb2fa9c6cbd6e145286fc71231", null ],
     [ "BreakpointClear", "_breakpoint_commands_8c.html#af932a37c8259ad673a40b551f12f58c8", null ],
+    [ "BreakpointClearAndDeallocateMemory", "_breakpoint_commands_8c.html#a15e8a59a7b3e9d6c7fd68539075564c8", null ],
     [ "BreakpointGetEntryByAddress", "_breakpoint_commands_8c.html#ae7d28c7c329ec9621af580e43f13b412", null ],
     [ "BreakpointGetEntryByBreakpointId", "_breakpoint_commands_8c.html#a5901425c05d238beb8eef3b70bfb65b5", null ],
     [ "BreakpointHandleBpTraps", "_breakpoint_commands_8c.html#a3a0aeca428b3ffc888248391356079ac", null ],
