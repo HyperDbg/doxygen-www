@@ -10,11 +10,13 @@ var searchData=
   ['ulong_7',['ULONG',['../_basic_types_8h.html#af632da489ebc3708ec3ab6791ee53fa4',1,'BasicTypes.h']]],
   ['ulong64_8',['ULONG64',['../_basic_types_8h.html#a879c8a1e8468389cf82a40cf0690bdce',1,'BasicTypes.h']]],
   ['unicode_5fstring_9',['UNICODE_STRING',['../casting_8cpp.html#ac3cdef6ef4b9dc0593a4418019f3cbda',1,'casting.cpp']]],
-  ['usermode_5fdebugging_5fprocess_5fdetails_10',['USERMODE_DEBUGGING_PROCESS_DETAILS',['../_attaching_8h.html#ae69b85159349c201bde2de678d985193',1,'Attaching.h']]],
-  ['usermode_5fdebugging_5fthread_5fdetails_11',['USERMODE_DEBUGGING_THREAD_DETAILS',['../_thread_holder_8h.html#a08ef4f3c9f895f6f6c7e28fd29c1c156',1,'ThreadHolder.h']]],
-  ['usermode_5fdebugging_5fthread_5fholder_12',['USERMODE_DEBUGGING_THREAD_HOLDER',['../_thread_holder_8h.html#a6a3d37d8b8fbfaa07c7173f6b97e4f57',1,'ThreadHolder.h']]],
-  ['usermode_5fdebugging_5fthread_5for_5fprocess_5fstate_5fdetails_13',['USERMODE_DEBUGGING_THREAD_OR_PROCESS_STATE_DETAILS',['../_request_structures_8h.html#ac7aac921d83411cb9ae91f8fe3fba401',1,'RequestStructures.h']]],
-  ['usermode_5floaded_5fmodule_5fdetails_14',['USERMODE_LOADED_MODULE_DETAILS',['../_symbols_8h.html#aac77e165a134629907fe58b4643f55f2',1,'Symbols.h']]],
-  ['usermode_5floaded_5fmodule_5fsymbols_15',['USERMODE_LOADED_MODULE_SYMBOLS',['../_symbols_8h.html#ab58961752b4f259bec43ba50f985c6c1',1,'Symbols.h']]],
-  ['ushort_16',['USHORT',['../_basic_types_8h.html#a5850d5316caf7f4cedd742fdf8cd7c02',1,'BasicTypes.h']]]
+  ['user_5fdefined_5ffunction_5fnode_10',['USER_DEFINED_FUNCTION_NODE',['../_script_engine_common_definitions_8h.html#a9e84b960c7a3272f8ecdea2e70e64a4b',1,'ScriptEngineCommonDefinitions.h']]],
+  ['user_5fkernel_5fexecution_5ftrap_5fstate_11',['USER_KERNEL_EXECUTION_TRAP_STATE',['../_exec_trap_8h.html#ab1263e7915f5950e0bcce870fe7edddc',1,'ExecTrap.h']]],
+  ['usermode_5fdebugging_5fprocess_5fdetails_12',['USERMODE_DEBUGGING_PROCESS_DETAILS',['../_attaching_8h.html#ae69b85159349c201bde2de678d985193',1,'Attaching.h']]],
+  ['usermode_5fdebugging_5fthread_5fdetails_13',['USERMODE_DEBUGGING_THREAD_DETAILS',['../_thread_holder_8h.html#a08ef4f3c9f895f6f6c7e28fd29c1c156',1,'ThreadHolder.h']]],
+  ['usermode_5fdebugging_5fthread_5fholder_14',['USERMODE_DEBUGGING_THREAD_HOLDER',['../_thread_holder_8h.html#a6a3d37d8b8fbfaa07c7173f6b97e4f57',1,'ThreadHolder.h']]],
+  ['usermode_5fdebugging_5fthread_5for_5fprocess_5fstate_5fdetails_15',['USERMODE_DEBUGGING_THREAD_OR_PROCESS_STATE_DETAILS',['../_request_structures_8h.html#ac7aac921d83411cb9ae91f8fe3fba401',1,'RequestStructures.h']]],
+  ['usermode_5floaded_5fmodule_5fdetails_16',['USERMODE_LOADED_MODULE_DETAILS',['../_symbols_8h.html#aac77e165a134629907fe58b4643f55f2',1,'Symbols.h']]],
+  ['usermode_5floaded_5fmodule_5fsymbols_17',['USERMODE_LOADED_MODULE_SYMBOLS',['../_symbols_8h.html#ab58961752b4f259bec43ba50f985c6c1',1,'Symbols.h']]],
+  ['ushort_18',['USHORT',['../_basic_types_8h.html#a5850d5316caf7f4cedd742fdf8cd7c02',1,'BasicTypes.h']]]
 ];

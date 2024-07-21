@@ -10,6 +10,6 @@ var casting_8cpp =
     [ "STUPID_STRUCT2", "casting_8cpp.html#ae25774f3e3f23a6109949fccc4abd187", null ],
     [ "UNICODE_STRING", "casting_8cpp.html#ac3cdef6ef4b9dc0593a4418019f3cbda", null ],
     [ "main", "casting_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4", null ],
-    [ "SymCastingQueryForFiledsAndTypes", "casting_8cpp.html#a75f98bc946d5e3cf656332b746d0db66", null ],
-    [ "SymQuerySizeof", "casting_8cpp.html#adfb6efdc0ebf8c7756fb84aeff9744d1", null ]
+    [ "SymCastingQueryForFiledsAndTypes", "casting_8cpp.html#a7cd951cb927706af6b45e5e0de53d94c", null ],
+    [ "SymQuerySizeof", "casting_8cpp.html#a8f075e15b2314411b35b34ef28e7b3b3", null ]
 ];

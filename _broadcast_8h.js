@@ -1,5 +1,7 @@
 var _broadcast_8h =
 [
+    [ "BroadcasDisableMbecOnAllProcessors", "_broadcast_8h.html#a2141b662f12e00894493bcc7fcecfb9c", null ],
+    [ "BroadcasEnableMbecOnAllProcessors", "_broadcast_8h.html#ab4d9b971546e23039dde6c2d814d5720", null ],
     [ "BroadcastChangeToMbecSupportedEptpOnAllProcessors", "_broadcast_8h.html#a01df1ea5ca8b282ccbcadae40132fb69", null ],
     [ "BroadcastDisableNmiExitingAllCores", "_broadcast_8h.html#a044aac347fd8d872d6111372b8537fb4", null ],
     [ "BroadcastDisablePmlOnAllProcessors", "_broadcast_8h.html#aba9cb314a13280a5c3b0b2af7f8aed38", null ],

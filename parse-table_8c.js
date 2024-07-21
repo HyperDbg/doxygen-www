@@ -13,6 +13,8 @@ var parse_table_8c =
     [ "NoneTerminalMap", "parse-table_8c.html#ae9fccfa0c0c711df67611febfb7e53b7", null ],
     [ "OneOpFunc1", "parse-table_8c.html#ae37f0110648fb3047e973814b10ceaba", null ],
     [ "OneOpFunc2", "parse-table_8c.html#a1c82ca5a0c5c832a4639dc407f8cee0f", null ],
+    [ "OneOpFunc3", "parse-table_8c.html#a5b2aa145431226cd2d108430f268f880", null ],
+    [ "OneOpFunc4", "parse-table_8c.html#a9e69b5c786d5428e6223b727731ba0ba", null ],
     [ "OperatorsOneOperandList", "parse-table_8c.html#aec9b41a0cf3d754d68c84f319b453ea7", null ],
     [ "OperatorsTwoOperandList", "parse-table_8c.html#ad17c7d55a67e692395a3ce39db946d0a", null ],
     [ "ParseTable", "parse-table_8c.html#aec3b12b874488ac2dbb4fcd84a290394", null ],
@@ -23,8 +25,14 @@ var parse_table_8c =
     [ "SemanticRulesMapList", "parse-table_8c.html#a1eb506d9ade036749faa729fbfdf65d2", null ],
     [ "TerminalMap", "parse-table_8c.html#ae0104876ac9ee4242ad2ebdfa128c71d", null ],
     [ "ThreeOpFunc1", "parse-table_8c.html#a14f0d4532d755cd4bc7f3eb10d8b6634", null ],
+    [ "ThreeOpFunc2", "parse-table_8c.html#a9832b864977b16ff0ed31130ebd199f9", null ],
+    [ "ThreeOpFunc3", "parse-table_8c.html#aa628146be057543361de0b906fe270b3", null ],
+    [ "ThreeOpFunc4", "parse-table_8c.html#afff4c902d71a65f502857dcb9fd126c8", null ],
     [ "TwoOpFunc1", "parse-table_8c.html#a8b8b8394c1de6e4c24e7deac3e60dfd3", null ],
     [ "TwoOpFunc2", "parse-table_8c.html#a584f13f6bfdde82ebf97e21dd771a52d", null ],
+    [ "TwoOpFunc3", "parse-table_8c.html#a9c23ad2254f17415eabe3cc84b3d7a19", null ],
+    [ "TwoOpFunc4", "parse-table_8c.html#a6cb9aa3738536f4e147b89de0751b252", null ],
     [ "VarArgFunc1", "parse-table_8c.html#a6e741ee7c18fa56fda5dfb6039653159", null ],
+    [ "VARIABLETYPE", "parse-table_8c.html#a20ddbbb7ef5bafa59b2bc72f6af0e553", null ],
     [ "ZeroOpFunc1", "parse-table_8c.html#a70f9eb04c54ab6c69a57a4e90b077c0f", null ]
 ];

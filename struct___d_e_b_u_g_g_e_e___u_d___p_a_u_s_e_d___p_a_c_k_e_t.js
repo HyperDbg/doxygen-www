@@ -1,5 +1,6 @@
 var struct___d_e_b_u_g_g_e_e___u_d___p_a_u_s_e_d___p_a_c_k_e_t =
 [
+    [ "EventCallingStage", "struct___d_e_b_u_g_g_e_e___u_d___p_a_u_s_e_d___p_a_c_k_e_t.html#a708d93ee8ee8523b8b41e8a99d146bae", null ],
     [ "EventTag", "struct___d_e_b_u_g_g_e_e___u_d___p_a_u_s_e_d___p_a_c_k_e_t.html#abd4a87f9106cc80d3d2a35f418684b86", null ],
     [ "GuestRegs", "struct___d_e_b_u_g_g_e_e___u_d___p_a_u_s_e_d___p_a_c_k_e_t.html#a0145af02a2814d6a0272b961169d0356", null ],
     [ "InstructionBytesOnRip", "struct___d_e_b_u_g_g_e_e___u_d___p_a_u_s_e_d___p_a_c_k_e_t.html#af8522eb09dc5c1d44b3fbf0f2bceda07", null ],

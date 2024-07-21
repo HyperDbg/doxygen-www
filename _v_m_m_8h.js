@@ -10,6 +10,7 @@ var _v_m_m_8h =
     [ "INTERCEPTION_CALLBACK_TRIGGER_CR3_CHANGE", "_v_m_m_8h.html#a4d500e380ed93b0d99b29c10e0d9189b", null ],
     [ "KD_CHECK_AND_HANDLE_NMI_CALLBACK", "_v_m_m_8h.html#ad88941b7d5ee8788e90586790689dc42", null ],
     [ "KD_QUERY_DEBUGGER_THREAD_OR_PROCESS_TRACING_DETAILS_BY_CORE_ID", "_v_m_m_8h.html#aedeb7b0dde809aade03f444f266f4b6b", null ],
+    [ "LOG_CALLBACK_CHECK_IF_BUFFER_IS_FULL", "_v_m_m_8h.html#a18ea021e44717e1f814e26f34b9fe5f6", null ],
     [ "LOG_CALLBACK_PREPARE_AND_SEND_MESSAGE_TO_QUEUE", "_v_m_m_8h.html#a9b80bb301c613a2721206bc73a666bca", null ],
     [ "LOG_CALLBACK_SEND_BUFFER", "_v_m_m_8h.html#aedd5f4867020b4ad9a9b53904e684d06", null ],
     [ "LOG_CALLBACK_SEND_MESSAGE_TO_QUEUE", "_v_m_m_8h.html#a08c53b9dfb22224797401708bbb7f4ac", null ],

@@ -1,9 +1,10 @@
 var interpreter_8cpp =
 [
+    [ "CommandParser", "class_command_parser.html", "class_command_parser" ],
+    [ "CheckMultilineCommand", "interpreter_8cpp.html#aad3d791bfe8f3223aecaaec5a069ee39", null ],
+    [ "ContinuePreviousCommand", "interpreter_8cpp.html#aea4aee2461645ff8b476e727a760b14b", null ],
     [ "GetCommandAttributes", "interpreter_8cpp.html#aab97cd5f9978d66c6e83739faf8575e9", null ],
-    [ "HyperDbgCheckMultilineCommand", "interpreter_8cpp.html#ab73de70b99fc29da20f4be22939b87c0", null ],
-    [ "HyperDbgContinuePreviousCommand", "interpreter_8cpp.html#a88204bf2e78403f29384799c08c39e0b", null ],
-    [ "HyperDbgInterpreter", "interpreter_8cpp.html#ab5003d322c2dacdafbe30132f33e2734", null ],
+    [ "HyperDbgInterpreter", "interpreter_8cpp.html#aa477e099263d6fbd0b6ea2547e71f905", null ],
     [ "HyperDbgShowSignature", "interpreter_8cpp.html#a828d416c857adf6380b84c113fce5217", null ],
     [ "InitializeCommandsDictionary", "interpreter_8cpp.html#a291ece4b1333c68be4c8cda3cc03b9e4", null ],
     [ "InitializeDebugger", "interpreter_8cpp.html#ae85f00eb630e881eafecd00b976f0bdb", null ],

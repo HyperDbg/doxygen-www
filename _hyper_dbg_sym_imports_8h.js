@@ -20,7 +20,7 @@ var _hyper_dbg_sym_imports_8h =
     [ "PdbFileName", "_hyper_dbg_sym_imports_8h.html#a87e3d16bb8f329ac654397729744de87", null ],
     [ "PdbFilePath", "_hyper_dbg_sym_imports_8h.html#a127b3a502ca939b0c55c435a44aceb90", null ],
     [ "ResultPath", "_hyper_dbg_sym_imports_8h.html#ab98021334b9d0d1558f0222f9692f229", null ],
-    [ "SizeOfField", "_hyper_dbg_sym_imports_8h.html#a7675a6ee95abd662b252aaf1ad639b77", null ],
+    [ "SizeOfField", "_hyper_dbg_sym_imports_8h.html#adf4f50c33c08a0a5ed8824ee1ab1c914", null ],
     [ "StoredLength", "_hyper_dbg_sym_imports_8h.html#a688a42e18928127a6c3120f0ac5f42f2", null ],
     [ "SymbolPath", "_hyper_dbg_sym_imports_8h.html#a59ae61c672308150f1bc0d704f40c930", null ],
     [ "TypeSize", "_hyper_dbg_sym_imports_8h.html#a3587d85d98685d551eb0d5043728e48d", null ],

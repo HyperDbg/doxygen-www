@@ -1,6 +1,7 @@
 var struct___d_e_b_u_g_g_e_r___a_t_t_a_c_h___d_e_t_a_c_h___u_s_e_r___m_o_d_e___p_r_o_c_e_s_s =
 [
     [ "Action", "struct___d_e_b_u_g_g_e_r___a_t_t_a_c_h___d_e_t_a_c_h___u_s_e_r___m_o_d_e___p_r_o_c_e_s_s.html#a26284438b6d878b8737ac98b145e88ab", null ],
+    [ "CheckCallbackAtFirstInstruction", "struct___d_e_b_u_g_g_e_r___a_t_t_a_c_h___d_e_t_a_c_h___u_s_e_r___m_o_d_e___p_r_o_c_e_s_s.html#a2352164ae6f06c5aefa934be518827ae", null ],
     [ "CountOfActiveDebuggingThreadsAndProcesses", "struct___d_e_b_u_g_g_e_r___a_t_t_a_c_h___d_e_t_a_c_h___u_s_e_r___m_o_d_e___p_r_o_c_e_s_s.html#aff31c2022b45d4de799fa16c3b3f6bbd", null ],
     [ "Is32Bit", "struct___d_e_b_u_g_g_e_r___a_t_t_a_c_h___d_e_t_a_c_h___u_s_e_r___m_o_d_e___p_r_o_c_e_s_s.html#aaa51248611cfb936485165be2b3b4a4d", null ],
     [ "IsPaused", "struct___d_e_b_u_g_g_e_r___a_t_t_a_c_h___d_e_t_a_c_h___u_s_e_r___m_o_d_e___p_r_o_c_e_s_s.html#aa20810ff2bd553304ad18ee7c4c42eaa", null ],

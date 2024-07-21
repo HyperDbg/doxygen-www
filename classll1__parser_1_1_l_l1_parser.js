@@ -1,6 +1,6 @@
 var classll1__parser_1_1_l_l1_parser =
 [
-    [ "__init__", "classll1__parser_1_1_l_l1_parser.html#adbb6349faccc48ac53c48820eaea46b1", null ],
+    [ "__init__", "classll1__parser_1_1_l_l1_parser.html#a3b201d3cbb3aee7a8347b013d6e28394", null ],
     [ "FillParseTable", "classll1__parser_1_1_l_l1_parser.html#afa3438a98ffb4b54eebdbfff3ceed74a", null ],
     [ "FindAllFirsts", "classll1__parser_1_1_l_l1_parser.html#a1acec49ee02d58e77f6764b312911a82", null ],
     [ "FindAllFollows", "classll1__parser_1_1_l_l1_parser.html#a435ddcaa97bf3f4b3ae3e7f60cb454c4", null ],
@@ -33,6 +33,7 @@ var classll1__parser_1_1_l_l1_parser =
     [ "WriteSemanticMaps", "classll1__parser_1_1_l_l1_parser.html#aed3597937d35ef9764b90b5282967397", null ],
     [ "WriteTerminalList", "classll1__parser_1_1_l_l1_parser.html#a9afb017bf6663e135c866948252a5691", null ],
     [ "CommonHeaderFile", "classll1__parser_1_1_l_l1_parser.html#ae95d317eff1a8adab48511be8d37b9c3", null ],
+    [ "CommonHeaderFileScala", "classll1__parser_1_1_l_l1_parser.html#a5a2cd788e5aa98f4aaaf2006e38f6480", null ],
     [ "FirstDict", "classll1__parser_1_1_l_l1_parser.html#af563efc947dec4d9433cea614b0ab66b", null ],
     [ "FollowDict", "classll1__parser_1_1_l_l1_parser.html#ab9fa55e85825440d590420980609d41d", null ],
     [ "FunctionsDict", "classll1__parser_1_1_l_l1_parser.html#ae712067a622518a0989a05e2c4831e4c", null ],

@@ -12,6 +12,7 @@ var _vmcall_8h =
     [ "VMCALL_DISABLE_MOV_TO_CR_EXITING_ONLY_FOR_CR_EVENTS", "_vmcall_8h.html#adcc0063dc632ac87771ff6ddb0f77888", null ],
     [ "VMCALL_DISABLE_MOV_TO_DEBUG_REGS_EXITING", "_vmcall_8h.html#a13c945f82e78bd3ec1f1b008c6e9fbde", null ],
     [ "VMCALL_DISABLE_MOV_TO_HW_DR_EXITING_ONLY_FOR_DR_EVENTS", "_vmcall_8h.html#aeacaa8a476a8d6503dbdc38ceb76ad08", null ],
+    [ "VMCALL_DISABLE_OR_ENABLE_MBEC", "_vmcall_8h.html#aafe3a3005e59a1e74faf8417efe70ddd", null ],
     [ "VMCALL_DISABLE_RDTSC_EXITING_ONLY_FOR_TSC_EVENTS", "_vmcall_8h.html#ade9df4e3f1141974c97a539ef86773a7", null ],
     [ "VMCALL_DISABLE_SYSCALL_HOOK_EFER", "_vmcall_8h.html#acb8a7542446710304e8de981abb62528", null ],
     [ "VMCALL_ENABLE_DIRTY_LOGGING_MECHANISM", "_vmcall_8h.html#a699aaf657adf0f1a1f7156061dff374e", null ],
@@ -46,5 +47,6 @@ var _vmcall_8h =
     [ "VMCALL_VMXOFF", "_vmcall_8h.html#a589357d083b5353f74c07972e1448924", null ],
     [ "VmcallTest", "_vmcall_8h.html#a33cfb4436bd44e0edfc347cd877103df", null ],
     [ "VmxHandleVmcallVmExit", "_vmcall_8h.html#aa4ba08422093526e1e3488fc8ef16e58", null ],
+    [ "VmxVmcallDirectVmcallHandler", "_vmcall_8h.html#a25c15cc199604be3bab9e2f8c08b9a15", null ],
     [ "VmxVmcallHandler", "_vmcall_8h.html#a8541ac0b16936bb2fc4765dfc6f4cf83", null ]
 ];

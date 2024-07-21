@@ -9,6 +9,7 @@ var struct___v_m_m___c_a_l_l_b_a_c_k_s =
     [ "InterceptionCallbackTriggerCr3ProcessChange", "struct___v_m_m___c_a_l_l_b_a_c_k_s.html#aa30e5379d899ca026522d6ddb5bc188a", null ],
     [ "KdCheckAndHandleNmiCallback", "struct___v_m_m___c_a_l_l_b_a_c_k_s.html#ab0efe8443fef689c546dace0829b0bc8", null ],
     [ "KdQueryDebuggerQueryThreadOrProcessTracingDetailsByCoreId", "struct___v_m_m___c_a_l_l_b_a_c_k_s.html#ac3c5e64853124cfbe9a766570cb99e1e", null ],
+    [ "LogCallbackCheckIfBufferIsFull", "struct___v_m_m___c_a_l_l_b_a_c_k_s.html#a53eb2db55e441cfd03a95a3d0a89f828", null ],
     [ "LogCallbackPrepareAndSendMessageToQueueWrapper", "struct___v_m_m___c_a_l_l_b_a_c_k_s.html#a92e8e4a4437b0b0daa71b31a1ad6d370", null ],
     [ "LogCallbackSendBuffer", "struct___v_m_m___c_a_l_l_b_a_c_k_s.html#a3b957926e66fc6cc8b8c41eaa78196ed", null ],
     [ "LogCallbackSendMessageToQueue", "struct___v_m_m___c_a_l_l_b_a_c_k_s.html#a948cc08c303bbd8a8be63a35311df423", null ],

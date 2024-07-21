@@ -5,6 +5,7 @@ var classgenerator_1_1_generator =
     [ "Run", "classgenerator_1_1_generator.html#ae59a1f9854bdacc5498d0ac89bb32514", null ],
     [ "WriteCommonHeader", "classgenerator_1_1_generator.html#a8097b68e2ccac3a1d4275a237d35eb32", null ],
     [ "CommonHeaderFile", "classgenerator_1_1_generator.html#a3bd43ec55ccac07ec787d13298e9ed37", null ],
+    [ "CommonHeaderFileScala", "classgenerator_1_1_generator.html#a3b4b66f422098b49e66bbc394da17e24", null ],
     [ "gr", "classgenerator_1_1_generator.html#a49903b68a4698ec5d374b09e6372a6c1", null ],
     [ "HeaderFile", "classgenerator_1_1_generator.html#a605a8c59ec35ecace16167822d071695", null ],
     [ "lalr", "classgenerator_1_1_generator.html#ae6f2d777f70de6012ba4c00246640bb3", null ],

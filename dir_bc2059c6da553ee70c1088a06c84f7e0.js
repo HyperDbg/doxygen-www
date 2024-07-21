@@ -3,7 +3,7 @@ var dir_bc2059c6da553ee70c1088a06c84f7e0 =
     [ "apm88xxxx.c", "apm88xxxx_8c.html", "apm88xxxx_8c" ],
     [ "bcm2835.c", "bcm2835_8c.html", "bcm2835_8c" ],
     [ "common.c", "kdserial_2_common_8c.html", "kdserial_2_common_8c" ],
-    [ "common.h", "kdserial_2common_8h.html", null ],
+    [ "common.h", "kdserial_2_common_8h.html", null ],
     [ "hardware.c", "hardware_8c.html", "hardware_8c" ],
     [ "ioaccess.c", "ioaccess_8c.html", "ioaccess_8c" ],
     [ "kdcom.h", "kdcom_8h.html", "kdcom_8h" ],

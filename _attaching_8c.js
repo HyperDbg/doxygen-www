@@ -1,10 +1,11 @@
 var _attaching_8c =
 [
     [ "AttachingAdjustNopSledBuffer", "_attaching_8c.html#a5d48d4a604f0d7effefad660da3aaf4a", null ],
+    [ "AttachingCheckForSafeCallbackRequestedInitializations", "_attaching_8c.html#a96029792901bb04ae2baa8acfacdd5a7", null ],
     [ "AttachingCheckPageFaultsWithUserDebugger", "_attaching_8c.html#af709328759d9b5fb6d0213ee458723dd", null ],
     [ "AttachingCheckUnhandledEptViolation", "_attaching_8c.html#af92565f7d626021eb2e7312480126fa5", null ],
     [ "AttachingConfigureInterceptingThreads", "_attaching_8c.html#a7f67611f7474cb9199c0b941fcf82a85", null ],
-    [ "AttachingCreateProcessDebuggingDetails", "_attaching_8c.html#affffe6126d46ed053c8a1fc6e58e5f92", null ],
+    [ "AttachingCreateProcessDebuggingDetails", "_attaching_8c.html#a593f7e7ea84362b61dad501869a7b998", null ],
     [ "AttachingFindProcessDebuggingDetailsByProcessId", "_attaching_8c.html#a733d0f343ddcccaeec221bbbb20483c7", null ],
     [ "AttachingFindProcessDebuggingDetailsByToken", "_attaching_8c.html#ab826f65586e0a294b97e505c6affe8b5", null ],
     [ "AttachingFindProcessDebuggingDetailsInStartingPhase", "_attaching_8c.html#a0890d6e4aaf7fd8bdb1663697ed6b717", null ],

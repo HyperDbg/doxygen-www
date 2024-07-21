@@ -4,7 +4,7 @@ var events_8cpp =
     [ "CommandEventDisableEvent", "events_8cpp.html#a601e25d2f26d8524e51a034aef732974", null ],
     [ "CommandEventEnableEvent", "events_8cpp.html#a2489d9211a08ec26bf9f791810bcbf93", null ],
     [ "CommandEventQueryEventState", "events_8cpp.html#aaecb88c6e322591f0de51b8b625d1c87", null ],
-    [ "CommandEvents", "events_8cpp.html#aef0546b20dc8c6d427ed1d214c4bb564", null ],
+    [ "CommandEvents", "events_8cpp.html#afae70ebe50d1d1e4788cdd59ee21bd98", null ],
     [ "CommandEventsClearAllEventsAndResetTags", "events_8cpp.html#aff14274159528bdcb38424a8471b9521", null ],
     [ "CommandEventsHandleModifiedEvent", "events_8cpp.html#a056f11e1bbf5d42d00eb7d5b3793c066", null ],
     [ "CommandEventsHelp", "events_8cpp.html#a039c3016a7a8be8f1741c61b19e05d36", null ],

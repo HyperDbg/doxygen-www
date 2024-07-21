@@ -1,5 +1,6 @@
 var struct_a_c_t_i_o_n___b_u_f_f_e_r =
 [
+    [ "CallingStage", "struct_a_c_t_i_o_n___b_u_f_f_e_r.html#a559696a8dcd6f46488decb62fdb96c7c", null ],
     [ "Context", "struct_a_c_t_i_o_n___b_u_f_f_e_r.html#a065ba4b6004ad87cc33ae2b74613f248", null ],
     [ "CurrentAction", "struct_a_c_t_i_o_n___b_u_f_f_e_r.html#a268eaf10d74be8d39313a8d2236503e0", null ],
     [ "ImmediatelySendTheResults", "struct_a_c_t_i_o_n___b_u_f_f_e_r.html#a57b5f865e7403af71133008b2f8a304f", null ],

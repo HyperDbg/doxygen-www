@@ -1,6 +1,6 @@
 var hide_8cpp =
 [
-    [ "CommandHide", "hide_8cpp.html#a7c29ec20f55661e22cd21d79cc50349b", null ],
+    [ "CommandHide", "hide_8cpp.html#a6943ccb8ddbd8ce009f212bd931834f5", null ],
     [ "CommandHideHelp", "hide_8cpp.html#ad4e4808fd67738012156998fe5d3a353", null ],
     [ "g_ActiveProcessDebuggingState", "hide_8cpp.html#ac8b9079c1d516b04b41fa56032412950", null ],
     [ "g_CpuidAverage", "hide_8cpp.html#afb6283d738f52b2533be4cfa30f28b18", null ],

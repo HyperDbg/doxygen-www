@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['win32_5flean_5fand_5fmean_0',['WIN32_LEAN_AND_MEAN',['../tcpserver_8cpp.html#ac7bef5d85e3dcd73eef56ad39ffc84a9',1,'WIN32_LEAN_AND_MEAN:&#160;tcpserver.cpp'],['../hprdbgctrl_2pch_8h.html#ac7bef5d85e3dcd73eef56ad39ffc84a9',1,'WIN32_LEAN_AND_MEAN:&#160;pch.h'],['../hprdbgrev_2header_2pch_8h.html#ac7bef5d85e3dcd73eef56ad39ffc84a9',1,'WIN32_LEAN_AND_MEAN:&#160;pch.h'],['../script-engine_2pch_8h.html#ac7bef5d85e3dcd73eef56ad39ffc84a9',1,'WIN32_LEAN_AND_MEAN:&#160;pch.h']]],
+  ['win32_5flean_5fand_5fmean_0',['WIN32_LEAN_AND_MEAN',['../include_2_s_d_k_2_examples_2hyperdbg__app_2header_2pch_8h.html#ac7bef5d85e3dcd73eef56ad39ffc84a9',1,'WIN32_LEAN_AND_MEAN:&#160;pch.h'],['../tcpserver_8cpp.html#ac7bef5d85e3dcd73eef56ad39ffc84a9',1,'WIN32_LEAN_AND_MEAN:&#160;tcpserver.cpp'],['../libhyperdbg_2pch_8h.html#ac7bef5d85e3dcd73eef56ad39ffc84a9',1,'WIN32_LEAN_AND_MEAN:&#160;pch.h'],['../script-engine_2pch_8h.html#ac7bef5d85e3dcd73eef56ad39ffc84a9',1,'WIN32_LEAN_AND_MEAN:&#160;pch.h']]],
   ['wpp_5fcontrol_5fguids_1',['WPP_CONTROL_GUIDS',['../_trace_8h.html#af9215df4a5adfe2e66e850036e7526b6',1,'Trace.h']]],
   ['wpp_5fflag_5fexp_5fenabled_2',['WPP_FLAG_EXP_ENABLED',['../_trace_8h.html#a14d8b46b40c440ce939859f747e2dd95',1,'Trace.h']]],
   ['wpp_5fflag_5fexp_5flogger_3',['WPP_FLAG_EXP_LOGGER',['../_trace_8h.html#ae0f1cc8da8d54a908b3b7527b6d211e2',1,'Trace.h']]],

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['chprdbgctrl_0',['Chprdbgctrl',['../class_chprdbgctrl.html',1,'']]]
+  ['commandparser_0',['CommandParser',['../class_command_parser.html',1,'']]]
 ];

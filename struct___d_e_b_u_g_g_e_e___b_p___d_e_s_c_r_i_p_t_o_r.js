@@ -4,6 +4,7 @@ var struct___d_e_b_u_g_g_e_e___b_p___d_e_s_c_r_i_p_t_o_r =
     [ "AvoidReApplyBreakpoint", "struct___d_e_b_u_g_g_e_e___b_p___d_e_s_c_r_i_p_t_o_r.html#a92b8d8e3dfe78ced438c04c2fc9c8b08", null ],
     [ "BreakpointId", "struct___d_e_b_u_g_g_e_e___b_p___d_e_s_c_r_i_p_t_o_r.html#a0600a3a7a748f669bef44b0eb920fd4f", null ],
     [ "BreakpointsList", "struct___d_e_b_u_g_g_e_e___b_p___d_e_s_c_r_i_p_t_o_r.html#a963ede4fbe9776b1b18b53b4e2dff062", null ],
+    [ "CheckForCallbacks", "struct___d_e_b_u_g_g_e_e___b_p___d_e_s_c_r_i_p_t_o_r.html#a4fff2e041a08cfbb872eb2ce2838ac17", null ],
     [ "Core", "struct___d_e_b_u_g_g_e_e___b_p___d_e_s_c_r_i_p_t_o_r.html#aff66a054304ff0b558bd5e5688cb8e04", null ],
     [ "Enabled", "struct___d_e_b_u_g_g_e_e___b_p___d_e_s_c_r_i_p_t_o_r.html#aac7e43f351a7b2c5d45e6b058be77036", null ],
     [ "InstructionLength", "struct___d_e_b_u_g_g_e_e___b_p___d_e_s_c_r_i_p_t_o_r.html#a603517c66479592e240eeacb29379803", null ],

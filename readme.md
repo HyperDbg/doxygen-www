@@ -6,4 +6,4 @@ Make sure to not delete the following files and folders on the next commit :
 - .nojekyll
 - CNAME
 
-Last update : 2023-07-18
+Last update : 2024-07-21

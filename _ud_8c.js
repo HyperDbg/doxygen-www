@@ -4,7 +4,6 @@ var _ud_8c =
     [ "UdCheckForCommand", "_ud_8c.html#afe8e59191c78460477ae89d3e9daf751", null ],
     [ "UdContinueThread", "_ud_8c.html#a85b049cfd213a9037a5d33810dcabb67", null ],
     [ "UdDispatchUsermodeCommands", "_ud_8c.html#a56a511f72fa77e4eadf393c2e0d6dc8f", null ],
-    [ "UdHandleAfterSteppingReason", "_ud_8c.html#a5b7ff16f6aca85e821cf555b9a96ce1e", null ],
     [ "UdInitializeUserDebugger", "_ud_8c.html#a86574ff4fedfd90b7552bf5d4f8d66a2", null ],
     [ "UdPerformCommand", "_ud_8c.html#a1952ae25243278fc748ce38a16183410", null ],
     [ "UdPrePausingReasons", "_ud_8c.html#a6b34356fa5078db5eceab1194735f60a", null ],

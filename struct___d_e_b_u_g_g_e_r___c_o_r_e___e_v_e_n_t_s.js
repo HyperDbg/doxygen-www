@@ -1,5 +1,6 @@
 var struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s =
 [
+    [ "ControlRegister3ModifiedEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#a40a9766102ddb6cac0a446a2763b93ce", null ],
     [ "ControlRegisterModifiedEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#a956aed5db5000087cffd1327ab27c9b0", null ],
     [ "CpuidInstructionExecutionEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#ac2871ec44e23104b71326876c308d8a7", null ],
     [ "DebugRegistersAccessedEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#ab0e5de37ec84960aa1ab3ec2c20c3607", null ],
@@ -20,6 +21,8 @@ var struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s =
     [ "RdmsrInstructionExecutionEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#a8c8c97ff10fde0ec22d9d2968c2a92f6", null ],
     [ "SyscallHooksEferSyscallEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#a994b3f367e68341031a1c1cd45847816", null ],
     [ "SyscallHooksEferSysretEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#af79922f0f61d36076f8afc8fe82a7e6a", null ],
+    [ "TrapExecutionInstructionTraceEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#aae06093f1ed49c2fc01d750fa4ac81d8", null ],
+    [ "TrapExecutionModeChangedEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#ad5965581ca6a1c0b98a48efd5565972f", null ],
     [ "TscInstructionExecutionEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#ac89d26d001047d7a088f8c775c9101e7", null ],
     [ "VmcallInstructionExecutionEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#a8ef070fecb4f3dfbfcf938328cb150bf", null ],
     [ "WrmsrInstructionExecutionEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#ab08835edef8c324f0f0e859729ce6713", null ]

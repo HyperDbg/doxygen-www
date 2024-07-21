@@ -6,6 +6,7 @@ var _user_access_8c =
     [ "UserAccessGetLoadedModules", "_user_access_8c.html#a7c958368ce2a6eedc7371808e4f25728", null ],
     [ "UserAccessGetPebFromProcessId", "_user_access_8c.html#ab69044f3d24978a64f306647d2bdce4e", null ],
     [ "UserAccessIsWow64Process", "_user_access_8c.html#afea1379e1a9acca82a320d700b63a7b8", null ],
+    [ "UserAccessIsWow64ProcessByEprocess", "_user_access_8c.html#af031f245bb3a7257c5c1f2155ddd54a9", null ],
     [ "UserAccessPrintLoadedModulesX64", "_user_access_8c.html#a41ecc27a5b045d06bf9627da52da5000", null ],
     [ "UserAccessPrintLoadedModulesX86", "_user_access_8c.html#a38e8cb7219cde40c6772a59b3e773ac6", null ],
     [ "UserAccessPrintLoadedModulesX86_2", "_user_access_8c.html#a6592c8fb23d621822536622e9c20cae7", null ]

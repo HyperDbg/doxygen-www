@@ -24,7 +24,7 @@ var symbol_parser_8cpp =
     [ "SymLoadFileSymbol", "symbol-parser_8cpp.html#ac1d3ecae03f1def0146458dc0f2f0051", null ],
     [ "SymSearchSymbolForMask", "symbol-parser_8cpp.html#a8a8b09f37a0f738ccc376d858e2e24ac", null ],
     [ "SymSeparateTo64BitValue", "symbol-parser_8cpp.html#a1bcbed0271feb2bc41c731b235353439", null ],
-    [ "SymSetTextMessageCallback", "symbol-parser_8cpp.html#a3f40595a7e92ec4182c2bd02f4065470", null ],
+    [ "SymSetTextMessageCallback", "symbol-parser_8cpp.html#a37eb36cd5a97b710196c536ee863018f", null ],
     [ "SymShowDataBasedOnSymbolTypes", "symbol-parser_8cpp.html#acf92228b6fc0c4bd81b895aad1e036ba", null ],
     [ "SymShowSymbolDetails", "symbol-parser_8cpp.html#a031cd1a4cd0cb7a62f70580ec4111ff8", null ],
     [ "SymShowSymbolInfo", "symbol-parser_8cpp.html#a125f78aedd27773e15cb95f4302244d4", null ],
@@ -35,6 +35,6 @@ var symbol_parser_8cpp =
     [ "g_CurrentModuleName", "symbol-parser_8cpp.html#aa5d3e7e6448b37fb0c53643693d4e43d", null ],
     [ "g_IsLoadedModulesInitialized", "symbol-parser_8cpp.html#ae4658fe21ce6771410ab7dda6ecef34b", null ],
     [ "g_LoadedModules", "symbol-parser_8cpp.html#a6e8cf85cfe442245499680e67eaec1d0", null ],
-    [ "g_MessageHandler", "symbol-parser_8cpp.html#ad12c41c73b6d11e1703491f0d59e3f73", null ],
+    [ "g_MessageHandler", "symbol-parser_8cpp.html#aa9ddd7ca0c6eabaedb612ceba470aa29", null ],
     [ "g_SymbolMapForDisassembler", "symbol-parser_8cpp.html#ab0c07a0441be3a9e8df54d4206aa3c62", null ]
 ];

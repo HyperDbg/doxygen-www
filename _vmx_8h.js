@@ -27,7 +27,7 @@ var _vmx_8h =
     [ "CPU_BASED_RDTSC_EXITING", "_vmx_8h.html#a4eab9368296865a5158d46814919e713", null ],
     [ "CPU_BASED_TPR_SHADOW", "_vmx_8h.html#aac2f20cc45f49f802d9bf7c949989cc5", null ],
     [ "CPU_BASED_UNCOND_IO_EXITING", "_vmx_8h.html#a2cf21c8c27214ceb274c1489c9319920", null ],
-    [ "CPU_BASED_USE_TSC_OFFSETING", "_vmx_8h.html#aa6030e3234497e012dc04156b6a4724c", null ],
+    [ "CPU_BASED_USE_TSC_OFFSETTING", "_vmx_8h.html#ae87851aa57b7366f1333f4cb071b9455", null ],
     [ "CPU_BASED_VIRTUAL_INTR_PENDING", "_vmx_8h.html#a1dd1436c26499ab3fb454feae9958218", null ],
     [ "CPU_BASED_VIRTUAL_NMI_PENDING", "_vmx_8h.html#ae7beca6fe5a747c0dd7cc08755295678", null ],
     [ "GUEST_INTR_STATE_ENCLAVE_INTR", "_vmx_8h.html#a922c108360321f0bc820c48276fa9a0d", null ],
@@ -74,7 +74,12 @@ var _vmx_8h =
     [ "VMM_STACK_SIZE", "_vmx_8h.html#ad0f7cb46b6f0d6a27da192097ea21f03", null ],
     [ "VMXON_SIZE", "_vmx_8h.html#ae2050fcb30b71116f502d40643f35541", null ],
     [ "HYPERCALL_INPUT_VALUE", "_vmx_8h.html#ae9a97844066df354446d7fc353745c73", null ],
+    [ "MOV_TO_DEBUG_REG", "_vmx_8h.html#a60071359fab58fc0ae405efb1c29e2a4", null ],
     [ "PHYPERCALL_INPUT_VALUE", "_vmx_8h.html#a071211894a630f709556fdfcac4940f7", null ],
+    [ "_MOV_TO_DEBUG_REG", "_vmx_8h.html#a756132f02f43ed5a1b3a25f6bd2c35dc", [
+      [ "AccessToDebugRegister", "_vmx_8h.html#a756132f02f43ed5a1b3a25f6bd2c35dcae84f0d0c92c9ea90c7f2a10b9ea24892", null ],
+      [ "AccessFromDebugRegister", "_vmx_8h.html#a756132f02f43ed5a1b3a25f6bd2c35dcab7475be58f5a2ca574f1989c8bac1d90", null ]
+    ] ],
     [ "HYPERCALL_CODE", "_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8", [
       [ "HvSwitchVirtualAddressSpace", "_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8a1c50a0b5203fd2be5432921d6c13a634", null ],
       [ "HvFlushVirtualAddressSpace", "_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8ac1cd035608c416d32c973be3f09ff6ea", null ],
@@ -177,20 +182,13 @@ var _vmx_8h =
       [ "HvCallFlushGuestPhysicalAddressSpace", "_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8af961a11d5dc7013664f499de514bb4de", null ],
       [ "HvCallFlushGuestPhysicalAddressList", "_vmx_8h.html#a8d1c98a2b0d46295a5d5aa6a747022e8af4c9307e4515ebebe2452332e211c289", null ]
     ] ],
-    [ "MOV_TO_DEBUG_REG", "_vmx_8h.html#a3424e1c8f0251a6187e322e157e5eb46", [
-      [ "AccessToDebugRegister", "_vmx_8h.html#a3424e1c8f0251a6187e322e157e5eb46ae84f0d0c92c9ea90c7f2a10b9ea24892", null ],
-      [ "AccessFromDebugRegister", "_vmx_8h.html#a3424e1c8f0251a6187e322e157e5eb46ab7475be58f5a2ca574f1989c8bac1d90", null ]
-    ] ],
-    [ "_Success_", "_vmx_8h.html#ac5332f1f964b0b95b3a323ae05069091", null ],
-    [ "_Success_", "_vmx_8h.html#a87a288755d6ecdae92fc9423aa2a9f42", null ],
-    [ "VmxAllocateInvalidMsrBimap", "_vmx_8h.html#a5cefd3b5b3b98c661acad573794aa917", null ],
-    [ "VmxAllocateIoBitmaps", "_vmx_8h.html#a5ecb9af59c8b9652916b17716448d188", null ],
-    [ "VmxAllocateMsrBitmap", "_vmx_8h.html#a6b5ac1b2515912b3097922be01ed264a", null ],
-    [ "VmxAllocateVmmStack", "_vmx_8h.html#aa52d4fb46038fa50963bca46df2bba20", null ],
     [ "VmxCheckIsOnVmxRoot", "_vmx_8h.html#ae1383bf1b0ee0da71f29e832a1e86144", null ],
     [ "VmxCheckVmxSupport", "_vmx_8h.html#abbbc35bf970ac6b655e08bc3c0f46905", null ],
     [ "VmxClearVmcsState", "_vmx_8h.html#aa464d719d6326915cc99171ae800abe7", null ],
+    [ "VmxCompatibleMemcmp", "_vmx_8h.html#aaeb79732cfd7f97a1983c9b3248d69f5", null ],
+    [ "VmxCompatibleStrcmp", "_vmx_8h.html#aa4ec232fccf5297d44af914b19fd9cee", null ],
     [ "VmxCompatibleStrlen", "_vmx_8h.html#a84a3bd5efc8ff0858c095e18fe0999da", null ],
+    [ "VmxCompatibleWcscmp", "_vmx_8h.html#a57357ebeb98175ca5326f1bfe8490ee4", null ],
     [ "VmxCompatibleWcslen", "_vmx_8h.html#a2e2e419641070da1b794c2c62e691cc3", null ],
     [ "VmxFixCr4AndCr0Bits", "_vmx_8h.html#a56536723aab6c8ccb4719ff1eac2c25f", null ],
     [ "VmxGetCurrentExecutionMode", "_vmx_8h.html#a21a5facaf10e8fbeb70dd00942e51ef1", null ],
@@ -209,8 +207,15 @@ var _vmx_8h =
     [ "VmxTerminate", "_vmx_8h.html#ae683fd4d4ecd99c28292045bc8a65e18", null ],
     [ "VmxVirtualizeCurrentSystem", "_vmx_8h.html#af666da6f076709f466795cf1627d5e94", null ],
     [ "VmxVmptrst", "_vmx_8h.html#a099f2c93689489c8a4117c8f6648efc1", null ],
+    [ "VmxVmread16", "_vmx_8h.html#ae6a01d1262cb49acf2a4e3d52c9143f7", null ],
+    [ "VmxVmread16P", "_vmx_8h.html#a0b9a2488785132e5580df49c20fd1443", null ],
+    [ "VmxVmread32", "_vmx_8h.html#a7a4a5eb82be7c9c58ea15cb6fd7f001f", null ],
+    [ "VmxVmread32P", "_vmx_8h.html#af411da3719b3f7f9198be1b8bc6c6874", null ],
+    [ "VmxVmread64", "_vmx_8h.html#a493c5a273fefd9ceeb520720225f7a47", null ],
+    [ "VmxVmread64P", "_vmx_8h.html#a030c9345db1d1e6cdf76c3289f5090d9", null ],
     [ "VmxVmresume", "_vmx_8h.html#a78415dd94deee3861f8cdfe695331aa9", null ],
-    [ "VmxVmxoff", "_vmx_8h.html#ad9193ed1677033cd08c5d5b7788b15c7", null ],
-    [ "SegmentSelector", "_vmx_8h.html#a68870ccf6841ce76f7ca30ab1f3b1b4d", null ],
-    [ "Selector", "_vmx_8h.html#a4a0d94e93bbb0b7abc6f24679b7dfc06", null ]
+    [ "VmxVmwrite16", "_vmx_8h.html#a5eb0f8482f465f2cce15041fe008f559", null ],
+    [ "VmxVmwrite32", "_vmx_8h.html#aefab869ab11279e141c6ff3d2ace3c5f", null ],
+    [ "VmxVmwrite64", "_vmx_8h.html#a14b2ff5571ba424d03e622b3802e8e5a", null ],
+    [ "VmxVmxoff", "_vmx_8h.html#ad9193ed1677033cd08c5d5b7788b15c7", null ]
 ];

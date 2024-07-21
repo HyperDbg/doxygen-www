@@ -12,6 +12,7 @@ var script_engine_wrapper_8cpp =
     [ "ScriptEngineCreateSymbolTableForDisassemblerWrapper", "script-engine-wrapper_8cpp.html#aaf56c15c68e0e0fb086a80e0fb3a1b6c", null ],
     [ "ScriptEngineEvalUInt64StyleExpressionWrapper", "script-engine-wrapper_8cpp.html#a830cbdeec60075276e6529d7efca1a53", null ],
     [ "ScriptEngineEvalWrapper", "script-engine-wrapper_8cpp.html#aaddbdfd6e72593438b04711d510c3f45", null ],
+    [ "ScriptEngineFuncNumberOfOperands", "script-engine-wrapper_8cpp.html#a9a60c2427d6c18d102848e2333cb7561", null ],
     [ "ScriptEngineGetDataTypeSizeWrapper", "script-engine-wrapper_8cpp.html#acf3ff65af67f3637bca7071154813832", null ],
     [ "ScriptEngineGetFieldOffsetWrapper", "script-engine-wrapper_8cpp.html#a57f187c5719e21e58bba4d24d62829b9", null ],
     [ "ScriptEngineLoadFileSymbolWrapper", "script-engine-wrapper_8cpp.html#a9c4428209aa0695f0afbb7a7b8e7c92f", null ],

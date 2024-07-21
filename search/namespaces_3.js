@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['detail_0',['detail',['../namespaceinipp_1_1detail.html',1,'inipp']]],
-  ['inipp_1',['inipp',['../namespaceinipp.html',1,'']]]
+  ['inipp_0',['inipp',['../namespaceinipp.html',1,'']]],
+  ['inipp_3a_3adetail_1',['detail',['../namespaceinipp_1_1detail.html',1,'inipp']]]
 ];

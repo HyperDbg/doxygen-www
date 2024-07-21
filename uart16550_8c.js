@@ -3,7 +3,7 @@ var uart16550_8c =
     [ "KdHyperDbgPrepareDebuggeeConnectionPort", "uart16550_8c.html#a63264f6c4e38434ba8edafcb3fb35ba8", null ],
     [ "KdHyperDbgRecvByte", "uart16550_8c.html#a42e4ceafbbdb35c500dcea0550ed9bee", null ],
     [ "KdHyperDbgSendByte", "uart16550_8c.html#a3e592ee3310adee4d912ac223b4ed099", null ],
-    [ "KdHyperDbgTest", "uart16550_8c.html#a19c21186ae49b8a0672b41e01567f8a8", null ],
+    [ "KdHyperDbgTest", "uart16550_8c.html#ae53b3857651c1990096c0c996a6d54d3", null ],
     [ "Uart16550GetByte", "uart16550_8c.html#a9758a13b6fcc5e3cbf07f30c9d3d4177", null ],
     [ "Uart16550InitializePort", "uart16550_8c.html#ae2caa41dd20de39e903947f232a14179", null ],
     [ "Uart16550InitializePortCommon", "uart16550_8c.html#a37a704b2335efca748894798157f65f4", null ],

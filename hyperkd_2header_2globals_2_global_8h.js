@@ -1,0 +1,28 @@
+var hyperkd_2header_2globals_2_global_8h =
+[
+    [ "g_AllowIOCTLFromUsermode", "hyperkd_2header_2globals_2_global_8h.html#a54d40f18e629195bd47bbc4a797ad8e7", null ],
+    [ "g_BreakpointsListHead", "hyperkd_2header_2globals_2_global_8h.html#abca944290c6a683f0821a9096472f7d4", null ],
+    [ "g_DbgState", "hyperkd_2header_2globals_2_global_8h.html#a349ee1adc363d2e4323a35a68fae5646", null ],
+    [ "g_DebuggeeHaltReason", "hyperkd_2header_2globals_2_global_8h.html#acf21790b2fc221ed28789a132d509cb7", null ],
+    [ "g_EnableDebuggerEvents", "hyperkd_2header_2globals_2_global_8h.html#af9bef4d8da3b6e1b87fa959513fe131e", null ],
+    [ "g_Events", "hyperkd_2header_2globals_2_global_8h.html#a2d2638d7b52281063d7e08a62cdfda12", null ],
+    [ "g_EventTriggerDetail", "hyperkd_2header_2globals_2_global_8h.html#a57f62030f88def44f0b4814b8067f111", null ],
+    [ "g_HandleInUse", "hyperkd_2header_2globals_2_global_8h.html#a5a292129d8aa76062c219b83e938d574", null ],
+    [ "g_HardwareDebugRegisterDetailsForStepOver", "hyperkd_2header_2globals_2_global_8h.html#aa18646fd48487bbd6d28a61f575afe4e", null ],
+    [ "g_IgnoreBreaksToDebugger", "hyperkd_2header_2globals_2_global_8h.html#a0c50a3971433f95430249d30dfc9856b", null ],
+    [ "g_InterceptBreakpoints", "hyperkd_2header_2globals_2_global_8h.html#a4d0018c727503706f39f9ad28f8ad373", null ],
+    [ "g_InterceptBreakpointsAndEventsForCommandsInRemoteComputer", "hyperkd_2header_2globals_2_global_8h.html#a7209d2a1918f90ef7d818714bcb5fbe1", null ],
+    [ "g_InterceptDebugBreaks", "hyperkd_2header_2globals_2_global_8h.html#a2d64c12c84c91be0812df1e4b4c74b58", null ],
+    [ "g_IsWaitingForReturnAndRunFromPageFault", "hyperkd_2header_2globals_2_global_8h.html#a0b03446aa090036e1c29277857de9596", null ],
+    [ "g_IsWaitingForUserModeProcessEntryToBeCalled", "hyperkd_2header_2globals_2_global_8h.html#ae4b7e6d3d73fbc5e36dab0e432cfda0e", null ],
+    [ "g_KernelDebuggerState", "hyperkd_2header_2globals_2_global_8h.html#ae4b5afa957e3e26377135b91b60eda4e", null ],
+    [ "g_LastError", "hyperkd_2header_2globals_2_global_8h.html#a914d48d1954c66db417ca4765fc3c160", null ],
+    [ "g_MaximumBreakpointId", "hyperkd_2header_2globals_2_global_8h.html#ad09616266c993d19a27d9f414073c0a7", null ],
+    [ "g_ProcessDebuggingDetailsListHead", "hyperkd_2header_2globals_2_global_8h.html#a3a003d2c59562062fe921cd2754440f7", null ],
+    [ "g_ProcessSwitch", "hyperkd_2header_2globals_2_global_8h.html#ad6d216313bbf0c46ede7226f52f72604", null ],
+    [ "g_ScriptGlobalVariables", "hyperkd_2header_2globals_2_global_8h.html#a6ef94e6628fbc9b04c9fecd492617e32", null ],
+    [ "g_SeedOfUserDebuggingDetails", "hyperkd_2header_2globals_2_global_8h.html#a6cc09230cf7303d0513330bed82491b0", null ],
+    [ "g_ThreadSwitch", "hyperkd_2header_2globals_2_global_8h.html#ac4bd01d0cf0973fbceb4306bde6172dd", null ],
+    [ "g_TrapFlagState", "hyperkd_2header_2globals_2_global_8h.html#a08664e62cf0b438d0a6e22f8a3b0bcf3", null ],
+    [ "g_UserDebuggerState", "hyperkd_2header_2globals_2_global_8h.html#ae304ded1a8cbb4e772d97aec7510c9d2", null ]
+];

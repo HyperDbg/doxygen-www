@@ -1,6 +1,6 @@
 var status_8cpp =
 [
-    [ "CommandStatus", "status_8cpp.html#a54e5e53a72c9aeb0551273515a4c79e1", null ],
+    [ "CommandStatus", "status_8cpp.html#a423e4ffaeb1ceff939d2348affefe4c4", null ],
     [ "CommandStatusHelp", "status_8cpp.html#a58dc4b217476c3f9d617f1bbb2e6be1d", null ],
     [ "g_IsConnectedToHyperDbgLocally", "status_8cpp.html#accb0c27ac4bea6a87984fb828d896748", null ],
     [ "g_IsConnectedToRemoteDebuggee", "status_8cpp.html#a08efbe1abcb717379a8ec5139e187983", null ],

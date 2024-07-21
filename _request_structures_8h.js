@@ -6,12 +6,12 @@ var _request_structures_8h =
     [ "_REVERSING_MACHINE_RECONSTRUCT_MEMORY_REQUEST", "struct___r_e_v_e_r_s_i_n_g___m_a_c_h_i_n_e___r_e_c_o_n_s_t_r_u_c_t___m_e_m_o_r_y___r_e_q_u_e_s_t.html", "struct___r_e_v_e_r_s_i_n_g___m_a_c_h_i_n_e___r_e_c_o_n_s_t_r_u_c_t___m_e_m_o_r_y___r_e_q_u_e_s_t" ],
     [ "_DEBUGGER_DT_COMMAND_OPTIONS", "struct___d_e_b_u_g_g_e_r___d_t___c_o_m_m_a_n_d___o_p_t_i_o_n_s.html", "struct___d_e_b_u_g_g_e_r___d_t___c_o_m_m_a_n_d___o_p_t_i_o_n_s" ],
     [ "_DEBUGGER_PREALLOC_COMMAND", "struct___d_e_b_u_g_g_e_r___p_r_e_a_l_l_o_c___c_o_m_m_a_n_d.html", "struct___d_e_b_u_g_g_e_r___p_r_e_a_l_l_o_c___c_o_m_m_a_n_d" ],
+    [ "_DEBUGGER_PREACTIVATE_COMMAND", "struct___d_e_b_u_g_g_e_r___p_r_e_a_c_t_i_v_a_t_e___c_o_m_m_a_n_d.html", "struct___d_e_b_u_g_g_e_r___p_r_e_a_c_t_i_v_a_t_e___c_o_m_m_a_n_d" ],
     [ "_DEBUGGER_READ_MEMORY", "struct___d_e_b_u_g_g_e_r___r_e_a_d___m_e_m_o_r_y.html", "struct___d_e_b_u_g_g_e_r___r_e_a_d___m_e_m_o_r_y" ],
     [ "_DEBUGGER_FLUSH_LOGGING_BUFFERS", "struct___d_e_b_u_g_g_e_r___f_l_u_s_h___l_o_g_g_i_n_g___b_u_f_f_e_r_s.html", "struct___d_e_b_u_g_g_e_r___f_l_u_s_h___l_o_g_g_i_n_g___b_u_f_f_e_r_s" ],
     [ "_DEBUGGER_DEBUGGER_TEST_QUERY_BUFFER", "struct___d_e_b_u_g_g_e_r___d_e_b_u_g_g_e_r___t_e_s_t___q_u_e_r_y___b_u_f_f_e_r.html", "struct___d_e_b_u_g_g_e_r___d_e_b_u_g_g_e_r___t_e_s_t___q_u_e_r_y___b_u_f_f_e_r" ],
     [ "_DEBUGGER_PERFORM_KERNEL_TESTS", "struct___d_e_b_u_g_g_e_r___p_e_r_f_o_r_m___k_e_r_n_e_l___t_e_s_t_s.html", "struct___d_e_b_u_g_g_e_r___p_e_r_f_o_r_m___k_e_r_n_e_l___t_e_s_t_s" ],
     [ "_DEBUGGER_SEND_COMMAND_EXECUTION_FINISHED_SIGNAL", "struct___d_e_b_u_g_g_e_r___s_e_n_d___c_o_m_m_a_n_d___e_x_e_c_u_t_i_o_n___f_i_n_i_s_h_e_d___s_i_g_n_a_l.html", "struct___d_e_b_u_g_g_e_r___s_e_n_d___c_o_m_m_a_n_d___e_x_e_c_u_t_i_o_n___f_i_n_i_s_h_e_d___s_i_g_n_a_l" ],
-    [ "_DEBUGGEE_KERNEL_AND_USER_TEST_INFORMATION", "struct___d_e_b_u_g_g_e_e___k_e_r_n_e_l___a_n_d___u_s_e_r___t_e_s_t___i_n_f_o_r_m_a_t_i_o_n.html", "struct___d_e_b_u_g_g_e_e___k_e_r_n_e_l___a_n_d___u_s_e_r___t_e_s_t___i_n_f_o_r_m_a_t_i_o_n" ],
     [ "_DEBUGGEE_SEND_GENERAL_PACKET_FROM_DEBUGGEE_TO_DEBUGGER", "struct___d_e_b_u_g_g_e_e___s_e_n_d___g_e_n_e_r_a_l___p_a_c_k_e_t___f_r_o_m___d_e_b_u_g_g_e_e___t_o___d_e_b_u_g_g_e_r.html", "struct___d_e_b_u_g_g_e_e___s_e_n_d___g_e_n_e_r_a_l___p_a_c_k_e_t___f_r_o_m___d_e_b_u_g_g_e_e___t_o___d_e_b_u_g_g_e_r" ],
     [ "_DEBUGGER_SEND_USERMODE_MESSAGES_TO_DEBUGGER", "struct___d_e_b_u_g_g_e_r___s_e_n_d___u_s_e_r_m_o_d_e___m_e_s_s_a_g_e_s___t_o___d_e_b_u_g_g_e_r.html", "struct___d_e_b_u_g_g_e_r___s_e_n_d___u_s_e_r_m_o_d_e___m_e_s_s_a_g_e_s___t_o___d_e_b_u_g_g_e_r" ],
     [ "_DEBUGGER_READ_AND_WRITE_ON_MSR", "struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r.html", "struct___d_e_b_u_g_g_e_r___r_e_a_d___a_n_d___w_r_i_t_e___o_n___m_s_r" ],
@@ -44,10 +44,10 @@ var _request_structures_8h =
     [ "_DEBUGGEE_SCRIPT_PACKET", "struct___d_e_b_u_g_g_e_e___s_c_r_i_p_t___p_a_c_k_e_t.html", "struct___d_e_b_u_g_g_e_e___s_c_r_i_p_t___p_a_c_k_e_t" ],
     [ "_DEBUGGEE_RESULT_OF_SEARCH_PACKET", "struct___d_e_b_u_g_g_e_e___r_e_s_u_l_t___o_f___s_e_a_r_c_h___p_a_c_k_e_t.html", "struct___d_e_b_u_g_g_e_e___r_e_s_u_l_t___o_f___s_e_a_r_c_h___p_a_c_k_e_t" ],
     [ "_DEBUGGEE_REGISTER_READ_DESCRIPTION", "struct___d_e_b_u_g_g_e_e___r_e_g_i_s_t_e_r___r_e_a_d___d_e_s_c_r_i_p_t_i_o_n.html", "struct___d_e_b_u_g_g_e_e___r_e_g_i_s_t_e_r___r_e_a_d___d_e_s_c_r_i_p_t_i_o_n" ],
+    [ "_DEBUGGEE_REGISTER_WRITE_DESCRIPTION", "struct___d_e_b_u_g_g_e_e___r_e_g_i_s_t_e_r___w_r_i_t_e___d_e_s_c_r_i_p_t_i_o_n.html", "struct___d_e_b_u_g_g_e_e___r_e_g_i_s_t_e_r___w_r_i_t_e___d_e_s_c_r_i_p_t_i_o_n" ],
     [ "DEBUGGER_REMOTE_TRACKING_DEFAULT_COUNT_OF_STEPPING", "_request_structures_8h.html#ad60dffcec4390f9a53096dff3d0ac06f", null ],
     [ "SIZEOF_DEBUGGEE_DETAILS_AND_SWITCH_PROCESS_PACKET", "_request_structures_8h.html#aa4bc66810770691a46793c7ddbe4ef48", null ],
     [ "SIZEOF_DEBUGGEE_DETAILS_AND_SWITCH_THREAD_PACKET", "_request_structures_8h.html#a3663a9fb5048791fa6a8206936d7026b", null ],
-    [ "SIZEOF_DEBUGGEE_KERNEL_AND_USER_TEST_INFORMATION", "_request_structures_8h.html#aa39a79628c0768ff900eef985737bb86", null ],
     [ "SIZEOF_DEBUGGEE_SEND_GENERAL_PACKET_FROM_DEBUGGEE_TO_DEBUGGER", "_request_structures_8h.html#ac23067b5607bcdf16c5bcd15377c155c", null ],
     [ "SIZEOF_DEBUGGER_ATTACH_DETACH_USER_MODE_PROCESS", "_request_structures_8h.html#a79720531d283f66566d1f56be7b5d297", null ],
     [ "SIZEOF_DEBUGGER_CALLSTACK_REQUEST", "_request_structures_8h.html#ac84cf6b5aa48a64be1abf25419285345", null ],
@@ -57,6 +57,7 @@ var _request_structures_8h =
     [ "SIZEOF_DEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE", "_request_structures_8h.html#acff9f870e3194302bee58a0d76f1369d", null ],
     [ "SIZEOF_DEBUGGER_PAGE_IN_REQUEST", "_request_structures_8h.html#a2ac1e1d58b70cae06165f0bd94a08827", null ],
     [ "SIZEOF_DEBUGGER_PERFORM_KERNEL_TESTS", "_request_structures_8h.html#a0352cd2420db0e2c8f4d23ba58e25f91", null ],
+    [ "SIZEOF_DEBUGGER_PREACTIVATE_COMMAND", "_request_structures_8h.html#ae8bbb25e9b2b6c643828b292d7e1c525", null ],
     [ "SIZEOF_DEBUGGER_PREALLOC_COMMAND", "_request_structures_8h.html#a1bfcea6909ef94dd5e19a7b74e6cd67e", null ],
     [ "SIZEOF_DEBUGGER_PREPARE_DEBUGGEE", "_request_structures_8h.html#a8201af6f7695fc988e93227f0e07c49e", null ],
     [ "SIZEOF_DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS", "_request_structures_8h.html#ade2d2d64a220368240a3409eab4eb37b", null ],
@@ -79,10 +80,10 @@ var _request_structures_8h =
     [ "DEBUGGEE_DETAILS_AND_SWITCH_THREAD_PACKET", "_request_structures_8h.html#aba1905c6ef980e18d0f2dd2c04e95a26", null ],
     [ "DEBUGGEE_DETAILS_AND_SWITCH_THREAD_TYPE", "_request_structures_8h.html#a60d2e36cc1d68000804b406b07b420c0", null ],
     [ "DEBUGGEE_FORMATS_PACKET", "_request_structures_8h.html#a834d7f4efaaf1700a59deb5f63894c7f", null ],
-    [ "DEBUGGEE_KERNEL_AND_USER_TEST_INFORMATION", "_request_structures_8h.html#a1327dc8c562b04904f76feda189f7d22", null ],
     [ "DEBUGGEE_PROCESS_LIST_DETAILS_ENTRY", "_request_structures_8h.html#a9fe28a10feba201e3a4348d2e186bc1e", null ],
     [ "DEBUGGEE_PROCESS_LIST_NEEDED_DETAILS", "_request_structures_8h.html#a3106daf99a74cf8d1007e6f574fe9d82", null ],
     [ "DEBUGGEE_REGISTER_READ_DESCRIPTION", "_request_structures_8h.html#a923e5338b79b8ee7d73ea7217ad87e39", null ],
+    [ "DEBUGGEE_REGISTER_WRITE_DESCRIPTION", "_request_structures_8h.html#a69df5932d2c024934cf47c83a1978d37", null ],
     [ "DEBUGGEE_RESULT_OF_SEARCH_PACKET", "_request_structures_8h.html#a2cd6d84786756f46f7e614e93853d05b", null ],
     [ "DEBUGGEE_SCRIPT_PACKET", "_request_structures_8h.html#a182181a5816e309f58c36119a16f72c9", null ],
     [ "DEBUGGEE_SEND_GENERAL_PACKET_FROM_DEBUGGEE_TO_DEBUGGER", "_request_structures_8h.html#ae94de9fc6b1d47f334f238634a2ba704", null ],
@@ -108,6 +109,8 @@ var _request_structures_8h =
     [ "DEBUGGER_MSR_ACTION_TYPE", "_request_structures_8h.html#aa4458f3adcfa65b38c40c6b5661cb097", null ],
     [ "DEBUGGER_PAGE_IN_REQUEST", "_request_structures_8h.html#a3b96c47ba74fbb5038d04d89c00eb8a1", null ],
     [ "DEBUGGER_PERFORM_KERNEL_TESTS", "_request_structures_8h.html#ac93722973d1d51f2286bebd7b5fa7c11", null ],
+    [ "DEBUGGER_PREACTIVATE_COMMAND", "_request_structures_8h.html#a1d830e07de741e560766a0f00f5e7b2a", null ],
+    [ "DEBUGGER_PREACTIVATE_COMMAND_TYPE", "_request_structures_8h.html#a1e2b69ac5803b42c03361922fd45a141", null ],
     [ "DEBUGGER_PREALLOC_COMMAND", "_request_structures_8h.html#a31b7c397ac8a573a06dbb30baf10cb9b", null ],
     [ "DEBUGGER_PREALLOC_COMMAND_TYPE", "_request_structures_8h.html#a30c153dfafe16f2d4c78a0fe9bba0997", null ],
     [ "DEBUGGER_PREPARE_DEBUGGEE", "_request_structures_8h.html#a2f590935c5bc3833ef6675f5ef7712af", null ],
@@ -116,6 +119,7 @@ var _request_structures_8h =
     [ "DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_TYPES", "_request_structures_8h.html#a933c56f204305988dc1bbe55e737d110", null ],
     [ "DEBUGGER_READ_AND_WRITE_ON_MSR", "_request_structures_8h.html#a0f701e891ece1b927b6c9be2c0c1c595", null ],
     [ "DEBUGGER_READ_MEMORY", "_request_structures_8h.html#a57dea2e6d61fc3f904859be4bf36bafe", null ],
+    [ "DEBUGGER_READ_MEMORY_ADDRESS_MODE", "_request_structures_8h.html#abd19b5a0eb6c48f4bfa4cc2dd727d37f", null ],
     [ "DEBUGGER_READ_MEMORY_TYPE", "_request_structures_8h.html#a6f202a103e130d55c5ed5b55d5511cab", null ],
     [ "DEBUGGER_READ_PAGE_TABLE_ENTRIES_DETAILS", "_request_structures_8h.html#af1fcd0a815e15d82b61cc68d415e456b", null ],
     [ "DEBUGGER_READ_READING_TYPE", "_request_structures_8h.html#a4ddb92e696c535e12ffed0f973be3ba3", null ],
@@ -138,10 +142,10 @@ var _request_structures_8h =
     [ "PDEBUGGEE_DETAILS_AND_SWITCH_PROCESS_PACKET", "_request_structures_8h.html#ad87b55274148115095322405479d90ec", null ],
     [ "PDEBUGGEE_DETAILS_AND_SWITCH_THREAD_PACKET", "_request_structures_8h.html#a4276aa25d9666471ade93e0abba28471", null ],
     [ "PDEBUGGEE_FORMATS_PACKET", "_request_structures_8h.html#a4cee5fdb089b3825e6cb566eaa48eb84", null ],
-    [ "PDEBUGGEE_KERNEL_AND_USER_TEST_INFORMATION", "_request_structures_8h.html#a0f79e34fd3b89e9cd7679f8b4efa892c", null ],
     [ "PDEBUGGEE_PROCESS_LIST_DETAILS_ENTRY", "_request_structures_8h.html#a24606574ded5e1a6134ce90237453e44", null ],
     [ "PDEBUGGEE_PROCESS_LIST_NEEDED_DETAILS", "_request_structures_8h.html#a30a38a18edd78fda0dd3a75cc1effe3e", null ],
     [ "PDEBUGGEE_REGISTER_READ_DESCRIPTION", "_request_structures_8h.html#a3de220e7b354f7e1058c848098804f2f", null ],
+    [ "PDEBUGGEE_REGISTER_WRITE_DESCRIPTION", "_request_structures_8h.html#a14c691e02f421f3168a41d90e198368e", null ],
     [ "PDEBUGGEE_RESULT_OF_SEARCH_PACKET", "_request_structures_8h.html#a4dc4f3efcc7da3d958ba843657e2e098", null ],
     [ "PDEBUGGEE_SCRIPT_PACKET", "_request_structures_8h.html#a08194c4a2a550a59b8401faec6795ef8", null ],
     [ "PDEBUGGEE_SEND_GENERAL_PACKET_FROM_DEBUGGEE_TO_DEBUGGER", "_request_structures_8h.html#ad97915c6241a0c1642aa62839e661aa1", null ],
@@ -161,6 +165,7 @@ var _request_structures_8h =
     [ "PDEBUGGER_HIDE_AND_TRANSPARENT_DEBUGGER_MODE", "_request_structures_8h.html#a773f4a9305c06b136fda039ab0d339de", null ],
     [ "PDEBUGGER_PAGE_IN_REQUEST", "_request_structures_8h.html#a707aafa57bc966e81bb134a1b6e64dc9", null ],
     [ "PDEBUGGER_PERFORM_KERNEL_TESTS", "_request_structures_8h.html#a3628a8924ad9ae8e8368091675c6add9", null ],
+    [ "PDEBUGGER_PREACTIVATE_COMMAND", "_request_structures_8h.html#a455865c115fa9c6344f2411fab30af64", null ],
     [ "PDEBUGGER_PREALLOC_COMMAND", "_request_structures_8h.html#a5dcf26594841b272af7f485934e92d24", null ],
     [ "PDEBUGGER_PREPARE_DEBUGGEE", "_request_structures_8h.html#a9da7200b6309799b18cdae0264b9feef", null ],
     [ "PDEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS", "_request_structures_8h.html#a088abddf56a4e18ca3595540dec693b4", null ],
@@ -176,7 +181,6 @@ var _request_structures_8h =
     [ "PDEBUGGER_VA2PA_AND_PA2VA_COMMANDS", "_request_structures_8h.html#aee0bcea5d04b12338b959f35b43929f5", null ],
     [ "PREVERSING_MACHINE_RECONSTRUCT_MEMORY_REQUEST", "_request_structures_8h.html#a91c6221d89d110c3a9ebc2fac4ae3e2d", null ],
     [ "PUSERMODE_DEBUGGING_THREAD_OR_PROCESS_STATE_DETAILS", "_request_structures_8h.html#ac40004216830e30f22916e6ade46968f", null ],
-    [ "REVERSING_MACHINE_RECONSTRUCT_MEMORY_FORM", "_request_structures_8h.html#a3182436b4ed1a79ccd19a406b9a3f413", null ],
     [ "REVERSING_MACHINE_RECONSTRUCT_MEMORY_MODE", "_request_structures_8h.html#acfedce76f5dfea555ce33c90f3dd3f08", null ],
     [ "REVERSING_MACHINE_RECONSTRUCT_MEMORY_REQUEST", "_request_structures_8h.html#a0f6df7ca85274aadea5ac62811f60836", null ],
     [ "REVERSING_MACHINE_RECONSTRUCT_MEMORY_TYPE", "_request_structures_8h.html#a76af36e6d06eaaf1300169f22c4b86ea", null ],
@@ -222,16 +226,25 @@ var _request_structures_8h =
       [ "EDIT_QWORD", "_request_structures_8h.html#a7b0872a1b7b5ad3d7dc89daa430f4cd0a155392ba36a9e4b809d61a58ff0664ae", null ]
     ] ],
     [ "_DEBUGGER_EDIT_MEMORY_TYPE", "_request_structures_8h.html#a15d4e6c3df2a35e0e0a6ee9b461b5dc5", [
-      [ "EDIT_PHYSICAL_MEMORY", "_request_structures_8h.html#a15d4e6c3df2a35e0e0a6ee9b461b5dc5a37551226140bb71a3c3767d0f333a4de", null ],
-      [ "EDIT_VIRTUAL_MEMORY", "_request_structures_8h.html#a15d4e6c3df2a35e0e0a6ee9b461b5dc5af40a8625548287bf1f0c9a6c72c8a0b9", null ]
+      [ "EDIT_VIRTUAL_MEMORY", "_request_structures_8h.html#a15d4e6c3df2a35e0e0a6ee9b461b5dc5af40a8625548287bf1f0c9a6c72c8a0b9", null ],
+      [ "EDIT_PHYSICAL_MEMORY", "_request_structures_8h.html#a15d4e6c3df2a35e0e0a6ee9b461b5dc5a37551226140bb71a3c3767d0f333a4de", null ]
     ] ],
     [ "_DEBUGGER_MSR_ACTION_TYPE", "_request_structures_8h.html#a9e99d3b0c6a6357a5f021dc82422f789", [
       [ "DEBUGGER_MSR_READ", "_request_structures_8h.html#a9e99d3b0c6a6357a5f021dc82422f789a3ef6fa35171ecbbaa97f3a88e619be3e", null ],
       [ "DEBUGGER_MSR_WRITE", "_request_structures_8h.html#a9e99d3b0c6a6357a5f021dc82422f789a8b4846619d6bec50232910290764fff3", null ]
     ] ],
+    [ "_DEBUGGER_PREACTIVATE_COMMAND_TYPE", "_request_structures_8h.html#a46dde9f707ffedbdbe715fbc730c3c81", [
+      [ "DEBUGGER_PREACTIVATE_COMMAND_TYPE_MODE", "_request_structures_8h.html#a46dde9f707ffedbdbe715fbc730c3c81a313040af3341039d83e191a1becf0172", null ]
+    ] ],
     [ "_DEBUGGER_PREALLOC_COMMAND_TYPE", "_request_structures_8h.html#a8b2f1e9a8e3317ece5edce1f633d85ba", [
+      [ "DEBUGGER_PREALLOC_COMMAND_TYPE_THREAD_INTERCEPTION", "_request_structures_8h.html#a8b2f1e9a8e3317ece5edce1f633d85baa7ae24692de1d370b040c1e9305366bf0", null ],
       [ "DEBUGGER_PREALLOC_COMMAND_TYPE_MONITOR", "_request_structures_8h.html#a8b2f1e9a8e3317ece5edce1f633d85baa12eaac4806014a376257d95999b7344d", null ],
-      [ "DEBUGGER_PREALLOC_COMMAND_TYPE_THREAD_INTERCEPTION", "_request_structures_8h.html#a8b2f1e9a8e3317ece5edce1f633d85baa7ae24692de1d370b040c1e9305366bf0", null ]
+      [ "DEBUGGER_PREALLOC_COMMAND_TYPE_EPTHOOK", "_request_structures_8h.html#a8b2f1e9a8e3317ece5edce1f633d85baae351556ca7b4edd7ebd16bd6c316e4a0", null ],
+      [ "DEBUGGER_PREALLOC_COMMAND_TYPE_EPTHOOK2", "_request_structures_8h.html#a8b2f1e9a8e3317ece5edce1f633d85baa1b2ef691b6e1634f3abf8c476e17ea8b", null ],
+      [ "DEBUGGER_PREALLOC_COMMAND_TYPE_REGULAR_EVENT", "_request_structures_8h.html#a8b2f1e9a8e3317ece5edce1f633d85baa6d9c859f984031cd478130639e9714f3", null ],
+      [ "DEBUGGER_PREALLOC_COMMAND_TYPE_BIG_EVENT", "_request_structures_8h.html#a8b2f1e9a8e3317ece5edce1f633d85baa65692bc0793f8d227bff3198aa87d5da", null ],
+      [ "DEBUGGER_PREALLOC_COMMAND_TYPE_REGULAR_SAFE_BUFFER", "_request_structures_8h.html#a8b2f1e9a8e3317ece5edce1f633d85baadca1bcf9d755574f3a199f87bdbffa2d", null ],
+      [ "DEBUGGER_PREALLOC_COMMAND_TYPE_BIG_SAFE_BUFFER", "_request_structures_8h.html#a8b2f1e9a8e3317ece5edce1f633d85baacffb961740d1523cf770d72642dfc542", null ]
     ] ],
     [ "_DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTIONS", "_request_structures_8h.html#afac007ba1abb5a5ef542e8731170c9a5", [
       [ "DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_ACTION_SHOW_INSTANTLY", "_request_structures_8h.html#afac007ba1abb5a5ef542e8731170c9a5a953106ee52315b5082e34b933b0f947a", null ],
@@ -246,6 +259,10 @@ var _request_structures_8h =
       [ "DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_QUERY_CURRENT_PROCESS", "_request_structures_8h.html#a0206455addc2ddfbeed13518752d03a8ac36d1c1508cc24472127564b4bd33b63", null ],
       [ "DEBUGGER_QUERY_ACTIVE_PROCESSES_OR_THREADS_QUERY_CURRENT_THREAD", "_request_structures_8h.html#a0206455addc2ddfbeed13518752d03a8a600ac4e7c2f2644ae84d911ae049e9b5", null ]
     ] ],
+    [ "_DEBUGGER_READ_MEMORY_ADDRESS_MODE", "_request_structures_8h.html#a98bdf64c2e1daa0a4c87bdc446feef22", [
+      [ "DEBUGGER_READ_ADDRESS_MODE_32_BIT", "_request_structures_8h.html#a98bdf64c2e1daa0a4c87bdc446feef22a9c98c1511465836be0346f50efcad823", null ],
+      [ "DEBUGGER_READ_ADDRESS_MODE_64_BIT", "_request_structures_8h.html#a98bdf64c2e1daa0a4c87bdc446feef22aaf9c63e6e6c48cc1b05fc076c91fa2fd", null ]
+    ] ],
     [ "_DEBUGGER_READ_MEMORY_TYPE", "_request_structures_8h.html#afcd781e8aa8c0d7e70540647a24a8432", [
       [ "DEBUGGER_READ_PHYSICAL_ADDRESS", "_request_structures_8h.html#afcd781e8aa8c0d7e70540647a24a8432a447255089e36bc1778a161e2713f8888", null ],
       [ "DEBUGGER_READ_VIRTUAL_ADDRESS", "_request_structures_8h.html#afcd781e8aa8c0d7e70540647a24a8432ad7f19a8eee9857bada355d107f2ffc97", null ]
@@ -255,10 +272,12 @@ var _request_structures_8h =
       [ "READ_FROM_VMX_ROOT", "_request_structures_8h.html#a5c8d44c8ad3d339ec4213e9a82b47677aecc4d1ab11010b4bbd7721e0067761b8", null ]
     ] ],
     [ "_DEBUGGER_REMOTE_STEPPING_REQUEST", "_request_structures_8h.html#a712ecf490a024ef4e89274a9075b3d5b", [
-      [ "DEBUGGER_REMOTE_STEPPING_REQUEST_STEP_OVER", "_request_structures_8h.html#a712ecf490a024ef4e89274a9075b3d5ba981ecc65ffc870c95bc3c9ebb638f315", null ],
       [ "DEBUGGER_REMOTE_STEPPING_REQUEST_STEP_IN", "_request_structures_8h.html#a712ecf490a024ef4e89274a9075b3d5ba65fd7f83ac0cea94ffc166049c18fffe", null ],
       [ "DEBUGGER_REMOTE_STEPPING_REQUEST_INSTRUMENTATION_STEP_IN", "_request_structures_8h.html#a712ecf490a024ef4e89274a9075b3d5ba1b77faca86274acd2ddd32e32f21e81f", null ],
-      [ "DEBUGGER_REMOTE_STEPPING_REQUEST_INSTRUMENTATION_STEP_IN_FOR_TRACKING", "_request_structures_8h.html#a712ecf490a024ef4e89274a9075b3d5ba4e80e44a45a1ab7e261f8942c1694ce6", null ]
+      [ "DEBUGGER_REMOTE_STEPPING_REQUEST_INSTRUMENTATION_STEP_IN_FOR_TRACKING", "_request_structures_8h.html#a712ecf490a024ef4e89274a9075b3d5ba4e80e44a45a1ab7e261f8942c1694ce6", null ],
+      [ "DEBUGGER_REMOTE_STEPPING_REQUEST_STEP_OVER", "_request_structures_8h.html#a712ecf490a024ef4e89274a9075b3d5ba981ecc65ffc870c95bc3c9ebb638f315", null ],
+      [ "DEBUGGER_REMOTE_STEPPING_REQUEST_STEP_OVER_FOR_GU", "_request_structures_8h.html#a712ecf490a024ef4e89274a9075b3d5ba8fd11cd857c7de8a544a1c556f36ee47", null ],
+      [ "DEBUGGER_REMOTE_STEPPING_REQUEST_STEP_OVER_FOR_GU_LAST_INSTRUCTION", "_request_structures_8h.html#a712ecf490a024ef4e89274a9075b3d5bad6f46624d7d220fbc139b43bc6261fc1", null ]
     ] ],
     [ "_DEBUGGER_SEARCH_MEMORY_BYTE_SIZE", "_request_structures_8h.html#a62b2bbc3f6885590fa15669db073b963", [
       [ "SEARCH_BYTE", "_request_structures_8h.html#a62b2bbc3f6885590fa15669db073b963ac785cd6f1dc37bf88ba9df2fbba318b3", null ],
@@ -277,24 +296,28 @@ var _request_structures_8h =
       [ "DEBUGGER_SHOW_COMMAND_DB", "_request_structures_8h.html#af1ba3f54cbc47e5e8fcf8ddfa62149e0a91052e10d745effb29b32f35ca8738cd", null ],
       [ "DEBUGGER_SHOW_COMMAND_DC", "_request_structures_8h.html#af1ba3f54cbc47e5e8fcf8ddfa62149e0a522f6efb9410c941a827b9aabaf16457", null ],
       [ "DEBUGGER_SHOW_COMMAND_DQ", "_request_structures_8h.html#af1ba3f54cbc47e5e8fcf8ddfa62149e0a8f7bce138d2bae53f2d3c65acedbf556", null ],
-      [ "DEBUGGER_SHOW_COMMAND_DD", "_request_structures_8h.html#af1ba3f54cbc47e5e8fcf8ddfa62149e0a7a35790f76cd88658234c4d66d6a79e5", null ]
+      [ "DEBUGGER_SHOW_COMMAND_DD", "_request_structures_8h.html#af1ba3f54cbc47e5e8fcf8ddfa62149e0a7a35790f76cd88658234c4d66d6a79e5", null ],
+      [ "DEBUGGER_SHOW_COMMAND_DUMP", "_request_structures_8h.html#af1ba3f54cbc47e5e8fcf8ddfa62149e0aad91f3510df4833d2fd75740de9c9686", null ]
     ] ],
     [ "_DEBUGGER_TEST_QUERY_STATE", "_request_structures_8h.html#a69815a9808f86f82962cc8c05effbf1f", [
       [ "TEST_QUERY_HALTING_CORE_STATUS", "_request_structures_8h.html#a69815a9808f86f82962cc8c05effbf1fabe8eafc3cc1af1a6825c5c06d05a730e", null ],
       [ "TEST_QUERY_PREALLOCATED_POOL_STATE", "_request_structures_8h.html#a69815a9808f86f82962cc8c05effbf1fa95c4caf8419d513fee124e3736117448", null ],
+      [ "TEST_QUERY_TRAP_STATE", "_request_structures_8h.html#a69815a9808f86f82962cc8c05effbf1fac2fa2218daae973701c9047b04812c62", null ],
       [ "TEST_BREAKPOINT_TURN_OFF_BPS", "_request_structures_8h.html#a69815a9808f86f82962cc8c05effbf1fa553cc49af40c0550d5f81693df90080b", null ],
-      [ "TEST_BREAKPOINT_TURN_ON_BPS", "_request_structures_8h.html#a69815a9808f86f82962cc8c05effbf1fa73507897f0df33f759d0f49e1c177f3e", null ]
+      [ "TEST_BREAKPOINT_TURN_ON_BPS", "_request_structures_8h.html#a69815a9808f86f82962cc8c05effbf1fa73507897f0df33f759d0f49e1c177f3e", null ],
+      [ "TEST_BREAKPOINT_TURN_OFF_BPS_AND_EVENTS_FOR_COMMANDS_IN_REMOTE_COMPUTER", "_request_structures_8h.html#a69815a9808f86f82962cc8c05effbf1fadfb0620cd342161b641113ea046ba630", null ],
+      [ "TEST_BREAKPOINT_TURN_ON_BPS_AND_EVENTS_FOR_COMMANDS_IN_REMOTE_COMPUTER", "_request_structures_8h.html#a69815a9808f86f82962cc8c05effbf1fa10338dd19e6c8317884e24e9d84ff16b", null ],
+      [ "TEST_SETTING_TARGET_TASKS_ON_HALTED_CORES_SYNCHRONOUS", "_request_structures_8h.html#a69815a9808f86f82962cc8c05effbf1fa8607b70471d4d8790d2abc3e0d5bc782", null ],
+      [ "TEST_SETTING_TARGET_TASKS_ON_HALTED_CORES_ASYNCHRONOUS", "_request_structures_8h.html#a69815a9808f86f82962cc8c05effbf1fa7174765d688d5ec6cb1f3673152e17f1", null ],
+      [ "TEST_SETTING_TARGET_TASKS_ON_TARGET_HALTED_CORES", "_request_structures_8h.html#a69815a9808f86f82962cc8c05effbf1fac4ff3d77f298285224e86c1254d5cb26", null ],
+      [ "TEST_BREAKPOINT_TURN_OFF_DBS", "_request_structures_8h.html#a69815a9808f86f82962cc8c05effbf1fa028f14c73e86df897092e0ef4628d2da", null ],
+      [ "TEST_BREAKPOINT_TURN_ON_DBS", "_request_structures_8h.html#a69815a9808f86f82962cc8c05effbf1fa5a98e956e4b6e047dca99b40c978af6e", null ]
     ] ],
     [ "_DEBUGGER_UD_COMMAND_ACTION_TYPE", "_request_structures_8h.html#ad87c3f70d0c62885d9fa07518b5802a1", [
       [ "DEBUGGER_UD_COMMAND_ACTION_TYPE_NONE", "_request_structures_8h.html#ad87c3f70d0c62885d9fa07518b5802a1a8d10bc5059f14f2b3d00d7d6edb4182a", null ],
       [ "DEBUGGER_UD_COMMAND_ACTION_TYPE_PAUSE", "_request_structures_8h.html#ad87c3f70d0c62885d9fa07518b5802a1a3df0934ac9e06b8e864ff4c5422de369", null ],
       [ "DEBUGGER_UD_COMMAND_ACTION_TYPE_CONTINUE", "_request_structures_8h.html#ad87c3f70d0c62885d9fa07518b5802a1afb4083783dd81d465b89aa4abfdd6b4d", null ],
       [ "DEBUGGER_UD_COMMAND_ACTION_TYPE_REGULAR_STEP", "_request_structures_8h.html#ad87c3f70d0c62885d9fa07518b5802a1a9ef67974ab1682d82fbf4feebc05fcde", null ]
-    ] ],
-    [ "_REVERSING_MACHINE_RECONSTRUCT_MEMORY_FORM", "_request_structures_8h.html#a8c294392a012b597a5ee5466815a3ad5", [
-      [ "REVERSING_MACHINE_RECONSTRUCT_MEMORY_FORM_UNKNOWN", "_request_structures_8h.html#a8c294392a012b597a5ee5466815a3ad5a96af16ca1323f60fc1b26b387063104b", null ],
-      [ "REVERSING_MACHINE_RECONSTRUCT_MEMORY_FORM_OVERALL", "_request_structures_8h.html#a8c294392a012b597a5ee5466815a3ad5aa48126e65ded3777c929408f09503667", null ],
-      [ "REVERSING_MACHINE_RECONSTRUCT_MEMORY_FORM_ADDRESS_BASED", "_request_structures_8h.html#a8c294392a012b597a5ee5466815a3ad5a31933449491714c9de54754d378c2c13", null ]
     ] ],
     [ "_REVERSING_MACHINE_RECONSTRUCT_MEMORY_MODE", "_request_structures_8h.html#aca0012b2245c2ab8bdd16543918f0e5e", [
       [ "REVERSING_MACHINE_RECONSTRUCT_MEMORY_MODE_UNKNOWN", "_request_structures_8h.html#aca0012b2245c2ab8bdd16543918f0e5ea875d830f0c03359d21b0ba3cfbf7d6b2", null ],

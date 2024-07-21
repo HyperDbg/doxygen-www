@@ -3,6 +3,7 @@ var struct___u_s_e_r_m_o_d_e___d_e_b_u_g_g_i_n_g___p_r_o_c_e_s_s___d_e_t_a_i_l_s
     [ "ActiveThreadId", "struct___u_s_e_r_m_o_d_e___d_e_b_u_g_g_i_n_g___p_r_o_c_e_s_s___d_e_t_a_i_l_s.html#ac7497bb7cd3585fdc424075cae9ff98c", null ],
     [ "AttachedProcessList", "struct___u_s_e_r_m_o_d_e___d_e_b_u_g_g_i_n_g___p_r_o_c_e_s_s___d_e_t_a_i_l_s.html#af9cc943c4e24dbad2df94819db2c2c72", null ],
     [ "BaseAddressOfMainModule", "struct___u_s_e_r_m_o_d_e___d_e_b_u_g_g_i_n_g___p_r_o_c_e_s_s___d_e_t_a_i_l_s.html#abd720fc6f1ffcd6488f3229bf1455573", null ],
+    [ "CheckCallBackForInterceptingFirstInstruction", "struct___u_s_e_r_m_o_d_e___d_e_b_u_g_g_i_n_g___p_r_o_c_e_s_s___d_e_t_a_i_l_s.html#ab748a7db00ec4b671fa65ef900986080", null ],
     [ "Context", "struct___u_s_e_r_m_o_d_e___d_e_b_u_g_g_i_n_g___p_r_o_c_e_s_s___d_e_t_a_i_l_s.html#aa7a5b51d9e965b52e2b6f85e22cd84c9", null ],
     [ "Enabled", "struct___u_s_e_r_m_o_d_e___d_e_b_u_g_g_i_n_g___p_r_o_c_e_s_s___d_e_t_a_i_l_s.html#acaf7519d69de4a28112b82f39d438ae0", null ],
     [ "EntrypointOfMainModule", "struct___u_s_e_r_m_o_d_e___d_e_b_u_g_g_i_n_g___p_r_o_c_e_s_s___d_e_t_a_i_l_s.html#adb588665a0fa72d6307d6f8577f2f946", null ],

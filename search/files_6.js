@@ -1,8 +1,28 @@
 var searchData=
 [
-  ['flush_2ecpp_0',['flush.cpp',['../flush_8cpp.html',1,'']]],
-  ['formats_2ecpp_1',['formats.cpp',['../formats_8cpp.html',1,'']]],
-  ['forwarding_2ecpp_2',['forwarding.cpp',['../forwarding_8cpp.html',1,'']]],
-  ['forwarding_2eh_3',['forwarding.h',['../forwarding_8h.html',1,'']]],
-  ['functions_2ec_4',['Functions.c',['../_functions_8c.html',1,'']]]
+  ['e_2ecpp_0',['e.cpp',['../e_8cpp.html',1,'']]],
+  ['eferhook_2ec_1',['EferHook.c',['../_efer_hook_8c.html',1,'']]],
+  ['environment_2eh_2',['Environment.h',['../kernel_2header_2_environment_8h.html',1,'(Global Namespace)'],['../user_2header_2_environment_8h.html',1,'(Global Namespace)']]],
+  ['ept_2ec_3',['Ept.c',['../_ept_8c.html',1,'']]],
+  ['ept_2eh_4',['Ept.h',['../_ept_8h.html',1,'']]],
+  ['epthook_2ec_5',['EptHook.c',['../_ept_hook_8c.html',1,'']]],
+  ['epthook_2ecpp_6',['epthook.cpp',['../epthook_8cpp.html',1,'']]],
+  ['epthook2_2ecpp_7',['epthook2.cpp',['../epthook2_8cpp.html',1,'']]],
+  ['errorcodes_2eh_8',['ErrorCodes.h',['../_error_codes_8h.html',1,'']]],
+  ['errors_2etxt_9',['errors.txt',['../errors_8txt.html',1,'']]],
+  ['eval_2ecpp_10',['eval.cpp',['../eval_8cpp.html',1,'']]],
+  ['eval_2ecs_11',['Eval.cs',['../_eval_8cs.html',1,'']]],
+  ['events_2ec_12',['Events.c',['../_events_8c.html',1,'']]],
+  ['events_2ecpp_13',['events.cpp',['../events_8cpp.html',1,'']]],
+  ['events_2eh_14',['Events.h',['../hyperhv_2header_2vmm_2vmx_2_events_8h.html',1,'(Global Namespace)'],['../include_2_s_d_k_2_headers_2_events_8h.html',1,'(Global Namespace)']]],
+  ['evm_2eh_15',['evm.h',['../evm_8h.html',1,'']]],
+  ['exception_2ecpp_16',['exception.cpp',['../exception_8cpp.html',1,'']]],
+  ['exectrap_2ec_17',['ExecTrap.c',['../_exec_trap_8c.html',1,'']]],
+  ['exectrap_2eh_18',['ExecTrap.h',['../_exec_trap_8h.html',1,'']]],
+  ['exit_2ecpp_19',['exit.cpp',['../exit_8cpp.html',1,'']]],
+  ['export_2ec_20',['Export.c',['../_export_8c.html',1,'']]],
+  ['export_2ecpp_21',['export.cpp',['../export_8cpp.html',1,'']]],
+  ['export_2eh_22',['export.h',['../export_8h.html',1,'']]],
+  ['extensioncommands_2ec_23',['ExtensionCommands.c',['../_extension_commands_8c.html',1,'']]],
+  ['extensioncommands_2eh_24',['ExtensionCommands.h',['../_extension_commands_8h.html',1,'']]]
 ];

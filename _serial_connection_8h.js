@@ -22,7 +22,7 @@ var _serial_connection_8h =
     [ "KdHyperDbgPrepareDebuggeeConnectionPort", "_serial_connection_8h.html#a63264f6c4e38434ba8edafcb3fb35ba8", null ],
     [ "KdHyperDbgRecvByte", "_serial_connection_8h.html#a42e4ceafbbdb35c500dcea0550ed9bee", null ],
     [ "KdHyperDbgSendByte", "_serial_connection_8h.html#a3e592ee3310adee4d912ac223b4ed099", null ],
-    [ "KdHyperDbgTest", "_serial_connection_8h.html#a19c21186ae49b8a0672b41e01567f8a8", null ],
+    [ "KdHyperDbgTest", "_serial_connection_8h.html#ae53b3857651c1990096c0c996a6d54d3", null ],
     [ "SerialConnectionCheckBaudrate", "_serial_connection_8h.html#a6caf31ec7608c43c31eb5848af08c363", null ],
     [ "SerialConnectionCheckPort", "_serial_connection_8h.html#ac072ac426e3cb828a69ea803a6c98e98", null ],
     [ "SerialConnectionPrepare", "_serial_connection_8h.html#a6b59728bce3a06adff9cab982af822a4", null ],

@@ -30,6 +30,7 @@ var _user_access_8h =
     [ "UserAccessGetBaseAndEntrypointOfMainModuleIfLoadedInVmxRoot", "_user_access_8h.html#a6abf9adc827f0d919208624917c45711", null ],
     [ "UserAccessGetLoadedModules", "_user_access_8h.html#a7c958368ce2a6eedc7371808e4f25728", null ],
     [ "UserAccessIsWow64Process", "_user_access_8h.html#afea1379e1a9acca82a320d700b63a7b8", null ],
+    [ "UserAccessIsWow64ProcessByEprocess", "_user_access_8h.html#af031f245bb3a7257c5c1f2155ddd54a9", null ],
     [ "g_PsGetProcessPeb", "_user_access_8h.html#a2e58e91ee1d41c311736e026efcfe134", null ],
     [ "g_PsGetProcessWow64Process", "_user_access_8h.html#a7e5eee7c3615d4c3a4b2e080eebf3046", null ],
     [ "g_ZwQueryInformationProcess", "_user_access_8h.html#a114772f502575fa8e6ff36c9fab0bf3e", null ]

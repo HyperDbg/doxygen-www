@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['_7e_2ecpp_0',['~.cpp',['../_0i_8cpp.html',1,'']]]
+  ['zycoreexportconfig_2eh_0',['ZycoreExportConfig.h',['../_zycore_export_config_8h.html',1,'']]],
+  ['zydisexportconfig_2eh_1',['ZydisExportConfig.h',['../_zydis_export_config_8h.html',1,'']]],
+  ['zydiskernel_2ec_2',['ZydisKernel.c',['../_zydis_kernel_8c.html',1,'']]]
 ];

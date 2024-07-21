@@ -1,6 +1,7 @@
 var struct___d_e_b_u_g_g_e_r___e_v_e_n_t___f_o_r_w_a_r_d_i_n_g =
 [
-    [ "Handle", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t___f_o_r_w_a_r_d_i_n_g.html#a63e9f48b3c26fe64dff7cffef5890b4c", null ],
+    [ "Handle", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t___f_o_r_w_a_r_d_i_n_g.html#ad6e29914bcf20c1698f1de026ffe9dde", null ],
+    [ "Module", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t___f_o_r_w_a_r_d_i_n_g.html#acfb2b067c876ae6c5720c6576c1f2cb5", null ],
     [ "Name", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t___f_o_r_w_a_r_d_i_n_g.html#a787855c3b6335d30a4ac4cf8ab53e960", null ],
     [ "OutputSourcesList", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t___f_o_r_w_a_r_d_i_n_g.html#a07ccec14ebd362ec4674bfc96339c582", null ],
     [ "OutputUniqueTag", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t___f_o_r_w_a_r_d_i_n_g.html#ad4e075974aaa8822472f7e587dc7ca57", null ],

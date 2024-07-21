@@ -5,6 +5,7 @@ var _callback_8h =
     [ "DebuggingCallbackHandleDebugBreakpointException", "_callback_8h.html#a1918faefd3d54a524da43a09fa42cbe0", null ],
     [ "InterceptionCallbackCr3VmexitsForThreadInterception", "_callback_8h.html#a95e23295264cbff001092948f328b17a", null ],
     [ "InterceptionCallbackTriggerCr3ProcessChange", "_callback_8h.html#afebd5a76ce72e0546d387c82224ed241", null ],
+    [ "LogCallbackCheckIfBufferIsFull", "_callback_8h.html#a63880d1b59b191d89c15d6124a741406", null ],
     [ "LogCallbackPrepareAndSendMessageToQueue", "_callback_8h.html#a181ea779265c7ed7e47ea91e578dd11d", null ],
     [ "LogCallbackSendBuffer", "_callback_8h.html#aba6bd0c693cac7a80bd56987ee22574a", null ],
     [ "LogCallbackSendMessageToQueue", "_callback_8h.html#a0865c56f81657f8a28d3528832f20989", null ],

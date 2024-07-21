@@ -1,6 +1,6 @@
 var _bitwise_8h =
 [
-    [ "ClearBit", "_bitwise_8h.html#a1325b69024a8a649457e13b496d678ee", null ],
-    [ "SetBit", "_bitwise_8h.html#a6ea193321338d577be44e8490533c285", null ],
-    [ "TestBit", "_bitwise_8h.html#abf9996f46885e97a5d0f4d6fdbba98e0", null ]
+    [ "ClearBit", "_bitwise_8h.html#abccc75c22bafd56004fccd2c992ded5b", null ],
+    [ "SetBit", "_bitwise_8h.html#a7b30482ed030eb060b4be0237fcedd05", null ],
+    [ "TestBit", "_bitwise_8h.html#a27dfcb5aa814dd952c4c0f994816c4c3", null ]
 ];

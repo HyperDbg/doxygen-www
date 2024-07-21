@@ -10,6 +10,7 @@ var scanner_8h =
     [ "CurrentLine", "scanner_8h.html#ad324e84f11d36aeb0d7d4cbbca73ec9a", null ],
     [ "CurrentLineIdx", "scanner_8h.html#af00a5650d7919c932ca761a1fb67d232", null ],
     [ "CurrentTokenIdx", "scanner_8h.html#a45eb1731f6a79d19eae9a4dba1ad87d1", null ],
+    [ "FunctionParameterIdTable", "scanner_8h.html#a4c8a76259cd59fa9789a77ba4d4a8abd", null ],
     [ "IdTable", "scanner_8h.html#a62b7c3881b396d1f11353fc3a7ceb829", null ],
     [ "InputIdx", "scanner_8h.html#a847fdab98ebfda592d9c5754d638cba6", null ]
 ];

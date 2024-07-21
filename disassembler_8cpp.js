@@ -1,12 +1,12 @@
 var disassembler_8cpp =
 [
     [ "ZydisSymbol_", "struct_zydis_symbol__.html", "struct_zydis_symbol__" ],
-    [ "NDEBUG", "disassembler_8cpp.html#a8de3ed741dadc9c979a4ff17c0a9116e", null ],
     [ "PaddingLength", "disassembler_8cpp.html#af7d2fb054c88f2258ef5cc0581fc9853", null ],
     [ "ZydisSymbol", "disassembler_8cpp.html#a1e3a00b08166327b6cae4f8ae032deea", null ],
     [ "DisassembleBuffer", "disassembler_8cpp.html#a7497e4fd0c0e2f55f42da2ba56751846", null ],
     [ "HyperDbgCheckWhetherTheCurrentInstructionIsCall", "disassembler_8cpp.html#a2c18ee75c8e9571544217201feadc536", null ],
     [ "HyperDbgCheckWhetherTheCurrentInstructionIsCallOrRet", "disassembler_8cpp.html#ad8b9ae56905766012448b06480c5b04d", null ],
+    [ "HyperDbgCheckWhetherTheCurrentInstructionIsRet", "disassembler_8cpp.html#ac0b4e41e1c9eade79676c8fb9da799fe", null ],
     [ "HyperDbgDisassembler32", "disassembler_8cpp.html#a272d05db749b5e73a08e0ec3bb320fef", null ],
     [ "HyperDbgDisassembler64", "disassembler_8cpp.html#af3ad9ae0c1d0427c8beb5455ea9a4d25", null ],
     [ "HyperDbgIsConditionalJumpTaken", "disassembler_8cpp.html#a898d8338b7c1a50a9662e4e4657a4a80", null ],

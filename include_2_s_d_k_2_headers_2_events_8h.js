@@ -2,31 +2,32 @@ var include_2_s_d_k_2_headers_2_events_8h =
 [
     [ "_DEBUGGER_MODIFY_EVENTS", "struct___d_e_b_u_g_g_e_r___m_o_d_i_f_y___e_v_e_n_t_s.html", "struct___d_e_b_u_g_g_e_r___m_o_d_i_f_y___e_v_e_n_t_s" ],
     [ "_DEBUGGER_SHORT_CIRCUITING_EVENT", "struct___d_e_b_u_g_g_e_r___s_h_o_r_t___c_i_r_c_u_i_t_i_n_g___e_v_e_n_t.html", "struct___d_e_b_u_g_g_e_r___s_h_o_r_t___c_i_r_c_u_i_t_i_n_g___e_v_e_n_t" ],
-    [ "_DEBUGGER_BROADCASTING_OPTIONS", "struct___d_e_b_u_g_g_e_r___b_r_o_a_d_c_a_s_t_i_n_g___o_p_t_i_o_n_s.html", "struct___d_e_b_u_g_g_e_r___b_r_o_a_d_c_a_s_t_i_n_g___o_p_t_i_o_n_s" ],
+    [ "_DEBUGGER_EVENT_OPTIONS", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t___o_p_t_i_o_n_s.html", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t___o_p_t_i_o_n_s" ],
     [ "_DEBUGGER_GENERAL_EVENT_DETAIL", "struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___e_v_e_n_t___d_e_t_a_i_l.html", "struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___e_v_e_n_t___d_e_t_a_i_l" ],
     [ "_DEBUGGER_GENERAL_ACTION", "struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___a_c_t_i_o_n.html", "struct___d_e_b_u_g_g_e_r___g_e_n_e_r_a_l___a_c_t_i_o_n" ],
-    [ "_DEBUGGER_EVENT_AND_ACTION_REG_BUFFER", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t___a_n_d___a_c_t_i_o_n___r_e_g___b_u_f_f_e_r.html", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t___a_n_d___a_c_t_i_o_n___r_e_g___b_u_f_f_e_r" ],
+    [ "_DEBUGGER_EVENT_AND_ACTION_RESULT", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t___a_n_d___a_c_t_i_o_n___r_e_s_u_l_t.html", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t___a_n_d___a_c_t_i_o_n___r_e_s_u_l_t" ],
     [ "SIZEOF_DEBUGGER_MODIFY_EVENTS", "include_2_s_d_k_2_headers_2_events_8h.html#ad518dde9b961545a1367e3d7f725873e", null ],
     [ "SIZEOF_REGISTER_EVENT", "include_2_s_d_k_2_headers_2_events_8h.html#a45b28ed4e4baa5ca1d2b986967ce8e18", null ],
-    [ "DEBUGGER_BROADCASTING_OPTIONS", "include_2_s_d_k_2_headers_2_events_8h.html#a51fdcbd4a691fb1defc309f977dc4ad8", null ],
     [ "DEBUGGER_EVENT_ACTION_TYPE_ENUM", "include_2_s_d_k_2_headers_2_events_8h.html#a610bab9de13eda50d574b5c079a5e695", null ],
-    [ "DEBUGGER_EVENT_AND_ACTION_REG_BUFFER", "include_2_s_d_k_2_headers_2_events_8h.html#afce94fe15605fe0052a1310c45b442f5", null ],
+    [ "DEBUGGER_EVENT_AND_ACTION_RESULT", "include_2_s_d_k_2_headers_2_events_8h.html#affc6dd2c12830a1f9f3885d97bdc3268", null ],
+    [ "DEBUGGER_EVENT_MODE_TYPE", "include_2_s_d_k_2_headers_2_events_8h.html#aae7e83f1666860f94b796560cdf1d308", null ],
+    [ "DEBUGGER_EVENT_OPTIONS", "include_2_s_d_k_2_headers_2_events_8h.html#aec65406a861ee0f07b61245e0ae32a00", null ],
     [ "DEBUGGER_EVENT_SYSCALL_SYSRET_TYPE", "include_2_s_d_k_2_headers_2_events_8h.html#ad59706f68fe9056c1b7f4c7ee5b809ab", null ],
+    [ "DEBUGGER_EVENT_TRACE_TYPE", "include_2_s_d_k_2_headers_2_events_8h.html#a596b45dc36ee1200e5e2844c7fc8852e", null ],
     [ "DEBUGGER_GENERAL_ACTION", "include_2_s_d_k_2_headers_2_events_8h.html#ad5dc78849c74ecc3872c47060a35ca2c", null ],
     [ "DEBUGGER_GENERAL_EVENT_DETAIL", "include_2_s_d_k_2_headers_2_events_8h.html#a5c238b49a0926366259e838c49e84223", null ],
     [ "DEBUGGER_MODIFY_EVENTS", "include_2_s_d_k_2_headers_2_events_8h.html#af7e321120fa4981adb54984632d062a8", null ],
     [ "DEBUGGER_MODIFY_EVENTS_TYPE", "include_2_s_d_k_2_headers_2_events_8h.html#ac77bf70a765f44bbaaa20cfdd36073b2", null ],
     [ "DEBUGGER_SHORT_CIRCUITING_EVENT", "include_2_s_d_k_2_headers_2_events_8h.html#ac31037c5eb316f12b71e617469333667", null ],
     [ "EXCEPTION_VECTORS", "include_2_s_d_k_2_headers_2_events_8h.html#a0b3ab8b0a4ab0eae03c9bed5939a7e1b", null ],
-    [ "PDEBUGGER_BROADCASTING_OPTIONS", "include_2_s_d_k_2_headers_2_events_8h.html#a0261a6521a9ac8df57d3818d049180aa", null ],
-    [ "PDEBUGGER_EVENT_AND_ACTION_REG_BUFFER", "include_2_s_d_k_2_headers_2_events_8h.html#adc45caef60241d50baa28bf183eb95b9", null ],
+    [ "PDEBUGGER_EVENT_AND_ACTION_RESULT", "include_2_s_d_k_2_headers_2_events_8h.html#aaf75aede04be31fd757491fc26a83760", null ],
+    [ "PDEBUGGER_EVENT_OPTIONS", "include_2_s_d_k_2_headers_2_events_8h.html#aaea49bb7da4e01f922e4507688b844dc", null ],
     [ "PDEBUGGER_GENERAL_ACTION", "include_2_s_d_k_2_headers_2_events_8h.html#ade9b97f73d33fb220c1420579baa15b1", null ],
     [ "PDEBUGGER_GENERAL_EVENT_DETAIL", "include_2_s_d_k_2_headers_2_events_8h.html#a785bb4a350ef4f18bd7101ab77c88148", null ],
     [ "PDEBUGGER_MODIFY_EVENTS", "include_2_s_d_k_2_headers_2_events_8h.html#aa779301e4867fe7538a9df7b5cbcb56f", null ],
     [ "PDEBUGGER_SHORT_CIRCUITING_EVENT", "include_2_s_d_k_2_headers_2_events_8h.html#a1b67a2c67baecbefc76ac320079208b5", null ],
     [ "PROTECTED_HV_RESOURCES_PASSING_OVERS", "include_2_s_d_k_2_headers_2_events_8h.html#a77404f8a80c33d3208f4a27496510153", null ],
     [ "PROTECTED_HV_RESOURCES_TYPE", "include_2_s_d_k_2_headers_2_events_8h.html#a0f67c7982edcf5c1466b7e87d36cedbd", null ],
-    [ "VMM_CALLBACK_EVENT_CALLING_STAGE_TYPE", "include_2_s_d_k_2_headers_2_events_8h.html#a06332119fefd8f53a39adec46c4377f4", null ],
     [ "VMM_CALLBACK_TRIGGERING_EVENT_STATUS_TYPE", "include_2_s_d_k_2_headers_2_events_8h.html#a3510cc0182b1b0735d97a3dc67ebe432", null ],
     [ "VMM_EVENT_TYPE_ENUM", "include_2_s_d_k_2_headers_2_events_8h.html#a86cf51e3bdd0997f22b4b13def9a8167", null ],
     [ "_DEBUGGER_EVENT_ACTION_TYPE_ENUM", "include_2_s_d_k_2_headers_2_events_8h.html#a79c5b4834fb25d4f864ffb2697a713c5", [
@@ -34,9 +35,21 @@ var include_2_s_d_k_2_headers_2_events_8h =
       [ "RUN_SCRIPT", "include_2_s_d_k_2_headers_2_events_8h.html#a79c5b4834fb25d4f864ffb2697a713c5afaf882c9fe6b8920b701c8a0cfd41087", null ],
       [ "RUN_CUSTOM_CODE", "include_2_s_d_k_2_headers_2_events_8h.html#a79c5b4834fb25d4f864ffb2697a713c5ad4d0cbcf67d1baba731310230cb9dc1b", null ]
     ] ],
+    [ "_DEBUGGER_EVENT_MODE_TYPE", "include_2_s_d_k_2_headers_2_events_8h.html#a6407fccecdb97d407d19d0fc68a599a6", [
+      [ "DEBUGGER_EVENT_MODE_TYPE_USER_MODE_AND_KERNEL_MODE", "include_2_s_d_k_2_headers_2_events_8h.html#a6407fccecdb97d407d19d0fc68a599a6a60e3c9a6d4c9f33633b54db3daaa3d6b", null ],
+      [ "DEBUGGER_EVENT_MODE_TYPE_USER_MODE", "include_2_s_d_k_2_headers_2_events_8h.html#a6407fccecdb97d407d19d0fc68a599a6ae33494f799de36316a0f45a07c99fab5", null ],
+      [ "DEBUGGER_EVENT_MODE_TYPE_KERNEL_MODE", "include_2_s_d_k_2_headers_2_events_8h.html#a6407fccecdb97d407d19d0fc68a599a6a4a5bc1a897e016d811069c5d59a4a185", null ],
+      [ "DEBUGGER_EVENT_MODE_TYPE_INVALID", "include_2_s_d_k_2_headers_2_events_8h.html#a6407fccecdb97d407d19d0fc68a599a6aaf923b864a934f0cbc2007df9dde5089", null ]
+    ] ],
     [ "_DEBUGGER_EVENT_SYSCALL_SYSRET_TYPE", "include_2_s_d_k_2_headers_2_events_8h.html#a603add14bd7b96e83bdd990c53449b61", [
       [ "DEBUGGER_EVENT_SYSCALL_SYSRET_SAFE_ACCESS_MEMORY", "include_2_s_d_k_2_headers_2_events_8h.html#a603add14bd7b96e83bdd990c53449b61ac2c2eb597f451618da795d66856123f4", null ],
       [ "DEBUGGER_EVENT_SYSCALL_SYSRET_HANDLE_ALL_UD", "include_2_s_d_k_2_headers_2_events_8h.html#a603add14bd7b96e83bdd990c53449b61af4d0ab42e46b060da271e41fe24fbc06", null ]
+    ] ],
+    [ "_DEBUGGER_EVENT_TRACE_TYPE", "include_2_s_d_k_2_headers_2_events_8h.html#a4e2725998c312bc56fbf40b3d419df15", [
+      [ "DEBUGGER_EVENT_TRACE_TYPE_INVALID", "include_2_s_d_k_2_headers_2_events_8h.html#a4e2725998c312bc56fbf40b3d419df15a95f289210f69445fd36a12cee9a2ce73", null ],
+      [ "DEBUGGER_EVENT_TRACE_TYPE_STEP_IN", "include_2_s_d_k_2_headers_2_events_8h.html#a4e2725998c312bc56fbf40b3d419df15acb44c3b3bb96bdb129918781fc465c69", null ],
+      [ "DEBUGGER_EVENT_TRACE_TYPE_STEP_OUT", "include_2_s_d_k_2_headers_2_events_8h.html#a4e2725998c312bc56fbf40b3d419df15aec9a2707db37e23e9566871e1d99f40e", null ],
+      [ "DEBUGGER_EVENT_TRACE_TYPE_INSTRUMENTATION_STEP_IN", "include_2_s_d_k_2_headers_2_events_8h.html#a4e2725998c312bc56fbf40b3d419df15aac06e3e20dc1f40886283e99c2e731cb", null ]
     ] ],
     [ "_DEBUGGER_MODIFY_EVENTS_TYPE", "include_2_s_d_k_2_headers_2_events_8h.html#a739e1971721c8ddf1043a30848d5b30a", [
       [ "DEBUGGER_MODIFY_EVENTS_QUERY_STATE", "include_2_s_d_k_2_headers_2_events_8h.html#a739e1971721c8ddf1043a30848d5b30aad0cf221bc83d9539187a558307364da4", null ],
@@ -100,10 +113,6 @@ var include_2_s_d_k_2_headers_2_events_8h =
       [ "PROTECTED_HV_RESOURCES_MOV_CONTROL_REGISTER_EXITING", "include_2_s_d_k_2_headers_2_events_8h.html#ad5288b490454840ee37dad7f58d49e16a35791ebba147e543845124c6a3b451b6", null ],
       [ "PROTECTED_HV_RESOURCES_MOV_TO_CR3_EXITING", "include_2_s_d_k_2_headers_2_events_8h.html#ad5288b490454840ee37dad7f58d49e16ac0dcbed276f1c01dbf7b68563d5b5d87", null ]
     ] ],
-    [ "_VMM_CALLBACK_EVENT_CALLING_STAGE_TYPE", "include_2_s_d_k_2_headers_2_events_8h.html#ab1916ebf9ce6cfbfac78cdc125f22cdb", [
-      [ "VMM_CALLBACK_CALLING_STAGE_PRE_EVENT_EMULATION", "include_2_s_d_k_2_headers_2_events_8h.html#ab1916ebf9ce6cfbfac78cdc125f22cdba58fa036799058eaf25e08f6e0ec491cf", null ],
-      [ "VMM_CALLBACK_CALLING_STAGE_POST_EVENT_EMULATION", "include_2_s_d_k_2_headers_2_events_8h.html#ab1916ebf9ce6cfbfac78cdc125f22cdbac3b6ddfed250033a6b4db37b54a4a80e", null ]
-    ] ],
     [ "_VMM_CALLBACK_TRIGGERING_EVENT_STATUS_TYPE", "include_2_s_d_k_2_headers_2_events_8h.html#a4d07669f2ae9f2911461c19e659081e7", [
       [ "VMM_CALLBACK_TRIGGERING_EVENT_STATUS_SUCCESSFUL_NO_INITIALIZED", "include_2_s_d_k_2_headers_2_events_8h.html#a4d07669f2ae9f2911461c19e659081e7ae516c2dd2efca662c8e3f6fd28b04f0d", null ],
       [ "VMM_CALLBACK_TRIGGERING_EVENT_STATUS_SUCCESSFUL", "include_2_s_d_k_2_headers_2_events_8h.html#a4d07669f2ae9f2911461c19e659081e7a3035a38f380298e7b78f5fb51a9b296c", null ],
@@ -135,6 +144,9 @@ var include_2_s_d_k_2_headers_2_events_8h =
       [ "PMC_INSTRUCTION_EXECUTION", "include_2_s_d_k_2_headers_2_events_8h.html#a535f73c021b8ec128d6acc987076652dab13f256e40f039d31bd0be0f50279170", null ],
       [ "VMCALL_INSTRUCTION_EXECUTION", "include_2_s_d_k_2_headers_2_events_8h.html#a535f73c021b8ec128d6acc987076652daf3a1c84d32c23f7021ecf9717179fd47", null ],
       [ "CONTROL_REGISTER_MODIFIED", "include_2_s_d_k_2_headers_2_events_8h.html#a535f73c021b8ec128d6acc987076652da9f2f6a92ab0d60fbdec4fa215adf38f0", null ],
-      [ "CONTROL_REGISTER_READ", "include_2_s_d_k_2_headers_2_events_8h.html#a535f73c021b8ec128d6acc987076652da60abbb3ddfdf7dcc63cefa0d14f03433", null ]
+      [ "CONTROL_REGISTER_READ", "include_2_s_d_k_2_headers_2_events_8h.html#a535f73c021b8ec128d6acc987076652da60abbb3ddfdf7dcc63cefa0d14f03433", null ],
+      [ "CONTROL_REGISTER_3_MODIFIED", "include_2_s_d_k_2_headers_2_events_8h.html#a535f73c021b8ec128d6acc987076652da857386fb54ce8d7f482bee444ff9e827", null ],
+      [ "TRAP_EXECUTION_MODE_CHANGED", "include_2_s_d_k_2_headers_2_events_8h.html#a535f73c021b8ec128d6acc987076652daf21246cecb50b03bc8977c530ea47e7a", null ],
+      [ "TRAP_EXECUTION_INSTRUCTION_TRACE", "include_2_s_d_k_2_headers_2_events_8h.html#a535f73c021b8ec128d6acc987076652da5639b9bb5418fb4a0b2e83bd6c489de3", null ]
     ] ]
 ];

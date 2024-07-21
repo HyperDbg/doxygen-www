@@ -13,9 +13,9 @@ var searchData=
   ['passing_5fover_5fud_5fexceptions_5ffor_5fsyscall_5fsysret_5fhook_10',['PASSING_OVER_UD_EXCEPTIONS_FOR_SYSCALL_SYSRET_HOOK',['../include_2_s_d_k_2_headers_2_events_8h.html#ac06086486363b46ee2126a01bda1dda8ad4b78a9b538e55b2b5b2e35f08c7e840',1,'Events.h']]],
   ['pmc_5finstruction_5fexecution_11',['PMC_INSTRUCTION_EXECUTION',['../include_2_s_d_k_2_headers_2_events_8h.html#a535f73c021b8ec128d6acc987076652dab13f256e40f039d31bd0be0f50279170',1,'Events.h']]],
   ['pmi_5finterrupt_12',['PMI_INTERRUPT',['../include_2_s_d_k_2_headers_2_events_8h.html#af9640e4f7e36f7a6bf7c56e30a860349a3ba64a05218e8bece8471c1d2f21dc2f',1,'Events.h']]],
-  ['process_5fkill_5fmethod_5f1_13',['PROCESS_KILL_METHOD_1',['../hprdbgkd_2header_2common_2common_8h.html#a6b5ea74a23199b25cd91da7cb7307f5fa8a7a9cbb4d530cb0fcd48b9c39a1ada7',1,'Common.h']]],
-  ['process_5fkill_5fmethod_5f2_14',['PROCESS_KILL_METHOD_2',['../hprdbgkd_2header_2common_2common_8h.html#a6b5ea74a23199b25cd91da7cb7307f5fa5fd6f785eb4eb8f824f4110f59c64483',1,'Common.h']]],
-  ['process_5fkill_5fmethod_5f3_15',['PROCESS_KILL_METHOD_3',['../hprdbgkd_2header_2common_2common_8h.html#a6b5ea74a23199b25cd91da7cb7307f5facdd6ffa2c41cbb645d9eb6339f845a43',1,'Common.h']]],
+  ['process_5fkill_5fmethod_5f1_13',['PROCESS_KILL_METHOD_1',['../hyperkd_2header_2common_2_common_8h.html#a6b5ea74a23199b25cd91da7cb7307f5fa8a7a9cbb4d530cb0fcd48b9c39a1ada7',1,'Common.h']]],
+  ['process_5fkill_5fmethod_5f2_14',['PROCESS_KILL_METHOD_2',['../hyperkd_2header_2common_2_common_8h.html#a6b5ea74a23199b25cd91da7cb7307f5fa5fd6f785eb4eb8f824f4110f59c64483',1,'Common.h']]],
+  ['process_5fkill_5fmethod_5f3_15',['PROCESS_KILL_METHOD_3',['../hyperkd_2header_2common_2_common_8h.html#a6b5ea74a23199b25cd91da7cb7307f5facdd6ffa2c41cbb645d9eb6339f845a43',1,'Common.h']]],
   ['process_5fthread_5fholder_16',['PROCESS_THREAD_HOLDER',['../_data_types_8h.html#ad130f0bae4db97169873223d0aad9a63a13119f414e55e917801c5e61a2d98518',1,'DataTypes.h']]],
   ['protected_5fhv_5fresources_5fexception_5fbitmap_17',['PROTECTED_HV_RESOURCES_EXCEPTION_BITMAP',['../include_2_s_d_k_2_headers_2_events_8h.html#ad5288b490454840ee37dad7f58d49e16a359356b5bad88977928f36ec8bc455b6',1,'Events.h']]],
   ['protected_5fhv_5fresources_5fexternal_5finterrupt_5fexiting_18',['PROTECTED_HV_RESOURCES_EXTERNAL_INTERRUPT_EXITING',['../include_2_s_d_k_2_headers_2_events_8h.html#ad5288b490454840ee37dad7f58d49e16af58eb51f049403c4c4947fca83f688cf',1,'Events.h']]],
@@ -23,5 +23,5 @@ var searchData=
   ['protected_5fhv_5fresources_5fmov_5fto_5fcr3_5fexiting_20',['PROTECTED_HV_RESOURCES_MOV_TO_CR3_EXITING',['../include_2_s_d_k_2_headers_2_events_8h.html#ad5288b490454840ee37dad7f58d49e16ac0dcbed276f1c01dbf7b68563d5b5d87',1,'Events.h']]],
   ['protected_5fhv_5fresources_5fmov_5fto_5fdebug_5fregister_5fexiting_21',['PROTECTED_HV_RESOURCES_MOV_TO_DEBUG_REGISTER_EXITING',['../include_2_s_d_k_2_headers_2_events_8h.html#ad5288b490454840ee37dad7f58d49e16a3dfed54e1a2f48c1b405e5a66dd27065',1,'Events.h']]],
   ['protected_5fhv_5fresources_5frdtsc_5frdtscp_5fexiting_22',['PROTECTED_HV_RESOURCES_RDTSC_RDTSCP_EXITING',['../include_2_s_d_k_2_headers_2_events_8h.html#ad5288b490454840ee37dad7f58d49e16add04edacd52a9f8746223981ea7a3741',1,'Events.h']]],
-  ['pseudo_5fregister_23',['PSEUDO_REGISTER',['../script-engine_2header_2common_8h.html#abbf72a04a030b0407c2a0d547f84e12da8986ff41674dea142eb8674d6ea24113',1,'common.h']]]
+  ['pseudo_5fregister_23',['PSEUDO_REGISTER',['../script-engine_2header_2_common_8h.html#abbf72a04a030b0407c2a0d547f84e12da8986ff41674dea142eb8674d6ea24113',1,'common.h']]]
 ];

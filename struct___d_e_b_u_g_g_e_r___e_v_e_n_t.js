@@ -10,10 +10,8 @@ var struct___d_e_b_u_g_g_e_r___e_v_e_n_t =
     [ "EventMode", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html#a38b08c573a6584b0c98f62a13b655c25", null ],
     [ "EventsOfSameTypeList", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html#a77a0bc4fe8892aa7a5ef7a43b90499c4", null ],
     [ "EventType", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html#af505e1577d63fd424d5768d52c976c70", null ],
-    [ "OptionalParam1", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html#a65017fcde2839c56c9e1e5052bcec787", null ],
-    [ "OptionalParam2", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html#a5506dce37e939941969663eb692cd9f4", null ],
-    [ "OptionalParam3", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html#a5473bd1569df03af7b06272c9d6ef7df", null ],
-    [ "OptionalParam4", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html#a2ff8a1087c8af4cce77ecaa1ffc8d86b", null ],
+    [ "InitOptions", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html#a9fb10209cca02f7c10c86b77003a7cdf", null ],
+    [ "Options", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html#adf89c74ebed997a9caf215acb2103d1f", null ],
     [ "ProcessId", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html#ae308a2f7c856f267db1accc00f3319e5", null ],
     [ "Tag", "struct___d_e_b_u_g_g_e_r___e_v_e_n_t.html#ac8e1f39424553220beb8967c9b3ac748", null ]
 ];
