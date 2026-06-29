@@ -1,8 +1,8 @@
 var _logging_8c =
 [
     [ "LogCallbackCheckIfBufferIsFull", "_logging_8c.html#a63880d1b59b191d89c15d6124a741406", null ],
-    [ "LogCallbackPrepareAndSendMessageToQueue", "_logging_8c.html#a181ea779265c7ed7e47ea91e578dd11d", null ],
-    [ "LogCallbackPrepareAndSendMessageToQueueWrapper", "_logging_8c.html#ad79c861feb918cefd1b142b0e1a2100b", null ],
+    [ "LogCallbackPrepareAndSendMessageToQueue", "_logging_8c.html#ad51310dd4beb9dc63729ab22343dfd3e", null ],
+    [ "LogCallbackPrepareAndSendMessageToQueueWrapper", "_logging_8c.html#a040c57df1b38e218c1996f41bc7c6c8b", null ],
     [ "LogCallbackSendBuffer", "_logging_8c.html#a45b355eb34ea7f33366248a693029869", null ],
     [ "LogCallbackSendMessageToQueue", "_logging_8c.html#a0865c56f81657f8a28d3528832f20989", null ],
     [ "LogCheckForNewMessage", "_logging_8c.html#aad41b92d4be87c61d620ffc5b5bf0977", null ],

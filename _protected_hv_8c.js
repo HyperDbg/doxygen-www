@@ -10,6 +10,8 @@ var _protected_hv_8c =
     [ "ProtectedHvResetExceptionBitmapToClearEvents", "_protected_hv_8c.html#a233dcc156894424ce522de64fab25c50", null ],
     [ "ProtectedHvSetExceptionBitmap", "_protected_hv_8c.html#aff1f6cdf6001d461503367b910b73d32", null ],
     [ "ProtectedHvSetExternalInterruptExiting", "_protected_hv_8c.html#ae9ceabc2b266865dd9974e5361505525", null ],
+    [ "ProtectedHvSetLoadDebugControls", "_protected_hv_8c.html#ac77932cbd9d1f65f4f885ba6409a6fff", null ],
+    [ "ProtectedHvSetLoadDebugControlsIntegrityCheck", "_protected_hv_8c.html#a58bf4a250833b4f83b5a3e2a26547732", null ],
     [ "ProtectedHvSetMov2Cr3Exiting", "_protected_hv_8c.html#a6566e978ad2b38d97936014d544a7f60", null ],
     [ "ProtectedHvSetMov2CrExiting", "_protected_hv_8c.html#a8a99b9719df4cd9e1aa7f8801e72bb6e", null ],
     [ "ProtectedHvSetMovControlRegsVmexit", "_protected_hv_8c.html#a1a08f2cd450ab8486c19478e0a6e1f44", null ],
@@ -18,6 +20,8 @@ var _protected_hv_8c =
     [ "ProtectedHvSetMovToCr3Vmexit", "_protected_hv_8c.html#ab7c5b912455b997edf9e74df0cbc2836", null ],
     [ "ProtectedHvSetMovToCrVmexit", "_protected_hv_8c.html#a5d20ecc81af7b148265a6b89313394a4", null ],
     [ "ProtectedHvSetRdtscExiting", "_protected_hv_8c.html#a0bb0a90dc6da72167ab2a1f48b2edc73", null ],
+    [ "ProtectedHvSetSaveDebugControls", "_protected_hv_8c.html#afada5f091170cd7544032af9d06ef49c", null ],
+    [ "ProtectedHvSetSaveDebugControlsIntegrityCheck", "_protected_hv_8c.html#ad5d30c027a4b98f53e4d95e9631e141f", null ],
     [ "ProtectedHvSetTscVmexit", "_protected_hv_8c.html#a1669fb808c0e6d16a840ff7a9a732065", null ],
     [ "ProtectedHvUnsetExceptionBitmap", "_protected_hv_8c.html#ab8f9209e9448adb6130c643e9c92c6b4", null ]
 ];

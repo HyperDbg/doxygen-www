@@ -16,8 +16,6 @@ var kernel_listening_8cpp =
     [ "g_KernelBaseAddress", "kernel-listening_8cpp.html#a973b46ea5b7e4042d1e6e3e27689c677", null ],
     [ "g_KernelSyncronizationObjectsHandleTable", "kernel-listening_8cpp.html#a8bd770339fe481b8ac7fc1d2e31e128f", null ],
     [ "g_OutputSourcesInitialized", "kernel-listening_8cpp.html#a4dd113ea332d12de4597426dc75efd7a", null ],
-    [ "g_OverlappedIoStructureForReadDebugger", "kernel-listening_8cpp.html#ae2ab57bdb5b50cc81f16184b738aa7e1", null ],
-    [ "g_OverlappedIoStructureForWriteDebugger", "kernel-listening_8cpp.html#ad104552003dbd6d89420407c56a6edc2", null ],
     [ "g_ResultOfEvaluatedExpression", "kernel-listening_8cpp.html#a7d600d55dac0fecc8ec201d0f25dacf8", null ],
     [ "g_SerialRemoteComPortHandle", "kernel-listening_8cpp.html#a75ee4d62be68379f0270ef6e1d099f16", null ],
     [ "g_SharedEventStatus", "kernel-listening_8cpp.html#af99d4ef88b5597242c2e9099ffa89678", null ]

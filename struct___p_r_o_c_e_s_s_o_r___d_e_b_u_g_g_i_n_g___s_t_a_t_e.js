@@ -16,11 +16,10 @@ var struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e =
     [ "MsrState", "struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a5d5c22183a428958358e19d6434db8a7", null ],
     [ "NmiState", "struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a0d22e0340ffa5de9190c09683fdfccf2", null ],
     [ "Regs", "struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a03193009392aadd7037d6d0ce743efd4", null ],
-    [ "ScriptEngineCoreSpecificLocalVariable", "struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a9e138f2c7d18cef684a98ea19c639c9c", null ],
     [ "ScriptEngineCoreSpecificStackBuffer", "struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a8c1a72f46f7affbf5f59b26ff8169a6a", null ],
-    [ "ScriptEngineCoreSpecificTempVariable", "struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a59bc3b80c2644f978fef665da9d04d93", null ],
     [ "ShortCircuitingEvent", "struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#acf5445adacbfe4e72c2c2df05deb191d", null ],
     [ "SoftwareBreakpointState", "struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#ac48a6f48fd26c69f2d2ad49f09acbdd4", null ],
+    [ "Test", "struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a5ac7f143b4977acf1de417d284aa119d", null ],
     [ "ThreadOrProcessTracingDetails", "struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a8f17ce3238c1b7fcd0e8a53040cba548", null ],
     [ "TracingMode", "struct___p_r_o_c_e_s_s_o_r___d_e_b_u_g_g_i_n_g___s_t_a_t_e.html#a4e06a3b59f53a60eec017bd2c4cc1f6e", null ]
 ];

@@ -9,5 +9,6 @@ var _idt_emulation_8c =
     [ "IdtEmulationHandlePageFaults", "_idt_emulation_8c.html#ae3e6547ac6bbc198cc4b1add10075c6d", null ],
     [ "IdtEmulationInjectInterruptWhenInterruptWindowIsOpen", "_idt_emulation_8c.html#a2c978e1a65b06f9d032391ef96043926", null ],
     [ "IdtEmulationInjectPageFaultWhenInterruptWindowsIsOpen", "_idt_emulation_8c.html#ad91051ef30cba4ea95bd19aa9c8595c7", null ],
-    [ "IdtEmulationPrepareHostIdt", "_idt_emulation_8c.html#a5e5ee99f7a684ef8f4bf4290e17f53d0", null ]
+    [ "IdtEmulationPrepareHostIdt", "_idt_emulation_8c.html#a5e5ee99f7a684ef8f4bf4290e17f53d0", null ],
+    [ "IdtEmulationQueryIdtEntriesRequest", "_idt_emulation_8c.html#a12727f87685263f68a8636aa7a626467", null ]
 ];

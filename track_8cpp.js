@@ -1,8 +1,8 @@
 var track_8cpp =
 [
-    [ "CommandTrack", "track_8cpp.html#a17fbea7acad0467909368e6d5293627b", null ],
-    [ "CommandTrackHandleReceivedCallInstructions", "track_8cpp.html#a5d10c665001cf501091e68fbf72d1ef7", null ],
-    [ "CommandTrackHandleReceivedInstructions", "track_8cpp.html#ae260acdfb49f450ca0ab22b49972ae59", null ],
+    [ "CommandTrack", "track_8cpp.html#a2ae2162ee73c969275cbd859f11be89d", null ],
+    [ "CommandTrackHandleReceivedCallInstructions", "track_8cpp.html#a70ff378aab9e9ddabed77962a5545f65", null ],
+    [ "CommandTrackHandleReceivedInstructions", "track_8cpp.html#ae8bab5140fe306d6f787c2adea9c8c4d", null ],
     [ "CommandTrackHandleReceivedRetInstructions", "track_8cpp.html#a24d09efd66845f285bc25f803099a655", null ],
     [ "CommandTrackHelp", "track_8cpp.html#a6bd48720377cbfffdec6e3c8a1216866", null ],
     [ "g_ActiveProcessDebuggingState", "track_8cpp.html#ac8b9079c1d516b04b41fa56032412950", null ],

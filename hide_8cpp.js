@@ -1,13 +1,10 @@
 var hide_8cpp =
 [
-    [ "CommandHide", "hide_8cpp.html#a6943ccb8ddbd8ce009f212bd931834f5", null ],
+    [ "CommandHide", "hide_8cpp.html#aaa0c5923bbc561e5fc0d2e3cad795f59", null ],
+    [ "CommandHideFillSystemCalls", "hide_8cpp.html#a2257ab56b463699f17c864c9e8192b65", null ],
     [ "CommandHideHelp", "hide_8cpp.html#ad4e4808fd67738012156998fe5d3a353", null ],
+    [ "HyperDbgEnableTransparentMode", "hide_8cpp.html#a69fa8a493bb49452aebd0a225e1db14b", null ],
+    [ "HyperDbgEnableTransparentModeEx", "hide_8cpp.html#adf70e75fa1226a45068c96cfbb27e456", null ],
     [ "g_ActiveProcessDebuggingState", "hide_8cpp.html#ac8b9079c1d516b04b41fa56032412950", null ],
-    [ "g_CpuidAverage", "hide_8cpp.html#afb6283d738f52b2533be4cfa30f28b18", null ],
-    [ "g_CpuidMedian", "hide_8cpp.html#adb632429dd6e8f744eab0b0a8dbf1b07", null ],
-    [ "g_CpuidStandardDeviation", "hide_8cpp.html#a70f591d341a81a9e3e7cb914c084d95a", null ],
-    [ "g_RdtscAverage", "hide_8cpp.html#a8d4e87b8d2d53b85ee8790af20f7bed7", null ],
-    [ "g_RdtscMedian", "hide_8cpp.html#ac8eabb9691c94245cd146f5139435396", null ],
-    [ "g_RdtscStandardDeviation", "hide_8cpp.html#ae7628e2218b16b1316c7f9c7462f41ee", null ],
-    [ "g_TransparentResultsMeasured", "hide_8cpp.html#acc1a3ed8290d2e2a71f47172bb6c0c50", null ]
+    [ "g_IsVmmModuleLoaded", "hide_8cpp.html#af4cf160715026467c6d14698ace2727b", null ]
 ];

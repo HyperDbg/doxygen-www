@@ -12,7 +12,6 @@ var hyperkd_2header_2common_2_common_8h =
     [ "KGDT64_R3_DATA", "hyperkd_2header_2common_2_common_8h.html#a7ffe33388acb2a5ae8437f0a330237be", null ],
     [ "KGDT64_SYS_TSS", "hyperkd_2header_2common_2_common_8h.html#a2dfaa6e416e87c23f0b5ad458fa03cbb", null ],
     [ "NT_KPROCESS", "hyperkd_2header_2common_2_common_8h.html#ac61c911e4f2fb2e010ae5955011110b9", null ],
-    [ "PNT_KPROCESS", "hyperkd_2header_2common_2_common_8h.html#a71d723dcfce7ba0dcfe4902cabb3ea05", null ],
     [ "PROCESS_KILL_METHODS", "hyperkd_2header_2common_2_common_8h.html#ae6070a281c39c841ba636b3c78ebbca6", null ],
     [ "_PROCESS_KILL_METHODS", "hyperkd_2header_2common_2_common_8h.html#a6b5ea74a23199b25cd91da7cb7307f5f", [
       [ "PROCESS_KILL_METHOD_1", "hyperkd_2header_2common_2_common_8h.html#a6b5ea74a23199b25cd91da7cb7307f5fa8a7a9cbb4d530cb0fcd48b9c39a1ada7", null ],

@@ -1,6 +1,6 @@
 var disconnect_8cpp =
 [
-    [ "CommandDisconnect", "disconnect_8cpp.html#a278ca33692febc2dbf55d801b10304da", null ],
+    [ "CommandDisconnect", "disconnect_8cpp.html#af8993e95c61564d254c01ed6ddb86bff", null ],
     [ "CommandDisconnectHelp", "disconnect_8cpp.html#a52215087dbec4c5c0b7026fc9875993c", null ],
     [ "g_EndOfMessageReceivedEvent", "disconnect_8cpp.html#a91a4d806a2286f4fbd9e3bbd2d3843cd", null ],
     [ "g_IsConnectedToHyperDbgLocally", "disconnect_8cpp.html#accb0c27ac4bea6a87984fb828d896748", null ],

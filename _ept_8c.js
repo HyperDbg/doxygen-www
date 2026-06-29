@@ -16,5 +16,5 @@ var _ept_8c =
     [ "EptLogicalProcessorInitialize", "_ept_8c.html#a36ddbfbf1a082ef76d7f41dc35fea75d", null ],
     [ "EptSetPML1AndInvalidateTLB", "_ept_8c.html#af587165cde98b98b7e5c2c2cc826757c", null ],
     [ "EptSetupPML2Entry", "_ept_8c.html#a6d13e772059bca183c07c58358c56469", null ],
-    [ "EptSplitLargePage", "_ept_8c.html#a186f8a530e93e585a153269cdc103f45", null ]
+    [ "EptSplitLargePage", "_ept_8c.html#aedb67bab8c5289033a9d1b18c3186c44", null ]
 ];

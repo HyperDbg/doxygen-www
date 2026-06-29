@@ -5,5 +5,5 @@ var dir_b9a42e394d8efcca63fc5d2d60127445 =
     [ "debugger", "dir_b7f82d642e4d0c525e6cfe8908059b17.html", "dir_b7f82d642e4d0c525e6cfe8908059b17" ],
     [ "driver", "dir_5b0114f99a7f87cfad8fbebf80420a68.html", "dir_5b0114f99a7f87cfad8fbebf80420a68" ],
     [ "globals", "dir_2a34b1737b9ce15b9fc62a85d9ab7530.html", "dir_2a34b1737b9ce15b9fc62a85d9ab7530" ],
-    [ "pch.h", "hyperkd_2header_2pch_8h.html", "hyperkd_2header_2pch_8h" ]
+    [ "pch.h", "hyperdbg_2hyperkd_2header_2pch_8h.html", "hyperdbg_2hyperkd_2header_2pch_8h" ]
 ];

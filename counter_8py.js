@@ -1,4 +1,4 @@
 var counter_8py =
 [
-    [ "CountLines", "counter_8py.html#a18bf129935c3c998410727962029ffb8", null ]
+    [ "counter.CountLines", "namespacecounter.html#a03f5f3f88f9b7ea5aa9b952891c6cd5a", null ]
 ];

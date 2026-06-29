@@ -1,0 +1,25 @@
+var struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r =
+[
+    [ "Bar", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#a88e3ab3cde86ad3f20514b9a3ac33a5e", null ],
+    [ "BridgeControl", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#afb139b22b203b33cce1e338a7460157f", null ],
+    [ "CapabilityPtr", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#a56c8942a00336572d64a7530b2df0ecb", null ],
+    [ "InterruptLine", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#a63225cfe010d4fb3293397c0ce2d1381", null ],
+    [ "InterruptPin", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#a0b3ccbaeec4015fd6817d756ab5090ef", null ],
+    [ "IoBase", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#a58c2c299c218bee4fbfbb6007347d2e1", null ],
+    [ "IoBaseUpper16b", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#acc7d821d6dba020882624ab1e566afae", null ],
+    [ "IoLimit", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#a5100d0b4b77a96ebd9fbe530298ad35d", null ],
+    [ "IoLimitUpper16b", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#a551e1d57b338ee31a7f4d2204e3dede5", null ],
+    [ "MemoryBase", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#a6564a2240c918c6c6ce4b1f05636ec00", null ],
+    [ "MemoryLimit", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#a869865726186942e27cac6ff79139872", null ],
+    [ "PrefetchableBaseUpper32b", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#a75064674522ece9c7f57636a0c77b96a", null ],
+    [ "PrefetchableLimitUpper32b", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#a61ed83e7fdd87549fdd7cfde4e3573d6", null ],
+    [ "PrefetchableMemoryBase", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#a7411ba19c72269b58de7b10689843b39", null ],
+    [ "PrefetchableMemoryLimit", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#a25c59322df7028047e1b9194ffb703b1", null ],
+    [ "PrimaryBusNumber", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#a6f4b7a75c0011f12317c0511f19110f7", null ],
+    [ "Reserved", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#aa9a834df9ee57d02649e98231a6aca69", null ],
+    [ "ROMBar", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#acd400511c9d1cff9606a9a993710a3f4", null ],
+    [ "SecondaryBusNumber", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#ad9b2fb4766b0f5616dfff9ac114567c7", null ],
+    [ "SecondaryLatencyTimer", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#a6ef3705fce945b42c67b79bbfab86b92", null ],
+    [ "SecondaryStatus", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#a90bf02557481b1f173953dc0aaa907f3", null ],
+    [ "SubordinateBusNumber", "struct___p_o_r_t_a_b_l_e___p_c_i___d_e_v_i_c_e___h_e_a_d_e_r_1_1___p_o_r_t_a_b_l_e___p_c_i___b_r_i_d_g_e___h_e_a_d_e_r.html#a9c2fbff3a3abc9c9dfe5540e229aff5c", null ]
+];

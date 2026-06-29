@@ -1,0 +1,26 @@
+var include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h =
+[
+    [ "IMPORT_EXPORT_HYPERTRACE", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#a80fc7c9821b2a48293146a8c7c244ae3", null ],
+    [ "HyperTraceInitCallback", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#a03272cf2554968fc7a8cb6281b6e4b48", null ],
+    [ "HyperTraceLbrCheck", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#a2314ffd599fb9aae8ab96db8eb587031", null ],
+    [ "HyperTraceLbrFlush", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#afdecf739cfd497a4d60f7c43422ee17d", null ],
+    [ "HyperTraceLbrIsSupported", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#a244316896ce4dca668018fb950985613", null ],
+    [ "HyperTraceLbrPerformDump", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#a77c5baac8a36e12debbce7ad239c5d58", null ],
+    [ "HyperTraceLbrPerformOperation", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#a07ec7a7793e46412f8f9e31a3bfc861d", null ],
+    [ "HyperTraceLbrPrint", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#a718130d81c7f988bdb52f04a1799c764", null ],
+    [ "HyperTraceLbrQueryStateOfLbrSaveAndLoadVmExitAndEntryControls", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#a8be863e8def285eb03cde7e165cb2a91", null ],
+    [ "HyperTraceLbrRestore", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#ae25927cc5b22a120788812cc6c165448", null ],
+    [ "HyperTraceLbrRestoreByFilter", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#af79c812caa5ac6d07c7810fbec3ff6e4", null ],
+    [ "HyperTraceLbrSave", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#a1794aff6d781288a9726d0a986c8f609", null ],
+    [ "HyperTracePtDisable", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#af086918f993ee0f1ad9c47598c7b2b19", null ],
+    [ "HyperTracePtDump", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#a4f5efe7a3b159213d58c80ffd56fbd14", null ],
+    [ "HyperTracePtEnable", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#a5e98facd467721e7b36dd68dc980a5b2", null ],
+    [ "HyperTracePtFilter", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#a1cf64238d82842b25a8a0ffc8615e0a2", null ],
+    [ "HyperTracePtFlush", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#a0719f1f25e29efc80bba8e0b851a6aee", null ],
+    [ "HyperTracePtMmap", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#acf1f57af0ae787aa7c80665131b5c7cb", null ],
+    [ "HyperTracePtPause", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#aad73fa80172f949ef424641cf30ddd58", null ],
+    [ "HyperTracePtPerformOperation", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#a56242274a433534a236d346b6f806e35", null ],
+    [ "HyperTracePtResume", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#abe6913442c1eb2e8ad0cef6fbbe73aa8", null ],
+    [ "HyperTracePtSize", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#abd2a13f062569ecbd52bca46f5749cb5", null ],
+    [ "HyperTraceUninit", "include_2_s_d_k_2imports_2kernel_2_hyper_dbg_hyper_trace_8h.html#a14d487b5a4ae41507d863f1e82170e12", null ]
+];

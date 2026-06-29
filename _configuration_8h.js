@@ -1,5 +1,6 @@
 var _configuration_8h =
 [
+    [ "ActivateHyperEvadeProject", "_configuration_8h.html#a6f014fa1d87e057a38c100ce2edaf33e", null ],
     [ "ActivateUserModeDebugger", "_configuration_8h.html#a3745c9be50e42269276f22426f4f8aeb", null ],
     [ "DebugMode", "_configuration_8h.html#a06a88383272df6b932eb32d83ee405bb", null ],
     [ "EnableInstantEventMechanism", "_configuration_8h.html#a20082a4cb18bad79b8ce796fae71ce1f", null ],

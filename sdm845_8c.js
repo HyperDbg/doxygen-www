@@ -2,9 +2,9 @@ var sdm845_8c =
 [
     [ "_FIFO_TX_BLOCK", "struct___f_i_f_o___t_x___b_l_o_c_k.html", null ],
     [ "GENI4_CFG", "sdm845_8c.html#aeeaf887939b6273983fc9a19e7efb5f5", null ],
+    [ "GENI4_CFG_REG_BASE", "sdm845_8c.html#ae0e919930af7abf3fa916a9392df68ad", null ],
     [ "GENI4_CFG_REG_BASE", "sdm845_8c.html#a8cde0ddee4ab180ca509ac5e6b3630e1", null ],
-    [ "GENI4_CFG_REG_BASE", "sdm845_8c.html#a8cde0ddee4ab180ca509ac5e6b3630e1", null ],
-    [ "GENI4_CFG_REG_BASE_OFFS", "sdm845_8c.html#a740d847114e47ea03c3123eafc376cdd", null ],
+    [ "GENI4_CFG_REG_BASE_OFFS", "sdm845_8c.html#a2b0a30e9542d20b9b4abf143859ea1e3", null ],
     [ "GENI4_CFG_REG_BASE_OFFS", "sdm845_8c.html#a740d847114e47ea03c3123eafc376cdd", null ],
     [ "GENI4_DATA", "sdm845_8c.html#a56e9326fa13b4a3c33e74e23c2309d33", null ],
     [ "GENI4_DATA_REG_BASE", "sdm845_8c.html#afbec3445b5e56af2f8ba6982e1a16b4e", null ],

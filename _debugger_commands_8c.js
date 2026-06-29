@@ -7,6 +7,7 @@ var _debugger_commands_8c =
     [ "DebuggerCommandPreactivateFunctionality", "_debugger_commands_8c.html#a5c9d82c0c8c8cd250ca75483234db42a", null ],
     [ "DebuggerCommandReadMemory", "_debugger_commands_8c.html#ab8bb200983c48761d01ca416f16ef580", null ],
     [ "DebuggerCommandReadMemoryVmxRoot", "_debugger_commands_8c.html#a8868ea6e7d1a50960d949cce8d54778e", null ],
+    [ "DebuggerCommandReadRegisters", "_debugger_commands_8c.html#a100b839e05dd1c633b77e6e1cac4491e", null ],
     [ "DebuggerCommandReservePreallocatedPools", "_debugger_commands_8c.html#a62dfa3017c983808ae647ec03252a0fe", null ],
     [ "DebuggerCommandSearchMemory", "_debugger_commands_8c.html#a90d49ed0d4f0c40139d885b24e4c5b81", null ],
     [ "DebuggerCommandSendGeneralBufferToDebugger", "_debugger_commands_8c.html#ae149f6dd099f7dc3f64584a3b27f7d56", null ],

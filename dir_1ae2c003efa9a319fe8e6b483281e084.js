@@ -10,6 +10,7 @@ var dir_1ae2c003efa9a319fe8e6b483281e084 =
     [ "hooks", "dir_fb51e9dce09b0ba5a7ef5d19ede36a2c.html", "dir_fb51e9dce09b0ba5a7ef5d19ede36a2c" ],
     [ "interface", "dir_ad3459180219538b2125a8cc559818a6.html", "dir_ad3459180219538b2125a8cc559818a6" ],
     [ "memory", "dir_eb7ac0d65cf7f1b18ef23a2b855d76b2.html", "dir_eb7ac0d65cf7f1b18ef23a2b855d76b2" ],
-    [ "transparency", "dir_cd9342adceef783d4406bb4682851a8f.html", "dir_cd9342adceef783d4406bb4682851a8f" ],
+    [ "mmio", "dir_98273c989242590ecf587967abbaa96a.html", "dir_98273c989242590ecf587967abbaa96a" ],
+    [ "processor", "dir_6178cbe57bb47295a3228159ebbbe696.html", "dir_6178cbe57bb47295a3228159ebbbe696" ],
     [ "vmm", "dir_9ea04b3794d26ea15428fea9629e3977.html", "dir_9ea04b3794d26ea15428fea9629e3977" ]
 ];

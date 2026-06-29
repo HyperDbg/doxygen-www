@@ -30,6 +30,7 @@ var _configuration_8c =
     [ "ConfigureEptHookUnHookSingleAddressFromVmxRoot", "_configuration_8c.html#ac3d7477b90e15cb7d2d2bf6f297a143b", null ],
     [ "ConfigureEptHookUnHookSingleHookByHookingTagFromVmxRoot", "_configuration_8c.html#a3b0b0313ad16cd496dc2402b9741e587", null ],
     [ "ConfigureExecTrapAddProcessToWatchingList", "_configuration_8c.html#a0ba9a32992d91af37190d377c727e7f6", null ],
+    [ "ConfigureExecTrapApplyMbecConfiguratinFromKernelSide", "_configuration_8c.html#a2e4fe66ab6f8d2d9cdecfbce37c7b0c2", null ],
     [ "ConfigureExecTrapRemoveProcessFromWatchingList", "_configuration_8c.html#af1efec5051f2996a76d234bc01ac41bf", null ],
     [ "ConfigureInitializeExecTrapOnAllProcessors", "_configuration_8c.html#a1b26f0e861226a28347668799ce3f45e", null ],
     [ "ConfigureModeBasedExecHookUninitializeOnAllProcessors", "_configuration_8c.html#ac0e72ac48176ecf52fe48443a9903593", null ],

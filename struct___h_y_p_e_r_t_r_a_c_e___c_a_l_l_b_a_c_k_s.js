@@ -1,0 +1,28 @@
+var struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s =
+[
+    [ "LogCallbackCheckIfBufferIsFull", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#a8ccbb2e726bb64183b5385118be9b538", null ],
+    [ "LogCallbackPrepareAndSendMessageToQueueWrapper", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#a9c94d3f97143f6715f4cc72f10a49a38", null ],
+    [ "LogCallbackSendBuffer", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#afb238bacb9edf77ce31422af556a90ac", null ],
+    [ "LogCallbackSendMessageToQueue", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#a7b6cc46055784a5a6a6865c7050ef48b", null ],
+    [ "VmFuncCheckCpuSupportForLoadAndClearGuestIa32LbrCtlControls", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#ac2942e3783b8d799a65c926354414ea9", null ],
+    [ "VmFuncCheckCpuSupportForSaveAndLoadDebugControls", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#a4add4e7c908ca27e14534167418ba2a0", null ],
+    [ "VmFuncGetDebugctl", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#a9a9844d24575b7fa6064ecc5b63cd46f", null ],
+    [ "VmFuncGetDebugctlVmcallOnTargetCore", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#a3e7a0e2ad01e1e0183795aa98a111521", null ],
+    [ "VmFuncGetGuestIa32LbrCtl", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#ac09310a8478e8e8ffcead433c92ef133", null ],
+    [ "VmFuncGetGuestIa32LbrCtlVmcallOnTargetCore", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#ad31ac381c2ce7f7adec5ee37cd11174d", null ],
+    [ "VmFuncSetClearGuestIa32LbrCtl", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#a3399d30372be76bcaf66462b006ee18c", null ],
+    [ "VmFuncSetClearGuestIa32LbrCtlVmcallOnTargetCore", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#a61c1dd7500b8a9c1015432c89d848d18", null ],
+    [ "VmFuncSetDebugctl", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#af8c5c4554480e5335fe838416b88d01e", null ],
+    [ "VmFuncSetDebugctlVmcallOnTargetCore", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#a110cb7c1bcf043fb78fee7ed1974933e", null ],
+    [ "VmFuncSetGuestIa32LbrCtl", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#a23cf817be4f8174c5e63f665ea89a9d1", null ],
+    [ "VmFuncSetGuestIa32LbrCtlVmcallOnTargetCore", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#a696102d2089014f6cd91fcb281160bf4", null ],
+    [ "VmFuncSetLbrSelect", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#aa3443aed6ed3f22809ae1e76c8b48ab1", null ],
+    [ "VmFuncSetLbrSelectVmcallOnTargetCore", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#a4de1e5dbe771012f1c56a60fd10cbdf4", null ],
+    [ "VmFuncSetLoadDebugControls", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#ab859c37d2b700e47638e7dbb0695f372", null ],
+    [ "VmFuncSetLoadDebugControlsVmcallOnTargetCore", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#aa7b44bda89f9ae9f692499a19076b68b", null ],
+    [ "VmFuncSetLoadGuestIa32LbrCtl", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#a092d2a096f00647ef38d2d3bda809089", null ],
+    [ "VmFuncSetLoadGuestIa32LbrCtlVmcallOnTargetCore", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#ae7178000042e7bf0ad6a123318ce2abd", null ],
+    [ "VmFuncSetSaveDebugControls", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#ab32a8fe18772ac93f019365bef4f94b8", null ],
+    [ "VmFuncSetSaveDebugControlsVmcallOnTargetCore", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#a7fd761eb333f381a56dc74f465466fa6", null ],
+    [ "VmFuncVmxGetCurrentExecutionMode", "struct___h_y_p_e_r_t_r_a_c_e___c_a_l_l_b_a_c_k_s.html#ad46256ad7b093f1883f3a414c5961682", null ]
+];

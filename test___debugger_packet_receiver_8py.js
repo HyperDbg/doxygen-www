@@ -1,4 +1,4 @@
 var test___debugger_packet_receiver_8py =
 [
-    [ "DebuggerPacketReceiver_test", "test___debugger_packet_receiver_8py.html#a5649868037d6b2d8b6b6d59f20da853d", null ]
+    [ "test_DebuggerPacketReceiver.DebuggerPacketReceiver_test", "namespacetest___debugger_packet_receiver.html#a1c23c4789616c8c39128e367dff84166", null ]
 ];

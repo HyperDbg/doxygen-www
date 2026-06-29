@@ -14,7 +14,8 @@ var _memory_mapper_8h =
     [ "PPAGE_ENTRY", "_memory_mapper_8h.html#ae4afca826c726cfc928dc3bb353d569b", null ],
     [ "_MEMORY_MAPPER_WRAPPER_FOR_MEMORY_READ", "_memory_mapper_8h.html#a8a7424fc9bbe6aac1e9244f4e3b18c3d", [
       [ "MEMORY_MAPPER_WRAPPER_READ_PHYSICAL_MEMORY", "_memory_mapper_8h.html#a8a7424fc9bbe6aac1e9244f4e3b18c3dace94e76887aa7ee4d98deddeabddbbae", null ],
-      [ "MEMORY_MAPPER_WRAPPER_READ_VIRTUAL_MEMORY", "_memory_mapper_8h.html#a8a7424fc9bbe6aac1e9244f4e3b18c3da1cd783d555f8bac484b6bd723dd7fdec", null ]
+      [ "MEMORY_MAPPER_WRAPPER_READ_VIRTUAL_MEMORY", "_memory_mapper_8h.html#a8a7424fc9bbe6aac1e9244f4e3b18c3da1cd783d555f8bac484b6bd723dd7fdec", null ],
+      [ "MEMORY_MAPPER_WRAPPER_READ_VIRTUAL_MEMORY_UNSAFE", "_memory_mapper_8h.html#a8a7424fc9bbe6aac1e9244f4e3b18c3da37f3b7f8c89dd5bdbf11425f6687546e", null ]
     ] ],
     [ "_MEMORY_MAPPER_WRAPPER_FOR_MEMORY_WRITE", "_memory_mapper_8h.html#afad910891a6821389eceb72b8950e277", [
       [ "MEMORY_MAPPER_WRAPPER_WRITE_PHYSICAL_MEMORY", "_memory_mapper_8h.html#afad910891a6821389eceb72b8950e277a76912759ce97c0c8f713dd68d65bf23a", null ],

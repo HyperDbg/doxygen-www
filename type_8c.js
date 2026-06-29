@@ -1,6 +1,7 @@
 var type_8c =
 [
-    [ "HandleType", "type_8c.html#a05381a831da6534b40be626bda00c548", null ],
+    [ "GetCommonVariableType", "type_8c.html#addcf44a4d3f26b12a17b1fa189700486", null ],
+    [ "HandleType", "type_8c.html#aa9da7af07a730797821913e3d6041fa7", null ],
     [ "VARIABLE_TYPE_BOOL", "type_8c.html#abecced86a735d8ab4342c932947ad0f5", null ],
     [ "VARIABLE_TYPE_CHAR", "type_8c.html#adb117352d4d06e96eb4c552b04da70cf", null ],
     [ "VARIABLE_TYPE_DOUBLE", "type_8c.html#a49b3c9e3cc62e4173da0f62798205aa4", null ],

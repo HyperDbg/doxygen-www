@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['readme_0',['README',['../md_hwdbg_2_r_e_a_d_m_e.html',1,'README'],['../md_hyperdbg_2libraries_2keystone_2_r_e_a_d_m_e.html',1,'README']]]
+  ['7_200_200_202023_2011_2022_0',['[0.7.0.0] - 2023-11-22',['../md__c_h_a_n_g_e_l_o_g.html#autotoc_md78',1,'']]],
+  ['7_201_200_202023_2012_2020_1',['[0.7.1.0] - 2023-12-20',['../md__c_h_a_n_g_e_l_o_g.html#autotoc_md76',1,'']]],
+  ['7_202_200_202024_2001_2023_2',['[0.7.2.0] - 2024-01-23',['../md__c_h_a_n_g_e_l_o_g.html#autotoc_md74',1,'']]]
 ];

@@ -1,6 +1,7 @@
 var struct___c_r3___t_y_p_e =
 [
-    [ "Fields", "struct___c_r3___t_y_p_e.html#a60a7d206ec53b9c41c1fa03a379989ec", null ],
+    [ "Fields", "struct___c_r3___t_y_p_e.html#adaeb7482ef91eee57517d54e354aaeae", null ],
+    [ "Fields", "struct___c_r3___t_y_p_e.html#a2baac77d42fb93d57408e10b13feca5b", null ],
     [ "Flags", "struct___c_r3___t_y_p_e.html#a04eb96cc99b0458be739bcc9c640e08b", null ],
     [ "PageFrameNumber", "struct___c_r3___t_y_p_e.html#a9c533e137a5fef1833038ff46499fc00", null ],
     [ "Pcid", "struct___c_r3___t_y_p_e.html#a05075f201b0452361378ff3589c8c95d", null ],

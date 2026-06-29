@@ -1,7 +1,7 @@
 var searchData=
 [
   ['d_2du_2ecpp_0',['d-u.cpp',['../d-u_8cpp.html',1,'']]],
-  ['datatypes_2eh_1',['DataTypes.h',['../_data_types_8h.html',1,'']]],
+  ['datatypes_2eh_1',['DataTypes.h',['../build_2bin_2debug_2_s_d_k_2headers_2_data_types_8h.html',1,'(Global Namespace)'],['../include_2_s_d_k_2headers_2_data_types_8h.html',1,'(Global Namespace)']]],
   ['debug_2ecpp_2',['debug.cpp',['../debug_8cpp.html',1,'']]],
   ['debugger_2ec_3',['Debugger.c',['../_debugger_8c.html',1,'']]],
   ['debugger_2ecpp_4',['debugger.cpp',['../debugger_8cpp.html',1,'']]],
@@ -27,12 +27,11 @@ var searchData=
   ['dispatch_2ec_24',['Dispatch.c',['../_dispatch_8c.html',1,'']]],
   ['dispatch_2eh_25',['Dispatch.h',['../_dispatch_8h.html',1,'']]],
   ['dllmain_2ecpp_26',['dllmain.cpp',['../dllmain_8cpp.html',1,'']]],
-  ['dpc_2eh_27',['Dpc.h',['../hyperhv_2header_2common_2_dpc_8h.html',1,'(Global Namespace)'],['../hyperkd_2header_2common_2_dpc_8h.html',1,'(Global Namespace)']]],
-  ['dpcroutines_2ec_28',['DpcRoutines.c',['../hyperhv_2code_2broadcast_2_dpc_routines_8c.html',1,'(Global Namespace)'],['../hyperkd_2code_2debugger_2broadcast_2_dpc_routines_8c.html',1,'(Global Namespace)']]],
-  ['dpcroutines_2eh_29',['DpcRoutines.h',['../hyperhv_2header_2broadcast_2_dpc_routines_8h.html',1,'(Global Namespace)'],['../hyperkd_2header_2debugger_2broadcast_2_dpc_routines_8h.html',1,'(Global Namespace)']]],
-  ['dr_2ecpp_30',['dr.cpp',['../dr_8cpp.html',1,'']]],
-  ['driver_2ec_31',['Driver.c',['../hyperkd_2code_2driver_2_driver_8c.html',1,'(Global Namespace)'],['../include_2_s_d_k_2_examples_2hyperdbg__driver_2code_2driver_2_driver_8c.html',1,'(Global Namespace)']]],
-  ['driver_2eh_32',['Driver.h',['../hyperkd_2header_2driver_2_driver_8h.html',1,'(Global Namespace)'],['../include_2_s_d_k_2_examples_2hyperdbg__driver_2header_2driver_2_driver_8h.html',1,'(Global Namespace)']]],
-  ['dt_2dstruct_2ecpp_33',['dt-struct.cpp',['../dt-struct_8cpp.html',1,'']]],
-  ['dump_2ecpp_34',['dump.cpp',['../dump_8cpp.html',1,'']]]
+  ['dpcroutines_2ec_27',['DpcRoutines.c',['../hyperhv_2code_2broadcast_2_dpc_routines_8c.html',1,'(Global Namespace)'],['../hyperkd_2code_2debugger_2broadcast_2_dpc_routines_8c.html',1,'(Global Namespace)'],['../hyperperf_2code_2broadcast_2_dpc_routines_8c.html',1,'(Global Namespace)'],['../hypertrace_2code_2broadcast_2_dpc_routines_8c.html',1,'(Global Namespace)']]],
+  ['dpcroutines_2eh_28',['DpcRoutines.h',['../hyperhv_2header_2broadcast_2_dpc_routines_8h.html',1,'(Global Namespace)'],['../hyperkd_2header_2debugger_2broadcast_2_dpc_routines_8h.html',1,'(Global Namespace)'],['../hyperperf_2header_2broadcast_2_dpc_routines_8h.html',1,'(Global Namespace)'],['../hypertrace_2header_2broadcast_2_dpc_routines_8h.html',1,'(Global Namespace)']]],
+  ['dr_2ecpp_29',['dr.cpp',['../dr_8cpp.html',1,'']]],
+  ['driver_2ec_30',['Driver.c',['../examples_2kernel_2hyperdbg__driver_2code_2driver_2_driver_8c.html',1,'(Global Namespace)'],['../hyperdbg_2build_2bin_2debug_2_s_d_k_2examples_2kernel_2hyperdbg__driver_2code_2driver_2_driver_8c.html',1,'(Global Namespace)'],['../hyperdbg_2hyperkd_2code_2driver_2_driver_8c.html',1,'(Global Namespace)']]],
+  ['driver_2eh_31',['Driver.h',['../examples_2kernel_2hyperdbg__driver_2header_2driver_2_driver_8h.html',1,'(Global Namespace)'],['../hyperdbg_2build_2bin_2debug_2_s_d_k_2examples_2kernel_2hyperdbg__driver_2header_2driver_2_driver_8h.html',1,'(Global Namespace)'],['../hyperdbg_2hyperkd_2header_2driver_2_driver_8h.html',1,'(Global Namespace)']]],
+  ['dt_2dstruct_2ecpp_32',['dt-struct.cpp',['../dt-struct_8cpp.html',1,'']]],
+  ['dump_2ecpp_33',['dump.cpp',['../dump_8cpp.html',1,'']]]
 ];

@@ -30,6 +30,9 @@ var hyperkd_2header_2debugger_2core_2_debugger_8h =
     [ "DebuggerGetLastError", "hyperkd_2header_2debugger_2core_2_debugger_8h.html#aa6ee009c25be0f5996e862ae79b5df12", null ],
     [ "DebuggerGetRegValueWrapper", "hyperkd_2header_2debugger_2core_2_debugger_8h.html#a882e18de0f59d5f6caf3f8f6995a1eff", null ],
     [ "DebuggerInitialize", "hyperkd_2header_2debugger_2core_2_debugger_8h.html#a6db6fc9c681fadbd5971d840f5cb9dca", null ],
+    [ "DebuggerInitializeScriptEngine", "hyperkd_2header_2debugger_2core_2_debugger_8h.html#a087e2ad2f8621953edbaf41a7f9abf18", null ],
+    [ "DebuggerInitializeTrapsAndBreakpoints", "hyperkd_2header_2debugger_2core_2_debugger_8h.html#afafefe2fd39f66e88f59453916ee002b", null ],
+    [ "DebuggerInitializeVmmOperations", "hyperkd_2header_2debugger_2core_2_debugger_8h.html#a5b13848df65076c11ad282067a38a5bb", null ],
     [ "DebuggerIsTagValid", "hyperkd_2header_2debugger_2core_2_debugger_8h.html#abfdb05d6c34bdde4284c4f0eb3d5970f", null ],
     [ "DebuggerParseAction", "hyperkd_2header_2debugger_2core_2_debugger_8h.html#a253f311233376854659e54eb0872ebe1", null ],
     [ "DebuggerParseEvent", "hyperkd_2header_2debugger_2core_2_debugger_8h.html#a0e23b3a10f2214e2932df5650ca7ab4b", null ],
@@ -45,5 +48,6 @@ var hyperkd_2header_2debugger_2core_2_debugger_8h =
     [ "DebuggerSetLastError", "hyperkd_2header_2debugger_2core_2_debugger_8h.html#acd71ed0bcec91bc712c14e88e40ede65", null ],
     [ "DebuggerTerminateEvent", "hyperkd_2header_2debugger_2core_2_debugger_8h.html#a3306d6a2ac8d93a66394e9864fa50704", null ],
     [ "DebuggerTriggerEvents", "hyperkd_2header_2debugger_2core_2_debugger_8h.html#a7453ba002829e881de2361320c4ef67a", null ],
-    [ "DebuggerUninitialize", "hyperkd_2header_2debugger_2core_2_debugger_8h.html#a4ae5de0eab22a947ccae667cd604fe0b", null ]
+    [ "DebuggerUninitialize", "hyperkd_2header_2debugger_2core_2_debugger_8h.html#a4ae5de0eab22a947ccae667cd604fe0b", null ],
+    [ "DebuggerUninitializeVmmOperations", "hyperkd_2header_2debugger_2core_2_debugger_8h.html#a65b82b3f104f4f63a06665ed3e345c05", null ]
 ];

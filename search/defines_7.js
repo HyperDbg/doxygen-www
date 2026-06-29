@@ -1,8 +1,8 @@
 var searchData=
 [
   ['geni4_5fcfg_0',['GENI4_CFG',['../sdm845_8c.html#aeeaf887939b6273983fc9a19e7efb5f5',1,'sdm845.c']]],
-  ['geni4_5fcfg_5freg_5fbase_1',['GENI4_CFG_REG_BASE',['../sdm845_8c.html#a8cde0ddee4ab180ca509ac5e6b3630e1',1,'GENI4_CFG_REG_BASE:&#160;sdm845.c'],['../sdm845_8c.html#a8cde0ddee4ab180ca509ac5e6b3630e1',1,'GENI4_CFG_REG_BASE:&#160;sdm845.c']]],
-  ['geni4_5fcfg_5freg_5fbase_5foffs_2',['GENI4_CFG_REG_BASE_OFFS',['../sdm845_8c.html#a740d847114e47ea03c3123eafc376cdd',1,'GENI4_CFG_REG_BASE_OFFS:&#160;sdm845.c'],['../sdm845_8c.html#a740d847114e47ea03c3123eafc376cdd',1,'GENI4_CFG_REG_BASE_OFFS:&#160;sdm845.c']]],
+  ['geni4_5fcfg_5freg_5fbase_1',['GENI4_CFG_REG_BASE',['../sdm845_8c.html#a8cde0ddee4ab180ca509ac5e6b3630e1',1,'GENI4_CFG_REG_BASE:&#160;sdm845.c'],['../sdm845_8c.html#ae0e919930af7abf3fa916a9392df68ad',1,'GENI4_CFG_REG_BASE:&#160;sdm845.c']]],
+  ['geni4_5fcfg_5freg_5fbase_5foffs_2',['GENI4_CFG_REG_BASE_OFFS',['../sdm845_8c.html#a740d847114e47ea03c3123eafc376cdd',1,'GENI4_CFG_REG_BASE_OFFS:&#160;sdm845.c'],['../sdm845_8c.html#a2b0a30e9542d20b9b4abf143859ea1e3',1,'GENI4_CFG_REG_BASE_OFFS:&#160;sdm845.c']]],
   ['geni4_5fdata_3',['GENI4_DATA',['../sdm845_8c.html#a56e9326fa13b4a3c33e74e23c2309d33',1,'sdm845.c']]],
   ['geni4_5fdata_5freg_5fbase_4',['GENI4_DATA_REG_BASE',['../sdm845_8c.html#afbec3445b5e56af2f8ba6982e1a16b4e',1,'sdm845.c']]],
   ['geni4_5fdata_5freg_5fbase_5foffs_5',['GENI4_DATA_REG_BASE_OFFS',['../sdm845_8c.html#a565a6b18833bdaa990ca9692af4ea305',1,'sdm845.c']]],
@@ -14,7 +14,7 @@ var searchData=
   ['get_5fapic_5fmaxlvt_11',['GET_APIC_MAXLVT',['../_apic_8h.html#a607e6d924915cd008dba90fb3bad0e5e',1,'Apic.h']]],
   ['get_5fapic_5ftimer_5fbase_12',['GET_APIC_TIMER_BASE',['../_apic_8h.html#aa3bf34014cd1e39e75bbb39c4ca86718',1,'Apic.h']]],
   ['get_5fapic_5fversion_13',['GET_APIC_VERSION',['../_apic_8h.html#a228abf4344184380dc9576a720cf87a3',1,'Apic.h']]],
-  ['gloabls_5fh_14',['GLOABLS_H',['../script-engine_2header_2globals_8h.html#ab73a636c38cb7d3adb9b5a5f554a8c1f',1,'globals.h']]],
+  ['globals_5fh_14',['GLOBALS_H',['../script-engine_2header_2globals_8h.html#ad6b318dec4c514f4cb120255861271fa',1,'globals.h']]],
   ['guest_5fintr_5fstate_5fenclave_5fintr_15',['GUEST_INTR_STATE_ENCLAVE_INTR',['../_vmx_8h.html#a922c108360321f0bc820c48276fa9a0d',1,'Vmx.h']]],
   ['guest_5fintr_5fstate_5fmov_5fss_16',['GUEST_INTR_STATE_MOV_SS',['../_vmx_8h.html#a1dd07b12db875056b98ac1b19ac2c44a',1,'Vmx.h']]],
   ['guest_5fintr_5fstate_5fnmi_17',['GUEST_INTR_STATE_NMI',['../_vmx_8h.html#a0a1ae12aee95e29aab5fd31a3284b205',1,'Vmx.h']]],

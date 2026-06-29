@@ -17,5 +17,6 @@ var _thread_holder_8h =
     [ "ThreadHolderIsAnyPausedThreadInProcess", "_thread_holder_8h.html#afd1b9edf45c36db1744c2253b4e84a34", null ],
     [ "ThreadHolderQueryCountOfActiveDebuggingThreadsAndProcesses", "_thread_holder_8h.html#affb7e7920935c0f6e29a3401242b155b", null ],
     [ "ThreadHolderQueryDetailsOfActiveDebuggingThreadsAndProcesses", "_thread_holder_8h.html#abefefca1094887640b64fb4405d1504e", null ],
+    [ "ThreadHolderUnpauseAllThreadsInProcess", "_thread_holder_8h.html#adca15786a6eba8edf49a5a8425b0ef82", null ],
     [ "VmxRootThreadHoldingLock", "_thread_holder_8h.html#a5f373c61acb9fe386b8b8b975c5ca094", null ]
 ];

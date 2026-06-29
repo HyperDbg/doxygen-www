@@ -1,10 +1,9 @@
 var _exec_trap_8c =
 [
     [ "ExecTrapAddProcessToWatchingList", "_exec_trap_8c.html#ae57b218aacbb56f7e91df45486f3ef47", null ],
-    [ "ExecTrapAllocateKernelDisabledMbecEptPageTable", "_exec_trap_8c.html#ac13c7109ba4912afaa20b0863c9f1aff", null ],
-    [ "ExecTrapAllocateUserDisabledMbecEptPageTable", "_exec_trap_8c.html#a1858986163fff7e8c4c03acf356333dd", null ],
-    [ "ExecTrapChangeToExecuteOnlyEptp", "_exec_trap_8c.html#a67cfcc99a309b1c331e3fc1c1ac61822", null ],
+    [ "ExecTrapApplyMbecConfiguratinFromKernelSide", "_exec_trap_8c.html#a2b6e150798fd8271e546b6cb3a330b04", null ],
     [ "ExecTrapChangeToKernelDisabledMbecEptp", "_exec_trap_8c.html#a8677e09ccac4d79be30150d8e4e97f3f", null ],
+    [ "ExecTrapChangeToNormalMbecEptp", "_exec_trap_8c.html#aca5e409e1c2e30bd269baa725f3b2d79", null ],
     [ "ExecTrapChangeToUserDisabledMbecEptp", "_exec_trap_8c.html#aab11493ed60e326089cdeb660835bbbc", null ],
     [ "ExecTrapEnableExecuteOnlyPages", "_exec_trap_8c.html#a0d5e1c75cd7636f6406107a7ef7e6e46", null ],
     [ "ExecTrapHandleCr3Vmexit", "_exec_trap_8c.html#a2995044b89b1a737eba0fc2621f4b697", null ],

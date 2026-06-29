@@ -1,0 +1,27 @@
+var include_2_s_d_k_2modules_2_v_m_m_8h =
+[
+    [ "_VMM_CALLBACKS", "struct___v_m_m___c_a_l_l_b_a_c_k_s.html", "struct___v_m_m___c_a_l_l_b_a_c_k_s" ],
+    [ "DEBUGGING_CALLBACK_CHECK_THREAD_INTERCEPTION", "include_2_s_d_k_2modules_2_v_m_m_8h.html#ad01402d0963b148c6d23cfe5fafdeabb", null ],
+    [ "DEBUGGING_CALLBACK_HANDLE_BREAKPOINT_EXCEPTION", "include_2_s_d_k_2modules_2_v_m_m_8h.html#a14b7500ab5fee99731a8b17fc1be0a06", null ],
+    [ "DEBUGGING_CALLBACK_HANDLE_DEBUG_BREAKPOINT_EXCEPTION", "include_2_s_d_k_2modules_2_v_m_m_8h.html#a3d9e76945d1fb6a9db9d388f8d1102de", null ],
+    [ "DEBUGGING_CALLBACK_IGNORE_HANDLING_MOV_2_DEBUG_REGS", "include_2_s_d_k_2modules_2_v_m_m_8h.html#ac8941aeda4fbe27c6b7fbaa6e57fa301", null ],
+    [ "DEBUGGING_CALLBACK_TRIGGER_ON_CLOCK_AND_IPI_EVENTS", "include_2_s_d_k_2modules_2_v_m_m_8h.html#a6e5db8a596907cd060789ab8ac9375ec", null ],
+    [ "HYPERTRACE_LBR_IS_SUPPORTED", "include_2_s_d_k_2modules_2_v_m_m_8h.html#a6a013ceab205e56e0515b51fa8365e00", null ],
+    [ "INTERCEPTION_CALLBACK_TRIGGER_CR3_CHANGE", "include_2_s_d_k_2modules_2_v_m_m_8h.html#a4d500e380ed93b0d99b29c10e0d9189b", null ],
+    [ "LOG_CALLBACK_CHECK_IF_BUFFER_IS_FULL", "include_2_s_d_k_2modules_2_v_m_m_8h.html#a18ea021e44717e1f814e26f34b9fe5f6", null ],
+    [ "LOG_CALLBACK_PREPARE_AND_SEND_MESSAGE_TO_QUEUE", "include_2_s_d_k_2modules_2_v_m_m_8h.html#a127dc9fa9827f08d30ccbe9f56dda1ff", null ],
+    [ "LOG_CALLBACK_SEND_BUFFER", "include_2_s_d_k_2modules_2_v_m_m_8h.html#aedd5f4867020b4ad9a9b53904e684d06", null ],
+    [ "LOG_CALLBACK_SEND_MESSAGE_TO_QUEUE", "include_2_s_d_k_2modules_2_v_m_m_8h.html#a08c53b9dfb22224797401708bbb7f4ac", null ],
+    [ "POOL_MANAGER_FREE_POOL", "include_2_s_d_k_2modules_2_v_m_m_8h.html#a51288eb7b67496543ad1a11ee539e8e4", null ],
+    [ "POOL_MANAGER_REQUEST_ALLOCATION", "include_2_s_d_k_2modules_2_v_m_m_8h.html#a4e6a8fecf8cdd67413cb98bfabec5878", null ],
+    [ "POOL_MANAGER_REQUEST_POOL", "include_2_s_d_k_2modules_2_v_m_m_8h.html#a238d7a9bfb4aeb280ba1ec6289c24f19", null ],
+    [ "VMM_CALLBACK_CHECK_UNHANDLED_EPT_VIOLATION", "include_2_s_d_k_2modules_2_v_m_m_8h.html#a53a565edf7499f895532a6fc89a467e3", null ],
+    [ "VMM_CALLBACK_HANDLE_MTF_CALLBACK", "include_2_s_d_k_2modules_2_v_m_m_8h.html#a7bfbae53a76dcfdc38590c3d48414c77", null ],
+    [ "VMM_CALLBACK_NMI_BROADCAST_REQUEST_HANDLER", "include_2_s_d_k_2modules_2_v_m_m_8h.html#aa464cb1c3a3eace4be735267aed46e6f", null ],
+    [ "VMM_CALLBACK_QUERY_TERMINATE_PROTECTED_RESOURCE", "include_2_s_d_k_2modules_2_v_m_m_8h.html#a0c73e2525b6b29d27956f2ba1cfaf88e", null ],
+    [ "VMM_CALLBACK_RESTORE_EPT_STATE", "include_2_s_d_k_2modules_2_v_m_m_8h.html#adfa8589d3396515cac914211f22f5480", null ],
+    [ "VMM_CALLBACK_SET_LAST_ERROR", "include_2_s_d_k_2modules_2_v_m_m_8h.html#a9948c293b02c0763f6e7614c5188efe5", null ],
+    [ "VMM_CALLBACK_TRIGGER_EVENTS", "include_2_s_d_k_2modules_2_v_m_m_8h.html#a516c00f7bf28586078ed01645ea8f14b", null ],
+    [ "VMM_CALLBACK_VMCALL_HANDLER", "include_2_s_d_k_2modules_2_v_m_m_8h.html#a23ede195305a851c9cbf3e049158b4eb", null ],
+    [ "VMM_CALLBACKS", "include_2_s_d_k_2modules_2_v_m_m_8h.html#a1e73fd13bcaf23e83681c29178159f80", null ]
+];

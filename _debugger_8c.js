@@ -18,6 +18,9 @@ var _debugger_8c =
     [ "DebuggerGetLastError", "_debugger_8c.html#aa6ee009c25be0f5996e862ae79b5df12", null ],
     [ "DebuggerGetRegValueWrapper", "_debugger_8c.html#a882e18de0f59d5f6caf3f8f6995a1eff", null ],
     [ "DebuggerInitialize", "_debugger_8c.html#a6db6fc9c681fadbd5971d840f5cb9dca", null ],
+    [ "DebuggerInitializeScriptEngine", "_debugger_8c.html#a087e2ad2f8621953edbaf41a7f9abf18", null ],
+    [ "DebuggerInitializeTrapsAndBreakpoints", "_debugger_8c.html#afafefe2fd39f66e88f59453916ee002b", null ],
+    [ "DebuggerInitializeVmmOperations", "_debugger_8c.html#a5b13848df65076c11ad282067a38a5bb", null ],
     [ "DebuggerIsTagValid", "_debugger_8c.html#abfdb05d6c34bdde4284c4f0eb3d5970f", null ],
     [ "DebuggerParseAction", "_debugger_8c.html#adbf36e1a80930fde614ed171bfe236cd", null ],
     [ "DebuggerParseEvent", "_debugger_8c.html#a0e23b3a10f2214e2932df5650ca7ab4b", null ],
@@ -38,5 +41,6 @@ var _debugger_8c =
     [ "DebuggerTerminateEvent", "_debugger_8c.html#a3306d6a2ac8d93a66394e9864fa50704", null ],
     [ "DebuggerTriggerEvents", "_debugger_8c.html#a7453ba002829e881de2361320c4ef67a", null ],
     [ "DebuggerUninitialize", "_debugger_8c.html#a4ae5de0eab22a947ccae667cd604fe0b", null ],
+    [ "DebuggerUninitializeVmmOperations", "_debugger_8c.html#a65b82b3f104f4f63a06665ed3e345c05", null ],
     [ "DebuggerValidateEvent", "_debugger_8c.html#aab2541d689d2c503942c8c4363b8b700", null ]
 ];

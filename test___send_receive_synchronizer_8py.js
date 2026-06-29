@@ -1,4 +1,4 @@
 var test___send_receive_synchronizer_8py =
 [
-    [ "SendReceiveSynchronizer_test", "test___send_receive_synchronizer_8py.html#a2d0f17b5deb6622bddb70aae5bb6b2d5", null ]
+    [ "test_SendReceiveSynchronizer.SendReceiveSynchronizer_test", "namespacetest___send_receive_synchronizer.html#a6493d9210355a0708eea36ffed883e42", null ]
 ];

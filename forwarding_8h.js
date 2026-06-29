@@ -6,7 +6,7 @@ var forwarding_8h =
     [ "DEBUGGER_EVENT_FORWARDING_STATE", "forwarding_8h.html#aab23075636f25c1e502b3fda58ed2031", null ],
     [ "DEBUGGER_EVENT_FORWARDING_TYPE", "forwarding_8h.html#a729462f999e9bd091d2b38a2be323eac", null ],
     [ "DEBUGGER_OUTPUT_SOURCE_STATUS", "forwarding_8h.html#acfb9eb7c766687abbd105c83ce4310f5", null ],
-    [ "hyperdbg_event_forwarding_t", "forwarding_8h.html#a7ad21e89dd68e108a3c11e5ca4849fb7", null ],
+    [ "hyperdbg_event_forwarding_t", "forwarding_8h.html#a255b3d40937945b8b02aa75d047d9462", null ],
     [ "PDEBUGGER_EVENT_FORWARDING", "forwarding_8h.html#aedffd28ff7da7c4ddae96f692c4d0eda", null ],
     [ "_DEBUGGER_EVENT_FORWARDING_STATE", "forwarding_8h.html#a42e89d95ef5380838b8a9076a408974c", [
       [ "EVENT_FORWARDING_STATE_NOT_OPENED", "forwarding_8h.html#a42e89d95ef5380838b8a9076a408974cacc15feb95f39c0d93c48e4376775e838", null ],

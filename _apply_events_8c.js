@@ -17,5 +17,6 @@ var _apply_events_8c =
     [ "ApplyEventTrapModeChangeEvent", "_apply_events_8c.html#a8861b87f6d3792f109e4cb3f4c3b9a53", null ],
     [ "ApplyEventTscExecutionEvent", "_apply_events_8c.html#a3ab5d032ddc47e22a0682650e7a0f364", null ],
     [ "ApplyEventVmcallExecutionEvent", "_apply_events_8c.html#ac00a10c4d4e3822a93a20827fc5ef0b0", null ],
-    [ "ApplyEventWrmsrExecutionEvent", "_apply_events_8c.html#a1c9510a4140bd1e1216a67940b51ffd5", null ]
+    [ "ApplyEventWrmsrExecutionEvent", "_apply_events_8c.html#a1c9510a4140bd1e1216a67940b51ffd5", null ],
+    [ "ApplyEventXsetbvExecutionEvent", "_apply_events_8c.html#a89ec17a4bff8808ffe6b89f53cae2443", null ]
 ];

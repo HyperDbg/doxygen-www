@@ -1,0 +1,26 @@
+var struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n =
+[
+    [ "BasePriority", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#ac99c514f0083571e392eb4e665600ea2", null ],
+    [ "HandleCount", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#aee41fc2ce3919c41b6d39c6d8a1be045", null ],
+    [ "ImageName", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#a8510236075a6891af89b223f172cf6fb", null ],
+    [ "NextEntryOffset", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#accc60594e809bb9fe3431634ccb6dba1", null ],
+    [ "NumberOfThreads", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#aaacded14f292de0d68d295d5dccc5dba", null ],
+    [ "PagefileUsage", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#a1fc056ec1d6c0a6693fb1ed42e8e355e", null ],
+    [ "PeakPagefileUsage", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#a96adadba0d98bccbe47fd1958e4f18b0", null ],
+    [ "PeakVirtualSize", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#a4c8b6de19e3d2da865eca396cb5ef95a", null ],
+    [ "PeakWorkingSetSize", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#aa0c74e88c319e65e11ade0b979cdda36", null ],
+    [ "PrivatePageCount", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#ab1f393498ce30c96e6c2abe9f8b109fc", null ],
+    [ "QuotaNonPagedPoolUsage", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#ab749fa91dd1c4154bf6380c07c285dbb", null ],
+    [ "QuotaPagedPoolUsage", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#a951c8fe027cee4501f65ea0dea6b030b", null ],
+    [ "Reserved1", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#aa2913818d74833c86b3d8d4e445d88b3", null ],
+    [ "Reserved2", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#ade07982db46fcc94d70a8bf47387d12a", null ],
+    [ "Reserved3", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#aac257c96dbe95aedbbcc7a9390368a2e", null ],
+    [ "Reserved4", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#a4445ab0e271eef9d24330bd265f97f4c", null ],
+    [ "Reserved5", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#a0003d808472f7b2cf645d0b03947747a", null ],
+    [ "Reserved6", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#a2fb3ec74912f308104aceb666dbcb5b7", null ],
+    [ "Reserved7", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#aea4e1d1b3d883c8a8c293312ee5cfffd", null ],
+    [ "SessionId", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#adcf5c890ab63438693073f5b8439e0be", null ],
+    [ "UniqueProcessId", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#a87106d7187f215634c9d2cbc6bb88331", null ],
+    [ "VirtualSize", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#a77c7c7461302368e6786142d2802ff1f", null ],
+    [ "WorkingSetSize", "struct___s_y_s_t_e_m___p_r_o_c_e_s_s___i_n_f_o_r_m_a_t_i_o_n.html#a51249d417a63fbc2b0ec7040eb8ba0da", null ]
+];

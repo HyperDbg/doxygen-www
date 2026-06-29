@@ -1,5 +1,7 @@
 var _compatibility_checks_8c =
 [
+    [ "CompatibilityCheckCetIbtSupport", "_compatibility_checks_8c.html#a4d0a5eec686b7dc80015708ab9c70b6c", null ],
+    [ "CompatibilityCheckCetShadowStackSupport", "_compatibility_checks_8c.html#ad2ef1d6a05869368909f26927074b0b2", null ],
     [ "CompatibilityCheckCpuSupportForRtm", "_compatibility_checks_8c.html#a52988ecac6357d39bdcbb48ea3e7bfd8", null ],
     [ "CompatibilityCheckGetX86PhysicalAddressWidth", "_compatibility_checks_8c.html#a77cd96e4d8859c09ea6d40ae9f13b0a9", null ],
     [ "CompatibilityCheckGetX86VirtualAddressWidth", "_compatibility_checks_8c.html#a854d429cb641d50526af69ab5d490a6c", null ],

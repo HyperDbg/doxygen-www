@@ -12,10 +12,10 @@ var _logging_8h =
     [ "LogNotifyUsermodeCallback", "_logging_8h.html#a27b764f2e199e62752ff76d155385971", null ],
     [ "LogReadBuffer", "_logging_8h.html#a052d3294b1eb4f00873067baa1532f4e", null ],
     [ "g_GlobalNotifyRecord", "_logging_8h.html#ac6bb7efa110feb40ba04985a35783931", null ],
+    [ "g_MessageBufferInformation", "_logging_8h.html#a26d8970cc8378ce1b5266765b1613ab8", null ],
     [ "g_MsgTracingCallbacks", "_logging_8h.html#aeda9ca9e008dc7b6a0531a65384df214", null ],
-    [ "MessageBufferInformation", "_logging_8h.html#a987d4dee46588ff399ecac12bd633e3d", null ],
-    [ "VmxLogMessage", "_logging_8h.html#ae9c153924d485dd59862c5d6bf94d33c", null ],
-    [ "VmxRootLoggingLock", "_logging_8h.html#a0f18907a482e2771b5ac3129a8181c53", null ],
-    [ "VmxRootLoggingLockForNonImmBuffers", "_logging_8h.html#a7cda9705b4fb350b4b1b167c929e09ed", null ],
-    [ "VmxTempMessage", "_logging_8h.html#ab45b7a0369600519fee53032eb4a5ee9", null ]
+    [ "g_VmxLogMessage", "_logging_8h.html#a744495d50d8dfb77e08a04571297aa42", null ],
+    [ "g_VmxRootLoggingLock", "_logging_8h.html#aca41a87da6e1b81d03a94b426c8f305b", null ],
+    [ "g_VmxRootLoggingLockForNonImmBuffers", "_logging_8h.html#aa14eda9f62376044881724b9a057ba14", null ],
+    [ "g_VmxTempMessage", "_logging_8h.html#a48027c8b7d16a372fbf8da28fd9f64a7", null ]
 ];

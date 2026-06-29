@@ -1,5 +1,6 @@
 var _hyperv_tlfs_8h =
 [
+    [ "_HV_X64_MSR_STIMER_CONFIG_CONTENTS", "struct___h_v___x64___m_s_r___s_t_i_m_e_r___c_o_n_f_i_g___c_o_n_t_e_n_t_s.html", "struct___h_v___x64___m_s_r___s_t_i_m_e_r___c_o_n_f_i_g___c_o_n_t_e_n_t_s" ],
     [ "hv_gpa_range_for_visibility", "structhv__gpa__range__for__visibility.html", "structhv__gpa__range__for__visibility" ],
     [ "hv_x64_msr_hypercall_contents", "unionhv__x64__msr__hypercall__contents.html", "unionhv__x64__msr__hypercall__contents" ],
     [ "hv_vp_assist_msr_contents", "unionhv__vp__assist__msr__contents.html", "unionhv__vp__assist__msr__contents" ],
@@ -112,6 +113,12 @@ var _hyperv_tlfs_8h =
     [ "HV_X64_MSR_HYPERCALL_PAGE_ADDRESS_MASK", "_hyperv_tlfs_8h.html#a9638ae2e4abef17218bb95d89f934e80", null ],
     [ "HV_X64_MSR_HYPERCALL_PAGE_ADDRESS_SHIFT", "_hyperv_tlfs_8h.html#a309060f14bd5c3e95eb327ed0dfc8613", null ],
     [ "HV_X64_MSR_ICR", "_hyperv_tlfs_8h.html#a383b449965e1b3c66cced7a2ee2019c2", null ],
+    [ "HV_X64_MSR_NESTED_EOM", "_hyperv_tlfs_8h.html#ac32ec1e7f986671d8881dc0a5abc8e21", null ],
+    [ "HV_X64_MSR_NESTED_SCONTROL", "_hyperv_tlfs_8h.html#aafae065b07b4dec5467d332878af141e", null ],
+    [ "HV_X64_MSR_NESTED_SINT0", "_hyperv_tlfs_8h.html#a6b0633f08b74e1f946aa39d7eeb5f9f2", null ],
+    [ "HV_X64_MSR_NESTED_SINT15", "_hyperv_tlfs_8h.html#a19e12360a345c51f02f0b429b44695b1", null ],
+    [ "HV_X64_MSR_NESTED_VP_INDEX", "_hyperv_tlfs_8h.html#a97bea6a5ea81be4b5aeed6422f7668d7", null ],
+    [ "HV_X64_MSR_NPIEP_CONFIG", "_hyperv_tlfs_8h.html#ae754a999d419645ff232de32114f2507", null ],
     [ "HV_X64_MSR_REENLIGHTENMENT_CONTROL", "_hyperv_tlfs_8h.html#aa17a5b2b9200c0b2c9f8833db22f86dc", null ],
     [ "HV_X64_MSR_REFERENCE_TSC", "_hyperv_tlfs_8h.html#a5727e7e051aec31c7e5d747dd9c1f7cb", null ],
     [ "HV_X64_MSR_RESET", "_hyperv_tlfs_8h.html#ab57a5f6f06cef9a126282809e53459b7", null ],
@@ -120,6 +127,8 @@ var _hyperv_tlfs_8h =
     [ "HV_X64_MSR_SIMP", "_hyperv_tlfs_8h.html#a044f8596ffb75446dad5d6663c9020cd", null ],
     [ "HV_X64_MSR_SINT0", "_hyperv_tlfs_8h.html#aa1aad9a62234e84f55fe94bba99fdb8b", null ],
     [ "HV_X64_MSR_SINT15", "_hyperv_tlfs_8h.html#aea4a544177e519fb35eaf5e5dde36ed8", null ],
+    [ "HV_X64_MSR_STIME_UNHALTED_TIMER_CONFIG", "_hyperv_tlfs_8h.html#ae205a595384a6c66d5721b3e6ff2c042", null ],
+    [ "HV_X64_MSR_STIME_UNHALTED_TIMER_COUNT", "_hyperv_tlfs_8h.html#a24ea97fe6567ca2e202f9f31c49e144f", null ],
     [ "HV_X64_MSR_STIMER0_CONFIG", "_hyperv_tlfs_8h.html#a4318a7ad55f2d36319eb3e526bfbd63c", null ],
     [ "HV_X64_MSR_STIMER0_COUNT", "_hyperv_tlfs_8h.html#a8c6754e36d56c3941880d14a6a5f1dc6", null ],
     [ "HV_X64_MSR_STIMER1_CONFIG", "_hyperv_tlfs_8h.html#a9f90ed14a29af856a6fbc1fdedc79b5c", null ],
@@ -172,6 +181,8 @@ var _hyperv_tlfs_8h =
     [ "HYPERV_HYPERVISOR_PRESENT_BIT", "_hyperv_tlfs_8h.html#aaf955b30321d11973faeeec0cde3a34b", null ],
     [ "HYPERV_VS_INTERFACE_EAX_SIGNATURE", "_hyperv_tlfs_8h.html#a46fad0438f6cfedcb411a6da6d7077ae", null ],
     [ "HYPERV_VS_PROPERTIES_EAX_EXTENDED_IOAPIC_RTE", "_hyperv_tlfs_8h.html#a3a25ce9cde1fb70d56f219e9592f4c83", null ],
+    [ "HV_X64_MSR_STIMER_CONFIG_CONTENTS", "_hyperv_tlfs_8h.html#a61e1f85301bfc9c67920a558c8feb114", null ],
+    [ "PHV_X64_MSR_STIMER_CONFIG_CONTENTS", "_hyperv_tlfs_8h.html#a1cfd9d7f6ca7e18f56ae275fe0ef53cd", null ],
     [ "hv_interrupt_type", "_hyperv_tlfs_8h.html#a86938eb9cd156d56aaec7bc4f2bdbfff", [
       [ "HV_X64_INTERRUPT_TYPE_FIXED", "_hyperv_tlfs_8h.html#a86938eb9cd156d56aaec7bc4f2bdbfffa8798b7e24587211a92098f453f918b93", null ],
       [ "HV_X64_INTERRUPT_TYPE_LOWESTPRIORITY", "_hyperv_tlfs_8h.html#a86938eb9cd156d56aaec7bc4f2bdbfffabf6c955912a59dcb3e9c2a8f64231ef1", null ],

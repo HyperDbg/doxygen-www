@@ -9,6 +9,7 @@ var struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l =
     [ "HookingTag", "struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#ac39ed4ba1bfdc7f59b54cd3b0675c007", null ],
     [ "IsExecutionHook", "struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#a40f5606fe57295d12c430ce08421e544", null ],
     [ "IsHiddenBreakpoint", "struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#a97690afae33315665d9d82ed19b7725c", null ],
+    [ "IsMmioShadowing", "struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#a8cd24edc091686e490bf35ba11c5719a", null ],
     [ "IsPostEventTriggerAllowed", "struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#ad458b314b35c4f269cb7998b04ab28ea", null ],
     [ "LastContextState", "struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#a59fdf10619377cfa0697486767d1ed81", null ],
     [ "LastViolation", "struct___e_p_t___h_o_o_k_e_d___p_a_g_e___d_e_t_a_i_l.html#afd0c818e0a415c2705cc35d41bd9353c", null ],

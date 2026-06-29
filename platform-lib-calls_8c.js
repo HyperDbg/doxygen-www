@@ -1,0 +1,26 @@
+var platform_lib_calls_8c =
+[
+    [ "PlatformCloseFile", "platform-lib-calls_8c.html#a7270e2de920b9039aafe1e3c43c498b2", null ],
+    [ "PlatformCloseHandle", "platform-lib-calls_8c.html#a001ad69bbf868f34233dc3b8b76eea57", null ],
+    [ "PlatformCreateEvent", "platform-lib-calls_8c.html#ab0e57a7b02854d02efeaa7eb40c051ff", null ],
+    [ "PlatformGetCurrentProcessId", "platform-lib-calls_8c.html#ae200d66665c77ea14d184653e9281a70", null ],
+    [ "PlatformGetCurrentProcessName", "platform-lib-calls_8c.html#add516e53d2d76689563b65f541de0765", null ],
+    [ "PlatformGetCurrentProcessorNumber", "platform-lib-calls_8c.html#a2597a2304a24e0f6c47aebc456ca75eb", null ],
+    [ "PlatformGetCurrentThreadId", "platform-lib-calls_8c.html#a551be47add110e887a1cfcc81682c697", null ],
+    [ "PlatformGetLastError", "platform-lib-calls_8c.html#aa955126fd62e2ae63ed779b4175337a5", null ],
+    [ "PlatformMapFileReadOnly", "platform-lib-calls_8c.html#a571e6b46e85a9391cbf4c04ceb5dda9e", null ],
+    [ "PlatformOpenFileForWriting", "platform-lib-calls_8c.html#a241f71f9d2899e6a6a16661f928ed59d", null ],
+    [ "PlatformQueryPerformanceCounter", "platform-lib-calls_8c.html#a09e15f3062e94804045de28a747d81ca", null ],
+    [ "PlatformQueryPerformanceFrequency", "platform-lib-calls_8c.html#a8d9b0d54502dd40656830fa5a89b33ae", null ],
+    [ "PlatformReadFileAtOffset", "platform-lib-calls_8c.html#a6e5cf6af0b46470ff32a6e35ae1a2f4b", null ],
+    [ "PlatformResetEvent", "platform-lib-calls_8c.html#a05bbb4f7f96865dd2a4061a8de10f76d", null ],
+    [ "PlatformSetEvent", "platform-lib-calls_8c.html#a0ff92a71b0d80431c8c98e65f5bb6181", null ],
+    [ "PlatformSprintf", "platform-lib-calls_8c.html#a646f2547b17e5d383605bbf600dd6463", null ],
+    [ "PlatformStrDup", "platform-lib-calls_8c.html#a62b55698fa9909a5fb1e87e3f8dcbcbd", null ],
+    [ "PlatformUnmapFile", "platform-lib-calls_8c.html#ae61fa8fe432cc0e4d35ef5cf8557ceaa", null ],
+    [ "PlatformVsnprintf", "platform-lib-calls_8c.html#abc286b12ff9361e7da3ddba843d37e3d", null ],
+    [ "PlatformWaitForSingleObject", "platform-lib-calls_8c.html#ad7b62a78a6de68ffa33b534ad40c5ea4", null ],
+    [ "PlatformWriteConsole", "platform-lib-calls_8c.html#abc386869cc8926b5f5a7c1398d3d194f", null ],
+    [ "PlatformWriteFile", "platform-lib-calls_8c.html#a0ed9ff5544153b123ef5e608f935cb59", null ],
+    [ "PlatformZeroMemory", "platform-lib-calls_8c.html#a832b5eb982b22d689a1ea122fe653919", null ]
+];

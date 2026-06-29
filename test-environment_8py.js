@@ -1,5 +1,5 @@
 var test_environment_8py =
 [
-    [ "copy_dir", "test-environment_8py.html#ae7c8c0688fcdbe3f3d597521bb21bdb8", null ],
-    [ "main", "test-environment_8py.html#afb09adc8286367e653bcbbbbb65bfb82", null ]
+    [ "test-environment.copy_dir", "namespacetest-environment.html#a0fa16cf7ee26f3bf5d7b90f6cd18f08f", null ],
+    [ "test-environment.main", "namespacetest-environment.html#a51af30a60f9f02777c6396b8247e356f", null ]
 ];

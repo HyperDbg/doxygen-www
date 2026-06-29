@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['script_20engine_20test_0',['script engine test',['../md_hyperdbg_2script-engine_2modules_2script-engine-test_2_r_e_a_d_m_e.html',1,'script-engine-test'],['../md_hyperdbg_2script-engine_2modules_2script-engine-test_2script-test-cases_2_r_e_a_d_m_e.html',1,'script-engine-test']]]
+  ['8_200_200_202024_2001_2028_0',['[0.8.0.0] - 2024-01-28',['../md__c_h_a_n_g_e_l_o_g.html#autotoc_md71',1,'']]],
+  ['8_201_200_202024_2002_2001_1',['[0.8.1.0] - 2024-02-01',['../md__c_h_a_n_g_e_l_o_g.html#autotoc_md68',1,'']]],
+  ['8_202_200_202024_2003_2019_2',['[0.8.2.0] - 2024-03-19',['../md__c_h_a_n_g_e_l_o_g.html#autotoc_md65',1,'']]],
+  ['8_203_200_202024_2005_2003_3',['[0.8.3.0] - 2024-05-03',['../md__c_h_a_n_g_e_l_o_g.html#autotoc_md62',1,'']]],
+  ['8_204_200_202024_2005_2010_4',['[0.8.4.0] - 2024-05-10',['../md__c_h_a_n_g_e_l_o_g.html#autotoc_md60',1,'']]]
 ];

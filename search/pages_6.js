@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['of_20conduct_0',['of Conduct',['../md__c_o_d_e___o_f___c_o_n_d_u_c_t.html',1,'Contributor Covenant Code of Conduct'],['../md_hwdbg_2_c_o_d_e___o_f___c_o_n_d_u_c_t.html',1,'Contributor Covenant Code of Conduct']]]
+  ['6_200_200_20beta_202023_2009_2025_0',['[0.6.0.0-beta] - 2023-09-25',['../md__c_h_a_n_g_e_l_o_g.html#autotoc_md81',1,'']]]
 ];

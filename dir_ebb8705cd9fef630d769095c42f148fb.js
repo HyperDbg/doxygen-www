@@ -1,9 +1,9 @@
 var dir_ebb8705cd9fef630d769095c42f148fb =
 [
     [ "Counters.h", "_counters_8h.html", "_counters_8h" ],
+    [ "CrossVmcalls.h", "_cross_vmcalls_8h.html", "_cross_vmcalls_8h" ],
     [ "Events.h", "hyperhv_2header_2vmm_2vmx_2_events_8h.html", "hyperhv_2header_2vmm_2vmx_2_events_8h" ],
     [ "Hv.h", "_hv_8h.html", "_hv_8h" ],
-    [ "HypervTlfs.h", "_hyperv_tlfs_8h.html", "_hyperv_tlfs_8h" ],
     [ "IdtEmulation.h", "_idt_emulation_8h.html", "_idt_emulation_8h" ],
     [ "IoHandler.h", "_io_handler_8h.html", "_io_handler_8h" ],
     [ "MsrHandlers.h", "_msr_handlers_8h.html", "_msr_handlers_8h" ],

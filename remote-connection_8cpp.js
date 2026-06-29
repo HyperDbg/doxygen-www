@@ -1,10 +1,10 @@
 var remote_connection_8cpp =
 [
-    [ "RemoteConnectionCloseTheConnectionWithDebuggee", "remote-connection_8cpp.html#a14d82aeb719e931ed06a5c60074bcbe0", null ],
+    [ "RemoteConnectionCloseTheConnectionWithDebuggee", "remote-connection_8cpp.html#ac4abae795a5135195b07a2ab6aacb613", null ],
     [ "RemoteConnectionConnect", "remote-connection_8cpp.html#a2ca2f39a9a6d1e91a6371f305fa9021e", null ],
     [ "RemoteConnectionListen", "remote-connection_8cpp.html#a0442ad058ac172fc489998fe7c97db9a", null ],
-    [ "RemoteConnectionSendCommand", "remote-connection_8cpp.html#a757828fd0aae8738f3a9c09cb54dae53", null ],
-    [ "RemoteConnectionSendResultsToHost", "remote-connection_8cpp.html#aee6d8e479206be351a4a1e0a1e2e86b9", null ],
+    [ "RemoteConnectionSendCommand", "remote-connection_8cpp.html#a6b4bbd56daab0361c1c5d5abd7d57293", null ],
+    [ "RemoteConnectionSendResultsToHost", "remote-connection_8cpp.html#a7e75745306ca54c3e6b1b9c869ff7d77", null ],
     [ "RemoteConnectionThreadListeningToDebuggee", "remote-connection_8cpp.html#a212885a62f5bfda070ea3bbb059fa51d", null ],
     [ "g_BreakPrintingOutput", "remote-connection_8cpp.html#ac4758ea6e4b2b001288af3b22ff11795", null ],
     [ "g_ClientConnectSocket", "remote-connection_8cpp.html#adea6f319558326cc21fa8c88f859f7a1", null ],

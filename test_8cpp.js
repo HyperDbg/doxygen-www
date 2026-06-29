@@ -1,6 +1,8 @@
 var test_8cpp =
 [
-    [ "CommandTest", "test_8cpp.html#a0e146e63afea389b7180f4d19b05486b", null ],
+    [ "CommandTest", "test_8cpp.html#a6669f1f08e6c89b045c82baa13e5e6bf", null ],
+    [ "CommandTestAllFunctionalities", "test_8cpp.html#a0cc8db26684734d35543b6f1f165a38b", null ],
+    [ "CommandTestAllHwdbg", "test_8cpp.html#ad76cbf9c6f117baec318f76ee2416e76", null ],
     [ "CommandTestHelp", "test_8cpp.html#af0fb962fb132d60070ee6fc914469090", null ],
     [ "CommandTestPerformKernelTestsIoctl", "test_8cpp.html#a90ad9f1cdd8bed3e63c473746bd6b53f", null ],
     [ "CommandTestPerformTest", "test_8cpp.html#a648882416ee4b2f390fc80a68d3bffa2", null ],
@@ -11,5 +13,6 @@ var test_8cpp =
     [ "CommandTestSetDebugBreakState", "test_8cpp.html#a0d8618563c0da89e7a0dae532a673cb1", null ],
     [ "CommandTestSetTargetTaskToHaltedCores", "test_8cpp.html#a06f48a02da7aa08a894974e0f392ca93", null ],
     [ "CommandTestSetTargetTaskToTargetCore", "test_8cpp.html#a0106185ca97556009d6a5235e9b0df13", null ],
+    [ "g_IsKdModuleLoaded", "test_8cpp.html#a856b3c673d530490db3f98215e360212", null ],
     [ "g_IsSerialConnectedToRemoteDebuggee", "test_8cpp.html#abefaa871a249a20e1e19ce893e400774", null ]
 ];

@@ -4,7 +4,7 @@ var events_8cpp =
     [ "CommandEventDisableEvent", "events_8cpp.html#a601e25d2f26d8524e51a034aef732974", null ],
     [ "CommandEventEnableEvent", "events_8cpp.html#a2489d9211a08ec26bf9f791810bcbf93", null ],
     [ "CommandEventQueryEventState", "events_8cpp.html#aaecb88c6e322591f0de51b8b625d1c87", null ],
-    [ "CommandEvents", "events_8cpp.html#afae70ebe50d1d1e4788cdd59ee21bd98", null ],
+    [ "CommandEvents", "events_8cpp.html#abab9d819ae96f90419b2df53fe76d984", null ],
     [ "CommandEventsClearAllEventsAndResetTags", "events_8cpp.html#aff14274159528bdcb38424a8471b9521", null ],
     [ "CommandEventsHandleModifiedEvent", "events_8cpp.html#a056f11e1bbf5d42d00eb7d5b3793c066", null ],
     [ "CommandEventsHelp", "events_8cpp.html#a039c3016a7a8be8f1741c61b19e05d36", null ],
@@ -17,5 +17,6 @@ var events_8cpp =
     [ "g_EventTraceInitialized", "events_8cpp.html#a5fad0f84fdbb1e60a0a21b87db671879", null ],
     [ "g_IsConnectedToRemoteDebuggee", "events_8cpp.html#a08efbe1abcb717379a8ec5139e187983", null ],
     [ "g_IsSerialConnectedToRemoteDebuggee", "events_8cpp.html#abefaa871a249a20e1e19ce893e400774", null ],
-    [ "g_IsSerialConnectedToRemoteDebugger", "events_8cpp.html#a07d4f30d5bc446a5c0dacc0b77b902db", null ]
+    [ "g_IsSerialConnectedToRemoteDebugger", "events_8cpp.html#a07d4f30d5bc446a5c0dacc0b77b902db", null ],
+    [ "g_IsVmmModuleLoaded", "events_8cpp.html#af4cf160715026467c6d14698ace2727b", null ]
 ];

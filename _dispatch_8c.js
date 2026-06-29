@@ -14,7 +14,7 @@ var _dispatch_8c =
     [ "DispatchEventHiddenHookPageReadWriteExecuteWritePreEvent", "_dispatch_8c.html#a3afed71e259f9f6c1e0524317b391cb2", null ],
     [ "DispatchEventHiddenHookPageReadWriteExecWritePostEvent", "_dispatch_8c.html#a6b479b4139a23747b75523910f9b9417", null ],
     [ "DispatchEventIO", "_dispatch_8c.html#a9beef1729154452db4d14e11fbfa4478", null ],
-    [ "DispatchEventMode", "_dispatch_8c.html#ab42e4975ea7a08129dc29a40c011017c", null ],
+    [ "DispatchEventMode", "_dispatch_8c.html#a5ac5aac018154f63df07c62ec596ba39", null ],
     [ "DispatchEventMov2DebugRegs", "_dispatch_8c.html#ab29357f2d04f132cb67577cb62162ec8", null ],
     [ "DispatchEventMovToCr3", "_dispatch_8c.html#a83d04e9dee78b3fb4350c2f588877947", null ],
     [ "DispatchEventMovToFromControlRegisters", "_dispatch_8c.html#acbc945909fecd8ece6818d3424af63eb", null ],
@@ -22,5 +22,6 @@ var _dispatch_8c =
     [ "DispatchEventRdpmc", "_dispatch_8c.html#a3bcf13ef8771eef5a5d7d2f375d3225f", null ],
     [ "DispatchEventTsc", "_dispatch_8c.html#a61e2dcbd730450008e8f6f4dcc6c7b42", null ],
     [ "DispatchEventVmcall", "_dispatch_8c.html#ac3eb1bf639bc9644cf1c1f44c2eb8dff", null ],
-    [ "DispatchEventWrmsr", "_dispatch_8c.html#ae3de50c27b4f63f330bc3b3f3948d74a", null ]
+    [ "DispatchEventWrmsr", "_dispatch_8c.html#ae3de50c27b4f63f330bc3b3f3948d74a", null ],
+    [ "DispatchEventXsetbv", "_dispatch_8c.html#a2d5a8cbb4a5fbebaf7a5912ec68bfb54", null ]
 ];

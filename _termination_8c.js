@@ -20,11 +20,13 @@ var _termination_8c =
     [ "TerminateQueryDebuggerResourceMov2DebugRegExiting", "_termination_8c.html#a47ee98f6b094dffa006d1ebc0cdd94a7", null ],
     [ "TerminateQueryDebuggerResourceMovControlRegsExiting", "_termination_8c.html#ade81b87d3697cffacb177196618065ca", null ],
     [ "TerminateQueryDebuggerResourceMovToCr3Exiting", "_termination_8c.html#a0b68fb1292d9b1a7f537509235171e8c", null ],
+    [ "TerminateQueryDebuggerResourceSaveAndLoadDebugControls", "_termination_8c.html#a7407e41eb8ab4ee8f591dd337b6ff2b3", null ],
     [ "TerminateQueryDebuggerResourceTscExiting", "_termination_8c.html#ae8582ac55702e66fe86eeed5fa8f5872", null ],
     [ "TerminateRdmsrExecutionEvent", "_termination_8c.html#a37ae1f4c7127e3da867f495d225827ea", null ],
     [ "TerminateSyscallHookEferEvent", "_termination_8c.html#acb04cc4d41cdd5b98beecf8d0f8079dc", null ],
     [ "TerminateSysretHookEferEvent", "_termination_8c.html#a10e92262b84732ae0b636a8aa87ad84e", null ],
     [ "TerminateTscEvent", "_termination_8c.html#a409d56705707d9ab1d2f17c848e5a746", null ],
     [ "TerminateVmcallExecutionEvent", "_termination_8c.html#ac97b94e0252ab8222d1c3129078c56f1", null ],
-    [ "TerminateWrmsrExecutionEvent", "_termination_8c.html#a8739bfe47062e950dc71af2c8e7be603", null ]
+    [ "TerminateWrmsrExecutionEvent", "_termination_8c.html#a8739bfe47062e950dc71af2c8e7be603", null ],
+    [ "TerminateXsetbvExecutionEvent", "_termination_8c.html#a050fb62b30cf2be4382bf6fe9bc73afa", null ]
 ];

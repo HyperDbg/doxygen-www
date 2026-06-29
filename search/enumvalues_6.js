@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['global_5fid_0',['GLOBAL_ID',['../script-engine_2header_2_common_8h.html#abbf72a04a030b0407c2a0d547f84e12dadb3db07ec7ddec7e8b1de022e8d84d63',1,'common.h']]],
-  ['global_5funresolved_5fid_1',['GLOBAL_UNRESOLVED_ID',['../script-engine_2header_2_common_8h.html#abbf72a04a030b0407c2a0d547f84e12dabf56ff869d5dd05ef00c5c6eb8cdbd93',1,'common.h']]],
-  ['gs_2',['GS',['../hyperhv_2header_2common_2_common_8h.html#a7439723a15461f5bf1905bb57eb295bfa9c922c72676cab2b540d081a8bb3788a',1,'Common.h']]]
+  ['generic_5fprocessor_5fvendor_5famd_0',['GENERIC_PROCESSOR_VENDOR_AMD',['../build_2bin_2debug_2_s_d_k_2headers_2_data_types_8h.html#acba05a76581e7ddde181632f7c81fa70a30627b0f6ad5c6c4ec37e98b4cb30feb',1,'GENERIC_PROCESSOR_VENDOR_AMD:&#160;DataTypes.h'],['../include_2_s_d_k_2headers_2_data_types_8h.html#acba05a76581e7ddde181632f7c81fa70a30627b0f6ad5c6c4ec37e98b4cb30feb',1,'GENERIC_PROCESSOR_VENDOR_AMD:&#160;DataTypes.h']]],
+  ['generic_5fprocessor_5fvendor_5fintel_1',['GENERIC_PROCESSOR_VENDOR_INTEL',['../build_2bin_2debug_2_s_d_k_2headers_2_data_types_8h.html#acba05a76581e7ddde181632f7c81fa70a27eb347c6a49f02414bcd9ef88b00ac0',1,'GENERIC_PROCESSOR_VENDOR_INTEL:&#160;DataTypes.h'],['../include_2_s_d_k_2headers_2_data_types_8h.html#acba05a76581e7ddde181632f7c81fa70a27eb347c6a49f02414bcd9ef88b00ac0',1,'GENERIC_PROCESSOR_VENDOR_INTEL:&#160;DataTypes.h']]],
+  ['generic_5fprocessor_5fvendor_5fothers_2',['GENERIC_PROCESSOR_VENDOR_OTHERS',['../build_2bin_2debug_2_s_d_k_2headers_2_data_types_8h.html#acba05a76581e7ddde181632f7c81fa70a5bf45e75ed185d10596dc398e94d7765',1,'GENERIC_PROCESSOR_VENDOR_OTHERS:&#160;DataTypes.h'],['../include_2_s_d_k_2headers_2_data_types_8h.html#acba05a76581e7ddde181632f7c81fa70a5bf45e75ed185d10596dc398e94d7765',1,'GENERIC_PROCESSOR_VENDOR_OTHERS:&#160;DataTypes.h']]],
+  ['global_5fid_3',['GLOBAL_ID',['../script-engine_2header_2_common_8h.html#ac87fcc25cd67d0af7f81ce021e7e0312adb3db07ec7ddec7e8b1de022e8d84d63',1,'common.h']]],
+  ['global_5funresolved_5fid_4',['GLOBAL_UNRESOLVED_ID',['../script-engine_2header_2_common_8h.html#ac87fcc25cd67d0af7f81ce021e7e0312abf56ff869d5dd05ef00c5c6eb8cdbd93',1,'common.h']]],
+  ['gs_5',['GS',['../build_2bin_2debug_2_s_d_k_2headers_2_constants_8h.html#a7439723a15461f5bf1905bb57eb295bfa9c922c72676cab2b540d081a8bb3788a',1,'GS:&#160;Constants.h'],['../include_2_s_d_k_2headers_2_constants_8h.html#a7439723a15461f5bf1905bb57eb295bfa9c922c72676cab2b540d081a8bb3788a',1,'GS:&#160;Constants.h']]]
 ];

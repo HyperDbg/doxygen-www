@@ -1,4 +1,25 @@
 var searchData=
 [
-  ['zeroopfunc1_0',['ZeroOpFunc1',['../parse-table_8c.html#a70f9eb04c54ab6c69a57a4e90b077c0f',1,'ZeroOpFunc1:&#160;parse-table.c'],['../parse-table_8h.html#a70f9eb04c54ab6c69a57a4e90b077c0f',1,'ZeroOpFunc1:&#160;parse-table.c']]]
+  ['x_0',['x',['../01-expressions-correct_8txt.html#a38c69f849e860ed3b7c953c1be098656',1,'x:&#160;01-expressions-correct.txt'],['../01-expressions-wrong_8txt.html#a38c69f849e860ed3b7c953c1be098656',1,'x:&#160;01-expressions-wrong.txt'],['../09-do-while-loop-with-statements-wrong_8txt.html#a9336ebf25087d91c818ee6e9ec29f8c1',1,'x:&#160;09-do-while-loop-with-statements-wrong.txt']]],
+  ['xmm0_1',['xmm0',['../struct_g_u_e_s_t___x_m_m___r_e_g_s.html#a4d194578e0e49db1bdf3feb7ef6f6441',1,'GUEST_XMM_REGS']]],
+  ['xmm1_2',['xmm1',['../struct_g_u_e_s_t___x_m_m___r_e_g_s.html#a7f3c3b37a909bb1bd47f57faed8831a4',1,'GUEST_XMM_REGS']]],
+  ['xmm10_5fnot_5fsaved_3',['xmm10_not_saved',['../struct_g_u_e_s_t___x_m_m___r_e_g_s.html#aa1d72f808fb753117405a2fea22ddc92',1,'GUEST_XMM_REGS']]],
+  ['xmm11_5fnot_5fsaved_4',['xmm11_not_saved',['../struct_g_u_e_s_t___x_m_m___r_e_g_s.html#ad382855152914fd98528a3ec7a43fc79',1,'GUEST_XMM_REGS']]],
+  ['xmm12_5fnot_5fsaved_5',['xmm12_not_saved',['../struct_g_u_e_s_t___x_m_m___r_e_g_s.html#a797c06130c22a7735e0b07cd1e0f8945',1,'GUEST_XMM_REGS']]],
+  ['xmm13_5fnot_5fsaved_6',['xmm13_not_saved',['../struct_g_u_e_s_t___x_m_m___r_e_g_s.html#a313c14eb789bea6550969c33647b07c6',1,'GUEST_XMM_REGS']]],
+  ['xmm14_5fnot_5fsaved_7',['xmm14_not_saved',['../struct_g_u_e_s_t___x_m_m___r_e_g_s.html#a5577eff5319f40b74804dffd3ff0d382',1,'GUEST_XMM_REGS']]],
+  ['xmm15_5fnot_5fsaved_8',['xmm15_not_saved',['../struct_g_u_e_s_t___x_m_m___r_e_g_s.html#a2c104153de4213bbe42dbf6fb25a4a25',1,'GUEST_XMM_REGS']]],
+  ['xmm2_9',['xmm2',['../struct_g_u_e_s_t___x_m_m___r_e_g_s.html#a292ee8d850a3d188d17cbb8513395993',1,'GUEST_XMM_REGS']]],
+  ['xmm3_10',['xmm3',['../struct_g_u_e_s_t___x_m_m___r_e_g_s.html#abbcac1d42a1cd12fd13095f26f4e0bf2',1,'GUEST_XMM_REGS']]],
+  ['xmm4_11',['xmm4',['../struct_g_u_e_s_t___x_m_m___r_e_g_s.html#ae7a70740571aa83807fc37032f03f1f5',1,'GUEST_XMM_REGS']]],
+  ['xmm5_12',['xmm5',['../struct_g_u_e_s_t___x_m_m___r_e_g_s.html#ac7dd3db1c406b1bdc332be1dbe5531dc',1,'GUEST_XMM_REGS']]],
+  ['xmm6_5fnot_5fsaved_13',['xmm6_not_saved',['../struct_g_u_e_s_t___x_m_m___r_e_g_s.html#ad8715e777dcd2be0e28402f4f3e617e6',1,'GUEST_XMM_REGS']]],
+  ['xmm7_5fnot_5fsaved_14',['xmm7_not_saved',['../struct_g_u_e_s_t___x_m_m___r_e_g_s.html#a61a8164c715f788c14c80b2e0e0247e8',1,'GUEST_XMM_REGS']]],
+  ['xmm8_5fnot_5fsaved_15',['xmm8_not_saved',['../struct_g_u_e_s_t___x_m_m___r_e_g_s.html#abd4ad76e830f3440e8cabf280a61ab83',1,'GUEST_XMM_REGS']]],
+  ['xmm9_5fnot_5fsaved_16',['xmm9_not_saved',['../struct_g_u_e_s_t___x_m_m___r_e_g_s.html#a1428c6e686f27caa15dd8d7c9234c325',1,'GUEST_XMM_REGS']]],
+  ['xmmhigh_17',['XmmHigh',['../struct_x_m_m___r_e_g.html#a38c0e49d388ea6fd3f620cfca660e4f3',1,'XMM_REG']]],
+  ['xmmlow_18',['XmmLow',['../struct_x_m_m___r_e_g.html#a0c1aca3d161786cdec4843ab11549ee6',1,'XMM_REG']]],
+  ['xmmregs_19',['XmmRegs',['../struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a5c0b5a9e92d0eec1ebb6be6bb8dc7b69',1,'_VIRTUAL_MACHINE_STATE']]],
+  ['xsetbvinstructionexecutioneventshead_20',['XsetbvInstructionExecutionEventsHead',['../struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#ab077f497b80c49e26933b8903aad45d0',1,'_DEBUGGER_CORE_EVENTS']]],
+  ['xss_5fexit_5fbitmap_21',['xss_exit_bitmap',['../structhv__enlightened__vmcs.html#ade561c5d5bf7f11136854a3471c26174',1,'hv_enlightened_vmcs']]]
 ];

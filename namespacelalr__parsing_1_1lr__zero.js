@@ -1,8 +1,8 @@
 var namespacelalr__parsing_1_1lr__zero =
 [
     [ "Automaton", "classlalr__parsing_1_1lr__zero_1_1_automaton.html", "classlalr__parsing_1_1lr__zero_1_1_automaton" ],
-    [ "closure", "namespacelalr__parsing_1_1lr__zero.html#a8624568b35355c5e5fb9c12030f36dd9", null ],
-    [ "get_automaton", "namespacelalr__parsing_1_1lr__zero.html#a920a000cc49c4e9cddb36afc3f931c43", null ],
-    [ "goto", "namespacelalr__parsing_1_1lr__zero.html#acbf2c4e7eb60542af8970ff6b8eaacc7", null ],
-    [ "kernels", "namespacelalr__parsing_1_1lr__zero.html#a4901bdc66ec9dc3275bdc35bd68ff213", null ]
+    [ "closure", "namespacelalr__parsing_1_1lr__zero.html#a36e9222de610e179b55aa1742b0c0d6f", null ],
+    [ "get_automaton", "namespacelalr__parsing_1_1lr__zero.html#a5d44f25c6077125f9416ea873e487317", null ],
+    [ "goto", "namespacelalr__parsing_1_1lr__zero.html#a5d1267e97ea27df509a0adafd58c6c84", null ],
+    [ "kernels", "namespacelalr__parsing_1_1lr__zero.html#acc910d6a06aed5a01ae8a50bd9f71b3e", null ]
 ];

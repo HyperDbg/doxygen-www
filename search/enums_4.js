@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['token_5ftype_0',['TOKEN_TYPE',['../script-engine_2header_2_common_8h.html#abbf72a04a030b0407c2a0d547f84e12d',1,'common.h']]],
-  ['tokentype_1',['TokenType',['../class_command_parser.html#aa534f92c975622cc35c01504ab9b80a9',1,'CommandParser']]]
+  ['regs_5fenum_0',['REGS_ENUM',['../build_2bin_2debug_2_s_d_k_2headers_2_script_engine_common_definitions_8h.html#a169890310bdffddf2d480009d75ff3e0',1,'REGS_ENUM:&#160;ScriptEngineCommonDefinitions.h'],['../include_2_s_d_k_2headers_2_script_engine_common_definitions_8h.html#a169890310bdffddf2d480009d75ff3e0',1,'REGS_ENUM:&#160;ScriptEngineCommonDefinitions.h']]]
 ];

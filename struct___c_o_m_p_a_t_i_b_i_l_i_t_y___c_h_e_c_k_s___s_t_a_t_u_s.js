@@ -1,5 +1,7 @@
 var struct___c_o_m_p_a_t_i_b_i_l_i_t_y___c_h_e_c_k_s___s_t_a_t_u_s =
 [
+    [ "CetIbtSupport", "struct___c_o_m_p_a_t_i_b_i_l_i_t_y___c_h_e_c_k_s___s_t_a_t_u_s.html#ac26464dc13297c99edd7b6d7f95bbf1f", null ],
+    [ "CetShadowStackSupport", "struct___c_o_m_p_a_t_i_b_i_l_i_t_y___c_h_e_c_k_s___s_t_a_t_u_s.html#a1b894e7344c19a0be8847d53e33da323", null ],
     [ "ExecuteOnlySupport", "struct___c_o_m_p_a_t_i_b_i_l_i_t_y___c_h_e_c_k_s___s_t_a_t_u_s.html#af68dba0dd8b9469e42d344f82fca8417", null ],
     [ "IsX2Apic", "struct___c_o_m_p_a_t_i_b_i_l_i_t_y___c_h_e_c_k_s___s_t_a_t_u_s.html#aa4cb9187754ba57d9823ed5cdd7105a0", null ],
     [ "ModeBasedExecutionSupport", "struct___c_o_m_p_a_t_i_b_i_l_i_t_y___c_h_e_c_k_s___s_t_a_t_u_s.html#a3a377db9e59b8f90f23e5efddbfb1f04", null ],

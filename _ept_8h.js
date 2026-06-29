@@ -16,7 +16,9 @@ var _ept_8h =
     [ "PAGE_ATTRIB_EXEC_HIDDEN_HOOK", "_ept_8h.html#a64a62553738e173543798af94f3958fb", null ],
     [ "PAGE_ATTRIB_READ", "_ept_8h.html#a57f919b94c67edb76b752a2ca83b534a", null ],
     [ "PAGE_ATTRIB_WRITE", "_ept_8h.html#a6a23c222f617b62cc621b5482a378d8a", null ],
+    [ "SIZE_1_GB", "_ept_8h.html#aa2f4843ad91df8f069fac6ac914b0ec0", null ],
     [ "SIZE_2_MB", "_ept_8h.html#a9b5b0b5f414ce235f2b51bb6adde3c67", null ],
+    [ "SIZE_512_GB", "_ept_8h.html#a8847e81d050471e81838cdcd9870438d", null ],
     [ "EPT_STATE", "_ept_8h.html#adf3f602f02c6b2047daf03d608490a68", null ],
     [ "IA32_MTRR_FIXED_RANGE_TYPE", "_ept_8h.html#a65d73f50d549c39ec3e58bf55ac346b3", null ],
     [ "MTRR_RANGE_DESCRIPTOR", "_ept_8h.html#a84c13280b2446cb3c278ecf541c99258", null ],
@@ -37,5 +39,5 @@ var _ept_8h =
     [ "EptLogicalProcessorInitialize", "_ept_8h.html#a36ddbfbf1a082ef76d7f41dc35fea75d", null ],
     [ "EptSetPML1AndInvalidateTLB", "_ept_8h.html#a33a5a665428c6f8c0152985bb8aae8a2", null ],
     [ "EptSetupPML2Entry", "_ept_8h.html#a6d13e772059bca183c07c58358c56469", null ],
-    [ "EptSplitLargePage", "_ept_8h.html#a186f8a530e93e585a153269cdc103f45", null ]
+    [ "EptSplitLargePage", "_ept_8h.html#aedb67bab8c5289033a9d1b18c3186c44", null ]
 ];

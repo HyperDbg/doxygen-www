@@ -1,5 +1,5 @@
 var cls_8cpp =
 [
-    [ "CommandClearScreen", "cls_8cpp.html#ad59a6875f0d8d0df7929711e9e505a90", null ],
-    [ "CommandClearScreenHelp", "cls_8cpp.html#a00c8af57ef0d33642f5475069bd458fc", null ]
+    [ "CommandCls", "cls_8cpp.html#ad0a94fbbc09a29fef7a606c43b8692cc", null ],
+    [ "CommandClsHelp", "cls_8cpp.html#ac0f9c85cb88d0e2be3fd9390a2c8546e", null ]
 ];

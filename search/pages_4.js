@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['howto_0',['HOWTO',['../md__h_o_w_t_o.html',1,'']]],
-  ['hyperdbg_20debugger_1',['HyperDbg Debugger',['../index.html',1,'']]]
+  ['4_200_200_202023_2007_2018_0',['[0.4.0.0] - 2023-07-18',['../md__c_h_a_n_g_e_l_o_g.html#autotoc_md87',1,'']]],
+  ['4_200_202024_2005_2010_1',['[0.8.4.0] - 2024-05-10',['../md__c_h_a_n_g_e_l_o_g.html#autotoc_md60',1,'']]]
 ];

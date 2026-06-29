@@ -24,5 +24,6 @@ var struct___h_w_d_b_g___i_n_s_t_a_n_c_e___i_n_f_o_r_m_a_t_i_o_n_1_1___h_w_d_b_g
     [ "func_or", "struct___h_w_d_b_g___i_n_s_t_a_n_c_e___i_n_f_o_r_m_a_t_i_o_n_1_1___h_w_d_b_g___s_c_r_i_p_t___c_a_p_a_b_i_l_i_t_i_e_s.html#a01a6bdc6abe09c03f19e25a7dd2dd975", null ],
     [ "func_printf", "struct___h_w_d_b_g___i_n_s_t_a_n_c_e___i_n_f_o_r_m_a_t_i_o_n_1_1___h_w_d_b_g___s_c_r_i_p_t___c_a_p_a_b_i_l_i_t_i_e_s.html#a19771f21c98b5c201cebdee69c704bcf", null ],
     [ "func_sub", "struct___h_w_d_b_g___i_n_s_t_a_n_c_e___i_n_f_o_r_m_a_t_i_o_n_1_1___h_w_d_b_g___s_c_r_i_p_t___c_a_p_a_b_i_l_i_t_i_e_s.html#a1f9cecf93d6539a4c3320eac0aeb648d", null ],
-    [ "func_xor", "struct___h_w_d_b_g___i_n_s_t_a_n_c_e___i_n_f_o_r_m_a_t_i_o_n_1_1___h_w_d_b_g___s_c_r_i_p_t___c_a_p_a_b_i_l_i_t_i_e_s.html#a7e42c4502fa653fee2b3c0288cf571e7", null ]
+    [ "func_xor", "struct___h_w_d_b_g___i_n_s_t_a_n_c_e___i_n_f_o_r_m_a_t_i_o_n_1_1___h_w_d_b_g___s_c_r_i_p_t___c_a_p_a_b_i_l_i_t_i_e_s.html#a7e42c4502fa653fee2b3c0288cf571e7", null ],
+    [ "stack_assignments", "struct___h_w_d_b_g___i_n_s_t_a_n_c_e___i_n_f_o_r_m_a_t_i_o_n_1_1___h_w_d_b_g___s_c_r_i_p_t___c_a_p_a_b_i_l_i_t_i_e_s.html#a583737d3d39e587289ff1abaf49ea14b", null ]
 ];

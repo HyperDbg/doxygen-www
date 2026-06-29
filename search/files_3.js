@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['basictypes_2eh_0',['BasicTypes.h',['../_basic_types_8h.html',1,'']]],
+  ['basictypes_2eh_0',['BasicTypes.h',['../build_2bin_2debug_2_s_d_k_2headers_2_basic_types_8h.html',1,'(Global Namespace)'],['../include_2_s_d_k_2headers_2_basic_types_8h.html',1,'(Global Namespace)']]],
   ['bc_2ecpp_1',['bc.cpp',['../bc_8cpp.html',1,'']]],
   ['bcm2835_2ec_2',['bcm2835.c',['../bcm2835_8c.html',1,'']]],
   ['bd_2ecpp_3',['bd.cpp',['../bd_8cpp.html',1,'']]],
@@ -16,6 +16,6 @@ var searchData=
   ['break_2dcontrol_2ecpp_13',['break-control.cpp',['../break-control_8cpp.html',1,'']]],
   ['breakpointcommands_2ec_14',['BreakpointCommands.c',['../_breakpoint_commands_8c.html',1,'']]],
   ['breakpointcommands_2eh_15',['BreakpointCommands.h',['../_breakpoint_commands_8h.html',1,'']]],
-  ['broadcast_2ec_16',['Broadcast.c',['../_broadcast_8c.html',1,'']]],
-  ['broadcast_2eh_17',['Broadcast.h',['../_broadcast_8h.html',1,'']]]
+  ['broadcast_2ec_16',['Broadcast.c',['../hyperhv_2code_2broadcast_2_broadcast_8c.html',1,'(Global Namespace)'],['../hyperperf_2code_2broadcast_2_broadcast_8c.html',1,'(Global Namespace)'],['../hypertrace_2code_2broadcast_2_broadcast_8c.html',1,'(Global Namespace)']]],
+  ['broadcast_2eh_17',['Broadcast.h',['../hyperhv_2header_2broadcast_2_broadcast_8h.html',1,'(Global Namespace)'],['../hyperperf_2header_2broadcast_2_broadcast_8h.html',1,'(Global Namespace)'],['../hypertrace_2header_2broadcast_2_broadcast_8h.html',1,'(Global Namespace)']]]
 ];

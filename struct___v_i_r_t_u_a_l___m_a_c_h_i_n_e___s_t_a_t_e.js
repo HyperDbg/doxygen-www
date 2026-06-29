@@ -15,12 +15,13 @@ var struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e =
     [ "IgnoreMtfUnset", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a4baef1dfcc9cb114e6fbc7118e2da235", null ],
     [ "IgnoreOneMtf", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a805b77801e16eba21f07d261f520fdf7", null ],
     [ "IncrementRip", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a95be62d62b8c4a2e9bd6bf75a0ba4cd1", null ],
+    [ "InstrumentationStepInMtf", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ad23e15e18468339e9d4a1407259f6e11", null ],
     [ "IoBitmapPhysicalAddressA", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a6fd103be7de174b060bd46ea46a35e89", null ],
     [ "IoBitmapPhysicalAddressB", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ad49c33f9ba391ac9625e4ccbf1bf2dbf", null ],
     [ "IoBitmapVirtualAddressA", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#adc08fd36ed7c5088b430d9d46de38772", null ],
     [ "IoBitmapVirtualAddressB", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a42bb99b3abac8271d5f430862b86fa12", null ],
     [ "IsOnVmxRootMode", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ac3a540948c9dbdb00cce2ef4beb6aa20", null ],
-    [ "LastExceptionOccuredInHost", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a3a3e5a80fc738e6dd22d4e7deff66a3c", null ],
+    [ "LastExceptionOccurredInHost", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a95fa67e7e950213811b709b47a9a4807", null ],
     [ "LastVmexitRip", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ae855827593a6f9ed1deb258ae3337e57", null ],
     [ "MbecEnabled", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a672ada3cf809bfdc4f1af22f30fb400b", null ],
     [ "MsrBitmapPhysicalAddress", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a01fda82355aebcc1e29b22e6e7d6aa90", null ],
@@ -31,7 +32,6 @@ var struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e =
     [ "PendingExternalInterrupts", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a7123e9d39156e57b44e62065ebe2fc9d", null ],
     [ "PmlBufferAddress", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a72dbd1def74059e49245fed4a116c22d", null ],
     [ "QueuedNmi", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a8778319270fa881a980ca6219dbf4122", null ],
-    [ "RegisterBreakOnMtf", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#ac54b9b284d5db3c9e776ec27586af193", null ],
     [ "Regs", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#aae00ab92fdce5f90e65edb3bd10ae696", null ],
     [ "Test", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#aca0fa8aee93071ca628305c71807f166", null ],
     [ "TestNumber", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a335dd69837f19314056e6cf566732d7c", null ],
@@ -42,5 +42,6 @@ var struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e =
     [ "VmxoffState", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#abe260607315f60c0e4676113b125d4a4", null ],
     [ "VmxonRegionPhysicalAddress", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#aead68c436a200fcbe3c7f1869bac41ae", null ],
     [ "VmxonRegionVirtualAddress", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a1890e7a832ea68482839c0f8e6aa1bb7", null ],
-    [ "WaitForImmediateVmexit", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a8e7b60dd13a24ee494ce4f0d8547e671", null ]
+    [ "WaitForImmediateVmexit", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a8e7b60dd13a24ee494ce4f0d8547e671", null ],
+    [ "XmmRegs", "struct___v_i_r_t_u_a_l___m_a_c_h_i_n_e___s_t_a_t_e.html#a5c0b5a9e92d0eec1ebb6be6bb8dc7b69", null ]
 ];

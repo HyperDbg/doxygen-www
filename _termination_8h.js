@@ -20,5 +20,6 @@ var _termination_8h =
     [ "TerminateSysretHookEferEvent", "_termination_8h.html#a10e92262b84732ae0b636a8aa87ad84e", null ],
     [ "TerminateTscEvent", "_termination_8h.html#a409d56705707d9ab1d2f17c848e5a746", null ],
     [ "TerminateVmcallExecutionEvent", "_termination_8h.html#ac97b94e0252ab8222d1c3129078c56f1", null ],
-    [ "TerminateWrmsrExecutionEvent", "_termination_8h.html#a8739bfe47062e950dc71af2c8e7be603", null ]
+    [ "TerminateWrmsrExecutionEvent", "_termination_8h.html#a8739bfe47062e950dc71af2c8e7be603", null ],
+    [ "TerminateXsetbvExecutionEvent", "_termination_8h.html#a050fb62b30cf2be4382bf6fe9bc73afa", null ]
 ];

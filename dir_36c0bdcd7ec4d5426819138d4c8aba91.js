@@ -1,6 +1,7 @@
 var dir_36c0bdcd7ec4d5426819138d4c8aba91 =
 [
     [ "Counters.c", "_counters_8c.html", "_counters_8c" ],
+    [ "CrossVmcalls.c", "_cross_vmcalls_8c.html", "_cross_vmcalls_8c" ],
     [ "CrossVmexits.c", "_cross_vmexits_8c.html", "_cross_vmexits_8c" ],
     [ "Events.c", "_events_8c.html", "_events_8c" ],
     [ "Hv.c", "_hv_8c.html", "_hv_8c" ],

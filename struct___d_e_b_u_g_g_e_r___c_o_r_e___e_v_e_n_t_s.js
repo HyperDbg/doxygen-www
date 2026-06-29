@@ -25,5 +25,6 @@ var struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s =
     [ "TrapExecutionModeChangedEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#ad5965581ca6a1c0b98a48efd5565972f", null ],
     [ "TscInstructionExecutionEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#ac89d26d001047d7a088f8c775c9101e7", null ],
     [ "VmcallInstructionExecutionEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#a8ef070fecb4f3dfbfcf938328cb150bf", null ],
-    [ "WrmsrInstructionExecutionEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#ab08835edef8c324f0f0e859729ce6713", null ]
+    [ "WrmsrInstructionExecutionEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#ab08835edef8c324f0f0e859729ce6713", null ],
+    [ "XsetbvInstructionExecutionEventsHead", "struct___d_e_b_u_g_g_e_r___c_o_r_e___e_v_e_n_t_s.html#ab077f497b80c49e26933b8903aad45d0", null ]
 ];

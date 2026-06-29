@@ -2,7 +2,7 @@ var forwarding_8cpp =
 [
     [ "ForwardingCheckAndPerformEventForwarding", "forwarding_8cpp.html#aaefb1436070d1736e201244354af5dfc", null ],
     [ "ForwardingCloseOutputSource", "forwarding_8cpp.html#a004d6080788ef354b01fc0b08a5f7609", null ],
-    [ "ForwardingCreateOutputSource", "forwarding_8cpp.html#a53fcc054126bfdabbc6406b85aed33f0", null ],
+    [ "ForwardingCreateOutputSource", "forwarding_8cpp.html#ad333a28819749f1d4e2b9f477757a01c", null ],
     [ "ForwardingGetNewOutputSourceTag", "forwarding_8cpp.html#a740430838e3e9b71ad6131ae48554ff7", null ],
     [ "ForwardingOpenOutputSource", "forwarding_8cpp.html#a15edd4f350e120500db07b5a60e6e145", null ],
     [ "ForwardingPerformEventForwarding", "forwarding_8cpp.html#ac84663bef0772945782e2533e31a07d2", null ],
